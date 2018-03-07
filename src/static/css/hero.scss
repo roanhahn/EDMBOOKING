@@ -1,0 +1,78 @@
+.hero{
+	min-height: 500px;
+	padding: 50px 0;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-blend-mode: multiply;
+
+	@media all and (max-width: $breakpoint-tablet){
+		min-height: 50%;
+	}
+
+	&--red{
+		background-color: $red-filter;
+	}
+
+	&--white{
+		background-color: $white-filter;
+	}
+
+	&--blue{
+		background-color: $blue-filter;
+	}
+
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	& .inner{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 50%;
+		-ms-transform: translate(0, -50%); 
+		-webkit-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+
+	& h1{
+		font-family: $font-header;
+		font-weight: 800;
+		font-size: 70px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		text-shadow: 0 0 15px rgba(0,0,0,.7);
+
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 40px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 24px;
+		}
+	}
+
+	& p{
+		display: block;
+		text-transform: uppercase;
+		font-size: 35px;
+		margin-bottom: 30px;
+		line-height: 1.2;
+		text-shadow: 0 0 15px rgba(0,0,0,.7);
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 24px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 18px;
+		}
+	}
+}

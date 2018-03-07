@@ -1,0 +1,91 @@
+.event{
+	padding: 0;
+	position: relative;
+	display: block;
+
+	&-info{
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		-ms-transform: translate(0, -50%); 
+		-webkit-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		color: #fff;
+		padding: 15px;
+	}
+
+	&-thumb{
+		position: relative;
+		z-index: 1;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		background-blend-mode: multiply;
+		height: 0px;
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: 75%;
+		-webkit-transition: all .2s ease-in-out 0s;
+		transition: all .2s ease-in-out 0s;
+
+		@media all and (max-width: $breakpoint-mobile){
+			padding-bottom: 50%;	
+		}
+
+		&--red{
+			background-color: $red-filter;
+		}
+
+		&--white{
+			background-color: $white-filter;
+		}
+
+		&--blue{
+			background-color: $blue-filter;
+		}
+	}
+
+	&:hover{
+		.event-thumb{
+			background-size: 150% auto;
+		}
+
+		.button-secondary{
+			color: #000;
+			text-decoration: none;
+			background: #fff;
+		}
+	}
+
+	&-title{
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		font-weight: 800;
+		font-size: 30px;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-bottom: 5px;
+		text-shadow: 0 0 15px rgba(0,0,0,.7);
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 24px;	
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 18px;	
+		}
+	}
+
+	&-date{
+		text-transform: uppercase;
+		margin: 0 0 15px 0;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-shadow: 0 0 15px rgba(0,0,0,.7);
+		
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 13px;	
+		}
+	}
+}

@@ -1,0 +1,66 @@
+footer{
+	background-color: $footer-bg;
+	padding: 90px 0;
+
+	& h4{
+		text-transform: uppercase;
+		font: $font-header;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	& ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		& li{
+			margin-bottom: 5px;
+		}
+	}
+
+	& a{
+		color: $footer-link;
+
+		&:hover{
+			color: $footer-hover;
+		}
+	}
+
+	& .footer-col{
+		margin-bottom: 30px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			text-align: center;
+		}
+	}
+
+	& hr{
+		height: 1px;
+		border: none;
+		background-color: rgba(0,0,0,.2);
+		line-height: 0;
+		margin: 0 0 30px;
+	}
+
+	& .copyright{
+
+		
+	}
+
+	& .credits{
+		float: right;
+	}
+
+	.payoff{
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 13px;
+			text-align: center;
+
+			& span{
+				display: block;
+				float: none;
+			}
+		}
+	}
+}

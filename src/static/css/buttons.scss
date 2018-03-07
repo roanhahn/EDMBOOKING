@@ -1,0 +1,38 @@
+.button{
+	display: inline-block;
+	font-family: $font-button;
+	font-weight: 700;
+	letterspacing: 1px;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: $button-size;
+
+	-webkit-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+
+	&-secondary{
+		border-radius: 50px;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		text-transform: uppercase;
+
+		&:after{
+			content: "\f105";
+			font-family: "FontAwesome";
+			margin-left: 5px;
+		}
+
+		&:hover{
+			color: #000;
+			text-decoration: none;
+			background: #fff;
+		}
+	}
+
+	&:visited, &:active{
+		text-decoration: none;
+	}
+}

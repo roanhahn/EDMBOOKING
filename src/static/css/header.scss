@@ -1,0 +1,81 @@
+header{
+	background: $header-bg;
+	padding: 30px 0;
+
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 20px 0;
+	}
+}
+
+nav{
+	padding: 0;
+	height: 30px;
+
+	@media all and (max-width: $breakpoint-mobile){
+		height: 15px;
+	}
+
+	& .logo{
+		display: inline-block;
+		margin: 0;
+		line-height: 0;
+
+		& img{
+			display: block;
+			height: 30px;
+
+			@media all and (max-width: $breakpoint-mobile){
+				height: 15px;
+			}
+		}
+	}
+
+	& .booking{
+		float: right;
+		font-size: 20px;
+		line-height: 30px;
+
+		&-menu{
+			font-family: $font-header;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-right: 5px;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			line-height: 20px;
+			font-size: 14px;
+		}
+
+	}
+
+	& .hamburger{
+		border: none;
+		background: none;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 20px;
+		position: relative;
+		line-height: 30px;
+		top: -2px;
+		cursor: pointer;
+
+
+		& img{
+			height: 30px;
+			width: auto;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			margin-left: 5px;
+			line-height: 15px;
+			top: -1px;
+
+			& img{
+				height: 15px;
+			}
+		}
+	}
+}
