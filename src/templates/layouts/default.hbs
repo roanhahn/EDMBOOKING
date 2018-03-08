@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
 <head>
 	<title>{{site.title}}</title>
 	
@@ -28,13 +28,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="body">
 	{{> header }}
 	{{> body }}
 	{{> footer }}
 
 	<!-- Our JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+
+
+	<script src="{{assets}}/js/plugins/owl.carousel.min.js"></script>
 	<script src="{{assets}}/js/app.js"></script>
 	
 	<!-- Plugins -->

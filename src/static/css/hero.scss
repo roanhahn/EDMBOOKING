@@ -9,7 +9,7 @@
 	background-blend-mode: multiply;
 
 	@media all and (max-width: $breakpoint-tablet){
-		min-height: 50%;
+		min-height: 320px;
 	}
 
 	&--red{

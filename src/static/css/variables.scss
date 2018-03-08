@@ -10,7 +10,7 @@ $edm-color: #419bf7;
 
 $font: 'Roboto', sans-serif;
 $font-header: 'Prompt', sans-serif;
-
+$text-color: #fff;
 
 $blue-filter: rgba(0,155,255,1);
 $white-filter: rgba(236,236,236,1);
@@ -24,9 +24,11 @@ $button-border: blue;
 $button-hover: yellow;
 
 $header-bg: #e6e6e6;
-
+$header-text: #000;
+$header-hover: #419bf7;
 
 $footer-bg: #419bf7;
+$footer-text: #000;
 $footer-link: #000;
 $footer-hover: #fff;
 $footer-heading: #000;
