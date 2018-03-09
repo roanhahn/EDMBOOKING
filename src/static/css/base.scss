@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
 @import "variables.scss";
@@ -9,8 +9,10 @@
 @import "header.scss";
 @import "hero.scss";
 @import "forms.scss";
+@import "selectric.scss";
 @import "footer.scss";
 @import "events.scss";
+@import "offer.scss";
 @import "animate.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";

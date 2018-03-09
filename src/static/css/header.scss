@@ -1,44 +1,51 @@
 .header{
 	background: $header-bg;
 	color: $header-text;
-	padding: 30px 0;
+	height: $header-height;
 	position: relative;
 
+	
+
 	@media all and (max-width: $breakpoint-mobile){
-		padding: 20px 0;
+		height: $header-height-mobile;
+	}
+}
+
+.logo{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translate(0, -50%); 
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	line-height: 0;
+
+
+	& img{
+		display: block;
+		height: 30px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			height: 20px;
+		}
 	}
 }
 
 .mainnav{
-	padding: 0;
-	height: 30px;
-	line-height: 30px;
+	float: right;
+	height: $header-height;
+	display: table;
 
 	@media all and (max-width: $breakpoint-mobile){
-		height: 15px;
-	}
-
-	& .logo{
-		display: inline-block;
-		margin: 0;
-		line-height: 0;
-
-		& img{
-			display: block;
-			height: 30px;
-
-			@media all and (max-width: $breakpoint-mobile){
-				height: 15px;
-				line-height: 15px;
-			}
-		}
+		height: $header-height-mobile;
 	}
 
 	& .booking{
-		float: right;
 		font-size: 20px;
 		vertical-align: middle;
-		display: inline-block;
+		display: table-cell;
+
+		
 		
 
 		&-info{
@@ -49,10 +56,15 @@
 			cursor: pointer;
 
 			&:before{
-				content: "";
+				content: "\f0d7";
+				font-family: "FontAwesome";
 				display: inline-block;
-				vertical-align: middle;
-				height: 100%;
+				font-weight: normal;
+				margin-right: 8px;
+
+				@media all and (max-width: $breakpoint-mobile){
+					margin-right: 4px;
+				}
 			}
 
 			&:hover{
@@ -65,135 +77,236 @@
 			text-transform: uppercase;
 			font-weight: 700;
 			margin-right: 10px;
-			
 
-			&:before{
-				content: "\f0d7";
-				font-family: "FontAwesome";
-				display: inline-block;
-				font-weight: normal;
-				margin-right: 8px;
+			@media all and (max-width: $breakpoint-mobile){
+				display: none;
 			}
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			line-height: 20px;
-			font-size: 14px;
+			font-size: 16px;
 		}
 
 	}
 
 	& .hamburger{
-		border: none;
-		background: none;
-		margin: 0;
+
 		padding: 0;
-		display: inline-block;
-		height: 40px;
-		width: 40px;
-		overflow: hidden;
-		vertical-align: middle;
-		margin-left: 20px;
-		position: relative;
-		line-height: 0px;
-		cursor: pointer;
-		font-size: 40px;
-		text-align: center;
-		// background: red;
+		background: none;
 		font-weight: normal;
 		-webkit-transition: color .2s ease-in-out 0s;
 		transition: color .2s ease-in-out 0s;
+		margin-left: 20px;
+		cursor: pointer;
 
 		&:hover{
 			color: $header-hover;
 		}
 
+		@media all and (max-width: $breakpoint-mobile){
+			margin-left: 10px;
+		}
 
-		// & img{
-			// 	height: 30px;
-			// 	width: auto;
-			// }
+		& img{
+			height: 30px;
+			width: auto;
 
 			@media all and (max-width: $breakpoint-mobile){
-				font-size: 20px;
 				height: 20px;
-				width: 20px;
-				margin-left: 10px;
+			}
+		}
+
+		
+	}
+}
+
+.subnav{
+	position: absolute;
+	overflow-y: auto;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	top: $header-height;
+	// width: 25%;
+	width: 400px;
+	z-index: 100;
+	background: rgba(0,0,0,.95);
+	color: #fff;
+	padding: 60px 30px;
+
+	-webkit-transition: transform .3s ease-in-out 0s;
+	transition: transform .3s ease-in-out 0s;
+
+	-ms-transform: translate(+100%, 0); /* IE 9 */
+	-webkit-transform: translate(+100%, 0); /* Safari */
+	transform: translate(+100%, 0);
+
+	@media all and (max-width: $breakpoint-tablet){
+		width: 50%;
+	}
+	@media all and (max-width: $breakpoint-mobile){
+		top: $header-height-mobile;
+		width: 100%;
+	}
+
+	&-active{
+		-ms-transform: translate(0%, 0); /* IE 9 */
+		-webkit-transform: translate(0%, 0); /* Safari */
+		transform: translate(0%, 0);
+	}
+
+	& .subnav-list{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		& li{
+			font-family: $font-header;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid $border-color;
+			padding-bottom: 10px;
+
+			& ul{
+				margin: 10px 0 10px 0px;
+				padding: 0;
+				list-style-type: none;
+
+				& li{
+					font-family: $font;
+					font-weight: 400;
+					font-size: 20px;
+					text-transform: none;
+					margin-bottom: 5px;
+					padding: 0;
+					border: none;
+				}
+			}
+
+			& a{
+				color: #fff;
+				display: block;
+
+				&:hover{
+					color: $edm-color;
+				}
 			}
 		}
 	}
 
-	.subnav{
-		position: absolute;
-		overflow-y: auto;
-		right: 0px;
-		bottom: 0px;
-		height: 100%;
-		top: 90px;
-		// width: 25%;
-		width: 400px;
-		z-index: 100;
-		background: rgba(0,0,0,.95);
-		color: #fff;
-		padding: 60px 30px;
+	& .social{
+		display: inline-block;
+		padding: 0;
+		
 
-		-webkit-transition: transform .3s ease-in-out 0s;
-		transition: transform .3s ease-in-out 0s;
+		& a{
+			background-color: $footer-bg;
+			color: #000;
 
-		-ms-transform: translate(+100%, 0); /* IE 9 */
-		-webkit-transform: translate(+100%, 0); /* Safari */
-		transform: translate(+100%, 0);
-
-		@media all and (max-width: $breakpoint-tablet){
-			width: 50%;
+			&:hover{
+				color: $footer-hover;
+			}
 		}
+
+	}
+}
+
+.yourbooking{
+
+	display: none;
+
+	background: $bg-color;
+	position: absolute;
+	top: $header-height;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 13px;
+		top: $header-height-mobile;
+	}
+
+	& .container{
+		padding-top: 60px;
+		padding-bottom: 60px;
+
 		@media all and (max-width: $breakpoint-mobile){
-			top: 55px;
-			width: 320px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	& h3, & .total{
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 24px;
+		padding: 10px 0 0;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 18px;
+		}
+	}
+
+	& table{
+		width: 100%;
+		margin-top: 20px;
+
+		& tr.bookingrow{
+			& td{
+				& hr{
+					height: 1px;
+					background: $border-color;
+					line-height: 0;
+					margin: 0;
+				}
+			}
 		}
 
-		&-active{
-			-ms-transform: translate(0%, 0); /* IE 9 */
-			-webkit-transform: translate(0%, 0); /* Safari */
-			transform: translate(0%, 0);
+		& td{
+			padding: 5px 0;
+			vertical-align: top;
+		}
+
+		& td.description{
+			padding-right: 30px;
+			font-weight: 700;
+
+			@media all and (max-width: $breakpoint-mobile){
+				padding-right: 15px;
+			}
+		}
+
+		& td.content{
+			
+		}
+
+		& td.amount{
+			white-space: nowrap;
+			text-align: right;
+		}
+
+		& td.remove{
+			padding-left: 30px;
+			text-align: right;
+
+			@media all and (max-width: $breakpoint-mobile){
+				// font-size: 16px;
+				padding-left: 15px;
+			}
 		}
 
 		& ul{
+			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			list-style-type: none;
 
 			& li{
-				font-family: $font-header;
-				font-weight: 700;
-				text-transform: uppercase;
-				font-size: 24px;
-				margin-bottom: 10px;
-				border-bottom: 1px solid rgba(255,255,255,.1);
-				padding-bottom: 10px;
-
-				& ul{
-					margin: 10px 0 10px 0px;
-
-					& li{
-						font-family: $font;
-						font-weight: 400;
-						font-size: 20px;
-						text-transform: none;
-						margin-bottom: 5px;
-						padding: 0;
-						border: none;
-					}
-				}
-
-				& a{
-					color: #fff;
-					display: block;
-
-					&:hover{
-						color: $edm-color;
-					}
-				}
+				margin-bottom: 5px;
 			}
 		}
 	}
+	z-index: 10;
+}

@@ -14,6 +14,20 @@ $('.toggle-subnav').click(function(){
 	 // $('body, .html').attr('scroll','no');
  });
 
+// SHOW YOUR BOOKING
+
+$('.toggle-yourbooking').click(function(){
+	 $('.yourbooking').slideToggle(300);
+	 $('.body, .html').toggleClass("scroll-lock");
+	 // $('body, .html').attr('scroll','no');
+ });
+
+// CUSTOM SELECT
+
+$(function() {
+	$('select').selectric();
+});
+
 // OWL
 
 $(document).ready(function() {

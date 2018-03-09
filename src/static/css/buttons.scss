@@ -1,3 +1,9 @@
+
+button{
+	-webkit-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+	cursor: pointer;
+}
 .button{
 	display: inline-block;
 	font-family: $font-button;
@@ -7,20 +13,49 @@
 	white-space: nowrap;
 	font-size: $button-size;
 	outline: 0;
+	cursor: pointer;
+	text-align: center;
 	outline: none !important;
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 
-
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-transition: all .2s ease-in-out 0s;
 	transition: all .2s ease-in-out 0s;
 
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 13px;
+	}
+
+	&-primary{
+		background: $button-bg;
+		color: $button-color;
+		padding: 15px 25px;
+		white-space: nowrap;
+		line-height: 1;
+		text-transform: uppercase;
+		font-size: 18px;
+		min-width: 150px;
+		border: none;
+
+		&:hover{
+			background: $button-bg-hover;
+			color: $button-color-hover;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			display: block;
+			// width: 100%;
+			// float: none !important;
+		}
+
+	}
 
 	&-secondary{
 		border-radius: 50px;
 		background: rgba(0,0,0,.5);
 		color: #fff;
-
 		border: 1px solid #fff;
 		padding: 10px 20px;
 		text-transform: uppercase;
@@ -41,6 +76,18 @@
 	&:visited, &:active{
 		text-decoration: none;
 	}
+
+	&--back{
+		&:before{
+			content: "\f104";
+			font-family: "FontAwesome";
+			margin-right: 5px;
+		}
+		&:after{
+			display: none;
+		}
+		
+	}
 }
 
 button{
@@ -60,4 +107,27 @@ button:focus{
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 	border: none !important;
+}
+
+.remove{
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: $link-color;
+	padding: 0;
+	line-height: 1.2;
+
+	&:hover{
+		color: #fff;
+	}
+
+	& span{
+		display: inline-block;
+		margin-left: 5px;
+		@media all and (max-width: $breakpoint-mobile){
+			display: none;
+		}
+	}
+
+	
 }

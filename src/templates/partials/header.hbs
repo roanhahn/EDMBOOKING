@@ -1,20 +1,22 @@
 <header class="header">
 	<div class="container">
+		<a href="homepage.html" class="logo"><img src="assets/img/logo.svg" alt=""></a>
 		<nav class="mainnav">
-			<a href="#" class="logo"><img src="assets/img/logo-edmbassy.svg" alt=""></a>
 			<div class="booking">
-				<div class="booking-info">
+				<div class="booking-info toggle-yourbooking">
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro; 299,00</span>
 				</div>
-				<button class="hamburger toggle-subnav"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				<button class="hamburger toggle-subnav"><img src="assets/img/burger.svg" alt=""></button>
 			</div>
+			
 		</nav>
 	</div>
 </header>
 
 <nav class="subnav" id="subnav">
-	<ul>
+	<ul class="subnav-list">
+		<li><a href="homepage.html">Festivals</a></li>
 		<li>
 			Accomodations
 			<ul>
@@ -27,4 +29,14 @@
 		<li><a href="#">Why book</a></li>
 		<li><a href="#">Login</a></li>
 	</ul>
+
+	<ul class="social">
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	</ul>
 </nav>
+
+{{> yourbooking }}
