@@ -34,7 +34,7 @@
 		<a href="homepage.html" class="logo"><img src="assets/img/logo.svg" alt=""></a>
 		<nav class="mainnav">
 			<div class="booking">
-				<div class="booking-info">
+				<div class="booking-info toggle-yourbooking">
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro; 299,00</span>
 				</div>
@@ -46,7 +46,8 @@
 </header>
 
 <nav class="subnav" id="subnav">
-	<ul>
+	<ul class="subnav-list">
+		<li><a href="homepage.html">Festivals</a></li>
 		<li>
 			Accomodations
 			<ul>
@@ -59,7 +60,108 @@
 		<li><a href="#">Why book</a></li>
 		<li><a href="#">Login</a></li>
 	</ul>
+
+	<ul class="social">
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	</ul>
 </nav>
+
+<div class="yourbooking">
+	<div class="container">
+		<h3>Your booking</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td class="description">Ticket</td>
+					<td class="content">2x Premium ticket</td>
+					<td class="amount">&euro; 150,00</td>
+					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+				</tr>
+				<tr class="bookingrow">
+					<td colspan="4">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="description">Hotel</td>
+					<td class="content">Ibis Amsterdam Hotel</td>
+					<td class="amount"></td>
+					<td class="remove"></td>
+				</tr>
+				<tr>
+					<td class="description">Arrival date</td>
+					<td class="content">22 december 2018</td>
+					<td class="amount"></td>
+					<td class="remove"></td>
+				</tr>
+				<tr>
+					<td class="description">Departure date</td>
+					<td class="content">25 december 2018</td>
+					<td class="amount"></td>
+					<td class="remove"></td>
+				</tr>
+				<tr>
+					<td class="description">Room 1</td>
+					<td class="content">Presidential Suite, 3 persons, 3 nights</td>
+					<td class="amount">&euro; 2.250,00</td>
+					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+				</tr>
+				<tr>
+					<td class="description">Room 2</td>
+					<td class="content">Standard Double, 2 persons, 3 nights</td>
+					<td class="amount">&euro; 2.250,00</td>
+					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+				</tr>
+				<tr class="bookingrow">
+					<td colspan="4">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="description">Extra</td>
+					<td class="content">
+						<ul>
+							<li>Safari tour</li>
+							<li>Limousine Transfer</li>
+						</ul>
+					</td>
+					<td class="amount">
+						<ul>
+							<li>&euro; 150,00</li>
+							<li>&euro; 150,00</li>
+						</ul>
+					</td>
+					<td class="remove">
+						<ul>
+							<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+							<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+						</ul>
+						
+					</td>
+				</tr>
+				<tr class="bookingrow">
+					<td colspan="4">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="total" colspan="2">Total price</td>
+					<td class="total text-right" colspan="2">
+						&euro;&nbsp;3.456,00
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+	</div>
+</div>
 	
 
 
@@ -137,6 +239,7 @@
 
 
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
+	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	
 	<!-- Plugins -->
