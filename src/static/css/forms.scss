@@ -71,6 +71,17 @@
 	}
 }
 
+.form-checkbox{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
 .textfield, select{
 	color: #000;
 	height: 43px;

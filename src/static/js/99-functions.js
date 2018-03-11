@@ -1,5 +1,9 @@
 
 
+// Lazyload
+
+$("img.lazyload").lazyload();
+
 // var bodyheight = $('.sitewrapper').outerHeight() - $('.header').outerHeight();
 
 // $('.subnav').css("height", bodyheight);

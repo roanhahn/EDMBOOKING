@@ -37,8 +37,28 @@ h1, h2, h3, h4 {
 
 a, a:hover, a:visited, a:active {
   text-decoration: none;
-  -webkit-transition: color .2s ease-in-out 0s;
-  transition: color .2s ease-in-out 0s; }
+  -webkit-transition: color .15s ease-out 0s;
+  transition: color .15s ease-out 0s; }
+
+.text-link {
+  text-decoration: underline;
+  color: #fff; }
+  .text-link:hover {
+    color: #419bf7;
+    text-decoration: underline; }
+
+.h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #419bf7;
+  margin-bottom: 20px;
+  font-size: 24px; }
+
+.h4 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
 
 .testimonials-h4 {
   text-transform: uppercase;
@@ -92,7 +112,7 @@ a, a:hover, a:visited, a:active {
   padding: 70px 0; }
   @media all and (max-width: 767px) {
     .section {
-      padding: 30px 0; } }
+      padding: 50px 0; } }
 
 .scroll-lock {
   overflow: hidden; }
@@ -111,6 +131,69 @@ a, a:hover, a:visited, a:active {
 
 .m-t-50 {
   margin-top: 50px; }
+
+.summary {
+  font-size: 15px; }
+
+.personal-summary {
+  width: 100%;
+  margin-bottom: 30px; }
+  .personal-summary td {
+    padding: 5px 15px 0 0;
+    width: 50%; }
+    .personal-summary td.prefix {
+      font-weight: 700;
+      white-space: nowrap;
+      width: 120px; }
+
+.payment-method {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 0;
+  vertical-align: middle;
+  line-height: 32px;
+  cursor: pointer;
+  margin: 0; }
+  .payment-method .method-img {
+    height: 32px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .payment-method .method-price {
+    float: right; }
+
+.event-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch; }
+
+.event-info-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  flex-basis: 33%;
+  position: relative;
+  align-self: auto; }
+  .event-info-item:after {
+    content: "";
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    width: calc(100% - 30px);
+    position: absolute;
+    bottom: 0;
+    left: 15px; }
+  @media all and (max-width: 992px) {
+    .event-info-item {
+      flex-basis: 50%; } }
+  @media all and (max-width: 767px) {
+    .event-info-item {
+      flex-basis: 100%; } }
+  .event-info-item .content {
+    padding: 20px 0 10px; }
+    .event-info-item .content p {
+      line-height: 1.6; }
 
 button {
   -webkit-transition: all .2s ease-in-out 0s;
@@ -133,8 +216,13 @@ button {
   -webkit-box-shadow: none !important;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -webkit-transition: all .2s ease-in-out 0s;
-  transition: all .2s ease-in-out 0s; }
+  -webkit-transition: all .15s ease-out 0s;
+  transition: all .15s ease-out 0s; }
+  .button--next:after {
+    content: "\f105";
+    display: inline-block;
+    font-family: "FontAwesome";
+    margin-left: 10px; }
   @media all and (max-width: 767px) {
     .button {
       font-size: 13px; } }
@@ -151,9 +239,18 @@ button {
     .button-primary:hover {
       background: #fff;
       color: #000; }
+    .button-primary img {
+      display: inline;
+      vertical-align: top;
+      height: 16px;
+      width: auto;
+      margin-right: 10px; }
+    .button-primary i {
+      font-weight: normal;
+      margin-right: 10px; }
     @media all and (max-width: 767px) {
       .button-primary {
-        display: block; } }
+        font-size: 13px; } }
   .button-secondary {
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.5);
@@ -164,7 +261,8 @@ button {
     .button-secondary:after {
       content: "\f105";
       font-family: "FontAwesome";
-      margin-left: 5px; }
+      margin-left: 5px;
+      display: inline-block; }
     .button-secondary:hover {
       color: #000;
       text-decoration: none;
@@ -385,46 +483,56 @@ button:focus {
       .yourbooking .container {
         padding-top: 30px;
         padding-bottom: 30px; } }
-  .yourbooking h3, .yourbooking .total {
+  .yourbooking h3 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
+    margin-bottom: 20px;
     padding: 10px 0 0; }
     @media all and (max-width: 767px) {
-      .yourbooking h3, .yourbooking .total {
+      .yourbooking h3 {
         font-size: 18px; } }
-  .yourbooking table {
-    width: 100%;
-    margin-top: 20px; }
-    .yourbooking table tr.bookingrow td hr {
-      height: 1px;
-      background: rgba(255, 255, 255, 0.3);
-      line-height: 0;
-      margin: 0; }
-    .yourbooking table td {
-      padding: 5px 0;
-      vertical-align: top; }
-    .yourbooking table td.description {
-      padding-right: 30px;
-      font-weight: 700; }
-      @media all and (max-width: 767px) {
-        .yourbooking table td.description {
-          padding-right: 15px; } }
-    .yourbooking table td.amount {
-      white-space: nowrap;
-      text-align: right; }
-    .yourbooking table td.remove {
-      padding-left: 30px;
-      text-align: right; }
-      @media all and (max-width: 767px) {
-        .yourbooking table td.remove {
-          padding-left: 15px; } }
-    .yourbooking table ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0; }
-      .yourbooking table ul li {
-        margin-bottom: 5px; }
+  .yourbooking .total {
+    font-size: 24px !important; }
+    @media all and (max-width: 767px) {
+      .yourbooking .total {
+        font-size: 18px; } }
+
+.yourbooking-summary {
+  width: 100%; }
+  .yourbooking-summary tr.bookingrow td hr {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    line-height: 0;
+    margin: 5px 0; }
+  .yourbooking-summary td {
+    padding: 5px 0;
+    vertical-align: top; }
+  .yourbooking-summary td.description {
+    padding-right: 30px;
+    font-weight: 700; }
+    @media all and (max-width: 767px) {
+      .yourbooking-summary td.description {
+        padding-right: 15px; } }
+  .yourbooking-summary td.amount {
+    white-space: nowrap;
+    text-align: right; }
+  .yourbooking-summary td.remove {
+    padding-left: 30px;
+    text-align: right; }
+    @media all and (max-width: 767px) {
+      .yourbooking-summary td.remove {
+        padding-left: 15px; } }
+  .yourbooking-summary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .yourbooking-summary ul li {
+      margin-bottom: 5px; }
+  .yourbooking-summary .total {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px; }
 
 .hero {
   min-height: 300px;
@@ -442,12 +550,6 @@ button:focus {
   @media all and (max-width: 992px) {
     .hero-event {
       height: calc(50% - 60px); } }
-  .hero--red {
-    background-color: #ff3700; }
-  .hero--white {
-    background-color: #ececec; }
-  .hero--blue {
-    background-color: #009bff; }
   .hero:before {
     content: "";
     position: absolute;
@@ -456,6 +558,21 @@ button:focus {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); }
+  .hero--red {
+    background-color: #ff3700; }
+  .hero--white {
+    background-color: #ececec; }
+  .hero--blue {
+    background-color: #009bff; }
+  .hero--gradient:before {
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
   .hero .inner {
     position: absolute;
     width: 100%;
@@ -558,6 +675,16 @@ button:focus {
   white-space: nowrap; }
 .form-select {
   min-width: 200px; }
+
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+  cursor: pointer; }
 
 .textfield, select {
   color: #000;
@@ -963,14 +1090,16 @@ footer {
     padding-right: 15px;
     -ms-transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%); }
+    transform: translate(0, -50%);
+    text-transform: uppercase;
+    font-size: 14px; }
     @media all and (max-width: 767px) {
       .accordeon-buttons {
         font-size: 13px; } }
   .accordeon-down {
     display: inline-block;
+    padding: 15px 0 15px 15px;
     margin-left: 15px;
-    padding-left: 15px;
     border-left: 2px solid rgba(255, 255, 255, 0.3); }
   .accordeon a {
     color: #fff; }
@@ -993,14 +1122,14 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #419bf7;
-    margin: 10px 0 0 0;
+    margin: 0 0 5px;
     font-size: 32px; }
     @media all and (max-width: 992px) {
       .offer-title {
         font-size: 24px; } }
     @media all and (max-width: 767px) {
       .offer-title {
-        font-size: 20px; } }
+        font-size: 16px; } }
   .offer-subheader {
     color: #419bf7;
     font-size: 20px; }
@@ -1009,7 +1138,12 @@ footer {
         font-size: 18px; } }
     @media all and (max-width: 767px) {
       .offer-subheader {
-        font-size: 16px; } }
+        font-size: 13px;
+        color: #fff;
+        margin-bottom: 10px; } }
+  @media all and (max-width: 767px) {
+    .offer-content {
+      padding-left: 0px; } }
   .offer-list {
     columns: 2;
     -webkit-columns: 2;
@@ -1047,12 +1181,26 @@ footer {
     color: #419bf7;
     display: block;
     font-weight: 700;
-    margin: 10px 0 2px 0;
+    margin: 0 0 7px 0;
     white-space: nowrap;
     font-size: 32px; }
+    @media all and (max-width: 992px) {
+      .offer-price {
+        display: inline-block; } }
+    @media all and (max-width: 767px) {
+      .offer-price {
+        font-size: 20px; } }
   .offer-price-condition {
     display: block;
     margin-bottom: 25px;
     white-space: nowrap; }
+    @media all and (max-width: 992px) {
+      .offer-price-condition {
+        display: inline-block;
+        margin-left: 5px; } }
+    @media all and (max-width: 767px) {
+      .offer-price-condition {
+        font-size: 13px;
+        margin-bottom: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

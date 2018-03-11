@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BuyNowbutton" transform="translate(-14.000000, -13.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(14.000000, 13.000000)">
+                <path d="M9.48,10.2344 C9.48,9.4054 8.809,8.7344 7.98,8.7344 C7.152,8.7344 6.48,9.4054 6.48,10.2344 C6.48,10.7834 6.79,11.2434 7.23,11.5044 L7.23,14.7344 L8.73,14.7344 L8.73,11.5044 C9.17,11.2434 9.48,10.7834 9.48,10.2344 Z M0.48,16.7344 L15.48,16.7344 L15.48,6.7344 L0.48,6.7344 L0.48,16.7344 Z M4.48,5.7344 L2.48,5.7344 C2.48,2.7014 4.947,0.2344 7.98,0.2344 C11.012,0.2344 13.48,2.7014 13.48,5.7344 L11.48,5.7344 C11.48,3.8044 9.909,2.2344 7.98,2.2344 C6.05,2.2344 4.48,3.8044 4.48,5.7344 Z" id="Fill-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

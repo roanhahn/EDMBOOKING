@@ -39,8 +39,31 @@ h1,h2,h3,h4{
 
 a, a:hover, a:visited, a:active{
 	text-decoration: none;
-	-webkit-transition: color .2s ease-in-out 0s;
-	transition: color .2s ease-in-out 0s;
+	-webkit-transition: color .15s ease-out 0s;
+	transition: color .15s ease-out 0s;
+}
+.text-link{
+	text-decoration: underline;
+	color: $text-color;
+
+	&:hover{
+		color: $link-color;
+		text-decoration: underline;
+	}
+}
+.h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $edm-color;
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.h4{
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .testimonials-h4{

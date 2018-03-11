@@ -33,6 +33,8 @@
 		-ms-transform: translate(0, -50%); 
 		-webkit-transform: translate(0, -50%);
 		transform: translate(0, -50%);
+		text-transform: uppercase;
+		font-size: 14px;
 
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 13px;
@@ -42,8 +44,8 @@
 	&-down{
 		
 		display: inline-block;
+		padding: 15px 0 15px 15px;
 		margin-left: 15px;
-		padding-left: 15px;
 		border-left: 2px solid $border-color;
 	}
 
@@ -78,7 +80,7 @@
 		font-weight: 700;
 		color: $link-color;
 
-		margin: 10px 0 0 0;
+		margin: 0 0 5px;
 		font-size: 32px;
 
 		@media all and (max-width: $breakpoint-tablet){
@@ -86,7 +88,7 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 20px;
+			font-size: 16px;
 		}
 	}
 
@@ -98,7 +100,15 @@
 			font-size: 18px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 16px;
+			font-size: 13px;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+	}
+
+	&-content{
+		@media all and (max-width: $breakpoint-mobile){
+			padding-left: 0px;
 		}
 	}
 
@@ -151,9 +161,16 @@
 		color: $link-color;
 		display: block;
 		font-weight: 700;
-		margin: 10px 0 2px 0;
+		margin: 0 0 7px 0;
 		white-space: nowrap;
 		font-size: 32px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			display: inline-block;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 20px;
+		}
 	}
 
 	&-price-condition{
@@ -161,5 +178,15 @@
 		display: block;
 		margin-bottom: 25px;
 		white-space: nowrap;
+		@media all and (max-width: $breakpoint-tablet){
+			display: inline-block;
+			margin-left: 5px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 13px;
+			
+			
+			margin-bottom: 20px;
+		}
 	}
 }

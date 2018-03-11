@@ -21,8 +21,15 @@ button{
 
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	-webkit-transition: all .2s ease-in-out 0s;
-	transition: all .2s ease-in-out 0s;
+	-webkit-transition: all .15s ease-out 0s;
+	transition: all .15s ease-out 0s;
+
+	&--next:after{
+		content: "\f105";
+		display: inline-block;
+		font-family: "FontAwesome";
+		margin-left: 10px;
+	}
 
 	@media all and (max-width: $breakpoint-mobile){
 		font-size: 13px;
@@ -44,8 +51,22 @@ button{
 			color: $button-color-hover;
 		}
 
+		& img{
+			display: inline;
+			vertical-align: top;
+			height: 16px;
+			width: auto;
+			margin-right: 10px;
+		}
+
+		& i{
+			font-weight: normal;
+			margin-right: 10px;
+		}
+
 		@media all and (max-width: $breakpoint-mobile){
-			display: block;
+			// display: block;
+			font-size: 13px;
 			// width: 100%;
 			// float: none !important;
 		}
@@ -64,6 +85,7 @@ button{
 			content: "\f105";
 			font-family: "FontAwesome";
 			margin-left: 5px;
+			display: inline-block;
 		}
 
 		&:hover{

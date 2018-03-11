@@ -2,7 +2,7 @@
 	padding: 70px 0;
 
 	@media all and (max-width: $breakpoint-mobile){
-		padding: 30px 0;
+		padding: 50px 0;
 	}
 }
 
@@ -25,4 +25,94 @@
 }
 .m-t-50{
 	margin-top: 50px;
+}
+
+.summary{
+	font-size: 15px;
+}
+
+.personal-summary{
+	width: 100%;
+	margin-bottom: 30px;
+
+	& td{
+		padding: 5px 15px 0 0;
+		width: 50%;
+
+		&.prefix{
+			font-weight: 700;
+			white-space: nowrap;
+			width: 120px;
+		}
+	}
+}
+
+.payment-method{
+	display: block;
+	border-bottom: 1px solid $border-color;
+	padding: 10px 0;
+	vertical-align: middle;
+	// background-color: red;
+	line-height: 32px;
+	cursor: pointer;
+	margin: 0;
+
+	& .method-img{
+		height: 32px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	& .method-price{
+		float: right;
+
+	}
+}
+
+.event-info-wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.event-info-item{
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 0 15px;
+	margin-bottom: 30px;
+	flex-basis: 33%;
+	position: relative;
+
+	&:after{
+		content: "";
+		border-bottom: 2px solid $border-color;
+		display: block;
+		width: calc(100% - 30px);
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+	}
+	
+	@media all and (max-width: $breakpoint-tablet){
+		flex-basis: 50%;
+	}
+
+	@media all and (max-width: $breakpoint-mobile){
+		flex-basis: 100%;
+	}
+
+	align-self: auto;
+
+	& .content{
+		padding: 20px 0 10px;
+		// background: yellow;
+		// height: 100%;
+		
+
+		& p{
+			line-height: 1.6;
+		}
+	}
 }
