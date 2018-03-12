@@ -150,15 +150,64 @@
 		height: 300px;
 		margin-bottom: 15px;
 	}
+
+	@media all and (max-width: $breakpoint-tablet){
+		margin-top: 20px;
+	}
 }
 
 .rating{
 	display: inline-block;
 	margin-top: 5px;
 	border-right: 1px solid $link-color;
-	margin-right: 10px;
+	margin-right: 7px;
 
 	& i:last-child{
 		margin-right: 10px;
 	}
+}
+
+.detail-price{
+	color: $link-color;
+	font-size:32px;
+	margin: 0 0 5px;
+
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 24px;
+	}
+	@media all and (max-width: $breakpoint-mobile){
+		// font-size: 18px;
+		text-align: right;
+	}
+}
+
+.detail-price-conditions{
+	color: $link-color;
+	font-size: 16px;
+	margin-bottom: 20px;
+
+	@media all and (max-width: $breakpoint-tablet){
+		text-align: right;
+	}
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 12px;
+	}
+}
+
+.tickets{
+	
+	& ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		font-size: 14px;
+
+		& li{
+			margin-bottom: 5px;
+		}
+	}
+	@media all and (max-width: $breakpoint-mobile){
+		margin-bottom: 30px;
+	}
+
 }

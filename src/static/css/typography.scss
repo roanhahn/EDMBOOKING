@@ -37,12 +37,19 @@ h1,h2,h3,h4{
 	font-family: $font-header;
 }
 
+a{
+	color: $link-color;
+
+	&:hover{
+		color: $link-color;
+	}
+}
 a, a:hover, a:visited, a:active{
 	text-decoration: none;
 	-webkit-transition: color .15s ease-out 0s;
 	transition: color .15s ease-out 0s;
 }
-.text-link{
+.text-link, .page a{
 	text-decoration: underline;
 	color: $text-color;
 
@@ -56,14 +63,39 @@ a, a:hover, a:visited, a:active{
 	font-weight: 700;
 	color: $link-color;
 	font-size: 32px;
-	margin: 0;
+	margin: 0 0 5px;
 
-	@media all and (max-width: $breakpoint-tablet){
-		font-size: 32px;
-	}
 	@media all and (max-width: $breakpoint-tablet){
 		font-size: 24px;
 	}
+}
+.page{
+
+	& h4{
+		font-weight: 700;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		color: $link-color;
+	}
+
+	& ul{
+		margin: 20px 0 20px 18px;
+		padding: 0;
+
+		& li{
+			margin-bottom: 5px;
+		}
+	}
+}
+.page-h1{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: $font-header;
+	margin: 0 0 30px;
+	padding: 0 0 30px;
+	// line-height: 1;
+	border-bottom: 2px solid $border-color;
 }
 .h2{
 	color: $link-color;
@@ -73,7 +105,7 @@ a, a:hover, a:visited, a:active{
 	@media all and (max-width: $breakpoint-tablet){
 		font-size: 24px;
 	}
-	@media all and (max-width: $breakpoint-tablet){
+	@media all and (max-width: $breakpoint-mobile){
 		font-size: 16px;
 	}
 }

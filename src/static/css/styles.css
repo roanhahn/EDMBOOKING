@@ -35,15 +35,20 @@ body {
 h1, h2, h3, h4 {
   font-family: "Prompt", sans-serif; }
 
+a {
+  color: #419bf7; }
+  a:hover {
+    color: #419bf7; }
+
 a, a:hover, a:visited, a:active {
   text-decoration: none;
   -webkit-transition: color .15s ease-out 0s;
   transition: color .15s ease-out 0s; }
 
-.text-link {
+.text-link, .page a {
   text-decoration: underline;
   color: #fff; }
-  .text-link:hover {
+  .text-link:hover, .page a:hover {
     color: #419bf7;
     text-decoration: underline; }
 
@@ -51,13 +56,30 @@ a, a:hover, a:visited, a:active {
   font-weight: 700;
   color: #419bf7;
   font-size: 32px;
-  margin: 0; }
-  @media all and (max-width: 992px) {
-    .h1 {
-      font-size: 32px; } }
+  margin: 0 0 5px; }
   @media all and (max-width: 992px) {
     .h1 {
       font-size: 24px; } }
+
+.page h4 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #419bf7; }
+.page ul {
+  margin: 20px 0 20px 18px;
+  padding: 0; }
+  .page ul li {
+    margin-bottom: 5px; }
+
+.page-h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
 
 .h2 {
   color: #419bf7;
@@ -66,7 +88,7 @@ a, a:hover, a:visited, a:active {
   @media all and (max-width: 992px) {
     .h2 {
       font-size: 24px; } }
-  @media all and (max-width: 992px) {
+  @media all and (max-width: 767px) {
     .h2 {
       font-size: 16px; } }
 
@@ -141,6 +163,9 @@ a, a:hover, a:visited, a:active {
 
 .ratio-4-3 {
   padding-bottom: 75%; }
+
+.gallery {
+  margin-bottom: 30px; }
 
 .section {
   padding: 70px 0; }
@@ -260,14 +285,50 @@ a, a:hover, a:visited, a:active {
     width: 100%;
     height: 300px;
     margin-bottom: 15px; }
+  @media all and (max-width: 992px) {
+    .googleMaps {
+      margin-top: 20px; } }
 
 .rating {
   display: inline-block;
   margin-top: 5px;
   border-right: 1px solid #419bf7;
-  margin-right: 10px; }
+  margin-right: 7px; }
   .rating i:last-child {
     margin-right: 10px; }
+
+.detail-price {
+  color: #419bf7;
+  font-size: 32px;
+  margin: 0 0 5px; }
+  @media all and (max-width: 992px) {
+    .detail-price {
+      font-size: 24px; } }
+  @media all and (max-width: 767px) {
+    .detail-price {
+      text-align: right; } }
+
+.detail-price-conditions {
+  color: #419bf7;
+  font-size: 16px;
+  margin-bottom: 20px; }
+  @media all and (max-width: 992px) {
+    .detail-price-conditions {
+      text-align: right; } }
+  @media all and (max-width: 767px) {
+    .detail-price-conditions {
+      font-size: 12px; } }
+
+.tickets ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+  .tickets ul li {
+    margin-bottom: 5px; }
+@media all and (max-width: 767px) {
+  .tickets {
+    margin-bottom: 30px; } }
 
 button {
   -webkit-transition: all .2s ease-in-out 0s;
@@ -303,7 +364,7 @@ button {
   .button-primary {
     background: #419bf7;
     color: #fff;
-    padding: 15px 25px;
+    padding: 13px 25px;
     white-space: nowrap;
     line-height: 1;
     text-transform: uppercase;
@@ -625,9 +686,11 @@ button:focus {
   @media all and (max-width: 767px) {
     .hero {
       height: calc(100% - 60px); } }
-  @media all and (max-width: 992px) {
-    .hero-event {
-      height: calc(50% - 60px); } }
+  .hero-event {
+    height: calc(50% - 90px); }
+    @media all and (max-width: 992px) {
+      .hero-event {
+        height: calc(50% - 60px); } }
   .hero:before {
     content: "";
     position: absolute;
@@ -754,6 +817,13 @@ button:focus {
 .form-select {
   min-width: 200px; }
 
+.form-check-input {
+  margin: 0; }
+
+.form-check-label {
+  padding: 0 0 0 23px;
+  cursor: pointer; }
+
 .form-checkbox {
   width: 20px;
   height: 20px;
@@ -777,6 +847,16 @@ button:focus {
     -moz-box-shadow: 0px 0px 10px 0px #419bf7;
     box-shadow: 0px 0px 10px 0px #419bf7; }
 
+.form-tickets-submit {
+  margin-top: 27px;
+  width: 100%; }
+  @media all and (max-width: 767px) {
+    .form-tickets-submit {
+      margin-top: 0; } }
+
+@media all and (max-width: 992px) {
+  .form-tickets {
+    margin-bottom: 20px; } }
 /*======================================
   Selectric v1.13.0
 ======================================*/
@@ -1269,6 +1349,7 @@ footer {
       .offer-price {
         font-size: 20px; } }
   .offer-price-condition {
+    color: #419bf7;
     display: block;
     margin-bottom: 25px;
     white-space: nowrap; }
