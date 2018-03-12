@@ -18,59 +18,59 @@ layout: default.hbs
 	</div>
 </div> --}}
 
-<section>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step1-camping.html">
-				<span class="accordeon-step">1. campsite</span>
-				<div class="accordeon-buttons">
-					Choose campsite<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="accordeon accordeon--active">
-		<div class="container">
-			<a href="step2-camping.html">
-				<span class="accordeon-step">2. Extra's</span>
-				<div class="accordeon-buttons">
-					<a href="step1-camping.html" class="button button-secondary button--back">Back</a>
-					<a href="step3-camping.html" class="button button-secondary">Next</a>
-				</div>
-				
-			</a>
-		</div>
-	</div>
-	<section class="section">
-		<div class="container">
-			{{> extra }}
-			{{> extra }}
 
-			<div class="row">
-				<div class="col">
-					<a href="step3-camping.html" class="button button-primary m-t-20 float-right">Next</a>
-				</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step1-camping.html">
+			<span class="accordeon-step">1. campsite</span>
+			<div class="accordeon-buttons">
+				Choose campsite<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
-		</div>
-	</section>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step3-camping.html">
-				<span class="accordeon-step">3. Personal info</span>
-				<div class="accordeon-buttons">
-					Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
-		</div>
+		</a>
 	</div>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step4-camping.html">
-				<span class="accordeon-step">4. Summary</span>
-				<div class="accordeon-buttons">
-					Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
+</div>
+<div class="accordeon accordeon--active">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">2. Extra's</span>
+			<div class="accordeon-buttons">
+				<a href="step1-camping.html" class="button button-secondary button--back">Back</a>
+				<a href="step3-camping.html" class="button button-secondary">Next</a>
+			</div>
+			
+		</a>
+	</div>
+</div>
+<section class="section">
+	<div class="container">
+		{{> extra }}
+		{{> extra }}
+
+		<div class="row">
+			<div class="col">
+				<a href="step3-camping.html" class="button button-primary m-t-20 float-right">Next</a>
+			</div>
 		</div>
 	</div>
 </section>
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">3. Personal info</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">4. Summary</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+

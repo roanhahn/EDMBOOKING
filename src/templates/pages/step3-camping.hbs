@@ -18,42 +18,149 @@ layout: default.hbs
 	</div>
 </div> --}}
 
-<section>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step1-camping.html">
-				<span class="accordeon-step">1. campsite</span>
-				<div class="accordeon-buttons">
-					Choose campsite<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
-		</div>
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step1-camping.html">
+			<span class="accordeon-step">1. campsite</span>
+			<div class="accordeon-buttons">
+				Choose campsite<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
 	</div>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step2-camping.html">
-				<span class="accordeon-step">2. Extra's</span>
-				<div class="accordeon-buttons">
-					Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
-		</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">2. Extra's</span>
+			<div class="accordeon-buttons">
+				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
 	</div>
-	<div class="accordeon accordeon--active">
-		<div class="container">
-			<a href="step3-camping.html">
-				<span class="accordeon-step">3. Personal info</span>
-				<div class="accordeon-buttons">
-					<a href="step2-camping.html" class="button button-secondary button--back">Back</a>
-					<a href="step4-camping.html" class="button button-secondary">Next</a>
-				</div>
-			</a>
-		</div>
+</div>
+<div class="accordeon accordeon--active">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">3. Personal info</span>
+			<div class="accordeon-buttons">
+				<a href="step2-camping.html" class="button button-secondary button--back">Back</a>
+				<a href="step4-camping.html" class="button button-secondary">Next</a>
+			</div>
+		</a>
 	</div>
-	<section class="section">
-		<div class="container">
-			<form>
-				<label for="" class="form-label">Main Booker</label>
+</div>
+<section class="section">
+	<div class="container">
+		<form>
+			<label for="" class="form-label">Main Booker</label>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="form-group">
+						<select class="form-control" id="">
+							<option>Mr.</option>
+							<option>Mrs.</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<input type="text" class="form-control textfield is-invalid" id="" placeholder="First name" required="required">
+						<div class="invalid-feedback" style="display: block;">Please provide a valid name</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-error">
+						<input type="text" class="form-control textfield is-valid" id="" placeholder="Last name" required="required">
+						<div class="valid-feedback" style="display: block;">Success! You've done it.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="form-label">Address</label>
+						<input type="text" class="form-control textfield" id="" placeholder="Fift Avenue" required="required">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="" class="form-label">Zipcode</label>
+						<input type="text" class="form-control textfield" id="" placeholder="e.g. 1234 AB" required="required">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="" class="form-label">City</label>
+						<input type="text" class="form-control textfield" id="" placeholder="New York" required="required">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="form-label">Phonenumber</label>
+						<input type="text" class="form-control textfield" id="" placeholder="06 56 34 56 78" required="required">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="form-label">E-mail</label>
+						<input type="email" class="form-control textfield" id="" placeholder="johndoe@gmail.com" required="required">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label for="" class="form-label">Date of birth</label>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<select class="form-control" id="">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<select class="form-control" id="">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<select class="form-control" id="">
+									<option>2010</option>
+									<option>2009</option>
+									<option>2008</option>
+									<option>2007</option>
+									<option>2006</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="form-label">Country</label>
+						<select class="form-control" id="" required="required">
+							<option>The Netherlands</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="m-t-40">
+				<label for="" class="form-label">Name guest 2</label>
 				<div class="row">
 					<div class="col-md-2">
 						<div class="form-group">
@@ -65,142 +172,35 @@ layout: default.hbs
 					</div>
 					<div class="col-md-4">
 						<div class="form-group">
-							<input type="text" class="form-control textfield is-invalid" id="" placeholder="First name" required="required">
-							<div class="invalid-feedback" style="display: block;">Please provide a valid name</div>
+							<input type="text" class="form-control textfield" id="" placeholder="First name">
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="form-group has-error">
-							<input type="text" class="form-control textfield is-valid" id="" placeholder="Last name" required="required">
-							<div class="valid-feedback" style="display: block;">Success! You've done it.</div>
+						<div class="form-group">
+							<input type="text" class="form-control textfield" id="" placeholder="Last name">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="" class="form-label">Address</label>
-							<input type="text" class="form-control textfield" id="" placeholder="Fift Avenue" required="required">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<label for="" class="form-label">Zipcode</label>
-							<input type="text" class="form-control textfield" id="" placeholder="e.g. 1234 AB" required="required">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<label for="" class="form-label">City</label>
-							<input type="text" class="form-control textfield" id="" placeholder="New York" required="required">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="" class="form-label">Phonenumber</label>
-							<input type="text" class="form-control textfield" id="" placeholder="06 56 34 56 78" required="required">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="" class="form-label">E-mail</label>
-							<input type="email" class="form-control textfield" id="" placeholder="johndoe@gmail.com" required="required">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<label for="" class="form-label">Date of birth</label>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="form-group">
-									<select class="form-control" id="">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<select class="form-control" id="">
-										<option>January</option>
-										<option>February</option>
-										<option>March</option>
-										<option>April</option>
-										<option>May</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<select class="form-control" id="">
-										<option>2010</option>
-										<option>2009</option>
-										<option>2008</option>
-										<option>2007</option>
-										<option>2006</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="" class="form-label">Country</label>
-							<select class="form-control" id="" required="required">
-								<option>The Netherlands</option>
-							</select>
-						</div>
-					</div>
-				</div>
+			</div>
 
-				<div class="m-t-40">
-					<label for="" class="form-label">Name guest 2</label>
-					<div class="row">
-						<div class="col-md-2">
-							<div class="form-group">
-								<select class="form-control" id="">
-									<option>Mr.</option>
-									<option>Mrs.</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<input type="text" class="form-control textfield" id="" placeholder="First name">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control textfield" id="" placeholder="Last name">
-							</div>
-						</div>
-					</div>
+			<div class="row">
+				<div class="col">
+					<input type="submit" class="button button-primary m-t-20 float-right" value="next">
 				</div>
+			</div>
+			
 
-				<div class="row">
-					<div class="col">
-						<input type="submit" class="button button-primary m-t-20 float-right" value="next">
-					</div>
-				</div>
-				
-
-			</form>
-		</div>
-	</section>
-	<div class="accordeon">
-		<div class="container">
-			<a href="step4-camping.html">
-				<span class="accordeon-step">4. Summary</span>
-				<div class="accordeon-buttons">
-					Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-				</div>
-			</a>
-		</div>
+		</form>
 	</div>
 </section>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">4. Summary</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+

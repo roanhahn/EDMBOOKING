@@ -49,5 +49,8 @@
     "site generator",
     "site builder",
     "grunt"
-  ]
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
 }

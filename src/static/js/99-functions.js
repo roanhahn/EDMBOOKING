@@ -26,6 +26,13 @@ $('.toggle-yourbooking').click(function(){
 	 // $('body, .html').attr('scroll','no');
  });
 
+
+// GO BACK
+function goBack() {
+    window.history.back();
+    return false;
+}
+
 // CUSTOM SELECT
 
 $(function() {
@@ -48,5 +55,33 @@ $(document).ready(function() {
 		dragEndSpeed: 1000
 		// animateOut: 'slideOutDown',
 		// animateIn: 'flipInX',
+	})
+
+	var owl = $('.owl-pictures');
+	owl.owlCarousel({
+		responsiveRefreshRate: 200, 
+		margin: 0,
+		nav: false,
+		dots: true,
+		animateOut: 'slideOutLeft',
+		animateIn: 'slideInRight',
+		autoplay:true,
+		autoplayTimeout:5000,
+		loop: true,
+		autoplayHoverPause:true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			},
+			1200: {
+				items: 3
+			}
+		}
 	})
 });

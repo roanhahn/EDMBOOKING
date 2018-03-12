@@ -3,7 +3,7 @@
 	color: $header-text;
 	height: $header-height;
 	position: relative;
-
+	z-index: 100;
 	
 
 	@media all and (max-width: $breakpoint-mobile){
@@ -129,10 +129,13 @@
 	top: $header-height;
 	// width: 25%;
 	width: 400px;
-	z-index: 100;
+	z-index: 99;
 	background: rgba(0,0,0,.95);
 	color: #fff;
 	padding: 60px 30px;
+	-webkit-box-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+	box-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
 
 	-webkit-transition: transform .3s ease-in-out 0s;
 	transition: transform .3s ease-in-out 0s;

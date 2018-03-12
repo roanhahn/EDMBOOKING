@@ -51,21 +51,58 @@ a, a:hover, a:visited, a:active{
 		text-decoration: underline;
 	}
 }
+.h1{
+	// text-transform: uppercase;
+	font-weight: 700;
+	color: $link-color;
+	font-size: 32px;
+	margin: 0;
+
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 32px;
+	}
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 24px;
+	}
+}
+.h2{
+	color: $link-color;
+	font-size: 20px;
+	margin-bottom: 20px;
+
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 24px;
+	}
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 16px;
+	}
+}
 .h3{
 	text-transform: uppercase;
 	font-weight: 700;
 	color: $edm-color;
 	margin-bottom: 20px;
 	font-size: 24px;
-}
 
+	&--textcolor{
+		color: $text-color;
+	}
+}
+.p{
+	line-height: 1.6;
+}
 .h4{
 	font-weight: 700;
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-
+.hr{
+	height: 1px;
+	background: $border-color;
+	line-height: 0;
+	margin: 30px 0;
+}
 .testimonials-h4{
 	text-transform: uppercase;
 	font-size: 16px;
