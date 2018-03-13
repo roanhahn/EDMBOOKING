@@ -90,14 +90,24 @@
 	}
 
 	& .hamburger{
-
 		padding: 0;
+		content: '';
+		width: 45px;
+		height: 36px;
+		vertical-align: middle;
 		background: none;
 		font-weight: normal;
 		-webkit-transition: color .2s ease-in-out 0s;
 		transition: color .2s ease-in-out 0s;
 		margin-left: 20px;
 		cursor: pointer;
+		background: transparent url(../img/menu.svg) no-repeat 0 0 scroll;
+		background-size: auto 36px;
+
+
+		&-close{
+			background-position: -45px 0;
+		}
 
 		&:hover{
 			color: $header-hover;

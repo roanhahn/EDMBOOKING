@@ -391,6 +391,7 @@ $("img.lazyload").lazyload();
 // SHOW HAMBURGER MENU
 
 $('.toggle-subnav').click(function(){
+	 $('.hamburger').toggleClass("hamburger-close");
 	 $('#subnav').toggleClass("subnav-active");
 	 $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');

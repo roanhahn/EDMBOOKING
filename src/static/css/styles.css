@@ -625,12 +625,20 @@ button:focus {
         font-size: 16px; } }
   .mainnav .hamburger {
     padding: 0;
+    content: '';
+    width: 45px;
+    height: 36px;
+    vertical-align: middle;
     background: none;
     font-weight: normal;
     -webkit-transition: color .2s ease-in-out 0s;
     transition: color .2s ease-in-out 0s;
     margin-left: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    background: transparent url(../img/menu.svg) no-repeat 0 0 scroll;
+    background-size: auto 36px; }
+    .mainnav .hamburger-close {
+      background-position: -45px 0; }
     .mainnav .hamburger:hover {
       color: #419bf7; }
     @media all and (max-width: 767px) {
@@ -799,7 +807,7 @@ button:focus {
   background-blend-mode: multiply; }
   @media all and (max-width: 767px) {
     .hero {
-      height: calc(100% - 60px); } }
+      height: calc(70% - 60px); } }
   .hero-event {
     height: calc(50% - 90px); }
     @media all and (max-width: 992px) {

@@ -11,7 +11,7 @@
 	
 
 	@media all and (max-width: $breakpoint-mobile){
-		height: calc(100% - #{$header-height-mobile});
+		height: calc(70% - #{$header-height-mobile});
 	}
 
 	&-event{
