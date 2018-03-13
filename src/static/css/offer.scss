@@ -1,7 +1,7 @@
 .accordeon{
 	
-	color: #fff;
-	
+	color: $text-color;
+	background: #000;
 	border-top: 2px solid $border-color;
 
 	&--active{
@@ -160,8 +160,8 @@
 	&-price{
 		color: $link-color;
 		display: block;
-		font-weight: 700;
-		margin: 0 0 7px 0;
+		// font-weight: 700;
+		margin: 0 0 2px 0;
 		white-space: nowrap;
 		font-size: 32px;
 
@@ -176,7 +176,7 @@
 	&-price-condition{
 		color: $link-color;
 		display: block;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		white-space: nowrap;
 		@media all and (max-width: $breakpoint-tablet){
 			display: inline-block;
@@ -189,4 +189,36 @@
 			margin-bottom: 20px;
 		}
 	}
+}
+
+.room{
+	border-bottom: 2px solid $border-color;
+	padding: 0 0 30px;
+	margin-bottom: 30px;
+}
+.room-info{
+	height: 50px;
+	margin-bottom: 10px;
+	overflow: hidden;
+
+	& p{
+		margin-bottom: 0;
+	}
+
+	&--active{
+		height: auto;
+	}
+}
+.room-price{
+	@media all and (max-width: $breakpoint-mobile){
+		margin: 10px 0 0; 
+	}
+
+	& .button{
+		@media all and (max-width: $breakpoint-mobile){
+			display: block;
+		}
+	}
+	
+
 }

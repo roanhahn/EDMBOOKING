@@ -396,6 +396,14 @@ $('.toggle-subnav').click(function(){
 	 // $('body, .html').attr('scroll','no');
  });
 
+//  READMORE
+
+
+$('.readmore').click(function(){
+	console.log("bla");
+	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
+	 // $('body, .html').attr('scroll','no');
+ });
 // SHOW YOUR BOOKING
 
 $('.toggle-yourbooking').click(function(){
@@ -462,4 +470,12 @@ $(document).ready(function() {
 			}
 		}
 	})
+});
+
+// DATEPICKER
+
+$('.input-group.arrival').datepicker({
+	format: "dd/mm/yyyy",
+	autoclose: true,
+	todayHighlight: true
 });

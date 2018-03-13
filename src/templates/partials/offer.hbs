@@ -3,6 +3,9 @@
 		<div class="col-4 col-md-6 col-lg-3">
 			<a href="detail.html">
 				<div class="img-container ratio-1-1">
+					<div class="ribbon">
+						<div>Selected</div>
+					</div>
 					<img data-src="assets/img/{{img}}" class="img-fluid lazyload" alt="">
 				</div>
 			</a>
@@ -11,7 +14,25 @@
 			<div class="row">
 				<div class="col-lg-9{{!--  offer-line --}}">
 					<h3 class="offer-title">{{title}}</h3>
-					<p class="offer-subheader">{{subheader}}</p>
+					
+
+					
+
+
+					{{#if distance}}
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
+					{{else}}
+						<p class="offer-subheader">{{subheader}}</p>
+					{{/if}}
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
 						<li>9 Single stretchers including sleeping bags and pillows</li>
@@ -27,9 +48,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">{{condition}}</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">{{button}}</a>
 					</div>
 				</div>
 			</div>

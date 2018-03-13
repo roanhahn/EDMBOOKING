@@ -139,14 +139,16 @@ layout: default.hbs
 					<div>
 						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
 					</div>
-					<div class="rating">
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
 					</div>
-					Distance venue 5km
 				</div>
 			</div>
 		</div>
@@ -166,6 +168,18 @@ layout: default.hbs
 				</ul>
 			</div>
 		</div>
+
+
+		<hr class="hr" />
+		<div class="row">
+			{{> selectdate }}
+		</div>
+		<hr class="hr" />
+
+		{{> room }}
+		{{> room }}
+		{{> room }}
+		{{> room }}
 
 	</div>
 </section>
