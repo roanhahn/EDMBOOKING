@@ -165,31 +165,97 @@
 	
 
 
-<div class="hero hero-event hero--blue" style="background-image: url(assets/img/event-header.jpg)">
-	<div class="inner">
+
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step1-hotels.html">
+			<span class="accordeon-step">1. ticket</span>
+			<div class="accordeon-buttons">
+				Select ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon accordeon--active">
+	<div class="container">
+		
+		<span class="accordeon-step">2. hotel</span>
+		<div class="accordeon-buttons">
+			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
+			<a href="step2-hotels.html" class="button button-secondary">Next</a>
+		</div>
+
+	</div>
+</div>
+<section class="section">
+	<form>
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<h1 class="hero-event-title">Martin Garrix</h1>
-					<p>14 november Las Vegas</p>
-					<a href="event-info.html" class="button button-secondary">Event info</a>
-				</div>
+				
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check in</label>
+		<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
 		</div>
 	</div>
 </div>
-
-<div class="accordeon accordeon--active">
-	<div class="container">
-		<span class="accordeon-step">1. packages</span>
-		<div class="accordeon-buttons">
-			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
-			<a href="step2-camping.html" class="button button-secondary">Next</a>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check out</label>
+		<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			</div>
 		</div>
 	</div>
 </div>
-<section class="section">
+<div class="col-6 col-lg-1">
+	<div class="form-group">
+		<label class="form-label" for="room">Guests</label>
+		<span class="guests">2</span>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label" for="room">Select room type</label>
+		<select class="form-control" id="room">
+			<option selected="">2 x double room</option>
+		</select>
+	</div>
+</div>
+<div class="col-lg-2">
+	<div class="form-group">
+		<label class="form-label d-none d-lg-block">&nbsp;</label>
+		<button class="button button-primary button--block">Search</button>
+	</div>
+</div>
+
+
+
+			</div>
+			<hr class="hr" />
+		</div>
+	</form>
 	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2 class="h2-section">Selected Hotels</h2>
+			</div>
+			<div class="col-sm-6">
+				<div class="float-right" style="width: 250px;">
+					<select class="form-control m-b-0" id="">
+						<option selected="">Sort by</option>
+						<option>Price Low-High</option>
+					</select>
+				</div>
+			</div>
+		</div>
 		
 		<div class="offer">
 	<div class="row">
@@ -213,7 +279,16 @@
 
 
 					
-						<p class="offer-subheader">One of our best sellers, great price...</p>
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
 					
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
@@ -230,9 +305,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">Total room price</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">info &amp; rooms</a>
 					</div>
 				</div>
 			</div>
@@ -261,7 +336,16 @@
 
 
 					
-						<p class="offer-subheader">One of our best sellers, great price...</p>
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
 					
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
@@ -278,9 +362,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">Total room price</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">info &amp; rooms</a>
 					</div>
 				</div>
 			</div>
@@ -309,7 +393,16 @@
 
 
 					
-						<p class="offer-subheader">One of our best sellers, great price...</p>
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
 					
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
@@ -326,9 +419,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">Total room price</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">info &amp; rooms</a>
 					</div>
 				</div>
 			</div>
@@ -357,7 +450,16 @@
 
 
 					
-						<p class="offer-subheader">One of our best sellers, great price...</p>
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
 					
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
@@ -374,9 +476,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">Total room price</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">info &amp; rooms</a>
 					</div>
 				</div>
 			</div>
@@ -405,7 +507,16 @@
 
 
 					
-						<p class="offer-subheader">One of our best sellers, great price...</p>
+						<div class="rating-wrapper">
+							<div class="rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							Distance venue 5km
+						</div>
 					
 					<ul class="offer-list d-none d-md-block">
 						<li>Tipi for 9 persons</li>
@@ -422,9 +533,9 @@
 					<div class="offer-info">
 						<div>
 							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">Price per person</span>
+							<span class="offer-price-condition">Total room price</span>
 						</div>
-						<a href="detail.html" class="button button-primary">more info</a>
+						<a href="detail.html" class="button button-primary">info &amp; rooms</a>
 					</div>
 				</div>
 			</div>
@@ -437,7 +548,7 @@
 <div class="accordeon">
 	<div class="container">
 		<a href="step2-camping.html">
-			<span class="accordeon-step">2. Extra's</span>
+			<span class="accordeon-step">3. Extra's</span>
 			<div class="accordeon-buttons">
 				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -447,7 +558,7 @@
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
-			<span class="accordeon-step">3. Personal info</span>
+			<span class="accordeon-step">4. Personal info</span>
 			<div class="accordeon-buttons">
 				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -457,7 +568,7 @@
 <div class="accordeon">
 	<div class="container">
 		<a href="step4-camping.html">
-			<span class="accordeon-step">4. Summary</span>
+			<span class="accordeon-step">5. Summary</span>
 			<div class="accordeon-buttons">
 				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -465,6 +576,9 @@
 	</div>
 </div>
 
+<div class="site-background">
+	<div class="site-background-visual" style="background-image: url(assets/img/event-header.jpg)"></div>
+</div>
 
 	<footer>
 	<div class="container">

@@ -391,11 +391,20 @@ $("img.lazyload").lazyload();
 // SHOW HAMBURGER MENU
 
 $('.toggle-subnav').click(function(){
+	 $('.hamburger').toggleClass("hamburger-close");
 	 $('#subnav').toggleClass("subnav-active");
 	 $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');
  });
 
+//  READMORE
+
+
+$('.readmore').click(function(){
+	console.log("bla");
+	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
+	 // $('body, .html').attr('scroll','no');
+ });
 // SHOW YOUR BOOKING
 
 $('.toggle-yourbooking').click(function(){
@@ -462,4 +471,12 @@ $(document).ready(function() {
 			}
 		}
 	})
+});
+
+// DATEPICKER
+
+$('.input-group.arrival').datepicker({
+	format: "dd/mm/yyyy",
+	autoclose: true,
+	todayHighlight: true
 });
