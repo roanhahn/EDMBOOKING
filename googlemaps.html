@@ -191,8 +191,8 @@
 <style type="text/css">
             /* Set a size for our map container, the Google Map will take up 100% of this container */
             #map {
-                width: 750px;
-                height: 500px;
+                width: 100%;
+                height: 600px;
             }
         </style>
 <section class="section">
@@ -204,77 +204,16 @@
 
 				<div id="map"></div>
 
+
+				
+
+
 			</div>
 		</div>
 	</div>
 </section>
 
- 
-
-
-	<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 footer-col">
-				<h4>Need help?</h4>
-				<ul>
-					<li><a href="#">info@edmbassy.com</a></li>
-					<li>Phone  <a href="tel:+31 6 52 382 38">+31 6 52 382 38</a></li>
-					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=310625238238&text=EDMbassy">+31 6 52 382 38</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-3 footer-col">
-				<h4>Text goes here</h4>
-				<ul>
-					<li><a href="page.html">Why book</a></li>
-					<li><a href="page.html">Tell me more</a></li>
-					<li><a href="page.html">Manage my booking</a></li>
-				</ul>				  
-			</div>
-			<div class="col-lg-3 footer-col">
-				<h4>About</h4>
-				<ul>
-					<li><a href="page.html">About us</a></li>
-					<li><a href="page.html">Disclaimer</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-				</ul>
-			</div>
-			
-			
-			<div class="col-lg-3 footer-col">
-				<h4>Social</h4>
-				<ul class="social">
-					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				</ul>			  
-			</div>
-		</div>
-		<div class="row">
-			<div class="col payoff">
-				<hr>
-				<span class="copyright">&copy; EDMBASSY All rights reserved. </span>
-				<span class="credits"><a href="page.html">Terms &amp; Conditions</a> | <a href="page.html">Privacy Policy</a></span>
-			</div>	
-		</div>
-		
-	</div>
-</footer>
-
-	<!-- Our JavaScript -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-	<script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/jquery.selectric.min.js"></script>
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	
-	<!-- Plugins -->
-	
-	<!-- GoogleMaps -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -284,10 +223,10 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+                    zoom: 12,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                    center: new google.maps.LatLng(52.3702160, 4.8951680), // Amsterdam
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -482,7 +421,84 @@
                     map: map,
                     title: 'Snazzy!'
                 });
+
+                var customMarker = 'assets/img/marker.svg';
+
+				var marker = new google.maps.Marker({ 
+				position: new google.maps.LatLng(52.3941320, 4.8507230), //nachtlab
+				icon: customMarker, 
+				map: map, 
+				title: 'yo'  
+				});
             }
         </script>
+
+
+
+
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 footer-col">
+				<h4>Need help?</h4>
+				<ul>
+					<li><a href="#">info@edmbassy.com</a></li>
+					<li>Phone  <a href="tel:+31 6 52 382 38">+31 6 52 382 38</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=310625238238&text=EDMbassy">+31 6 52 382 38</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 footer-col">
+				<h4>Text goes here</h4>
+				<ul>
+					<li><a href="page.html">Why book</a></li>
+					<li><a href="page.html">Tell me more</a></li>
+					<li><a href="page.html">Manage my booking</a></li>
+				</ul>				  
+			</div>
+			<div class="col-lg-3 footer-col">
+				<h4>About</h4>
+				<ul>
+					<li><a href="page.html">About us</a></li>
+					<li><a href="page.html">Disclaimer</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+			
+			
+			<div class="col-lg-3 footer-col">
+				<h4>Social</h4>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				</ul>			  
+			</div>
+		</div>
+		<div class="row">
+			<div class="col payoff">
+				<hr>
+				<span class="copyright">&copy; EDMBASSY All rights reserved. </span>
+				<span class="credits"><a href="page.html">Terms &amp; Conditions</a> | <a href="page.html">Privacy Policy</a></span>
+			</div>	
+		</div>
+		
+	</div>
+</footer>
+
+	<!-- Our JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+
+	
+	<script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/jquery.selectric.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	
+	<!-- Plugins -->
+	
+	<!-- GoogleMaps -->
+	
 </body>
 </html>
