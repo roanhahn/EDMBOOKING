@@ -405,6 +405,12 @@ $('.readmore').click(function(){
 	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
 	 // $('body, .html').attr('scroll','no');
  });
+
+
+// NOTIFICATION
+$('.notification').delay(500).fadeOut("fast");
+
+
 // SHOW YOUR BOOKING
 
 $('.toggle-yourbooking').click(function(){
