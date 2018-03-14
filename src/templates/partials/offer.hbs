@@ -1,25 +1,26 @@
-<div class="offer">
-	<div class="row">
-		<div class="col-4 col-md-6 col-lg-3">
-			<a href="detail.html">
-				<div class="img-container ratio-1-1">
-					<div class="ribbon d-none d-lg-block">
-						<div>Selected</div>
+<a href="detail.html" class="d-block clearfix">
+	<div class="offer">
+		<div class="row">
+			<div class="col-4 col-md-6 col-lg-3">
+				
+					<div class="img-container ratio-1-1">
+						<div class="ribbon d-none d-lg-block">
+							<div>Selected</div>
+						</div>
+						<img data-src="assets/img/{{img}}" class="img-fluid lazyload" alt="">
 					</div>
-					<img data-src="assets/img/{{img}}" class="img-fluid lazyload" alt="">
-				</div>
-			</a>
-		</div>
-		<div class="col-8 col-md-6 col-lg-9 offer-content">
-			<div class="row">
-				<div class="col-lg-9{{!--  offer-line --}}">
-					<h3 class="offer-title">{{title}}</h3>
-					
-
-					
+				
+			</div>
+			<div class="col-8 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9{{!--  offer-line --}}">
+						<h3 class="offer-title">{{title}}</h3>
 
 
-					{{#if distance}}
+
+
+
+						{{#if distance}}
 						<div class="rating-wrapper">
 							<div class="rating">
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -30,30 +31,31 @@
 							</div>
 							Distance venue 5km
 						</div>
-					{{else}}
+						{{else}}
 						<p class="offer-subheader">{{subheader}}</p>
-					{{/if}}
-					<ul class="offer-list d-none d-md-block">
-						<li>Tipi for 9 persons</li>
-						<li>9 Single stretchers including sleeping bags and pillows</li>
-						<li>Table with stools</li>
-						<li>A spot on our campsite</li>
-						<li>3 Night stay</li>
-						<li>Exclusive pre-party on Thursday</li>
-						<li>New Horizons welcome package</li>
-						<li>1 Parking ticket for Royal Garden parking</li>
-					</ul>
-				</div>
-				<div class="col-lg-3">
-					<div class="offer-info">
-						<div>
-							<span class="offer-price">&euro; 299</span>
-							<span class="offer-price-condition">{{condition}}</span>
+						{{/if}}
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						{{!-- <li>New Horizons welcome package</li>
+							<li>1 Parking ticket for Royal Garden parking</li> --}}
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<div class="offer-info">
+							<div>
+								<span class="offer-price">&euro; 299</span>
+								<span class="offer-price-condition">{{condition}}</span>
+							</div>
+							<span class="button button-primary d-none d-md-block">{{button}}</span>
 						</div>
-						<a href="detail.html" class="button button-primary d-none d-md-block">{{button}}</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</a>

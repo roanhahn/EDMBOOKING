@@ -226,6 +226,11 @@ a, a:hover, a:visited, a:active {
     .section {
       padding: 50px 0; } }
 
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: ""; }
+
 .site-background {
   position: fixed;
   width: 100%;
@@ -1496,7 +1501,8 @@ footer {
       .offer-title {
         font-size: 14px; } }
   .offer-subheader {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #fff; }
     @media all and (max-width: 992px) {
       .offer-subheader {
         font-size: 18px; } }
@@ -1508,11 +1514,9 @@ footer {
     .offer-content {
       padding-left: 0px; } }
   .offer-list {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
     margin: 20px 0 0 0;
-    padding: 0; }
+    padding: 0;
+    color: #fff; }
     .offer-list--nocolumns {
       columns: 1;
       -webkit-columns: 1;
@@ -1524,7 +1528,6 @@ footer {
         -moz-columns: 1; } }
     .offer-list li {
       margin-bottom: 10px;
-      font-size: 15px;
       list-style-type: none;
       position: relative;
       padding-left: 10px; }
@@ -1553,7 +1556,7 @@ footer {
       .offer-price {
         font-size: 20px; } }
   .offer-price-condition {
-    color: #419bf7;
+    color: #fff;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
