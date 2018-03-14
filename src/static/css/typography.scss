@@ -1,5 +1,10 @@
 body,html{
 	height: 100%;
+	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+	
+	cursor: default;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
 }
 
 body{
@@ -7,18 +12,13 @@ body{
 	color: $text-color;
 	padding: 0;
 	margin: 0;
-	cursor: default;
-	cursor: default;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: auto;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	height: 100%;
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
 	font-family: $font;
 	font-size: 16px;
 	line-height: 1.2;
 	position: relative;
+	overflow-x: hidden;
 }
 
 @media (min-width: 1200px){

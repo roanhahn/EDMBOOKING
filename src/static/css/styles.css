@@ -5,26 +5,25 @@
 @import url(owl.theme.default.min.css);
 @import url(bootstrap-datepicker3.min.css);
 body, html {
-  height: 100%; }
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  /* lets it scroll lazy */
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto; }
 
 body {
   background: #000;
   color: #fff;
   padding: 0;
   margin: 0;
-  cursor: default;
-  cursor: default;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  /* lets it scroll lazy */
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 @media (min-width: 1200px) {
   .container {
@@ -564,7 +563,9 @@ button:focus {
   color: #000;
   height: 90px;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s; }
   @media all and (max-width: 767px) {
     .header {
       height: 60px; } }
@@ -579,7 +580,9 @@ button:focus {
   line-height: 0; }
   .logo img {
     display: block;
-    height: 30px; }
+    height: 30px;
+    -webkit-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s; }
     @media all and (max-width: 767px) {
       .logo img {
         height: 20px; } }
@@ -587,7 +590,9 @@ button:focus {
 .mainnav {
   float: right;
   height: 90px;
-  display: table; }
+  display: table;
+  -webkit-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s; }
   @media all and (max-width: 767px) {
     .mainnav {
       height: 60px; } }
@@ -636,14 +641,21 @@ button:focus {
     margin-left: 20px;
     cursor: pointer;
     background: transparent url(../img/menu.svg) no-repeat 0 0 scroll;
-    background-size: auto 36px; }
+    background-size: auto 36px;
+    -webkit-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s; }
     .mainnav .hamburger-close {
       background-position: -45px 0; }
     .mainnav .hamburger:hover {
       color: #419bf7; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger {
-        margin-left: 10px; } }
+        margin-left: 10px;
+        background-size: auto 20px;
+        height: 20px;
+        width: 25px; }
+        .mainnav .hamburger-close {
+          background-position: -25px 0; } }
     .mainnav .hamburger img {
       height: 30px;
       width: auto; }
@@ -652,7 +664,7 @@ button:focus {
           height: 20px; } }
 
 .subnav {
-  position: absolute;
+  position: fixed;
   overflow-y: auto;
   right: 0px;
   bottom: 0px;
@@ -794,6 +806,56 @@ button:focus {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px; }
+
+.notification {
+  background: #419bf7;
+  text-align: center;
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 90px;
+  font-size: 18px; }
+  @media all and (max-width: 767px) {
+    .notification {
+      height: 60px;
+      line-height: 60px; } }
+  .notification span {
+    font-family: "Roboto", sans-serif; }
+
+body.stickyheader {
+  padding-top: 90px; }
+  @media all and (max-width: 767px) {
+    body.stickyheader {
+      padding-top: 60px; } }
+  body.stickyheader .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(230, 230, 230, 0.9); }
+  body.stickyheader .yourbooking {
+    position: fixed; }
+
+body.scrolled .header, body.scrolled .mainnav {
+  height: 60px; }
+body.scrolled .subnav, body.scrolled .yourbooking {
+  top: 60px; }
+body.scrolled .logo img {
+  height: 20px; }
+body.scrolled .hamburger {
+  margin-left: 10px;
+  background-size: auto 20px;
+  height: 20px;
+  width: 25px; }
+  body.scrolled .hamburger-close {
+    background-position: -25px 0; }
 
 .hero {
   min-height: 300px;
@@ -1254,8 +1316,7 @@ footer {
         float: none; } }
 
 .social {
-  list-style-type: none;
-  margin-top: 30px; }
+  list-style-type: none; }
   @media all and (max-width: 992px) {
     .social {
       display: block;
@@ -1263,17 +1324,17 @@ footer {
   .social li {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px; }
+    margin-right: 2px; }
     .social li a {
       display: block;
       background-color: #000;
       color: #419bf7;
       border-radius: 100%;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       text-align: center;
-      line-height: 40px;
-      font-size: 20px; }
+      line-height: 30px;
+      font-size: 16px; }
       .social li a:hover {
         color: #fff; }
 
@@ -1408,6 +1469,10 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 30px;
   margin: 0 0 30px 0; }
+  @media all and (max-width: 767px) {
+    .offer {
+      margin: 0 0 15px 0;
+      padding-bottom: 15px; } }
   .offer-line {
     border-right: 1px solid rgba(255, 255, 255, 0.3); }
     @media all and (max-width: 992px) {
@@ -1429,17 +1494,15 @@ footer {
         font-size: 24px; } }
     @media all and (max-width: 767px) {
       .offer-title {
-        font-size: 16px; } }
+        font-size: 14px; } }
   .offer-subheader {
-    color: #419bf7;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
         font-size: 18px; } }
     @media all and (max-width: 767px) {
       .offer-subheader {
-        font-size: 13px;
-        color: #fff;
+        font-size: 12px;
         margin-bottom: 10px; } }
   @media all and (max-width: 767px) {
     .offer-content {
@@ -1500,8 +1563,7 @@ footer {
         margin-left: 5px; } }
     @media all and (max-width: 767px) {
       .offer-price-condition {
-        font-size: 13px;
-        margin-bottom: 20px; } }
+        font-size: 13px; } }
 
 .room {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
