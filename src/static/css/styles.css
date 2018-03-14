@@ -378,6 +378,10 @@ a, a:hover, a:visited, a:active {
 
 .googleMaps {
   color: #419bf7; }
+  .googleMaps #map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px; }
   .googleMaps iframe {
     width: 100%;
     height: 300px;

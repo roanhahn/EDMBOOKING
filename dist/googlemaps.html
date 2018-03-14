@@ -188,107 +188,253 @@
 </div>
 	
 
-
-<div class="hero hero-event hero--gradient hero--blue" style="background-image: url(assets/img/bg-camping.jpg)">
-	<div class="inner">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="hero-event-title">Martin Garrix</h1>
-					<p>Camping information</p>
-					<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
+<style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 100%;
+                height: 600px;
+            }
+        </style>
 <section class="section">
+
 	<div class="container">
 		<div class="row">
-			<div class="event-info-wrapper">
-				
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Camping line up</h3>
-						<p>
-							Have you heard? One of our camping artists has already been announced: Nicky Romero will be headlining our pre-party on Friday. The pre-party will be a musical adventure of 12 full hours on 5 different stages! Starting at 14h sharp, we invite you to get in the mood for our unforgettable weekend. On Saturday night, all camping guests exclusively get access to our after-party as well as to the silent disco on the camping grounds. The full camping line up will be released at the end of March. Keep your eyes on our socials!
-						</p>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Camping packages</h3>
-						<p>
-							All Camping Packages include pre-set accommodations on our camping grounds, as well as entrance to the festival on Friday, Saturday and Sunday. This year we’ll once again offer a wide range of pre-set accommodations! All of them are furnished with beds/ air mattresses and the more luxurious options come with outdoor seating, a Premium festival upgrade and goodie bags. All Camping Packages are available in our ticketshop now.
-						</p>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Pre- &amp; afterparties</h3>
-						<p>
-							As the only visitors on Friday, our camping guests will get an exclusive taste of Mysteryland earlier than everyone else. Starting on Friday afternoon, the pre-party lasts 12 full hours on 6 stages and includes a food truck plaza, plenty of space to chill out, and lots of little corners to dance, and make new friends. On Saturday night, the festival officially closes at 23h, but not for our camping guests, cause the afterparty won’t stop until the early hours of Sunday morning!
-						</p>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Camping info</h3>
-						<p>
-							Find more information about our campsite on our Info page. If there’s anything else you’d like to know, please don’t hesitate to contact us at info@mysteryland.nl! At your arrival, we’ll hand out Camping floorplans including a detailed timetable for all stages and other activities such as our opening ceremony, morning-yoga as well as opening times of our market street where you can enjoy a massage, haircut or styling session.
-						</p>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Food &amp; drinks</h3>
-						<p>
-							You’re able to purchase food and beverages all day and night at Mysteryland. Next to our 24h supermarket, there’s a food plaza with multiple food trucks serving mouthwatering dishes; starting from sweet and savoury breakfast options, burgers, pizzas, french fries, healthy wraps, crepes, sandwiches, Asian dishes, fresh smoothies, juices and cocktails. We serve it all!
-						</p>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/croud.jpg" class="img-fluid lazyload" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3">Camping guardians</h3>
-						<p>
-							Mothers and fathers of the Mysteryland campsite: The Camping Guardians! Head over to one of their tents if you have questions or just need a hand. From bottle openers to air pumps, from festival floorplans to condoms, our Camping Guardians have it all! They also can help you pimp your festival outfit with crazy props, glitters and make-up, in order to release the true Party Animal within you!
-						</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="row">
 			<div class="col">
-				<a href="step1-camping.html" class="button button-primary m-t-20 float-right">Back</a>
+
+
+				<div id="map"></div>
+
+
+				
+
+
 			</div>
 		</div>
 	</div>
 </section>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 12,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(52.3702160, 4.8951680), // Amsterdam
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    }
+]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+
+                var customMarker = 'assets/img/marker.svg';
+
+				var marker = new google.maps.Marker({ 
+				position: new google.maps.LatLng(52.3941320, 4.8507230), //nachtlab
+				icon: customMarker, 
+				map: map, 
+				title: 'yo'  
+				});
+            }
+        </script>
+
+
+
 
 	<footer>
 	<div class="container">
