@@ -393,7 +393,8 @@ $("img.lazyload").lazyload();
 $('.toggle-subnav').click(function(){
 	 $('.hamburger').toggleClass("hamburger-close");
 	 $('#subnav').toggleClass("subnav-active");
-	 $('.body, .html').toggleClass("scroll-lock");
+	 // $('.body, .html').toggleClass("scroll-lock");
+	 return false;
 	 // $('body, .html').attr('scroll','no');
  });
 
@@ -415,7 +416,8 @@ $('.notification').delay(500).fadeOut("fast");
 
 $('.toggle-yourbooking').click(function(){
 	 $('.yourbooking').slideToggle(300);
-	 $('.body, .html').toggleClass("scroll-lock");
+	 return false;
+	 // $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');
  });
 
@@ -430,6 +432,26 @@ function goBack() {
 
 $(function() {
 	$('select').selectric();
+});
+
+// SCROLL HEADER
+
+var headerheight = $(".header").outerHeight();
+
+console.log(headerheight);
+
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	
+
+	if (scroll >= headerheight) {
+		$(".body").addClass("scrolled");
+		// $(".site-background").addClass("scrolled");
+	} else {
+		$(".body").removeClass("scrolled");
+		// $(".site-background").removeClass("scrolled");
+	}
+	
 });
 
 // OWL
