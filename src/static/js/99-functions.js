@@ -31,7 +31,7 @@ $('.readmore').click(function(){
 
 
 // NOTIFICATION
-$('.notification').delay(500).fadeOut("fast");
+$('.notification').delay(2000).fadeOut("fast");
 
 
 // SHOW YOUR BOOKING

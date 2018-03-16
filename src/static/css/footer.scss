@@ -12,6 +12,12 @@ footer{
 		font: $font-header;
 		font-weight: 700;
 		margin: 0 0 20px;
+		font-size: 24px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
 	}
 
 	& ul{
@@ -21,6 +27,11 @@ footer{
 
 		& li{
 			margin-bottom: 5px;
+
+			@media all and (max-width: $breakpoint-mobile){
+				font-size: 14px;
+				margin-bottom: 3px;
+			}
 		}
 	}
 
@@ -37,6 +48,7 @@ footer{
 
 		@media all and (max-width: $breakpoint-tablet){
 			text-align: center;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -72,6 +84,7 @@ footer{
 
 .social{
 	list-style-type: none;
+	margin-bottom: 10px;
 	// margin-top: 30px;
 
 	@media all and (max-width: $breakpoint-tablet){

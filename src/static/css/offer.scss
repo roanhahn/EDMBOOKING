@@ -21,7 +21,7 @@
 		text-transform: uppercase;
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 18px;
+			font-size: 17px;
 		}
 	}
 
@@ -37,7 +37,7 @@
 		font-size: 14px;
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 13px;
+			font-size: 12px;
 		}
 	}
 
@@ -93,7 +93,7 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 14px;
+			font-size: 15px;
 		}
 	}
 
@@ -107,7 +107,7 @@
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 12px;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -185,11 +185,12 @@
 		margin-bottom: 20px;
 		white-space: nowrap;
 		@media all and (max-width: $breakpoint-tablet){
-			display: inline-block;
+			// display: inline-block;
 			margin-left: 5px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 13px;
+			font-size: 11px;
+			margin-left: 2px;
 			// margin-bottom: 20px;
 		}
 	}

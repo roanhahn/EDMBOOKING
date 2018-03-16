@@ -15,11 +15,11 @@ layout: default.hbs
 <section class="section detailpage">
 	<div class="container">
 		<div class="row">
-			<div class="col-9 col-lg-10">
+			<div class="col-md-9 col-lg-10">
 				<h1 class="h1">Comfort Inn Midtown West</h1>
 				<h2 class="h2">One of our best sellers, great price...</h2>
 			</div>
-			<div class="col-3 col-lg-2">
+			<div class="col-md-3 col-lg-2">
 				<div class="detail-price">&euro; 299</div>
 				<div class="detail-price-conditions">Price per person</div>
 			</div>
@@ -173,6 +173,8 @@ layout: default.hbs
 		<hr class="hr" />
 		<div class="row">
 			{{> selectdate }}
+
+			{{> loader }}
 		</div>
 		<hr class="hr" />
 

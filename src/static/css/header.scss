@@ -131,7 +131,7 @@
 			width: 25px;
 
 			&-close{
-				background-position: -25px 0;
+				background-position: -26px 0;
 			}
 		}
 
@@ -168,9 +168,9 @@
 	-webkit-transition: transform .3s ease-in-out 0s;
 	transition: transform .3s ease-in-out 0s;
 
-	-ms-transform: translate(+100%, 0); /* IE 9 */
-	-webkit-transform: translate(+100%, 0); /* Safari */
-	transform: translate(+100%, 0);
+	-ms-transform: translate(+110%, 0); /* IE 9 */
+	-webkit-transform: translate(+110%, 0); /* Safari */
+	transform: translate(+110%, 0);
 
 	@media all and (max-width: $breakpoint-tablet){
 		width: 50%;
@@ -178,6 +178,7 @@
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
 		width: 100%;
+		padding: 30px 15px;
 	}
 
 	&-active{
@@ -286,7 +287,8 @@
 		font-size: 24px !important;
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 18px !important;
+			font-size: 17px !important;
+			white-space: nowrap;
 		}
 	}
 	z-index: 10;
