@@ -23,7 +23,20 @@
 
 <nav class="subnav" id="subnav">
 	<ul class="subnav-list">
-		<li><a href="homepage.html">Festivals</a></li>
+		<li><a href="homepage.html">Home</a></li>
+
+
+		{{#if homepage}}
+		<li>
+			Events
+			<ul>
+				<li><a href="event-landing.html">Martin Garrix</a></li>
+				<li><a href="event-landing.html">A State of Trance</a></li>
+				<li><a href="event-landing.html">Burning Man</a></li>
+				<li><a href="event-landing.html">Love Parade</a></li>
+			</ul>
+		</li>
+		{{else}}
 		<li>
 			Accomodations
 			<ul>
@@ -32,6 +45,7 @@
 				<li><a href="step1-camping.html">Campsite</a></li>
 			</ul>
 		</li>
+		{{/if}}
 		<li><a href="#">Tell me more</a></li>
 		<li><a href="#">Why book</a></li>
 		<li><a href="#">Login</a></li>

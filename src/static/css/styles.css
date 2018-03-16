@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Prompt:400,700,800");
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
 @import url(animate.css);
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
@@ -87,7 +88,9 @@ a, a:hover, a:visited, a:active {
       font-size: 36px; } }
   @media all and (max-width: 767px) {
     .page-h1 {
-      font-size: 24px; } }
+      font-size: 24px;
+      padding-bottom: 15px;
+      margin-bottom: 15px; } }
 
 .h2 {
   font-size: 20px; }
@@ -202,6 +205,10 @@ a, a:hover, a:visited, a:active {
   vertical-align: middle;
   box-shadow: inset 0px 0px 0px #fff;
   animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
+  @media all and (max-width: 767px) {
+    .checkmark {
+      width: 20px;
+      height: 20px; } }
 
 .checkmark__check {
   transform-origin: 50% 50%;
@@ -243,13 +250,6 @@ a, a:hover, a:visited, a:active {
   font-size: 22px;
   font-family: "Prompt", sans-serif;
   margin-bottom: 20px; }
-  .info-list-section span {
-    display: inline-block;
-    padding-bottom: 5px; }
-    @media (max-width: 767px) {
-      .info-list-section span {
-        font-size: 16px;
-        border-bottom: 2px solid #419bf7; } }
 
 .info-list {
   list-style-type: none;
@@ -588,7 +588,7 @@ a, a:hover, a:visited, a:active {
 .rating-wrapper {
   color: #419bf7;
   font-size: 15px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   @media all and (max-width: 992px) {
     .rating-wrapper {
       font-size: 14px; } }
@@ -715,7 +715,8 @@ button {
       background: #fff; }
     .button-secondary--small {
       padding: 10px 15px;
-      font-size: 10px; }
+      font-size: 10px;
+      margin-top: 2px; }
   .button-inversed {
     border-color: #419bf7; }
     .button-inversed:after {
@@ -1046,6 +1047,9 @@ button:focus {
       line-height: 50px; } }
   .notification span {
     font-family: "Roboto", sans-serif; }
+  @media all and (max-width: 767px) {
+    .notification {
+      font-size: 12px; } }
 
 body.stickyheader {
   padding-top: 90px; }
@@ -1058,6 +1062,9 @@ body.stickyheader {
     left: 0;
     width: 100%;
     background: rgba(230, 230, 230, 0.9); }
+    @media all and (max-width: 767px) {
+      body.stickyheader .header {
+        background: #e6e6e6; } }
   body.stickyheader .yourbooking {
     position: fixed; }
 
@@ -1494,6 +1501,16 @@ footer {
   background-color: #419bf7;
   padding: 90px 0;
   color: #000; }
+  footer.gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: #419bf7;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #419bf7 0%, #6cb5ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #419bf7 0%, #6cb5ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #419bf7 0%, #6cb5ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
       padding: 60px 0; } }

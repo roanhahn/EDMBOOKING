@@ -28,15 +28,15 @@
 	font-family: $font-header;
 	margin-bottom: 20px;
 
-	& span{
-		display: inline-block;
-		padding-bottom: 5px;
+	// & span{
+	// 	display: inline-block;
+	// 	padding-bottom: 5px;
 
-		@media (max-width: $breakpoint-mobile){
-			font-size: 16px;
-			border-bottom: 2px solid $link-color;
-		}
-	}
+	// 	@media (max-width: $breakpoint-mobile){
+	// 		font-size: 16px;
+	// 		border-bottom: 2px solid $link-color;
+	// 	}
+	// }
 
 	
 }

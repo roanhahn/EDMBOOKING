@@ -3,6 +3,10 @@ footer{
 	padding: 90px 0;
 	color: $footer-text;
 
+	&.gradient{
+		@include gradient($link-color, #6cb5ff);
+	}
+
 	@media all and (max-width: $breakpoint-tablet){
 		padding: 60px 0;
 	}
@@ -40,6 +44,8 @@ footer{
 
 		&:hover{
 			color: $footer-hover;
+			// color: $footer-text;
+			// text-decoration: underline !important;
 		}
 	}
 

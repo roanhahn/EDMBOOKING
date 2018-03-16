@@ -384,6 +384,10 @@
 	& span{
 		font-family: $font;
 	}
+
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 12px;
+	}
 }
 
 body.stickyheader{
@@ -400,6 +404,10 @@ body.stickyheader{
 		left: 0;
 		width: 100%;
 		background: $header-bg-sticky;
+
+		@media all and (max-width: $breakpoint-mobile){
+			background: $header-bg;
+		}
 	}
 
 	& .yourbooking{
