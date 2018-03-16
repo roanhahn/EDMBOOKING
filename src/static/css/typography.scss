@@ -168,7 +168,8 @@ a, a:hover, a:visited, a:active{
 .p{
 	line-height: 1.6;
 	@media all and (max-width: $breakpoint-mobile){
-		font-size: 15px;
+		font-size: 14px;
+		line-height: 1.4;
 	}
 
 	& ul{
@@ -226,4 +227,61 @@ a, a:hover, a:visited, a:active{
 }
 .rolling{
 	margin: 10px;
+}
+
+$color--green: #fff;
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: $color--green;
+  fill: none;
+  animation: stroke .6s $curve forwards;
+}
+
+.checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline;
+  position: relative;
+  stroke-width: 2;
+  stroke: $link-color;
+  stroke-miterlimit: 10;
+  margin: 0 10px 0 0;
+  line-height: 0;
+  vertical-align: middle;
+  box-shadow: inset 0px 0px 0px $color--green;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke .3s $curve .8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $color--green;
+  }
 }

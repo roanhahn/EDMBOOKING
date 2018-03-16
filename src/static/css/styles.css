@@ -131,7 +131,8 @@ a, a:hover, a:visited, a:active {
   line-height: 1.6; }
   @media all and (max-width: 767px) {
     .p {
-      font-size: 15px; } }
+      font-size: 14px;
+      line-height: 1.4; } }
   .p ul {
     padding: 0;
     margin: 20px 0 20px 18px; }
@@ -177,6 +178,114 @@ a, a:hover, a:visited, a:active {
 
 .rolling {
   margin: 10px; }
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #fff;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
+
+.checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline;
+  position: relative;
+  stroke-width: 2;
+  stroke: #419bf7;
+  stroke-miterlimit: 10;
+  margin: 0 10px 0 0;
+  line-height: 0;
+  vertical-align: middle;
+  box-shadow: inset 0px 0px 0px #fff;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes scale {
+  0%, 100% {
+    transform: none; }
+  50% {
+    transform: scale3d(1.1, 1.1, 1); } }
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #fff; } }
+.info-labels {
+  display: flex;
+  padding: 0;
+  margin: 30px 0; }
+  @media (max-width: 767px) {
+    .info-labels {
+      display: none; } }
+  .info-labels li {
+    flex-grow: 1;
+    list-style-type: none;
+    margin: 0 15px 0 0; }
+
+.info-list-category {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.info-list-section {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-top: 15px;
+  font-size: 22px;
+  font-family: "Prompt", sans-serif;
+  margin-bottom: 20px; }
+  .info-list-section span {
+    display: inline-block;
+    padding-bottom: 5px; }
+    @media (max-width: 767px) {
+      .info-list-section span {
+        font-size: 16px;
+        border-bottom: 2px solid #419bf7; } }
+
+.info-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .info-list-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .info-list-question {
+    cursor: pointer;
+    padding: 15px 15px 15px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent url(../img/plus-white.svg) no-repeat center right;
+    background-size: 20px auto; }
+    @media (max-width: 767px) {
+      .info-list-question {
+        font-size: 14px; } }
+    .info-list-question.active {
+      background: transparent url(../img/minus-white.svg) no-repeat center right;
+      background-size: 20px auto; }
+  .info-list-answer {
+    display: none;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 30px; }
+    @media (max-width: 767px) {
+      .info-list-answer {
+        font-size: 13px; } }
+    .info-list-answer p {
+      margin-bottom: 15px; }
+    .info-list-answer ul {
+      margin: 15px 0 15px 15px;
+      padding: 0; }
+    .info-list-answer li {
+      list-style-type: square; }
 
 .loader {
   padding-top: 50px;
@@ -592,7 +701,7 @@ button {
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 10px 20px;
     text-transform: uppercase; }
     .button-secondary:after {
@@ -607,6 +716,12 @@ button {
     .button-secondary--small {
       padding: 10px 15px;
       font-size: 10px; }
+  .button-inversed {
+    border-color: #419bf7; }
+    .button-inversed:after {
+      display: none; }
+    .button-inversed:hover {
+      background: #419bf7; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back:before {
@@ -669,7 +784,7 @@ button:focus {
   transition: all .2s ease-out 0s; }
   @media all and (max-width: 767px) {
     .header {
-      height: 60px; } }
+      height: 50px; } }
 
 .logo {
   display: inline-block;
@@ -696,7 +811,7 @@ button:focus {
   transition: all .2s ease-out 0s; }
   @media all and (max-width: 767px) {
     .mainnav {
-      height: 60px; } }
+      height: 50px; } }
   .mainnav .booking {
     font-size: 20px;
     vertical-align: middle;
@@ -791,7 +906,7 @@ button:focus {
       width: 50%; } }
   @media all and (max-width: 767px) {
     .subnav {
-      top: 60px;
+      top: 50px;
       width: 100%;
       padding: 30px 15px; } }
   .subnav-active {
@@ -850,7 +965,7 @@ button:focus {
   @media all and (max-width: 767px) {
     .yourbooking {
       font-size: 13px;
-      top: 60px; } }
+      top: 50px; } }
   .yourbooking .container {
     padding-top: 60px;
     padding-bottom: 60px; }
@@ -927,8 +1042,8 @@ button:focus {
   font-size: 18px; }
   @media all and (max-width: 767px) {
     .notification {
-      height: 60px;
-      line-height: 60px; } }
+      height: 50px;
+      line-height: 50px; } }
   .notification span {
     font-family: "Roboto", sans-serif; }
 
@@ -936,7 +1051,7 @@ body.stickyheader {
   padding-top: 90px; }
   @media all and (max-width: 767px) {
     body.stickyheader {
-      padding-top: 60px; } }
+      padding-top: 50px; } }
   body.stickyheader .header {
     position: fixed;
     top: 0;
@@ -947,9 +1062,9 @@ body.stickyheader {
     position: fixed; }
 
 body.scrolled .header, body.scrolled .mainnav {
-  height: 60px; }
+  height: 50px; }
 body.scrolled .subnav, body.scrolled .yourbooking {
-  top: 60px; }
+  top: 50px; }
 body.scrolled .logo img {
   height: 20px; }
 body.scrolled .hamburger {
@@ -972,12 +1087,12 @@ body.scrolled .hamburger {
   background-blend-mode: multiply; }
   @media all and (max-width: 767px) {
     .hero {
-      height: calc(70% - 60px); } }
+      height: calc(70% - 50px); } }
   .hero-event {
     height: calc(50% - 90px); }
     @media all and (max-width: 992px) {
       .hero-event {
-        height: calc(50% - 60px); } }
+        height: calc(50% - 50px); } }
   .hero:before {
     content: "";
     position: absolute;
@@ -1649,12 +1764,16 @@ footer {
         position: absolute;
         left: 0;
         top: 7px; }
+        @media all and (max-width: 767px) {
+          .offer-list li:before {
+            top: 4px; } }
       @media all and (max-width: 767px) {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
     color: #419bf7;
     display: block;
+    font-weight: 700;
     margin: 0 0 2px 0;
     white-space: nowrap;
     font-size: 32px; }
@@ -1663,7 +1782,7 @@ footer {
         display: inline-block; } }
     @media all and (max-width: 767px) {
       .offer-price {
-        font-size: 20px; } }
+        font-size: 22px; } }
   .offer-price-condition {
     color: #fff;
     display: block;
@@ -1674,18 +1793,24 @@ footer {
         margin-left: 5px; } }
     @media all and (max-width: 767px) {
       .offer-price-condition {
-        font-size: 11px;
+        font-size: 12px;
         margin-left: 2px; } }
 
 .room {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 0 0 30px;
   margin-bottom: 30px; }
+  @media all and (max-width: 767px) {
+    .room .button {
+      float: right; } }
 
 .room-info {
   height: 50px;
   margin-bottom: 10px;
   overflow: hidden; }
+  @media all and (max-width: 767px) {
+    .room-info {
+      height: auto; } }
   .room-info p {
     margin-bottom: 0; }
   .room-info--active {
@@ -1693,9 +1818,12 @@ footer {
 
 @media all and (max-width: 767px) {
   .room-price {
-    margin: 10px 0 0; } }
-@media all and (max-width: 767px) {
-  .room-price .button {
-    display: block; } }
+    margin: 0 0;
+    float: left; } }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
