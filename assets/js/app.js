@@ -409,7 +409,7 @@ $('.readmore').click(function(){
 
 
 // NOTIFICATION
-$('.notification').delay(500).fadeOut("fast");
+$('.notification').delay(3500).fadeOut("fast");
 
 
 // SHOW YOUR BOOKING
@@ -452,6 +452,31 @@ $(window).scroll(function() {
 		// $(".site-background").removeClass("scrolled");
 	}
 	
+});
+
+// INFO PAGE & FAQ
+
+$(".info-label").click(function() {
+	console.log($(this).data('list'));
+	$('html, body').animate({
+		scrollTop: $("#" + $(this).data('list')).offset().top-headerheight
+	}, 1000, 'easeInOutCubic');
+});
+
+$(".info-list-item").click(function() {
+
+	var question = $(this);
+	var question_active = $(question).find(".info-list-answer");
+
+	if( $(question).find(".info-list-question").hasClass("active") ){
+		$(".info-list-answer").slideUp(500, 'easeOutCubic');
+		$(".info-list-question").removeClass("active");
+	} else{
+		$(".info-list-question").removeClass("active");
+		$(".info-list-answer").slideUp(500, 'easeOutCubic');
+		$(question_active).slideDown(500, 'easeOutCubic');
+		$(question).find(".info-list-question").addClass("active");
+	}
 });
 
 // OWL
