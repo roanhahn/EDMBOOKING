@@ -12,6 +12,9 @@
 	display: block;
 	content: "";
 }
+.datepicker{
+	z-index: 999;
+}
 .site-background{
 	position: fixed;
 	width: 100%;

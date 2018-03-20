@@ -441,6 +441,9 @@ h3.extras {
   display: block;
   content: ""; }
 
+.datepicker {
+  z-index: 999; }
+
 .site-background {
   position: fixed;
   width: 100%;
@@ -1343,9 +1346,10 @@ body.scrolled .hamburger {
   height: 43px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: none;
-  -webkit-border-radius: 0;
-  border: 1px solid #fff; }
+  border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px;
+  border: 1px solid #fff;
+  background: #fff; }
   .textfield:focus, select:focus, .form-control:focus {
     -webkit-box-shadow: 0px 0px 10px 0px #419bf7;
     -moz-box-shadow: 0px 0px 10px 0px #419bf7;
@@ -1365,6 +1369,16 @@ body.scrolled .hamburger {
 @media all and (max-width: 992px) {
   .form-tickets {
     margin-bottom: 20px; } }
+.is-invalid {
+  background: #ffc7cb !important;
+  border: 1px solid #dc3545 !important;
+  color: #dc3545 !important; }
+
+.is-valid {
+  background: #ebffe4 !important;
+  border: 1px solid #28a745 !important;
+  color: #28a745 !important; }
+
 /*======================================
   Selectric v1.13.0
 ======================================*/

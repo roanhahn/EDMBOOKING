@@ -169,7 +169,7 @@ $('*[data-type="slidetoggle"]').click(function()
 
 // DATEPICKER
 
-$('.input-group.arrival').datepicker({
+$('.date').datepicker({
 	format: "dd/mm/yyyy",
 	autoclose: true,
 	todayHighlight: true
