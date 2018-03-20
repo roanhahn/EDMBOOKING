@@ -1913,10 +1913,12 @@ footer {
   .room-info--active {
     height: auto; }
 
-@media all and (max-width: 767px) {
-  .room-price {
-    margin: 0 0;
-    float: left; } }
+.room-price {
+  float: right; }
+  @media all and (max-width: 767px) {
+    .room-price {
+      margin: 0 0;
+      float: left; } }
 
 .owl-theme .owl-dots .owl-dot span {
   width: 8px;

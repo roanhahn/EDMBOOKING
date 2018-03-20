@@ -231,6 +231,8 @@
 	}
 }
 .room-price{
+	float: right;
+	
 	@media all and (max-width: $breakpoint-mobile){
 		margin: 0 0; 
 		float: left;
