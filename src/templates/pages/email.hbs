@@ -166,6 +166,12 @@ layout: mail.hbs
     	width: 30%;
     	white-space: nowrap;
     }
+    .h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+
+    }
     .p{
     	font-family: 'Roboto', sans-serif;
     	font-size: 15px;
@@ -180,6 +186,7 @@ layout: mail.hbs
     	font-weight: 700;
     	font-size: 24px;
     	text-transform: uppercase;
+        padding-bottom: 60px;
     }
     /* What it does: A work-around for email clients meddling in triggered links. */
     *[x-apple-data-detectors],  /* iOS */
@@ -344,6 +351,26 @@ layout: mail.hbs
             		</td>
             	</tr>
             	<!-- Hero Image, Flush : END -->
+
+                <tr>
+                    <td class="td-color">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="content">
+                                    <p class="h1">Michel, congratulations with your booking!</p>
+                                    <p class="p">We are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
+                                    <p class="p"><strong>Shared transfer/Private transfer</strong></p>
+                                    <p class="p">
+                                        If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.
+                                    </p>
+                                    <p class="p">
+                                        We wish you a great stay, and see you at Electronic Family 2018
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
             	<tr>
             		<td class="heading">
@@ -588,7 +615,7 @@ layout: mail.hbs
             		</td>
             	</tr>
 
-            	<tr>
+            	{{!-- <tr>
             		<td class="td-color">
             			<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             				<tr>
@@ -605,7 +632,7 @@ layout: mail.hbs
             				</tr>
             			</table>
             		</td>
-            	</tr>
+            	</tr> --}}
 
             	<tr>
             		<td class="heading heading-blue">
