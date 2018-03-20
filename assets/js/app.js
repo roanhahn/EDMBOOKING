@@ -526,6 +526,25 @@ $(document).ready(function() {
 	})
 });
 
+
+// TOGGLE
+
+$('*[data-type="toggle"]').click(function()
+{
+	var toggletarget = $(this).data('target');
+	$(toggletarget).fadeToggle("fast");
+});
+
+$('*[data-type="slidetoggle"]').click(function()
+{
+
+	var toggletarget = $(this).data('target');
+	$(toggletarget).slideToggle("fast");
+
+	console.log(toggletarget + "blaat");
+});
+
+
 // DATEPICKER
 
 $('.input-group.arrival').datepicker({
