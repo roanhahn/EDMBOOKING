@@ -66,6 +66,18 @@ layout: docs.hbs
 					{{/each}}
 				</ul>
 			</div>
+			<div class="col-md-4">
+				<h3 class="h3-docs">Components</h3>
+				<ul class="ul-docs">
+					{{#each pages}}
+					{{#isnt data.type 'page' }}
+					{{#isnt data.title 'Welcome'}}
+					<li><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
+					{{/isnt}}
+					{{/isnt}} 
+					{{/each}}
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
