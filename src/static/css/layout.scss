@@ -5,6 +5,10 @@
 	@media all and (max-width: $breakpoint-mobile){
 		padding: 30px 0;
 	}
+
+	&-white{
+		background: #fff;
+	}
 }
 
 .clearfix:after{
@@ -378,6 +382,59 @@
 			& li{
 				margin-bottom: 4px;
 			}
+		}
+	}
+}
+
+.whybook{
+	// color: $bg-color;
+
+	&-h2{
+		font-weight: 700;
+		font-family: $font-header;
+		text-transform: uppercase;
+		font-size: 60px;
+		margin-bottom: 50px;
+
+		@media all and(max-width: $breakpoint-mobile){
+			font-size: 28px;
+		}
+	}
+
+	&-number{
+		border-radius: 50%;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		line-height: 84px;
+		border: 8px solid #fff;
+		font-family: $font-header;
+		font-weight: 800;
+		font-size: 40px;
+		margin-bottom: 30px;
+		@media all and(max-width: $breakpoint-mobile){
+			margin-bottom: 20px;
+		}
+	}
+
+	& p{
+		padding: 0 50px;
+
+		@media all and(max-width: $breakpoint-mobile){
+			padding: 0px;
+		}
+
+	}
+
+	&-heading{
+		font-family: $font-header;
+		text-transform: uppercase;
+		font-size: 24px;
+		margin-bottom: 10px;
+		font-weight: 700;
+
+		@media all and(max-width: $breakpoint-mobile){
+			font-size: 20px;
 		}
 	}
 }

@@ -440,6 +440,8 @@ h3.extras {
   @media all and (max-width: 767px) {
     .section {
       padding: 30px 0; } }
+  .section-white {
+    background: #fff; }
 
 .clearfix:after {
   clear: both;
@@ -719,6 +721,44 @@ h3.extras {
       padding: 0 0 0 18px; }
       .extra-details ul li {
         margin-bottom: 4px; }
+
+.whybook-h2 {
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 50px; }
+  @media all and (max-width: 767px) {
+    .whybook-h2 {
+      font-size: 28px; } }
+.whybook-number {
+  border-radius: 50%;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 84px;
+  border: 8px solid #fff;
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 30px; }
+  @media all and (max-width: 767px) {
+    .whybook-number {
+      margin-bottom: 20px; } }
+.whybook p {
+  padding: 0 50px; }
+  @media all and (max-width: 767px) {
+    .whybook p {
+      padding: 0px; } }
+.whybook-heading {
+  font-family: "Prompt", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700; }
+  @media all and (max-width: 767px) {
+    .whybook-heading {
+      font-size: 20px; } }
 
 button {
   -webkit-transition: all .2s ease-in-out 0s;
