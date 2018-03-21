@@ -1728,7 +1728,7 @@ footer {
     transition: all .2s ease-in-out 0s; }
     @media all and (max-width: 767px) {
       .event-thumb {
-        padding-bottom: 60%; } }
+        padding-bottom: 60% !important; } }
     .event-thumb--red {
       background-color: #ff3700; }
     .event-thumb--white {
@@ -1737,6 +1737,10 @@ footer {
       background-color: #009bff; }
     .event-thumb--grey {
       background-color: #323232; }
+  .event-two .event-thumb {
+    padding-bottom: 50%; }
+  .event-one .event-thumb {
+    padding-bottom: 25%; }
   .event:hover .event-thumb {
     background-size: 150% auto; }
   .event:hover .button-secondary {
