@@ -391,12 +391,12 @@ $("img.lazyload").lazyload();
 // SHOW HAMBURGER MENU
 
 $('.toggle-subnav').click(function(){
-	 $('.hamburger').toggleClass("hamburger-close");
-	 $('#subnav').toggleClass("subnav-active");
+	$('.hamburger').toggleClass("hamburger-close");
+	$('#subnav').toggleClass("subnav-active");
 	 // $('.body, .html').toggleClass("scroll-lock");
 	 return false;
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 //  READMORE
 
@@ -405,7 +405,7 @@ $('.readmore').click(function(){
 	console.log("bla");
 	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 
 // NOTIFICATION
@@ -415,17 +415,17 @@ $('.notification').delay(3500).fadeOut("fast");
 // SHOW YOUR BOOKING
 
 $('.toggle-yourbooking').click(function(){
-	 $('.yourbooking').slideToggle(300);
-	 return false;
+	$('.yourbooking').slideToggle(300);
+	return false;
 	 // $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 
 // GO BACK
 function goBack() {
-    window.history.back();
-    return false;
+	window.history.back();
+	return false;
 }
 
 // CUSTOM SELECT
@@ -563,8 +563,8 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
-			var starttime = 103;
-			var endtime = 133;
+			var starttime = 120;
+			var endtime = 128;
 
 			var player;
 
@@ -576,8 +576,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 						controls: '0',
 						start: starttime,
 						end: endtime,
-						playlist: '1ujOdLRl-Ac',
-						// loop: 1
+						// playlist: '1ujOdLRl-Ac',
+						loop: 1
 					},
 					events: {
 						'onReady': onPlayerReady,
@@ -591,6 +591,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 				event.target.setVolume(0);
 				event.target.playVideo();
 				// player.playVideo();
+			}
+			function onPlayerStateChange(state) {
+				
 			}
 			function restartVideoSection() {
 				player.seekTo(starttime);
@@ -633,3 +636,8 @@ function vidRescale(){
 }
 
 vidRescale();
+
+// FADEIN VIDEO
+setTimeout(function() {
+	$('#hero-video').addClass('animated fadeIn');
+}, 1500);
