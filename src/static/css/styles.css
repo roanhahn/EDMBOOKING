@@ -379,7 +379,10 @@ h3.extras {
 .img-container {
   height: 0px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: red;
+  background: #000 url(../img/rolling.gif) center center no-repeat scroll;
+  background-size: 16px auto; }
   .img-container img {
     position: absolute;
     left: 50%;

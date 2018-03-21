@@ -6,7 +6,9 @@
 	height: 0px;
 	overflow: hidden;
 	position: relative;
-	// background-color: red;
+	background-color: red;
+	background: $bg-color url(../img/rolling.gif) center center no-repeat scroll;
+	background-size: 16px auto;
 
 	& img{
 		position: absolute;
