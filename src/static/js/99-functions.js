@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
 
 // Lazyload
 
@@ -263,3 +263,5 @@ vidRescale();
 setTimeout(function() {
 	$('#hero-video').addClass('animated fadeIn');
 }, 1500);
+
+});

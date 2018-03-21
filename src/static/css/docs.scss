@@ -23,7 +23,6 @@ body{
 }
 
 .docs-intro{
-	// background: #563d7c url(../img/amf/site-bg.jpg) no-repeat center center scroll;
 	background-size: cover;
 	color: #fff;
 	position: relative;
@@ -56,7 +55,7 @@ body{
 		bottom: 0;
 		content: "";
 		display: block;
-		background: #563d7c url(../img/amf/site-bg.jpg) no-repeat center center scroll;
+		background: #563d7c;
 		background-size: cover;
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 		filter: grayscale(100%);
