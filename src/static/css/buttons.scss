@@ -104,6 +104,18 @@ button{
 			font-size: 10px;
 			margin-top: 2px;
 		}
+
+		&--inverted{
+			background: #fff;
+			color: #000;
+			border-color: #fff;
+
+			&:hover{
+				background: rgba(0,0,0,.5);
+				color: #fff;
+				border-color:  #fff;
+			}
+		}
 	}
 
 	&-add{

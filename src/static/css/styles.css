@@ -796,6 +796,14 @@ button {
       padding: 10px 15px;
       font-size: 10px;
       margin-top: 2px; }
+    .button-secondary--inverted {
+      background: #fff;
+      color: #000;
+      border-color: #fff; }
+      .button-secondary--inverted:hover {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-color: #fff; }
   .button-add {
     min-width: auto; }
     @media all and (max-width: 767px) {
@@ -1215,6 +1223,7 @@ body.scrolled .hamburger {
     left: 0;
     right: 0;
     top: 50%;
+    z-index: 10;
     -ms-transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%); }
@@ -1251,6 +1260,53 @@ body.scrolled .hamburger {
     @media all and (max-width: 767px) {
       .hero p {
         font-size: 18px; } }
+  .hero .videowrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    background: #000;
+    background-size: cover; }
+    @media (max-width: 992px) {
+      .hero .videowrapper {
+        display: none; } }
+    .hero .videowrapper:before {
+      content: "";
+      background: #323232;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      opacity: .2; }
+    .hero .videowrapper iframe {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%); }
+  .hero .videoplayer {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin: auto;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+    @media (max-width: 992px) {
+      .hero .videoplayer {
+        display: none; } }
 
 .footer-subscribe .inner {
   vertical-align: middle;
@@ -1679,6 +1735,27 @@ footer {
       font-size: 16px; }
       .social li a:hover {
         color: #fff; }
+
+.footer-logos {
+  background-color: #fff;
+  padding: 30px 0; }
+  .footer-logos ul {
+    margin: 0;
+    padding: 0; }
+    @media all and (max-width: 992px) {
+      .footer-logos ul {
+        text-align: center; } }
+  .footer-logos li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center; }
+    .footer-logos li img {
+      max-height: 25px;
+      width: auto; }
+      @media all and (max-width: 767px) {
+        .footer-logos li img {
+          max-height: 17px; } }
 
 .event {
   padding: 0;

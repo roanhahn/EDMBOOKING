@@ -13,12 +13,12 @@ $("img.lazyload").lazyload();
 // SHOW HAMBURGER MENU
 
 $('.toggle-subnav').click(function(){
-	 $('.hamburger').toggleClass("hamburger-close");
-	 $('#subnav').toggleClass("subnav-active");
+	$('.hamburger').toggleClass("hamburger-close");
+	$('#subnav').toggleClass("subnav-active");
 	 // $('.body, .html').toggleClass("scroll-lock");
 	 return false;
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 //  READMORE
 
@@ -27,7 +27,7 @@ $('.readmore').click(function(){
 	console.log("bla");
 	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 
 // NOTIFICATION
@@ -37,17 +37,17 @@ $('.notification').delay(3500).fadeOut("fast");
 // SHOW YOUR BOOKING
 
 $('.toggle-yourbooking').click(function(){
-	 $('.yourbooking').slideToggle(300);
-	 return false;
+	$('.yourbooking').slideToggle(300);
+	return false;
 	 // $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');
- });
+	});
 
 
 // GO BACK
 function goBack() {
-    window.history.back();
-    return false;
+	window.history.back();
+	return false;
 }
 
 // CUSTOM SELECT
@@ -174,3 +174,92 @@ $('.date').datepicker({
 	autoclose: true,
 	todayHighlight: true
 });
+
+
+// YOUTUBE VIDEO
+
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			// 3. This function creates an <iframe> (and YouTube player)
+			//    after the API code downloads.
+			var starttime = 120;
+			var endtime = 128;
+
+			var player;
+
+			function onYouTubeIframeAPIReady() {
+				
+				player = new YT.Player('hero-video', {
+					videoId: '1ujOdLRl-Ac',
+					playerVars: {
+						controls: '0',
+						start: starttime,
+						end: endtime,
+						// playlist: '1ujOdLRl-Ac',
+						loop: 1
+					},
+					events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+					}
+				});
+			}
+			// 4. The API will call this function when the video player is ready.
+			function onPlayerReady(event) {
+				event.target.seekTo(starttime);
+				event.target.setVolume(0);
+				event.target.playVideo();
+				// player.playVideo();
+			}
+			function onPlayerStateChange(state) {
+				
+			}
+			function restartVideoSection() {
+				player.seekTo(starttime);
+				// alert("bla");
+			}
+			// 5. The API calls this function when the player's state changes.
+			//    The function indicates that when playing a video (state=1),
+			//    the player should play for six seconds and then stop.
+			var done = false;
+			function onPlayerStateChange(event) {
+				
+				if (event.data == YT.PlayerState.PLAYING && !done) {
+					// alert("bla");
+					done = true;
+				}
+				if (event.data == YT.PlayerState.ENDED && done){
+					restartVideoSection();
+				}
+	// event.target.setVolume(0);
+}
+
+function vidRescale(){
+
+	var w = $('.videowrapper').outerWidth()+200;
+	var h = $('.videowrapper').outerHeight()+200;
+
+	if (w/h > 16/9){
+		$('.videoplayer').css({
+			'width': w +'px',
+			'height': w/16*9 +'px'
+		})
+		// $('.video-background .videoplayer').css({'left': '0px'});
+	} else {
+		$('.videoplayer').css({
+			'width': h/9*16 +'px',
+			'height': h +'px'
+		})
+		// $('.video-background .videoplayer').css({'left': -($('.video-background').outerWidth()-w)/2});
+	}
+}
+
+vidRescale();
+
+// FADEIN VIDEO
+setTimeout(function() {
+	$('#hero-video').addClass('animated fadeIn');
+}, 1500);
