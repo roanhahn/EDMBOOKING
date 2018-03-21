@@ -70,7 +70,7 @@ layout: docs.hbs
 				<h3 class="h3-docs">Components</h3>
 				<ul class="ul-docs">
 					{{#each pages}}
-					{{#isnt data.type 'page' }}
+					{{#is data.type 'component' }}
 					{{#isnt data.title 'Welcome'}}
 					<li><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
 					{{/isnt}}
