@@ -5,7 +5,8 @@
 		display: inline-block;
 		width: 100%;
 	}
-	input{
+	
+	& input{
 		background: $footer-text;
 		border: none;
 		color: $footer-bg;
