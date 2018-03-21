@@ -382,10 +382,13 @@ h3.extras {
   position: relative; }
   .img-container img {
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 0;
-    width: 100%;
-    height: auto; }
+    width: auto;
+    height: 100%;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
 
 .ratio-1-1 {
   padding-bottom: 100%; }
@@ -395,10 +398,7 @@ h3.extras {
 
 @media all and (max-width: 767px) {
   .sm-ratio-3-4 {
-    padding-bottom: 133%; }
-    .sm-ratio-3-4 img {
-      height: 100%;
-      width: auto; } }
+    padding-bottom: 133%; } }
 .gallery {
   margin-bottom: 30px; }
 
