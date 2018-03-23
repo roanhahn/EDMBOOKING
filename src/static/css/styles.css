@@ -1694,7 +1694,7 @@ body.scrolled .hamburger {
 
 footer {
   background-color: #419bf7;
-  padding: 90px 0;
+  padding: 70px 0 30px;
   color: #000; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -1747,13 +1747,47 @@ footer {
     margin: 0 0 30px; }
   footer .credits {
     float: right; }
-  @media all and (max-width: 992px) {
-    footer .payoff {
-      font-size: 13px;
-      text-align: center; }
-      footer .payoff span {
-        display: block;
-        float: none; } }
+  footer .payoff {
+    font-size: 14px;
+    padding-top: 16px; }
+    footer .payoff a {
+      display: inline-block;
+      margin-left: 10px; }
+    @media all and (max-width: 992px) {
+      footer .payoff {
+        text-align: center; }
+        footer .payoff span {
+          display: block;
+          float: none; } }
+  footer .language {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    width: 100%; }
+    @media all and (max-width: 992px) {
+      footer .language {
+        float: none;
+        display: block; } }
+    footer .language label {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 14px;
+      margin-right: 10px;
+      position: relative;
+      top: 2px; }
+    footer .language .selectric-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%; }
+      @media all and (max-width: 992px) {
+        footer .language .selectric-wrapper {
+          width: 50%;
+          display: block;
+          margin: 20px auto 0; } }
+      @media all and (max-width: 767px) {
+        footer .language .selectric-wrapper {
+          width: 100%; } }
 
 .social {
   list-style-type: none;
@@ -1781,7 +1815,7 @@ footer {
 
 .footer-logos {
   background-color: #fff;
-  padding: 30px 0; }
+  padding: 50px 0; }
   .footer-logos ul {
     margin: 0;
     padding: 0; }
@@ -1794,7 +1828,7 @@ footer {
     margin-right: 10px;
     text-align: center; }
     .footer-logos li img {
-      max-height: 25px;
+      max-height: 24px;
       width: auto; }
       @media all and (max-width: 767px) {
         .footer-logos li img {
