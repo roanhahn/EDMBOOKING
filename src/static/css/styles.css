@@ -1084,7 +1084,8 @@ button:focus {
           color: #419bf7; }
   .subnav .social {
     display: inline-block;
-    padding: 0; }
+    padding: 0;
+    margin-top: 10px; }
     .subnav .social a {
       background-color: #419bf7;
       color: #000; }
@@ -1217,7 +1218,7 @@ body.scrolled .hamburger {
   height: 20px;
   width: 25px; }
   body.scrolled .hamburger-close {
-    background-position: -25px 0; }
+    background-position: -26px 0; }
 
 .hero {
   min-height: 300px;
@@ -1707,7 +1708,7 @@ footer {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
-      padding: 60px 0; } }
+      padding: 50px 0 30px; } }
   footer h4 {
     text-transform: uppercase;
     font: "Prompt", sans-serif;
@@ -1716,8 +1717,8 @@ footer {
     font-size: 24px; }
     @media all and (max-width: 767px) {
       footer h4 {
-        font-size: 20px;
-        margin-bottom: 5px; } }
+        font-size: 24px;
+        margin-bottom: 10px; } }
   footer ul {
     list-style-type: none;
     padding: 0;
@@ -1744,6 +1745,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.2);
     line-height: 0;
     margin: 0 0 30px; }
+  @media all and (max-width: 992px) {
+    footer .legals {
+      display: block;
+      margin-top: 10px; } }
   footer .credits {
     float: right; }
   footer .payoff {
@@ -1752,6 +1757,10 @@ footer {
     footer .payoff a {
       display: inline-block;
       margin-left: 10px; }
+      @media all and (max-width: 992px) {
+        footer .payoff a {
+          margin-left: 0px;
+          display: block; } }
     @media all and (max-width: 992px) {
       footer .payoff {
         text-align: center; }
@@ -1804,10 +1813,10 @@ footer {
       background-color: #000;
       color: #419bf7;
       border-radius: 100%;
-      width: 30px;
-      height: 30px;
+      width: 34px;
+      height: 34px;
       text-align: center;
-      line-height: 30px;
+      line-height: 34px;
       font-size: 16px; }
       .social li a:hover {
         color: #fff; }
