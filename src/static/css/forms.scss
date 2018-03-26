@@ -152,3 +152,52 @@
 	border: 1px solid #28a745 !important;
 	color: #28a745 !important;
 }
+
+.login{
+	& .input{
+		display: block;
+		width: 100%;
+		margin: 0;
+		cursor: default;
+		font-size: 18px;
+		padding: 18px;
+		border: 1px solid $bg-color !important;
+		-webkit-border-radius: 4px 4px 0 0;
+		-moz-border-radius:  4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+
+		@media (max-width: $breakpoint-mobile){
+			width: 100%;
+			font-size: 14px;
+			padding: 14px;
+		}
+
+		&:focus{
+			// border-color: #000;
+			background-color: #E4F1FE;
+			outline: none;
+		}
+
+		&.password{
+			-webkit-border-radius: 0 0 4px 4px;
+			-moz-border-radius:  0 0 4px 4px;
+			border-radius: 0 0 4px 4px;
+			border-top: none;
+			margin-bottom: 15px;
+		}
+	}
+	& .submit{
+		margin-bottom: 30px;
+	}
+
+	& a{
+		text-decoration: underline;
+
+		&.forgotten{
+			float: right;
+			font-size: 14px;
+			font-weight: 700;
+			margin-top: 15px;
+		}
+	}
+}
