@@ -144,17 +144,17 @@
 			// font-size: 15px;
 			list-style-type: none;
 			position: relative;
-			padding-left: 10px;
+			padding-left: 15px;
 
 			&:before{
-				content: "\f111";
+				content: "\f00c";
 				display: inline-block;
 				font-family: "fontAwesome";
-				font-size: 5px;
+				font-size: 10px;
 				font-weight: normal;
 				position: absolute;
 				left: 0;
-				top: 7px;
+				top: 3px;
 
 				@media all and (max-width: $breakpoint-mobile){
 					top: 4px;

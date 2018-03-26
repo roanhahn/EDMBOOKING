@@ -2033,16 +2033,16 @@ footer {
       margin-bottom: 10px;
       list-style-type: none;
       position: relative;
-      padding-left: 10px; }
+      padding-left: 15px; }
       .offer-list li:before {
-        content: "\f111";
+        content: "\f00c";
         display: inline-block;
         font-family: "fontAwesome";
-        font-size: 5px;
+        font-size: 10px;
         font-weight: normal;
         position: absolute;
         left: 0;
-        top: 7px; }
+        top: 3px; }
         @media all and (max-width: 767px) {
           .offer-list li:before {
             top: 4px; } }
