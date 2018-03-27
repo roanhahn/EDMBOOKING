@@ -76,6 +76,16 @@ button{
 			// float: none !important;
 		}
 
+		&--inverted{
+			background: $button-bg;
+			color: $button-color;
+
+			&:hover{
+				background: $button-color-hover;
+				color: $button-color;
+			}
+		}
+
 	}
 
 	&-secondary{

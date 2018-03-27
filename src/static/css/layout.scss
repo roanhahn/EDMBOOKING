@@ -9,7 +9,30 @@
 	&-white{
 		background: #fff;
 	}
+
+	&--succes{
+		position: relative;
+		// min-height: 500px;
+		background-position: center center;
+		background-size: cover;
+		background-blend-mode: multiply;
+		background-color: $white-filter;
+
+		& .inner{
+			position: relative;
+			width: 100%;
+			left: 0;
+			right: 0;
+			// top: 50%;
+			z-index: 10;
+			// -ms-transform: translate(0, -50%); 
+			// -webkit-transform: translate(0, -50%);
+			// transform: translate(0, -50%);
+		}
+	}
 }
+
+
 
 .clearfix:after{
 	clear: both;

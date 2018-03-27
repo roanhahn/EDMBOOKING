@@ -160,6 +160,10 @@ a, a:hover, a:visited, a:active{
 		padding-bottom: 10px;
 	}
 
+	&--big{
+		font-size: 32px;
+	}
+
 	@media all and (max-width: $breakpoint-tablet){
 		
 	}
@@ -310,5 +314,101 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 @keyframes fill {
 	100% {
 		box-shadow: inset 0px 0px 0px 30px $color--green;
+	}
+}
+
+.checkmark-succes{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: inline;
+	position: relative;
+	stroke-width: 2;
+	stroke: #fff;
+	stroke-miterlimit: 10;
+	margin: 0 10px 0 0;
+	line-height: 0;
+	vertical-align: middle;
+	box-shadow: inset 0px 0px 0px green;
+	animation: fill2 .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__succes{
+	transform-origin: 50% 50%;
+	stroke-dasharray: 48;
+	stroke-dashoffset: 48;
+	animation: stroke .3s $curve .8s forwards;
+}
+
+@keyframes stroke {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes scale {
+	0%, 100% {
+		transform: none;
+	}
+	50% {
+		transform: scale3d(1.1, 1.1, 1);
+	}
+}
+
+@keyframes fill2 {
+	100% {
+		box-shadow: inset 0px 0px 0px 30px blue;
+	}
+}
+
+.succes{
+	background: #fff;
+	color: #000;
+	padding: 50px;
+	text-align: center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	& h3{
+		color: #000;
+	}
+
+	@media (max-width: $breakpoint-mobile){
+		padding: 30px 15px;
+		font-size: 13px;
+	}
+
+	&-icon{
+		width: 150px;
+		margin-bottom: 20px;
+
+		@media (max-width: $breakpoint-mobile){
+			width: 75px;
+		}
+	}
+
+	& table{
+		margin: 20px auto;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		padding: 20px;
+		width: 100%;
+
+
+
+		& td{
+			text-align: left;
+			padding: 15px 5px;
+
+			@media (max-width: $breakpoint-mobile){
+				
+				padding: 10px 5px;
+			}
+		}
+
+		& .type{
+			text-align: right;
+		}
 	}
 }
