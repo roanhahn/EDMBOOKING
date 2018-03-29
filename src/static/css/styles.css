@@ -333,6 +333,9 @@ h3.extras {
         font-size: 16px;
         margin-bottom: 15px; } }
 
+.modal-content {
+  color: #000; }
+
 .info-labels {
   display: flex;
   padding: 0;
@@ -1062,6 +1065,17 @@ button:focus {
   font-weight: 700; }
   .readmore i {
     font-weight: normal; }
+
+.info-btn {
+  background: none;
+  color: #419bf7;
+  padding: 0;
+  font-size: 18px;
+  line-height: 0;
+  vertical-align: center;
+  position: relative;
+  top: 0px;
+  margin-right: 8px; }
 
 .header {
   background: #e6e6e6;

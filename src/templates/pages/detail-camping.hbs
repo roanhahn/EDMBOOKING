@@ -97,18 +97,21 @@ layout: default.hbs
 						<div class="col-md-6 col-lg-9">
 							<label class="form-label">Tickets</label>
 							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
 								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
 								<label class="form-check-label" for="tickets1">
 									4x I already have my Festival Weekender + camping tickets
 								</label>
 							</div>
 							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
 								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
 								<label class="form-check-label" for="tickets2">
 									4x 2-day Festival Weekender + 4-day camping tickets, surcharge: €676
 								</label>
 							</div>
 							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
 								<input class="form-check-input" type="radio" name="tickets" id="tickets3" value="value">
 								<label class="form-check-label" for="tickets3">
 									4x VIP 2-day Festival Weekender + 4-day camping tickets, surcharge: €1.076
@@ -199,4 +202,25 @@ layout: default.hbs
 			</div>
 		</a>
 	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Festival Weekender + camping tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+      </div>
+    </div>
+  </div>
 </div>

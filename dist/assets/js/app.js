@@ -188,9 +188,9 @@ $("img.lazyload").lazyload();
 $('.toggle-subnav').click(function(){
 	$('.hamburger').toggleClass("hamburger-close");
 	$('#subnav').toggleClass("subnav-active");
-	 // $('.body, .html').toggleClass("scroll-lock");
+	 $('.body').toggleClass("scroll-lock");
 	 return false;
-	 // $('body, .html').attr('scroll','no');
+	 $('body').attr('scroll','no');
 	});
 
 //  READMORE
@@ -219,7 +219,9 @@ $('.notification').delay(3500).fadeOut("fast");
 
 $('.toggle-yourbooking').click(function(){
 	$('.yourbooking').slideToggle(300);
+	$('.body').toggleClass("scroll-lock");
 	return false;
+	$('body').attr('scroll','no');
 	 // $('.body, .html').toggleClass("scroll-lock");
 	 // $('body, .html').attr('scroll','no');
 	});

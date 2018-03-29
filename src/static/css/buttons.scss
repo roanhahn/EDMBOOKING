@@ -225,3 +225,15 @@ button:focus{
 		font-weight: normal;
 	}
 }
+
+.info-btn{
+	background: none;
+	color: $link-color;
+	padding: 0;
+	font-size: 18px;
+	line-height: 0;
+	vertical-align: center;
+	position: relative;
+	top: 0px;
+	margin-right: 8px;
+}
