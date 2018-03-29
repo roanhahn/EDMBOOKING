@@ -63,11 +63,11 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		margin-bottom: 10px;
-		font-size: 15px;
+		font-size: 16px;
 		white-space: nowrap;
 
 		@media all and(max-width: $breakpoint-mobile){
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 

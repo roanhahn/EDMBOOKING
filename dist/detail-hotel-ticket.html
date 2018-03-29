@@ -204,9 +204,18 @@
 </div>
 	
 
+
+<div class="accordeon">
+	<div class="container">
+		<span class="accordeon-step">1. Ticket</span>
+		<div class="accordeon-buttons">
+			Select the best tickets<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+		</div>
+	</div>
+</div>
 <div class="accordeon accordeon--active">
 	<div class="container">
-		<span class="accordeon-step">1. packages</span>
+		<span class="accordeon-step">2. Hotel</span>
 		<div class="accordeon-buttons">
 			<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
 			<a href="step2-camping.html" class="button button-secondary">Next</a>
@@ -243,97 +252,7 @@
 			</div>
 			
 		</div>
-		<form class="form-packages">
-			<div class="row">
-
-				<div class="col-lg-9">
-					<div class="row m-b-20">
-						<div class="col-12 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="persons">Persons</label>
-								<select class="form-control" id="persons">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-6 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="arrival">Arrival date</label>
-								<select class="form-control" id="arrival">
-									<option>24-11-2018</option>
-									<option>25-11-2018</option>
-									<option>26-11-2018</option>
-									<option>27-11-2018</option>
-									<option>28-11-2018</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-6 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="departure">Departure date</label>
-								<select class="form-control" id="departure">
-									<option>24-11-2018</option>
-									<option>25-11-2018</option>
-									<option>26-11-2018</option>
-									<option>27-11-2018</option>
-									<option>28-11-2018</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="row m-b-20">
-						<div class="col-lg-6 form-tickets">
-							<label class="form-label">Tickets</label>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
-								<label class="form-check-label" for="tickets1">
-									2x I already have my EF tickets, less price: € -80,00
-								</label>
-							</div>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
-								<label class="form-check-label" for="tickets2">
-									2x Included in this package your EF tickets
-								</label>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<label class="form-label">Room layout</label>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="rooms" id="room1" value="value">
-								<label class="form-check-label" for="room1">
-									2x Single, surcharge: € 140,00
-								</label>
-							</div>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="rooms" id="room2" value="value">
-								<label class="form-check-label" for="room2">
-									1x Double
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				
-				<div class="col col-lg-3 my-package">
-					<div class="form-label">My Package</div>
-					<div>6 persons x &euro;299</div>
-					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
-					<button class="button button-primary form-tickets-submit">Book now</button>
-				</div>
-
-			</div>
-			<div class="row">
-				
-			</div>
-		</form>
-
-		<hr class="hr">
+		
 
 		<div class="row">
 			<div class="col-lg-8">
@@ -593,12 +512,149 @@
 				</ul>
 			</div>
 		</div>
+
+
+		<hr class="hr" />
+		<div class="row">
+			
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check in</label>
+		<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check out</label>
+		<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-1">
+	<div class="form-group">
+		<label class="form-label" for="room">Guests</label>
+		<span class="guests">2</span>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label" for="room">Select room type</label>
+		<select class="form-control" id="room">
+			<option selected="">2 x double room</option>
+		</select>
+	</div>
+</div>
+<div class="col-12 col-lg-2">
+	<div class="form-group">
+		<label class="form-label d-none d-lg-block">&nbsp;</label>
+		<button class="button button-primary button--block">Search</button>
+	</div>
+</div>
+
+
+
+
+			<div class="col loader">
+	<div class="loader-text">Hold on... we are searching for the best rooms and rates.</div>
+	<div class="loader-wrapper">
+		<div class="loader-bar"></div>
+	</div>
+</div>
+		</div>
+		<hr class="hr" />
+
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+
 	</div>
 </section>
 <div class="accordeon">
 	<div class="container">
 		<a href="step2-camping.html">
-			<span class="accordeon-step">2. Extra's</span>
+			<span class="accordeon-step">3. Extra's</span>
 			<div class="accordeon-buttons">
 				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -608,7 +664,7 @@
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
-			<span class="accordeon-step">3. Personal info</span>
+			<span class="accordeon-step">4. Personal info</span>
 			<div class="accordeon-buttons">
 				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -618,7 +674,7 @@
 <div class="accordeon">
 	<div class="container">
 		<a href="step4-camping.html">
-			<span class="accordeon-step">4. Summary</span>
+			<span class="accordeon-step">5. Summary</span>
 			<div class="accordeon-buttons">
 				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>

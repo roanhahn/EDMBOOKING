@@ -203,6 +203,14 @@ $('.readmore').click(function(){
 	});
 
 
+// Toggle cart
+
+$('.toggle-cart').click(function(){
+	$('.state-empty').toggleClass("d-block");
+	$('.state-filled').toggleClass("d-none");
+	return false;
+});
+
 // NOTIFICATION
 $('.notification').delay(3500).fadeOut("fast");
 

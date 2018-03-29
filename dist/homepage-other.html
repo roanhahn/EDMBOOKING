@@ -54,7 +54,7 @@
 			<div class="booking">
 				<div class="booking-info toggle-yourbooking">
 					<span class="booking-cart">My booking</span>
-					<span class="booking-amount">&euro; 299,00</span>
+					<span class="booking-amount">&euro;299,00</span>
 				</div>
 				<button class="hamburger toggle-subnav"></button>
 			</div>
@@ -66,7 +66,7 @@
 	<div class="notification">
 		<div class="container">
 			<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
-			2x double room added <span>&euro; 299</span>
+			2x double room added <span>&euro;299</span>
 		</div>
 	</div>
 	
@@ -106,97 +106,107 @@
 <div class="yourbooking">
 	<div class="container">
 
-	<h3>Your booking (empty)</h3>
-	<p>Please select your favorite event and book an awesome package.</p>
-	<p>Already booked with EDMBASSY? Go to our login page to manage your booking.</p>
-	
-	<h3>Your booking</h3>
-		<table class="yourbooking-summary">
-			<tbody>
-				<tr>
-					<td class="description">Ticket</td>
-					<td class="content">2x Premium ticket</td>
-					<td class="amount">&euro; 150,00</td>
-					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
-				</tr>
-				<tr class="bookingrow">
-					<td colspan="4">
-						<hr>
-					</td>
-				</tr>
-				<tr>
-					<td class="description">Accomodation</td>
-					<td class="content">Ibis Amsterdam Hotel</td>
-					<td class="amount"></td>
-					<td class="remove"></td>
-				</tr>
-				<tr>
-					<td class="description">Arrival date</td>
-					<td class="content">22-12-2018</td>
-					<td class="amount"></td>
-					<td class="remove"></td>
-				</tr>
-				<tr>
-					<td class="description">Departure date</td>
-					<td class="content">25-12-2018</td>
-					<td class="amount"></td>
-					<td class="remove"></td>
-				</tr>
-				<tr>
-					<td class="description">Room 1</td>
-					<td class="content">Presidential Suite, 3 persons, 3 nights</td>
-					<td class="amount">&euro; 2.250,00</td>
-					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
-				</tr>
-				<tr>
-					<td class="description">Room 2</td>
-					<td class="content">Standard Double, 2 persons, 3 nights</td>
-					<td class="amount">&euro; 2.250,00</td>
-					<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
-				</tr>
-				<tr class="bookingrow">
-					<td colspan="4">
-						<hr>
-					</td>
-				</tr>
-				<tr>
-					<td class="description">Extra</td>
-					<td class="content">
-						<ul>
-							<li>Safari tour</li>
-							<li>Limousine Transfer</li>
-						</ul>
-					</td>
-					<td class="amount">
-						<ul>
-							<li>&euro; 150,00</li>
-							<li>&euro; 150,00</li>
-						</ul>
-					</td>
-					<td class="remove">
-						<ul>
-							<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
-							<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
-						</ul>
-						
-					</td>
-				</tr>
-				<tr class="bookingrow">
-					<td colspan="4">
-						<hr>
-					</td>
-				</tr>
-				<tr>
-					<td class="total" colspan="2">Total price</td>
-					<td class="total text-right" colspan="2">
-						&euro; 3.456,00
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<h3>Your booking</h3>
 
+		<div class="state-empty d-none">
+			<div class="row">
+				<div class="col col-md-9">
+					<p class="p">Your booking is empty. Please select your favorite event and book an awesome package.
+					Already booked with EDMBASSY? Go to our login page to manage your booking.</p>
+				</div>
+				<div class="col-12 col-md-3 text-right">
+					<a href="login" class="button button-primary">Login</a>
+				</div>
+			</div>
+		</div>
 
+		<div class="state-filled">
+			<table class="yourbooking-summary">
+				<tbody>
+					<tr>
+						<td class="description">Ticket</td>
+						<td class="content">2x Premium ticket</td>
+						<td class="amount">&euro;150,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="description">Accomodation</td>
+						<td class="content">Ibis Amsterdam Hotel</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Arrival date</td>
+						<td class="content">22-12-2018</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Departure date</td>
+						<td class="content">25-12-2018</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Room 1</td>
+						<td class="content">Presidential Suite, 3 persons, 3 nights</td>
+						<td class="amount">&euro;2.250,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr>
+						<td class="description">Room 2</td>
+						<td class="content">Standard Double, 2 persons, 3 nights</td>
+						<td class="amount">&euro;2.250,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="description">Extra</td>
+						<td class="content">
+							<ul>
+								<li>Safari tour</li>
+								<li>Limousine Transfer</li>
+							</ul>
+						</td>
+						<td class="amount">
+							<ul>
+								<li>&euro;150,00</li>
+								<li>&euro;150,00</li>
+							</ul>
+						</td>
+						<td class="remove">
+							<ul>
+								<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+								<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+							</ul>
 
+						</td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="total" colspan="2">Total price</td>
+						<td class="total text-right" colspan="2">
+							&euro;3.456,00
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<a href="#" class="m-t-30 d-block toggle-cart">Toggle state</a>
 
 	</div>
 </div>
@@ -256,12 +266,12 @@
 </section>
 <section class="section testimonials text-center">
 	<div class="container-fluid">
-		<h4 class="testimonials-h4">- What edmbassadors say -</h4>
+		<h4 class="testimonials-h4">What edmbassadors say</h4>
 		<div class="owl-carousel owl-theme owl-reviews">
 			<div class="item">
 				<div class="container">
 					<div class="testimonials-item">
-						<p class="testimonials-title">"the trip was fantastic. Hotel was even better than I expected"</p>
+						<p class="testimonials-title">The trip was fantastic. Hotel was even better than I expected</p>
 						<span class="testimonials-author">Jurgen van Zachten, The Netherlands</span>
 					</div>
 				</div>
@@ -269,7 +279,7 @@
 			<div class="item">
 				<div class="container">
 					<div class="testimonials-item">
-						<p class="testimonials-title">"Great service from EDMbassy"</p>
+						<p class="testimonials-title">Great service from EDMbassy</p>
 						<span class="testimonials-author">Tom Ford, United Kingdom</span>
 					</div>
 				</div>
@@ -277,7 +287,7 @@
 			<div class="item">
 				<div class="container">
 					<div class="testimonials-item">
-						<p class="testimonials-title">"We are coming back next year!"</p>
+						<p class="testimonials-title">We are coming back next year!</p>
 						<span class="testimonials-author">Jullie Peters, South Africa</span>
 					</div>
 				</div>
@@ -328,8 +338,8 @@
 				<ul>
 					<li><a href="whybook.html">Why EDMBASSY</a></li>
 					<li><a href="faq.html">Tell me more</a></li>
-					<li><a href="login.html">Manage my booking</a></li>
-					<li><a href="page.html">About EDMBASSY</a></li>
+					<li><a href="page.html">About us</a></li>
+					<li><a href="login.html">Login</a></li>
 				</ul>				  
 			</div>
 			<div class="col-lg-3 footer-col">
@@ -353,9 +363,7 @@
 				</ul>			  
 			</div>
 		</div>
-		<div class="row">
-			<div class="col"><hr></div>
-		</div>
+		
 		<div class="row">
 			<div class="col payoff">
 				<div class="copyright">

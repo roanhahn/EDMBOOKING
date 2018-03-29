@@ -110,7 +110,7 @@ footer{
 	& .language{
 		display: inline-block;
 		vertical-align: middle;
-		float: right;
+		// float: right;
 		width: 100%;
 
 		@media all and (max-width: $breakpoint-tablet){
@@ -132,7 +132,7 @@ footer{
 		& .selectric-wrapper{
 			display: inline-block;
 			vertical-align: middle;
-			width: 100%;
+			width: 80%;
 
 			@media all and (max-width: $breakpoint-tablet){
 				width: 50%;
@@ -141,7 +141,7 @@ footer{
 			}
 
 			@media all and(max-width: $breakpoint-mobile){
-				width: 100%;
+				// width: 100%;
 			}
 		}
 	}

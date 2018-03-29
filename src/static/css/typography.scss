@@ -218,20 +218,22 @@ h3.extras{
 	text-transform: uppercase;
 	font-size: 16px;
 	font-family: $font;
+	font-weight: 800;
 	letter-spacing: 1px;
 	margin: 0 0 30px;
 }
 
 .testimonials{
 	&-item{
-
+		max-width: 970px;
+		margin: 0 auto;
 	}
 	&-title{
 		font-family: $font-header;
 		text-transform: uppercase;
 		font-weight: 800;
 		font-size: 40px;
-		line-height: 1.2;
+		line-height: 1;
 		margin: 0 0 30px;
 
 		@media all and (max-width: $breakpoint-tablet){
@@ -247,7 +249,7 @@ h3.extras{
 		display: block;
 		font-size: 14px;
 		line-height: 1.2;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
 }
 .rolling{
@@ -409,6 +411,31 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 		& .type{
 			text-align: right;
+		}
+	}
+}
+
+.my-package{
+	color: $link-color;
+	font-size: 22px;
+	font-weight: 600;
+
+	@media (max-width: $breakpoint-mobile){
+
+		font-size: 16px;
+	}
+	&-total{
+		border-top: 1px solid $link-color;
+		// font-size: 22px;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin: 15px 0 0 0;
+		padding: 15px 0 0 0;
+
+		@media (max-width: $breakpoint-mobile){
+
+			font-size: 16px;
+			margin-bottom: 15px;
 		}
 	}
 }
