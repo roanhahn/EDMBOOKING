@@ -771,6 +771,49 @@ h3.extras {
   margin: 0 0 30px;
   padding: 0;
   color: #419bf7; }
+  .extra-number {
+    background: #fff;
+    position: relative;
+    height: 44px;
+    min-width: 200px;
+    width: 100%; }
+    @media all and (max-width: 767px) {
+      .extra-number {
+        min-width: 120px;
+        width: 100%;
+        height: 39px; } }
+    .extra-number .manage-button {
+      background: #419bf7;
+      color: #fff;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      font-weight: 800;
+      top: 0; }
+      @media all and (max-width: 767px) {
+        .extra-number .manage-button {
+          height: 39px;
+          width: 39px; } }
+      .extra-number .manage-button:hover {
+        color: #000; }
+    .extra-number .plus {
+      top: 0;
+      right: 0;
+      left: auto; }
+    .extra-number-items {
+      text-align: center;
+      color: #000;
+      width: 100%;
+      height: 44px;
+      font-size: 16px;
+      line-height: 44px;
+      font-weight: 800; }
+      @media all and (max-width: 767px) {
+        .extra-number-items {
+          height: 39px;
+          line-height: 39px; } }
   .extra-listitem {
     font-size: 30px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
