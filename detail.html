@@ -244,80 +244,92 @@
 			
 		</div>
 		<form class="form-packages">
-			<div class="row m-b-20">
+			<div class="row">
 
-				<div class="col-12 col-md-3">
-					<div class="form-group">
-						<label class="form-label" for="persons">Persons</label>
-						<select class="form-control" id="persons">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+				<div class="col-lg-9">
+					<div class="row m-b-20">
+						<div class="col-12 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="persons">Persons</label>
+								<select class="form-control" id="persons">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="arrival">Arrival date</label>
+								<select class="form-control" id="arrival">
+									<option>24-11-2018</option>
+									<option>25-11-2018</option>
+									<option>26-11-2018</option>
+									<option>27-11-2018</option>
+									<option>28-11-2018</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="departure">Departure date</label>
+								<select class="form-control" id="departure">
+									<option>24-11-2018</option>
+									<option>25-11-2018</option>
+									<option>26-11-2018</option>
+									<option>27-11-2018</option>
+									<option>28-11-2018</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row m-b-20">
+						<div class="col-lg-6 form-tickets">
+							<label class="form-label">Tickets</label>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
+								<label class="form-check-label" for="tickets1">
+									2x I already have my EF tickets, less price: € -80,00
+								</label>
+							</div>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
+								<label class="form-check-label" for="tickets2">
+									2x Included in this package your EF tickets
+								</label>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<label class="form-label">Room layout</label>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="rooms" id="room1" value="value">
+								<label class="form-check-label" for="room1">
+									2x Single, surcharge: € 140,00
+								</label>
+							</div>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="rooms" id="room2" value="value">
+								<label class="form-check-label" for="room2">
+									1x Double
+								</label>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-6 col-md-3">
-					<div class="form-group">
-						<label class="form-label" for="arrival">Arrival date</label>
-						<select class="form-control" id="arrival">
-							<option>24-11-2018</option>
-							<option>25-11-2018</option>
-							<option>26-11-2018</option>
-							<option>27-11-2018</option>
-							<option>28-11-2018</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-6 col-md-3">
-					<div class="form-group">
-						<label class="form-label" for="departure">Departure date</label>
-						<select class="form-control" id="departure">
-							<option>24-11-2018</option>
-							<option>25-11-2018</option>
-							<option>26-11-2018</option>
-							<option>27-11-2018</option>
-							<option>28-11-2018</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-12 col-md-3 text-right">
-					<button class="button button-primary form-tickets-submit">Next</button>
+
+				
+				<div class="col col-lg-3 my-package">
+					<div class="form-label">My Package</div>
+					<div>6 persons x &euro;299</div>
+					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
+					<button class="button button-primary form-tickets-submit">Book now</button>
 				</div>
 
 			</div>
 			<div class="row">
-				<div class="col-lg-6 form-tickets">
-					<label class="form-label">Tickets</label>
-					<div class="form-group">
-						<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
-						<label class="form-check-label" for="tickets1">
-							2x I already have my EF tickets, less price: € -80,00
-						</label>
-					</div>
-					<div class="form-group">
-						<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
-						<label class="form-check-label" for="tickets2">
-							2x Included in this package your EF tickets
-						</label>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<label class="form-label">Room layout</label>
-					<div class="form-group">
-						<input class="form-check-input" type="radio" name="rooms" id="room1" value="value">
-						<label class="form-check-label" for="room1">
-							2x Single, surcharge: € 140,00
-						</label>
-					</div>
-					<div class="form-group">
-						<input class="form-check-input" type="radio" name="rooms" id="room2" value="value">
-						<label class="form-check-label" for="room2">
-							1x Double
-						</label>
-					</div>
-				</div>
+				
 			</div>
 		</form>
 
