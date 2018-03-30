@@ -92,13 +92,13 @@ a, a:hover, a:visited, a:active{
 }
 .page-h1{
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 800;
 	font-family: $font-header;
 	margin: 0 0 30px;
 	padding: 0 0 30px;
 	// line-height: 1;
 	border-bottom: 2px solid $border-color;
-	font-size: 52px;
+	font-size: 32px;
 
 	@media all and (max-width: $breakpoint-tablet){
 		font-size: 36px;
@@ -110,7 +110,7 @@ a, a:hover, a:visited, a:active{
 	}
 }
 .h2{
-	// color: $link-color;
+	color: $link-color;
 	font-size: 20px;
 	// margin-bottom: 20px;
 
@@ -442,4 +442,136 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 .modal-content{
 	color: #000;
+}
+
+.myBooking{
+	background: #e6e6e6;
+
+	&-header{
+		background: #e6e6e6;
+		padding: 15px 20px;
+		font-family: $font-header;
+		font-weight: 800;
+		text-transform: uppercase;
+		// text-align: right;
+		font-size: 14px;
+		display: block;
+		white-space: nowrap;
+
+		& span{
+			display: inline-block;
+			margin-top: 8px;
+			@media all and(max-width: $breakpoint-mobile){
+				margin-top: 2px;
+			}
+		}
+
+		& img{
+			width: 200px;
+			@media all and(max-width: $breakpoint-mobile){
+				width: 100px;
+			}
+		}
+	}
+
+	& a{
+		text-decoration: underline;
+	}
+
+	&-hero{
+		background-color: #419bf7;
+		text-align: center;
+		padding: 40px 20px;
+		background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		color: #fff;
+
+		& .hero-title{
+			font-family: 'Prompt', sans-serif;
+			font-weight: 800;
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0 0 10px 0;
+		}
+		& .hero-subtitle{
+			color: #fff;
+			margin: 0 0 0 0;
+			text-transform: uppercase;
+		}
+	}
+
+	&-wrapper{
+		background: #fff;
+		max-width: 600px;
+		margin: 0 auto;
+		color: #000;
+	}
+
+	&-h1{
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	& .content{
+		padding: 20px;
+	}
+
+	& .rule{
+		height: 2px;
+		background: #000;
+	}
+
+	
+
+	& h3{
+		background: #000;
+		color: #fff;
+		padding: 10px 20px;
+		font-family: $font-header;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 17px;
+		margin: 0;
+	}
+
+	& table{
+		width: 100%;
+		border: none;
+		display: table;
+
+		& td{
+			// font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			line-height: 21px;
+			padding: 3px 0;
+			vertical-align: top;
+			width: auto;
+
+			&:first-child{
+				width: 300px !important;
+				// background: yellow;
+
+				@media all and(max-width: $breakpoint-mobile){
+					width: 150px !important;
+				}
+			}
+
+			&.price{
+				width: auto;
+			}
+		}
+
+		&.total td{
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: 700;
+			padding-bottom: 60px;
+		}
+	}
 }

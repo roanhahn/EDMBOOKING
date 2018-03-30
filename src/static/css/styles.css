@@ -77,12 +77,12 @@ a, a:hover, a:visited, a:active {
 
 .page-h1 {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   font-family: "Prompt", sans-serif;
   margin: 0 0 30px;
   padding: 0 0 30px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  font-size: 52px; }
+  font-size: 32px; }
   @media all and (max-width: 992px) {
     .page-h1 {
       font-size: 36px; } }
@@ -93,6 +93,7 @@ a, a:hover, a:visited, a:active {
       margin-bottom: 15px; } }
 
 .h2 {
+  color: #419bf7;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
@@ -336,6 +337,98 @@ h3.extras {
 .modal-content {
   color: #000; }
 
+.myBooking {
+  background: #e6e6e6; }
+  .myBooking-header {
+    background: #e6e6e6;
+    padding: 15px 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    white-space: nowrap; }
+    .myBooking-header span {
+      display: inline-block;
+      margin-top: 8px; }
+      @media all and (max-width: 767px) {
+        .myBooking-header span {
+          margin-top: 2px; } }
+    .myBooking-header img {
+      width: 200px; }
+      @media all and (max-width: 767px) {
+        .myBooking-header img {
+          width: 100px; } }
+  .myBooking a {
+    text-decoration: underline; }
+  .myBooking-hero {
+    background-color: #419bf7;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff; }
+    .myBooking-hero .hero-title {
+      font-family: 'Prompt', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0 0 10px 0; }
+    .myBooking-hero .hero-subtitle {
+      color: #fff;
+      margin: 0 0 0 0;
+      text-transform: uppercase; }
+  .myBooking-wrapper {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #000; }
+  .myBooking-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .myBooking .content {
+    padding: 20px; }
+  .myBooking .rule {
+    height: 2px;
+    background: #000; }
+  .myBooking h3 {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 0; }
+  .myBooking table {
+    width: 100%;
+    border: none;
+    display: table; }
+    .myBooking table td {
+      font-size: 15px;
+      line-height: 21px;
+      padding: 3px 0;
+      vertical-align: top;
+      width: auto; }
+      .myBooking table td:first-child {
+        width: 300px !important; }
+        @media all and (max-width: 767px) {
+          .myBooking table td:first-child {
+            width: 150px !important; } }
+      .myBooking table td.price {
+        width: auto; }
+    .myBooking table.total td {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 60px; }
+
 .info-labels {
   display: flex;
   padding: 0;
@@ -522,10 +615,15 @@ h3.extras {
     font-weight: 700;
     background-color: #419bf7;
     color: #fff;
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     text-transform: uppercase; }
+  @media all and (max-width: 767px) {
+    .ribbon {
+      -ms-transform: scale(1, 1);
+      /* IE 9 */
+      -webkit-transform: scale(1, 1);
+      /* Safari */
+      transform: scale(0.6, 0.6);
+      transform-origin: 100% 0%; } }
 
 .section {
   padding: 70px 0;
@@ -547,6 +645,9 @@ h3.extras {
       left: 0;
       right: 0;
       z-index: 10; }
+
+.detailpage {
+  padding: 30px 0; }
 
 .clearfix:after {
   clear: both;
@@ -747,6 +848,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
+  color: #419bf7;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -842,7 +944,11 @@ h3.extras {
     color: #419bf7;
     padding: 0;
     display: inline-block;
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-weight: 900; }
+    .extra-btn i {
+      margin-right: 10px;
+      font-weight: normal; }
     .extra-btn:hover {
       color: #fff; }
     @media all and (max-width: 767px) {
@@ -916,7 +1022,7 @@ button {
 .button {
   display: inline-block;
   font-family: "Prompt", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   letterspacing: 1px;
   text-decoration: none !important;
   white-space: nowrap;
@@ -973,6 +1079,11 @@ button {
       .button-primary--inverted:hover {
         background: #000;
         color: #fff; }
+    .button-primary--small {
+      padding: 10px 15px;
+      font-size: 10px;
+      margin-top: 2px;
+      min-width: auto; }
   .button-secondary {
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.5);
@@ -985,6 +1096,8 @@ button {
       font-family: "FontAwesome";
       margin-left: 5px;
       display: inline-block; }
+    .button-secondary--noArrow:after {
+      display: none; }
     .button-secondary:hover {
       color: #000;
       text-decoration: none;
@@ -1684,14 +1797,16 @@ body.scrolled .hamburger {
   .form-tickets {
     margin-bottom: 20px; } }
 .is-invalid {
-  background: #ffc7cb !important;
+  background: #dc3545 !important;
   border: 1px solid #dc3545 !important;
-  color: #dc3545 !important; }
+  color: #dc3545 !important;
+  color: #fff !important; }
 
 .is-valid {
-  background: #ebffe4 !important;
+  background: #28a745 !important;
   border: 1px solid #28a745 !important;
-  color: #28a745 !important; }
+  color: #28a745 !important;
+  color: #fff !important; }
 
 .login .input {
   display: block;
@@ -1942,7 +2057,7 @@ body.scrolled .hamburger {
 
 footer {
   background-color: #419bf7;
-  padding: 70px 0 30px;
+  padding: 70px 0 70px;
   color: #000; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -1973,10 +2088,6 @@ footer {
     margin: 0; }
     footer ul li {
       margin-bottom: 5px; }
-      @media all and (max-width: 767px) {
-        footer ul li {
-          font-size: 14px;
-          margin-bottom: 3px; } }
   footer a {
     color: #000; }
     footer a:hover {
@@ -1996,7 +2107,10 @@ footer {
   @media all and (max-width: 992px) {
     footer .legals {
       display: block;
-      margin-top: 10px; } }
+      margin-top: 10px; }
+      footer .legals a {
+        display: block;
+        padding: 5px 0; } }
   footer .credits {
     float: right; }
   footer .payoff {
