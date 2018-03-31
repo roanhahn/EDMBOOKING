@@ -31,7 +31,7 @@ footer{
 
 		& li{
 			margin-bottom: 5px;
-			
+
 			@media all and (max-width: $breakpoint-mobile){
 				// font-size: 14px;
 				// margin-bottom: 3px;
@@ -219,4 +219,41 @@ footer{
 			}
 		}
 	}
+}
+
+.cookies{
+	position: fixed;
+	z-index: 99;
+	bottom: 20px;
+	left: 30%;
+	width: 40%;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.8);
+	font-size: 15px;
+	border: 1px solid $border-color;
+
+	@media all and(max-width: $breakpoint-tablet){
+		width: 60%;
+		left: 20%;
+	}
+
+	@media all and(max-width: $breakpoint-mobile){
+		width: 90%;
+		left: 5%;
+		font-size: 13px;
+	}
+
+	& button{
+		padding: 0;
+		background-color: transparent;
+		float: right;
+		margin: 0 0 0 20px;
+		curspor: pointer;
+	}
+
+	& p{
+		margin: 0;
+		line-height: 1.4;
+	}
+
 }

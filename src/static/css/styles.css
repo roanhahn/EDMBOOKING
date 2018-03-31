@@ -432,15 +432,23 @@ h3.extras {
 
 .info-labels {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 30px 0; }
   @media (max-width: 767px) {
     .info-labels {
-      display: none; } }
+      margin-bottom: 0px; } }
   .info-labels li {
     flex-grow: 1;
+    flex-shrink: 1;
     list-style-type: none;
     margin: 0 15px 0 0; }
+    .info-labels li:last-child {
+      margin-right: 0; }
+    @media (max-width: 767px) {
+      .info-labels li {
+        flex-grow: 0;
+        margin: 0 5px 5px 0; } }
 
 .info-list-category {
   padding-top: 30px;
@@ -2200,6 +2208,35 @@ footer {
       @media all and (max-width: 767px) {
         .footer-logos li img {
           max-height: 17px; } }
+
+.cookies {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  left: 30%;
+  width: 40%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3); }
+  @media all and (max-width: 992px) {
+    .cookies {
+      width: 60%;
+      left: 20%; } }
+  @media all and (max-width: 767px) {
+    .cookies {
+      width: 90%;
+      left: 5%;
+      font-size: 13px; } }
+  .cookies button {
+    padding: 0;
+    background-color: transparent;
+    float: right;
+    margin: 0 0 0 20px;
+    curspor: pointer; }
+  .cookies p {
+    margin: 0;
+    line-height: 1.4; }
 
 .event {
   padding: 0;

@@ -193,6 +193,9 @@ $('.toggle-subnav').click(function(){
 	 $('body').attr('scroll','no');
 	});
 
+$('.closeCookies').click(function(){
+	$('.cookies').fadeToggle("fast");
+});
 //  READMORE
 
 

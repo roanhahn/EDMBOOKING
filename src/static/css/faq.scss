@@ -2,18 +2,31 @@
 
 .info-labels{
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 30px 0;
 
 	@media (max-width: $breakpoint-mobile){
-		display: none;
+		margin-bottom: 0px;
 	}
 
 	& li{
 		flex-grow: 1;
+		flex-shrink: 1;
 		list-style-type: none;
 		margin: 0 15px 0 0;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		@media (max-width: $breakpoint-mobile){
+			flex-grow: 0;
+			margin: 0 5px 5px 0;
+		}
 	}
+
+	
 }
 
 .info-list-category{
@@ -29,71 +42,71 @@
 	margin-bottom: 20px;
 
 	// & span{
-	// 	display: inline-block;
-	// 	padding-bottom: 5px;
+		// 	display: inline-block;
+		// 	padding-bottom: 5px;
 
-	// 	@media (max-width: $breakpoint-mobile){
-	// 		font-size: 16px;
-	// 		border-bottom: 2px solid $link-color;
-	// 	}
-	// }
+		// 	@media (max-width: $breakpoint-mobile){
+			// 		font-size: 16px;
+			// 		border-bottom: 2px solid $link-color;
+			// 	}
+			// }
 
-	
-}
-.info-list{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	
 
-	&-item{
-		border-bottom: 1px solid $border-color;
-	}
-
-	&-question{
-		cursor: pointer;
-		padding: 15px 15px 15px 0;
-		line-height: 1;
-		font-size: 18px;
-		// text-transform: uppercase;
-		// font-family: $secondary-font;
-		font-weight: 600;
-
-		background: transparent url(../img/plus-white.svg) no-repeat center right;
-		background-size: 20px auto;
-
-		@media (max-width: $breakpoint-mobile){
-			font-size: 14px;
 		}
-		
-
-		&.active{
-			background: transparent url(../img/minus-white.svg) no-repeat center right;
-			background-size: 20px auto;
-		}
-	}
-	&-answer{
-		display: none;
-		// font-size: 15px;
-		// font-weight: 300;
-		line-height: 1.6;
-		margin-bottom: 20px;
-		padding-right: 30px;
-
-		@media (max-width: $breakpoint-mobile){
-			font-size: 13px;
-		}
-
-		& p{
-			margin-bottom: 15px;
-		}
-
-		& ul{
-			margin: 15px 0 15px 15px;
+		.info-list{
+			list-style-type: none;
+			margin: 0;
 			padding: 0;
+
+
+			&-item{
+				border-bottom: 1px solid $border-color;
+			}
+
+			&-question{
+				cursor: pointer;
+				padding: 15px 15px 15px 0;
+				line-height: 1;
+				font-size: 18px;
+				// text-transform: uppercase;
+				// font-family: $secondary-font;
+				font-weight: 600;
+
+				background: transparent url(../img/plus-white.svg) no-repeat center right;
+				background-size: 20px auto;
+
+				@media (max-width: $breakpoint-mobile){
+					font-size: 14px;
+				}
+
+
+				&.active{
+					background: transparent url(../img/minus-white.svg) no-repeat center right;
+					background-size: 20px auto;
+				}
+			}
+			&-answer{
+				display: none;
+				// font-size: 15px;
+				// font-weight: 300;
+				line-height: 1.6;
+				margin-bottom: 20px;
+				padding-right: 30px;
+
+				@media (max-width: $breakpoint-mobile){
+					font-size: 13px;
+				}
+
+				& p{
+					margin-bottom: 15px;
+				}
+
+				& ul{
+					margin: 15px 0 15px 15px;
+					padding: 0;
+				}
+				& li{
+					list-style-type: square;
+				}
+			}
 		}
-		& li{
-			list-style-type: square;
-		}
-	}
-}
