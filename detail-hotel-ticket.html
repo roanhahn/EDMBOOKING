@@ -84,6 +84,14 @@
 		<li><a href="whybook.html">Why EDMBASSY</a></li>
 		<li><a href="faq.html">Tell me more</a></li>
 		<li><a href="login.html">Log in</a></li>
+		<li>
+			Contact
+			<div class="contactDetails">
+				E-mail: info@edmbassy.com<br />
+				Phone: +31 6 52 382 382<br />
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+			</div>
+		</li>
 	</ul>
 
 	<ul class="social">
@@ -91,7 +99,7 @@
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-		<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+		
 	</ul>
 </nav>
 
@@ -280,7 +288,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 15,
+                    zoom: 10,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
@@ -473,11 +481,18 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 var customMarker = 'assets/img/marker.svg';
 
                 var marker = new google.maps.Marker({ 
-				position: new google.maps.LatLng(52.3941320, 4.8507230), //nachtlab
-				icon: customMarker, 
-				map: map, 
-				title: 'yo'  
-            });
+    				position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+    				icon: customMarker, 
+    				map: map, 
+    				title: 'yo'  
+                });
+
+                 var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3873878,4.646219400000064), //EVENT
+                    icon: customMarker, 
+                    map: map, 
+                    title: 'yo'  
+                });
             }
             </script>
 					<div>
