@@ -7,6 +7,17 @@ body,html{
 	-moz-osx-font-smoothing: auto;
 }
 
+::-moz-selection { /* Code for Firefox */
+	color: #fff;
+	background: $link-color;
+}
+
+::selection {
+	color: #fff;
+	background: $link-color;
+}
+
+
 body{
 	background: $bg-color;
 	color: $text-color;
@@ -161,7 +172,7 @@ a, a:hover, a:visited, a:active{
 	}
 
 	&--big{
-		font-size: 32px;
+		// font-size: 32px;
 	}
 
 	@media all and (max-width: $breakpoint-tablet){
@@ -364,26 +375,22 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 .succes{
-	background: #fff;
-	color: #000;
-	padding: 50px;
+	
 	text-align: center;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
 
 	& h3{
-		color: #000;
+		color: #fff;
+		font-weight: 900;
 	}
 
 	@media (max-width: $breakpoint-mobile){
-		padding: 30px 15px;
-		font-size: 13px;
+		// padding: 30px 15px;
+		// font-size: 13px;
 	}
 
 	&-icon{
-		width: 150px;
-		margin-bottom: 20px;
+		width: 120px;
+		margin-bottom: 30px;
 
 		@media (max-width: $breakpoint-mobile){
 			width: 75px;
@@ -392,25 +399,37 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 	& table{
 		margin: 20px auto;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-		padding: 20px;
+		border-top: 1px solid $border-color;
+		border-bottom: 1px solid $border-color;
+		padding: 0;
 		width: 100%;
 
+		& tbody{
+			margin: 20px 0;
+			display: block;
+			// background: red;
+		}
 
 
 		& td{
 			text-align: left;
-			padding: 15px 5px;
+			width: auto;
+			padding: 5px 0 5px 0;
+			white-space: nowrap;
+
+			&:first-child{
+				font-weight: 800;
+				width: 130px !important;
+			}
 
 			@media (max-width: $breakpoint-mobile){
 				
-				padding: 10px 5px;
+				// padding: 10px 5px;
 			}
 		}
 
 		& .type{
-			text-align: right;
+			// text-align: right;
 		}
 	}
 }

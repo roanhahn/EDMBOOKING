@@ -11,7 +11,7 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 12,
+                    zoom: 10,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
@@ -27,7 +27,7 @@
                             "saturation": 36
                         },
                         {
-                            "color": "#000000"
+                            "color": "#ffffff"
                         },
                         {
                             "lightness": 40
@@ -93,7 +93,7 @@
                             "color": "#000000"
                         },
                         {
-                            "lightness": 20
+                            "lightness": 30
                         }
                         ]
                     },
@@ -204,10 +204,17 @@
                 var customMarker = 'assets/img/marker.svg';
 
                 var marker = new google.maps.Marker({ 
-				position: new google.maps.LatLng(52.3941320, 4.8507230), //nachtlab
-				icon: customMarker, 
-				map: map, 
-				title: 'yo'  
-            });
+    				position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+    				icon: customMarker, 
+    				map: map, 
+    				title: 'yo'  
+                });
+
+                 var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3873878,4.646219400000064), //EVENT
+                    icon: customMarker, 
+                    map: map, 
+                    title: 'yo'  
+                });
             }
             </script>

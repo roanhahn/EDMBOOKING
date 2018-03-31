@@ -19,10 +19,11 @@ button{
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
 	-webkit-transition: all .15s ease-out 0s;
 	transition: all .15s ease-out 0s;
+	border-radius: 0px;
 
 	&--next:after{
 		content: "\f105";
@@ -140,10 +141,10 @@ button{
 	}
 
 	&-add{
-		min-width: auto;
+		min-width: 132px;
 
 		@media all and (max-width: $breakpoint-mobile){
-			
+			min-width: 119px;
 			& span{
 				display: none;
 			}
