@@ -1811,14 +1811,18 @@ body.scrolled .hamburger {
 .is-invalid {
   background: #dc3545 !important;
   border: 1px solid #dc3545 !important;
-  color: #dc3545 !important;
-  color: #fff !important; }
+  color: #fff !important;
+  -webkit-box-shadow: 0 0 0 30px #dc3545 inset !important;
+  -moz-box-shadow: 0 0 0 30px #dc3545 inset !important;
+  box-shadow: 0 0 0 30px #dc3545 inset !important; }
 
 .is-valid {
   background: #28a745 !important;
   border: 1px solid #28a745 !important;
-  color: #28a745 !important;
-  color: #fff !important; }
+  color: #fff !important;
+  -webkit-box-shadow: 0 0 0 30px #28a745 inset !important;
+  -moz-box-shadow: 0 0 0 30px #28a745 inset !important;
+  box-shadow: 0 0 0 30px #28a745 inset !important; }
 
 .login .input {
   display: block;
