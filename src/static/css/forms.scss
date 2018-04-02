@@ -117,9 +117,23 @@
 	background: #fff;
 
 	&:focus{
-		-webkit-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
-		-moz-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
-		box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
+		// -webkit-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
+		// -moz-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
+		// box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
+		color: #000;
+	}
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #333;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+		color: #333;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+		color: #333;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+		color: #333;
 	}
 }
 .input-group-addon{
@@ -149,6 +163,9 @@
 	-webkit-box-shadow: 0 0 0 30px #dc3545 inset !important;
 	-moz-box-shadow: 0 0 0 30px #dc3545 inset !important;
 	box-shadow: 0 0 0 30px #dc3545 inset !important;
+	-webkit-text-fill-color: #fff !important;
+	-moz-text-fill-color: #fff !important;
+	text-fill-color: #fff !important;
 }
 
 .is-valid{
@@ -159,6 +176,9 @@
 	-webkit-box-shadow: 0 0 0 30px #28a745 inset !important;
 	-moz-box-shadow: 0 0 0 30px #28a745 inset !important;
 	box-shadow: 0 0 0 30px #28a745 inset !important;
+	-webkit-text-fill-color: #fff !important;
+	-moz-text-fill-color: #fff !important;
+	text-fill-color: #fff !important;
 }
 
 .login{
@@ -170,9 +190,13 @@
 		font-size: 18px;
 		padding: 18px;
 		border: 1px solid $bg-color !important;
-		// -webkit-border-radius: 4px 4px 0 0;
-		// -moz-border-radius:  4px 4px 0 0;
-		// border-radius: 4px 4px 0 0;
+		-webkit-border-radius: 0px;
+		-moz-border-radius:  0px;
+		border-radius: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border-radius: none;
+		-webkit-border-radius: 0;
 
 		@media (max-width: $breakpoint-mobile){
 			width: 100%;
@@ -187,9 +211,9 @@
 		}
 
 		&.password{
-			-webkit-border-radius: 0 0 4px 4px;
-			-moz-border-radius:  0 0 4px 4px;
-			border-radius: 0 0 4px 4px;
+			// -webkit-border-radius: 0 0 4px 4px;
+			// -moz-border-radius:  0 0 4px 4px;
+			// border-radius: 0 0 4px 4px;
 			border-top: none;
 			margin-bottom: 15px;
 		}
