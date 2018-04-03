@@ -1364,13 +1364,13 @@ button:focus {
         .subnav .subnav-list li a:hover {
           color: #419bf7; }
   .subnav .contactDetails {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    padding-top: 10px;
-    line-height: 1.4; }
+    padding-top: 10px; }
     .subnav .contactDetails a {
-      display: inline-block !important; }
+      display: inline-block !important;
+      margin-bottom: 5px; }
   .subnav .social {
     display: inline-block;
     padding: 0;
@@ -1430,10 +1430,11 @@ button:focus {
   .yourbooking-summary td.description {
     padding-right: 30px;
     font-weight: 700;
-    width: 130px; }
+    width: 150px; }
     @media all and (max-width: 767px) {
       .yourbooking-summary td.description {
-        padding-right: 15px; } }
+        padding-right: 15px;
+        width: 130px; } }
   .yourbooking-summary td.amount {
     white-space: nowrap;
     text-align: right; }

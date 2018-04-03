@@ -7,19 +7,34 @@ layout: default.hbs
 
 <div class="accordeon">
 	<div class="container">
-		<span class="accordeon-step">1. Ticket</span>
-		<div class="accordeon-buttons">
-			Select the best tickets<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-		</div>
+		<a href="step1-hotels.html">
+			<span class="accordeon-step">Your ticket</span>
+			<div class="accordeon-buttons">
+				Select the best tickets<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-hotels.html">
+			<span class="accordeon-step">Your Hotel</span>
+			<div class="accordeon-buttons">
+				Choose your hotel<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
 	</div>
 </div>
 <div class="accordeon accordeon--active">
 	<div class="container">
-		<span class="accordeon-step">2. Hotel</span>
-		<div class="accordeon-buttons">
-			<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
-			<a href="step2-camping.html" class="button button-secondary">Next</a>
-		</div>
+		<a href="step2-camping.html">
+			<span class="accordeon-step">Your room</span>
+			<div class="accordeon-buttons">
+				<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
+				<a href="step2-camping.html" class="button button-secondary">Next</a>
+			</div>
+			
+		</a>
 	</div>
 </div>
 <section class="section detailpage">
@@ -117,20 +132,11 @@ layout: default.hbs
 
 	</div>
 </section>
-<div class="accordeon">
-	<div class="container">
-		<a href="step2-camping.html">
-			<span class="accordeon-step">3. Extra's</span>
-			<div class="accordeon-buttons">
-				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
+
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
-			<span class="accordeon-step">4. Personal info</span>
+			<span class="accordeon-step">Your details</span>
 			<div class="accordeon-buttons">
 				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -140,7 +146,7 @@ layout: default.hbs
 <div class="accordeon">
 	<div class="container">
 		<a href="step4-camping.html">
-			<span class="accordeon-step">5. Summary</span>
+			<span class="accordeon-step">Confirm</span>
 			<div class="accordeon-buttons">
 				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>

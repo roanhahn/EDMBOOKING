@@ -229,14 +229,15 @@
 	}
 
 	& .contactDetails{
-		font-size: 13px;
+		font-size: 16px;
 		font-weight: 400;
 		text-transform: none;
 		padding-top: 10px;
-		line-height: 1.4;
+		// line-height: 1.4;
 
 		& a{
 			display: inline-block !important;
+			margin-bottom: 5px;
 		}
 	}
 
@@ -329,10 +330,12 @@
 	& td.description{
 		padding-right: 30px;
 		font-weight: 700;
-		width: 130px;
+		width: 150px;
+
 
 		@media all and (max-width: $breakpoint-mobile){
 			padding-right: 15px;
+			width: 130px;
 		}
 	}
 
