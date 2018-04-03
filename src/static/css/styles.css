@@ -338,97 +338,122 @@ h3.extras {
 .modal-content {
   color: #000; }
 
-.myBooking {
-  background: #e6e6e6; }
-  .myBooking-header {
-    background: #e6e6e6;
-    padding: 15px 20px;
-    font-family: "Prompt", sans-serif;
+.myBooking-header {
+  background: #e6e6e6;
+  padding: 15px 20px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  white-space: nowrap; }
+  .myBooking-header span {
+    display: inline-block;
+    margin-top: 8px; }
+    @media all and (max-width: 767px) {
+      .myBooking-header span {
+        margin-top: 2px; } }
+  .myBooking-header img {
+    width: 200px; }
+    @media all and (max-width: 767px) {
+      .myBooking-header img {
+        width: 100px; } }
+.myBooking a {
+  text-decoration: underline; }
+.myBooking-hero {
+  background-color: #419bf7;
+  text-align: center;
+  padding: 100px 0px;
+  position: relative;
+  color: #fff; }
+  .myBooking-hero .hero-title {
+    font-family: 'Prompt', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 14px;
-    display: block;
-    white-space: nowrap; }
-    .myBooking-header span {
-      display: inline-block;
-      margin-top: 8px; }
-      @media all and (max-width: 767px) {
-        .myBooking-header span {
-          margin-top: 2px; } }
-    .myBooking-header img {
-      width: 200px; }
-      @media all and (max-width: 767px) {
-        .myBooking-header img {
-          width: 100px; } }
-  .myBooking a {
-    text-decoration: underline; }
-  .myBooking-hero {
-    background-color: #419bf7;
-    text-align: center;
-    padding: 40px 20px;
-    background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
+    color: #fff;
+    font-size: 90px;
+    line-height: 40px;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px; }
+    @media all and (max-width: 992px) {
+      .myBooking-hero .hero-title {
+        font-size: 60px;
+        margin: 0 0 15px 0;
+        line-height: auto; } }
+    @media all and (max-width: 767px) {
+      .myBooking-hero .hero-title {
+        font-size: 36px;
+        margin: 0 0 5px 0; } }
+  .myBooking-hero .hero-subtitle {
+    color: #fff;
+    margin: 0 0 0 0;
+    font-size: 40px;
+    text-transform: uppercase; }
+    @media all and (max-width: 992px) {
+      .myBooking-hero .hero-subtitle {
+        font-size: 27px; } }
+    @media all and (max-width: 767px) {
+      .myBooking-hero .hero-subtitle {
+        font-size: 18px; } }
+  .myBooking-hero .inner {
+    position: relative;
+    z-index: 10; }
+  .myBooking-hero .hero-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    color: #fff; }
-    .myBooking-hero .hero-title {
-      font-family: 'Prompt', sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: #fff;
-      font-size: 40px;
-      line-height: 40px;
-      margin: 0 0 10px 0; }
-    .myBooking-hero .hero-subtitle {
-      color: #fff;
-      margin: 0 0 0 0;
-      text-transform: uppercase; }
-  .myBooking-wrapper {
-    background: #fff;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #000; }
-  .myBooking-h1 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .myBooking .content {
-    padding: 20px; }
-  .myBooking .rule {
-    height: 2px;
-    background: #000; }
-  .myBooking h3 {
-    background: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 17px;
-    margin: 0; }
-  .myBooking table {
-    width: 100%;
-    border: none;
-    display: table; }
-    .myBooking table td {
-      font-size: 15px;
-      line-height: 21px;
-      padding: 3px 0;
-      vertical-align: top;
+    background-position: top left;
+    z-index: 1;
+    background-blend-mode: multiply;
+    background-color: #009bff; }
+.myBooking-h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px; }
+.myBooking .content {
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.myBooking .rule {
+  height: 2px;
+  background: #000; }
+.myBooking h3 {
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0; }
+.myBooking table {
+  width: 100%;
+  border: none;
+  display: table; }
+  .myBooking table td {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 3px 0;
+    vertical-align: top;
+    width: auto; }
+    .myBooking table td:first-child {
+      width: 300px !important; }
+      @media all and (max-width: 767px) {
+        .myBooking table td:first-child {
+          width: 150px !important; } }
+    .myBooking table td.price {
       width: auto; }
-      .myBooking table td:first-child {
-        width: 300px !important; }
-        @media all and (max-width: 767px) {
-          .myBooking table td:first-child {
-            width: 150px !important; } }
-      .myBooking table td.price {
-        width: auto; }
-    .myBooking table.total td {
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: 700;
-      padding-bottom: 60px; }
+  .myBooking table.total td {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800; }
+    @media all and (max-width: 767px) {
+      .myBooking table.total td {
+        font-size: 18px; } }
+  .myBooking table a {
+    font-weight: 800; }
 
 .info-labels {
   display: flex;
@@ -1367,6 +1392,8 @@ button:focus {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
       display: inline-block !important;

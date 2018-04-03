@@ -464,7 +464,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 .myBooking{
-	background: #e6e6e6;
+	
 
 	&-header{
 		background: #e6e6e6;
@@ -500,11 +500,8 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	&-hero{
 		background-color: #419bf7;
 		text-align: center;
-		padding: 40px 20px;
-		background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
+		padding: 100px 0px;
+		position: relative;
 		color: #fff;
 
 		& .hero-title{
@@ -512,33 +509,67 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 			font-weight: 800;
 			text-transform: uppercase;
 			color: #fff;
-			font-size: 40px;
+			font-size: 90px;
 			line-height: 40px;
-			margin: 0 0 10px 0;
+			margin: 0 0 30px 0;
+			letter-spacing: 1px;
+
+			@media all and(max-width: $breakpoint-tablet){
+				font-size: 60px;
+				margin: 0 0 15px 0;
+				line-height: auto;
+			}
+			@media all and(max-width: $breakpoint-mobile){
+				font-size: 36px;
+				margin: 0 0 5px 0;
+			}
 		}
 		& .hero-subtitle{
 			color: #fff;
 			margin: 0 0 0 0;
+			font-size: 40px;
 			text-transform: uppercase;
-		}
-	}
 
-	&-wrapper{
-		background: #fff;
-		max-width: 600px;
-		margin: 0 auto;
-		color: #000;
+			@media all and(max-width: $breakpoint-tablet){
+				font-size: 27px;
+			}
+			@media all and(max-width: $breakpoint-mobile){
+				font-size: 18px;
+			}
+		}
+
+		& .inner{
+			position: relative;
+			z-index: 10;
+		}
+
+		& .hero-background{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			// background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top left;
+			z-index: 1;
+			background-blend-mode: multiply;
+			background-color: $blue-filter;
+		}
 	}
 
 	&-h1{
 		font-size: 18px;
 		font-weight: 700;
-		margin-top: 20px;
+		// margin-top: 20px;
 		margin-bottom: 20px;
 	}
 	
 	& .content{
-		padding: 20px;
+		padding: 20px 0;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $border-color;
 	}
 
 	& .rule{
@@ -549,9 +580,9 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	
 
 	& h3{
-		background: #000;
+		// background: #000;
 		color: #fff;
-		padding: 10px 20px;
+		// padding: 0 20px;
 		font-family: $font-header;
 		font-weight: 800;
 		text-transform: uppercase;
@@ -563,6 +594,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		width: 100%;
 		border: none;
 		display: table;
+
 
 		& td{
 			// font-family: 'Roboto', sans-serif;
@@ -589,8 +621,16 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		&.total td{
 			text-transform: uppercase;
 			font-size: 24px;
-			font-weight: 700;
-			padding-bottom: 60px;
+			font-weight: 800;
+
+			@media all and(max-width: $breakpoint-mobile){
+				font-size: 18px;
+			}
+			// padding-bottom: 60px;
+		}
+
+		& a {
+			font-weight: 800;
 		}
 	}
 }

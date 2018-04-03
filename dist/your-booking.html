@@ -46,164 +46,383 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="myBooking">
-	
-	
+<body class="body stickyheader">
+	<header class="header">
+	<div class="container">
+		<a href="homepage.html" class="logo"><img src="assets/img/logo-edmbassy.svg" alt=""></a>
+		<nav class="mainnav">
+			<div class="booking">
+				<div class="booking-info toggle-yourbooking">
+					<span class="booking-cart">My booking</span>
+					<span class="booking-amount">&euro;299,00</span>
+				</div>
+				<button class="hamburger toggle-subnav"></button>
+			</div>
+			
+		</nav>
+	</div>
 
-<div class="myBooking-wrapper">
-	<div class="myBooking-header">
-		<span class="float-right">YOUR BOOKING DETAILS</span>
-		<img src="https://roanhahn.github.io/EDMbassy/assets/img/logo-edmbassy.svg" alt="" class="logo-img">
-	</div>
-	<div class="myBooking-hero">
-		<p class="hero-title">Martin garrix</p>
-        <p class="hero-subtitle">Las vegas 14 december</p>
-	</div>
-	<div class="content">
-		<p class="myBooking-h1">Michel, congratulations with your booking!</p>
-		<p>We are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
-		<p><strong>Shared transfer/Private transfer</strong></p>
-		<p>If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.</p>
-		<p>We wish you a great stay, and see you at Electronic Family 2018</p>
-	</div>
-	<h3>Personal information</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>Prefix</strong></td>
-				<td>Mr.</td>
-			</tr>
-			<tr>
-				<td><strong>First name</strong></td>
-				<td>Jurgen</td>
-			</tr>
-			<tr>
-				<td><strong>Last name</strong></td>
-				<td>van Zachten</td>
-			</tr>
-			<tr>
-				<td><strong>Email</strong></td>
-				<td>jurgen@thisisloco.com</td>
-			</tr>
-			<tr>
-				<td><strong>Phonenumber</strong></td>
-				<td>+31(0)646255387</td>
-			</tr>
-			<tr>
-				<td><strong>Address</strong></td>
-				<td>Ruysdaelhof Oost 9c</td>
-			</tr>
-			<tr>
-				<td><strong>Zipcode</strong></td>
-				<td>5642 JM</td>
-			</tr>
-			<tr>
-				<td><strong>City</strong></td>
-				<td>Eindhoven</td>
-			</tr>
-			<tr>
-				<td><strong>Bookingcode</strong></td>
-				<td>CODE</td>
-			</tr>
-		</table>
-	</div>
-	<h3>Extra travellers</h3>
-	<div class="content">
+	
+	
+</header>
+
+<nav class="subnav" id="subnav">
+	<ul class="subnav-list">
+		<li><a href="homepage.html">Home</a></li>
+
+
 		
+		<li>
+			Accomodations
+			<ul>
+				<li><a href="step1-hotels.html">Hotel+Ticket</a></li>
+				<li><a href="step1-packages.html">Packages</a></li>
+				<li><a href="step1-camping.html">Campsite</a></li>
+			</ul>
+		</li>
+		
+		<li><a href="whybook.html">Why EDMBASSY</a></li>
+		<li><a href="faq.html">Tell me more</a></li>
+		<li><a href="login.html">Log in</a></li>
+		<li>
+			Keep in touch
+			<div class="contactDetails">
+				E-mail: <a href="mailto:info@edmbassy.com">info@edmbassy.com</a><br />
+				Phone: <a href="tel:+31 6 52 382 382">+31 6 52 382 382</a><br />
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+			</div>
+		</li>
+	</ul>
 
-		<table>
-			<tr>
-				<td><strong>Guest 1</strong></td>
-				<td>Mrs. Jurgen van Zachten</td>
-			</tr>
-		</table>
-	</div>
+	<ul class="social">
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+		
+	</ul>
+</nav>
 
-	<h3>Your ticket information</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>Ticket</strong></td>
-				<td>Download ticket</td>
-			</tr>
-			<tr>
-				<td><strong>Download ticket</strong></td>
-				<td><a href="#">Download here</a></td>
-			</tr>
-		</table>
-	</div>
-	
-	
-	<h3>Your hotel information</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>Hotel</strong></td>
-				<td colspan="2">
-					Campanile Hotel 's-Hertogenbosch<br />
-					Goudsbloemvallei 21-25 5237 MH<br />
-					‘S Hertogenbosch
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Arrival date</strong></td>
-				<td colspan="2">29-07-2018</td>
-			</tr>
-			<tr>
-				<td><strong>Departure date</strong></td>
-				<td colspan="2">29-07-2018</td>
-			</tr>
-			<tr>
-				<td><strong>Room</strong></td>
-				<td>1x Twin Room</td>
-				<td class="text-right price">€62.00</td>
-			</tr>
-			<tr>
-				<td><strong>Reservation Code</strong></td>
-				<td colspan="2">CODE</td>
-			</tr>
-		</table>
-	</div>
-	<h3>Booking fee</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>Booking fee</strong></td>
-				<td class="text-right">€62.00</td>
-			</tr>
-		</table>
-	</div>
+<div class="yourbooking">
+	<div class="container">
 
-	<h3>Extras</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>Private transfer</strong></td>
-				<td class="text-right">€150.00</td>
-			</tr>
-		</table>
-	</div>
-	<h3>Payment method</h3>
-	<div class="content">
-		<table>
-			<tr>
-				<td><strong>iDeal (Only available in the Netherlands)</strong></td>
-				<td class="text-right">€0.00</td>
-			</tr>
-		</table>
-	</div>
+		<h3>My booking</h3>
 
-	<div class="rule"></div>
+		<div class="state-empty d-none">
+			<div class="row">
+				<div class="col col-md-9">
+					<p class="p">My booking is empty. Please select your favorite event and book an awesome package. 
+Already booked with EDMBASSY? Go to our login page to view your booking.</p>
+				</div>
+				<div class="col-12 col-md-3 text-right">
+					<a href="login" class="button button-primary">Log in</a>
+				</div>
+			</div>
+		</div>
 
-	<div class="content">
-		<table class="total">
-			<tr>
-				<td>Total price</td>
-				<td class="text-right">&euro;212.60</td>
-			</tr>
-		</table>
+		<div class="state-filled">
+			<table class="yourbooking-summary">
+				<tbody>
+					<tr>
+						<td class="description">Ticket</td>
+						<td class="content">2x Premium ticket</td>
+						<td class="amount">&euro;150,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="description">Accomodation</td>
+						<td class="content">Ibis Amsterdam Hotel</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Arrival date</td>
+						<td class="content">22-12-2018</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Departure date</td>
+						<td class="content">25-12-2018</td>
+						<td class="amount"></td>
+						<td class="remove"></td>
+					</tr>
+					<tr>
+						<td class="description">Room 1</td>
+						<td class="content">Presidential Suite, 3 persons, 3 nights</td>
+						<td class="amount">&euro;2.250,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr>
+						<td class="description">Room 2</td>
+						<td class="content">Standard Double, 2 persons, 3 nights</td>
+						<td class="amount">&euro;2.250,00</td>
+						<td class="remove"><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="description">Extra</td>
+						<td class="content">
+							<ul>
+								<li>Safari tour</li>
+								<li>Limousine Transfer</li>
+							</ul>
+						</td>
+						<td class="amount">
+							<ul>
+								<li>&euro;150,00</li>
+								<li>&euro;150,00</li>
+							</ul>
+						</td>
+						<td class="remove">
+							<ul>
+								<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+								<li><button class="remove"><i class="fa fa-times" aria-hidden="true"></i><span>Remove</span></button></li>
+							</ul>
+
+						</td>
+					</tr>
+					<tr class="bookingrow">
+						<td colspan="4">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="total" colspan="2">Total price</td>
+						<td class="total text-right" colspan="2">
+							&euro;3.456,00
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<a href="#" class="m-t-30 d-block toggle-cart">Toggle state</a>
+
 	</div>
 </div>
+	
+
+<div class="myBooking-hero">
+	<div class="inner">
+		<p class="hero-title">Martin garrix</p>
+		<p class="hero-subtitle">Las vegas 14 december</p>
+	</div>
+	<div class="hero-background" style="background-image: url(assets/img/event-1.jpg);"></div>
+</div>
+<section class="section myBooking">
+	<div class="container">
+		<a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block">Back</a>
+		<h1 class="page-h1">Your booking</h1>
+		<div class="row">
+			<div class="col-lg-4 m-b-30 p">
+				<p class="myBooking-h1">Michel, congratulations with your booking!</p>
+				<p>We are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
+				<p><strong>Shared transfer/Private transfer</strong></p>
+				<p>If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.</p>
+				<p>We wish you a great stay, and see you at Electronic Family 2018</p>
+			</div>
+			<div class="col offset-lg-1">
+				<h3>Personal information</h3>
+				<div class="content">
+					<table>
+						<tr>
+							<td><strong>Prefix</strong></td>
+							<td>Mr.</td>
+						</tr>
+						<tr>
+							<td><strong>First name</strong></td>
+							<td>Jurgen</td>
+						</tr>
+						<tr>
+							<td><strong>Last name</strong></td>
+							<td>van Zachten</td>
+						</tr>
+						<tr>
+							<td><strong>Email</strong></td>
+							<td>jurgen@thisisloco.com</td>
+						</tr>
+						<tr>
+							<td><strong>Phonenumber</strong></td>
+							<td>+31(0)646255387</td>
+						</tr>
+						<tr>
+							<td><strong>Address</strong></td>
+							<td>Ruysdaelhof Oost 9c</td>
+						</tr>
+						<tr>
+							<td><strong>Zipcode</strong></td>
+							<td>5642 JM</td>
+						</tr>
+						<tr>
+							<td><strong>City</strong></td>
+							<td>Eindhoven</td>
+						</tr>
+						<tr>
+							<td><strong>Bookingcode</strong></td>
+							<td>CODE</td>
+						</tr>
+					</table>
+				</div>
+				<h3>Extra travellers</h3>
+				<div class="content">
+					<table>
+						<tr>
+							<td><strong>Guest 1</strong></td>
+							<td>Mrs. Jurgen van Zachten</td>
+						</tr>
+					</table>
+				</div>
+				<h3>Your ticket information</h3>
+				<div class="content">
+					<table>
+						<tr>
+							<td><strong>Ticket</strong></td>
+							<td>Download ticket</td>
+						</tr>
+						<tr>
+							<td><strong>Download ticket</strong></td>
+							<td><a href="#">Download here</a></td>
+						</tr>
+					</table>
+				</div>
+				<h3>Your hotel information</h3>
+				<div class="content">
+					<table>
+						<tr>
+							<td><strong>Hotel</strong></td>
+							<td colspan="2">
+								Campanile Hotel 's-Hertogenbosch<br />
+								Goudsbloemvallei 21-25 5237 MH<br />
+								‘S Hertogenbosch
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Arrival date</strong></td>
+							<td colspan="2">29-07-2018</td>
+						</tr>
+						<tr>
+							<td><strong>Departure date</strong></td>
+							<td colspan="2">29-07-2018</td>
+						</tr>
+						<tr>
+							<td><strong>Room</strong></td>
+							<td>1x Twin Room</td>
+							<td class="text-right price">€62.00</td>
+						</tr>
+						<tr>
+							<td><strong>Reservation Code</strong></td>
+							<td colspan="2">CODE</td>
+						</tr>
+					</table>
+				</div>
+				<div class="content">
+					<table class="total">
+						<tr>
+							<td>Total price</td>
+							<td class="text-right">&euro;212.60</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-lg-3 footer-col">
+				<h4>Get in touch</h4>
+				<ul>
+					<li><a href="mailto:info@edmbassy.com">info@edmbassy.com</a></li>
+					<li>Phone  <a href="tel:+3165238238">+31 6 52 382 382</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-lg-3 footer-col">
+				<h4>Info</h4>
+				<ul>
+					<li><a href="whybook.html">Why EDMBASSY</a></li>
+					<li><a href="faq.html">Tell me more</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="page.html">Our story</a></li>
+					
+				</ul>				  
+			</div>
+			<div class="col-md-4 col-lg-3 footer-col">
+				<h4>General</h4>
+				<ul>
+					<li><a href="page.html">Terms &amp; Conditions</a></li>
+					<li><a href="faq.html">Privacy Policy</a></li>
+					<li><a href="page.html">Disclaimer</a></li>
+					
+				</ul>				  
+			</div>
+			<div class="col-lg-3 footer-col d-none">
+				<h4>Language</h4>
+				<form class="language">
+					
+					<select>
+						<option>English</option>
+					</select>
+				</form>
+			</div>
+			<div class="col-lg-3 footer-col d-none">
+				<h4>Your booking</h4>
+				<ul>
+					<li><a href="login.html">Log in</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-lg-3 footer-col">
+				<h4 class="d-none d-lg-block">Follow us</h4>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+				</ul>			  
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col payoff">
+				<div class="copyright">
+					&copy; EDMBASSY All rights reserved. 
+					<span class="legals">
+						
+						<a href="index.html">GIT</a>
+					</span>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</footer>
+
+
+
+	<!-- Our JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
+	<script src="assets/js/plugins/jquery.easing.min.js"></script>
+	<script src="assets/js/app.js"></script>
 
 </body>
 </html>
