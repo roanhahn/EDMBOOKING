@@ -1055,6 +1055,7 @@ button {
   outline: 0;
   cursor: pointer;
   text-align: center;
+  position: relative;
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
@@ -1110,6 +1111,40 @@ button {
       font-size: 10px;
       margin-top: 2px;
       min-width: auto; }
+    .button-primary--effect {
+      background: none !important;
+      overflow: hidden;
+      -webkit-transition: all .3s ease-out 0s;
+      transition: all .3s ease-out 0s; }
+      .button-primary--effect:before {
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #419bf7;
+        content: ""; }
+      .button-primary--effect:after {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        content: " ";
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        z-index: -1;
+        -ms-transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        -webkit-transition: all .3s ease-out 0s;
+        transition: all .3s ease-out 0s; }
+      .button-primary--effect:hover:after {
+        width: 300px;
+        height: 300px; }
   .button-secondary {
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.5);
@@ -1163,8 +1198,10 @@ button {
     margin-right: 5px; }
   .button--back:after {
     display: none; }
+  .button--lowercase {
+    text-transform: none; }
 
-button, input {
+input {
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
