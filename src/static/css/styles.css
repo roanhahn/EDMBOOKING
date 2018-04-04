@@ -1201,7 +1201,7 @@ button {
   .button--lowercase {
     text-transform: none; }
 
-input {
+button, input {
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
@@ -1211,13 +1211,13 @@ button:active {
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
-  border: none !important; }
+  border: none; }
 
 button:focus {
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
-  border: none !important; }
+  border: none; }
 
 .remove {
   background: none;
