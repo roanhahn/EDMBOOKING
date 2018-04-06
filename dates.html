@@ -223,10 +223,29 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 						<fieldset>
 							<div class="form-group">
 								<label for="date" class="form-label">Date of birth</label>
-								<input type="date" class="form-control textfield" id="date" value="2014-10-31">
+								<input type="date" class="form-control" id="date" value="2014-10-31">
 							</div>
 						</fieldset>
 					</form>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="form-label">Range</label>
+					<div id="event_period">
+						<input type="text" class="form-control actual_range">
+						<input type="text" class="form-control actual_range">
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<label class="form-label">Limited dates</label>
+				<div class="input-group date" id="blaat" data-provide="datepicker">
+					<input type="text" class="form-control" placeholder="Arrival date">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+					</div>
 				</div>
 			</div>
 		</div>
