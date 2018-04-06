@@ -182,12 +182,25 @@ $('*[data-type="slidetoggle"]').click(function()
 
 // DATEPICKER
 
-$('.date').datepicker({
+$('.datepicker').datepicker({
 	format: "dd/mm/yyyy",
 	autoclose: true,
 	todayHighlight: true
 });
+$('#event_period').datepicker({
+    inputs: $('.actual_range'),
+    autoclose: true,
+	todayHighlight: true,
+	clearBtn: true
+});
 
+$('#blaat').datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '04-04-2018',
+    endDate: '04-10-2018',
+    autoclose: true,
+	todayHighlight: true
+});
 
 // YOUTUBE VIDEO
 

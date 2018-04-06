@@ -1,0 +1,45 @@
+---
+title: Time/Date Input Fields
+type: component
+layout: default.hbs
+---
+
+
+<section class="section">
+	<div class="container">
+		<h1 class="page-h1">Input date</h1>
+		<div class="row">
+			<div class="col-md-4 m-b-30">
+				<div>
+					<form>
+						<fieldset>
+							<div class="form-group">
+								<label for="date" class="form-label">Date of birth</label>
+								<input type="date" class="form-control" id="date" value="2014-10-31">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="form-label">Range</label>
+					<div id="event_period">
+						<input type="text" class="form-control actual_range">
+						<input type="text" class="form-control actual_range">
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<label class="form-label">Limited dates</label>
+				<div class="input-group date" id="blaat" data-provide="datepicker">
+					<input type="text" class="form-control" placeholder="Arrival date">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
