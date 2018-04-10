@@ -63,6 +63,16 @@ function goBack() {
 	return false;
 }
 
+
+// Scroll To
+
+$(".scrollTo").click(function() {
+	console.log($(this).data('target'));
+	$('html, body').animate({
+		scrollTop: $("#" + $(this).data('target')).offset().top-50
+	}, 1000, 'easeInOutCubic');
+});
+
 // CUSTOM SELECT
 
 $(function() {
@@ -94,7 +104,7 @@ $(window).scroll(function() {
 $(".info-label").click(function() {
 	console.log($(this).data('list'));
 	$('html, body').animate({
-		scrollTop: $("#" + $(this).data('list')).offset().top-headerheight
+		scrollTop: $("#" + $(this).data('list')).offset().top-50
 	}, 1000, 'easeInOutCubic');
 });
 

@@ -139,6 +139,21 @@ a, a:hover, a:visited, a:active {
     .h3 {
       font-size: 16px;
       margin-bottom: 10px; } }
+  .h3--big {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: "Prompt", sans-serif; }
+    .h3--big span {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif; }
+    @media all and (max-width: 767px) {
+      .h3--big {
+        font-size: 22px;
+        margin-bottom: 15px; } }
 
 h3.extras {
   font-size: 32px;
@@ -816,9 +831,6 @@ h3.extras {
     position: absolute;
     bottom: 0;
     left: 15px; }
-  @media all and (max-width: 992px) {
-    .event-info-item {
-      flex-basis: 50%; } }
   @media all and (max-width: 767px) {
     .event-info-item {
       flex-basis: 100%; } }
@@ -1204,20 +1216,17 @@ button {
 button, input {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  border: none !important; }
+  -webkit-box-shadow: none !important; }
 
 button:active {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  border: none; }
+  -webkit-box-shadow: none !important; }
 
 button:focus {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  border: none; }
+  -webkit-box-shadow: none !important; }
 
 .remove {
   background: none;
@@ -1340,7 +1349,8 @@ button:focus {
     background: transparent url(../img/menu.svg) no-repeat 0 0 scroll;
     background-size: auto 30px;
     -webkit-transition: all .2s ease-out 0s;
-    transition: all .2s ease-out 0s; }
+    transition: all .2s ease-out 0s;
+    border: none !important; }
     .mainnav .hamburger-close {
       background-position: -38px 0; }
     .mainnav .hamburger:hover {

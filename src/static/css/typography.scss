@@ -171,9 +171,6 @@ a, a:hover, a:visited, a:active{
 		padding-bottom: 10px;
 	}
 
-	&--big{
-		// font-size: 32px;
-	}
 
 	@media all and (max-width: $breakpoint-tablet){
 		
@@ -182,6 +179,29 @@ a, a:hover, a:visited, a:active{
 		font-size: 16px;
 		margin-bottom: 10px;
 	}
+
+	&--big{
+		font-size: 42px;
+		color: $text-color;
+		font-weight: 900;
+		margin-bottom: 30px;
+		font-family: $font-header;
+
+		& span{
+			display: block;
+			font-size: 16px;
+			font-weight: 700;
+			font-family: $font;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+
+	}
+
+	
 }
 h3.extras{
 	font-size: 32px;
