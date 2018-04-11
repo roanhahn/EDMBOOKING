@@ -26,7 +26,6 @@ layout: default.hbs
 			</div>
 		</div>
 		<div class="gallery">
-			
 			<div class="owl-carousel owl-theme owl-pictures">
 				<div class="item">
 					<img src="assets/img/room1.jpg" alt="" class="img-fluid" />
@@ -41,11 +40,60 @@ layout: default.hbs
 					<img src="assets/img/room4.jpg" alt="" class="img-fluid" />
 				</div>
 			</div>
-			
 		</div>
+
+		
+		<div class="row">
+			<div class="col-lg-8">
+				<h3 class="h3 h3--textcolor">Package information</h3>
+				<ul class="offer-list">
+					<li>Tipi for 9 persons</li>
+					<li>9 Single stretchers including sleeping bags and pillows</li>
+					<li>Table with stools</li>
+					<li>A spot on our campsite</li>
+					<li>3 Night stay</li>
+					<li>Exclusive pre-party on Thursday</li>
+					<li>New Horizons welcome package</li>
+					<li>1 Parking ticket for Royal Garden parking</li>
+				</ul>
+			</div>
+		</div>
+		<hr class="hr">
+
+		<div class="row">
+			<div class="col-lg-8">
+				<h3 class="h3 h3--textcolor">Hotel information</h3>
+				<p class="p">
+					The Campanile hotel is 4.5 km from the city centre of ‘s-Hertogenbosch and within 5 km of a karting circuit, tennis courts, a skating rink, swimming pool, snooker hall, a nightclub and a shopping centre.
+					<br /><br />
+					The soundproof rooms are modern and tastefully decorated with comfortable beds, a private bathroom with shower, bath and hair dryer, ecological shampoo and soap, free Wi-Fi, a flat screen TV with free channels, blackout curtains and a free tray with coffee and tea facilities and biscuits. In the morning the hotel serves a breakfast buffet which includes tea, coffee, fresh fruit juice, cereals, pastries, cheese, meat, yoghurt and fruit salad.
+					<br /><br />
+					Campanile Hotel also offers a hot breakfast with eggs cooked just the way you like them. The restaurant serves lunch and dinner (International dishes and Dutch specialties). The hotel also offers packed lunches, a bar/lounge, terrace, garden and self-serve laundry.
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<div class="googleMaps">
+					{{> googleMaps }}
+					<div>
+						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					</div>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr">
+		
 		<form class="form-packages">
 			<div class="row">
-
 				<div class="col-lg-9">
 					<div class="row m-b-20">
 						<div class="col-12 col-md-4">
@@ -133,54 +181,7 @@ layout: default.hbs
 			</div>
 		</form>
 
-		<hr class="hr">
-
-		<div class="row">
-			<div class="col-lg-8">
-				<h3 class="h3 h3--textcolor">Hotel information</h3>
-				<p class="p">
-					The Campanile hotel is 4.5 km from the city centre of ‘s-Hertogenbosch and within 5 km of a karting circuit, tennis courts, a skating rink, swimming pool, snooker hall, a nightclub and a shopping centre.
-					<br /><br />
-					The soundproof rooms are modern and tastefully decorated with comfortable beds, a private bathroom with shower, bath and hair dryer, ecological shampoo and soap, free Wi-Fi, a flat screen TV with free channels, blackout curtains and a free tray with coffee and tea facilities and biscuits. In the morning the hotel serves a breakfast buffet which includes tea, coffee, fresh fruit juice, cereals, pastries, cheese, meat, yoghurt and fruit salad.
-					<br /><br />
-					Campanile Hotel also offers a hot breakfast with eggs cooked just the way you like them. The restaurant serves lunch and dinner (International dishes and Dutch specialties). The hotel also offers packed lunches, a bar/lounge, terrace, garden and self-serve laundry.
-				</p>
-			</div>
-			<div class="col-lg-4">
-				<div class="googleMaps">
-					{{> googleMaps }}
-					<div>
-						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
-					</div>
-					<div class="rating-wrapper">
-						<div class="rating">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</div>
-						Distance venue 5km
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="hr">
-		<div class="row">
-			<div class="col-lg-8">
-				<h3 class="h3 h3--textcolor">Package information</h3>
-				<ul class="offer-list">
-					<li>Tipi for 9 persons</li>
-					<li>9 Single stretchers including sleeping bags and pillows</li>
-					<li>Table with stools</li>
-					<li>A spot on our campsite</li>
-					<li>3 Night stay</li>
-					<li>Exclusive pre-party on Thursday</li>
-					<li>New Horizons welcome package</li>
-					<li>1 Parking ticket for Royal Garden parking</li>
-				</ul>
-			</div>
-		</div>
+		
 	</div>
 </section>
 <div class="accordeon">

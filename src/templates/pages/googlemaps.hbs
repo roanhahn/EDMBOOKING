@@ -239,13 +239,21 @@ layout: default.hbs
                 });
 
                 var customMarker = 'assets/img/marker.svg';
+                var customMarkerEvent = 'assets/img/event.svg';
 
-				var marker = new google.maps.Marker({ 
-				position: new google.maps.LatLng(52.3941320, 4.8507230), //nachtlab
-				icon: customMarker, 
-				map: map, 
-				title: 'yo'  
-				});
+                var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+                    icon: customMarker, 
+                    map: map, 
+                    title: 'yo'  
+                });
+
+                 var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3873878,4.646219400000064), //EVENT
+                    icon: customMarkerEvent, 
+                    map: map, 
+                    title: 'yo'  
+                });
             }
         </script>
 

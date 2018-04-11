@@ -1161,7 +1161,7 @@ button {
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #fff !important;
     padding: 10px 20px;
     text-transform: uppercase; }
     .button-secondary:after {
@@ -1216,17 +1216,20 @@ button {
 button, input {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important; }
+  -webkit-box-shadow: none !important;
+  border: none; }
 
 button:active {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important; }
+  -webkit-box-shadow: none !important;
+  border: none; }
 
 button:focus {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important; }
+  -webkit-box-shadow: none !important;
+  border: none; }
 
 .remove {
   background: none;
@@ -1657,17 +1660,18 @@ body.scrolled .hamburger {
       @media all and (max-width: 767px) {
         .hero h1.hero-event-title {
           font-size: 30px; } }
-  .hero p {
+  .hero h1 small {
     display: block;
+    font-family: "Roboto", sans-serif;
+    text-transform: none;
     font-size: 32px;
     margin-bottom: 30px;
-    line-height: 1.2;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+    line-height: 1.2; }
     @media all and (max-width: 992px) {
-      .hero p {
+      .hero h1 small {
         font-size: 24px; } }
     @media all and (max-width: 767px) {
-      .hero p {
+      .hero h1 small {
         font-size: 18px; } }
   .hero .videowrapper {
     position: absolute;

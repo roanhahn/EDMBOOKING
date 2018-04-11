@@ -143,7 +143,7 @@ button{
 		border-radius: 50px;
 		background: rgba(0,0,0,.5);
 		color: #fff;
-		border: 2px solid #fff;
+		border: 2px solid #fff !important;
 		padding: 10px 20px;
 		text-transform: uppercase;
 
@@ -237,19 +237,19 @@ button,input{
 	outline: none !important;
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-	// border: none !important;
+	border: none;
 }
 button:active{
 	outline: none !important;
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-	// border: none;
+	border: none;
 }
 button:focus{
 	outline: none !important;
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-	// border: none;
+	border: none;
 }
 
 .remove{
