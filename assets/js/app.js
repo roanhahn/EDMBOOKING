@@ -171,7 +171,27 @@
 
     return LazyLoad;
 });
+// var bodyHeight = $('.body').outerHeight();
+// var headerHeight = $('.header').outerHeight();
+var footerHeight = $('#footer').outerHeight();
+// var sectionHeight = $('.full-height').outerHeight();
 
+// console.log(bodyHeight-headerHeight-footerHeight);
+// $('.full-height').css("min-height", bodyHeight-headerHeight-footerHeight);
+
+// $('.body').css("padding-bottom", footerHeight);
+
+// ODOMETER
+
+window.odometerOptions = {
+  format: 'dd',
+  duration: 10000,
+  // animation: 'count'
+};
+
+setTimeout(function(){
+    $('.odometer').html(99);
+  }, 2000);
 
 // Lazyload
 
