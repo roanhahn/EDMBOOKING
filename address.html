@@ -213,327 +213,259 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	
 
 
-<div class="hero hero-event hero--blue" style="background-image: url(assets/img/event-header.jpg)">
-	<div class="inner">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="hero-event-title">
-						Martin Garrix
-						<small>14 november Las Vegas</small>
-					</h1>
-					<a href="camping-info.html" class="button button-secondary">Camping info</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
-<div class="accordeon accordeon--active">
-	<div class="container">
-		<span class="accordeon-step">Your package</span>
-		<div class="accordeon-buttons">
-			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
-			<a href="step2-camping.html" class="button button-secondary">Next</a>
-		</div>
-	</div>
-</div>
 <section class="section">
 	<div class="container">
-		
-		<a href="detail-camping.html" class="d-block clearfix">
-	<div class="offer">
-		<div class="row">
-			<div class="col-4 col-md-6 col-lg-3">
-				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/tent.jpg" data-src="assets/img/tent.jpg" class="lazyload" alt="">
-					</div>
-				
-			</div>
-			<div class="col-8 col-md-6 col-lg-9 offer-content">
-				<div class="row">
-					<div class="col-lg-9">
-						<h3 class="offer-title">Travellers Garden Enjoy 4 Persons</h3>
+        <a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block">Back</a>
+        <h1 class="page-h1">Our office address</h1>
+        <div class="row">
+            <div class="col-md-4 m-b-30">
+                <h3 class="h3">Contact details</h3>
+                <p class="p">
+                    
+                        <strong>EDMBOOKING</strong><br />
+                        Somestreet 2<br />
+                        1059 BT Amsterdam,The Netherlands<br />
+
+                       
+                    
+                </p>
+            </div>
+            <div class="col-md-4 m-b-30">
+                <h3 class="h3">Company info</h3>
+                <p class="p">
+                    KVK: 60320524<br />
+                    IBAN: NL72 INGB 09878101<br />
+                    BTW: NL001234567B01
+                </p>
+            </div>
 
 
+        </div>
+        <div class="row">
+            <div class="col">
 
+<div id="map" style="height: 500px;"></div>
 
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
 
-						
-						<p class="offer-subheader">Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light</p>
-						
-						<ul class="offer-list d-none d-md-block">
-							<li>Tipi for 9 persons</li>
-							<li>9 Single stretchers including sleeping bags and pillows</li>
-							<li>Table with stools</li>
-							<li>A spot on our campsite</li>
-							<li>3 Night stay</li>
-							<li>Exclusive pre-party on Thursday</li>
-						
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">more info</span>
-						<div class="offer-info">
-							<div>
-								<span class="offer-price">&euro;299</span>
-								<span class="offer-price-condition">Price per person</span>
-							</div>
-							<span class="button button-primary d-none d-md-inline-block">more info</span>
-						</div>
-					</div>
-				</div>
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 10,
 
-				
-			</div>
-		</div>
-	</div>
-</a>
-		<a href="detail-camping.html" class="d-block clearfix">
-	<div class="offer">
-		<div class="row">
-			<div class="col-4 col-md-6 col-lg-3">
-				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/tent.jpg" data-src="assets/img/tent.jpg" class="lazyload" alt="">
-					</div>
-				
-			</div>
-			<div class="col-8 col-md-6 col-lg-9 offer-content">
-				<div class="row">
-					<div class="col-lg-9">
-						<h3 class="offer-title">Travellers Garden Enjoy 4 Persons</h3>
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
 
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "weight": 1.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 30
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 19
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    }
+                    ]
+                };
 
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
 
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
 
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
 
-						
-						<p class="offer-subheader">Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light</p>
-						
-						<ul class="offer-list d-none d-md-block">
-							<li>Tipi for 9 persons</li>
-							<li>9 Single stretchers including sleeping bags and pillows</li>
-							<li>Table with stools</li>
-							<li>A spot on our campsite</li>
-							<li>3 Night stay</li>
-							<li>Exclusive pre-party on Thursday</li>
-						
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">more info</span>
-						<div class="offer-info">
-							<div>
-								<span class="offer-price">&euro;299</span>
-								<span class="offer-price-condition">Price per person</span>
-							</div>
-							<span class="button button-primary d-none d-md-inline-block">more info</span>
-						</div>
-					</div>
-				</div>
+                var customMarker = 'assets/img/marker.svg';
+                var customMarkerEvent = 'assets/img/event.svg';
 
-				
-			</div>
-		</div>
-	</div>
-</a>
-		<a href="detail-camping.html" class="d-block clearfix">
-	<div class="offer">
-		<div class="row">
-			<div class="col-4 col-md-6 col-lg-3">
-				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/tent.jpg" data-src="assets/img/tent.jpg" class="lazyload" alt="">
-					</div>
-				
-			</div>
-			<div class="col-8 col-md-6 col-lg-9 offer-content">
-				<div class="row">
-					<div class="col-lg-9">
-						<h3 class="offer-title">Travellers Garden Enjoy 4 Persons</h3>
+                var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+                    icon: customMarker, 
+                    map: map, 
+                    title: 'yo'  
+                });
 
-
-
-
-
-						
-						<p class="offer-subheader">Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light</p>
-						
-						<ul class="offer-list d-none d-md-block">
-							<li>Tipi for 9 persons</li>
-							<li>9 Single stretchers including sleeping bags and pillows</li>
-							<li>Table with stools</li>
-							<li>A spot on our campsite</li>
-							<li>3 Night stay</li>
-							<li>Exclusive pre-party on Thursday</li>
-						
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">more info</span>
-						<div class="offer-info">
-							<div>
-								<span class="offer-price">&euro;299</span>
-								<span class="offer-price-condition">Price per person</span>
-							</div>
-							<span class="button button-primary d-none d-md-inline-block">more info</span>
-						</div>
-					</div>
-				</div>
-
-				
-			</div>
-		</div>
-	</div>
-</a>
-		<a href="detail-camping.html" class="d-block clearfix">
-	<div class="offer">
-		<div class="row">
-			<div class="col-4 col-md-6 col-lg-3">
-				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/tent.jpg" data-src="assets/img/tent.jpg" class="lazyload" alt="">
-					</div>
-				
-			</div>
-			<div class="col-8 col-md-6 col-lg-9 offer-content">
-				<div class="row">
-					<div class="col-lg-9">
-						<h3 class="offer-title">Travellers Garden Enjoy 4 Persons</h3>
-
-
-
-
-
-						
-						<p class="offer-subheader">Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light</p>
-						
-						<ul class="offer-list d-none d-md-block">
-							<li>Tipi for 9 persons</li>
-							<li>9 Single stretchers including sleeping bags and pillows</li>
-							<li>Table with stools</li>
-							<li>A spot on our campsite</li>
-							<li>3 Night stay</li>
-							<li>Exclusive pre-party on Thursday</li>
-						
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">more info</span>
-						<div class="offer-info">
-							<div>
-								<span class="offer-price">&euro;299</span>
-								<span class="offer-price-condition">Price per person</span>
-							</div>
-							<span class="button button-primary d-none d-md-inline-block">more info</span>
-						</div>
-					</div>
-				</div>
-
-				
-			</div>
-		</div>
-	</div>
-</a>
-		<a href="detail-camping.html" class="d-block clearfix">
-	<div class="offer">
-		<div class="row">
-			<div class="col-4 col-md-6 col-lg-3">
-				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/tent.jpg" data-src="assets/img/tent.jpg" class="lazyload" alt="">
-					</div>
-				
-			</div>
-			<div class="col-8 col-md-6 col-lg-9 offer-content">
-				<div class="row">
-					<div class="col-lg-9">
-						<h3 class="offer-title">Travellers Garden Enjoy 4 Persons</h3>
-
-
-
-
-
-						
-						<p class="offer-subheader">Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light</p>
-						
-						<ul class="offer-list d-none d-md-block">
-							<li>Tipi for 9 persons</li>
-							<li>9 Single stretchers including sleeping bags and pillows</li>
-							<li>Table with stools</li>
-							<li>A spot on our campsite</li>
-							<li>3 Night stay</li>
-							<li>Exclusive pre-party on Thursday</li>
-						
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">more info</span>
-						<div class="offer-info">
-							<div>
-								<span class="offer-price">&euro;299</span>
-								<span class="offer-price-condition">Price per person</span>
-							</div>
-							<span class="button button-primary d-none d-md-inline-block">more info</span>
-						</div>
-					</div>
-				</div>
-
-				
-			</div>
-		</div>
-	</div>
-</a>
-		
-	</div>
+                
+            }
+            </script>
+            </div>
+        </div>
+    </div>
 </section>
-<div class="accordeon">
-	<div class="container">
-		<a href="step2-camping.html">
-			<span class="accordeon-step">Your Extra's</span>
-			<div class="accordeon-buttons">
-				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
-			<div class="accordeon-buttons">
-				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step4-camping.html">
-			<span class="accordeon-step">Confirm</span>
-			<div class="accordeon-buttons">
-				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
+
+
 
 	<footer id="footer">
 	<div class="container">
