@@ -268,6 +268,20 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 			</div>
 			<div class="col-lg-8">
 				<h3 class="h3 h3--textcolor">Information</h3>
+				<div class="hotel-information">
+					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
+					</div>
+				</div>
 				<p class="p">
 					New Horizons Festival will have two different campsites: the Travellers Garden and the Royal Garden.
 					This is your first stop and home for the weekend on this magical journey. Meet up with other Travellers and discover the surroundings which are beyond your imagination. The language in the Travellers Garden is music what means that no matter where you're from all Travellers will understand each other. Settle down, find some rest and look at the stars with your new made friends. The pre-set up Enjoy Tent s a spacious four person tent with four air mattresses (200 cm by 80 cm), four comfortable sleeping bags and four pillows, lights, clothing hooks, storage compartments and a separate front tent and living compartment. The tent is divided into two sleeping compartments with in between them a central baggage and living area. Specifications: 2 sleeping compartments of 180*230cm, 1 central baggage and living area of 160*230cm, ventilation and condensation system, 6 big storage compartments, Led-light and clothing hooks.
@@ -280,14 +294,127 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 		<hr class="hr">	
 
-		<div class="row">
-			
-			<div class="col">
-				<div class="googleMaps">
-					
-<div id="map"></div>
+		
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<form class="form-packages">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="row m-b-20">
+						<div class="col-lg-3 m-b-20">
+							<label class="form-label">Persons</label>
+							<div class="form-group">2</div>
+						</div>
+						<div class="col-lg-9">
+							<label class="form-label">Tickets</label>
+							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
+								<label class="form-check-label" for="tickets1">
+									4x I already have my Festival Weekender + camping tickets
+								</label>
+							</div>
+							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
+								<label class="form-check-label" for="tickets2">
+									4x 2-day Festival Weekender + 4-day camping tickets, surcharge: €676
+								</label>
+							</div>
+							<div class="form-group">
+								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+								<input class="form-check-input" type="radio" name="tickets" id="tickets3" value="value">
+								<label class="form-check-label" for="tickets3">
+									4x VIP 2-day Festival Weekender + 4-day camping tickets, surcharge: €1.076
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row m-b-20">
+						<div class="col-6 col-lg-3">
+							<div class="form-group">
+								<label class="form-label">Arrival date</label>
+								Thursday 23-08-2018
+							</div>
+						</div>
+						<div class="col-6 col-lg-3">
+							<div class="form-group">
+								<label class="form-label">Departure date</label>
+								Thursday 23-08-2018
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-3 my-package">
+					<div class="form-label">My Package</div>
+					<div>6 persons x &euro;299</div>
+					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
+					<button class="button button-primary form-tickets-submit">Book now</button>
+				</div>
+			</div>
+		</form>
+
+		
+	</div>
+</section>
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">Your extras</span>
+			<div class="accordeon-buttons">
+				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">Your details</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">Confirm</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Festival Weekender + camping tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="standalone">
+	
+<div id="map" class="fullscreenmap"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
 <script>
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -298,7 +425,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 10,
-
+                    fullscreenControl: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
 
@@ -505,136 +632,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 });
             }
             </script>
-					<div>
-						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
-					</div>
-					<div class="rating-wrapper">
-						<div class="rating">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</div>
-						Distance venue 5km
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="hr">
-
-		<form class="form-packages">
-			<div class="row">
-				<div class="col-lg-9">
-					<div class="row m-b-20">
-						<div class="col-lg-3 m-b-20">
-							<label class="form-label">Persons</label>
-							<div class="form-group">2</div>
-						</div>
-						<div class="col-lg-9">
-							<label class="form-label">Tickets</label>
-							<div class="form-group">
-								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
-								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
-								<label class="form-check-label" for="tickets1">
-									4x I already have my Festival Weekender + camping tickets
-								</label>
-							</div>
-							<div class="form-group">
-								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
-								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
-								<label class="form-check-label" for="tickets2">
-									4x 2-day Festival Weekender + 4-day camping tickets, surcharge: €676
-								</label>
-							</div>
-							<div class="form-group">
-								<button type="button" class="d-inline-block info-btn" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
-								<input class="form-check-input" type="radio" name="tickets" id="tickets3" value="value">
-								<label class="form-check-label" for="tickets3">
-									4x VIP 2-day Festival Weekender + 4-day camping tickets, surcharge: €1.076
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="row m-b-20">
-						<div class="col-6 col-lg-3">
-							<div class="form-group">
-								<label class="form-label">Arrival date</label>
-								Thursday 23-08-2018
-							</div>
-						</div>
-						<div class="col-6 col-lg-3">
-							<div class="form-group">
-								<label class="form-label">Departure date</label>
-								Thursday 23-08-2018
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col col-lg-3 my-package">
-					<div class="form-label">My Package</div>
-					<div>6 persons x &euro;299</div>
-					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
-					<button class="button button-primary form-tickets-submit">Book now</button>
-				</div>
-			</div>
-		</form>
-
-		
-	</div>
-</section>
-<div class="accordeon">
-	<div class="container">
-		<a href="step2-camping.html">
-			<span class="accordeon-step">Your extras</span>
-			<div class="accordeon-buttons">
-				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
+	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
 </div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
-			<div class="accordeon-buttons">
-				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step4-camping.html">
-			<span class="accordeon-step">Confirm</span>
-			<div class="accordeon-buttons">
-				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Festival Weekender + camping tickets</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
 	<footer id="footer">
 	<div class="container">
 		<div class="row">
