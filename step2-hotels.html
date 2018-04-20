@@ -238,10 +238,9 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 	<form class="">
 		<div class="container">
-			<div class="d-block d-lg-none">
+			<div class="d-block d-lg-none m-b-30">
 				<div class="row">
-
-					<div class="col-5"><button class="button button-primary">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
 					<div class="col-7">
 						<select class="form-control m-b-0">
 							<option selected="">Sort by</option>
@@ -250,15 +249,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					</div>
 				</div>
 			</div>
-			<div class="d-none d-lg-block">
+			<div id="filters">
 				<div class="row">
-					
 					
 <div class="col-12 col-lg-3">
 	<div class="form-group">
 		<label class="form-label">Check in</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
 			<div class="input-group-addon">
 				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
@@ -268,8 +266,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 <div class="col-12  col-lg-3">
 	<div class="form-group">
 		<label class="form-label">Check out</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
 			<div class="input-group-addon">
 				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>

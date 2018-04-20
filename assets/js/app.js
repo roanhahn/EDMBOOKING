@@ -216,6 +216,15 @@ $('.toggle-subnav').click(function(){
 $('.closeCookies').click(function(){
 	$('.cookies').fadeToggle("fast");
 });
+
+// TOGGLE FILTERS
+
+
+
+$('.toggle-filters').click(function(){
+	$('#filters').fadeToggle("fast");
+	 return false;
+});
 //  READMORE
 
 
