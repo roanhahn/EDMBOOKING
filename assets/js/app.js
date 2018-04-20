@@ -226,6 +226,15 @@ $('.readmore').click(function(){
 	});
 
 
+// POPUP
+$('#standalone').popup({
+  color: '#000',
+  opacity: .5,
+  transition: '0.3s',
+  scrolllock: true
+});
+
+
 // Toggle cart
 
 $('.toggle-cart').click(function(){

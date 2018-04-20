@@ -218,48 +218,237 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
         <h1 class="page-h1">Buttons</h1>
 		<div class="row">
 			<div class="col-md-4 m-b-30">
-                 <div>
-                    <h3 class="form-label">Primary button</h3>
-                    <a href="#" class="button button-primary">Submit</a>
-                </div>
-                 <div class="m-t-30">
-                    <h3 class="form-label">Primary button small</h3>
-                    <a href="#" class="button button-primary button-primary--small">I'm small</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Primary button inverted</h3>
-                    <a href="#" class="button button-primary button-primary--inverted">Inverted</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Primary button with effect</h3>
-                    <a href="#" class="button button-primary button-primary--effect">Hover effect</a>
-                </div>
-                 <div class="m-t-30">
-                    <h3 class="form-label">Primary button lowercase</h3>
-                    <a href="#" class="button button-primary button--lowercase">I'm lowercase</a>
-                </div>
+                 <!-- Add an optional button to open the popup -->
+                <button class="standalone_open">Open popup</button>
+
+  <!-- Add content to the popup -->
+  <div id="standalone">
+    
+<div id="map" class="fullscreenmap"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
+<script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 10,
+                    fullscreenControl: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "weight": 1.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 30
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 19
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    }
+                    ]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+
+                var customMarker = 'assets/img/marker.svg';
+                var customMarkerEvent = 'assets/img/event.svg';
+
+                var marker = new google.maps.Marker({ 
+    				position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+    				icon: customMarker, 
+    				map: map, 
+    				title: 'yo'  
+                });
+
+                 var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3873878,4.646219400000064), //EVENT
+                    icon: customMarkerEvent, 
+                    map: map, 
+                    title: 'yo'  
+                });
+            }
+            </script>
+    <button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
+  </div>
 			</div>
             <div class="col-md-4">
-                 <div>
-                    <h3 class="form-label">Secondary button</h3>
-                    <a href="#" class="button button-secondary">Submit</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Secondary button inverted</h3>
-                    <a href="#" class="button button-secondary button-secondary--inverted">Inverted</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Secondary button no arrow</h3>
-                    <a href="#" class="button button-secondary button-secondary--noArrow">No arrow</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Secondary button back</h3>
-                    <a href="#" class="button button-secondary button--back">Back</a>
-                </div>
-                <div class="m-t-30">
-                    <h3 class="form-label">Secondary button back</h3>
-                    <a href="#" class="button button-secondary button--lowercase">I'm lowercase</a>
-                </div>
+               
             </div>
             <div class="col-md-4">
                 
