@@ -5,6 +5,7 @@
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
 @import url(bootstrap-datepicker3.min.css);
+@import url(odometer-theme-default.css);
 body, html {
   height: 100%;
   -webkit-overflow-scrolling: touch;
@@ -260,6 +261,14 @@ h3.extras {
   stroke-dashoffset: 48;
   animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
 
+.checkmark__cross {
+  stroke: none;
+  fill: none;
+  animation: cross .4s ease-in-out .8s forwards; }
+
+@keyframes cross {
+  100% {
+    fill: #419bf7; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
@@ -300,9 +309,6 @@ h3.extras {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
-@keyframes fill2 {
-  100% {
-    box-shadow: inset 0px 0px 0px 30px blue; } }
 .succes {
   text-align: center; }
   .succes h3 {
@@ -470,6 +476,28 @@ h3.extras {
   .myBooking table a {
     font-weight: 800; }
 
+#output {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-size: 120px; }
+
+.animatelogo {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-size: 120px;
+  overflow: hidden;
+  height: 120px;
+  line-height: 0px; }
+  .animatelogo .wrapper {
+    position: relative;
+    top: -15px;
+    height: 110px;
+    overflow: hidden; }
+
+.odometer {
+  position: relative;
+  top: -12px; }
+
 .info-labels {
   display: flex;
   flex-wrap: wrap;
@@ -608,6 +636,30 @@ h3.extras {
     width: 90%; }
   100% {
     width: 100%; } }
+.popup_content {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
+
+.fullscreenmap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.standalone_close {
+  position: absolute !important;
+  z-index: 2;
+  top: 10px;
+  right: 10px; }
+
 .img {
   display: block; }
 
@@ -839,20 +891,26 @@ h3.extras {
     .event-info-item .content p {
       line-height: 1.6; }
 
-.googleMaps {
+.googleMaps, .hotel-information {
   color: #419bf7; }
-  .googleMaps #map {
+  .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
     margin-bottom: 15px; }
-  .googleMaps iframe {
+  .googleMaps iframe, .hotel-information iframe {
     width: 100%;
     height: 300px;
     margin-bottom: 15px; }
   @media all and (max-width: 992px) {
-    .googleMaps {
+    .googleMaps, .hotel-information {
       margin-top: 20px;
       font-size: 14px; } }
+
+.showMap {
+  border-left: 1px solid #419bf7;
+  margin-left: 7px;
+  padding-left: 10px;
+  cursor: pointer; }
 
 .rating-wrapper {
   color: #419bf7;
@@ -1075,7 +1133,8 @@ button {
   -moz-appearance: none !important;
   -webkit-transition: all .15s ease-out 0s;
   transition: all .15s ease-out 0s;
-  border-radius: 0px; }
+  border-radius: 0px;
+  cursor: pointer; }
   .button--next:after {
     content: "\f105";
     display: inline-block;
@@ -1155,7 +1214,7 @@ button {
         -webkit-transition: all .3s ease-out 0s;
         transition: all .3s ease-out 0s; }
       .button-primary--effect:hover:after {
-        width: 300px;
+        width: 120%;
         height: 300px; }
   .button-secondary {
     border-radius: 50px;
@@ -1196,6 +1255,28 @@ button {
           display: none; }
         .button-add i {
           margin: 0; } }
+  .button--round {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%; }
+  .button--close {
+    background: #419bf7;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px; }
+    .button--close img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 15px;
+      height: auto;
+      -ms-transform: translate(-50%, -50%);
+      /* IE 9 */
+      -webkit-transform: translate(-50%, -50%);
+      /* Safari */
+      transform: translate(-50%, -50%); }
   .button-inversed {
     border-color: #419bf7; }
     .button-inversed:after {
@@ -1230,6 +1311,14 @@ button:focus {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   border: none; }
+
+.button--sticky {
+  position: fixed;
+  bottom: 15px;
+  z-index: 99;
+  background: #000;
+  left: 15px;
+  right: 15px; }
 
 .remove {
   background: none;
@@ -1605,7 +1694,8 @@ body.scrolled .hamburger {
     height: calc(50% - 90px); }
     @media all and (max-width: 992px) {
       .hero-event {
-        height: calc(50% - 50px); } }
+        min-height: 200px;
+        height: calc(30% - 50px) !important; } }
   .hero:before {
     content: "";
     position: absolute;
@@ -1882,10 +1972,18 @@ body.scrolled .hamburger {
   .textfield:-moz-placeholder, select:-moz-placeholder, .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #333; }
+  @media all and (max-width: 992px) {
+    .textfield, select, .form-control {
+      font-size: 12px;
+      height: 39px; } }
 
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0; }
+  @media all and (max-width: 992px) {
+    .input-group-addon {
+      font-size: 12px;
+      height: 39px; } }
 
 .form-tickets-submit {
   margin-top: 27px;
@@ -1954,6 +2052,19 @@ body.scrolled .hamburger {
     font-size: 14px;
     font-weight: 700;
     margin-top: 15px; }
+
+@media all and (max-width: 992px) {
+  .selectric .label {
+    font-size: 12px !important;
+    height: 39px !important;
+    line-height: 39px !important; } }
+
+@media all and (min-width: 992px) {
+  #filters {
+    display: block !important; } }
+@media all and (max-width: 992px) {
+  #filters {
+    display: none; } }
 
 /*======================================
   Selectric v1.13.0
@@ -2435,8 +2546,12 @@ footer {
 .accordeon {
   color: #fff;
   background: #000;
-  border-top: 2px solid rgba(255, 255, 255, 0.3); }
-  .accordeon--active {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: background .15s ease-out 0s;
+  transition: background .15s ease-out 0s; }
+  .accordeon:hover {
+    background: #419bf7; }
+  .accordeon--active, .accordeon--active:hover {
     background: #333;
     border: none; }
   .accordeon .container {
@@ -2464,13 +2579,16 @@ footer {
     @media all and (max-width: 767px) {
       .accordeon-buttons {
         font-size: 12px; } }
+    .accordeon-buttons a {
+      display: inline-block !important; }
   .accordeon-down {
     display: inline-block;
     padding: 15px 0 15px 15px;
     margin-left: 15px;
     border-left: 2px solid rgba(255, 255, 255, 0.3); }
   .accordeon a {
-    color: #fff; }
+    color: #fff;
+    display: block; }
 
 .offer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);

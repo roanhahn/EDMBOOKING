@@ -329,6 +329,18 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	animation: stroke .3s $curve .8s forwards;
 }
 
+.checkmark__cross {
+	stroke: none;
+	fill: none;
+	animation: cross .4s ease-in-out .8s forwards;
+}
+
+@keyframes cross {
+	100% {
+		fill: $link-color;
+	}
+}
+
 @keyframes stroke {
 	100% {
 		stroke-dashoffset: 0;
@@ -388,11 +400,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	}
 }
 
-@keyframes fill2 {
-	100% {
-		box-shadow: inset 0px 0px 0px 30px blue;
-	}
-}
+
 
 .succes{
 	
@@ -653,4 +661,31 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 			font-weight: 800;
 		}
 	}
+}
+
+#output{
+	font-family: $font-header;
+	font-weight: 900;
+	font-size: 120px;
+}
+.animatelogo{
+	font-family: $font-header;
+	font-weight: 900;
+	font-size: 120px;
+	// background: red;
+	overflow: hidden;
+	height: 120px;
+	line-height: 0px;
+
+	& .wrapper{
+		// background: blue;
+		position: relative;
+		top: -15px;
+		height: 110px;
+		overflow: hidden;
+	}
+}
+.odometer{
+	position: relative;
+	top: -12px;
 }

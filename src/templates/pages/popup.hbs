@@ -1,0 +1,30 @@
+---
+title: Popup
+type: component
+layout: default.hbs
+---
+
+
+<section class="section">
+	<div class="container">
+        <h1 class="page-h1">Buttons</h1>
+		<div class="row">
+			<div class="col-md-4 m-b-30">
+                 <!-- Add an optional button to open the popup -->
+                <button class="standalone_open">Open popup</button>
+
+  <!-- Add content to the popup -->
+  <div id="standalone">
+    {{> googleMapsPopup }}
+    <button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
+  </div>
+			</div>
+            <div class="col-md-4">
+               
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+		</div>
+	</div>
+</section>

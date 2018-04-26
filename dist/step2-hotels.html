@@ -89,7 +89,7 @@
 			<div class="contactDetails">
 				E-mail: <a href="mailto:info@edmbooking.com">info@edmbooking.com</a><br />
 				Phone: <a href="tel:+31 6 52 382 382">+31 6 52 382 382</a><br />
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a>
 			</div>
 		</li>
 	</ul>
@@ -235,39 +235,52 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	</div>
 </div>
 <section class="section">
-	<form>
+
+	<form class="">
 		<div class="container">
-			<div class="row">
-				
-<div class="col-12 col-lg-3">
+			<div class="d-block d-lg-none m-b-30">
+				<div class="row">
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-7">
+						<select class="form-control m-b-0">
+							<option selected="">Sort by</option>
+							<option>Price Low-High</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="filters">
+				<div class="row">
+					
+<div class="col-6 col-lg-3">
 	<div class="form-group">
 		<label class="form-label">Check in</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
 			<div class="input-group-addon">
 				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="col-12  col-lg-3">
+<div class="col-6 col-lg-3">
 	<div class="form-group">
 		<label class="form-label">Check out</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
 			<div class="input-group-addon">
 				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="col-12  col-lg-1">
+<div class="col-6 col-lg-1">
 	<div class="form-group">
 		<label class="form-label" for="room">Guests</label>
 		<span class="guests">2</span>
 	</div>
 </div>
-<div class="col-12  col-lg-3">
+<div class="col-6  col-lg-3">
 	<div class="form-group">
 		<label class="form-label" for="room">Select room type</label>
 		<select class="form-control" id="room">
@@ -284,6 +297,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 
 
+				</div>
 			</div>
 			<hr class="hr" />
 		</div>
@@ -293,7 +307,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 			<div class="col-md-9">
 				<h2 class="h2-section">Selected Hotels</h2>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 d-none d-lg-block">
 				<div>
 					<select class="form-control m-b-0">
 						<option selected="">Sort by</option>
@@ -644,7 +658,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 
 
-	<footer>
+	<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-lg-3 footer-col">
@@ -652,13 +666,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 				<ul>
 					<li><a href="mailto:info@edmbassy.com">info@edmbooking.com</a></li>
 					<li>Phone  <a href="tel:+3165238238">+31 6 52 382 382</a></li>
-					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a></li>
+					<li><a href="address.html">Our office</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-lg-3 footer-col">
 				<h4>Info</h4>
 				<ul>
-					<li><a href="whybook.html">Why EDMBOOKING</a></li>
+					<li><a href="whybook.html">Why edmbooking</a></li>
 					<li><a href="faq.html">Tell me more</a></li>
 					<li><a href="login.html">Login</a></li>
 					<li><a href="page.html">Our story</a></li>
@@ -697,7 +712,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>			  
 			</div>
 		</div>
@@ -705,7 +720,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		<div class="row">
 			<div class="col payoff">
 				<div class="copyright">
-					&copy; EDMBASSY All rights reserved. 
+					&copy; EDMBOOKING All rights reserved. 
 					<span class="legals">
 						
 						<a href="index.html">GIT</a>
@@ -729,7 +744,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
+	<script src="assets/js/plugins/odometer.js"></script>
+	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
 	<script src="assets/js/app.js"></script>
-
 </body>
 </html>

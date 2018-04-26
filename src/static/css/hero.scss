@@ -19,7 +19,8 @@
 		height: calc(50% - #{$header-height});
 
 		@media all and (max-width: $breakpoint-tablet){
-			height: calc(50% - #{$header-height-mobile});
+			min-height: 200px;
+			height: calc(30% - #{$header-height-mobile}) !important;
 		}
 	}
 

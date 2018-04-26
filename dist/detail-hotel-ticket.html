@@ -89,7 +89,7 @@
 			<div class="contactDetails">
 				E-mail: <a href="mailto:info@edmbooking.com">info@edmbooking.com</a><br />
 				Phone: <a href="tel:+31 6 52 382 382">+31 6 52 382 382</a><br />
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a>
 			</div>
 		</li>
 	</ul>
@@ -235,14 +235,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 </div>
 <div class="accordeon accordeon--active">
 	<div class="container">
-		<a href="step2-camping.html">
+		
 			<span class="accordeon-step">Your room</span>
 			<div class="accordeon-buttons">
 				<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
 				<a href="step2-camping.html" class="button button-secondary">Next</a>
 			</div>
 			
-		</a>
+		
 	</div>
 </div>
 <section class="section detailpage">
@@ -278,8 +278,36 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		
 
 		<div class="row">
+			<div class="col-lg-4 m-b-30">
+				<h3 class="h3 h3--textcolor">Package information</h3>
+				<ul class="offer-list">
+					<li>Tipi for 9 persons</li>
+					<li>9 Single stretchers including sleeping bags and pillows</li>
+					<li>Table with stools</li>
+					<li>A spot on our campsite</li>
+					<li>3 Night stay</li>
+					<li>Exclusive pre-party on Thursday</li>
+					<li>New Horizons welcome package</li>
+					<li>1 Parking ticket for Royal Garden parking</li>
+				</ul>
+				
+			</div>
 			<div class="col-lg-8">
 				<h3 class="h3 h3--textcolor">Hotel information</h3>
+				<div class="hotel-information">
+					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
+					</div>
+				</div>
 				<p class="p">
 					The Campanile hotel is 4.5 km from the city centre of ‘s-Hertogenbosch and within 5 km of a karting circuit, tennis courts, a skating rink, swimming pool, snooker hall, a nightclub and a shopping centre.
 					<br /><br />
@@ -288,12 +316,175 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					Campanile Hotel also offers a hot breakfast with eggs cooked just the way you like them. The restaurant serves lunch and dinner (International dishes and Dutch specialties). The hotel also offers packed lunches, a bar/lounge, terrace, garden and self-serve laundry.
 				</p>
 			</div>
-			<div class="col-lg-4">
-				<div class="googleMaps">
-					
-<div id="map"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+		</div>
+		<hr class="hr">
+		
+		<div class="row">
+			
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check in</label>
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check out</label>
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-1">
+	<div class="form-group">
+		<label class="form-label" for="room">Guests</label>
+		<span class="guests">2</span>
+	</div>
+</div>
+<div class="col-6  col-lg-3">
+	<div class="form-group">
+		<label class="form-label" for="room">Select room type</label>
+		<select class="form-control" id="room">
+			<option selected="">2 x double room</option>
+		</select>
+	</div>
+</div>
+<div class="col-12 col-lg-2">
+	<div class="form-group">
+		<label class="form-label d-none d-lg-block">&nbsp;</label>
+		<button class="button button-primary button--block">Search</button>
+	</div>
+</div>
+
+
+
+
+			<div class="col loader">
+	<div class="loader-text">Hold on... we are searching for the best rooms and rates.</div>
+	<div class="loader-wrapper">
+		<div class="loader-bar"></div>
+	</div>
+</div>
+		</div>
+		<hr class="hr" />
+
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+		<div class="room">
+	<div class="row">
+		<div class="col room-content">
+			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
+			<div class="room-info">
+				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+			</div>
+			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
+		</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="room-price">
+				<div class="offer-price">&euro; 299</div>
+				<div class="offer-price-condition">Total room price</div>
+				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
+			</div>
+			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
+		</div>
+	</div>
+</div>
+
+	</div>
+</section>
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">Your details</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">Confirm</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+
+
+<div id="standalone">
+	
+<div id="map" class="fullscreenmap"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
 <script>
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -304,7 +495,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 10,
-
+                    fullscreenControl: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
 
@@ -511,200 +702,10 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 });
             }
             </script>
-					<div>
-						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
-					</div>
-					<div class="rating-wrapper">
-						<div class="rating">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</div>
-						Distance venue 5km
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="hr">
-		<div class="row">
-			<div class="col-lg-8">
-				<h3 class="h3 h3--textcolor">Package information</h3>
-				<ul class="offer-list">
-					<li>Tipi for 9 persons</li>
-					<li>9 Single stretchers including sleeping bags and pillows</li>
-					<li>Table with stools</li>
-					<li>A spot on our campsite</li>
-					<li>3 Night stay</li>
-					<li>Exclusive pre-party on Thursday</li>
-					<li>New Horizons welcome package</li>
-					<li>1 Parking ticket for Royal Garden parking</li>
-				</ul>
-			</div>
-		</div>
-
-
-		<hr class="hr" />
-		<div class="row">
-			
-<div class="col-12 col-lg-3">
-	<div class="form-group">
-		<label class="form-label">Check in</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
-			<div class="input-group-addon">
-				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="col-12  col-lg-3">
-	<div class="form-group">
-		<label class="form-label">Check out</label>
-		<div class="input-group date datepicker" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Arrival date">
-			<div class="input-group-addon">
-				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="col-12  col-lg-1">
-	<div class="form-group">
-		<label class="form-label" for="room">Guests</label>
-		<span class="guests">2</span>
-	</div>
-</div>
-<div class="col-12  col-lg-3">
-	<div class="form-group">
-		<label class="form-label" for="room">Select room type</label>
-		<select class="form-control" id="room">
-			<option selected="">2 x double room</option>
-		</select>
-	</div>
-</div>
-<div class="col-12 col-lg-2">
-	<div class="form-group">
-		<label class="form-label d-none d-lg-block">&nbsp;</label>
-		<button class="button button-primary button--block">Search</button>
-	</div>
+	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
 </div>
 
-
-
-
-			<div class="col loader">
-	<div class="loader-text">Hold on... we are searching for the best rooms and rates.</div>
-	<div class="loader-wrapper">
-		<div class="loader-bar"></div>
-	</div>
-</div>
-		</div>
-		<hr class="hr" />
-
-		<div class="room">
-	<div class="row">
-		<div class="col room-content">
-			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
-			<div class="room-info">
-				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
-			</div>
-			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
-		</div>
-		<div class="col-md-4 col-lg-3">
-			<div class="room-price">
-				<div class="offer-price">&euro; 299</div>
-				<div class="offer-price-condition">Total room price</div>
-				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
-			</div>
-			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
-		</div>
-	</div>
-</div>
-		<div class="room">
-	<div class="row">
-		<div class="col room-content">
-			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
-			<div class="room-info">
-				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
-			</div>
-			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
-		</div>
-		<div class="col-md-4 col-lg-3">
-			<div class="room-price">
-				<div class="offer-price">&euro; 299</div>
-				<div class="offer-price-condition">Total room price</div>
-				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
-			</div>
-			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
-		</div>
-	</div>
-</div>
-		<div class="room">
-	<div class="row">
-		<div class="col room-content">
-			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
-			<div class="room-info">
-				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
-			</div>
-			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
-		</div>
-		<div class="col-md-4 col-lg-3">
-			<div class="room-price">
-				<div class="offer-price">&euro; 299</div>
-				<div class="offer-price-condition">Total room price</div>
-				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
-			</div>
-			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
-		</div>
-	</div>
-</div>
-		<div class="room">
-	<div class="row">
-		<div class="col room-content">
-			<h3 class="h3 h3--textcolor">Premier kamer, 1 kingsize bed</h3>
-			<div class="room-info">
-				<p class="p">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
-			</div>
-			<button class="readmore d-none d-md-inline-block"><i class="fa fa-plus" aria-hidden="true"></i> Read more</button>
-		</div>
-		<div class="col-md-4 col-lg-3">
-			<div class="room-price">
-				<div class="offer-price">&euro; 299</div>
-				<div class="offer-price-condition">Total room price</div>
-				<a href="#" class="button button-primary d-none d-md-block">Book your stay</a>
-			</div>
-			<a href="#" class="button button-primary d-inline-block d-md-none">Book your stay</a>
-		</div>
-	</div>
-</div>
-
-	</div>
-</section>
-
-<div class="accordeon">
-	<div class="container">
-		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
-			<div class="accordeon-buttons">
-				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step4-camping.html">
-			<span class="accordeon-step">Confirm</span>
-			<div class="accordeon-buttons">
-				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-
-	<footer>
+	<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-lg-3 footer-col">
@@ -712,13 +713,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 				<ul>
 					<li><a href="mailto:info@edmbassy.com">info@edmbooking.com</a></li>
 					<li>Phone  <a href="tel:+3165238238">+31 6 52 382 382</a></li>
-					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a></li>
+					<li><a href="address.html">Our office</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-lg-3 footer-col">
 				<h4>Info</h4>
 				<ul>
-					<li><a href="whybook.html">Why EDMBOOKING</a></li>
+					<li><a href="whybook.html">Why edmbooking</a></li>
 					<li><a href="faq.html">Tell me more</a></li>
 					<li><a href="login.html">Login</a></li>
 					<li><a href="page.html">Our story</a></li>
@@ -757,7 +759,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>			  
 			</div>
 		</div>
@@ -765,7 +767,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		<div class="row">
 			<div class="col payoff">
 				<div class="copyright">
-					&copy; EDMBASSY All rights reserved. 
+					&copy; EDMBOOKING All rights reserved. 
 					<span class="legals">
 						
 						<a href="index.html">GIT</a>
@@ -789,7 +791,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
+	<script src="assets/js/plugins/odometer.js"></script>
+	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
 	<script src="assets/js/app.js"></script>
-
 </body>
 </html>

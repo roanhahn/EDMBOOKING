@@ -60,6 +60,20 @@ layout: default.hbs
 			</div>
 			<div class="col-lg-8">
 				<h3 class="h3 h3--textcolor">Information</h3>
+				<div class="hotel-information">
+					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
+					</div>
+				</div>
 				<p class="p">
 					New Horizons Festival will have two different campsites: the Travellers Garden and the Royal Garden.
 					This is your first stop and home for the weekend on this magical journey. Meet up with other Travellers and discover the surroundings which are beyond your imagination. The language in the Travellers Garden is music what means that no matter where you're from all Travellers will understand each other. Settle down, find some rest and look at the stars with your new made friends. The pre-set up Enjoy Tent s a spacious four person tent with four air mattresses (200 cm by 80 cm), four comfortable sleeping bags and four pillows, lights, clothing hooks, storage compartments and a separate front tent and living compartment. The tent is divided into two sleeping compartments with in between them a central baggage and living area. Specifications: 2 sleeping compartments of 180*230cm, 1 central baggage and living area of 160*230cm, ventilation and condensation system, 6 big storage compartments, Led-light and clothing hooks.
@@ -71,6 +85,29 @@ layout: default.hbs
 		</div>
 
 		<hr class="hr">	
+
+		{{!-- <div class="row">
+			
+			<div class="col">
+				<div class="googleMaps">
+					{{> googleMaps }}
+					<div>
+						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					</div>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr"> --}}
 
 		<form class="form-packages">
 			<div class="row">
@@ -182,4 +219,11 @@ layout: default.hbs
       </div>
     </div>
   </div>
+</div>
+
+{{!-- POPUP MAPS --}}
+
+<div id="standalone">
+	{{> googleMapsPopup }}
+	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
 </div>

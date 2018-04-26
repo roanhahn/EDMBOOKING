@@ -171,7 +171,27 @@
 
     return LazyLoad;
 });
+// var bodyHeight = $('.body').outerHeight();
+// var headerHeight = $('.header').outerHeight();
+var footerHeight = $('#footer').outerHeight();
+// var sectionHeight = $('.full-height').outerHeight();
 
+// console.log(bodyHeight-headerHeight-footerHeight);
+// $('.full-height').css("min-height", bodyHeight-headerHeight-footerHeight);
+
+// $('.body').css("padding-bottom", footerHeight);
+
+// ODOMETER
+
+window.odometerOptions = {
+  format: 'dd',
+  duration: 10000,
+  // animation: 'count'
+};
+
+setTimeout(function(){
+    $('.odometer').html(99);
+  }, 2000);
 
 // Lazyload
 
@@ -196,6 +216,15 @@ $('.toggle-subnav').click(function(){
 $('.closeCookies').click(function(){
 	$('.cookies').fadeToggle("fast");
 });
+
+// TOGGLE FILTERS
+
+
+
+$('.toggle-filters').click(function(){
+	$('#filters').fadeToggle("fast");
+	 return false;
+});
 //  READMORE
 
 
@@ -204,6 +233,15 @@ $('.readmore').click(function(){
 	$(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
 	 // $('body, .html').attr('scroll','no');
 	});
+
+
+// POPUP
+$('#standalone').popup({
+  color: '#000',
+  opacity: .5,
+  transition: '0.3s',
+  scrolllock: true
+});
 
 
 // Toggle cart
@@ -472,4 +510,33 @@ vidRescale();
 setTimeout(function() {
 	$('#hero-video').addClass('animated fadeIn');
 }, 1500);
+
+// RANDOM NUMBERS
+
+var output, started, duration, desired;
+
+// Constants
+duration = 10000;
+desired = '00';
+
+// Initial setup
+output = $('#output');
+started = new Date().getTime();
+
+// Animate!
+animationTimer = setInterval(function() {
+    // If the value is what we want, stop animating
+    // or if the duration has been exceeded, stop animating
+    if (output.text().trim() === desired || new Date().getTime() - started > duration) {
+        clearInterval(animationTimer);
+    } else {
+        console.log('animating');
+        // Generate a random string to use for the next animation step
+        output.text(
+            ''+
+            Math.floor(Math.random() * 10)+
+            Math.floor(Math.random() * 10)
+        );
+    }
+}, 100);
 

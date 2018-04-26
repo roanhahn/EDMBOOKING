@@ -89,7 +89,7 @@
 			<div class="contactDetails">
 				E-mail: <a href="mailto:info@edmbooking.com">info@edmbooking.com</a><br />
 				Phone: <a href="tel:+31 6 52 382 382">+31 6 52 382 382</a><br />
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a>
 			</div>
 		</li>
 	</ul>
@@ -268,6 +268,20 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 			</div>
 			<div class="col-lg-8">
 				<h3 class="h3 h3--textcolor">Information</h3>
+				<div class="hotel-information">
+					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
+					</div>
+				</div>
 				<p class="p">
 					New Horizons Festival will have two different campsites: the Travellers Garden and the Royal Garden.
 					This is your first stop and home for the weekend on this magical journey. Meet up with other Travellers and discover the surroundings which are beyond your imagination. The language in the Travellers Garden is music what means that no matter where you're from all Travellers will understand each other. Settle down, find some rest and look at the stars with your new made friends. The pre-set up Enjoy Tent s a spacious four person tent with four air mattresses (200 cm by 80 cm), four comfortable sleeping bags and four pillows, lights, clothing hooks, storage compartments and a separate front tent and living compartment. The tent is divided into two sleeping compartments with in between them a central baggage and living area. Specifications: 2 sleeping compartments of 180*230cm, 1 central baggage and living area of 160*230cm, ventilation and condensation system, 6 big storage compartments, Led-light and clothing hooks.
@@ -279,6 +293,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		</div>
 
 		<hr class="hr">	
+
+		
 
 		<form class="form-packages">
 			<div class="row">
@@ -392,7 +408,233 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
   </div>
 </div>
 
-	<footer>
+
+
+<div id="standalone">
+	
+<div id="map" class="fullscreenmap"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
+<script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 10,
+                    fullscreenControl: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "weight": 1.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 30
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 19
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                        ]
+                    }
+                    ]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+
+                var customMarker = 'assets/img/marker.svg';
+                var customMarkerEvent = 'assets/img/event.svg';
+
+                var marker = new google.maps.Marker({ 
+    				position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
+    				icon: customMarker, 
+    				map: map, 
+    				title: 'yo'  
+                });
+
+                 var marker = new google.maps.Marker({ 
+                    position: new google.maps.LatLng(52.3873878,4.646219400000064), //EVENT
+                    icon: customMarkerEvent, 
+                    map: map, 
+                    title: 'yo'  
+                });
+            }
+            </script>
+	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
+</div>
+	<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-lg-3 footer-col">
@@ -400,13 +642,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 				<ul>
 					<li><a href="mailto:info@edmbassy.com">info@edmbooking.com</a></li>
 					<li>Phone  <a href="tel:+3165238238">+31 6 52 382 382</a></li>
-					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a></li>
+					<li><a href="address.html">Our office</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-lg-3 footer-col">
 				<h4>Info</h4>
 				<ul>
-					<li><a href="whybook.html">Why EDMBOOKING</a></li>
+					<li><a href="whybook.html">Why edmbooking</a></li>
 					<li><a href="faq.html">Tell me more</a></li>
 					<li><a href="login.html">Login</a></li>
 					<li><a href="page.html">Our story</a></li>
@@ -445,7 +688,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>			  
 			</div>
 		</div>
@@ -453,7 +696,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		<div class="row">
 			<div class="col payoff">
 				<div class="copyright">
-					&copy; EDMBASSY All rights reserved. 
+					&copy; EDMBOOKING All rights reserved. 
 					<span class="legals">
 						
 						<a href="index.html">GIT</a>
@@ -477,7 +720,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
+	<script src="assets/js/plugins/odometer.js"></script>
+	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
 	<script src="assets/js/app.js"></script>
-
 </body>
 </html>

@@ -116,6 +116,7 @@
 	border: 1px solid #fff;
 	background: #fff;
 
+
 	&:focus{
 		// -webkit-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
 		// -moz-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
@@ -135,10 +136,20 @@
 	&:-moz-placeholder { /* Firefox 18- */
 		color: #333;
 	}
+
+	@media all and(max-width: $breakpoint-tablet){
+		font-size: 12px;
+		height: 39px;
+	}
 }
 .input-group-addon{
 	border-radius: none;
 	-webkit-border-radius: 0;
+
+	@media all and(max-width: $breakpoint-tablet){
+		font-size: 12px;
+		height: 39px;
+	}
 }
 .form-tickets-submit{
 	margin-top: 27px;
@@ -231,5 +242,22 @@
 			font-weight: 700;
 			margin-top: 15px;
 		}
+	}
+}
+
+.selectric .label{
+	@media all and(max-width: $breakpoint-tablet){
+		font-size: 12px !important;
+		height: 39px !important;
+		line-height: 39px !important;
+	}
+}
+
+#filters{
+	@media all and (min-width: $breakpoint-tablet){
+		display: block !important;
+	}
+	@media all and (max-width: $breakpoint-tablet){
+		display: none;
 	}
 }

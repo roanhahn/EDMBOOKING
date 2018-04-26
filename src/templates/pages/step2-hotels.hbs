@@ -39,10 +39,24 @@ type: page
 	</div>
 </div>
 <section class="section">
-	<form>
+
+	<form class="">
 		<div class="container">
-			<div class="row">
-				{{> selectdate }}
+			<div class="d-block d-lg-none m-b-30">
+				<div class="row">
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-7">
+						<select class="form-control m-b-0">
+							<option selected="">Sort by</option>
+							<option>Price Low-High</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="filters">
+				<div class="row">
+					{{> selectdate }}
+				</div>
 			</div>
 			<hr class="hr" />
 		</div>
@@ -52,7 +66,7 @@ type: page
 			<div class="col-md-9">
 				<h2 class="h2-section">Selected Hotels</h2>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 d-none d-lg-block">
 				<div>
 					<select class="form-control m-b-0">
 						<option selected="">Sort by</option>

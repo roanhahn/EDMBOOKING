@@ -89,7 +89,7 @@
 			<div class="contactDetails">
 				E-mail: <a href="mailto:info@edmbooking.com">info@edmbooking.com</a><br />
 				Phone: <a href="tel:+31 6 52 382 382">+31 6 52 382 382</a><br />
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a>
+				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a>
 			</div>
 		</li>
 	</ul>
@@ -252,7 +252,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 		
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-4 m-b-30">
 				<h3 class="h3 h3--textcolor">Package information</h3>
 				<ul class="offer-list">
 					<li>Tipi for 9 persons</li>
@@ -265,12 +265,22 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<li>1 Parking ticket for Royal Garden parking</li>
 				</ul>
 			</div>
-		</div>
-		<hr class="hr">
-
-		<div class="row">
 			<div class="col-lg-8">
 				<h3 class="h3 h3--textcolor">Hotel information</h3>
+				<div class="hotel-information">
+					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
+					<div class="rating-wrapper">
+						<div class="rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						Distance venue 5km
+						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
+					</div>
+				</div>
 				<p class="p">
 					The Campanile hotel is 4.5 km from the city centre of ‘s-Hertogenbosch and within 5 km of a karting circuit, tennis courts, a skating rink, swimming pool, snooker hall, a nightclub and a shopping centre.
 					<br /><br />
@@ -279,12 +289,141 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					Campanile Hotel also offers a hot breakfast with eggs cooked just the way you like them. The restaurant serves lunch and dinner (International dishes and Dutch specialties). The hotel also offers packed lunches, a bar/lounge, terrace, garden and self-serve laundry.
 				</p>
 			</div>
-			<div class="col-lg-4">
-				<div class="googleMaps">
-					
-<div id="map"></div>
+		</div>
+		<hr class="hr">
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+		
+		
+		<form class="form-packages">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="row m-b-20">
+						<div class="col-12 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="persons">Persons</label>
+								<select class="form-control" id="persons">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="arrival">Arrival date</label>
+								<select class="form-control" id="arrival">
+									<option>24-11-2018</option>
+									<option>25-11-2018</option>
+									<option>26-11-2018</option>
+									<option>27-11-2018</option>
+									<option>28-11-2018</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="form-group">
+								<label class="form-label" for="departure">Departure date</label>
+								<select class="form-control" id="departure">
+									<option>24-11-2018</option>
+									<option>25-11-2018</option>
+									<option>26-11-2018</option>
+									<option>27-11-2018</option>
+									<option>28-11-2018</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row m-b-20">
+						<div class="col-lg-6 form-tickets">
+							<label class="form-label">Tickets</label>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
+								<label class="form-check-label" for="tickets1">
+									2x I already have my EF tickets, less price: € -80,00
+								</label>
+							</div>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
+								<label class="form-check-label" for="tickets2">
+									2x Included in this package your EF tickets
+								</label>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<label class="form-label">Room layout</label>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="rooms" id="room1" value="value">
+								<label class="form-check-label" for="room1">
+									2x Single, surcharge: € 140,00
+								</label>
+							</div>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="rooms" id="room2" value="value">
+								<label class="form-check-label" for="room2">
+									1x Double
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="col col-lg-3 my-package">
+					<div class="form-label">My Package</div>
+					<div>6 persons x &euro;299</div>
+					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
+					<button class="button button-primary form-tickets-submit">Book now</button>
+				</div>
+
+			</div>
+			<div class="row">
+				
+			</div>
+		</form>
+
+		
+	</div>
+</section>
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">Your extras</span>
+			<div class="accordeon-buttons">
+				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">Your details</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">Confirm</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+
+
+<div id="standalone">
+	
+<div id="map" class="fullscreenmap"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
 <script>
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -295,7 +434,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 10,
-
+                    fullscreenControl: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
 
@@ -502,148 +641,10 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
                 });
             }
             </script>
-					<div>
-						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
-					</div>
-					<div class="rating-wrapper">
-						<div class="rating">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</div>
-						Distance venue 5km
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="hr">
-		
-		<form class="form-packages">
-			<div class="row">
-				<div class="col-lg-9">
-					<div class="row m-b-20">
-						<div class="col-12 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="persons">Persons</label>
-								<select class="form-control" id="persons">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-12 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="arrival">Arrival date</label>
-								<select class="form-control" id="arrival">
-									<option>24-11-2018</option>
-									<option>25-11-2018</option>
-									<option>26-11-2018</option>
-									<option>27-11-2018</option>
-									<option>28-11-2018</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-12 col-md-4">
-							<div class="form-group">
-								<label class="form-label" for="departure">Departure date</label>
-								<select class="form-control" id="departure">
-									<option>24-11-2018</option>
-									<option>25-11-2018</option>
-									<option>26-11-2018</option>
-									<option>27-11-2018</option>
-									<option>28-11-2018</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="row m-b-20">
-						<div class="col-lg-6 form-tickets">
-							<label class="form-label">Tickets</label>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
-								<label class="form-check-label" for="tickets1">
-									2x I already have my EF tickets, less price: € -80,00
-								</label>
-							</div>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value">
-								<label class="form-check-label" for="tickets2">
-									2x Included in this package your EF tickets
-								</label>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<label class="form-label">Room layout</label>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="rooms" id="room1" value="value">
-								<label class="form-check-label" for="room1">
-									2x Single, surcharge: € 140,00
-								</label>
-							</div>
-							<div class="form-group">
-								<input class="form-check-input" type="radio" name="rooms" id="room2" value="value">
-								<label class="form-check-label" for="room2">
-									1x Double
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				
-				<div class="col col-lg-3 my-package">
-					<div class="form-label">My Package</div>
-					<div>6 persons x &euro;299</div>
-					<div class="my-package-total">Total price<span class="float-right">&euro;1.794</span></div>
-					<button class="button button-primary form-tickets-submit">Book now</button>
-				</div>
-
-			</div>
-			<div class="row">
-				
-			</div>
-		</form>
-
-		
-	</div>
-</section>
-<div class="accordeon">
-	<div class="container">
-		<a href="step2-camping.html">
-			<span class="accordeon-step">Your extras</span>
-			<div class="accordeon-buttons">
-				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
-			<div class="accordeon-buttons">
-				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-<div class="accordeon">
-	<div class="container">
-		<a href="step4-camping.html">
-			<span class="accordeon-step">Confirm</span>
-			<div class="accordeon-buttons">
-				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
+	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>
 </div>
 
-	<footer>
+	<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-lg-3 footer-col">
@@ -651,13 +652,14 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 				<ul>
 					<li><a href="mailto:info@edmbassy.com">info@edmbooking.com</a></li>
 					<li>Phone  <a href="tel:+3165238238">+31 6 52 382 382</a></li>
-					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question">+31 6 52 382 382</a></li>
+					<li>Whatsapp <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question">+31 6 52 382 382</a></li>
+					<li><a href="address.html">Our office</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-lg-3 footer-col">
 				<h4>Info</h4>
 				<ul>
-					<li><a href="whybook.html">Why EDMBOOKING</a></li>
+					<li><a href="whybook.html">Why edmbooking</a></li>
 					<li><a href="faq.html">Tell me more</a></li>
 					<li><a href="login.html">Login</a></li>
 					<li><a href="page.html">Our story</a></li>
@@ -696,7 +698,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>			  
 			</div>
 		</div>
@@ -704,7 +706,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 		<div class="row">
 			<div class="col payoff">
 				<div class="copyright">
-					&copy; EDMBASSY All rights reserved. 
+					&copy; EDMBOOKING All rights reserved. 
 					<span class="legals">
 						
 						<a href="index.html">GIT</a>
@@ -728,7 +730,8 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
+	<script src="assets/js/plugins/odometer.js"></script>
+	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
 	<script src="assets/js/app.js"></script>
-
 </body>
 </html>
