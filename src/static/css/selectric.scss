@@ -27,7 +27,7 @@
   margin: 0 38px 0 10px;
   font-size: 15px;
   line-height: 43px;
-  color: #444;
+  color: #000;
   height: 43px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -61,7 +61,7 @@
   width: 0;
   height: 0;
   border: 4px solid transparent;
-  border-top-color: #333;
+  border-top-color: #000;
   border-bottom: none;
 }
 
@@ -191,23 +191,23 @@
 .selectric-items li {
   display: block;
   padding: 10px;
-  color: #333;
+  color: #000;
   cursor: pointer;
 }
 
 .selectric-items li.selected {
   background: #ECF0F1;
-  color: #333;
+  color: #000;
 }
 
 .selectric-items li.highlighted {
   background: #ECF0F1;
-  color: #333;
+  color: #000;
 }
 
 .selectric-items li:hover {
   background: #ECF0F1;
-  color: #333;
+  color: #000;
 }
 
 .selectric-items .disabled {
@@ -231,7 +231,7 @@
       -ms-user-select: none;
           user-select: none;
   background: none;
-  color: #444;
+  color: #000;
 }
 
 .selectric-items .selectric-group.disabled li {

@@ -40,6 +40,14 @@ footer{
 		}
 	}
 
+	& span.icon{
+		// background-color: red;
+		width: 18px;
+		margin-right: 7px;
+		text-align: center;
+		display: inline-block;
+	}
+
 	& a{
 		color: $footer-link;
 
@@ -53,7 +61,7 @@ footer{
 	& .footer-col{
 		margin-bottom: 30px;
 
-		@media all and (max-width: $breakpoint-tablet){
+		@media all and (max-width: $breakpoint-mobile){
 			text-align: center;
 			margin-bottom: 20px;
 		}

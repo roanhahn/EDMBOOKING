@@ -51,6 +51,10 @@
 		& a{
 			display: inline-block !important;
 		}
+
+		& .button-secondary{
+			margin-left: 4px;
+		}
 	}
 
 	&-down{
@@ -59,6 +63,11 @@
 		padding: 15px 0 15px 15px;
 		margin-left: 15px;
 		border-left: 2px solid $border-color;
+
+		@media all and (max-width: $breakpoint-mobile){
+			padding: 10px 0 10px 10px;
+			margin-left: 10px;
+		}
 	}
 
 	& a{
@@ -107,7 +116,7 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 15px;
+			font-size: 16px;
 		}
 	}
 
@@ -185,7 +194,7 @@
 	&-price{
 		color: $link-color;
 		display: block;
-		font-weight: 700;
+		font-weight: 400;
 		margin: 0 0 2px 0;
 		white-space: nowrap;
 		font-size: 32px;
@@ -194,12 +203,12 @@
 			display: inline-block;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 22px;
+			font-size: 16px;
 		}
 	}
 
 	&-price-condition{
-		color: $text-color;
+		color: $link-color;
 		
 		display: block;
 		margin-bottom: 20px;
@@ -211,6 +220,8 @@
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 12px;
 			margin-left: 2px;
+			display: inline-block;
+			margin-bottom: 10px;
 			// margin-bottom: 20px;
 		}
 	}
@@ -224,7 +235,7 @@
 	& .button{
 		@media all and (max-width: $breakpoint-mobile){
 			// display: block;
-			float: right;
+			// float: right;
 		}
 	}
 }

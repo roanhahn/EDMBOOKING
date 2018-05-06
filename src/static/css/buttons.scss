@@ -148,6 +148,11 @@ button{
 		padding: 10px 20px;
 		text-transform: uppercase;
 
+		@media all and (max-width: $breakpoint-mobile){
+			padding: 8px 16px;
+			font-size: 12px;
+		}
+
 		&:after{
 			content: "\f105";
 			font-family: "FontAwesome";

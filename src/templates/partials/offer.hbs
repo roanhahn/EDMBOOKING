@@ -3,19 +3,21 @@
 		<div class="row">
 			<div class="col-4 col-md-6 col-lg-3">
 				
-					<div class="img-container ratio-1-1 sm-ratio-3-4">
-						<div class="ribbon">
-							<div>Sold out</div>
-						</div>
-						<img src="assets/img/{{img}}" data-src="assets/img/{{img}}" class="lazyload" alt="">
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
 					</div>
+					<img src="assets/img/{{img}}" data-src="assets/img/{{img}}" class="lazyload" alt="">
+				</div>
 				
 			</div>
 			<div class="col-8 col-md-6 col-lg-9 offer-content">
 				<div class="row">
 					<div class="col-lg-9{{!--  offer-line --}}">
 						<h3 class="offer-title">{{title}}</h3>
-
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
 
 
 
@@ -34,6 +36,9 @@
 						{{else}}
 						<p class="offer-subheader">{{subheader}}</p>
 						{{/if}}
+
+						<span class="button button-primary d-md-none">{{button}}</span>
+
 						<ul class="offer-list d-none d-md-block">
 							<li>Tipi for 9 persons</li>
 							<li>9 Single stretchers including sleeping bags and pillows</li>
@@ -45,14 +50,13 @@
 							<li>1 Parking ticket for Royal Garden parking</li> --}}
 						</ul>
 					</div>
-					<div class="col-lg-3">
-						<span class="button button-primary button-primary--small d-md-none float-right">{{button}}</span>
+					<div class="col-lg-3 d-none d-md-block">
 						<div class="offer-info">
 							<div>
 								<span class="offer-price">&euro;299</span>
 								<span class="offer-price-condition">{{condition}}</span>
 							</div>
-							<span class="button button-primary d-none d-md-inline-block">{{button}}</span>
+							<span class="button button-primary">{{button}}</span>
 						</div>
 					</div>
 				</div>

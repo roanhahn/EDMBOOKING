@@ -101,16 +101,17 @@
 	& h1 small{
 		display: block;
 		font-family: $font;
-		text-transform: none;
-		font-size: 32px;
+		// text-transform: none;
+		font-size: 28px;
+		margin-top: 10px;
 		margin-bottom: 30px;
 		line-height: 1.2;
 		// text-shadow: 0 0 15px rgba(0,0,0,.7);
 		@media all and (max-width: $breakpoint-tablet){
-			font-size: 24px;
+			font-size: 20px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 
