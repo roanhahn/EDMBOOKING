@@ -1747,7 +1747,7 @@ body.scrolled .header, body.scrolled .mainnav {
 body.scrolled .subnav, body.scrolled .yourbooking {
   top: 50px; }
 body.scrolled .logo img {
-  height: 20px; }
+  height: 30px; }
 body.scrolled .hamburger {
   margin-left: 10px;
   background-size: auto 20px;
@@ -1757,24 +1757,12 @@ body.scrolled .hamburger {
     background-position: -26px 0; }
 
 .hero {
-  min-height: 300px;
-  height: calc(60% - 90px);
-  padding: 50px 0;
   text-align: center;
   position: relative;
   color: #fff;
   background-position: center center;
   background-size: cover;
   background-blend-mode: normal; }
-  @media all and (max-width: 767px) {
-    .hero {
-      height: calc(70% - 50px); } }
-  .hero-event {
-    height: calc(50% - 90px); }
-    @media all and (max-width: 992px) {
-      .hero-event {
-        min-height: 200px;
-        height: calc(30% - 50px) !important; } }
   .hero:before {
     content: "";
     position: absolute;
@@ -1799,15 +1787,14 @@ body.scrolled .hamburger {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
   .hero .inner {
-    position: absolute;
     width: 100%;
     left: 0;
     right: 0;
-    top: 50%;
     z-index: 10;
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%); }
+    padding: 150px 0; }
+    @media all and (max-width: 992px) {
+      .hero .inner {
+        padding: 100px 0; } }
   .hero h1 {
     font-family: "Oswald", sans-serif;
     font-weight: 800;

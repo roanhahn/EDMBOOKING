@@ -1,7 +1,5 @@
 .hero{
-	min-height: 300px;
-	height: calc(60% - #{$header-height});
-	padding: 50px 0;
+	
 	text-align: center;
 	position: relative;
 	color: $hero-color;
@@ -11,17 +9,17 @@
 	
 
 	@media all and (max-width: $breakpoint-mobile){
-		height: calc(70% - #{$header-height-mobile});
+		// height: calc(70% - #{$header-height-mobile});
 	}
 
 	&-event{
 
-		height: calc(50% - #{$header-height});
+		// height: calc(50% - #{$header-height});
 
-		@media all and (max-width: $breakpoint-tablet){
-			min-height: 200px;
-			height: calc(30% - #{$header-height-mobile}) !important;
-		}
+		// @media all and (max-width: $breakpoint-tablet){
+		// 	min-height: 200px;
+		// 	height: calc(30% - #{$header-height-mobile}) !important;
+		// }
 	}
 
 	&:before{
@@ -60,15 +58,21 @@
 	
 
 	& .inner{
-		position: absolute;
+		// position: absolute;
 		width: 100%;
 		left: 0;
 		right: 0;
-		top: 50%;
+		// top: 50%;
 		z-index: 10;
-		-ms-transform: translate(0, -50%); 
-		-webkit-transform: translate(0, -50%);
-		transform: translate(0, -50%);
+		padding: 150px 0;
+		// background-color: red;
+		// -ms-transform: translate(0, -50%); 
+		// -webkit-transform: translate(0, -50%);
+		// transform: translate(0, -50%);
+
+		@media all and (max-width: $breakpoint-tablet){
+			padding: 100px 0;
+		}
 	}
 
 	& h1{
