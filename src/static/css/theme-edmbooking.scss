@@ -1,0 +1,163 @@
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+
+/* FOLDER */
+$folder: edmbooking;
+
+/* BODY */
+$bg-color: #000;
+$font-size: 16px;
+
+/* FONTS */
+$font: 'Roboto', sans-serif;
+$font-header: 'Prompt', sans-serif;
+$border-color: rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #fff;
+$link-color: #419bf7;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,155,255,1);
+$white-filter: rgba(236,236,236,1);
+$red-filter: rgba(255,55,0,1);
+$grey-filter: rgba(50,50,50,0.2);
+$filter-opacity: 0.5;
+$video-filter:  grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Prompt', sans-serif;
+$button-size: 17px;
+$button-bg: #419bf7;
+$button-color: #fff;
+$button-bg-hover: #fff;
+$button-color-hover: #000;
+
+/* BACK BUTTON */
+$button-back-bg: rgba(0,0,0,.5);
+$button-back-color: #fff;
+$button-back-border: 2px solid rgba(255,255,255,.3);
+$button-back-bghover: #fff;
+$button-back-colorhover: #000;
+$button-back-borderhover: 2px solid #fff;
+
+/* FAQ */
+$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-color: #fff;
+$faq-button-bghover: #fff;
+$faq-button-colorhover: #000;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-button-bg: rgba(0,0,0,.5);
+$sec-button-colorhover: #000;
+$sec-button-bghover: #fff;
+$sec-button-border: 2px solid #fff;
+$sec-button-radius: 50px;
+$sec-button-inverted-color: #000;
+
+/* HEADER */
+$header-height: 90px;
+$header-height-mobile: 50px;
+$header-bg: #e6e6e6;
+$header-color: #000;
+$header-bg-sticky: rgba(230,230,230, 1);
+$header-text: #000;
+$header-hover: #419bf7;
+$main-shadow: none;
+$menu-color: black;
+$notification-bg: #000;
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #000;
+$subnav-strong: #fff;
+$subnav-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #419bf7;
+$subnav-social-bg: #419bf7;
+$subnav-social-color: #000;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #419bf7;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+$subnav-border: 1px solid rgba(255,255,255,.3);
+
+/* HERO */
+$hero-color: #fff;
+$hero-overlay: rgba(0,0,0,0.1);
+$font-hero-small: 'Roboto', sans-serif;
+
+/* Testimonials */
+$testimonial-bg: #000;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #419bf7;
+$testimonial-inactivedot: #fff;
+
+/* STEPS */
+$steps-bg: #000;
+$steps-color: #fff;
+$steps-bg-hover: #419bf7;
+$steps-color-hover: #fff;
+$steps-active-bg: #333;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 2px solid rgba(255,255,255,.3);
+
+/* OFFERS */
+$offer-border: 1px solid rgba(255,255,255,.3);
+$offer-title: #419bf7;
+$offer-title-transform: none;
+$ribbon-bg: #419bf7;
+$ribbon-color: #fff;
+$offer-activedot: #419bf7;
+$offer-inactivedot: #fff;
+
+/* WHY BOOK */
+$why-border: #419bf7;
+$why-number: #fff;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: #419bf7;
+$footer-text: #000;
+$footer-link: #000;
+$footer-hover: #fff;
+$footer-heading: #000;
+$footer-social-bg: #000;
+$footer-social-hover: #000;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+
+/* COOKIES */
+$cookies-bg: rgba(0,0,0,.8);
+$cookies-fontsize: 15px;
+$cookies-border: 1px solid (255,255,255,.3);
+$cookies-color: #fff;
+
+/* FORMS */
+$form-border: 1px solid #fff;
+$form-bordercolor: #000;
+$form-border-login: 1px solid #000;
+$form-label: #fff;
+$form-input-color: #000;
+$form-highlight: #419bf7;
+$form-highlightcolor: #fff;
+$form-addon-bg: #e6e7e8;
+$form-addon-color: #000; 
+
+
+@mixin gradient($fromcolor, $tocolor) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+	background: $fromcolor; /* Old browsers */
+	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

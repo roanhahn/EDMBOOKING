@@ -43,7 +43,7 @@ body{
 }
 
 h1,h2,h3,h4{
-	font-family: $font-header;
+	font-family: $font-header !important;
 }
 
 a{
@@ -55,12 +55,12 @@ a{
 }
 a, a:hover, a:visited, a:active{
 	text-decoration: none;
-	-webkit-transition: color .15s ease-out 0s;
-	transition: color .15s ease-out 0s;
+	-webkit-transition: color .15s ease-out 0s, background .15s ease-out 0s;
+	transition: color .15s ease-out 0s, background .15s ease-out 0s;
 }
 .text-link, .page a{
 	text-decoration: underline;
-	color: $text-color;
+	color: $link-color;
 
 	&:hover{
 		color: $link-color;
@@ -68,7 +68,7 @@ a, a:hover, a:visited, a:active{
 	}
 }
 .h1{
-	// text-transform: uppercase;
+	text-transform: $offer-title-transform;
 	font-weight: 700;
 	color: $link-color;
 	font-size: 32px;
@@ -105,6 +105,7 @@ a, a:hover, a:visited, a:active{
 	text-transform: uppercase;
 	font-weight: 800;
 	font-family: $font-header;
+	color: $heading-color;
 	margin: 0 0 30px;
 	padding: 0 0 30px;
 	// line-height: 1;
@@ -134,7 +135,7 @@ a, a:hover, a:visited, a:active{
 	}
 
 	&-section{
-		color: $text-color;
+		color: $heading-color;
 		font-family: $font-header;
 		font-weight: 800;
 		margin-bottom: 40px;
@@ -158,7 +159,8 @@ a, a:hover, a:visited, a:active{
 .h3{
 	text-transform: uppercase;
 	font-weight: 700;
-	color: $edm-color;
+	color: $heading-color;
+	font-family: $font-header;
 	margin-bottom: 20px;
 	font-size: 22px;
 
@@ -169,6 +171,10 @@ a, a:hover, a:visited, a:active{
 	&--lined{
 		border-bottom: 2px solid $border-color;
 		padding-bottom: 10px;
+	}
+
+	&--room{
+		color: $link-color;
 	}
 
 
@@ -182,7 +188,6 @@ a, a:hover, a:visited, a:active{
 
 	&--big{
 		font-size: 32px;
-		color: $text-color;
 		font-weight: 900;
 		margin-bottom: 30px;
 		font-family: $font-header;
@@ -208,6 +213,7 @@ h3.extras{
 	padding: 15px 0;
 	display: inline-block;
 	font-family: $font-header;
+	color: $heading-color;
 	font-weight: 800;
 	text-transform: uppercase;
 
@@ -238,6 +244,7 @@ h3.extras{
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	color: $heading-color;
 }
 .hr{
 	height: 1px;
@@ -250,17 +257,21 @@ h3.extras{
 	font-size: 16px;
 	font-family: $font;
 	font-weight: 800;
-	letter-spacing: 1px;
+	// letter-spacing: 1px;
 	margin: 0 0 30px;
 }
 
 .testimonials{
+	background: $testimonial-bg;
+	color: $testimonial-text;
+
 	&-item{
 		max-width: 970px;
 		margin: 0 auto;
 	}
 	&-title{
 		font-family: $font-header;
+		color: $testimonial-title;
 		text-transform: uppercase;
 		font-weight: 800;
 		font-size: 40px;
@@ -280,14 +291,23 @@ h3.extras{
 		display: block;
 		font-size: 14px;
 		line-height: 1.2;
+		color: $testimonial-author;
 		// text-transform: uppercase;
+	}
+
+	& .owl-theme .owl-dots .owl-dot.active span, & .owl-theme .owl-dots .owl-dot:hover span{
+		background: $testimonial-activedot;	
+	}
+
+	& .owl-theme .owl-dots .owl-dot span{
+		background: $testimonial-inactivedot;	
 	}
 }
 .rolling{
 	margin: 10px;
 }
 
-$color--green: #fff;
+
 $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 .checkmark__circle {
@@ -295,7 +315,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	stroke-dashoffset: 166;
 	stroke-width: 2;
 	stroke-miterlimit: 10;
-	stroke: $color--green;
+	stroke: $notication-icons;
 	fill: none;
 	animation: stroke .6s $curve forwards;
 }
@@ -307,12 +327,12 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	display: inline;
 	position: relative;
 	stroke-width: 2;
-	stroke: $link-color;
+	stroke: $notification-bg;
 	stroke-miterlimit: 10;
 	margin: 0 10px 0 0;
 	line-height: 0;
 	vertical-align: middle;
-	box-shadow: inset 0px 0px 0px $color--green;
+	box-shadow: inset 0px 0px 0px $notication-icons;
 	animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
 
 	@media all and (max-width: $breakpoint-mobile){
@@ -337,7 +357,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 @keyframes cross {
 	100% {
-		fill: $link-color;
+		fill: $notification-bg;
 	}
 }
 
@@ -358,7 +378,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 @keyframes fill {
 	100% {
-		box-shadow: inset 0px 0px 0px 30px $color--green;
+		box-shadow: inset 0px 0px 0px 30px $notication-icons;
 	}
 }
 
@@ -407,7 +427,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	text-align: center;
 
 	& h3{
-		color: #fff;
+		color: $heading-color;
 		font-weight: 900;
 	}
 
@@ -419,6 +439,14 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	&-icon{
 		width: 120px;
 		margin-bottom: 30px;
+
+		& #circle{
+			fill: $link-color;
+		}
+
+		& #check{
+			stroke: $link-color;
+		}
 
 		@media (max-width: $breakpoint-mobile){
 			width: 75px;
@@ -466,6 +494,10 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	color: $link-color;
 	font-size: 22px;
 	font-weight: 600;
+
+	& .form-label{
+		color: $link-color !important;
+	}
 
 	@media (max-width: $breakpoint-mobile){
 
@@ -533,7 +565,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		color: #fff;
 
 		& .hero-title{
-			font-family: 'Prompt', sans-serif;
+			font-family: $font-header;
 			font-weight: 800;
 			text-transform: uppercase;
 			color: #fff;
@@ -577,7 +609,6 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 			right: 0;
 			bottom: 0;
 			left: 0;
-			// background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: top left;

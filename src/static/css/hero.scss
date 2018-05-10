@@ -4,10 +4,10 @@
 	padding: 50px 0;
 	text-align: center;
 	position: relative;
-	color: #fff;
+	color: $hero-color;
 	background-position: center center;
 	background-size: cover;
-	background-blend-mode: multiply;
+	background-blend-mode:  $blend-mode;
 	
 
 	@media all and (max-width: $breakpoint-mobile){
@@ -31,7 +31,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,0.2);
+		background-color: $hero-overlay;
 	}
 
 	&--red{
@@ -100,7 +100,7 @@
 
 	& h1 small{
 		display: block;
-		font-family: $font;
+		font-family: $font-hero-small;
 		// text-transform: none;
 		font-size: 28px;
 		margin-top: 10px;
@@ -148,11 +148,11 @@
 		}
 
 		& iframe{
-			-webkit-filter: grayscale(100%);
-			-moz-filter: grayscale(100%);
-			-ms-filter: grayscale(100%);
-			-o-filter: grayscale(100%);
-			filter: grayscale(100%);
+			// -webkit-filter: grayscale(100%);
+			// -moz-filter: grayscale(100%);
+			// -ms-filter: grayscale(100%);
+			// -o-filter: grayscale(100%);
+			// filter: grayscale(100%);
 		}
 	}
 
@@ -211,11 +211,11 @@
 	}
 
 	& iframe{
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		-ms-filter: grayscale(100%);
-		-o-filter: grayscale(100%);
-		filter: grayscale(100%);
+		-webkit-filter: $video-filter;
+		-moz-filter: $video-filter;
+		-ms-filter: $video-filter;
+		-o-filter: $video-filter;
+		filter: $video-filter;
 	}
 }
 

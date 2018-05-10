@@ -1,20 +1,38 @@
+
+
+# SENSATION
+theme: sensation
 name: EDMBOOKING
 intro: EDMBOOKING
 title: EDMBOOKING | Book, stay and experience EDM around the globe.
+homepage: homepage.html
+event: Sensation Madrid
+eventdate: 3 nov 2018, Madrid (Spain)
+description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+
+# EDM
+# theme: edmbooking
+# name: EDMBOOKING
+# intro: EDMBOOKING
+# title: EDMBOOKING | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# event: Sensation Madrid
+# eventdate: 3 nov 2018, Madrid (Spain)
+# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+
+
 category: gallery
-description: Book, stay and experience EDM around the globe.
 author: author
 developer: Roan Hahn
 keywords: keyword,keyword,keyword
 version: 1.1.1
 type: website
-url: https://www.edmbassy.com
+url: https://www.edmbooking.com
 ogimage: url
 facebook: http://www.facebook.com
 twitter: http://www.twitter.com
 pinterest: http://www.pinterest.com
 google: http://www.google.com
-
 email:  info@edmbooking.com
 phone: +31 6 52 382 382
 

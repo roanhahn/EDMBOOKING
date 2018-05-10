@@ -1,6 +1,8 @@
 <header class="header">
 	<div class="container">
-		<a href="homepage.html" class="logo"><img src="assets/img/edmbooking-logo.svg" alt=""></a>
+		<a href="{{site.homepage}}" class="logo">
+			<img src="assets/img/{{site.theme}}/logo.svg" alt="{{site.title}}">
+		</a>
 		<nav class="mainnav">
 			<div class="booking">
 				<div class="booking-info toggle-yourbooking">
@@ -43,7 +45,7 @@
 
 		{{#if homepage}}
 		<li>
-			Events
+			<strong>Events</strong>
 			<ul>
 				<li><a href="event-landing.html">Martin Garrix</a></li>
 				<li><a href="event-landing.html">A State of Trance</a></li>
@@ -53,7 +55,7 @@
 		</li>
 		{{else}}
 		<li>
-			Accomodations
+			<strong>Accomodations</strong>
 			<ul>
 				<li><a href="step1-hotels.html">Hotel+Ticket</a></li>
 				<li><a href="step1-packages.html">Packages</a></li>
@@ -65,12 +67,12 @@
 		<li><a href="faq.html">Tell me more</a></li>
 		<li><a href="login.html">Log in</a></li>
 		<li>
-			Keep in touch
-			<div class="contactDetails">
-				E-mail: <a href="mailto:info@edmbooking.com">{{site.email}}</a><br />
-				Phone: <a href="tel:{{site.phone}}">{{site.phone}}</a><br />
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi {{site.name}}, I have a question">{{site.phone}}</a>
-			</div>
+			<strong>Keep in touch</strong>
+			<ul>
+				<li><a href="mailto:info@edmbooking.com">E-mail: {{site.email}}</a></li>
+				<li><a href="tel:{{site.phone}}">Phone: {{site.phone}}</a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi {{site.name}}, I have a question">Whatsapp: {{site.phone}}</a></li>
+			</ul>
 		</li>
 	</ul>
 
@@ -79,7 +81,7 @@
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-		{{!-- <li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBASSY, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li> --}}
+		<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi {{site.name}}, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 	</ul>
 </nav>
 

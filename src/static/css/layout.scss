@@ -273,7 +273,7 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 13px;
+			font-size: 11px;
 		}
 	}
 	.rating{
@@ -513,7 +513,8 @@
 			width: 100px;
 			height: 100px;
 			line-height: 84px;
-			border: 8px solid #fff;
+			border: 8px solid $why-border;
+			color: $why-number;
 			font-family: $font-header;
 			font-weight: 800;
 			font-size: 40px;
@@ -534,6 +535,7 @@
 
 		&-heading{
 			font-family: $font-header;
+			color: $heading-color;
 			text-transform: uppercase;
 			font-size: 24px;
 			margin-bottom: 10px;

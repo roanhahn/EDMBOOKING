@@ -1,0 +1,162 @@
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
+
+/* FOLDER */
+$folder: sensation;
+
+/* BODY */
+$bg-color: #fff;
+$font-size: 14px;
+
+/* FONTS */
+$font: 'Open Sans', sans-serif;
+$font-header: 'Oswald', sans-serif;
+$border-color: #f3eeee; //rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #666666;
+$heading-color: #000;
+$link-color: #6EB3C3;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: normal;
+$blue-filter: rgba(0,0,0,.2);
+$white-filter: rgba(0,0,0,.2);
+$red-filter: rgba(0,0,0,.2);
+$grey-filter: rgba(0,0,0,.2);
+$filter-opacity: 0.5;
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Oswald', sans-serif;
+$button-size: 17px;
+$button-bg: #6EB3C3;
+$button-color: #fff;
+$button-bg-hover: #000;
+$button-color-hover: #fff;
+
+/* BACK BUTTON */
+$button-back-bg: #fff;
+$button-back-color: #000;
+$button-back-border: 2px solid #000;
+$button-back-bghover: #6EB3C3;
+$button-back-colorhover: #fff;
+$button-back-borderhover: 2px solid #6EB3C3;
+
+/* FAQ */
+$faq-button-bg: #000;
+$faq-button-color: #fff;
+$faq-button-bghover: #6EB3C3;
+$faq-button-colorhover: #fff;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-button-bg: rgba(0,0,0,.5);
+$sec-button-colorhover: #000;
+$sec-button-bghover: #fff;
+$sec-button-border: 2p solid #fff;
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+
+/* HEADER */
+$header-height: 90px;
+$header-height-mobile: 50px;
+$header-bg: #fff;
+$header-color: #fff;
+$header-bg-sticky: #fff;
+$header-text: #000;
+$header-hover: #6EB3C3;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: #fff;
+$notication-icons: #6EB3C3;
+$notification-text: #000;
+$subnav-bg: #fff;
+$subnav-strong: #000;
+$subnav-color: #666;
+$subnav-link: #000;
+$subnav-sublink: #666;
+$subnav-hover: #666;
+$subnav-social-bg: #000;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #6EB3C3;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid #f3eeee;
+
+/* HERO */
+$hero-color: #fff;
+$hero-overlay: rgba(0,0,0,0.1);
+$font-hero-small: 'Oswald', sans-serif;
+
+/* Testimonials */
+$testimonial-bg: #000;
+$testimonial-text: #6EB3C3;
+$testimonial-title: #fff;
+$testimonial-author: #6EB3C3;
+$testimonial-activedot: #6EB3C3;
+$testimonial-inactivedot: #fff;
+
+/* STEPS */
+$steps-bg: #fff;
+$steps-color: #000;
+$steps-bg-hover: #6EB3C3;
+$steps-color-hover: #fff;
+$steps-active-bg: #000;
+$steps-active-color: #fff;
+$steps-link: #000;
+$steps-border: 2px solid #f3eeee;
+
+/* OFFERS */
+$offer-border: 1px solid #f3eeee;
+$offer-title: #6EB3C3;
+$offer-title-transform: uppercase;
+$ribbon-bg: #000;
+$ribbon-color: #fff;
+$offer-activedot: #6EB3C3;
+$offer-inactivedot: #666;
+
+/* WHY BOOK */
+$why-border: #6EB3C3;
+$why-number: #6EB3C3;
+
+/* Footer */
+$footer-border: 2px solid #f3eeee;
+$footer-bg: #fff;
+$footer-text: #666;
+$footer-link: #666;
+$footer-hover: #666;
+$footer-heading: #000;
+$footer-social-bg: #000;
+$footer-social-hover: #6EB3C3;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+
+/* COOKIES */
+$cookies-bg: rgba(0,0,0,.8);
+$cookies-fontsize: 13px;
+$cookies-border: 1px solid (255,255,255,.3);
+$cookies-color: #fff;
+
+/* FORMS */
+$form-border: 1px solid #000;
+$form-bordercolor: #000;
+$form-border-login: 1px solid #666;
+$form-label: #000;
+$form-input-color: #000;
+$form-highlight: #6EB3C3;
+$form-highlightcolor: #fff;
+$form-addon-bg: #000;
+$form-addon-color: #fff; 
+
+@mixin gradient($fromcolor, $tocolor) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+	background: $fromcolor; /* Old browsers */
+	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

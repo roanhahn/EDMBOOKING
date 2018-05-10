@@ -12,7 +12,7 @@
 }
 
 .selectric {
-  border: 1px solid $form-border;
+  border: $form-border;
   border-radius: 0rem;
   background: #fff;
   position: relative;
@@ -40,10 +40,10 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 45px;
+  width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #ECF0F1;
+  background-color: $form-addon-bg;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -61,16 +61,16 @@
   width: 0;
   height: 0;
   border: 4px solid transparent;
-  border-top-color: #000;
+  border-top-color: $form-addon-color;
   border-bottom: none;
 }
 
 .selectric-focus .selectric {
-  border-color: #ced4da;
+  border-color: $form-bordercolor;
 }
 
 .selectric-hover .selectric {
-  border-color: #ced4da;
+  border-color: $form-bordercolor;
 }
 
 .selectric-hover .selectric .button {
@@ -86,7 +86,7 @@
 }
 
 .selectric-open .selectric {
-  border-color: #ced4da;
+  border-color: $form-bordercolor;
 }
 
 .selectric-open .selectric-items {
@@ -164,7 +164,7 @@
   top: 100%;
   left: 0;
   background: #fff;
-  border: 1px solid $form-border;
+  border: $form-border;
   z-index: -1;
   box-shadow: 0 0 10px -6px;
 }
@@ -196,18 +196,18 @@
 }
 
 .selectric-items li.selected {
-  background: #ECF0F1;
-  color: #000;
+  background: $form-highlight;
+  color: $form-highlightcolor;
 }
 
 .selectric-items li.highlighted {
-  background: #ECF0F1;
-  color: #000;
+  background: $form-highlight;
+  color: $form-highlightcolor;
 }
 
 .selectric-items li:hover {
-  background: #ECF0F1;
-  color: #000;
+  background: $form-highlight;
+  color: $form-highlightcolor;
 }
 
 .selectric-items .disabled {
@@ -231,7 +231,7 @@
       -ms-user-select: none;
           user-select: none;
   background: none;
-  color: #000;
+  color: $form-input-color;
 }
 
 .selectric-items .selectric-group.disabled li {

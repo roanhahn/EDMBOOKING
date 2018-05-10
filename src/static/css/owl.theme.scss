@@ -2,4 +2,9 @@
 	width: 8px;
 	height: 8px;
 	margin: 5px;
+	background: $offer-inactivedot;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: $offer-activedot;
 }

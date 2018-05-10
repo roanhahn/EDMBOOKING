@@ -16,8 +16,16 @@
 		list-style-type: none;
 		margin: 0 15px 0 0;
 
+		background: $faq-button-bg !important;
+		color: $faq-button-color !important;
+
 		&:last-child{
 			margin-right: 0;
+		}
+
+		&:hover{
+			background: $faq-button-bghover !important;
+			color: $faq-button-colorhover !important;
 		}
 
 		@media (max-width: $breakpoint-mobile){
@@ -39,6 +47,7 @@
 	padding-top: 15px;
 	font-size: 24px;
 	font-family: $font-header;
+	color: $heading-color;
 	margin-bottom: 20px;
 
 	// & span{
@@ -72,7 +81,7 @@
 				// font-family: $secondary-font;
 				font-weight: 600;
 
-				background: transparent url(../img/plus-white.svg) no-repeat center right;
+				background: transparent url(../img/#{$folder}/plus.svg) no-repeat center right;
 				background-size: 20px auto;
 
 				@media (max-width: $breakpoint-mobile){
@@ -81,7 +90,7 @@
 
 
 				&.active{
-					background: transparent url(../img/minus-white.svg) no-repeat center right;
+					background: transparent url(../img/#{$folder}/minus.svg) no-repeat center right;
 					background-size: 20px auto;
 				}
 			}

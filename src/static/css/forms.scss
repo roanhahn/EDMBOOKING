@@ -65,6 +65,7 @@
 		margin-bottom: 10px;
 		font-size: 16px;
 		white-space: nowrap;
+		color: $form-label;
 
 		@media all and(max-width: $breakpoint-mobile){
 			font-size: 14px;
@@ -107,14 +108,16 @@
 }
 
 .textfield, select, .form-control{
-	color: #000;
+	color: $form-input-color;
 	height: 43px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border-radius: 0px 0px 0px 0px;
 	-webkit-border-radius: 0px;
-	border: 1px solid #fff;
+	border: $form-border;
 	background: #fff;
+
+
 
 
 	&:focus{
@@ -139,16 +142,19 @@
 
 	@media all and(max-width: $breakpoint-tablet){
 		font-size: 12px;
-		height: 39px;
+		height: 38px;
 	}
 }
 .input-group-addon{
 	border-radius: none;
 	-webkit-border-radius: 0;
+	background: $form-addon-bg;
+	border: $form-border;
+	color: $form-addon-color;
 
 	@media all and(max-width: $breakpoint-tablet){
 		font-size: 12px;
-		height: 39px;
+		height: 38px;
 	}
 }
 .form-tickets-submit{
@@ -200,7 +206,7 @@
 		cursor: default;
 		font-size: 18px;
 		padding: 18px;
-		border: 1px solid $bg-color !important;
+		border: $form-border-login;
 		-webkit-border-radius: 0px;
 		-moz-border-radius:  0px;
 		border-radius: 0px;
@@ -231,7 +237,8 @@
 
 		&:focus{
 			// border-color: #000;
-			background-color: #E4F1FE;
+			background-color: $form-highlight;
+			color: $form-highlightcolor;
 			outline: none;
 		}
 
@@ -262,8 +269,8 @@
 .selectric .label{
 	@media all and(max-width: $breakpoint-tablet){
 		font-size: 12px !important;
-		height: 39px !important;
-		line-height: 39px !important;
+		height: 38px !important;
+		line-height: 38px !important;
 	}
 }
 

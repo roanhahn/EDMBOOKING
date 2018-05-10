@@ -2,6 +2,7 @@ footer{
 	background-color: $footer-bg;
 	padding: 70px 0 70px;
 	color: $footer-text;
+	border-top: $footer-border;
 	
 
 	&.gradient{
@@ -15,6 +16,7 @@ footer{
 	& h4{
 		text-transform: uppercase;
 		font: $font-header;
+		color: $footer-heading;
 		font-weight: 700;
 		margin: 0 0 20px;
 		font-size: 24px;
@@ -97,7 +99,7 @@ footer{
 	}
 
 	.payoff{
-		font-size: 14px;
+		font-size: $footer-payoffsize;
 		padding-top: 16px;
 
 		& a{
@@ -178,7 +180,7 @@ footer{
 
 		& a{
 			display: block;
-			background-color: $footer-link;
+			background-color: $footer-social-bg;
 			color: $footer-bg;
 			border-radius: 100%;
 			width: 34px;
@@ -188,7 +190,8 @@ footer{
 			font-size: 16px;
 
 			&:hover{
-				color: $footer-hover;
+				background-color: $footer-social-hover;
+				color: $footer-socialicon-hover;
 			}
 		}
 		
@@ -237,9 +240,10 @@ footer{
 	left: 30%;
 	width: 40%;
 	padding: 15px;
-	background-color: rgba(0,0,0,0.8);
-	font-size: 15px;
-	border: 1px solid $border-color;
+	background-color: $cookies-bg;
+	font-size: $cookies-fontsize;
+	color: $cookies-color;
+	border: $cookies-border;
 
 	@media all and(max-width: $breakpoint-tablet){
 		width: 60%;

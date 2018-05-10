@@ -4,16 +4,30 @@ type: page
 layout: default.hbs
 ---
 
-<div class="myBooking-hero">
+
+<div class="hero hero-event hero--blue" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
 	<div class="inner">
-		<p class="hero-title">Martin garrix</p>
-		<p class="hero-subtitle">Las vegas 14 december</p>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="hero-event-title">{{site.event}}
+						<small>{{site.eventdate}}</small>
+					</h1>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="hero-background" style="background-image: url(assets/img/event-1.jpg);"></div>
 </div>
+{{!-- <div class="myBooking-hero">
+	<div class="inner">
+		<p class="hero-title">{{site.event}}</p>
+		<p class="hero-subtitle">{{site.eventdate}}</p>
+	</div>
+	<div class="hero-background" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg);"></div>
+</div> --}}
 <section class="section myBooking">
 	<div class="container">
-		<a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block">Back</a>
+		<a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block page-back">Back</a>
 		<h1 class="page-h1">Your booking</h1>
 		<div class="row">
 			<div class="col-lg-4 m-b-30 p">

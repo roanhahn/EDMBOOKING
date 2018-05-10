@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
+
+
+/* Default Variables */
 @import "variables.scss";
+
+/* Theme EDMBOOKING Variables */
+// @import "theme-edmbooking.scss";
+
+/* Theme Sensarion Madrid */
+@import "theme-sensation-madrid.scss";
+
+
+/* Default CSS */
 @import "typography.scss";
 @import "faq.scss";
 @import "loader.scss";

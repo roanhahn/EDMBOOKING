@@ -8,7 +8,7 @@ layout: default.hbs
 <div class="accordeon">
 	<div class="container">
 		<a href="step1-hotels.html">
-			<span class="accordeon-step">Choose ticket</span>
+			<span class="accordeon-step">Your ticket</span>
 			<div class="accordeon-buttons">
 				Select the best tickets<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -27,14 +27,11 @@ layout: default.hbs
 </div>
 <div class="accordeon accordeon--active">
 	<div class="container">
-		
-			<span class="accordeon-step">Your room</span>
-			<div class="accordeon-buttons">
-				<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
-				<a href="step2-camping.html" class="button button-secondary">Next</a>
-			</div>
-			
-		
+		<span class="accordeon-step">Your room</span>
+		<div class="accordeon-buttons">
+			<a href="#" onclick="goBack()" class="button button-secondary button--back">Back</a>
+			<a href="step2-camping.html" class="button button-secondary">Next</a>
+		</div>
 	</div>
 </div>
 <section class="section detailpage">
@@ -50,28 +47,24 @@ layout: default.hbs
 			</div>
 		</div>
 		<div class="gallery">
-			
 			<div class="owl-carousel owl-theme owl-pictures">
 				<div class="item">
-					<img src="assets/img/room1.jpg" alt="" class="img-fluid" />
+					<img src="http://via.placeholder.com/500x500" alt="" class="img-fluid" />
 				</div>
 				<div class="item">
-					<img src="assets/img/room2.jpg" alt="" class="img-fluid" />
+					<img src="http://via.placeholder.com/500x500" alt="" class="img-fluid" />
 				</div>
 				<div class="item">
-					<img src="assets/img/room3.jpg" alt="" class="img-fluid" />
+					<img src="http://via.placeholder.com/500x500" alt="" class="img-fluid" />
 				</div>
 				<div class="item">
-					<img src="assets/img/room4.jpg" alt="" class="img-fluid" />
+					<img src="http://via.placeholder.com/500x500" alt="" class="img-fluid" />
 				</div>
 			</div>
-			
 		</div>
-		
-
 		<div class="row">
 			<div class="col-lg-4 m-b-30">
-				<h3 class="h3 h3--textcolor">Package information</h3>
+				<h3 class="h3">Package information</h3>
 				<ul class="offer-list">
 					<li>Tipi for 9 persons</li>
 					<li>9 Single stretchers including sleeping bags and pillows</li>
@@ -100,7 +93,7 @@ layout: default.hbs
 				</div> --}}
 			</div>
 			<div class="col-lg-8">
-				<h3 class="h3 h3--textcolor">Hotel information</h3>
+				<h3 class="h3">Hotel information</h3>
 				<div class="hotel-information">
 					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
 					<div class="rating-wrapper">
@@ -123,7 +116,6 @@ layout: default.hbs
 					Campanile Hotel also offers a hot breakfast with eggs cooked just the way you like them. The restaurant serves lunch and dinner (International dishes and Dutch specialties). The hotel also offers packed lunches, a bar/lounge, terrace, garden and self-serve laundry.
 				</p>
 			</div>
-
 		</div>
 		<hr class="hr">
 		{{!-- <div class="row">
@@ -141,8 +133,6 @@ layout: default.hbs
 				</ul>
 			</div>
 		</div>
-
-
 		<hr class="hr" /> --}}
 		<div class="row">
 			{{> selectdate }}
@@ -150,15 +140,12 @@ layout: default.hbs
 			{{> loader }}
 		</div>
 		<hr class="hr" />
-
 		{{> room }}
 		{{> room }}
 		{{> room }}
 		{{> room }}
-
 	</div>
 </section>
-
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
@@ -179,9 +166,7 @@ layout: default.hbs
 		</a>
 	</div>
 </div>
-
 {{!-- POPUP MAPS --}}
-
 <div id="standalone">
 	{{> googleMapsPopup }}
 	<button class="standalone_close button button--round button--close"><img src="assets/img/close-white.svg"></button>

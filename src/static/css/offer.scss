@@ -1,19 +1,25 @@
 .accordeon{
 	
-	color: $text-color;
-	background: #000;
-	border-top: 2px solid $border-color;
+	color: $steps-color;
+	background: $steps-bg;
+	border-top: $steps-border;
 	-webkit-transition: background .15s ease-out 0s;
 	transition: background .15s ease-out 0s;
 
 	
 	&:hover{
-		background: $link-color;
+		background: $steps-bg-hover;
+		color: $steps-color-hover;
+
+		& a{
+			color: $steps-color-hover;
+		}
 
 	}
 
 	&--active, &--active:hover{
-		background: #333;
+		background: $steps-active-bg;
+		color: $steps-active-color;
 		border: none;
 	}
 	& .container{
@@ -62,7 +68,7 @@
 		display: inline-block;
 		padding: 15px 0 15px 15px;
 		margin-left: 15px;
-		border-left: 2px solid $border-color;
+		border-left: $steps-border;
 
 		@media all and (max-width: $breakpoint-mobile){
 			padding: 10px 0 10px 10px;
@@ -71,14 +77,18 @@
 	}
 
 	& a{
-		color: #fff;
+		color: $steps-link;
 		display: block;
+
+		&:hover{
+			color: $steps-color-hover;
+		}
 		// background: red;
 	}
 }
 .offer{
 	
-	border-bottom: 1px solid $border-color;
+	border-bottom: $offer-border;
 	padding-bottom: 30px;
 	margin: 0 0 30px 0;
 
@@ -106,8 +116,8 @@
 	&-title{
 		font-family: $font;
 		font-weight: 700;
-		color: $link-color;
-
+		color: $offer-title;
+		text-transform: $offer-title-transform;
 		margin: 0 0 5px;
 		font-size: 32px;
 
@@ -121,9 +131,9 @@
 	}
 
 	&-subheader{
-		// color: $link-color;
+		color: $link-color;
 		font-size: 20px;
-		color: $text-color;
+		// color: $text-color;
 		
 		@media all and (max-width: $breakpoint-tablet){
 			font-size: 18px;
