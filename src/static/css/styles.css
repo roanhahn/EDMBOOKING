@@ -1450,12 +1450,12 @@ button:focus {
   line-height: 0; }
   .logo img {
     display: block;
-    height: 30px;
+    height: 50px;
     -webkit-transition: all .2s ease-out 0s;
     transition: all .2s ease-out 0s; }
     @media all and (max-width: 767px) {
       .logo img {
-        height: 20px; } }
+        height: 30px; } }
 
 .mainnav {
   float: right;
