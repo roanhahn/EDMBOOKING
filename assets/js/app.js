@@ -432,20 +432,20 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
-			var starttime = 120;
-			var endtime = 128;
+			var starttime = 40;
+			var endtime = 45;
 
 			var player;
 
 			function onYouTubeIframeAPIReady() {
 				
 				player = new YT.Player('hero-video', {
-					videoId: '1ujOdLRl-Ac',
+					videoId: 'gTgP9DRm2RI',
 					playerVars: {
 						controls: '0',
 						start: starttime,
 						end: endtime,
-						// playlist: '1ujOdLRl-Ac',
+						// playlist: 'gTgP9DRm2RI',
 						loop: 1
 					},
 					events: {
@@ -462,7 +462,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 				// player.playVideo();
 			}
 			function onPlayerStateChange(state) {
-				
+				// player.setPlaybackRate(suggestedRate:0.5);
 			}
 			function restartVideoSection() {
 				player.seekTo(starttime);
