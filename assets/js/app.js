@@ -219,8 +219,6 @@ $('.closeCookies').click(function(){
 
 // TOGGLE FILTERS
 
-
-
 $('.toggle-filters').click(function(){
 	$('#filters').fadeToggle("fast");
 	 return false;
@@ -384,6 +382,13 @@ $(document).ready(function() {
 
 
 // TOGGLE
+
+$('*[data-type="grouptoggle"]').click(function()
+{
+	// alert("bla");
+	var toggletarget = $("." + $(this).data('target'));
+	$(toggletarget).fadeToggle("fast");
+});
 
 $('*[data-type="toggle"]').click(function()
 {
