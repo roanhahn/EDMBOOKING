@@ -1215,7 +1215,8 @@ button {
       font-size: 13px; } }
   .button--block {
     display: block;
-    width: 100%; }
+    width: 100%;
+    float: none; }
   .button-primary {
     background: #6EB3C3;
     color: #fff;
@@ -1802,6 +1803,7 @@ body.scrolled .hamburger {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
   .hero .inner {
+    position: relative;
     width: 100%;
     left: 0;
     right: 0;
