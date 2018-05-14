@@ -238,9 +238,17 @@ type: page
 					</fieldset>
 				</form>
 
+
+
 				<form class="m-t-40">
-					<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"> I agree with the <a href="#" class="text-link">Terms &amp; conditions</a>
+					<i class="fa fa-exclamation-circle error-icon" aria-hidden="true"></i>
+					<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"> I agree with the <a href="#" class="text-link">Terms &amp; conditions</a> 
+					
 					<p class="m-t-10">Your booking confirmation and the link to your official tickets will be processed and send to you per email directly.</p>
+
+					<div class="alert alert-danger m-t-30">
+						<strong>Error!</strong> You have to agree with the Terms & conditions.
+					</div>
 
 					<a href="#" class="button button--next button-primary m-t-20 {{!-- float-right --}} button--block"><i class="fa fa-lock" aria-hidden="true"></i>Buy now</a>
 				</form>

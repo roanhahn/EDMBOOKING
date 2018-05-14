@@ -2076,6 +2076,9 @@ body.scrolled .hamburger {
 @media all and (max-width: 992px) {
   .form-tickets {
     margin-bottom: 20px; } }
+.error-icon {
+  color: #dc3545 !important; }
+
 .is-invalid {
   background: #dc3545 !important;
   border: 1px solid #dc3545 !important;
