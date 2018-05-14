@@ -1,0 +1,26 @@
+---
+title: Groups 
+type: component
+layout: default.hbs
+---
+
+
+<section class="section">
+	<div class="container">
+        <h1 class="page-h1">Group open/close</h1>
+		
+        <div><button class="button button-primary m-b-30" data-type="grouptoggle" data-target="group_roan">Show offers Group 1</button></div>
+
+		{{#parseJSON '{"title": "Group Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "roan"}'}}
+        {{> offer }}
+        {{> offer }}
+        {{/parseJSON}}
+
+       <div><button class="button button-primary m-b-30" data-type="grouptoggle" data-target="group_rishi">Show offers Group 2</button></div>
+
+        {{#parseJSON '{"title": "Group Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "rishi"}'}}
+        {{> offer }}
+        {{> offer }}
+        {{/parseJSON}}
+	</div>
+</section>

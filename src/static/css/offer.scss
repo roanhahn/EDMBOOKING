@@ -86,11 +86,22 @@
 		// background: red;
 	}
 }
+
+
+
 .offer{
-	
+	display: block;
 	border-bottom: $offer-border;
 	padding-bottom: 30px;
 	margin: 0 0 30px 0;
+
+	&-link{
+		display: block;
+	}
+
+	&-child{
+		display: none;
+	}
 
 	@media all and (max-width: $breakpoint-mobile){
 		margin: 0 0 15px 0;

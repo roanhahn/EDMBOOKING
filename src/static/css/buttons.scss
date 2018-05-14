@@ -26,6 +26,26 @@ button{
 	border-radius: 0px;
 	cursor: pointer;
 
+
+	&.loading{
+		pointer-events: none;
+		cursor: default;
+		// text-align: left;
+	}
+	&.loading:after{
+		position: absolute;
+		content: "";
+		right: 10px;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		-ms-transform: translate(-0%, -50%);
+		-webkit-transform: translate(-0%, -50%);
+		transform: translate(-0%, -50%);
+		background: transparent url("../img/spinner.svg") no-repeat center center scroll;
+		background-size: cover;
+	}
+
 	
 
 	&--next:after{
@@ -42,6 +62,7 @@ button{
 	&--block{
 		display: block;
 		width: 100%;
+		float: none;
 	}
 
 	&-primary{
