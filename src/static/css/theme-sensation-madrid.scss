@@ -92,7 +92,8 @@ $subnav-border: 1px solid #f3eeee;
 
 /* HERO */
 $hero-color: #fff;
-$hero-overlay: rgba(0,0,0,0.1);
+$hero-h1-color: #6EB3C3;
+$hero-overlay: rgba(0,0,0,0);
 $font-hero-small: 'Oswald', sans-serif;
 
 /* Testimonials */
@@ -114,6 +115,7 @@ $steps-link: #000;
 $steps-border: 2px solid #f3eeee;
 
 /* OFFERS */
+$event-bg: #000;
 $offer-border: 1px solid #f3eeee;
 $offer-title: #6EB3C3;
 $offer-title-transform: uppercase;
