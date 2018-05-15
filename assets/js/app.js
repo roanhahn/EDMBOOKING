@@ -385,9 +385,16 @@ $(document).ready(function() {
 
 $('*[data-type="grouptoggle"]').click(function()
 {
-	// alert("bla");
 	var toggletarget = $("." + $(this).data('target'));
+
+	$(this).toggleClass("group-open");
 	$(toggletarget).fadeToggle("fast");
+
+	if ($(this).hasClass("group-open")){
+		$('html, body').animate({
+		scrollTop: $("." + $(this).data('target')).offset().top-80
+		}, 1000, 'easeInOutCubic');
+	}
 	return false;
 });
 
