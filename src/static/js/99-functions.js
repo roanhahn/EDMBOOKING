@@ -215,6 +215,7 @@ $('*[data-type="grouptoggle"]').click(function()
 	// alert("bla");
 	var toggletarget = $("." + $(this).data('target'));
 	$(toggletarget).fadeToggle("fast");
+	return false;
 });
 
 $('*[data-type="toggle"]').click(function()

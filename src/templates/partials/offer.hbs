@@ -1,5 +1,10 @@
-<div class="offer {{#if groupID}}offer-child group_{{groupID}}{{/if}}">
+<div class="offer {{#if groupID}}offer-child {{groupID}}{{/if}}">
+
+	{{#if target}}
+	<a href="#" data-type="grouptoggle" data-target="{{target}}" class="offer-link">
+	{{else}}
 	<a href="{{url}}.html" class="offer-link">
+	{{/if}}
 		<div class="row">
 			<div class="col-5 col-md-6 col-lg-3">
 				
@@ -14,9 +19,12 @@
 				<div class="row">
 					<div class="col-lg-9{{!--  offer-line --}}">
 						<h3 class="offer-title">{{title}}</h3>
+						{{#if condition}}
 						<div class="d-md-none">
-							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">{{condition}}</span></div>
 						</div>
+						{{else}}
+						{{/if}}
 						{{#if distance}}
 							<div class="rating-wrapper">
 								<div class="rating">
@@ -46,11 +54,15 @@
 					</div>
 					<div class="col-lg-3 d-none d-md-block">
 						<div class="offer-info">
+							{{#if condition}}
 							<div>
 								<span class="offer-price">&euro;299</span>
 								<span class="offer-price-condition">{{condition}}</span>
 							</div>
 							<span class="button button-primary">{{button}}</span>
+							{{else}}
+							<span class="button button-primary">{{button}}</span>
+							{{/if}}
 						</div>
 					</div>
 				</div>

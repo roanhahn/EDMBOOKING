@@ -9,16 +9,22 @@ layout: default.hbs
 	<div class="container">
         <h1 class="page-h1">Group open/close</h1>
 		
-        <div><button class="button button-primary m-b-30" data-type="grouptoggle" data-target="group_roan">Show offers Group 1</button></div>
+        {{#parseJSON '{"title": "Parent group Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "More info", "distance": "5km", "url": "detail-hotel-ticket", "target": "group_roan"}'}}
+         {{> offer }}
+        {{/parseJSON}}
 
-		{{#parseJSON '{"title": "Group Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "roan"}'}}
+       
+
+		{{#parseJSON '{"title": "Child of Parent Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "group_roan"}'}}
         {{> offer }}
         {{> offer }}
         {{/parseJSON}}
 
-       <div><button class="button button-primary m-b-30" data-type="grouptoggle" data-target="group_rishi">Show offers Group 2</button></div>
+       {{#parseJSON '{"title": "Parent group Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "More info", "distance": "5km", "url": "detail-hotel-ticket", "target": "group_rishi"}'}}
+         {{> offer }}
+        {{/parseJSON}}
 
-        {{#parseJSON '{"title": "Group Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "rishi"}'}}
+        {{#parseJSON '{"title": "Child of Parent Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "group_rishi"}'}}
         {{> offer }}
         {{> offer }}
         {{/parseJSON}}
