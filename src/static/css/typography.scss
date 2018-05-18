@@ -162,7 +162,7 @@ a, a:hover, a:visited, a:active{
 	color: $heading-color;
 	font-family: $font-header;
 	margin-bottom: 20px;
-	font-size: 22px;
+	font-size: 24px;
 
 	&--textcolor{
 		color: $text-color;
@@ -182,7 +182,7 @@ a, a:hover, a:visited, a:active{
 		
 	}
 	@media all and (max-width: $breakpoint-mobile){
-		font-size: 16px;
+		font-size: 18px;
 		margin-bottom: 10px;
 	}
 
@@ -254,7 +254,7 @@ h3.extras{
 }
 .testimonials-h4{
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: $font;
 	font-weight: 800;
 	// letter-spacing: 1px;

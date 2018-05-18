@@ -445,20 +445,20 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
-			var starttime = 40;
-			var endtime = 45;
+			var starttime = 46;
+			var endtime = 74;
 
 			var player;
 
 			function onYouTubeIframeAPIReady() {
 				
 				player = new YT.Player('hero-video', {
-					videoId: 'gTgP9DRm2RI',
+					videoId: 'iFUiPOtM2GE',
 					playerVars: {
 						controls: '0',
 						start: starttime,
 						end: endtime,
-						// playlist: 'gTgP9DRm2RI',
+						// playlist: 'iFUiPOtM2GE',
 						loop: 1
 					},
 					events: {

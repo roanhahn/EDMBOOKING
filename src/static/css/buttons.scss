@@ -161,12 +161,76 @@ button{
 
 	}
 
+	&-hero{
+		background: rgba(0,0,0,.7);
+		border: 2px solid #fff;
+		padding: 20px 50px;
+		text-transform: uppercase;
+		color: #fff;
+		display: inline-block;
+		margin: 15px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			padding: 15px 50px;
+			margin: 10px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			display: block;
+			padding: 15px 50px;
+			margin: 0 0 10px;
+		}
+
+		& .first-line{
+			
+			font-size: 26px;
+			font-family: $font;
+			font-weight: 700;
+
+			@media all and (max-width: $breakpoint-tablet){
+				font-size: 22px;
+			}
+			@media all and (max-width: $breakpoint-mobile){
+				font-size: 18px;
+			}
+
+			&:after{
+				display: block;
+				width: 70px;
+				height: 4px;
+				background: $link-color;
+				content: "";
+				margin: 7px auto;
+			}
+		}
+
+		&:hover{
+			background: $link-color;
+			color: #fff;
+		}
+		&:hover .first-line:after{
+			background: #fff;
+		}
+
+		& .second-line{
+			font-size: 18px;
+			font-weight: 400;
+			font-family: $font;
+
+			@media all and (max-width: $breakpoint-tablet){
+				font-size: 16px;
+			}
+			@media all and (max-width: $breakpoint-mobile){
+				font-size: 13px;
+			}
+		}
+	}
+
 	&-secondary{
 		border-radius: $sec-button-radius;
 		background: $sec-button-bg;
 		color: $sec-button-color !important;
 		border: $sec-button-border !important;
-		padding: 10px 20px;
+		padding: $sec-padding;
 		text-transform: uppercase;
 
 		@media all and (max-width: $breakpoint-mobile){
@@ -209,6 +273,11 @@ button{
 				border: $sec-button-border !important;
 			}
 		}
+	}
+
+	&-large{
+		font-size: 30px;
+		padding: 20px 40px;
 	}
 
 

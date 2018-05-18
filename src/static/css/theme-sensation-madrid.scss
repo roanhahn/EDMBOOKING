@@ -23,12 +23,13 @@ $link-color: #6EB3C3;
 
 /* FILTERS */
 $filter-visibility: block;
-$blend-mode: normal;
-$blue-filter: rgba(0,0,0,.2);
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.2); //rgba(110,179,195,1);
 $white-filter: rgba(0,0,0,.2);
 $red-filter: rgba(0,0,0,.2);
 $grey-filter: rgba(0,0,0,.2);
 $filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.5);
 $video-filter:  none; //grayscale(100%);
 
 /* BUTTONS */
@@ -61,6 +62,7 @@ $sec-button-bghover: #fff;
 $sec-button-border: 2p solid #fff;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
 
 /* HEADER */
 $header-height: 90px;
@@ -92,7 +94,7 @@ $subnav-border: 1px solid #f3eeee;
 
 /* HERO */
 $hero-color: #fff;
-$hero-h1-color: #6EB3C3;
+$hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,0);
 $font-hero-small: 'Oswald', sans-serif;
 
@@ -107,12 +109,12 @@ $testimonial-inactivedot: #fff;
 /* STEPS */
 $steps-bg: #fff;
 $steps-color: #000;
-$steps-bg-hover: #6EB3C3;
-$steps-color-hover: #fff;
+$steps-bg-hover: #f1f1f1;
+$steps-color-hover: #000;
 $steps-active-bg: #000;
 $steps-active-color: #fff;
 $steps-link: #000;
-$steps-border: 2px solid #f3eeee;
+$steps-border: 1px solid #ccc;
 
 /* OFFERS */
 $event-bg: #000;
@@ -127,9 +129,12 @@ $offer-inactivedot: #666;
 /* WHY BOOK */
 $why-border: #6EB3C3;
 $why-number: #6EB3C3;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #6EB3C3;
+$why-book-iconbg: #6EB3C3;
 
 /* Footer */
-$footer-border: 2px solid #f3eeee;
+$footer-border: 1px solid #ccc;
 $footer-bg: #fff;
 $footer-text: #666;
 $footer-link: #666;
