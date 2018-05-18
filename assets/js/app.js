@@ -205,26 +205,20 @@ function updateResult() {
 	// console.log(cookieTheme);
 	// console.log(cookieLogo);
 
-	if(cookieTheme == null ){
-		// alert("leeg");
+	if(cookieTheme == null || cookieTheme == 'assets/css/styles.min.css'){
+		console.log('Default theme')
 	}
 	else{
 		$('#themecss').attr('href', cookieTheme);
+		console.log(cookieTheme);
 	}
 
-	if(cookieLogo == null ){
-		// alert("leeg");
+	if(cookieLogo == null || cookieLogo == 'assets/img/edmbooking/logo.svg'){
+		console.log('Default theme')
 	}
 	else{
 		$("#logo").attr("src", cookieLogo);
 	}
-
-	// if (cookieTheme.length) {
-	// 	$('#themecss').attr('href', cookieTheme);
-	// }
-	// if (cookiePath.length) {
-	// 	$("#logo").attr("src", cookiePath);
-	// }
 }
 
 // CHANGE PATH
