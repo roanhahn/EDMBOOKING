@@ -38,7 +38,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	
-	<link href="assets/css/styles.min.css" rel="stylesheet">
+	<link href="assets/css/styles.min.css" rel="stylesheet" id="themecss">
+	
 	
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,7 +52,7 @@
 	<header class="header">
 	<div class="container">
 		<a href="homepage.html" class="logo">
-			<img src="assets/img/edmbooking/logo.svg" alt="EDMBOOKING | Book, stay and experience EDM around the globe.">
+			<img src="assets/img/edmbooking/logo.svg" alt="EDMBOOKING | Book, stay and experience EDM around the globe." id="logo">
 		</a>
 		<nav class="mainnav">
 			<div class="booking">
@@ -486,6 +487,20 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 </div>
 
 
+<div class="changeCSS">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<strong>Select theme:</strong>
+				<ul id="cssChanger">
+					<li><a href="#" data-theme="theme-default" rel="assets/css/styles.min.css" data-path="assets/img/edmbooking/logo.svg">EDMBOOKING (default)</a></li>
+					<li><a href="#" data-theme="theme-sensation" rel="assets/css/sensation.css" data-path="assets/img/sensation/logo.svg">Sensation</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 	<!-- Our JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -497,6 +512,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
 	<script src="assets/js/plugins/odometer.js"></script>
 	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
+	<script src="assets/js/plugins/jquery.cookie.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
