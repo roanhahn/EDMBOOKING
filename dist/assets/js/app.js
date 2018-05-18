@@ -171,6 +171,66 @@
 
     return LazyLoad;
 });
+// createCookie('cookie','theme-default',1);
+
+updateResult();
+
+
+// CHANGE CSS
+
+$("#cssChanger li a").click(function() { 
+
+	var cookieCSS = $(this).attr('rel');
+	var cookiePath = $(this).data('path');
+	
+	// console.log(cookiename);
+
+	$("#themecss").attr("href",$(this).attr('rel'));
+	$("#logo").attr("src",$(this).data('path'));
+
+	$.cookie('theme-css', cookieCSS);
+	$.cookie('theme-path', cookiePath);
+	// $.cookie('theme-logo', cookiename);
+
+	return false;
+});
+
+function updateResult() {
+	
+	var cookieTheme = $.cookie('theme-css');
+	var cookieLogo = $.cookie('theme-path');
+
+	//console.log(cookieTheme + "bla")
+
+	// console.log(cookieTheme);
+	// console.log(cookieLogo);
+
+	if(cookieTheme == null ){
+		// alert("leeg");
+	}
+	else{
+		$('#themecss').attr('href', cookieTheme);
+	}
+
+	if(cookieLogo == null ){
+		// alert("leeg");
+	}
+	else{
+		$("#logo").attr("src", cookieLogo);
+	}
+
+	// if (cookieTheme.length) {
+	// 	$('#themecss').attr('href', cookieTheme);
+	// }
+	// if (cookiePath.length) {
+	// 	$("#logo").attr("src", cookiePath);
+	// }
+}
+
+// CHANGE PATH
+
+
+
 // var bodyHeight = $('.body').outerHeight();
 // var headerHeight = $('.header').outerHeight();
 var footerHeight = $('#footer').outerHeight();
@@ -184,14 +244,14 @@ var footerHeight = $('#footer').outerHeight();
 // ODOMETER
 
 window.odometerOptions = {
-  format: 'dd',
-  duration: 10000,
+	format: 'dd',
+	duration: 10000,
   // animation: 'count'
 };
 
 setTimeout(function(){
-    $('.odometer').html(99);
-  }, 2000);
+	$('.odometer').html(99);
+}, 2000);
 
 // Lazyload
 
@@ -208,10 +268,10 @@ $("img.lazyload").lazyload();
 $('.toggle-subnav').click(function(){
 	$('.hamburger').toggleClass("hamburger-close");
 	$('#subnav').toggleClass("subnav-active");
-	 $('.body').toggleClass("scroll-lock");
-	 return false;
-	 $('body').attr('scroll','no');
-	});
+	$('.body').toggleClass("scroll-lock");
+	return false;
+	$('body').attr('scroll','no');
+});
 
 $('.closeCookies').click(function(){
 	$('.cookies').fadeToggle("fast");
@@ -221,7 +281,7 @@ $('.closeCookies').click(function(){
 
 $('.toggle-filters').click(function(){
 	$('#filters').fadeToggle("fast");
-	 return false;
+	return false;
 });
 //  READMORE
 
@@ -235,10 +295,10 @@ $('.readmore').click(function(){
 
 // POPUP
 $('#standalone').popup({
-  color: '#000',
-  opacity: .5,
-  transition: '0.3s',
-  scrolllock: true
+	color: '#000',
+	opacity: .5,
+	transition: '0.3s',
+	scrolllock: true
 });
 
 
@@ -292,7 +352,7 @@ $(function() {
 
 var headerheight = $(".header").outerHeight();
 
-console.log(headerheight);
+// console.log(headerheight);
 
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
@@ -392,7 +452,7 @@ $('*[data-type="grouptoggle"]').click(function()
 
 	if ($(this).hasClass("group-open")){
 		$('html, body').animate({
-		scrollTop: $("." + $(this).data('target')).offset().top-80
+			scrollTop: $("." + $(this).data('target')).offset().top-80
 		}, 1000, 'easeInOutCubic');
 	}
 	return false;
@@ -422,17 +482,17 @@ $('.datepicker').datepicker({
 	todayHighlight: true
 });
 $('#event_period').datepicker({
-    inputs: $('.actual_range'),
-    autoclose: true,
+	inputs: $('.actual_range'),
+	autoclose: true,
 	todayHighlight: true,
 	clearBtn: true
 });
 
 $('#blaat').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '04-04-2018',
-    endDate: '04-10-2018',
-    autoclose: true,
+	format: 'mm/dd/yyyy',
+	startDate: '04-04-2018',
+	endDate: '04-10-2018',
+	autoclose: true,
 	todayHighlight: true
 });
 
@@ -524,32 +584,5 @@ setTimeout(function() {
 	$('#hero-video').addClass('animated fadeIn');
 }, 1500);
 
-// RANDOM NUMBERS
 
-var output, started, duration, desired;
-
-// Constants
-duration = 10000;
-desired = '00';
-
-// Initial setup
-output = $('#output');
-started = new Date().getTime();
-
-// Animate!
-animationTimer = setInterval(function() {
-    // If the value is what we want, stop animating
-    // or if the duration has been exceeded, stop animating
-    if (output.text().trim() === desired || new Date().getTime() - started > duration) {
-        clearInterval(animationTimer);
-    } else {
-        console.log('animating');
-        // Generate a random string to use for the next animation step
-        output.text(
-            ''+
-            Math.floor(Math.random() * 10)+
-            Math.floor(Math.random() * 10)
-        );
-    }
-}, 100);
 
