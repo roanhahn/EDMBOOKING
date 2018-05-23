@@ -456,6 +456,7 @@ $('*[data-type="toggle"]').click(function()
 {
 	var toggletarget = $(this).data('target');
 	$(toggletarget).fadeToggle("fast");
+	return false;
 });
 
 $('*[data-type="slidetoggle"]').click(function()
@@ -463,8 +464,17 @@ $('*[data-type="slidetoggle"]').click(function()
 
 	var toggletarget = $(this).data('target');
 	$(toggletarget).slideToggle("fast");
+	return false;
+	// console.log(toggletarget + "blaat");
+});
 
-	console.log(toggletarget + "blaat");
+$('*[data-type="hovertoggle"]').hover(function()
+{
+console.log(toggletarget + "blaat");
+	var toggletarget = $(this).data('target');
+	$(toggletarget).slideToggle("fast");
+	return false;
+	// console.log(toggletarget + "blaat");
 });
 
 
