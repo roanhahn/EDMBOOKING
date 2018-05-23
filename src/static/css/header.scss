@@ -157,7 +157,7 @@
 .subnav{
 	position: fixed;
 	overflow-y: auto;
-	right: 0px;
+	right: -110%;
 	bottom: 0px;
 	height: 100%;
 	top: $header-height;
@@ -171,20 +171,22 @@
 	-moz-box-shadow:  $subnav-shadow;
 	box-shadow:  $subnav-shadow;
 
-	-webkit-transition: transform .3s ease-in-out 0s;
-	transition: transform .3s ease-in-out 0s;
+	-webkit-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
 
-	-ms-transform: translate(+110%, 0); /* IE 9 */
-	-webkit-transform: translate(+110%, 0); /* Safari */
-	transform: translate(+110%, 0);
+	// -ms-transform: translate(+110%, 0); /* IE 9 */
+	// -webkit-transform: translate(+110%, 0); /* Safari */
+	// transform: translate(+110%, 0);
 
 	@media all and (max-width: $breakpoint-tablet){
 		width: 50%;
+		right: -60%
 	}
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
 		width: 100%;
 		padding: 30px 15px;
+		right: -110%;
 	}
 
 	& strong{
@@ -192,9 +194,10 @@
 	}
 
 	&-active{
-		-ms-transform: translate(0%, 0); /* IE 9 */
-		-webkit-transform: translate(0%, 0); /* Safari */
-		transform: translate(0%, 0);
+		right: 0%;
+		// -ms-transform: translate(0%, 0); /* IE 9 */
+		// -webkit-transform: translate(0%, 0); /* Safari */
+		// transform: translate(0%, 0);
 	}
 
 	& a{

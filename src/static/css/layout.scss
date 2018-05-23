@@ -354,9 +354,9 @@
 			width: 100%;
 
 			@media all and(max-width: $breakpoint-mobile){
-				min-width: 120px;
+				min-width: 100px;
 				width: 100%;
-				height: 39px;
+				height: 30px;
 			}
 
 			& .manage-button{
@@ -369,10 +369,12 @@
 				left: 0;
 				font-weight: 800;
 				top: 0;
+				padding: 0;
+				letterspacing: 0;
 
 				@media all and(max-width: $breakpoint-mobile){
-					height: 39px;
-					width: 39px;
+					height: 30px;
+					width: 30px;
 				}
 
 				&:hover{
@@ -396,8 +398,9 @@
 				font-weight: 800;
 
 				@media all and(max-width: $breakpoint-mobile){
-					height: 39px;
-					line-height: 39px;
+					height: 30px;
+					line-height: 30px;
+					font-size: 13px;
 				}
 			}
 		}
@@ -431,6 +434,11 @@
 			}
 		}
 
+		& i{
+			margin-right: 10px;
+			font-weight: normal;
+		}
+
 		&-btn{
 			background: none;
 			color: $link-color;
@@ -439,10 +447,7 @@
 			margin-right: 10px;
 			font-weight: 900;
 
-			& i{
-				margin-right: 10px;
-				font-weight: normal;
-			}
+			
 
 			&:hover{
 				color: $text-color;
@@ -484,6 +489,12 @@
 			& ul{
 				margin: 0;
 				padding: 0 0 0 18px;
+				list-style-type: disc;
+
+				@media all and (max-width: $breakpoint-mobile){
+					font-size: 14px;
+					// line-height: 1.4;
+				}
 
 				& li{
 					margin-bottom: 4px;

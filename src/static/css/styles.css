@@ -1032,9 +1032,9 @@ h3.extras {
     width: 100%; }
     @media all and (max-width: 767px) {
       .extra-number {
-        min-width: 120px;
+        min-width: 100px;
         width: 100%;
-        height: 39px; } }
+        height: 30px; } }
     .extra-number .manage-button {
       background: #419bf7;
       color: #fff;
@@ -1044,11 +1044,13 @@ h3.extras {
       position: absolute;
       left: 0;
       font-weight: 800;
-      top: 0; }
+      top: 0;
+      padding: 0;
+      letterspacing: 0; }
       @media all and (max-width: 767px) {
         .extra-number .manage-button {
-          height: 39px;
-          width: 39px; } }
+          height: 30px;
+          width: 30px; } }
       .extra-number .manage-button:hover {
         color: #000; }
     .extra-number .plus {
@@ -1065,8 +1067,9 @@ h3.extras {
       font-weight: 800; }
       @media all and (max-width: 767px) {
         .extra-number-items {
-          height: 39px;
-          line-height: 39px; } }
+          height: 30px;
+          line-height: 30px;
+          font-size: 13px; } }
   .extra-listitem {
     font-size: 30px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -1087,6 +1090,9 @@ h3.extras {
       flex-grow: 1;
       vertical-align: middle;
       white-space: nowrap; }
+  .extra i {
+    margin-right: 10px;
+    font-weight: normal; }
   .extra-btn {
     background: none;
     color: #419bf7;
@@ -1094,9 +1100,6 @@ h3.extras {
     display: inline-block;
     margin-right: 10px;
     font-weight: 900; }
-    .extra-btn i {
-      margin-right: 10px;
-      font-weight: normal; }
     .extra-btn:hover {
       color: #fff; }
     @media all and (max-width: 767px) {
@@ -1120,7 +1123,11 @@ h3.extras {
       margin-bottom: 20px; }
     .extra-details ul {
       margin: 0;
-      padding: 0 0 0 18px; }
+      padding: 0 0 0 18px;
+      list-style-type: disc; }
+      @media all and (max-width: 767px) {
+        .extra-details ul {
+          font-size: 14px; } }
       .extra-details ul li {
         margin-bottom: 4px; }
 
@@ -1648,7 +1655,7 @@ button:focus {
 .subnav {
   position: fixed;
   overflow-y: auto;
-  right: 0px;
+  right: -110%;
   bottom: 0px;
   height: 100%;
   top: 90px;
@@ -1660,29 +1667,22 @@ button:focus {
   -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
   box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  -webkit-transition: transform .3s ease-in-out 0s;
-  transition: transform .3s ease-in-out 0s;
-  -ms-transform: translate(110%, 0);
-  /* IE 9 */
-  -webkit-transform: translate(110%, 0);
-  /* Safari */
-  transform: translate(110%, 0); }
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s; }
   @media all and (max-width: 992px) {
     .subnav {
-      width: 50%; } }
+      width: 50%;
+      right: -60%; } }
   @media all and (max-width: 767px) {
     .subnav {
       top: 50px;
       width: 100%;
-      padding: 30px 15px; } }
+      padding: 30px 15px;
+      right: -110%; } }
   .subnav strong {
     color: #fff; }
   .subnav-active {
-    -ms-transform: translate(0%, 0);
-    /* IE 9 */
-    -webkit-transform: translate(0%, 0);
-    /* Safari */
-    transform: translate(0%, 0); }
+    right: 0%; }
   .subnav a {
     color: #fff; }
   .subnav .subnav-list {
@@ -2803,14 +2803,13 @@ footer {
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #419bf7;
+    background: #333;
     color: #fff; }
     .accordeon:hover a {
       color: #fff; }
   .accordeon--active, .accordeon--active:hover {
     background: #333;
-    color: #fff;
-    border: none; }
+    color: #fff; }
   .accordeon .container {
     position: relative; }
   .accordeon-step {
