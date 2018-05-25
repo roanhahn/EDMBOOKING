@@ -66,7 +66,7 @@ body {
   min-width: 320px; }
 
 h1, h2, h3, h4 {
-  font-family: "Prompt", sans-serif !important; }
+  font-family: "Prompt", sans-serif; }
 
 a {
   color: #419bf7; }
@@ -1897,6 +1897,8 @@ body.scrolled .hamburger {
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
+  .hero .button {
+    margin: 0 10px; }
   .hero .inner {
     position: relative;
     width: 100%;
@@ -2152,7 +2154,7 @@ body.scrolled .hamburger {
 
 .textfield, select, .form-control {
   color: #000;
-  height: 43px;
+  height: 44px;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0px 0px 0px 0px;
@@ -2298,7 +2300,6 @@ body.scrolled .hamburger {
   width: 100%; }
 
 .selectric {
-  border: 1px solid #fff;
   border-radius: 0rem;
   background: #fff;
   position: relative;

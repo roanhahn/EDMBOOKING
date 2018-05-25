@@ -22,7 +22,7 @@ type: page
 
 <div class="accordeon accordeon--active">
 	<div class="container">
-		<span class="accordeon-step">Your package</span>
+		<span class="accordeon-step">Package</span>
 		<div class="accordeon-buttons">
 			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
 			<a href="step2-camping.html" class="button button-secondary">Next</a>
@@ -31,19 +31,38 @@ type: page
 </div>
 <section class="section">
 	<div class="container">
-		{{#parseJSON '{"title": "Travellers Garden Enjoy 4 Persons", "subheader": "Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light", "img": "tent.jpg", "button": "more info", "condition": "Price per person",  "url": "detail-camping"}'}}
+
+		{{#parseJSON '{"title": "Tipi tent", "subheader": "We have tipi tents for up to 20 persons, checkout the packages", "img": "hotel.jpg", "button": "Show packages", "distance": "", "url": "detail-hotel-ticket", "target": "group_roan"}'}}
+         {{> offer }}
+        {{/parseJSON}}
+
+		{{#parseJSON '{"title": "3 persons", "subheader": "Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "", "url": "detail-hotel-ticket", "groupID": "group_roan"}'}}
+        {{> offer }}
+        {{> offer }}
+        {{/parseJSON}}
+
+       {{#parseJSON '{"title": "Party tent", "subheader": "Checkout our packages for all party tents", "img": "hotel.jpg", "button": "show packages", "distance": "", "url": "detail-hotel-ticket", "target": "group_rishi"}'}}
+         {{> offer }}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"title": "10 persons", "subheader": "Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "", "url": "detail-hotel-ticket", "groupID": "group_rishi"}'}}
+        {{> offer }}
+        {{> offer }}
+        {{/parseJSON}}
+
+		{{!-- {{#parseJSON '{"title": "Travellers Garden Enjoy 4 Persons", "subheader": "Pre-set up tent incl. air mattresses, sleeping bags, pillows, solar light", "img": "tent.jpg", "button": "more info", "condition": "Price per person",  "url": "detail-camping"}'}}
 		{{> offer }}
 		{{> offer }}
 		{{> offer }}
 		{{> offer }}
 		{{> offer }}
-		{{/parseJSON}}
+		{{/parseJSON}} --}}
 	</div>
 </section>
 <div class="accordeon">
 	<div class="container">
 		<a href="step2-camping.html">
-			<span class="accordeon-step">Your Extra's</span>
+			<span class="accordeon-step">Extras</span>
 			<div class="accordeon-buttons">
 				Add extra's<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
@@ -53,7 +72,7 @@ type: page
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
+			<span class="accordeon-step">Details</span>
 			<div class="accordeon-buttons">
 				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>

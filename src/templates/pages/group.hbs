@@ -9,18 +9,16 @@ layout: default.hbs
 	<div class="container">
         <h1 class="page-h1">Group open/close</h1>
 		
-        {{#parseJSON '{"title": "Parent group Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "More info", "distance": "5km", "url": "detail-hotel-ticket", "target": "group_roan"}'}}
+        {{#parseJSON '{"title": "Parent group Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "Show packages", "distance": "", "url": "detail-hotel-ticket", "target": "group_roan"}'}}
          {{> offer }}
         {{/parseJSON}}
-
-       
 
 		{{#parseJSON '{"title": "Child of Parent Roan", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Total room price", "distance": "5km", "url": "detail-hotel-ticket", "groupID": "group_roan"}'}}
         {{> offer }}
         {{> offer }}
         {{/parseJSON}}
 
-       {{#parseJSON '{"title": "Parent group Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "More info", "distance": "5km", "url": "detail-hotel-ticket", "target": "group_rishi"}'}}
+       {{#parseJSON '{"title": "Parent group Rishi", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "show packages", "distance": "", "url": "detail-hotel-ticket", "target": "group_rishi"}'}}
          {{> offer }}
         {{/parseJSON}}
 

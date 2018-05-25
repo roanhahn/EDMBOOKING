@@ -13,14 +13,16 @@ layout: default.hbs
 					<h1 class="hero-event-title">{{site.event}}
 						<small>{{site.eventdate}}</small>
 					</h1>
-					<button class="button button-secondary scrollTo" data-target="eventinfo">Event info</button>
+					<button class="button button-secondary button-secondary--noArrow">Hotel &amp; Ticket</button>
+					<button class="button button-secondary button-secondary--noArrow">Packages</button>
+					<button class="button button-secondary button-secondary--noArrow">Camping</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<section>
+<section class="d-none">
 	<div class="row no-gutters">
 		<div class="col-md-4">
 			<a href="step1-hotels.html" class="event event--blue">
@@ -64,9 +66,9 @@ layout: default.hbs
 			<div class="event-info-wrapper">
 				
 				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
+					{{!-- <div class="img-container ratio-4-3">
 						<img data-src="http://via.placeholder.com/800x600" class="img-fluid lazyload" alt="">
-					</div>
+					</div> --}}
 					<div class="content">
 						<h3 class="h3">EDM General info</h3>
 						<p>
@@ -77,9 +79,9 @@ layout: default.hbs
 				</div>
 
 				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
+					{{!-- <div class="img-container ratio-4-3">
 						<img data-src="http://via.placeholder.com/800x600" class="img-fluid lazyload" alt="">
-					</div>
+					</div> --}}
 					<div class="content">
 						<h3 class="h3">Hassel free service</h3>
 						<p>
@@ -91,9 +93,9 @@ layout: default.hbs
 				</div>
 
 				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
+					{{!-- <div class="img-container ratio-4-3">
 						<img data-src="http://via.placeholder.com/800x600" class="img-fluid lazyload" alt="">
-					</div>
+					</div> --}}
 					<div class="content">
 						<h3 class="h3">Date &amp; time</h3>
 						<p>

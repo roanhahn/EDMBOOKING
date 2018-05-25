@@ -30,6 +30,7 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	
 	
 	<script src="https://use.fontawesome.com/3d921631f6.js"></script>
@@ -218,10 +219,9 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 
 
 
-
 <div class="accordeon accordeon--active">
 	<div class="container">
-		<span class="accordeon-step">Your ticket</span>
+		<span class="accordeon-step">Hotel</span>
 		<div class="accordeon-buttons">
 			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
 			<a href="step2-hotels.html" class="button button-secondary">Next</a>
@@ -229,126 +229,430 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 	</div>
 </div>
 <section class="section">
-	<form>
+
+	<form class="">
 		<div class="container">
+			<div class="d-block d-lg-none m-b-30">
+				<div class="row">
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-7">
+						<select class="form-control m-b-0">
+							<option selected="">Sort by</option>
+							<option>Price Low-High</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="filters">
+				<div class="row">
+					
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check in</label>
+		<div class="input-group date">
+			<input type="date" class="form-control" value="2018-05-14">
 			
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check out</label>
+		<div class="input-group date">
+			<input type="date" class="form-control" placeholder="Arrival date" value="2018-05-18">
+			
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-1">
+	<div class="form-group">
+		<label class="form-label" for="room">Guests</label>
+		<span class="guests">2</span>
+	</div>
+</div>
+<div class="col-6  col-lg-3">
+	<div class="form-group">
+		<label class="form-label" for="room">Select room type</label>
+		<select class="form-control" id="room">
+			<option selected="">2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+		</select>
+	</div>
+</div>
+<div class="col-12 col-lg-2">
+	<div class="form-group">
+		<label class="form-label d-none d-lg-block">&nbsp;</label>
+		<button class="button button-primary button--block">Search</button>
+	</div>
+</div>
 
-<ul class="extra">
-	<li class="extra-listitem" data-type="hovertoggle" data-target="#ticket-1">
-		<div class="extra-item">
-			<div class="extra-title">
-				<i class="fa fa-ticket" aria-hidden="true"></i>Regular Ticket
-			</div>
-			<div class="extra-price">&euro;100</div>
-			<div class="extra-add">
-				<div class="extra-number">
-					<button class="manage-button minus">-</button>
-					<div class="extra-number-items">2</div>
-					<button class="manage-button plus">+</button>
-				</div>
-			</div>
-		</div>
-		<div class="extra-details" id="ticket-1">
-			<div class="row">
-				<div class="col">
-					<ul>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</li>
-	<li class="extra-listitem" data-type="hovertoggle" data-target="#ticket-2">
-		<div class="extra-item">
-			<div class="extra-title">
-				<i class="fa fa-ticket" aria-hidden="true"></i>Family Ticket
-			</div>
-			<div class="extra-price">&euro;200</div>
-			<div class="extra-add">
-				<div class="extra-number">
-					<button class="manage-button minus">-</button>
-					<div class="extra-number-items">2</div>
-					<button class="manage-button plus">+</button>
-				</div>
-			</div>
-		</div>
-		<div class="extra-details" id="ticket-2">
-			<div class="row">
-				<div class="col">
-					<ul>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</li>
-	<li class="extra-listitem" data-type="hovertoggle" data-target="#ticket-3">
-		<div class="extra-item">
-			<div class="extra-title">
-				<i class="fa fa-ticket" aria-hidden="true"></i>Vip Ticket
-			</div>
-			<div class="extra-price">&euro;300</div>
-			<div class="extra-add">
-				<div class="extra-number">
-					<button class="manage-button minus">-</button>
-					<div class="extra-number-items">2</div>
-					<button class="manage-button plus">+</button>
-				</div>
-			</div>
-		</div>
-		<div class="extra-details" id="ticket-3">
-			<div class="row">
-				<div class="col">
-					<ul>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-						<li>Some text goes here</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</li>
-</ul>
 
-			<div class="row">
-				<div class="col">
-					<a href="step3-camping.html" class="button button-primary m-t-20 float-right">Next</a>
+
 				</div>
 			</div>
+			<hr class="hr" />
 		</div>
 	</form>
+	<div class="container">
+		<div class="row m-b-30">
+			<div class="col-md-9">
+				<h2 class="h2-section">Selected Hotels</h2>
+			</div>
+			<div class="col-md-3 d-none d-lg-block">
+				<div>
+					<select class="form-control m-b-0">
+						<option selected="">Sort by</option>
+						<option>Price Low-High</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="offer ">
+
+	
+	<a href="detail-hotel-ticket.html" class="offer-link">
+	
+		<div class="row">
+			<div class="col-5 col-md-6 col-lg-3">
+				
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
+					</div>
+					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="Comfort Inn Midtown West">
+				</div>
+			</div>
+			<div class="col-7 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9">
+						<h3 class="offer-title">Comfort Inn Midtown West</h3>
+						
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
+						
+						
+							<div class="rating-wrapper">
+								<div class="rating">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								Distance venue 5km
+							</div>
+						
+						<span class="button button-primary d-md-none">info &amp; rooms</span>
+
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-md-block">
+						<div class="offer-info">
+							
+							<div>
+								<span class="offer-price">&euro;299</span>
+								<span class="offer-price-condition">Total room price</span>
+							</div>
+							<span class="button button-primary">info &amp; rooms</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+		<div class="offer ">
+
+	
+	<a href="detail-hotel-ticket.html" class="offer-link">
+	
+		<div class="row">
+			<div class="col-5 col-md-6 col-lg-3">
+				
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
+					</div>
+					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="Comfort Inn Midtown West">
+				</div>
+			</div>
+			<div class="col-7 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9">
+						<h3 class="offer-title">Comfort Inn Midtown West</h3>
+						
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
+						
+						
+							<div class="rating-wrapper">
+								<div class="rating">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								Distance venue 5km
+							</div>
+						
+						<span class="button button-primary d-md-none">info &amp; rooms</span>
+
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-md-block">
+						<div class="offer-info">
+							
+							<div>
+								<span class="offer-price">&euro;299</span>
+								<span class="offer-price-condition">Total room price</span>
+							</div>
+							<span class="button button-primary">info &amp; rooms</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+		<div class="offer ">
+
+	
+	<a href="detail-hotel-ticket.html" class="offer-link">
+	
+		<div class="row">
+			<div class="col-5 col-md-6 col-lg-3">
+				
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
+					</div>
+					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="Comfort Inn Midtown West">
+				</div>
+			</div>
+			<div class="col-7 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9">
+						<h3 class="offer-title">Comfort Inn Midtown West</h3>
+						
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
+						
+						
+							<div class="rating-wrapper">
+								<div class="rating">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								Distance venue 5km
+							</div>
+						
+						<span class="button button-primary d-md-none">info &amp; rooms</span>
+
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-md-block">
+						<div class="offer-info">
+							
+							<div>
+								<span class="offer-price">&euro;299</span>
+								<span class="offer-price-condition">Total room price</span>
+							</div>
+							<span class="button button-primary">info &amp; rooms</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+		<div class="offer ">
+
+	
+	<a href="detail-hotel-ticket.html" class="offer-link">
+	
+		<div class="row">
+			<div class="col-5 col-md-6 col-lg-3">
+				
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
+					</div>
+					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="Comfort Inn Midtown West">
+				</div>
+			</div>
+			<div class="col-7 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9">
+						<h3 class="offer-title">Comfort Inn Midtown West</h3>
+						
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
+						
+						
+							<div class="rating-wrapper">
+								<div class="rating">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								Distance venue 5km
+							</div>
+						
+						<span class="button button-primary d-md-none">info &amp; rooms</span>
+
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-md-block">
+						<div class="offer-info">
+							
+							<div>
+								<span class="offer-price">&euro;299</span>
+								<span class="offer-price-condition">Total room price</span>
+							</div>
+							<span class="button button-primary">info &amp; rooms</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+		<div class="offer ">
+
+	
+	<a href="detail-hotel-ticket.html" class="offer-link">
+	
+		<div class="row">
+			<div class="col-5 col-md-6 col-lg-3">
+				
+				<div class="img-container ratio-1-1 sm-ratio-3-4">
+					<div class="ribbon">
+						<div>Sold out</div>
+					</div>
+					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="Comfort Inn Midtown West">
+				</div>
+			</div>
+			<div class="col-7 col-md-6 col-lg-9 offer-content">
+				<div class="row">
+					<div class="col-lg-9">
+						<h3 class="offer-title">Comfort Inn Midtown West</h3>
+						
+						<div class="d-md-none">
+							<div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+						</div>
+						
+						
+							<div class="rating-wrapper">
+								<div class="rating">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								Distance venue 5km
+							</div>
+						
+						<span class="button button-primary d-md-none">info &amp; rooms</span>
+
+						<ul class="offer-list d-none d-md-block">
+							<li>Tipi for 9 persons</li>
+							<li>9 Single stretchers including sleeping bags and pillows</li>
+							<li>Table with stools</li>
+							<li>A spot on our campsite</li>
+							<li>3 Night stay</li>
+							<li>Exclusive pre-party on Thursday</li>
+						
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-md-block">
+						<div class="offer-info">
+							
+							<div>
+								<span class="offer-price">&euro;299</span>
+								<span class="offer-price-condition">Total room price</span>
+							</div>
+							<span class="button button-primary">info &amp; rooms</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+		
+	</div>
 </section>
+
+
+
+
 <div class="accordeon">
 	<div class="container">
 		<a href="step2-hotels.html">
-			<span class="accordeon-step">Your hotel</span>
+			<span class="accordeon-step">Extras</span>
 			<div class="accordeon-buttons">
-				Choose your hotel<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+				Select ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>
 		</a>
 	</div>
 </div>
-<div class="accordeon">
-	<div class="container">
-		<a href="detail-hotel-ticket.html">
-			<span class="accordeon-step">Your room</span>
-			<div class="accordeon-buttons">
-				Choose your room<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
+
 <div class="accordeon">
 	<div class="container">
 		<a href="step3-camping.html">
-			<span class="accordeon-step">Your details</span>
+			<span class="accordeon-step">Details</span>
 			<div class="accordeon-buttons">
 				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 			</div>

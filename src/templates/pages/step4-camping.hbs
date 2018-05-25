@@ -241,19 +241,35 @@ type: page
 
 
 				<form class="m-t-40">
-					<i class="fa fa-exclamation-circle error-icon" aria-hidden="true"></i>
-					<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"> I agree with the <a href="#" class="text-link">Terms &amp; conditions</a> 
-					
-					<p class="m-t-10">Your booking confirmation and the link to your official tickets will be processed and send to you per email directly.</p>
 
-					<div class="alert alert-danger m-t-30">
-						<strong>Error!</strong> You have to agree with the Terms & conditions.
+					<div class="m-b-10">
+						<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"> Yes, send me email updates on future events of EDMBOOKING.</a> 
 					</div>
+					
+					<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"> I have read and accepted the <a href="#" class="text-link" data-type="toggle" data-target="#terms">General Terms and Privacy</a> <i class="fa fa-exclamation-circle error-icon" aria-hidden="true"></i>
 
-					<a href="#" class="button button--next button-primary m-t-20 {{!-- float-right --}} button--block"><i class="fa fa-lock" aria-hidden="true"></i>Buy now</a>
-				</form>
+					<div class="m-t-20" style="display: none;" id="terms">
+						<a href="page.html" class="text-link">General Terms<a> and <a href="page.html" class="text-link">Privacy Policy<a> of EDMBOOKING<br />
+						<a href="page.html" class="text-link">General Terms<a> and <a href="page.html" class="text-link">Privacy Policy<a> of ALDA<br />
+						<a href="page.html" class="text-link">General Terms<a> and <a href="page.html" class="text-link">Privacy Policy<a> of Paylogic
+
+						<p class="m-t-20">
+							EDMBOOKING processes your personal data because you use our services and/or because you provide them yourself. We respect your privacy under the European General Data Protection Regulation (GDPR). We use your personal data to book entrance tickets, accommodation, transfer or other services for you.  
+							<br /><br />
+							If you object to this, you can send us an email at <a href="mailto:hello@edmbooking.com" class="text-link">hello@edmbooking.com</a>. More information about how we handle your data can be found in our privacy policy.
+						</p>
+					</div>
+					
+					<p class="m-t-20">You will receive a confirmation e-mail with hotel reservation and official E-tickets after you have completed your booking. <strong>Please note that your booking cannot be cancelled once it is fully paid.<strong></p>
+
+						<div class="alert alert-danger m-t-30">
+							<strong>Error!</strong> You have to agree with the Terms & conditions.
+						</div>
+
+						<a href="#" class="button button--next button-primary m-t-20 {{!-- float-right --}} button--block"><i class="fa fa-lock" aria-hidden="true"></i>Buy now</a>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
