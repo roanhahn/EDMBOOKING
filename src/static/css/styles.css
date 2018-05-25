@@ -1899,6 +1899,13 @@ body.scrolled .hamburger {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
   .hero .button {
     margin: 0 10px; }
+    @media all and (max-width: 992px) {
+      .hero .button {
+        display: block;
+        width: 80%;
+        margin: 0 auto 15px;
+        font-size: 17px;
+        padding: 15px; } }
   .hero .inner {
     position: relative;
     width: 100%;
