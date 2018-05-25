@@ -29,10 +29,12 @@ layout: docs.hbs
 			<h3 class="h3-docs">Pages</h3>
 			<ul class="ul-docs row m-b-30">
 				{{#each pages}}
-				{{#isnt data.type 'style' }}
+				{{#isnt data.type 'style'}}
+				{{#isnt data.type 'temp'}}
 				{{#isnt data.type 'component' }}
 				{{#isnt data.title 'Welcome'}}
 				<li class="col-md-4"><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
+				{{/isnt}}
 				{{/isnt}}
 				{{/isnt}}
 				{{/isnt}} 
@@ -45,9 +47,11 @@ layout: docs.hbs
 			<ul class="ul-docs row m-b-30">
 				{{#each pages}}
 				{{#isnt data.type 'page'}}
+				{{#isnt data.type 'temp'}}
 				{{#isnt data.type 'style'}}
 				{{#isnt data.title 'Welcome'}}
 				<li class="col-md-4"><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
+				{{/isnt}}
 				{{/isnt}}
 				{{/isnt}}
 				{{/isnt}}
