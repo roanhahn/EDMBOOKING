@@ -146,10 +146,11 @@ $footer-socialicon-hover: #fff;
 $footer-payoffsize: 12px;
 
 /* COOKIES */
-$cookies-bg: rgba(0,0,0,.8);
+$cookies-bg: rgba(0,0,0,1);
 $cookies-fontsize: 15px;
-$cookies-border: 1px solid (255,255,255,.3);
-$cookies-color: #fff;
+$cookies-border: 1px solid #419bf7;
+$cookies-color: #419bf7;
+$cookies-padding: 20px;
 
 /* FORMS */
 $form-border: 1px solid #fff;

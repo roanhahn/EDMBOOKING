@@ -1897,10 +1897,10 @@ body.scrolled .hamburger {
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
-  .hero .button {
+  .hero-button {
     margin: 0 10px; }
     @media all and (max-width: 992px) {
-      .hero .button {
+      .hero-button {
         display: block;
         width: 80%;
         margin: 0 auto 15px;
@@ -2666,11 +2666,13 @@ footer {
   bottom: 20px;
   left: 30%;
   width: 40%;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  background-color: black;
   font-size: 15px;
-  color: #fff;
-  border: 1px solid 255, 255, 255, 0.3; }
+  color: #419bf7;
+  border: 1px solid #419bf7; }
+  .cookies a {
+    color: #fff; }
   @media all and (max-width: 992px) {
     .cookies {
       width: 60%;
@@ -2681,11 +2683,16 @@ footer {
       left: 5%;
       font-size: 13px; } }
   .cookies button {
-    padding: 0;
+    padding: 5px;
     background-color: transparent;
     float: right;
     margin: 0 0 0 20px;
     curspor: pointer; }
+    .cookies button .icon {
+      width: 30px;
+      height: auto; }
+    .cookies button #cross-remove-sign {
+      fill: #419bf7; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
