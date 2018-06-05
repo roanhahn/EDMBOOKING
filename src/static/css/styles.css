@@ -2172,16 +2172,16 @@ body.scrolled .hamburger {
     color: #000; }
   .textfield::-webkit-input-placeholder, select::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #333; }
+    color: #95a5a6; }
   .textfield::-moz-placeholder, select::-moz-placeholder, .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color: #333; }
+    color: #95a5a6; }
   .textfield:-ms-input-placeholder, select:-ms-input-placeholder, .form-control:-ms-input-placeholder {
     /* IE 10+ */
-    color: #333; }
+    color: #95a5a6; }
   .textfield:-moz-placeholder, select:-moz-placeholder, .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: #333; }
+    color: #95a5a6; }
   @media all and (max-width: 992px) {
     .textfield, select, .form-control {
       font-size: 12px;

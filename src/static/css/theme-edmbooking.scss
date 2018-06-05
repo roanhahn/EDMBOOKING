@@ -161,7 +161,8 @@ $form-input-color: #000;
 $form-highlight: #419bf7;
 $form-highlightcolor: #fff;
 $form-addon-bg: #e6e7e8;
-$form-addon-color: #000; 
+$form-addon-color: #000;
+$placeholder-color: #95a5a6;
 
 
 @mixin gradient($fromcolor, $tocolor) {
