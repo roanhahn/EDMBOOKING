@@ -5,26 +5,26 @@ button{
 	cursor: pointer;
 }
 .button{
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	-webkit-box-shadow: none !important;
+	-webkit-transition: all .15s ease-out 0s;
+	border-radius: 0px;
+	box-shadow: none !important;
+	cursor: pointer;
+	cursor: pointer;
 	display: inline-block;
 	font-family: $font-button;
+	font-size: $button-size;
 	font-weight: 800;
 	letterspacing: 1px;
-	text-decoration: none !important;
-	white-space: nowrap;
-	font-size: $button-size;
 	outline: 0;
-	cursor: pointer;
-	text-align: center;
-	position: relative;
 	outline: none !important;
-	box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-	-webkit-appearance: none !important;
-	-moz-appearance: none !important;
-	-webkit-transition: all .15s ease-out 0s;
+	position: relative;
+	text-align: center;
+	text-decoration: none !important;
 	transition: all .15s ease-out 0s;
-	border-radius: 0px;
-	cursor: pointer;
+	white-space: nowrap;
 
 
 	&.loading{
@@ -46,7 +46,7 @@ button{
 		background-size: cover;
 	}
 
-	
+
 
 	&--next:after{
 		content: "\f105";
@@ -181,7 +181,7 @@ button{
 		}
 
 		& .first-line{
-			
+
 			font-size: 26px;
 			font-family: $font;
 			font-weight: 700;
@@ -303,7 +303,7 @@ button{
 		-webkit-border-radius: 100%;
 		-moz-border-radius: 100%;
 		border-radius: 100%;
-		
+
 	}
 
 	&--close{
@@ -351,7 +351,7 @@ button{
 		&:after{
 			display: none;
 		}
-		
+
 	}
 
 	&--lowercase{

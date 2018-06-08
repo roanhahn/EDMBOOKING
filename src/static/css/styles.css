@@ -1100,11 +1100,25 @@ h3.extras {
     display: inline-block;
     margin-right: 10px;
     font-weight: 900; }
-    .extra-btn:hover {
-      color: #fff; }
     @media all and (max-width: 767px) {
       .extra-btn {
         margin-right: 5px; } }
+    .extra-btn:before {
+      content: "\f05a";
+      font-family: "FontAwesome";
+      width: 30px;
+      display: inline-block;
+      margin-right: 10px; }
+    .extra-btn--ticket:before {
+      content: "\f145"; }
+    .extra-btn-hovericon {
+      display: none; }
+    .extra-btn-icon {
+      display: inline-block; }
+    .extra-btn:hover {
+      color: #fff; }
+      .extra-btn:hover:before {
+        content: "\f05a"; }
   .extra-title {
     font-weight: 900;
     width: 100%; }
@@ -1114,6 +1128,10 @@ h3.extras {
     @media all and (max-width: 767px) {
       .extra-price {
         padding: 0 10px; } }
+    .extra-price span {
+      display: block;
+      font-size: 13px;
+      color: #fff; }
   .extra-details {
     font-size: 16px;
     color: #fff;
@@ -1220,26 +1238,26 @@ button {
   cursor: pointer; }
 
 .button {
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -webkit-box-shadow: none !important;
+  -webkit-transition: all .15s ease-out 0s;
+  border-radius: 0px;
+  box-shadow: none !important;
+  cursor: pointer;
+  cursor: pointer;
   display: inline-block;
   font-family: "Prompt", sans-serif;
+  font-size: 17px;
   font-weight: 800;
   letterspacing: 1px;
-  text-decoration: none !important;
-  white-space: nowrap;
-  font-size: 17px;
   outline: 0;
-  cursor: pointer;
-  text-align: center;
-  position: relative;
   outline: none !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  -webkit-transition: all .15s ease-out 0s;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
   transition: all .15s ease-out 0s;
-  border-radius: 0px;
-  cursor: pointer; }
+  white-space: nowrap; }
   .button.loading {
     pointer-events: none;
     cursor: default; }
