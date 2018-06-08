@@ -1108,7 +1108,15 @@ h3.extras {
       font-family: "FontAwesome";
       width: 30px;
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 10px;
+      text-align: center; }
+      @media all and (max-width: 992px) {
+        .extra-btn:before {
+          width: 20px;
+          margin-right: 5px; } }
+      @media all and (max-width: 992px) {
+        .extra-btn:before {
+          width: 16px; } }
     .extra-btn--ticket:before {
       content: "\f145"; }
     .extra-btn-hovericon {

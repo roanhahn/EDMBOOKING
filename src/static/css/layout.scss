@@ -461,6 +461,15 @@
 				width: 30px;
 				display: inline-block;
 				margin-right: 10px;
+				text-align: center;
+
+				@media all and(max-width: $breakpoint-tablet){
+					width: 20px;
+					margin-right: 5px;
+				}
+				@media all and(max-width: $breakpoint-tablet){
+					width: 16px;
+				}
 			}
 
 			&--ticket:before{
