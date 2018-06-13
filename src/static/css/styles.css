@@ -280,7 +280,7 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #000;
+  stroke: #419bf7;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
@@ -305,7 +305,7 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #000; } }
+    fill: #419bf7; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
@@ -1104,7 +1104,7 @@ h3.extras {
       .extra-btn {
         margin-right: 5px; } }
     .extra-btn:before {
-      content: "\f05a";
+      content: "\f055";
       font-family: "FontAwesome";
       width: 30px;
       display: inline-block;
@@ -1838,7 +1838,7 @@ button:focus {
     font-size: 18px; }
 
 .notification {
-  background: #000;
+  background: #419bf7;
   text-align: center;
   color: #fff;
   font-family: "Prompt", sans-serif;
@@ -1851,7 +1851,10 @@ button:focus {
   width: 100%;
   z-index: 99;
   height: 90px;
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s;
+  display: flex; }
   @media all and (max-width: 767px) {
     .notification {
       height: 50px;
@@ -1879,8 +1882,14 @@ body.stickyheader {
   body.stickyheader .yourbooking {
     position: fixed; }
 
-body.scrolled .header, body.scrolled .mainnav {
+body.scrolled .header, body.scrolled .mainnav, body.scrolled .notification {
   height: 50px; }
+body.scrolled .notification {
+  line-height: 50px;
+  font-size: 12px; }
+  body.scrolled .notification .checkmark {
+    width: 20px;
+    height: 20px; }
 body.scrolled .subnav, body.scrolled .yourbooking {
   top: 50px; }
 body.scrolled .logo img {
@@ -2690,23 +2699,22 @@ footer {
   position: fixed;
   z-index: 99;
   bottom: 20px;
-  left: 30%;
-  width: 40%;
+  left: 50%;
+  width: 100%;
+  max-width: 550px;
   padding: 20px;
   background-color: black;
   font-size: 15px;
   color: #419bf7;
-  border: 1px solid #419bf7; }
+  border: 1px solid #419bf7;
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
   .cookies a {
     color: #fff; }
-  @media all and (max-width: 992px) {
-    .cookies {
-      width: 60%;
-      left: 20%; } }
   @media all and (max-width: 767px) {
     .cookies {
-      width: 90%;
-      left: 5%;
+      max-width: 90%;
       font-size: 13px; } }
   .cookies button {
     padding: 5px;
@@ -2784,7 +2792,7 @@ footer {
     position: relative;
     z-index: 1;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
     background-position: center center;
     background-blend-mode: multiply;
     height: 0px;

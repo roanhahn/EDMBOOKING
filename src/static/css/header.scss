@@ -7,7 +7,7 @@
 	z-index: 100;
 	-webkit-transition: all .2s ease-out 0s;
 	transition: all .2s ease-out 0s;
-	
+
 	-webkit-box-shadow: $main-shadow;
 	-moz-box-shadow:  $main-shadow;
 	box-shadow:  $main-shadow;
@@ -24,11 +24,11 @@
 	display: inline-block;
 	position: absolute;
 	top: 50%;
-	-ms-transform: translate(0, -50%); 
+	-ms-transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	line-height: 0;
-	
+
 
 	& img{
 		display: block;
@@ -59,8 +59,8 @@
 		vertical-align: middle;
 		display: table-cell;
 
-		
-		
+
+
 
 		&-info{
 			display: inline-block;
@@ -150,7 +150,7 @@
 			}
 		}
 
-		
+
 	}
 }
 
@@ -264,7 +264,7 @@
 		display: inline-block;
 		padding: 0;
 		margin-top: 10px;
-		
+
 
 		& a{
 			background-color: $subnav-social-bg;
@@ -415,6 +415,9 @@
 	z-index: 99;
 	height: $header-height;
 	font-size: 18px;
+	-webkit-transition: all .2s ease-out 0s;
+	transition: all .2s ease-out 0s;
+	display: flex;
 
 	@media all and (max-width: $breakpoint-mobile){
 		height: $header-height-mobile;
@@ -456,8 +459,18 @@ body.stickyheader{
 }
 
 body.scrolled{
-	& .header, & .mainnav{
+	& .header, & .mainnav, & .notification{
 		height: $header-height-mobile;
+	}
+
+	& .notification{
+		line-height: $header-height-mobile;
+		font-size: 12px;
+
+		& .checkmark{
+			width: 20px;
+			height: 20px;
+		}
 	}
 
 	& .subnav, & .yourbooking{

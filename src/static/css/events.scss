@@ -36,7 +36,7 @@
 		top: 50%;
 		width: 100%;
 		text-align: center;
-		-ms-transform: translate(0, -50%); 
+		-ms-transform: translate(0, -50%);
 		-webkit-transform: translate(0, -50%);
 		transform: translate(0, -50%);
 		color: #fff;
@@ -49,7 +49,7 @@
 		position: relative;
 		z-index: 1;
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: 105%;
 		background-position: center center;
 		background-blend-mode: $blend-mode;
 		height: 0px;
@@ -60,7 +60,7 @@
 		transition: all .2s ease-in-out 0s;
 
 		@media all and (max-width: $breakpoint-mobile){
-			padding-bottom: 60% !important;	
+			padding-bottom: 60% !important;
 		}
 
 		&--red{
@@ -111,10 +111,10 @@
 		margin-bottom: 5px;
 		text-shadow: 0 0 15px rgba(0,0,0,.7);
 		@media all and (max-width: $breakpoint-tablet){
-			font-size: 24px;	
+			font-size: 24px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			// font-size: 18px;	
+			// font-size: 18px;
 		}
 	}
 
@@ -126,12 +126,12 @@
 		line-height: 1.2;
 		text-shadow: 0 0 15px rgba(0,0,0,.7);
 		font-size: 1.2em;
-		
+
 		@media all and (max-width: $breakpoint-tablet){
-			font-size: 13px;	
+			font-size: 13px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			// font-size: 13px;	
+			// font-size: 13px;
 		}
 	}
 }

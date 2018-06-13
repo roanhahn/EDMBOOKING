@@ -5,11 +5,11 @@ updateResult();
 
 // CHANGE CSS
 
-$("#cssChanger li a").click(function() { 
+$("#cssChanger li a").click(function() {
 
 	var cookieCSS = $(this).attr('rel');
 	var cookiePath = $(this).data('path');
-	
+
 	// console.log(cookiename);
 
 	$("#themecss").attr("href",$(this).attr('rel'));
@@ -23,7 +23,7 @@ $("#cssChanger li a").click(function() {
 });
 
 function updateResult() {
-	
+
 	var cookieTheme = $.cookie('theme-css');
 	var cookieLogo = $.cookie('theme-path');
 
@@ -175,9 +175,9 @@ var headerheight = $(".header").outerHeight();
 
 // console.log(headerheight);
 
-$(window).scroll(function() {    
+$(window).scroll(function() {
 	var scroll = $(window).scrollTop();
-	
+
 
 	if (scroll >= headerheight) {
 		$(".body").addClass("scrolled");
@@ -186,7 +186,7 @@ $(window).scroll(function() {
 		$(".body").removeClass("scrolled");
 		// $(".site-background").removeClass("scrolled");
 	}
-	
+
 });
 
 // INFO PAGE & FAQ
@@ -234,7 +234,7 @@ $(document).ready(function() {
 
 	var owl = $('.owl-pictures');
 	owl.owlCarousel({
-		responsiveRefreshRate: 200, 
+		responsiveRefreshRate: 200,
 		margin: 0,
 		nav: false,
 		dots: true,
@@ -342,7 +342,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			var player;
 
 			function onYouTubeIframeAPIReady() {
-				
+
 				player = new YT.Player('hero-video', {
 					videoId: 'iFUiPOtM2GE',
 					playerVars: {
@@ -377,7 +377,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			//    the player should play for six seconds and then stop.
 			var done = false;
 			function onPlayerStateChange(event) {
-				
+
 				if (event.data == YT.PlayerState.PLAYING && !done) {
 					// alert("bla");
 					done = true;

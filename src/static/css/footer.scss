@@ -3,7 +3,7 @@ footer{
 	padding: 70px 0 70px;
 	color: $footer-text;
 	border-top: $footer-border;
-	
+
 
 	&.gradient{
 		@include gradient($link-color, #6cb5ff);
@@ -79,7 +79,7 @@ footer{
 
 	& .copyright{
 
-		
+
 	}
 
 	& .legals{
@@ -103,7 +103,7 @@ footer{
 		padding-top: 16px;
 
 		& a{
-			display: inline-block; 
+			display: inline-block;
 			margin-left: 10px;
 
 			@media all and (max-width: $breakpoint-tablet){
@@ -113,7 +113,7 @@ footer{
 		}
 
 		@media all and (max-width: $breakpoint-tablet){
-			
+
 			text-align: center;
 
 			& span{
@@ -194,8 +194,8 @@ footer{
 				color: $footer-socialicon-hover;
 			}
 		}
-		
-		
+
+
 	}
 }
 
@@ -237,25 +237,28 @@ footer{
 	position: fixed;
 	z-index: 99;
 	bottom: 20px;
-	left: 30%;
-	width: 40%;
+	left: 50%;
+	width: 100%;
+	max-width: 550px;
 	padding: $cookies-padding;
 	background-color: $cookies-bg;
 	font-size: $cookies-fontsize;
 	color: $cookies-color;
 	border: $cookies-border;
 
+	-ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
 	& a{
 		color: $text-color;
 	}
 	@media all and(max-width: $breakpoint-tablet){
-		width: 60%;
-		left: 20%;
+
 	}
 
 	@media all and(max-width: $breakpoint-mobile){
-		width: 90%;
-		left: 5%;
+		max-width: 90%;
 		font-size: 13px;
 	}
 
