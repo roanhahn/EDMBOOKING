@@ -259,7 +259,8 @@ footer{
 
 	@media all and(max-width: $breakpoint-mobile){
 		max-width: 90%;
-		font-size: 13px;
+		font-size: $cookies-fontsize-mobile;
+		padding: $cookies-padding-mobile;
 	}
 
 	& button{
@@ -273,12 +274,17 @@ footer{
 		& .icon{
 			width: 30px;
 			height: auto;
-
+			@media all and(max-width: $breakpoint-mobile){
+				width: 15px;
+			}
 		}
 
 		& #cross-remove-sign{
 			fill: $cookies-color;
 		}
+
+
+
 	}
 
 	& p{
