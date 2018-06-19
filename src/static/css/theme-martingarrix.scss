@@ -68,7 +68,7 @@ $sec-padding: 15px 30px;
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 30px;
-$logo-height-mobile: 20px;
+$logo-height-mobile: 15px;
 $header-bg: #000;
 $header-color: red;
 $header-bg-sticky: rgba(0,0,0, 1);
@@ -138,8 +138,8 @@ $why-book-iconborder: 3px solid #bbe7df;
 $why-book-iconbg: #bbe7df;
 
 /* Footer */
-$footer-border: none;
-$footer-bg: #000;
+$footer-border: 2px solid rgba(255,255,255,.3);
+$footer-bg: #171717;
 $footer-text: #fff;
 $footer-link: #bbe7df;
 $footer-hover: #bbe7df;

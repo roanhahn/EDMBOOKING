@@ -1697,7 +1697,7 @@ body.scrolled .hamburger {
     transition: all .2s ease-out 0s; }
     @media all and (max-width: 767px) {
       .logo img {
-        height: 20px; } }
+        height: 15px; } }
 
 .mainnav {
   float: right;
@@ -2008,7 +2008,7 @@ body.scrolled .notification {
 body.scrolled .subnav, body.scrolled .yourbooking {
   top: 50px; }
 body.scrolled .logo img {
-  height: 20px; }
+  height: 15px; }
 body.scrolled .hamburger-oud {
   margin-left: 10px;
   background-size: auto 20px;
@@ -2224,7 +2224,7 @@ body.scrolled .hamburger-oud {
 .footer-subscribe input {
   background: #fff;
   border: none;
-  color: #000;
+  color: #171717;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -2238,20 +2238,20 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #000; }
+    color: #171717; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #000; }
+    color: #171717; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #000; }
+    color: #171717; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: #000; }
+    color: #171717; }
 .footer-subscribe a.submit {
   border: none;
   background: #fff;
-  color: #000;
+  color: #171717;
   font-family: "Prompt", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -2666,10 +2666,10 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: #000;
+  background-color: #171717;
   padding: 70px 0 70px;
   color: #fff;
-  border-top: none; }
+  border-top: 2px solid rgba(255, 255, 255, 0.3); }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
     background: #bbe7df;
@@ -2786,7 +2786,7 @@ footer {
     .social li a {
       display: block;
       background-color: #bbe7df;
-      color: #000;
+      color: #171717;
       border-radius: 100%;
       width: 34px;
       height: 34px;
