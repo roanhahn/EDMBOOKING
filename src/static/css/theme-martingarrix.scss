@@ -1,0 +1,178 @@
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+
+/* FOLDER */
+$folder: edmbooking;
+
+/* BODY */
+$bg-color: #2f4c5c;
+$font-size: 16px;
+
+/* FONTS */
+$font: 'Roboto', sans-serif;
+$font-header: 'Prompt', sans-serif;
+$border-color: rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #fff;
+$link-color: #bbe7df;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: none;
+$blue-filter: rgba(0,155,255,0);
+$white-filter: rgba(236,236,236,0);
+$red-filter: rgba(255,55,0,0);
+$grey-filter: rgba(50,50,50,0.2);
+$filter-opacity: 0.5;
+$video-opacity: 0.5;
+$video-filter:  grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Prompt', sans-serif;
+$button-size: 17px;
+$button-bg: #bbe7df;
+$button-color: #000;
+$button-bg-hover: #fff;
+$button-color-hover: #000;
+
+/* BACK BUTTON */
+$button-back-bg: rgba(0,0,0,.5);
+$button-back-color: #fff;
+$button-back-border: 2px solid rgba(255,255,255,.3);
+$button-back-bghover: #fff;
+$button-back-colorhover: #000;
+$button-back-borderhover: 2px solid #fff;
+
+/* FAQ */
+$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-color: #fff;
+$faq-button-bghover: #fff;
+$faq-button-colorhover: #000;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-button-bg: rgba(0,0,0,.5);
+$sec-button-colorhover: #000;
+$sec-button-bghover: #fff;
+$sec-button-border: 2px solid #fff;
+$sec-button-radius: 50px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 30px;
+$logo-height-mobile: 20px;
+$header-bg: #000;
+$header-color: red;
+$header-bg-sticky: rgba(0,0,0, 1);
+$header-text: #fff;
+$header-hover: #bbe7df;
+$main-shadow: none;
+$menu-color: black;
+$notification-bg: #bbe7df;
+$notication-icons: #000;
+$notification-text: #000;
+$subnav-bg: #000;
+$subnav-strong: #fff;
+$subnav-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #bbe7df;
+$subnav-social-bg: #bbe7df;
+$subnav-social-color: #000;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #bbe7df;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+$subnav-border: 1px solid rgba(255,255,255,.3);
+
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,0.2);
+$font-hero-small: 'Roboto', sans-serif;
+$hero-position: top center;
+$hero-subtitle-size: 20px;
+
+/* Testimonials */
+$testimonial-bg: #2f4c5c;
+$testimonial-text: #fff;
+$testimonial-title: #bbe7df;
+$testimonial-author: #fff;
+$testimonial-activedot: #bbe7df;
+$testimonial-inactivedot: #fff;
+
+/* STEPS */
+$steps-bg: #000;
+$steps-color: #fff;
+$steps-bg-hover: #333;
+$steps-color-hover: #fff;
+$steps-active-bg: #333;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 2px solid rgba(255,255,255,.3);
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid rgba(255,255,255,.3);
+$offer-title: #bbe7df;
+$offer-title-transform: none;
+$ribbon-bg: #000;
+$ribbon-color: #fff;
+$offer-activedot: #bbe7df;
+$offer-inactivedot: #fff;
+$ticketbtn-color: #000;
+$ticketbtn-colorhover: #2f4c5c;
+
+/* WHY BOOK */
+$why-border: #bbe7df;
+$why-number: #fff;
+$why-book-icon: #2f4c5c;
+$why-book-iconborder: 3px solid #bbe7df;
+$why-book-iconbg: #bbe7df;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: #000;
+$footer-text: #fff;
+$footer-link: #bbe7df;
+$footer-hover: #bbe7df;
+$footer-heading: #fff;
+$footer-social-bg: #bbe7df;
+$footer-social-hover: #000;
+$footer-socialicon-hover: #bbe7df;
+$footer-payoffsize: 12px;
+
+/* COOKIES */
+$cookies-bg: rgba(0,0,0,1);
+$cookies-fontsize: 15px;
+$cookies-border: 1px solid #bbe7df;
+$cookies-color: #bbe7df;
+$cookies-padding: 20px;
+
+/* FORMS */
+$form-border: 1px solid #fff;
+$form-bordercolor: #000;
+$form-border-login: 1px solid #000;
+$form-label: #fff;
+$form-input-color: #000;
+$form-highlight: #419bf7;
+$form-highlightcolor: #fff;
+$form-addon-bg: #e6e7e8;
+$form-addon-color: #000;
+$placeholder-color: #95a5a6;
+
+
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

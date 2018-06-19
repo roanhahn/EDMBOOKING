@@ -1,12 +1,12 @@
 .hero{
-	
+
 	text-align: center;
 	position: relative;
 	color: $hero-color;
-	background-position: center center;
+	background-position: $hero-position;
 	background-size: cover;
 	background-blend-mode:  $blend-mode;
-	
+
 
 	@media all and (max-width: $breakpoint-mobile){
 		// height: calc(70% - #{$header-height-mobile});
@@ -78,7 +78,7 @@
 			z-index: 10;
 			padding: 150px 0;
 			// background-color: red;
-			// -ms-transform: translate(0, -50%); 
+			// -ms-transform: translate(0, -50%);
 			// -webkit-transform: translate(0, -50%);
 			// transform: translate(0, -50%);
 
@@ -108,14 +108,14 @@
 				z-index: 10;
 				padding: 150px 0;
 				// background-color: red;
-				-ms-transform: translate(0, -50%); 
+				-ms-transform: translate(0, -50%);
 				-webkit-transform: translate(0, -50%);
 				transform: translate(0, -50%);
 
 				@media all and (max-width: $breakpoint-tablet){
 					padding: 100px 0;
 					top: 0;
-					-ms-transform: translate(0, 0%); 
+					-ms-transform: translate(0, 0%);
 					-webkit-transform: translate(0, 0%);
 					transform: translate(0, 0%);
 				}
@@ -146,7 +146,7 @@
 				font-size: 90px;
 
 				@media all and (max-width: $breakpoint-tablet){
-					font-size: 70px;	
+					font-size: 70px;
 				}
 				@media all and (max-width: $breakpoint-mobile){
 					font-size: 30px;
@@ -181,7 +181,7 @@
 			z-index: 1;
 			overflow: hidden;
 
-			// background: $bg-color; 
+			// background: $bg-color;
 			background-size: cover;
 
 			@media (max-width: $breakpoint-tablet){
@@ -243,7 +243,7 @@
 		z-index: 1;
 		overflow: hidden;
 
-		// background: $bg-color; 
+		// background: $bg-color;
 		background-size: cover;
 
 		@media (max-width: $breakpoint-tablet){
