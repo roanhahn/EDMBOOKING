@@ -260,9 +260,10 @@ $("img.lazyload").lazyload();
 // SHOW HAMBURGER MENU
 
 $('.toggle-subnav').click(function(){
-	$('.hamburger').toggleClass("hamburger-close");
+	// $('.hamburger').toggleClass("hamburger-close");
+	$('.hamburger').toggleClass("is-active");
 	$('#subnav').toggleClass("subnav-active");
-	$('.body').toggleClass("scroll-lock");
+	// $('.body').toggleClass("scroll-lock");
 	return false;
 	$('body').attr('scroll','no');
 });
@@ -420,7 +421,8 @@ $(document).ready(function() {
 		autoplayHoverPause:true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				dots: false
 			},
 			768: {
 				items: 2
@@ -482,9 +484,9 @@ console.log(toggletarget + "blaat");
 // DATEPICKER
 
 $('.datepicker').datepicker({
-	format: "dd/mm/yyyy",
+	// format: "dd/mm/yyyy",
 	autoclose: true,
-	todayHighlight: true
+	// todayHighlight: true
 });
 $('#event_period').datepicker({
 	inputs: $('.actual_range'),

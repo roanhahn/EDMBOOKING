@@ -61,7 +61,13 @@
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro;299,00</span>
 				</div>
-				<button class="hamburger toggle-subnav"></button>
+				<button class="hamburger toggle-subnav hamburger--collapse" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+
+				
 			</div>
 		</nav>
 	</div>
@@ -316,18 +322,19 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="form-group">
-								<select class="form-control" id="dateofbirth">
+								<select class="form-control is-invalid" id="dateofbirth">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
+								<div class="invalid-feedback" style="display: block;">Please select a date</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<select class="form-control">
+								<select class="form-control is-valid">
 									<option>January</option>
 									<option>February</option>
 									<option>March</option>
@@ -390,7 +397,7 @@ Already booked with EDMBASSY? Go to our login page to view your booking.</p>
 					<input type="submit" class="button button-primary m-t-20 float-right" value="next">
 				</div>
 			</div>
-			
+
 
 		</form>
 	</div>
