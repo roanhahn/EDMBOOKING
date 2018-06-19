@@ -9,24 +9,26 @@
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro;299,00</span>
 				</div>
-				<button class="hamburger toggle-subnav"></button>
-			</div>
+				<button class="hamburger toggle-subnav hamburger--collapse" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
 
+				{{!-- <button class="hamburger toggle-subnav"></button> --}}
+			</div>
 		</nav>
 	</div>
-
 	{{#if homepage}}
 	<div class="notification">
 		<div class="container">
 			<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
 				<g id="Group">
-                    <circle  class="checkmark__circle" id="Oval" fill="none" cx="26" cy="26" r="26"></circle>
-                    <path class="checkmark__cross" fill="none" d="M26.1923882,24.7781746 L35.3847763,15.5857864 L36.7989899,17 L27.6066017,26.1923882 L36.7989899,35.3847763 L35.3847763,36.7989899 L26.1923882,27.6066017 L17,36.7989899 L15.5857864,35.3847763 L24.7781746,26.1923882 L15.5857864,17 L17,15.5857864 L26.1923882,24.7781746 Z"></path>
-                </g>
+					<circle  class="checkmark__circle" id="Oval" fill="none" cx="26" cy="26" r="26"></circle>
+					<path class="checkmark__cross" fill="none" d="M26.1923882,24.7781746 L35.3847763,15.5857864 L36.7989899,17 L27.6066017,26.1923882 L36.7989899,35.3847763 L35.3847763,36.7989899 L26.1923882,27.6066017 L17,36.7989899 L15.5857864,35.3847763 L24.7781746,26.1923882 L15.5857864,17 L17,15.5857864 L26.1923882,24.7781746 Z"></path>
+				</g>
 			</svg>
-
-
 			<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
 				<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -35,14 +37,10 @@
 		</div>
 	</div>
 	{{/if}}
-
 </header>
-
 <nav class="subnav" id="subnav">
 	<ul class="subnav-list">
 		<li><a href="homepage.html">Home</a></li>
-
-
 		{{#if homepage}}
 		<li>
 			<strong>Events</strong>
@@ -75,7 +73,6 @@
 			</ul>
 		</li>
 	</ul>
-
 	<ul class="social">
 		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -84,5 +81,4 @@
 		<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi {{site.name}}, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 	</ul>
 </nav>
-
 {{> yourbooking }}

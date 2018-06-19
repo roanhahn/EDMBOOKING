@@ -346,16 +346,24 @@
 		padding: 0;
 		color: $link-color;
 
+		&-add{
+			position: relative;
+		}
+
 		&-number{
 			background: #fff;
 			position: relative;
+			// right: 0;
+			float: right;
 			height: 44px;
+			width: 100%;
 			min-width: 132px;
 			width: 100%;
+			max-width: 150px;
 
-			@media all and(max-width: $breakpoint-mobile){
+			@media all and(max-width: $breakpoint-tablet){
 				min-width: 100px;
-				width: 100%;
+				max-width: 100px;
 				height: 30px;
 			}
 
@@ -372,7 +380,7 @@
 				padding: 0;
 				letterspacing: 0;
 
-				@media all and(max-width: $breakpoint-mobile){
+				@media all and(max-width: $breakpoint-tablet){
 					height: 30px;
 					width: 30px;
 				}
@@ -397,7 +405,7 @@
 				line-height: 44px;
 				font-weight: 800;
 
-				@media all and(max-width: $breakpoint-mobile){
+				@media all and(max-width: $breakpoint-tablet){
 					height: 30px;
 					line-height: 30px;
 					font-size: 13px;
@@ -411,28 +419,32 @@
 			padding: 10px 0;
 
 			@media all and(max-width: $breakpoint-tablet){
-				font-size: 20px;
+				font-size: 24px;
 			}
 			@media all and(max-width: $breakpoint-mobile){
-				font-size: 15px;
+				font-size: 17px;
 			}
 
 		}
 
 		&-item{
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: flex-end;
-			align-items: center;
+			// display: flex;
+			// flex-direction: row;
+			// flex-wrap: nowrap;
+			// justify-content: flex-start;
+			// align-items: center;
 			// background-color: red;
 
 			& div{
-				flex-grow: 1;
-				vertical-align: middle;
-				white-space: nowrap;
+
+			}
+
+			@media all and(max-width: $breakpoint-tablet){
+
 			}
 		}
+
+
 
 		& i{
 			margin-right: 10px;
@@ -446,6 +458,9 @@
 			display: inline-block;
 			margin-right: 10px;
 			font-weight: 900;
+			white-space: normal;
+			text-align: left;
+			// width: 200px;
 
 
 
@@ -456,7 +471,7 @@
 			}
 
 			&:before{
-				content: "\f055";
+				content: "\f05a";
 				font-family: "FontAwesome";
 				width: 30px;
 				display: inline-block;
@@ -465,16 +480,16 @@
 
 				@media all and(max-width: $breakpoint-tablet){
 					width: 20px;
-					margin-right: 5px;
+					// margin-right: 15px;
 				}
-				@media all and(max-width: $breakpoint-tablet){
-					width: 16px;
+				@media all and(max-width: $breakpoint-mobile){
+					width: 10px;
 				}
 			}
 
-			&--ticket:before{
-				content: "\f145";
-			}
+			// &--ticket:before{
+			// 	content: "\f05a";
+			// }
 
 			&-hovericon{
 				display: none;
@@ -484,11 +499,11 @@
 				display: inline-block;
 			}
 
-			&:hover{
+			&--ticket:hover{
 				color: $text-color;
 
 				&:before{
-					content: "\f05a";
+					content: "\f145";
 				}
 			}
 		}
@@ -496,24 +511,50 @@
 		&-title{
 			font-weight: 900;
 			width: 100%;
+
+			@media all and(max-width: $breakpoint-tablet){
+				padding-bottom: 6px;
+			}
 			// background-color: yellow;
 		}
 		&-price{
 			text-align: right;
-			padding: 0 30px;
+
 
 			@media all and(max-width: $breakpoint-mobile){
-				padding: 0 10px;
+
+				text-align: left;
+				font-size: 20px;
 			}
 
 			& span{
+				font-size: 14px;
 				display: block;
-				font-size: 13px;
 				color: #fff;
+				white-space: nowrap;
+
+				@media all and(max-width: $breakpoint-mobile){
+					font-size: 10px;
+					display: inline-block;
+				}
 			}
 		}
 		&-add{
+			// background: yellow;
 
+
+
+			@media all and(max-width: $breakpoint-tablet){
+
+
+
+				& .button-add{
+					min-width: 100px;
+					height: 30px;
+					line-height: 30px;
+					padding: 0;
+				}
+			}
 		}
 
 		&-details{

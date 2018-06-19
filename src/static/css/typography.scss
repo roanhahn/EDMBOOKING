@@ -1,7 +1,7 @@
 body,html{
 	height: 100%;
 	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
-	
+
 	cursor: default;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: auto;
@@ -179,7 +179,7 @@ a, a:hover, a:visited, a:active{
 
 
 	@media all and (max-width: $breakpoint-tablet){
-		
+
 	}
 	@media all and (max-width: $breakpoint-mobile){
 		font-size: 18px;
@@ -206,7 +206,7 @@ a, a:hover, a:visited, a:active{
 
 	}
 
-	
+
 }
 h3.extras{
 	font-size: 32px;
@@ -229,10 +229,10 @@ h3.extras{
 }
 .p{
 	line-height: 1.6;
-	@media all and (max-width: $breakpoint-mobile){
-		font-size: 14px;
-		line-height: 1.4;
-	}
+	// @media all and (max-width: $breakpoint-mobile){
+	// 	font-size: 14px;
+	// 	line-height: 1.4;
+	// }
 
 	& ul{
 		padding: 0;
@@ -259,6 +259,10 @@ h3.extras{
 	font-weight: 800;
 	// letter-spacing: 1px;
 	margin: 0 0 30px;
+
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 14px;
+	}
 }
 
 .testimonials{
@@ -296,11 +300,11 @@ h3.extras{
 	}
 
 	& .owl-theme .owl-dots .owl-dot.active span, & .owl-theme .owl-dots .owl-dot:hover span{
-		background: $testimonial-activedot;	
+		background: $testimonial-activedot;
 	}
 
 	& .owl-theme .owl-dots .owl-dot span{
-		background: $testimonial-inactivedot;	
+		background: $testimonial-inactivedot;
 	}
 }
 .rolling{
@@ -423,7 +427,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 
 .succes{
-	
+
 	text-align: center;
 
 	& h3{
@@ -479,7 +483,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 			}
 
 			@media (max-width: $breakpoint-mobile){
-				
+
 				// padding: 10px 5px;
 			}
 		}
@@ -524,7 +528,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 .myBooking{
-	
+
 
 	&-header{
 		background: #e6e6e6;
@@ -624,7 +628,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		// margin-top: 20px;
 		margin-bottom: 20px;
 	}
-	
+
 	& .content{
 		padding: 20px 0;
 		margin-bottom: 30px;
@@ -636,7 +640,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		background: #000;
 	}
 
-	
+
 
 	& h3{
 		// background: #000;

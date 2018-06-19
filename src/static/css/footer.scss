@@ -247,8 +247,8 @@ footer{
 	border: $cookies-border;
 
 	-ms-transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 
 	& a{
 		color: $text-color;
@@ -273,6 +273,7 @@ footer{
 		& .icon{
 			width: 30px;
 			height: auto;
+
 		}
 
 		& #cross-remove-sign{

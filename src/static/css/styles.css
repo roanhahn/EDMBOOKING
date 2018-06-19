@@ -202,10 +202,6 @@ h3.extras {
 
 .p {
   line-height: 1.6; }
-  @media all and (max-width: 767px) {
-    .p {
-      font-size: 14px;
-      line-height: 1.4; } }
   .p ul {
     padding: 0;
     margin: 20px 0 20px 18px; }
@@ -229,6 +225,9 @@ h3.extras {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
+  @media all and (max-width: 767px) {
+    .testimonials-h4 {
+      font-size: 14px; } }
 
 .testimonials {
   background: #000;
@@ -1024,16 +1023,21 @@ h3.extras {
   margin: 0 0 30px;
   padding: 0;
   color: #419bf7; }
+  .extra-add {
+    position: relative; }
   .extra-number {
     background: #fff;
     position: relative;
+    float: right;
     height: 44px;
+    width: 100%;
     min-width: 132px;
-    width: 100%; }
-    @media all and (max-width: 767px) {
+    width: 100%;
+    max-width: 150px; }
+    @media all and (max-width: 992px) {
       .extra-number {
         min-width: 100px;
-        width: 100%;
+        max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
       background: #419bf7;
@@ -1047,7 +1051,7 @@ h3.extras {
       top: 0;
       padding: 0;
       letterspacing: 0; }
-      @media all and (max-width: 767px) {
+      @media all and (max-width: 992px) {
         .extra-number .manage-button {
           height: 30px;
           width: 30px; } }
@@ -1065,7 +1069,7 @@ h3.extras {
       font-size: 16px;
       line-height: 44px;
       font-weight: 800; }
-      @media all and (max-width: 767px) {
+      @media all and (max-width: 992px) {
         .extra-number-items {
           height: 30px;
           line-height: 30px;
@@ -1076,20 +1080,10 @@ h3.extras {
     padding: 10px 0; }
     @media all and (max-width: 992px) {
       .extra-listitem {
-        font-size: 20px; } }
+        font-size: 24px; } }
     @media all and (max-width: 767px) {
       .extra-listitem {
-        font-size: 15px; } }
-  .extra-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center; }
-    .extra-item div {
-      flex-grow: 1;
-      vertical-align: middle;
-      white-space: nowrap; }
+        font-size: 17px; } }
   .extra i {
     margin-right: 10px;
     font-weight: normal; }
@@ -1099,12 +1093,14 @@ h3.extras {
     padding: 0;
     display: inline-block;
     margin-right: 10px;
-    font-weight: 900; }
+    font-weight: 900;
+    white-space: normal;
+    text-align: left; }
     @media all and (max-width: 767px) {
       .extra-btn {
         margin-right: 5px; } }
     .extra-btn:before {
-      content: "\f055";
+      content: "\f05a";
       font-family: "FontAwesome";
       width: 30px;
       display: inline-block;
@@ -1112,34 +1108,45 @@ h3.extras {
       text-align: center; }
       @media all and (max-width: 992px) {
         .extra-btn:before {
-          width: 20px;
-          margin-right: 5px; } }
-      @media all and (max-width: 992px) {
+          width: 20px; } }
+      @media all and (max-width: 767px) {
         .extra-btn:before {
-          width: 16px; } }
-    .extra-btn--ticket:before {
-      content: "\f145"; }
+          width: 10px; } }
     .extra-btn-hovericon {
       display: none; }
     .extra-btn-icon {
       display: inline-block; }
-    .extra-btn:hover {
+    .extra-btn--ticket:hover {
       color: #fff; }
-      .extra-btn:hover:before {
-        content: "\f05a"; }
+      .extra-btn--ticket:hover:before {
+        content: "\f145"; }
   .extra-title {
     font-weight: 900;
     width: 100%; }
+    @media all and (max-width: 992px) {
+      .extra-title {
+        padding-bottom: 6px; } }
   .extra-price {
-    text-align: right;
-    padding: 0 30px; }
+    text-align: right; }
     @media all and (max-width: 767px) {
       .extra-price {
-        padding: 0 10px; } }
+        text-align: left;
+        font-size: 20px; } }
     .extra-price span {
+      font-size: 14px;
       display: block;
-      font-size: 13px;
-      color: #fff; }
+      color: #fff;
+      white-space: nowrap; }
+      @media all and (max-width: 767px) {
+        .extra-price span {
+          font-size: 10px;
+          display: inline-block; } }
+  @media all and (max-width: 992px) {
+    .extra-add .button-add {
+      min-width: 100px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0; } }
   .extra-details {
     font-size: 16px;
     color: #fff;
@@ -1252,8 +1259,7 @@ button {
   -webkit-transition: all .15s ease-out 0s;
   border-radius: 0px;
   box-shadow: none !important;
-  cursor: pointer;
-  cursor: pointer;
+  cursor: pointer !important;
   display: inline-block;
   font-family: "Prompt", sans-serif;
   font-size: 17px;
@@ -1451,7 +1457,9 @@ button {
     font-size: 30px;
     padding: 20px 40px; }
   .button-add {
-    min-width: 132px; }
+    min-width: 132px;
+    max-width: 150px;
+    width: 100%; }
     @media all and (max-width: 767px) {
       .button-add {
         min-width: 119px; }
@@ -1569,6 +1577,95 @@ button:focus {
   top: 0px;
   margin-right: 8px; }
 
+.hamburger {
+  padding: 0px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 20px;
+  overflow: visible; }
+  @media all and (max-width: 767px) {
+    .hamburger {
+      margin-left: 5px;
+      -ms-transform: scale(0.7, 0.7);
+      /* IE 9 */
+      -webkit-transform: scale(0.7, 0.7);
+      /* Safari */
+      transform: scale(0.7, 0.7); } }
+  .hamburger:hover {
+    opacity: 1; }
+
+body.scrolled .hamburger {
+  -ms-transform: scale(0.7, 0.7);
+  /* IE 9 */
+  -webkit-transform: scale(0.7, 0.7);
+  /* Safari */
+  transform: scale(0.7, 0.7); }
+
+.hamburger-box {
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -3px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 0px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -12px; }
+  .hamburger-inner::after {
+    bottom: -12px; }
+
+/*
+   * Collapse
+   */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -24px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -12px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
 .header {
   background: #e6e6e6;
   color: #000;
@@ -1642,7 +1739,7 @@ button:focus {
     @media all and (max-width: 767px) {
       .mainnav .booking {
         font-size: 16px; } }
-  .mainnav .hamburger {
+  .mainnav .hamburger-oud {
     padding: 0;
     content: '';
     width: 38px;
@@ -1656,26 +1753,26 @@ button:focus {
     cursor: pointer;
     background: transparent url(../img/menu-black.svg) no-repeat 0 0 scroll;
     background-size: auto 30px;
-    -webkit-transition: all .2s ease-out 0s;
-    transition: all .2s ease-out 0s;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
     border: none !important; }
-    .mainnav .hamburger-close {
+    .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
-    .mainnav .hamburger:hover {
+    .mainnav .hamburger-oud:hover {
       color: #419bf7; }
     @media all and (max-width: 767px) {
-      .mainnav .hamburger {
+      .mainnav .hamburger-oud {
         margin-left: 10px;
         background-size: auto 20px;
         height: 20px;
         width: 25px; }
-        .mainnav .hamburger-close {
+        .mainnav .hamburger-oud-close {
           background-position: -26px 0; } }
-    .mainnav .hamburger img {
+    .mainnav .hamburger-oud img {
       height: 30px;
       width: auto; }
       @media all and (max-width: 767px) {
-        .mainnav .hamburger img {
+        .mainnav .hamburger-oud img {
           height: 20px; } }
 
 .subnav {
@@ -1798,6 +1895,23 @@ button:focus {
       .yourbooking .total {
         font-size: 17px !important;
         white-space: nowrap; } }
+  .yourbooking-close {
+    background: none;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    float: right; }
+    .yourbooking-close:hover {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Safari */
+      transform: rotate(90deg); }
+    .yourbooking-close .icon {
+      width: 100%;
+      height: auto; }
+    .yourbooking-close #cross-remove-sign {
+      fill: #fff; }
 
 .yourbooking-summary {
   width: 100%; }
@@ -1894,12 +2008,12 @@ body.scrolled .subnav, body.scrolled .yourbooking {
   top: 50px; }
 body.scrolled .logo img {
   height: 20px; }
-body.scrolled .hamburger {
+body.scrolled .hamburger-oud {
   margin-left: 10px;
   background-size: auto 20px;
   height: 20px;
   width: 25px; }
-  body.scrolled .hamburger-close {
+  body.scrolled .hamburger-oud-close {
     background-position: -26px 0; }
 
 .hero {
@@ -2246,7 +2360,7 @@ body.scrolled .hamburger {
 .error-icon {
   color: #dc3545 !important; }
 
-.is-invalid {
+.is-invalid, .selectric-is-invalid .selectric {
   background: #dc3545 !important;
   border: 1px solid #dc3545 !important;
   color: #fff !important;
@@ -2256,8 +2370,12 @@ body.scrolled .hamburger {
   -webkit-text-fill-color: #fff !important;
   -moz-text-fill-color: #fff !important;
   text-fill-color: #fff !important; }
+  .is-invalid .button-selectric, .selectric-is-invalid .selectric .button-selectric {
+    background: #dc3545 !important; }
+    .is-invalid .button-selectric:after, .selectric-is-invalid .selectric .button-selectric:after {
+      border-top-color: #fff; }
 
-.is-valid {
+.is-valid, .selectric-is-valid .selectric {
   background: #28a745 !important;
   border: 1px solid #28a745 !important;
   color: #fff !important;
@@ -2267,6 +2385,10 @@ body.scrolled .hamburger {
   -webkit-text-fill-color: #fff !important;
   -moz-text-fill-color: #fff !important;
   text-fill-color: #fff !important; }
+  .is-valid .button-selectric, .selectric-is-valid .selectric .button-selectric {
+    background: #28a745 !important; }
+    .is-valid .button-selectric:after, .selectric-is-valid .selectric .button-selectric:after {
+      border-top-color: #fff; }
 
 .login .input {
   display: block;
@@ -2799,8 +2921,8 @@ footer {
     width: 100%;
     overflow: hidden;
     padding-bottom: 75%;
-    -webkit-transition: all .2s ease-in-out 0s;
-    transition: all .2s ease-in-out 0s; }
+    -webkit-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s; }
     @media all and (max-width: 767px) {
       .event-thumb {
         padding-bottom: 60% !important; } }

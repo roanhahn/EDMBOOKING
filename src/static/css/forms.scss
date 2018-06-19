@@ -5,7 +5,7 @@
 		display: inline-block;
 		width: 100%;
 	}
-	
+
 	& input{
 		background: $footer-text;
 		border: none;
@@ -90,7 +90,7 @@
 }
 .form-check-input{
 	margin: 0;
-	
+
 }
 .form-check-label{
 	padding: 0 0 0 23px;
@@ -175,7 +175,7 @@
 .error-icon{
 	color: #dc3545 !important;
 }
-.is-invalid{
+.is-invalid, .selectric-is-invalid .selectric{
 	background: #dc3545 !important;
 	border: 1px solid #dc3545 !important;
 	// color: #dc3545 !important;
@@ -186,9 +186,17 @@
 	-webkit-text-fill-color: #fff !important;
 	-moz-text-fill-color: #fff !important;
 	text-fill-color: #fff !important;
+
+	& .button-selectric{
+		background: #dc3545 !important;
+
+		&:after{
+			border-top-color: #fff;
+		}
+	}
 }
 
-.is-valid{
+.is-valid, .selectric-is-valid .selectric{
 	background: #28a745 !important;
 	border: 1px solid #28a745 !important;
 	// color: #28a745 !important;
@@ -199,6 +207,14 @@
 	-webkit-text-fill-color: #fff !important;
 	-moz-text-fill-color: #fff !important;
 	text-fill-color: #fff !important;
+
+	& .button-selectric{
+		background: #28a745 !important;
+
+		&:after{
+			border-top-color: #fff;
+		}
+	}
 }
 
 .login{

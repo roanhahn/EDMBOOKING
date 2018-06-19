@@ -95,7 +95,8 @@ layout: mail.hbs
     	background-color: #419bf7;
     	text-align: center;
     	padding: 40px 20px;
-    	background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
+    	background-image: url(https://roanhahn.github.io/EDMBOOKING/assets/img/mail-header.jpg);
+        background-blend-mode: multiply;
     	background-repeat: no-repeat;
     	background-size: cover;
     	background-position: center center;
@@ -160,7 +161,7 @@ layout: mail.hbs
     	line-height: 21px;
     	padding: 3px 0;
     	vertical-align: top;
-    	width: 100%;
+    	/*width: auto;*/
     }
     .price{
     	text-align: right;
@@ -262,7 +263,7 @@ layout: mail.hbs
     @media only screen and (max-width: 600px) {
 
     	/* What it does: Adjust typography on small screens to improve readability */
-    	
+
     	.logo-img{
 	    	width: 100px !important;
 	    }
@@ -305,7 +306,7 @@ layout: mail.hbs
 
     <!-- Visually Hidden Preheader Text : BEGIN -->
     <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-    	Your booking information for Martin Garrix Las Vegas 14 december 2018 
+    	Your booking information for Martin Garrix Las Vegas 14 december 2018
     </div>
     <!-- Visually Hidden Preheader Text : END -->
 
@@ -332,7 +333,7 @@ layout: mail.hbs
             <table role="presentation" ccellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" class="header">
             	<tr>
             		<td class="logo">
-            			<img src="https://roanhahn.github.io/EDMbassy/assets/img/logo-edmbassy.svg" alt="" class="logo-img">
+            			<img src="http://travel.edmbooking.com/assets/img/edmbooking/logo.svg" alt="" class="logo-img">
             		</td>
             		<td class="header-text">
             			Your booking details
@@ -464,14 +465,20 @@ layout: mail.hbs
             				<tr>
             					<td class="content">
             						<table class="content-table" cellspacing="0" cellpadding="0" border="0">
+                                        <tr>
+                                            <td class="content-table-td" width="150"><strong>Room</strong></td>
+                                            <td class="content-table-td">1x Twin Room</td>
+                                            <td class="content-table-td price" width="150">&euro; 62.00</td>
+                                        </tr>
             							<tr>
             								<td class="content-table-td" width="150"><strong>Ticket</strong></td>
-            								<td class="content-table-td">2x Family Ticket</td>
+            								<td class="content-table-td" colspan="2">2x Family Ticket</td>
             							</tr>
             							<tr>
             								<td class="content-table-td" width="150"><strong>Download ticket</strong></td>
-            								<td class="content-table-td"><a href="" class="link">Download here</a></td>
+            								<td class="content-table-td" colspan="2"><a href="" class="link">Download here</a></td>
             							</tr>
+
             						</table>
             					</td>
             				</tr>
@@ -595,7 +602,7 @@ layout: mail.hbs
 
             	<tr>
             		<td class="line">
-            			
+
             		</td>
             	</tr>
 
