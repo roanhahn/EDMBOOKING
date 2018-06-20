@@ -176,16 +176,16 @@
 	color: #dc3545 !important;
 }
 .is-invalid, .selectric-is-invalid .selectric{
-	background: #dc3545 !important;
+	background: #f8d7da !important;
 	border: 1px solid #dc3545 !important;
-	// color: #dc3545 !important;
-	color: #fff !important;
-	-webkit-box-shadow: 0 0 0 30px #dc3545 inset !important;
-	-moz-box-shadow: 0 0 0 30px #dc3545 inset !important;
-	box-shadow: 0 0 0 30px #dc3545 inset !important;
-	-webkit-text-fill-color: #fff !important;
-	-moz-text-fill-color: #fff !important;
-	text-fill-color: #fff !important;
+	color: #dc3545 !important;
+	// color: #fff !important;
+	-webkit-box-shadow: 0 0 0 30px #f8d7da inset !important;
+	-moz-box-shadow: 0 0 0 30px #f8d7da inset !important;
+	box-shadow: 0 0 0 30px #f8d7da inset !important;
+	-webkit-text-fill-color: #dc3545 !important;
+	-moz-text-fill-color: #dc3545 !important;
+	text-fill-color: #dc3545 !important;
 
 	& .button-selectric{
 		background: #dc3545 !important;
@@ -197,24 +197,28 @@
 }
 
 .is-valid, .selectric-is-valid .selectric{
-	background: #28a745 !important;
-	border: 1px solid #28a745 !important;
+	background: #000 !important;
+	border: 1px solid #03C9A9 !important;
 	// color: #28a745 !important;
-	color: #fff !important;
-	-webkit-box-shadow: 0 0 0 30px #28a745 inset !important;
-	-moz-box-shadow: 0 0 0 30px #28a745 inset !important;
-	box-shadow: 0 0 0 30px #28a745 inset !important;
-	-webkit-text-fill-color: #fff !important;
-	-moz-text-fill-color: #fff !important;
-	text-fill-color: #fff !important;
+	color: #03C9A9 !important;
+	-webkit-box-shadow: 0 0 0 30px #fff inset !important;
+	-moz-box-shadow: 0 0 0 30px #fff inset !important;
+	box-shadow: 0 0 0 30px #fff inset !important;
+	-webkit-text-fill-color: #000 !important;
+	-moz-text-fill-color: #000 !important;
+	text-fill-color: #000 !important;
 
 	& .button-selectric{
-		background: #28a745 !important;
+		background: #03C9A9 !important;
 
 		&:after{
 			border-top-color: #fff;
 		}
 	}
+}
+
+.valid-feedback{
+	color: #03C9A9;
 }
 
 .login{

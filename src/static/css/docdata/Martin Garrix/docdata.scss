@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-$header: #000;
+$header: #bbe7df;
 $color-1: #bbe7df; /* blue */
 $color-2: #bbe7df; /* blue */
 $color-3: #e6e7e8; /* grey */
@@ -24,7 +24,8 @@ box-shadow: none;
 }
 /* sets the standard font */
 a{
-	color: $color-2;
+	color: #000;
+	text-decoration: underline;
 	cursor:pointer;
 }
 body {
@@ -86,9 +87,9 @@ select{
 	margin:0 auto;
 }
 .merchantHeader img{
-	max-height:80px;
+	max-height:50px;
 	position:absolute;
-	top:30px;
+	top:25px;
 }
 .shop_logo{
 	background: url("img/basesheet.png") repeat scroll 0 0 transparent;
@@ -291,7 +292,7 @@ select{
 	background-position: 230px center !important;
 	background-repeat: no-repeat !important;
 	font-size:16px !important;
-	color:#fff !important;
+	color:#000 !important;
 	display:block !important;
 	margin:0 0 0 180px;
 	width:225px !important;
@@ -305,6 +306,7 @@ select{
 	font-family: $headerfont;
 	font-weight: 800;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 .form .forwardBtn:hover, .dialogContent a:hover{
 	background-image: url('../images/mobile/white-arrow-right.png') !important;
