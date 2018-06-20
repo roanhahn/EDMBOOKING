@@ -74,6 +74,7 @@ button{
 		font-size: 18px;
 		min-width: 150px;
 		border: none;
+		border-radius: $button-radius;
 
 		&:hover{
 			background: $button-bg-hover;
@@ -161,13 +162,19 @@ button{
 	}
 
 	&-hero{
-		background: rgba(0,0,0,.7);
-		border: 2px solid #fff;
-		padding: 20px 50px;
-		text-transform: uppercase;
-		color: #fff;
-		display: inline-block;
+		// background: rgba(0,0,0,.7);
+		// border: 2px solid #fff;
+		// padding: 20px 50px;
+		// text-transform: uppercase;
+		// color: #fff;
+		// display: inline-block;
 		margin: 15px;
+		font-size: $hero-button-size;
+		min-width: $hero-button-width;
+		padding: $hero-button-padding;
+		-webkit-box-shadow: 3px 4px 31px -8px rgba(0,0,0,0.61);
+		-moz-box-shadow: 3px 4px 31px -8px rgba(0,0,0,0.61);
+		box-shadow: 3px 4px 31px -8px rgba(0,0,0,0.61);
 
 		@media all and (max-width: $breakpoint-tablet){
 			padding: 15px 50px;
@@ -175,8 +182,17 @@ button{
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			display: block;
-			padding: 15px 50px;
-			margin: 0 0 10px;
+			font-size: 19px;
+		}
+
+		& span{
+			display: block;
+			font-weight: 400;
+			font-size: 70%;
+			margin-top: 10px;
+			@media all and (max-width: $breakpoint-mobile){
+				margin-top: 5px;
+			}
 		}
 
 		& .first-line{
@@ -203,8 +219,7 @@ button{
 		}
 
 		&:hover{
-			background: $link-color;
-			color: #fff;
+
 		}
 		&:hover .first-line:after{
 			background: #fff;

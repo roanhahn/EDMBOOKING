@@ -39,6 +39,7 @@ $button-bg: #419bf7;
 $button-color: #fff;
 $button-bg-hover: #fff;
 $button-color-hover: #000;
+$button-radius: 0px;
 
 /* BACK BUTTON */
 $button-back-bg: rgba(0,0,0,.5);
@@ -65,6 +66,7 @@ $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
 /* HEADER */
+$hamburger-layer-color: #000 !default;
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 30px;
@@ -93,11 +95,16 @@ $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
 $subnav-border: 1px solid rgba(255,255,255,.3);
 
 /* HERO */
+$hero-padding: 250px 0;
+$hero-padding-mobile: 150px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,0.1);
 $font-hero-small: 'Roboto', sans-serif;
 $hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
 
 /* Testimonials */
 $testimonial-bg: #000;
