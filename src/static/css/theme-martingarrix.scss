@@ -29,7 +29,7 @@ $white-filter: rgba(236,236,236,0);
 $red-filter: rgba(255,55,0,0);
 $grey-filter: rgba(50,50,50,0.2);
 $filter-opacity: 0.5;
-$video-opacity: rgba(30,61,79,.2);
+$video-opacity: rgba(0,0,0,.5);
 $video-filter:  none; //grayscale(100%);
 
 /* BUTTONS */
@@ -95,8 +95,8 @@ $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
 $subnav-border: 1px solid rgba(255,255,255,.3);
 
 /* HERO */
-$hero-padding: 250px 0;
-$hero-padding-mobile: 150px 0;
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,0.2);

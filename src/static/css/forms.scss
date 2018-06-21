@@ -178,14 +178,14 @@
 .is-invalid, .selectric-is-invalid .selectric{
 	background: #f8d7da !important;
 	border: 1px solid #dc3545 !important;
-	color: #dc3545 !important;
+	color: #000 !important;
 	// color: #fff !important;
 	-webkit-box-shadow: 0 0 0 30px #f8d7da inset !important;
 	-moz-box-shadow: 0 0 0 30px #f8d7da inset !important;
 	box-shadow: 0 0 0 30px #f8d7da inset !important;
-	-webkit-text-fill-color: #dc3545 !important;
-	-moz-text-fill-color: #dc3545 !important;
-	text-fill-color: #dc3545 !important;
+	-webkit-text-fill-color: #000 !important;
+	-moz-text-fill-color: #000 !important;
+	text-fill-color: #000 !important;
 
 	& .button-selectric{
 		background: #dc3545 !important;
@@ -198,7 +198,7 @@
 
 .is-valid, .selectric-is-valid .selectric{
 	background: #000 !important;
-	border: 1px solid #03C9A9 !important;
+	border: 1px solid #0cc36f !important;
 	// color: #28a745 !important;
 	color: #03C9A9 !important;
 	-webkit-box-shadow: 0 0 0 30px #fff inset !important;
@@ -209,7 +209,7 @@
 	text-fill-color: #000 !important;
 
 	& .button-selectric{
-		background: #03C9A9 !important;
+		background: #0cc36f !important;
 
 		&:after{
 			border-top-color: #fff;
@@ -218,7 +218,7 @@
 }
 
 .valid-feedback{
-	color: #03C9A9;
+	color: #0cc36f;
 }
 
 .login{

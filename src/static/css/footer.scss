@@ -34,7 +34,9 @@ footer{
 
 		& li{
 			margin-bottom: 5px;
-
+			@media all and (max-width: $breakpoint-tablet){
+				font-size: 14px;
+			}
 			@media all and (max-width: $breakpoint-mobile){
 				// font-size: 14px;
 				// margin-bottom: 3px;

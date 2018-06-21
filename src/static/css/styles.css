@@ -32,6 +32,7 @@
 @import url(odometer-theme-default.css);
 body, html {
   height: 100%;
+  min-height: 100%;
   -webkit-overflow-scrolling: touch;
   /* lets it scroll lazy */
   cursor: default;
@@ -1374,7 +1375,8 @@ button {
   .button-hero {
     margin: 15px;
     font-size: 24px;
-    min-width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding: 30px;
     -webkit-box-shadow: 3px 4px 31px -8px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 3px 4px 31px -8px rgba(0, 0, 0, 0.61);
@@ -1382,7 +1384,7 @@ button {
     @media all and (max-width: 992px) {
       .button-hero {
         padding: 15px 50px;
-        margin: 10px; } }
+        margin: 10px auto; } }
     @media all and (max-width: 767px) {
       .button-hero {
         display: block;
@@ -2067,17 +2069,48 @@ body.scrolled .hamburger-oud {
     left: 0;
     right: 0;
     z-index: 10;
-    padding: 250px 0; }
+    padding: 150px 0; }
     @media all and (max-width: 992px) {
       .hero .inner {
-        padding: 150px 0; } }
+        padding: 100px 0; } }
   .hero-buttons {
     margin: 40px 0 0 0; }
     @media all and (max-width: 992px) {
       .hero-buttons {
         margin: 10px 0 0 0; } }
+  .hero-scroll {
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+    .hero-scroll span {
+      display: block;
+      padding-bottom: 10px;
+      font-family: "Prompt", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+    .hero-scroll .bar {
+      width: 5px;
+      background: #fff;
+      height: 100px;
+      content: "";
+      margin: 0 auto; }
+      @media all and (max-width: 767px) {
+        .hero-scroll .bar {
+          height: 50px; } }
   .hero-fullscreen {
-    height: 100%; }
+    height: calc(95vh - 90px);
+    min-height: 600px; }
+    @media all and (max-width: 767px) {
+      .hero-fullscreen {
+        height: calc(85vh - 50px);
+        min-height: 300px; } }
     .hero-fullscreen .inner {
       position: relative;
       width: 100%;
@@ -2137,7 +2170,7 @@ body.scrolled .hamburger-oud {
   background-size: cover; }
   .videowrapper:before {
     content: "";
-    background: rgba(30, 61, 79, 0.2);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     right: 0;
     top: 0;
@@ -2166,6 +2199,9 @@ body.scrolled .hamburger-oud {
   pointer-events: none;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
+  @media (max-width: 992px) {
+    .videoplayer {
+      display: none; } }
 
 .footer-subscribe .inner {
   vertical-align: middle;
@@ -2314,13 +2350,13 @@ body.scrolled .hamburger-oud {
 .is-invalid, .selectric-is-invalid .selectric {
   background: #f8d7da !important;
   border: 1px solid #dc3545 !important;
-  color: #dc3545 !important;
+  color: #000 !important;
   -webkit-box-shadow: 0 0 0 30px #f8d7da inset !important;
   -moz-box-shadow: 0 0 0 30px #f8d7da inset !important;
   box-shadow: 0 0 0 30px #f8d7da inset !important;
-  -webkit-text-fill-color: #dc3545 !important;
-  -moz-text-fill-color: #dc3545 !important;
-  text-fill-color: #dc3545 !important; }
+  -webkit-text-fill-color: #000 !important;
+  -moz-text-fill-color: #000 !important;
+  text-fill-color: #000 !important; }
   .is-invalid .button-selectric, .selectric-is-invalid .selectric .button-selectric {
     background: #dc3545 !important; }
     .is-invalid .button-selectric:after, .selectric-is-invalid .selectric .button-selectric:after {
@@ -2328,7 +2364,7 @@ body.scrolled .hamburger-oud {
 
 .is-valid, .selectric-is-valid .selectric {
   background: #000 !important;
-  border: 1px solid #03C9A9 !important;
+  border: 1px solid #0cc36f !important;
   color: #03C9A9 !important;
   -webkit-box-shadow: 0 0 0 30px #fff inset !important;
   -moz-box-shadow: 0 0 0 30px #fff inset !important;
@@ -2337,12 +2373,12 @@ body.scrolled .hamburger-oud {
   -moz-text-fill-color: #000 !important;
   text-fill-color: #000 !important; }
   .is-valid .button-selectric, .selectric-is-valid .selectric .button-selectric {
-    background: #03C9A9 !important; }
+    background: #0cc36f !important; }
     .is-valid .button-selectric:after, .selectric-is-valid .selectric .button-selectric:after {
       border-top-color: #fff; }
 
 .valid-feedback {
-  color: #03C9A9; }
+  color: #0cc36f; }
 
 .login .input {
   display: block;
@@ -2653,6 +2689,9 @@ footer {
     margin: 0; }
     footer ul li {
       margin-bottom: 5px; }
+      @media all and (max-width: 992px) {
+        footer ul li {
+          font-size: 14px; } }
   footer span.icon {
     width: 18px;
     margin-right: 7px;

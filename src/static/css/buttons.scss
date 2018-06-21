@@ -170,7 +170,8 @@ button{
 		// display: inline-block;
 		margin: 15px;
 		font-size: $hero-button-size;
-		min-width: $hero-button-width;
+		width: 100%;
+		max-width: $hero-button-width;
 		padding: $hero-button-padding;
 		-webkit-box-shadow: 3px 4px 31px -8px rgba(0,0,0,0.61);
 		-moz-box-shadow: 3px 4px 31px -8px rgba(0,0,0,0.61);
@@ -178,7 +179,7 @@ button{
 
 		@media all and (max-width: $breakpoint-tablet){
 			padding: 15px 50px;
-			margin: 10px;
+			margin: 10px auto;
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			display: block;
