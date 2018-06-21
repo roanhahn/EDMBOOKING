@@ -5,7 +5,7 @@ layout: default.hbs
 ---
 
 
-<div class="hero hero-event hero--blue" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
+<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -19,6 +19,10 @@ layout: default.hbs
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="hero-scroll scrollTo" data-target="#eventinfo">
+		<span>Scroll</span>
+		<div class="bar"></div>
 	</div>
 </div>
 
@@ -64,7 +68,7 @@ layout: default.hbs
 		<h3 class="h3 h3--big text-center">Event information</h3>
 		<div class="row">
 			<div class="event-info-wrapper">
-				
+
 				<div class="event-info-item">
 					{{!-- <div class="img-container ratio-4-3">
 						<img data-src="http://via.placeholder.com/800x600" class="img-fluid lazyload" alt="">
@@ -113,7 +117,7 @@ layout: default.hbs
 	</div>
 </section>
 {{> testimonials }}
-{{!-- 
+{{!--
 <div class="hero hero-event hero--blue" style="background-image: url(assets/img/event-header.jpg)">
 	<div class="inner">
 		<div class="container">

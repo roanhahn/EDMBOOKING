@@ -160,7 +160,7 @@ function goBack() {
 $(".scrollTo").click(function() {
 	console.log($(this).data('target'));
 	$('html, body').animate({
-		scrollTop: $("#" + $(this).data('target')).offset().top-50
+		scrollTop: $($(this).data('target')).offset().top-49
 	}, 1000, 'easeInOutCubic');
 });
 
