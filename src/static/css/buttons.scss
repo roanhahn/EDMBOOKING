@@ -58,11 +58,7 @@ button{
 		font-size: 13px;
 	}
 
-	&--block{
-		display: block;
-		width: 100%;
-		float: none;
-	}
+
 
 	&-primary{
 		background: $button-bg;
@@ -161,6 +157,14 @@ button{
 
 	}
 
+	&--block{
+		display: block;
+		width: 100%;
+		float: none;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 	&-hero{
 		// background: rgba(0,0,0,.7);
 		// border: 2px solid #fff;
@@ -180,9 +184,12 @@ button{
 		@media all and (max-width: $breakpoint-tablet){
 			padding: 15px 50px;
 			margin: 10px auto;
+			max-width: 95%;
+			display: block;
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			display: block;
+			max-width: 100%;
 			font-size: 19px;
 		}
 
