@@ -227,7 +227,7 @@ function updateResult() {
 
 // var bodyHeight = $('.body').outerHeight();
 // var headerHeight = $('.header').outerHeight();
-var footerHeight = $('#footer').outerHeight();
+// var footerHeight = $('#footer').outerHeight();
 // var sectionHeight = $('.full-height').outerHeight();
 
 // console.log(bodyHeight-headerHeight-footerHeight);
@@ -504,7 +504,9 @@ $('#blaat').datepicker({
 });
 
 // YOUTUBE VIDEO
-
+var youtubeID = $('#hero-video').data('youtubecontent');
+var youtubeStart = $('#hero-video').data('starttime');
+var youtubeEnd = $('#hero-video').data('endtime');
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -512,28 +514,31 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
-			var starttime = 0;
-			var endtime = 8;
+			var starttime = youtubeStart;
+			var endtime = youtubeEnd;
 
 			var player;
 
+
+			// console.log(youtubeID);
+
 			function onYouTubeIframeAPIReady() {
 
-				player = new YT.Player('hero-video', {
-					videoId: 'Vs43pXLH1SY',
-					playerVars: {
-						controls: '0',
-						start: starttime,
-						end: endtime,
-						// playlist: 'iFUiPOtM2GE',
-						loop: 1
-					},
-					events: {
-						'onReady': onPlayerReady,
-						'onStateChange': onPlayerStateChange
-					}
-				});
-			}
+                player = new YT.Player('hero-video', {
+                    videoId: youtubeID,
+                    playerVars: {
+                        controls: '0',
+                        start: starttime,
+                        end: endtime,
+                        playlist: youtubeID,
+                        loop: 1
+                    },
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
 			// 4. The API will call this function when the video player is ready.
 			function onPlayerReady(event) {
 				event.target.seekTo(starttime);
@@ -592,4 +597,22 @@ setTimeout(function() {
 }, 1500);
 
 
+
+// Make footer stick to bottom
+
+function stickyFooter(){
+	var bodyHeight = $('.body').outerHeight();
+	var headerHeight = $('.header').outerHeight();
+	var footerHeight = $('#footer').outerHeight();
+	var hf = bodyHeight - footerHeight - headerHeight;
+	// console.log(hf);
+
+	$('.main').css('min-height', hf + 'px');
+}
+
+stickyFooter();
+
+$( window ).resize(function() {
+  	stickyFooter();
+});
 
