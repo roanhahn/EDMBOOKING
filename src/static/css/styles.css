@@ -43,14 +43,14 @@ body, html {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #bbe7df; }
+  background: #a8cbc5; }
 
 ::selection {
   color: #fff;
-  background: #bbe7df; }
+  background: #a8cbc5; }
 
 body {
-  background: #2f4c5c;
+  background: #292929;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -72,9 +72,9 @@ h1, h2, h3, h4 {
   font-family: "Prompt", sans-serif; }
 
 a {
-  color: #bbe7df; }
+  color: #a8cbc5; }
   a:hover {
-    color: #bbe7df; }
+    color: #a8cbc5; }
 
 a, a:hover, a:visited, a:active {
   text-decoration: none;
@@ -83,15 +83,15 @@ a, a:hover, a:visited, a:active {
 
 .text-link, .page a {
   text-decoration: underline;
-  color: #bbe7df; }
+  color: #a8cbc5; }
   .text-link:hover, .page a:hover {
-    color: #bbe7df;
+    color: #a8cbc5;
     text-decoration: underline; }
 
 .h1 {
   text-transform: none;
   font-weight: 700;
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -131,7 +131,7 @@ a, a:hover, a:visited, a:active {
       margin-bottom: 15px; } }
 
 .h2 {
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
@@ -166,7 +166,7 @@ a, a:hover, a:visited, a:active {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 10px; }
   .h3--room {
-    color: #bbe7df; }
+    color: #a8cbc5; }
   @media all and (max-width: 767px) {
     .h3 {
       font-size: 18px;
@@ -240,7 +240,7 @@ h3.extras {
     margin: 0 auto; }
   .testimonials-title {
     font-family: "Prompt", sans-serif;
-    color: #bbe7df;
+    color: #a8cbc5;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 40px;
@@ -259,7 +259,7 @@ h3.extras {
     line-height: 1.2;
     color: #fff; }
   .testimonials .owl-theme .owl-dots .owl-dot.active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: #bbe7df; }
+    background: #a8cbc5; }
   .testimonials .owl-theme .owl-dots .owl-dot span {
     background: #fff; }
 
@@ -282,7 +282,7 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #bbe7df;
+  stroke: #a8cbc5;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
@@ -307,7 +307,7 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #bbe7df; } }
+    fill: #a8cbc5; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
@@ -357,9 +357,9 @@ h3.extras {
     width: 120px;
     margin-bottom: 30px; }
     .succes-icon #circle {
-      fill: #bbe7df; }
+      fill: #a8cbc5; }
     .succes-icon #check {
-      stroke: #bbe7df; }
+      stroke: #a8cbc5; }
     @media (max-width: 767px) {
       .succes-icon {
         width: 75px; } }
@@ -382,16 +382,16 @@ h3.extras {
         width: 130px !important; }
 
 .my-package {
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 22px;
   font-weight: 600; }
   .my-package .form-label {
-    color: #bbe7df !important; }
+    color: #a8cbc5 !important; }
   @media (max-width: 767px) {
     .my-package {
       font-size: 16px; } }
   .my-package-total {
-    border-top: 1px solid #bbe7df;
+    border-top: 1px solid #a8cbc5;
     font-weight: 800;
     text-transform: uppercase;
     margin: 15px 0 0 0;
@@ -627,10 +627,10 @@ h3.extras {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: #bbe7df; }
+    color: #a8cbc5; }
   .loader-bar {
     height: 10px;
-    background: #bbe7df;
+    background: #a8cbc5;
     width: 0px;
     -webkit-animation: move 30s ease-in-out infinite;
     -moz-animation: move 30s ease-in-out infinite;
@@ -719,7 +719,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: #2f4c5c url(../img/edmbooking/rolling.gif) center center no-repeat scroll;
+  background: #292929 url(../img/edmbooking/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -947,7 +947,7 @@ h3.extras {
       line-height: 1.6; }
 
 .googleMaps, .hotel-information {
-  color: #bbe7df; }
+  color: #a8cbc5; }
   .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
@@ -962,13 +962,13 @@ h3.extras {
       font-size: 14px; } }
 
 .showMap {
-  border-left: 1px solid #bbe7df;
+  border-left: 1px solid #a8cbc5;
   margin-left: 7px;
   padding-left: 10px;
   cursor: pointer; }
 
 .rating-wrapper {
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 15px;
   margin-bottom: 20px; }
   @media all and (max-width: 992px) {
@@ -981,13 +981,13 @@ h3.extras {
 .rating {
   display: inline-block;
   margin-top: 5px;
-  border-right: 1px solid #bbe7df;
+  border-right: 1px solid #a8cbc5;
   margin-right: 7px; }
   .rating i:last-child {
     margin-right: 10px; }
 
 .detail-price {
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -998,7 +998,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
-  color: #bbe7df;
+  color: #a8cbc5;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -1025,7 +1025,7 @@ h3.extras {
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
-  color: #bbe7df; }
+  color: #a8cbc5; }
   .extra-add {
     position: relative; }
   .extra-number {
@@ -1043,7 +1043,7 @@ h3.extras {
         max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
-      background: #bbe7df;
+      background: #a8cbc5;
       color: #000;
       height: 44px;
       width: 44px;
@@ -1092,7 +1092,7 @@ h3.extras {
     font-weight: normal; }
   .extra-btn {
     background: none;
-    color: #bbe7df;
+    color: #a8cbc5;
     padding: 0;
     display: inline-block;
     margin-right: 10px;
@@ -1194,8 +1194,8 @@ h3.extras {
   width: 140px;
   height: 140px;
   text-align: center;
-  background: #bbe7df;
-  border: 3px solid #bbe7df;
+  background: #fff;
+  border: 3px solid #fff;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1222,14 +1222,14 @@ h3.extras {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   .whybook-icon #icon {
-    fill: #2f4c5c; }
+    fill: #292929; }
 .whybook-number {
   border-radius: 50%;
   display: inline-block;
   width: 100px;
   height: 100px;
   line-height: 84px;
-  border: 8px solid #bbe7df;
+  border: 8px solid #a8cbc5;
   color: #fff;
   font-family: "Prompt", sans-serif;
   font-weight: 800;
@@ -1320,7 +1320,7 @@ button {
     .button {
       font-size: 13px; } }
   .button-primary {
-    background: #bbe7df;
+    background: #a8cbc5;
     color: #000;
     padding: 13px 25px;
     white-space: nowrap;
@@ -1329,7 +1329,7 @@ button {
     font-size: 18px;
     min-width: 150px;
     border: none;
-    border-radius: 7px; }
+    border-radius: 0px; }
     .button-primary:hover {
       background: #fff;
       color: #000; }
@@ -1346,7 +1346,7 @@ button {
       .button-primary {
         font-size: 13px; } }
     .button-primary--inverted {
-      background: #bbe7df;
+      background: #a8cbc5;
       color: #000; }
       .button-primary--inverted:hover {
         background: #000;
@@ -1368,7 +1368,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #bbe7df;
+        background: #a8cbc5;
         content: ""; }
       .button-primary--effect:after {
         position: absolute;
@@ -1438,7 +1438,7 @@ button {
         display: block;
         width: 70px;
         height: 4px;
-        background: #bbe7df;
+        background: #a8cbc5;
         content: "";
         margin: 7px auto; }
     .button-hero:hover .first-line:after {
@@ -1507,7 +1507,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #bbe7df;
+    background: #a8cbc5;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1525,11 +1525,11 @@ button {
       /* Safari */
       transform: translate(-50%, -50%); }
   .button-inversed {
-    border-color: #bbe7df; }
+    border-color: #a8cbc5; }
     .button-inversed:after {
       display: none; }
     .button-inversed:hover {
-      background: #bbe7df; }
+      background: #a8cbc5; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back:before {
@@ -1580,11 +1580,11 @@ button:focus {
   background: none;
   border: none;
   cursor: pointer;
-  color: #bbe7df;
+  color: #a8cbc5;
   padding: 0;
   line-height: 1.2; }
   .remove:hover {
-    color: #bbe7df; }
+    color: #a8cbc5; }
   .remove span {
     display: inline-block;
     margin-left: 5px; }
@@ -1603,7 +1603,7 @@ button:focus {
 
 .info-btn {
   background: none;
-  color: #bbe7df;
+  color: #a8cbc5;
   padding: 0;
   font-size: 18px;
   line-height: 0;
@@ -1762,7 +1762,7 @@ body.scrolled .hamburger {
           .mainnav .booking-info:before {
             margin-right: 4px; } }
       .mainnav .booking-info:hover {
-        color: #bbe7df; }
+        color: #a8cbc5; }
     .mainnav .booking-cart {
       font-family: "Prompt", sans-serif;
       text-transform: uppercase;
@@ -1794,7 +1794,7 @@ body.scrolled .hamburger {
     .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
     .mainnav .hamburger-oud:hover {
-      color: #bbe7df; }
+      color: #a8cbc5; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger-oud {
         margin-left: 10px;
@@ -1871,7 +1871,7 @@ body.scrolled .hamburger {
             color: #fff;
             display: block; }
             .subnav .subnav-list li ul li a:hover {
-              color: #bbe7df; }
+              color: #a8cbc5; }
   .subnav .contactDetails {
     font-size: 16px;
     font-weight: 400;
@@ -1887,7 +1887,7 @@ body.scrolled .hamburger {
     padding: 0;
     margin-top: 10px; }
     .subnav .social a {
-      background-color: #bbe7df;
+      background-color: #a8cbc5;
       color: #000; }
       .subnav .social a:hover {
         color: #000;
@@ -1895,7 +1895,7 @@ body.scrolled .hamburger {
 
 .yourbooking {
   display: none;
-  background: #2f4c5c;
+  background: #292929;
   position: absolute;
   top: 90px;
   bottom: 0;
@@ -1987,7 +1987,7 @@ body.scrolled .hamburger {
     font-size: 18px; }
 
 .notification {
-  background: #bbe7df;
+  background: #a8cbc5;
   text-align: center;
   color: #000;
   font-family: "Prompt", sans-serif;
@@ -2303,9 +2303,9 @@ body.scrolled .hamburger-oud {
   display: inline-block;
   width: 100%; }
 .footer-subscribe input {
-  background: #fff;
+  background: #000;
   border: none;
-  color: #171717;
+  color: #a8cbc5;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -2319,20 +2319,20 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #171717; }
+    color: #a8cbc5; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #171717; }
+    color: #a8cbc5; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #171717; }
+    color: #a8cbc5; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: #171717; }
+    color: #a8cbc5; }
 .footer-subscribe a.submit {
   border: none;
-  background: #fff;
-  color: #171717;
+  background: #000;
+  color: #a8cbc5;
   font-family: "Prompt", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -2421,8 +2421,7 @@ body.scrolled .hamburger-oud {
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0;
-  background: #e6e7e8;
-  border: 1px solid #fff;
+  background: #a8cbc5;
   color: #000; }
   @media all and (max-width: 992px) {
     .input-group-addon {
@@ -2577,7 +2576,7 @@ body.scrolled .hamburger-oud {
   width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #e6e7e8;
+  background-color: #a8cbc5;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -2750,19 +2749,19 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: #171717;
+  background-color: #a8cbc5;
   padding: 70px 0 70px;
-  color: #fff;
+  color: #000;
   border-top: 2px solid rgba(255, 255, 255, 0.3); }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: #bbe7df;
+    background: #a8cbc5;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #bbe7df 0%, #6cb5ff 100%);
+    background: -moz-linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #bbe7df 0%, #6cb5ff 100%);
+    background: -webkit-linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #bbe7df 0%, #6cb5ff 100%);
+    background: linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
@@ -2770,7 +2769,7 @@ footer {
   footer h4 {
     text-transform: uppercase;
     font: "Prompt", sans-serif;
-    color: #fff;
+    color: #000;
     font-weight: 700;
     margin: 0 0 20px;
     font-size: 24px; }
@@ -2793,9 +2792,9 @@ footer {
     text-align: center;
     display: inline-block; }
   footer a {
-    color: #bbe7df; }
+    color: #000; }
     footer a:hover {
-      color: #fff; }
+      color: #292929; }
   footer .footer-col {
     margin-bottom: 30px; }
     @media all and (max-width: 767px) {
@@ -2872,8 +2871,8 @@ footer {
     margin-right: 2px; }
     .social li a {
       display: block;
-      background-color: #bbe7df;
-      color: #171717;
+      background-color: #000;
+      color: #a8cbc5;
       border-radius: 100%;
       width: 34px;
       height: 34px;
@@ -2882,7 +2881,7 @@ footer {
       font-size: 16px; }
       .social li a:hover {
         background-color: #fff;
-        color: #000; }
+        color: #a8cbc5; }
 
 .footer-logos {
   background-color: #fff;
@@ -2915,8 +2914,8 @@ footer {
   padding: 20px;
   background-color: black;
   font-size: 15px;
-  color: #bbe7df;
-  border: 1px solid #bbe7df;
+  color: #a8cbc5;
+  border: 1px solid #a8cbc5;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
@@ -2940,7 +2939,7 @@ footer {
         .cookies button .icon {
           width: 15px; } }
     .cookies button #cross-remove-sign {
-      fill: #bbe7df; }
+      fill: #a8cbc5; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
@@ -3066,12 +3065,12 @@ footer {
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #333;
+    background: #292929;
     color: #fff; }
     .accordeon:hover a {
       color: #fff; }
   .accordeon--active, .accordeon--active:hover {
-    background: #333;
+    background: #292929;
     color: #fff; }
   .accordeon .container {
     position: relative; }
@@ -3143,7 +3142,7 @@ footer {
   .offer-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #bbe7df;
+    color: #a8cbc5;
     text-transform: none;
     margin: 0 0 5px;
     font-size: 32px; }
@@ -3154,7 +3153,7 @@ footer {
       .offer-title {
         font-size: 16px; } }
   .offer-subheader {
-    color: #bbe7df;
+    color: #a8cbc5;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
@@ -3200,7 +3199,7 @@ footer {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
-    color: #bbe7df;
+    color: #a8cbc5;
     display: block;
     font-weight: 400;
     margin: 0 0 2px 0;
@@ -3213,7 +3212,7 @@ footer {
       .offer-price {
         font-size: 16px; } }
   .offer-price-condition {
-    color: #bbe7df;
+    color: #a8cbc5;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
@@ -3258,6 +3257,6 @@ footer {
   background: #fff; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #bbe7df; }
+  background: #a8cbc5; }
 
 /*# sourceMappingURL=styles.css.map */

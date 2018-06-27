@@ -8,7 +8,7 @@
 $folder: edmbooking;
 
 /* BODY */
-$bg-color: #2f4c5c;
+$bg-color: #292929;
 $font-size: 16px;
 
 /* FONTS */
@@ -19,7 +19,7 @@ $border-color: rgba(255,255,255,.3);
 /* FONT COLORS */
 $text-color: #fff;
 $heading-color: #fff;
-$link-color: #bbe7df;
+$link-color: #a8cbc5;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -35,11 +35,11 @@ $video-filter:  none; //grayscale(100%);
 /* BUTTONS */
 $font-button: 'Prompt', sans-serif;
 $button-size: 17px;
-$button-bg: #bbe7df;
+$button-bg: #a8cbc5;
 $button-color: #000;
 $button-bg-hover: #fff;
 $button-color-hover: #000;
-$button-radius: 7px;
+$button-radius: 0px;
 
 /* BACK BUTTON */
 $button-back-bg: rgba(0,0,0,.5);
@@ -75,10 +75,10 @@ $header-bg: #000;
 $header-color: red;
 $header-bg-sticky: rgba(0,0,0, 1);
 $header-text: #fff;
-$header-hover: #bbe7df;
+$header-hover: #a8cbc5;
 $main-shadow: none;
 $menu-color: black;
-$notification-bg: #bbe7df;
+$notification-bg: #a8cbc5;
 $notication-icons: #000;
 $notification-text: #000;
 $subnav-bg: #000;
@@ -86,8 +86,8 @@ $subnav-strong: #fff;
 $subnav-color: #fff;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
-$subnav-hover: #bbe7df;
-$subnav-social-bg: #bbe7df;
+$subnav-hover: #a8cbc5;
+$subnav-social-bg: #a8cbc5;
 $subnav-social-color: #000;
 $subnav-social-hover: #000;
 $subnav-social-bghover: #fff;
@@ -110,17 +110,17 @@ $hero-button-size: 24px;
 /* Testimonials */
 $testimonial-bg: #2f4c5c;
 $testimonial-text: #fff;
-$testimonial-title: #bbe7df;
+$testimonial-title: #a8cbc5;
 $testimonial-author: #fff;
-$testimonial-activedot: #bbe7df;
+$testimonial-activedot: #a8cbc5;
 $testimonial-inactivedot: #fff;
 
 /* STEPS */
 $steps-bg: #000;
 $steps-color: #fff;
-$steps-bg-hover: #333;
+$steps-bg-hover: #292929;
 $steps-color-hover: #fff;
-$steps-active-bg: #333;
+$steps-active-bg: #292929;
 $steps-active-color: #fff;
 $steps-link: #fff;
 $steps-border: 2px solid rgba(255,255,255,.3);
@@ -128,39 +128,39 @@ $steps-border: 2px solid rgba(255,255,255,.3);
 /* OFFERS */
 $event-bg: #000;
 $offer-border: 1px solid rgba(255,255,255,.3);
-$offer-title: #bbe7df;
+$offer-title: #a8cbc5;
 $offer-title-transform: none;
 $ribbon-bg: #000;
 $ribbon-color: #fff;
-$offer-activedot: #bbe7df;
+$offer-activedot: #a8cbc5;
 $offer-inactivedot: #fff;
 $ticketbtn-color: #000;
 $ticketbtn-colorhover: #2f4c5c;
 
 /* WHY BOOK */
-$why-border: #bbe7df;
+$why-border: #a8cbc5;
 $why-number: #fff;
-$why-book-icon: #2f4c5c;
-$why-book-iconborder: 3px solid #bbe7df;
-$why-book-iconbg: #bbe7df;
+$why-book-icon: #292929;
+$why-book-iconborder: 3px solid #fff;
+$why-book-iconbg: #fff;
 
 /* Footer */
 $footer-border: 2px solid rgba(255,255,255,.3);
-$footer-bg: #171717;
-$footer-text: #fff;
-$footer-link: #bbe7df;
-$footer-hover: #fff;
-$footer-heading: #fff;
-$footer-social-bg: #bbe7df;
+$footer-bg: #a8cbc5;
+$footer-text: #000;
+$footer-link: #000;
+$footer-hover: #292929;
+$footer-heading: #000;
+$footer-social-bg: #000;
 $footer-social-hover: #fff;
-$footer-socialicon-hover: #000;
+$footer-socialicon-hover: #a8cbc5;
 $footer-payoffsize: 12px;
 
 /* COOKIES */
 $cookies-bg: rgba(0,0,0,1);
 $cookies-fontsize: 15px;
-$cookies-border: 1px solid #bbe7df;
-$cookies-color: #bbe7df;
+$cookies-border: 1px solid #a8cbc5;
+$cookies-color: #a8cbc5;
 $cookies-padding: 20px;
 $cookies-fontsize-mobile: 11px;
 $cookies-padding-mobile: 10px;
@@ -173,7 +173,7 @@ $form-label: #fff;
 $form-input-color: #000;
 $form-highlight: #419bf7;
 $form-highlightcolor: #fff;
-$form-addon-bg: #e6e7e8;
+$form-addon-bg: #a8cbc5;
 $form-addon-color: #000;
 $placeholder-color: #95a5a6;
 
