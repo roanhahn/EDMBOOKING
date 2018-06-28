@@ -1,12 +1,12 @@
 .accordeon{
-	
+
 	color: $steps-color;
 	background: $steps-bg;
 	border-top: $steps-border;
 	-webkit-transition: background .15s ease-out 0s;
 	transition: background .15s ease-out 0s;
 
-	
+
 	&:hover{
 		background: $steps-bg-hover;
 		color: $steps-color-hover;
@@ -44,7 +44,7 @@
 		top: 50%;
 		right: 0;
 		padding-right: 15px;
-		-ms-transform: translate(0, -50%); 
+		-ms-transform: translate(0, -50%);
 		-webkit-transform: translate(0, -50%);
 		transform: translate(0, -50%);
 		text-transform: uppercase;
@@ -60,11 +60,18 @@
 
 		& .button-secondary{
 			margin-left: 4px;
+			padding: 10px 20px;
+			font-size: 15px;
+
+			@media all and (max-width: $breakpoint-mobile){
+				padding: 8px 16px;
+				font-size: 12px;
+			}
 		}
 	}
 
 	&-down{
-		
+
 		display: inline-block;
 		padding: 15px 0 15px 15px;
 		margin-left: 15px;
@@ -145,7 +152,7 @@
 		color: $link-color;
 		font-size: 20px;
 		// color: $text-color;
-		
+
 		@media all and (max-width: $breakpoint-tablet){
 			font-size: 18px;
 		}
@@ -175,7 +182,7 @@
 			-webkit-columns: 1;
 			-moz-columns: 1;
 		}
-		
+
 
 		@media all and (max-width: $breakpoint-tablet){
 			columns: 1;
@@ -230,7 +237,7 @@
 
 	&-price-condition{
 		color: $link-color;
-		
+
 		display: block;
 		margin-bottom: 20px;
 		white-space: nowrap;
@@ -279,9 +286,9 @@
 }
 .room-price{
 	float: right;
-	
+
 	@media all and (max-width: $breakpoint-mobile){
-		margin: 0 0; 
+		margin: 0 0;
 		float: left;
 	}
 
