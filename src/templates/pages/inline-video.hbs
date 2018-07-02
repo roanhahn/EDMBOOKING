@@ -1,0 +1,35 @@
+---
+title: Inline video
+type: component
+layout: default.hbs
+---
+
+<div class="hero hero-video">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h1>
+                        {{site.herotitle}}
+                        <small>{{site.herosubtitle}}</small>
+                    </h1>
+                    <a href="#" class="button button-primary button-hero">
+                        Friday | 18+
+                        <span>19 October 2018</span>
+                    </a>
+                    <a href="#" class="button button-primary button-hero">
+                        Saturday | All ages
+                        <span>20 October 2018</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <video class="inlinevideo" autoplay loop muted playsinline poster="assets/img/{{site.theme}}/hero.jpg">
+        {{!-- <source src="assets/video/mg.webm" data-wf-ignore="true"> --}}
+        <source src="assets/video/mg-slow.mp4" data-wf-ignore="true">
+    </video>
+</div>

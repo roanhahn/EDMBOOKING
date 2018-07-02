@@ -524,21 +524,21 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 			function onYouTubeIframeAPIReady() {
 
-                player = new YT.Player('hero-video', {
-                    videoId: youtubeID,
-                    playerVars: {
-                        controls: '0',
-                        start: starttime,
-                        end: endtime,
-                        playlist: youtubeID,
-                        loop: 1
-                    },
-                    events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                    }
-                });
-            }
+				player = new YT.Player('hero-video', {
+					videoId: youtubeID,
+					playerVars: {
+						controls: '0',
+						start: starttime,
+						end: endtime,
+						playlist: youtubeID,
+						loop: 1
+					},
+					events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+					}
+				});
+			}
 			// 4. The API will call this function when the video player is ready.
 			function onPlayerReady(event) {
 				event.target.seekTo(starttime);
@@ -571,8 +571,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function vidRescale(){
 
-	var w = $('.videowrapper').outerWidth()+200;
-	var h = $('.videowrapper').outerHeight()+200;
+	var w = $('.videowrapper').outerWidth();
+	var h = $('.videowrapper').outerHeight();
 
 	if (w/h > 16/9){
 		$('.videoplayer').css({

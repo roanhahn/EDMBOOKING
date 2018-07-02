@@ -2268,6 +2268,20 @@ body.scrolled .hamburger-oud {
     .videoplayer {
       display: none; } }
 
+.inlinevideo {
+  display: inline-block;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100; }
+
 .hero-scrollbutton {
   padding-top: 70px;
   margin-top: 30px;
@@ -2314,6 +2328,32 @@ body.scrolled .hamburger-oud {
   100% {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0; } }
+.vimeo {
+  height: calc(100vh - 90px);
+  position: relative; }
+
+.vimeo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden; }
+
+.vimeo-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .footer-subscribe .inner {
   vertical-align: middle;
   display: inline-block;
@@ -3086,7 +3126,7 @@ footer {
     .accordeon:hover a {
       color: #fff; }
   .accordeon--active, .accordeon--active:hover {
-    background: #292929;
+    background: #000;
     color: #fff; }
   .accordeon .container {
     position: relative; }

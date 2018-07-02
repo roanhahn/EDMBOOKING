@@ -398,8 +398,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function vidRescale(){
 
-	var w = $('.videowrapper').outerWidth()+200;
-	var h = $('.videowrapper').outerHeight()+200;
+	var w = $('.videowrapper').outerWidth();
+	var h = $('.videowrapper').outerHeight();
 
 	if (w/h > 16/9){
 		$('.videoplayer').css({
