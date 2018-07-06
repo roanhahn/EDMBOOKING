@@ -1,652 +1,491 @@
 
 
+{assign var=event value=$site->booking->getEvent()}
+{assign var=mainbooker value=$site->booking->getMainBooker()}
+{assign var=travellers value=$site->booking->getTravellers()}
+
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;margin: 0 auto !important;padding: 0 !important;height: 100% !important;width: 100% !important;">
-<head style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-    <link href="https://fonts.googleapis.com/css?family=Prompt:800|Roboto:400,500" rel="stylesheet" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-    <meta charset="utf-8" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
-
+<html style="font-family:'Roboto', sans-serif;margin:0 auto !important;padding:0 !important;height:100% !important;width:100% !important;">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      .button-td:hover{background:#555555 !important;border-color:#555555 !important}
+      .button-a:hover{background:#555555 !important;border-color:#555555 !important}
+    </style>
+    <style type="text/css">
+      /* What it does: Remove spaces around the email design added by some email clients. */
+          /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+          /* What it does: Stops email clients resizing small text. */
+          /* What it does: Centers email on Android 4.4 */
+          /* What it does: Stops Outlook from adding extra spacing to tables. */
+          /* What it does: A work-around for email clients meddling in triggered links. */
+          *[x-apple-data-detectors],  /* iOS */
+          .x-gmail-data-detectors,    /* Gmail */
+          .x-gmail-data-detectors *,
+          .aBn {
+              border-bottom: 0 !important;
+              cursor: default !important;
+              color: inherit !important;
+              text-decoration: none !important;
+              font-size: inherit !important;
+              font-family: inherit !important;
+              font-weight: inherit !important;
+              line-height: inherit !important;
+          }
+          /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+          /* If the above doesn't work, add a .g-img class to any image in question. */
+          /* What it does: Prevents underlining the button text in Windows 10 */
+          /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+          /* Create one of these media queries for each additional viewport size you'd like to fix */
+          /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+          @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+              .email-container {
+                  min-width: 320px !important;
+              }
+          }
+          /* iPhone 6, 6S, 7, 8, and X */
+          @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+              .email-container {
+                  min-width: 375px !important;
+              }
+          }
+          /* iPhone 6+, 7+, and 8+ */
+          @media only screen and (min-device-width: 414px) {
+              .email-container {
+                  min-width: 414px !important;
+              }
+          }
+          /* What it does: Hover styles for buttons */
+          /* Media Queries */
+          @media only screen and (max-width: 600px) {
+              /* What it does: Adjust typography on small screens to improve readability */
+              .logo-img{
+                  width: 100px !important;
+              }
+               .header-text{
+                  font-size: 12px !important;
+               }
+               .hero-title{
+                  font-size: 28px !important;
+                  line-height: 28px !important;
+              }
+              .total{
+                  font-size: 18px !important;
+              }
+          }
+    </style>
+  </head>
+  <body style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;margin:0 auto !important;padding:0 !important;height:100% !important;width:100% !important;">
+    <p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{assign var=event value=$site->booking->getEvent()}
+{assign var=mainbooker value=$site->booking->getMainBooker()}
+{assign var=travellers value=$site->booking->getTravellers()}
+    </p>
+    <link href="https://fonts.googleapis.com/css?family=Prompt:800|Roboto:400,500" rel="stylesheet">
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
     <!-- Web Font / @font-face : BEGIN -->
     <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
-
     <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
     <!--[if mso]>
-        <style>
-            * {
-                font-family: sans-serif !important;
-            }
-        </style>
+      <style>
+        * {
+                        font-family: sans-serif !important;
+                    }
+      </style>
     <![endif]-->
-
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
     <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
-    <!--<![endif]-->
-
-    <!-- Web Font / @font-face : END -->
-
-    <!-- CSS Reset : BEGIN -->
-    <style type="text/css" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-    /* What it does: Remove spaces around the email design added by some email clients. */
-    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-    html,
-    body {
-        margin: 0 auto !important;
-        padding: 0 !important;
-        height: 100% !important;
-        width: 100% !important;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    /* What it does: Stops email clients resizing small text. */
-    * {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-    }
-
-    /* What it does: Centers email on Android 4.4 */
-    div[style*="margin: 16px 0"] {
-        margin: 0 !important;
-    }
-
-    /* What it does: Stops Outlook from adding extra spacing to tables. */
-    table,
-    td {
-        mso-table-lspace: 0pt !important;
-        mso-table-rspace: 0pt !important;
-    }
-
-    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
-    table {
-        border-spacing: 0 !important;
-        border-collapse: collapse !important;
-        table-layout: fixed !important;
-        margin: 0 auto !important;
-    }
-    table table table {
-        table-layout: auto;
-    }
-
-    /* What it does: Uses a better rendering method when resizing images in IE. */
-    img {
-        -ms-interpolation-mode:bicubic;
-    }
-    .header{
-        background-color: #e6e6e6;
-    }
-    .logo{
-        padding: 15px 20px;
-    }
-    .logo-img{
-        width: 200px;
-    }
-    .hero{
-        background-color: #419bf7;
-        text-align: center;
-        padding: 40px 20px;
-        background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .hero-title{
-        font-family: 'Prompt', sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 40px;
-        line-height: 40px;
-        margin: 0 0 10px 0;
-    }
-    .hero-subtitle{
-        color: #fff;
-        margin: 0 0 0 0;
-        text-transform: uppercase;
-    }
-    .header-text{
-        font-family: 'Prompt', sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        text-align: right;
-        font-size: 14px;
-        padding-right: 20px;
-        white-space: nowrap;
-    }
-    .heading{
-        background: #000;
-        color: #fff;
-        padding: 10px 20px;
-        font-family: 'Prompt', sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        font-size: 17px;
-    }
-    .heading-blue{
-        background-color: #419bf7;
-    }
-    .link{
-        color: #419bf7;
-        text-decoration: underline;
-    }
-    .td-color{
-        background-color: #fff;
-    }
-    .content{
-        padding: 20px;
-        text-align: left;
-    }
-    .content-table{
-        text-align: left;
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        line-height: 21px;
-        padding: 0;
-    }
-    .content-table-td{
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        line-height: 21px;
-        padding: 3px 0;
-        vertical-align: top;
-        width: 100%;
-    }
-    .price{
-        text-align: right;
-        width: 30%;
-        white-space: nowrap;
-    }
-    .h1{
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-
-    }
-    .p{
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        line-height: 21px;
-    }
-    .line{
-        height: 3px;
-        background-color: #000;
-    }
-    .total{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        text-transform: uppercase;
-        padding-bottom: 60px;
-    }
-    /* What it does: A work-around for email clients meddling in triggered links. */
-    *[x-apple-data-detectors],  /* iOS */
-    .x-gmail-data-detectors,    /* Gmail */
-    .x-gmail-data-detectors *,
-    .aBn {
-        border-bottom: 0 !important;
-        cursor: default !important;
-        color: inherit !important;
-        text-decoration: none !important;
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
-    .a6S {
-        display: none !important;
-        opacity: 0.01 !important;
-    }
-    /* If the above doesn't work, add a .g-img class to any image in question. */
-    img.g-img + div {
-        display: none !important;
-    }
-
-    /* What it does: Prevents underlining the button text in Windows 10 */
-    .button-link {
-        text-decoration: none !important;
-    }
-
-    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-    /* Create one of these media queries for each additional viewport size you'd like to fix */
-
-    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-        .email-container {
-            min-width: 320px !important;
-        }
-    }
-    /* iPhone 6, 6S, 7, 8, and X */
-    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-        .email-container {
-            min-width: 375px !important;
-        }
-    }
-    /* iPhone 6+, 7+, and 8+ */
-    @media only screen and (min-device-width: 414px) {
-        .email-container {
-            min-width: 414px !important;
-        }
-    }
-
-    </style>
-    <!-- CSS Reset : END -->
-
-    <!-- Progressive Enhancements : BEGIN -->
-    <style type="text/css" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-    /* What it does: Hover styles for buttons */
-    .button-td,
-    .button-a {
-        transition: all 100ms ease-in;
-    }
-    .button-td:hover,
-    .button-a:hover {
-        background: #555555 !important;
-        border-color: #555555 !important;
-    }
-
-    /* Media Queries */
-    @media only screen and (max-width: 600px) {
-
-        /* What it does: Adjust typography on small screens to improve readability */
-        
-        .logo-img{
-            width: 100px !important;
-        }
-         .header-text{
-            font-size: 12px !important;
-         }
-
-         .hero-title{
-            font-size: 28px !important;
-            line-height: 28px !important;
-        }
-
-        .total{
-            font-size: 18px !important;
-        }
-    }
-
-    </style>
-    <!-- Progressive Enhancements : END -->
-
-    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
-    <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
+      <!--<![endif]-->
+      <!-- Web Font / @font-face : END -->
+      <!-- CSS Reset : BEGIN -->
+      <!-- CSS Reset : END -->
+      <!-- Progressive Enhancements : BEGIN -->
+      <!-- Progressive Enhancements : END -->
+      <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+      <!--[if gte mso 9]>
+        <xml>
+          <o:OfficeDocumentSettings>
             <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-<![endif]-->
-
-</head>
-
-<body width="100%" style="margin: 0 auto !important;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;padding: 0 !important;height: 100% !important;width: 100% !important;">
-    <center style="width: 100%;background: #e6e6e6;text-align: left;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-    <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#222222">
-    <tr>
-    <td>
-    <![endif]-->
-
-    <!-- Visually Hidden Preheader Text : BEGIN -->
-    <div style="display: none;font-size: 1px;line-height: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;mso-hide: all;font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-        Your booking information for Martin Garrix Las Vegas 14 december 2018 
+              <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+          </xml>
+      <![endif]-->
+      <center style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width: 100%; background: #e6e6e6; text-align: left;">
+        <!--[if mso | IE]>
+          <table role="presentation" border="0" cellpadding="0" ccellspacing="0" width="100%" bgcolor="#222222">
+            <tr>
+              <td>
+        <![endif]-->
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+          Your booking information for {$event->getTitle()} {$event->getSubTitle()}
     </div>
-    <!-- Visually Hidden Preheader Text : END -->
-
-    <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
-    <!-- Preview Text Spacing Hack : BEGIN -->
-    <div style="display: none;font-size: 1px;line-height: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;mso-hide: all;font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        <!-- Visually Hidden Preheader Text : END -->
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+          &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
-    <!-- Preview Text Spacing Hack : END -->
-
+        <!-- Preview Text Spacing Hack : END -->
         <!--
             Set the email width. Defined in two places:
             1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
             2. MSO tags for Desktop Windows Outlook enforce a 600px width.
         -->
-    <div style="max-width: 600px;margin: auto;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="email-container">
-            <!--[if mso]>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
-            <tr>
-            <td>
-            <![endif]-->
-
-            <!-- Email Header : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #e6e6e6;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;" class="header">
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="logo" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 20px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <img src="https://roanhahn.github.io/EDMbassy/assets/img/logo-edmbassy.svg" alt="" class="logo-img" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;-ms-interpolation-mode: bicubic;width: 200px;">
+        <div style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;max-width: 600px; margin: auto;" class="email-container">
+          <!--[if mso]>
+            <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="600" align="center">
+              <tr>
+                <td>
+          <![endif]-->
+          <!-- Email Header : BEGIN -->
+          <table role="presentation" ccellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#e6e6e6;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;max-width: 600px;" class="header">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="logo" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:15px 20px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <img src="http://travel.edmbooking.com/assets/img/edmbooking/logo.svg" alt="" class="logo-img" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-interpolation-mode:bicubic;width:200px;">
+              </td>
+              <td class="header-text" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;text-align:right;font-size:14px;padding-right:20px;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Your booking', 'your_booking', 'your_booking')}
                     </td>
-                    <td class="header-text" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;text-align: right;font-size: 14px;padding-right: 20px;white-space: nowrap;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Your booking details
-                    </td>
-                </tr>
-            </table>
-            <!-- Email Header : END -->
-
-            <!-- Email Body : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-
-                <!-- Hero Image, Flush : BEGIN -->
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="hero" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #419bf7;text-align: center;padding: 40px 20px;background-image: url(https://roanhahn.github.io/EDMbassy/assets/img/mail-header.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                            <p class="hero-title" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;color: #fff;font-size: 40px;line-height: 40px;margin: 0 0 10px 0;">Martin garrix</p>
-                            <p class="hero-subtitle" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #fff;margin: 0 0 0 0;text-transform: uppercase;">Las vegas 14 december</p>
-                    </td>
-                </tr>
-                <!-- Hero Image, Flush : END -->
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <p class="h1" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 18px;font-weight: 700;">Michel, congratulations with your booking!</p>
-                                    <p class="p" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;">We are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
-                                    <p class="p" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Shared transfer/Private transfer</strong></p>
-                                    <p class="p" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;">
-                                        If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.
+            </tr>
+          </table>
+          <!-- Email Header : END -->
+          <!-- Email Body : BEGIN -->
+          <table role="presentation" ccellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;max-width: 600px;">
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="hero" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#419bf7;text-align:center;padding:40px 20px;background-image:url({$site->bookingEvent->getSite()->getMainUrl()}{$site->bookingEvent->getEventImage()});background-repeat:no-repeat;background-size:cover;background-position:center center;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <p class="hero-title" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;color:#fff;font-size:40px;line-height:40px;margin:0 0 10px 0;text-shadow:0px 0px 15px rgba(0,0,0,95);">{$event->getTitle()}</p>
+                <p class="hero-subtitle" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#fff;margin:0 0 0 0;text-transform:uppercase;text-shadow:0px 0px 10px rgba(0,0,0,1);">{$event->getSubTitle()}</p>
+              </td>
+            </tr>
+            <!-- Hero Image, Flush : END -->
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <p class="h1" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:18px;font-weight:700;">{$mainbooker->getFirstname()}, {$site->getWebTextTranslation('congratulations with your booking!', 'congratulations', 'your_booking')}</p>
+                      <p class="p" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;">
+                        {$site->getWebTextTranslation('text', 'booking_copy', 'your_booking')}
                                     </p>
-                                    <p class="p" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;">
-                                        We wish you a great stay, and see you at Electronic Family 2018
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
                     </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Personal information
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Personal information', 'confirm_personal_information', 'confirm')}
                     </td>
-                </tr>
-
-                <!-- 1 Column Text + Button : BEGIN -->
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Prefix</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Mr.</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">First name</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Jurgen</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Last name</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">van Zachten</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Email</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><a href="mailto:jurgen@thisisloco.com" class="link" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #419bf7;text-decoration: underline;">jurgen@thisisloco.com</a></td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Phonenumber</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">+31(0)646255387</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Address</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Ruysdaelhof Oost 9c</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zipcode</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">5642 JM</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">City</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Eindhoven</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Bookingcode</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">CODE</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+            </tr>
+            <!-- 1 Column Text + Button : BEGIN -->
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Prefix', 'confirm_prefix', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getPrefix()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('First name', 'confirm_first_name', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getFirstname()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Last name', 'confirm_last_name', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getLastname()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Email', 'confirm_email', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getEmailaddress()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Phone number', 'confirm_phone_number', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getPhonenumber()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Address', 'confirm_address', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getAddress()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Zipcode', 'confirm_zipcode', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getZipcode()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('City', 'confirm_city', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$mainbooker->getCity()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Bookingcode', 'confirm_bookingcode', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$site->booking->getBookingCode()}</td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {if is_array($travellers) && sizeof($travellers) > 0}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Extra travellers
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Extra travellers', 'confirm_extra_guests', 'confirm')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        {section name=t loop=$travellers}
+
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Guest', 'confirm_guest', 'confirm')} {$smarty.section.t.index + 1}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$travellers[t]->getFullName()}</td>
+                        </tr>
+                        {/section}
+                                        </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
+                {assign var=hotelRoom value=$site->booking->getHotelRoom()}
+                {if isset($hotelRoom) && is_object($hotelRoom)}
+                    {assign var=hotel value=$hotelRoom->getHotel()}
+                    {assign var=address value=$hotel->getAddress()}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Guest 1</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Mrs. Jurgen van Zachten</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Your hotel information', 'confirm_your_hotel_information', 'confirm')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Hotel', 'confirm_hotel', 'confirm')}</strong></td>
+                          <td class="content-table-td" colspan="2" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                            {$hotel->getName()}<br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"/>
+                                                    {if is_array($address) && sizeof($address) === 3}
+                                                        {$address[0]}, {$address[2]}<br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            {$address[1]}
+                                                    {else}
+                                                        {$address}
+                                                    {/if}
+                                                </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Check in', 'form_checkin', 'forms')}</strong></td>
+                          <td class="content-table-td" colspan="2" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$hotelRoom->getCheckIn()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Check out', 'form_checkout', 'forms')}</strong></td>
+                          <td class="content-table-td" colspan="2" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$hotelRoom->getCheckOut()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Room', 'form_room', 'forms')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$hotelRoom->getNrOfRooms()} x {$hotelRoom->getRoomName()}</td>
+                          <td class="content-table-td price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">&euro; {$hotelRoom->getTotalRoomPriceWithCommission()}</td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Reservation Code', 'form_reservation_code', 'forms')}</strong></td>
+                          <td class="content-table-td" colspan="2" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$site->booking->getReservationCode()}</td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
+                {assign var=tickets value=$site->booking->getTickets()}
+                {if isset($tickets) && is_array($tickets) && sizeof($tickets) > 0}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Your ticket information
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Your ticket information', 'confirm_ticket_information', 'confirm')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        {section name=t loop=$tickets}
+
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Ticket', 'confirm_ticket', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$tickets[t].amount} x {$tickets[t].name}</td>
+                          <td class="content-table-td price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">&euro; {$tickets[t].totalPrice}</td>
+                        </tr>
+                        {if isset($tickets[t].downloadLink) || isset($tickets[t].paymentLink)}
+
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Download ticket', 'confirm_download_ticket', 'confirm')}</strong></td>
+                          <td class="content-table-td" colspan="2" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                            {if isset($tickets[t].downloadLink) && !empty($tickets[t].downloadLink)}
+                                                                <a href="{$tickets%5Bt%5D.downloadLink}" target="_blank" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$tickets[t].downloadLink} / {$site->getWebTextTranslation('Download here', 'confirm_download_here', 'confirm')}</a>
+                            {else if isset($tickets[t].paymentLink) && !empty($tickets[t].paymentLink)}
+                                                                <a href="{$tickets%5Bt%5D.paymentLink}" target="_blank" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Pay Ticket', 'confirm_pay_download_here', 'confirm')}</a>
+                            {/if}
+                                                        </td>
+                        </tr>
+                        {/if}
+                                            {/section}
+                                        </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
+                {assign var=extras value=$site->booking->getExtras()}
+                {if isset($extras) && is_array($extras) && sizeof($extras) > 0}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Ticket</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">2x Family Ticket</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Download ticket</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><a href="" class="link" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #419bf7;text-decoration: underline;">Download here</a></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Extra\'s', 'confirm_extras', 'confirm')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        {section name=e loop=$extras}
+
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Extra\'s', 'confirm_extras', 'confirm')}</strong></td>
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$extras[e].amount} x {$extras[e].name}</td>
+                          <td class="content-table-td price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">&euro; {$extras[e].totalPrice}</td>
+                        </tr>
+                        {/section}
+                                        </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
+                {assign var=bookingFee value=$site->booking->getBookingFee()}
+                {if isset($bookingFee) && floatval($bookingFee) > 0}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Your hotel information
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Booking fee', 'form_booking_fee', 'forms')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" width="150" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">{$site->getWebTextTranslation('Booking fee', 'form_booking_fee', 'forms')}</strong></td>
+                          <td class="content-table-td price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">&euro; {$bookingFee}</td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
+                {assign var=paymentMethod value=$site->booking->getPaymentMethod()}
+                {if isset($paymentMethod) && is_object($paymentMethod)}
 
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Hotel</strong></td>
-                                            <td class="content-table-td" colspan="2" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                                Campanile Hotel 's-Hertogenbosch<br style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                Goudsbloemvallei 21-25 5237 MH<br style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                ‘S Hertogenbosch
-                                            </td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Arrival date</strong></td>
-                                            <td class="content-table-td" colspan="2" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">29-07-2018</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Departure date</strong></td>
-                                            <td class="content-table-td" colspan="2" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">29-07-2018</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Room</strong></td>
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">1x Twin Room</td>
-                                            <td class="content-table-td price" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 30%;text-align: right;white-space: nowrap;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">&euro; 62.00</td>
-                                        </tr>
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Reservation Code</strong></td>
-                                            <td class="content-table-td" colspan="2" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">CODE</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Payment method', 'form_payment_method', 'forms')}
+                        </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$paymentMethod->name}</td>
+                          <td class="content-table-td price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{if floatval($paymentMethod->totalPrice) == 0}free{else}&euro; {$paymentMethod->totalPrice}{/if}</td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {/if}
 
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Booking fee
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="line" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:3px;background-color:#000;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+              </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <table class="content-table" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;text-align:left;width:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                          <td class="content-table-td total" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;font-family:'Roboto', sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;padding-bottom:60px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">{$site->getWebTextTranslation('Total price', 'form_total_price', 'forms')}</td>
+                          <td class="content-table-td total price" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:15px;line-height:21px;padding:3px 0;vertical-align:top;text-align:right;width:30%;white-space:nowrap;font-family:'Roboto', sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;padding-bottom:60px;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">&euro; {$site->booking->getTotalPrice()}</td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Booking fee</strong></td>
-                                            <td class="content-table-td price" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 30%;text-align: right;white-space: nowrap;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">&euro; 62.00</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="heading heading-blue" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#000;color:#fff;padding:10px 20px;font-family:'Prompt', sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;background-color:#419bf7;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                {$site->getWebTextTranslation('Contact & more information', 'confirm_contact_information', 'confirm')}
                     </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Extras
+            </tr>
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+              <td class="td-color" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                <table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                  <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <td class="content" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:20px;text-align:left;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                      <div class="p" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', sans-serif;font-size:15px;line-height:21px;">
+                        {$site->getWebTextTranslation('<a href="mailto:info@edmbassy.com" class="link" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#419bf7;text-decoration:underline;">info@edmbassy.com</a><br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"/>
+                                        <a href="tel:+31%206%2052%20382%2038" class="link" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#419bf7;text-decoration:underline;">Phone +31 6 52 382 38</a><br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"/>
+                                        <a href="https://api.whatsapp.com/send?phone=310625238238&text=EDMBASSY" class="link" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#419bf7;text-decoration:underline;">Whatsapp +31 6 52 382 38</a><br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"/>', 'confirm_contact_data', 'confirm')}
+                                    </div>
                     </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" width="150" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;"><strong style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Private transfer</strong></td>
-                                            <td class="content-table-td price" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 30%;text-align: right;white-space: nowrap;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">&euro; 150.00</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Payment method
-                    </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">iDeal (Only available in the Netherlands)</td>
-                                            <td class="content-table-td price" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 30%;text-align: right;white-space: nowrap;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">&euro; 00.60</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="line" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 3px;background-color: #000;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        
-                    </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <table class="content-table" ellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;text-align: left;width: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;padding: 0;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;margin: 0 auto !important;">
-                                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                            <td class="content-table-td total" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 24px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 100%;font-weight: 700;text-transform: uppercase;padding-bottom: 60px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">Total price</td>
-                                            <td class="content-table-td total price" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 24px;line-height: 21px;padding: 3px 0;vertical-align: top;width: 30%;text-align: right;white-space: nowrap;font-weight: 700;text-transform: uppercase;padding-bottom: 60px;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">&euro; 212.60</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="heading heading-blue" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000;color: #fff;padding: 10px 20px;font-family: 'Prompt', sans-serif;font-weight: 800;text-transform: uppercase;font-size: 17px;background-color: #419bf7;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        Contact &amp; more information
-                    </td>
-                </tr>
-
-                <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                    <td class="td-color" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fff;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
-                            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <td class="content" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 20px;text-align: left;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
-                                    <p class="p" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Roboto', sans-serif;font-size: 15px;line-height: 21px;">
-                                        <a href="mailto:info@edmbassy.com" class="link" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #419bf7;text-decoration: underline;">info@edmbassy.com</a><br style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                        <a href="tel:+31 6 52 382 38" class="link" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #419bf7;text-decoration: underline;">Phone +31 6 52 382 38</a><br style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                        <a href="https://api.whatsapp.com/send?phone=310625238238&text=EDMBASSY" class="link" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #419bf7;text-decoration: underline;">Whatsapp +31 6 52 382 38</a><br style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
             <!-- Email Footer : END -->
             <!--[if mso]>
             </td>
-            </tr>
-            </table>
-        <![endif]-->
-    </table></div>
-    <!--[if mso | IE]>
-    </td>
-    </tr>
-    </table>
-<![endif]-->
-</center>
-</body>
-</html>
+          </tr>
+        </table>
+            <![endif]-->
+            <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+            <![endif]-->
+          </table>
+        </div>
+      </center>
+    </body>
+  </html>
