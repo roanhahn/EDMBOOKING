@@ -8,7 +8,8 @@ layout: mail.hbs
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
 
-	<link href="https://fonts.googleapis.com/css?family=Prompt:800|Roboto:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:800" rel="stylesheet">
 
 	<meta charset="utf-8"> <!-- utf-8 works for most cases -->
 	<meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
@@ -47,6 +48,8 @@ layout: mail.hbs
     	height: 100% !important;
     	width: 100% !important;
     	font-family: 'Roboto', sans-serif;
+        color: #010101;
+        font-size: 16px;
     }
 
     /* What it does: Stops email clients resizing small text. */
@@ -91,16 +94,26 @@ layout: mail.hbs
     .logo-img{
     	width: 200px;
     }
+    .hero-img{
+        background-image: url(http://mg.live.edmbooking.com/media/5d696ae4016c17732a1dc7651ccdc8f3/2018/06/18/adaac/169ef236b23b.jpg);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
     .hero{
-    	background-color: #419bf7;
+    	background-color: #000;
     	text-align: center;
-    	padding: 40px 20px;
-    	background-image: url(http://mg.live.edmbooking.com/media/5d696ae4016c17732a1dc7651ccdc8f3/2018/06/18/adaac/169ef236b23b.jpg);
+    	padding: 20px 20px;
+        position: relative;
+    	/*background-image: url(http://mg.live.edmbooking.com/media/5d696ae4016c17732a1dc7651ccdc8f3/2018/06/18/adaac/169ef236b23b.jpg);*/
         /*background-blend-mode: multiply;*/
     	background-repeat: no-repeat;
     	background-size: cover;
-    	background-position: center center;
+    	background-position: bottom center;
     }
+
+
     .hero-title{
     	font-family: 'Prompt', sans-serif;
     	font-weight: 800;
@@ -109,13 +122,12 @@ layout: mail.hbs
     	font-size: 40px;
     	line-height: 40px;
     	margin: 0 0 10px 0;
-        text-shadow: 0px 0px 15px rgba(0,0,0,95);
     }
     .hero-subtitle{
     	color: #fff;
     	margin: 0 0 0 0;
+        font-size: 16px;
     	text-transform: uppercase;
-        text-shadow: 0px 0px 10px rgba(0,0,0,1);
     }
     .header-text{
     	font-family: 'Prompt', sans-serif;
@@ -138,7 +150,11 @@ layout: mail.hbs
     .heading-blue{
     	background-color: #419bf7;
     }
-    .link{
+    a{
+        color: #419bf7;
+        text-decoration: underline;
+    }
+    .link, a{
     	color: #419bf7;
     	text-decoration: underline;
     }
@@ -156,6 +172,7 @@ layout: mail.hbs
     	font-size: 15px;
     	line-height: 21px;
     	padding: 0;
+        color: #010101;
     }
     .content-table-td{
     	font-family: 'Roboto', sans-serif;
@@ -163,6 +180,7 @@ layout: mail.hbs
     	line-height: 21px;
     	padding: 3px 0;
     	vertical-align: top;
+        color: #010101;
     	/*width: auto;*/
     }
     .price{
@@ -179,6 +197,7 @@ layout: mail.hbs
     .p{
     	font-family: 'Roboto', sans-serif;
     	font-size: 15px;
+        color: #010101;
     	line-height: 21px;
     }
     .line{
@@ -335,7 +354,7 @@ layout: mail.hbs
             <table role="presentation" ccellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" class="header">
             	<tr>
             		<td class="logo">
-            			<img src="http://travel.edmbooking.com/assets/img/edmbooking/logo.svg" alt="" class="logo-img">
+            			<img src="http://travel.edmbooking.com/assets/img/edmbooking/logo-mail.png" alt="" class="logo-img">
             		</td>
             		<td class="header-text">
             			Your booking details
@@ -348,10 +367,13 @@ layout: mail.hbs
             <table role="presentation" ccellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
 
             	<!-- Hero Image, Flush : BEGIN -->
+                <tr>
+                    <td class="hero-img"></td>
+                <tr>
             	<tr>
             		<td class="hero">
-            				<p class="hero-title">Martin garrix</p>
-            				<p class="hero-subtitle">Las vegas 14 december</p>
+            			<p class="hero-title">Martin garrix</p>
+            			<p class="hero-subtitle">Las vegas 14 december</p>
             		</td>
             	</tr>
             	<!-- Hero Image, Flush : END -->
@@ -470,7 +492,7 @@ layout: mail.hbs
                                         <tr>
                                             <td class="content-table-td" width="150"><strong>Room</strong></td>
                                             <td class="content-table-td">1x Twin Room</td>
-                                            <td class="content-table-td price" width="150">&euro; 62.00</td>
+                                            <td class="content-table-td price" width="150">&euro;62.00</td>
                                         </tr>
             							<tr>
             								<td class="content-table-td" width="150"><strong>Ticket</strong></td>
@@ -519,7 +541,7 @@ layout: mail.hbs
             							<tr>
             								<td class="content-table-td" width="150"><strong>Room</strong></td>
             								<td class="content-table-td">1x Twin Room</td>
-            								<td class="content-table-td price">&euro; 62.00</td>
+            								<td class="content-table-td price">&euro;62.00</td>
             							</tr>
             							<tr>
             								<td class="content-table-td" width="150"><strong>Reservation Code</strong></td>
@@ -547,7 +569,7 @@ layout: mail.hbs
             						<table class="content-table" cellspacing="0" cellpadding="0" border="0">
             							<tr>
             								<td class="content-table-td" width="150"><strong>Booking fee</strong></td>
-            								<td class="content-table-td price">&euro; 62.00</td>
+            								<td class="content-table-td price">&euro;62.00</td>
             							</tr>
             						</table>
             					</td>
@@ -570,7 +592,7 @@ layout: mail.hbs
             						<table class="content-table" cellspacing="0" cellpadding="0" border="0">
             							<tr>
             								<td class="content-table-td" width="150"><strong>Private transfer</strong></td>
-            								<td class="content-table-td price">&euro; 150.00</td>
+            								<td class="content-table-td price">&euro;150.00</td>
             							</tr>
             						</table>
             					</td>
@@ -593,7 +615,7 @@ layout: mail.hbs
             						<table class="content-table" cellspacing="0" cellpadding="0" border="0">
             							<tr>
             								<td class="content-table-td">iDeal (Only available in the Netherlands)</td>
-            								<td class="content-table-td price">&euro; 00.60</td>
+            								<td class="content-table-td price">&euro;00.60</td>
             							</tr>
             						</table>
             					</td>
@@ -616,7 +638,7 @@ layout: mail.hbs
             						<table class="content-table" cellspacing="0" cellpadding="0" border="0">
             							<tr>
             								<td class="content-table-td total">Total price</td>
-            								<td class="content-table-td total price">&euro; 212.60</td>
+            								<td class="content-table-td total price">&euro;212.60</td>
             							</tr>
             						</table>
             					</td>
@@ -624,25 +646,6 @@ layout: mail.hbs
             			</table>
             		</td>
             	</tr>
-
-            	{{!-- <tr>
-            		<td class="td-color">
-            			<table role="presentation" ccellspacing="0" cellpadding="0" border="0" width="100%">
-            				<tr>
-            					<td class="content">
-            						<p class="p">Congratulations with your booking, we are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
-            						<p class="p"><strong>Shared transfer/Private transfer</strong></p>
-            						<p class="p">
-            							If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.
-            						</p>
-            						<p class="p">
-            							We wish you a great stay, and see you at Electronic Family 2018
-            						</p>
-            					</td>
-            				</tr>
-            			</table>
-            		</td>
-            	</tr> --}}
 
             	<tr>
             		<td class="heading heading-blue">

@@ -6,40 +6,43 @@
 	<a href="{{url}}.html" class="offer-link">
 	{{/if}}
 		<div class="row">
-			<div class="col-5 col-md-6 col-lg-3">
-				
+			<div class="col-6 col-lg-3">
+
 				<div class="img-container ratio-1-1 sm-ratio-3-4">
 					<div class="ribbon">
 						<div>Sold out</div>
 					</div>
-					<img data-src="http://via.placeholder.com/500x500" class="lazyload" alt="{{title}}">
+					<img data-src="http://mg.live.edmbooking.com/media/hotels/2017/02/17/255f9/400x400.jpg" class="lazyload" alt="{{title}}">
 				</div>
 			</div>
-			<div class="col-7 col-md-6 col-lg-9 offer-content">
+			<div class="col-6 col-lg-9 offer-content">
 				<div class="row">
 					<div class="col-lg-9{{!--  offer-line --}}">
-						<h3 class="offer-title">{{title}}</h3>
-						{{#if condition}}
-						<div class="d-md-none">
-							<div class="offer-price">&euro;299 <span class="offer-price-condition">{{condition}}</span></div>
-						</div>
-						{{else}}
-						{{/if}}
-						{{#if distance}}
-							<div class="rating-wrapper">
-								<div class="rating">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								Distance venue 5km
+						<div class="offer-mobile-wrapper">
+							<h3 class="offer-title">{{title}}</h3>
+							{{#if condition}}
+							<div class="d-md-none">
+								<div class="offer-price">&euro;299 <span class="offer-price-condition">{{condition}}</span></div>
 							</div>
-						{{else}}
-							<p class="offer-subheader">{{subheader}}</p>
-						{{/if}}
-						<span class="button button-primary d-md-none">{{button}}</span>
+							{{else}}
+							{{/if}}
+							{{#if distance}}
+								<div class="rating-wrapper">
+									<div class="rating rating--overview">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</div>
+									Distance venue 5km
+								</div>
+							{{else}}
+								<p class="offer-subheader">{{subheader}}</p>
+							{{/if}}
+						</div>
+						<span class="button button-primary button--block d-md-none">{{button}}</span>
+
 
 						<ul class="offer-list d-none d-md-block">
 							<li>Tipi for 9 persons</li>

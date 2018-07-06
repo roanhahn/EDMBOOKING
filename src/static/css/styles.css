@@ -30,7 +30,6 @@
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
 @import url(bootstrap-datepicker3.min.css);
-@import url(odometer-theme-default.css);
 body, html {
   height: 100%;
   min-height: 100%;
@@ -978,13 +977,20 @@ h3.extras {
       font-size: 14px; } }
   @media all and (max-width: 767px) {
     .rating-wrapper {
-      font-size: 11px; } }
+      font-size: 11px;
+      margin-bottom: 0px; } }
 
 .rating {
   display: inline-block;
   margin-top: 5px;
   border-right: 1px solid #a8cbc5;
   margin-right: 7px; }
+  @media all and (max-width: 767px) {
+    .rating--overview {
+      display: block;
+      border-right: none;
+      margin-bottom: 5px;
+      margin-top: 0px; } }
   .rating i:last-child {
     margin-right: 10px; }
 
@@ -1846,6 +1852,8 @@ body.scrolled .hamburger {
     right: 0%; }
   .subnav a {
     color: #fff; }
+    .subnav a:hover {
+      color: #a8cbc5; }
   .subnav .subnav-list {
     margin: 0;
     padding: 0;
@@ -1890,11 +1898,11 @@ body.scrolled .hamburger {
     padding: 0;
     margin-top: 10px; }
     .subnav .social a {
-      background-color: #a8cbc5;
+      background-color: #fff;
       color: #000; }
       .subnav .social a:hover {
         color: #000;
-        background-color: #fff; }
+        background-color: #a8cbc5; }
 
 .yourbooking {
   display: none;
@@ -2165,7 +2173,8 @@ body.scrolled .hamburger-oud {
           height: 50px; } }
   .hero-fullscreen, .hero-video {
     height: calc(100vh - 90px);
-    min-height: 600px; }
+    min-height: 600px;
+    overflow: hidden; }
     @media all and (max-width: 992px) {
       .hero-fullscreen, .hero-video {
         height: calc(85vh - 50px);
@@ -2280,7 +2289,9 @@ body.scrolled .hamburger-oud {
   margin: auto;
   min-width: 100%;
   min-height: 100%;
-  z-index: -100; }
+  z-index: -100;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .hero-scrollbutton {
   padding-top: 70px;
@@ -3201,6 +3212,10 @@ footer {
     @media all and (max-width: 992px) {
       .offer-info {
         float: none; } }
+  @media all and (max-width: 767px) {
+    .offer-mobile-wrapper {
+      min-height: 170px;
+      display: block; } }
   .offer-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -3213,7 +3228,7 @@ footer {
         font-size: 24px; } }
     @media all and (max-width: 767px) {
       .offer-title {
-        font-size: 16px; } }
+        font-size: 17px; } }
   .offer-subheader {
     color: #a8cbc5;
     font-size: 20px; }
@@ -3289,7 +3304,7 @@ footer {
         margin-bottom: 10px; } }
 
 .room {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0 0 30px;
   margin-bottom: 30px; }
 

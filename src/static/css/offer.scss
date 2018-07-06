@@ -131,6 +131,13 @@
 		}
 	}
 
+	&-mobile-wrapper{
+		@media all and (max-width: $breakpoint-mobile){
+			min-height: 170px;
+			display: block;
+		}
+	}
+
 	&-title{
 		font-family: $font;
 		font-weight: 700;
@@ -144,7 +151,8 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 16px;
+			font-size: 17px;
+			// min-height: 84px;
 		}
 	}
 
@@ -256,7 +264,7 @@
 }
 
 .room{
-	border-bottom: 2px solid $border-color;
+	border-bottom: 1px solid $border-color;
 	padding: 0 0 30px;
 	margin-bottom: 30px;
 

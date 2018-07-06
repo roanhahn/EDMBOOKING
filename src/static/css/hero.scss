@@ -175,6 +175,7 @@
 		&-fullscreen, &-video{
 			height: calc(100vh - #{$header-height});
 			min-height: 600px;
+            overflow: hidden;
 
 
 
@@ -347,6 +348,8 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .hero-scrollbutton {
   padding-top: 70px;
