@@ -175,6 +175,10 @@
 
 updateResult();
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 // CHANGE CSS
 

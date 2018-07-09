@@ -1,11 +1,44 @@
 @charset "UTF-8";
 /* Default Variables */
 /* Theme EDMBOOKING Variables */
-/* Theme EDMBOOKING Variables */
+/* Theme Martin Garrix ADE Variables */
+/* Theme New Horizons */
 /* Regular font */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 /* Header font */
-@import url("https://fonts.googleapis.com/css?family=Prompt:400,700,800");
+@import url(animate.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@import url(bootstrap-datepicker3.min.css);
+@font-face {
+  font-family: 'bebas';
+  src: url("../font/bebas/bebasneue-webfont.woff2") format("woff2"), url("../font/bebas/bebasneue-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("../font/proxima-nova/proximanova-bold-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_novaextrabold';
+  src: url("../font/proxima-nova/proximanova-extrabold-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url("../font/proxima-nova/proximanova-light-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url("../font/proxima-nova/proximanova-regular-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("../font/proxima-nova/proximanova-semibold-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 /* FOLDER */
 /* BODY */
 /* FONTS */
@@ -26,11 +59,8 @@
 /* FORMS */
 /* Theme Sensarion Madrid */
 /* Default CSS */
-@import url(animate.css);
-@import url(owl.carousel.min.css);
-@import url(owl.theme.default.min.css);
-@import url(bootstrap-datepicker3.min.css);
-body, html {
+body,
+html {
   height: 100%;
   min-height: 100%;
   -webkit-overflow-scrolling: touch;
@@ -42,24 +72,37 @@ body, html {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #a8cbc5; }
+  background: #fff; }
 
 ::selection {
   color: #fff;
-  background: #a8cbc5; }
+  background: #fff; }
 
 body {
-  background: #292929;
+  background: #80bab3;
   color: #fff;
   padding: 0;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "proxima_novaregular", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+  background: #80bab3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #80bab3 0%, #abd5c5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #80bab3 0%, #abd5c5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(top, #80bab3 0%, #abd5c5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 @media (min-width: 1200px) {
   .container {
@@ -67,30 +110,38 @@ body {
 .container {
   min-width: 320px; }
 
-h1, h2, h3, h4 {
-  font-family: "Prompt", sans-serif; }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "bebas", sans-serif; }
 
 a {
-  color: #a8cbc5; }
+  color: #fff; }
   a:hover {
-    color: #a8cbc5; }
+    color: #fff; }
 
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
   text-decoration: none;
   -webkit-transition: color .15s ease-out 0s, background .15s ease-out 0s;
   transition: color .15s ease-out 0s, background .15s ease-out 0s; }
 
-.text-link, .page a {
+.text-link,
+.page a {
   text-decoration: underline;
-  color: #a8cbc5; }
-  .text-link:hover, .page a:hover {
-    color: #a8cbc5;
+  color: #fff; }
+  .text-link:hover,
+  .page a:hover {
+    color: #fff;
     text-decoration: underline; }
 
 .h1 {
   text-transform: none;
   font-weight: 700;
-  color: #a8cbc5;
+  color: #fff;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -114,7 +165,7 @@ a, a:hover, a:visited, a:active {
 .page-h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   color: #fff;
   margin: 0 0 30px;
   padding: 0 0 30px;
@@ -130,14 +181,14 @@ a, a:hover, a:visited, a:active {
       margin-bottom: 15px; } }
 
 .h2 {
-  color: #a8cbc5;
+  color: #fff;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
       font-size: 16px; } }
   .h2-section {
     color: #fff;
-    font-family: "Prompt", sans-serif;
+    font-family: "bebas", sans-serif;
     font-weight: 800;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -156,7 +207,7 @@ a, a:hover, a:visited, a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   margin-bottom: 20px;
   font-size: 24px; }
   .h3--textcolor {
@@ -165,7 +216,7 @@ a, a:hover, a:visited, a:active {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 10px; }
   .h3--room {
-    color: #a8cbc5; }
+    color: #fff; }
   .h3--eventinfo {
     font-size: 20px; }
   @media all and (max-width: 767px) {
@@ -176,12 +227,12 @@ a, a:hover, a:visited, a:active {
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 30px;
-    font-family: "Prompt", sans-serif; }
+    font-family: "bebas", sans-serif; }
     .h3--big span {
       display: block;
       font-size: 16px;
       font-weight: 700;
-      font-family: "Roboto", sans-serif; }
+      font-family: "proxima_novaregular", sans-serif; }
     @media all and (max-width: 767px) {
       .h3--big {
         font-size: 22px;
@@ -191,14 +242,14 @@ h3.extras {
   font-size: 32px;
   padding: 15px 0;
   display: inline-block;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   color: #fff;
   font-weight: 800;
   text-transform: uppercase; }
   h3.extras small {
     display: block;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "proxima_novaregular", sans-serif;
     text-transform: none; }
   @media all and (max-width: 767px) {
     h3.extras {
@@ -227,7 +278,7 @@ h3.extras {
 .testimonials-h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "proxima_novaregular", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
   @media all and (max-width: 767px) {
@@ -241,7 +292,7 @@ h3.extras {
     max-width: 970px;
     margin: 0 auto; }
   .testimonials-title {
-    font-family: "Prompt", sans-serif;
+    font-family: "bebas", sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
@@ -261,7 +312,7 @@ h3.extras {
     line-height: 1.2;
     color: #fff; }
   .testimonials .owl-theme .owl-dots .owl-dot.active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: #a8cbc5; }
+    background: #4E647E; }
   .testimonials .owl-theme .owl-dots .owl-dot span {
     background: #fff; }
 
@@ -273,7 +324,7 @@ h3.extras {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #000;
+  stroke: #c59569;
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
 
@@ -284,12 +335,12 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #a8cbc5;
+  stroke: #fff;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
   vertical-align: middle;
-  box-shadow: inset 0px 0px 0px #000;
+  box-shadow: inset 0px 0px 0px #c59569;
   animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
   @media all and (max-width: 767px) {
     .checkmark {
@@ -309,18 +360,19 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #a8cbc5; } }
+    fill: #fff; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
 @keyframes scale {
-  0%, 100% {
+  0%,
+    100% {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #000; } }
+    box-shadow: inset 0px 0px 0px 30px #c59569; } }
 .checkmark-succes {
   width: 50px;
   height: 50px;
@@ -346,7 +398,8 @@ h3.extras {
   100% {
     stroke-dashoffset: 0; } }
 @keyframes scale {
-  0%, 100% {
+  0%,
+    100% {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
@@ -359,9 +412,9 @@ h3.extras {
     width: 120px;
     margin-bottom: 30px; }
     .succes-icon #circle {
-      fill: #a8cbc5; }
+      fill: #fff; }
     .succes-icon #check {
-      stroke: #a8cbc5; }
+      stroke: #fff; }
     @media (max-width: 767px) {
       .succes-icon {
         width: 75px; } }
@@ -384,15 +437,15 @@ h3.extras {
         width: 130px !important; }
 
 .my-package {
-  color: #a8cbc5;
+  color: #fff;
   font-size: 22px; }
   .my-package .form-label {
-    color: #a8cbc5 !important; }
+    color: #fff !important; }
   @media (max-width: 767px) {
     .my-package {
       font-size: 16px; } }
   .my-package-total {
-    border-top: 1px solid #a8cbc5;
+    border-top: 1px solid #fff;
     font-weight: 800;
     text-transform: uppercase;
     margin: 15px 0 0 0;
@@ -408,7 +461,7 @@ h3.extras {
 .myBooking-header {
   background: #e6e6e6;
   padding: 15px 20px;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -434,7 +487,7 @@ h3.extras {
   position: relative;
   color: #fff; }
   .myBooking-hero .hero-title {
-    font-family: "Prompt", sans-serif;
+    font-family: "bebas", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
@@ -490,7 +543,7 @@ h3.extras {
   background: #000; }
 .myBooking h3 {
   color: #fff;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
@@ -523,12 +576,12 @@ h3.extras {
     font-weight: 800; }
 
 #output {
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-weight: 900;
   font-size: 120px; }
 
 .animatelogo {
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-weight: 900;
   font-size: 120px;
   overflow: hidden;
@@ -578,7 +631,7 @@ h3.extras {
   font-weight: 800;
   padding-top: 15px;
   font-size: 24px;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   color: #fff;
   margin-bottom: 20px; }
 
@@ -594,13 +647,13 @@ h3.extras {
     line-height: 1;
     font-size: 18px;
     font-weight: 600;
-    background: transparent url(../img/edmbooking/plus.svg) no-repeat center right;
+    background: transparent url(../img/newhorizons/plus.svg) no-repeat center right;
     background-size: 20px auto; }
     @media (max-width: 767px) {
       .info-list-question {
         font-size: 14px; } }
     .info-list-question.active {
-      background: transparent url(../img/edmbooking/minus.svg) no-repeat center right;
+      background: transparent url(../img/newhorizons/minus.svg) no-repeat center right;
       background-size: 20px auto; }
   .info-list-answer {
     display: none;
@@ -628,10 +681,10 @@ h3.extras {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: #a8cbc5; }
+    color: #fff; }
   .loader-bar {
     height: 10px;
-    background: #a8cbc5;
+    background: #fff;
     width: 0px;
     -webkit-animation: move 30s ease-in-out infinite;
     -moz-animation: move 30s ease-in-out infinite;
@@ -720,7 +773,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: #292929 url(../img/edmbooking/rolling.gif) center center no-repeat scroll;
+  background: #80bab3 url(../img/newhorizons/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -768,7 +821,7 @@ h3.extras {
     width: 169px;
     font-size: 13px;
     font-weight: 700;
-    background-color: #000;
+    background-color: #c59569;
     color: #fff;
     text-transform: uppercase; }
   @media all and (max-width: 767px) {
@@ -948,7 +1001,7 @@ h3.extras {
       line-height: 1.6; }
 
 .googleMaps, .hotel-information {
-  color: #a8cbc5; }
+  color: #fff; }
   .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
@@ -963,13 +1016,13 @@ h3.extras {
       font-size: 14px; } }
 
 .showMap {
-  border-left: 1px solid #a8cbc5;
+  border-left: 1px solid #fff;
   margin-left: 7px;
   padding-left: 10px;
   cursor: pointer; }
 
 .rating-wrapper {
-  color: #a8cbc5;
+  color: #fff;
   font-size: 15px;
   margin-bottom: 20px; }
   @media all and (max-width: 992px) {
@@ -983,7 +1036,7 @@ h3.extras {
 .rating {
   display: inline-block;
   margin-top: 5px;
-  border-right: 1px solid #a8cbc5;
+  border-right: 1px solid #fff;
   margin-right: 7px; }
   @media all and (max-width: 767px) {
     .rating--overview {
@@ -995,7 +1048,7 @@ h3.extras {
     margin-right: 10px; }
 
 .detail-price {
-  color: #a8cbc5;
+  color: #fff;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -1006,7 +1059,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
-  color: #a8cbc5;
+  color: #fff;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -1033,7 +1086,7 @@ h3.extras {
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
-  color: #a8cbc5; }
+  color: #fff; }
   .extra-add {
     position: relative; }
   .extra-number {
@@ -1051,8 +1104,8 @@ h3.extras {
         max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
-      background: #a8cbc5;
-      color: #000;
+      background: #fff;
+      color: #4E647E;
       height: 44px;
       width: 44px;
       text-align: center;
@@ -1067,8 +1120,8 @@ h3.extras {
           height: 30px;
           width: 30px; } }
       .extra-number .manage-button:hover {
-        background: #fff;
-        color: #000; }
+        background: #4E647E;
+        color: #fff; }
     .extra-number .plus {
       top: 0;
       right: 0;
@@ -1081,7 +1134,7 @@ h3.extras {
       font-size: 18px;
       line-height: 44px;
       font-weight: 800;
-      font-family: "Prompt", sans-serif; }
+      font-family: "bebas", sans-serif; }
       @media all and (max-width: 992px) {
         .extra-number-items {
           height: 30px;
@@ -1102,7 +1155,7 @@ h3.extras {
     font-weight: normal; }
   .extra-btn {
     background: none;
-    color: #a8cbc5;
+    color: #fff;
     padding: 0;
     display: inline-block;
     margin-right: 10px;
@@ -1182,7 +1235,7 @@ h3.extras {
 
 .whybook-h2 {
   font-weight: 700;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   margin-bottom: 50px; }
@@ -1240,7 +1293,7 @@ h3.extras {
   line-height: 84px;
   border: 8px solid #a8cbc5;
   color: #fff;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 30px; }
@@ -1253,7 +1306,7 @@ h3.extras {
     .whybook p {
       padding: 0px; } }
 .whybook-heading {
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   color: #fff;
   text-transform: uppercase;
   font-size: 24px;
@@ -1294,8 +1347,8 @@ button {
   box-shadow: none !important;
   cursor: pointer !important;
   display: inline-block;
-  font-family: "Prompt", sans-serif;
-  font-size: 17px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
   font-weight: 800;
   letterspacing: 1px;
   outline: 0;
@@ -1329,19 +1382,18 @@ button {
     .button {
       font-size: 13px; } }
   .button-primary {
-    background: #a8cbc5;
-    color: #000;
+    background: #fff;
+    color: #4E647E;
     padding: 13px 25px;
     white-space: nowrap;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 18px;
     min-width: 150px;
     border: none;
     border-radius: 0px; }
     .button-primary:hover {
-      background: #fff;
-      color: #000; }
+      background: #4E647E;
+      color: #fff; }
     .button-primary img {
       display: inline;
       vertical-align: top;
@@ -1355,11 +1407,11 @@ button {
       .button-primary {
         font-size: 13px; } }
     .button-primary--inverted {
-      background: #a8cbc5;
-      color: #000; }
+      background: #fff;
+      color: #4E647E; }
       .button-primary--inverted:hover {
-        background: #000;
-        color: #000; }
+        background: #fff;
+        color: #4E647E; }
     .button-primary--small {
       padding: 10px 15px;
       font-size: 10px;
@@ -1377,7 +1429,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #a8cbc5;
+        background: #fff;
         content: ""; }
       .button-primary--effect:after {
         position: absolute;
@@ -1386,7 +1438,7 @@ button {
         content: " ";
         width: 50px;
         height: 50px;
-        background: #fff;
+        background: #4E647E;
         z-index: -1;
         -ms-transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
@@ -1435,7 +1487,7 @@ button {
           margin-top: 5px; } }
     .button-hero .first-line {
       font-size: 26px;
-      font-family: "Roboto", sans-serif;
+      font-family: "proxima_novaregular", sans-serif;
       font-weight: 700; }
       @media all and (max-width: 992px) {
         .button-hero .first-line {
@@ -1447,7 +1499,7 @@ button {
         display: block;
         width: 70px;
         height: 4px;
-        background: #a8cbc5;
+        background: #fff;
         content: "";
         margin: 7px auto; }
     .button-hero:hover .first-line:after {
@@ -1455,7 +1507,7 @@ button {
     .button-hero .second-line {
       font-size: 18px;
       font-weight: 400;
-      font-family: "Roboto", sans-serif; }
+      font-family: "proxima_novaregular", sans-serif; }
       @media all and (max-width: 992px) {
         .button-hero .second-line {
           font-size: 16px; } }
@@ -1464,10 +1516,11 @@ button {
           font-size: 13px; } }
   .button-secondary {
     border-radius: 50px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #4E647E;
     color: #fff !important;
     border: 2px solid #fff !important;
     padding: 15px 30px;
+    font-size: 20px;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
       .button-secondary {
@@ -1482,7 +1535,7 @@ button {
     .button-secondary--noArrow:after {
       display: none; }
     .button-secondary:hover {
-      color: #000 !important;
+      color: #4E647E !important;
       text-decoration: none;
       background: #fff; }
     .button-secondary--small {
@@ -1494,7 +1547,7 @@ button {
       color: #000 !important;
       border-color: #fff !important; }
       .button-secondary--inverted:hover {
-        background: rgba(0, 0, 0, 0.5) !important;
+        background: #4E647E !important;
         color: #fff !important;
         border: 2px solid #fff !important; }
   .button-large {
@@ -1516,7 +1569,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #a8cbc5;
+    background: #fff;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1534,11 +1587,11 @@ button {
       /* Safari */
       transform: translate(-50%, -50%); }
   .button-inversed {
-    border-color: #a8cbc5; }
+    border-color: #fff; }
     .button-inversed:after {
       display: none; }
     .button-inversed:hover {
-      background: #a8cbc5; }
+      background: #fff; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back:before {
@@ -1589,11 +1642,11 @@ button:focus {
   background: none;
   border: none;
   cursor: pointer;
-  color: #a8cbc5;
+  color: #fff;
   padding: 0;
   line-height: 1.2; }
   .remove:hover {
-    color: #a8cbc5; }
+    color: #fff; }
   .remove span {
     display: inline-block;
     margin-left: 5px; }
@@ -1612,7 +1665,7 @@ button:focus {
 
 .info-btn {
   background: none;
-  color: #a8cbc5;
+  color: #fff;
   padding: 0;
   font-size: 18px;
   line-height: 0;
@@ -1620,6 +1673,13 @@ button:focus {
   position: relative;
   top: 0px;
   margin-right: 8px; }
+
+.tooltipbtn {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  display: inline-block; }
 
 .hamburger {
   padding: 0px 0px;
@@ -1669,7 +1729,7 @@ body.scrolled .hamburger {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 6px;
-    background-color: #fff;
+    background-color: #435973;
     border-radius: 0px;
     position: absolute;
     transition-property: transform;
@@ -1711,16 +1771,16 @@ body.scrolled .hamburger {
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .header {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #4E647E;
   height: 90px;
   position: relative;
   z-index: 100;
   -webkit-transition: all .2s ease-out 0s;
   transition: all .2s ease-out 0s;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); }
   @media all and (max-width: 767px) {
     .header {
       height: 50px; } }
@@ -1735,12 +1795,12 @@ body.scrolled .hamburger {
   line-height: 0; }
   .logo img {
     display: block;
-    height: 30px;
+    height: 45px;
     -webkit-transition: all .2s ease-out 0s;
     transition: all .2s ease-out 0s; }
     @media all and (max-width: 992px) {
       .logo img {
-        height: 15px; } }
+        height: 25px; } }
 
 .mainnav {
   float: right;
@@ -1771,9 +1831,9 @@ body.scrolled .hamburger {
           .mainnav .booking-info:before {
             margin-right: 4px; } }
       .mainnav .booking-info:hover {
-        color: #a8cbc5; }
+        color: #c59569; }
     .mainnav .booking-cart {
-      font-family: "Prompt", sans-serif;
+      font-family: "bebas", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
       margin-right: 10px; }
@@ -1803,7 +1863,7 @@ body.scrolled .hamburger {
     .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
     .mainnav .hamburger-oud:hover {
-      color: #a8cbc5; }
+      color: #c59569; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger-oud {
         margin-left: 10px;
@@ -1828,12 +1888,12 @@ body.scrolled .hamburger {
   top: 90px;
   width: 400px;
   z-index: 99;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #4E647E;
   padding: 40px 30px;
-  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s; }
   @media all and (max-width: 992px) {
@@ -1847,19 +1907,19 @@ body.scrolled .hamburger {
       padding: 30px 15px;
       right: -110%; } }
   .subnav strong {
-    color: #fff; }
+    color: #4E647E; }
   .subnav-active {
     right: 0%; }
   .subnav a {
-    color: #fff; }
+    color: #4E647E; }
     .subnav a:hover {
-      color: #a8cbc5; }
+      color: #c59569; }
   .subnav .subnav-list {
     margin: 0;
     padding: 0;
     list-style-type: none; }
     .subnav .subnav-list li {
-      font-family: "Prompt", sans-serif;
+      font-family: "bebas", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 20px;
@@ -1871,7 +1931,7 @@ body.scrolled .hamburger {
         padding: 0;
         list-style-type: none; }
         .subnav .subnav-list li ul li {
-          font-family: "Roboto", sans-serif;
+          font-family: "proxima_novaregular", sans-serif;
           font-weight: 400;
           font-size: 16px;
           text-transform: none;
@@ -1879,15 +1939,15 @@ body.scrolled .hamburger {
           padding: 0;
           border: none; }
           .subnav .subnav-list li ul li a {
-            color: #fff;
+            color: #4E647E;
             display: block; }
             .subnav .subnav-list li ul li a:hover {
-              color: #a8cbc5; }
+              color: #c59569; }
   .subnav .contactDetails {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "proxima_novaregular", sans-serif;
     font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
@@ -1898,15 +1958,15 @@ body.scrolled .hamburger {
     padding: 0;
     margin-top: 10px; }
     .subnav .social a {
-      background-color: #fff;
-      color: #000; }
+      background-color: #435973;
+      color: #fff; }
       .subnav .social a:hover {
-        color: #000;
-        background-color: #a8cbc5; }
+        color: #fff;
+        background-color: #c59569; }
 
 .yourbooking {
   display: none;
-  background: #292929;
+  background: #80bab3;
   position: absolute;
   top: 90px;
   bottom: 0;
@@ -1981,10 +2041,11 @@ body.scrolled .hamburger {
     white-space: nowrap;
     text-align: right; }
   .yourbooking-summary td.remove {
-    padding-left: 30px;
-    text-align: right; }
+    text-align: right;
+    width: 110px; }
     @media all and (max-width: 767px) {
       .yourbooking-summary td.remove {
+        width: auto;
         padding-left: 15px; } }
   .yourbooking-summary ul {
     list-style-type: none;
@@ -1998,10 +2059,10 @@ body.scrolled .hamburger {
     font-size: 18px; }
 
 .notification {
-  background: #a8cbc5;
+  background: #fff;
   text-align: center;
-  color: #000;
-  font-family: "Prompt", sans-serif;
+  color: #c59569;
+  font-family: "bebas", sans-serif;
   line-height: 90px;
   text-transform: uppercase;
   font-weight: 700;
@@ -2020,7 +2081,7 @@ body.scrolled .hamburger {
       height: 50px;
       line-height: 50px; } }
   .notification span {
-    font-family: "Roboto", sans-serif; }
+    font-family: "proxima_novaregular", sans-serif; }
   @media all and (max-width: 767px) {
     .notification {
       font-size: 12px; } }
@@ -2035,10 +2096,10 @@ body.stickyheader {
     top: 0;
     left: 0;
     width: 100%;
-    background: black; }
+    background: white; }
     @media all and (max-width: 767px) {
       body.stickyheader .header {
-        background: #000; } }
+        background: #fff; } }
   body.stickyheader .yourbooking {
     position: fixed; }
 
@@ -2053,7 +2114,7 @@ body.scrolled .notification {
 body.scrolled .subnav, body.scrolled .yourbooking {
   top: 50px; }
 body.scrolled .logo img {
-  height: 15px; }
+  height: 25px; }
 body.scrolled .hamburger-oud {
   margin-left: 10px;
   background-size: auto 20px;
@@ -2086,7 +2147,7 @@ body.scrolled .hamburger-oud {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0); }
   .hero--red {
     background-color: rgba(255, 55, 0, 0); }
   .hero--white {
@@ -2157,11 +2218,11 @@ body.scrolled .hamburger-oud {
         content: "\f078";
         font-family: "FontAwesome"; }
       .hero-scroll .arrow:hover {
-        color: #a8cbc5; }
+        color: #fff; }
     .hero-scroll:hover {
-      color: #a8cbc5; }
+      color: #fff; }
       .hero-scroll:hover .arrow:before {
-        color: #a8cbc5; }
+        color: #fff; }
     .hero-scroll .bar {
       width: 5px;
       background: #fff;
@@ -2194,7 +2255,7 @@ body.scrolled .hamburger-oud {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%); }
   .hero h1 {
-    font-family: "Prompt", sans-serif;
+    font-family: "bebas", sans-serif;
     color: #fff;
     font-weight: 800;
     font-size: 70px;
@@ -2217,7 +2278,7 @@ body.scrolled .hamburger-oud {
           font-size: 30px; } }
   .hero h1 small {
     display: block;
-    font-family: "Roboto", sans-serif;
+    font-family: "proxima_novaregular", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
@@ -2297,7 +2358,7 @@ body.scrolled .hamburger-oud {
   padding-top: 70px;
   margin-top: 30px;
   background: transparent;
-  font-family: "Prompt", sans-serif;
+  font-family: "bebas", sans-serif;
   font-size: 14px;
   cursor: pointer;
   font-weight: 700;
@@ -2370,9 +2431,9 @@ body.scrolled .hamburger-oud {
   display: inline-block;
   width: 100%; }
 .footer-subscribe input {
-  background: #000;
+  background: #fff;
   border: none;
-  color: #a8cbc5;
+  color: transparent;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -2386,21 +2447,21 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #a8cbc5; }
+    color: transparent; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #a8cbc5; }
+    color: transparent; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #a8cbc5; }
+    color: transparent; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: #a8cbc5; }
+    color: transparent; }
 .footer-subscribe a.submit {
   border: none;
-  background: #000;
-  color: #a8cbc5;
-  font-family: "Prompt", sans-serif;
+  background: #fff;
+  color: transparent;
+  font-family: "bebas", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -2488,8 +2549,8 @@ body.scrolled .hamburger-oud {
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0;
-  background: #a8cbc5;
-  color: #000; }
+  background: #4E647E;
+  color: #fff; }
   @media all and (max-width: 992px) {
     .input-group-addon {
       font-size: 12px;
@@ -2575,7 +2636,7 @@ body.scrolled .hamburger-oud {
       font-size: 14px;
       padding: 14px; } }
   .login .input:focus {
-    background-color: #419bf7;
+    background-color: #a8cbc5;
     color: #fff;
     outline: none; }
   .login .input.password {
@@ -2643,7 +2704,7 @@ body.scrolled .hamburger-oud {
   width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #a8cbc5;
+  background-color: #4E647E;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -2660,7 +2721,7 @@ body.scrolled .hamburger-oud {
   width: 0;
   height: 0;
   border: 4px solid transparent;
-  border-top-color: #000;
+  border-top-color: #fff;
   border-bottom: none; }
 
 .selectric-focus .selectric {
@@ -2775,15 +2836,15 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #419bf7;
+  background: #a8cbc5;
   color: #fff; }
 
 .selectric-items li.highlighted {
-  background: #419bf7;
+  background: #a8cbc5;
   color: #fff; }
 
 .selectric-items li:hover {
-  background: #419bf7;
+  background: #a8cbc5;
   color: #fff; }
 
 .selectric-items .disabled {
@@ -2816,27 +2877,29 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: #a8cbc5;
+  background-color: transparent;
   padding: 70px 0 70px;
-  color: #000;
-  border-top: 2px solid rgba(255, 255, 255, 0.3); }
+  color: #fff;
+  border-top: none; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: #a8cbc5;
+    background: #fff;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
+    background: -moz-linear-gradient(top, #fff 0%, #6cb5ff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #6cb5ff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #a8cbc5 0%, #6cb5ff 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    background: linear-gradient(top, #fff 0%, #6cb5ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   @media all and (max-width: 992px) {
     footer {
       padding: 50px 0 30px; } }
   footer h4 {
     text-transform: uppercase;
-    font: "Prompt", sans-serif;
-    color: #000;
+    font: "bebas", sans-serif;
+    color: #fff;
     font-weight: 700;
     margin: 0 0 20px;
     font-size: 24px; }
@@ -2859,7 +2922,7 @@ footer {
     text-align: center;
     display: inline-block; }
   footer a {
-    color: #000; }
+    color: #fff; }
     footer a:hover {
       color: #292929; }
   footer .footer-col {
@@ -2938,17 +3001,17 @@ footer {
     margin-right: 2px; }
     .social li a {
       display: block;
-      background-color: #000;
-      color: #a8cbc5;
+      background-color: #fff;
+      color: #80bab3;
       border-radius: 100%;
       width: 34px;
       height: 34px;
       text-align: center;
-      line-height: 34px;
+      line-height: 38px;
       font-size: 16px; }
       .social li a:hover {
-        background-color: #fff;
-        color: #000; }
+        background-color: #122c3e;
+        color: #fff; }
 
 .footer-logos {
   background-color: #fff;
@@ -2979,15 +3042,15 @@ footer {
   width: 100%;
   max-width: 550px;
   padding: 20px;
-  background-color: black;
+  background-color: #fff;
   font-size: 15px;
-  color: #a8cbc5;
-  border: 1px solid #a8cbc5;
+  color: #122c3e;
+  border: 1px solid #122c3e;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
   .cookies a {
-    color: #fff; }
+    color: #122c3e; }
   @media all and (max-width: 767px) {
     .cookies {
       max-width: 90%;
@@ -3006,7 +3069,7 @@ footer {
         .cookies button .icon {
           width: 15px; } }
     .cookies button #cross-remove-sign {
-      fill: #a8cbc5; }
+      fill: #122c3e; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
@@ -3099,7 +3162,7 @@ footer {
   .event:hover .event-thumb {
     background-size: 150% auto; }
   .event:hover .button-secondary {
-    color: #000 !important;
+    color: #4E647E !important;
     text-decoration: none;
     background: #fff !important; }
   .event-title {
@@ -3126,18 +3189,18 @@ footer {
         font-size: 13px; } }
 
 .accordeon {
-  color: #fff;
-  background: #000;
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  color: #4E647E;
+  background: #fff;
+  border-top: 1px solid #abd5c5;
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #292929;
+    background: #4E647E;
     color: #fff; }
     .accordeon:hover a {
       color: #fff; }
   .accordeon--active, .accordeon--active:hover {
-    background: #000;
+    background: #4E647E;
     color: #fff; }
   .accordeon .container {
     position: relative; }
@@ -3145,7 +3208,7 @@ footer {
     font-size: 32px;
     padding: 15px 0;
     display: inline-block;
-    font-family: "Prompt", sans-serif;
+    font-family: "bebas", sans-serif;
     font-weight: 800;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
@@ -3178,20 +3241,20 @@ footer {
     display: inline-block;
     padding: 15px 0 15px 15px;
     margin-left: 15px;
-    border-left: 2px solid rgba(255, 255, 255, 0.3); }
+    border-left: 1px solid #abd5c5; }
     @media all and (max-width: 767px) {
       .accordeon-down {
         padding: 10px 0 10px 10px;
         margin-left: 10px; } }
   .accordeon a {
-    color: #fff;
+    color: #4E647E;
     display: block; }
     .accordeon a:hover {
       color: #fff; }
 
 .offer {
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid white;
   padding-bottom: 30px;
   margin: 0 0 30px 0; }
   .offer-link {
@@ -3217,9 +3280,9 @@ footer {
       min-height: 170px;
       display: block; } }
   .offer-title {
-    font-family: "Roboto", sans-serif;
+    font-family: "proxima_novaregular", sans-serif;
     font-weight: 700;
-    color: #a8cbc5;
+    color: #fff;
     text-transform: none;
     margin: 0 0 5px;
     font-size: 32px; }
@@ -3230,7 +3293,7 @@ footer {
       .offer-title {
         font-size: 17px; } }
   .offer-subheader {
-    color: #a8cbc5;
+    color: #fff;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
@@ -3276,7 +3339,7 @@ footer {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
-    color: #a8cbc5;
+    color: #fff;
     display: block;
     font-weight: 400;
     margin: 0 0 2px 0;
@@ -3289,7 +3352,7 @@ footer {
       .offer-price {
         font-size: 16px; } }
   .offer-price-condition {
-    color: #a8cbc5;
+    color: #fff;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
@@ -3334,6 +3397,6 @@ footer {
   background: #fff; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #a8cbc5; }
+  background: #4E647E; }
 
 /*# sourceMappingURL=styles.css.map */

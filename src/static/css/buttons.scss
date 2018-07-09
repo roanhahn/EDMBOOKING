@@ -67,7 +67,6 @@ button{
 		white-space: nowrap;
 		line-height: 1;
 		text-transform: uppercase;
-		font-size: 18px;
 		min-width: 150px;
 		border: none;
 		border-radius: $button-radius;
@@ -253,6 +252,7 @@ button{
 		color: $sec-button-color !important;
 		border: $sec-button-border !important;
 		padding: $sec-padding;
+		font-size: $sec-size;
 		text-transform: uppercase;
 
 		@media all and (max-width: $breakpoint-mobile){
@@ -471,4 +471,12 @@ button:focus{
 	position: relative;
 	top: 0px;
 	margin-right: 8px;
+}
+
+.tooltipbtn{
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	color: $link-color;
+	display: inline-block;
 }

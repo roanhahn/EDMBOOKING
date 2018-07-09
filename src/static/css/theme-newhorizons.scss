@@ -1,0 +1,264 @@
+/* Regular font */
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+// @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../font/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../font/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proxima-nova/proximanova-bold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../font/proxima-nova/proximanova-extrabold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proxima-nova/proximanova-light-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../font/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../font/proxima-nova/proximanova-semibold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* FOLDER */
+$folder: newhorizons;
+
+/* BODY */
+$bg-color: #80bab3;
+$bodygradient-fromcolor: #80bab3;
+$bodygradient-tocolor: #abd5c5;
+
+$font-size: 16px;
+
+/* FONTS */
+$font: 'proxima_novaregular', sans-serif;
+$font-header: 'bebas', sans-serif;
+$border-color: rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #fff;
+$link-color: #fff;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: none;
+$blue-filter: rgba(0,155,255,0);
+$white-filter: rgba(236,236,236,0);
+$red-filter: rgba(255,55,0,0);
+$grey-filter: rgba(50,50,50,0.2);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.5);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'bebas', sans-serif;
+$button-size: 20px;
+$button-bg: #fff;
+$button-color: #4E647E;
+$button-bg-hover: #4E647E;
+$button-color-hover: #fff;
+$button-radius: 0px;
+
+/* BACK BUTTON */
+$button-back-bg: rgba(0,0,0,.5);
+$button-back-color: #fff;
+$button-back-border: 2px solid rgba(255,255,255,.3);
+$button-back-bghover: #fff;
+$button-back-colorhover: #000;
+$button-back-borderhover: 2px solid #fff;
+
+/* FAQ */
+$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-color: #fff;
+$faq-button-bghover: #fff;
+$faq-button-colorhover: #000;
+
+/* SECONDARY BUTTON */
+
+$sec-button-color: #fff;
+$sec-size: 20px;
+$sec-button-bg: #4E647E;
+$sec-button-colorhover: #4E647E;
+$sec-button-bghover: #fff;
+$sec-button-border: 2px solid #fff;
+$sec-button-radius: 50px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #435973 !default;
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 45px;
+$logo-height-mobile: 25px;
+$header-bg: #fff;
+$header-color: #4E647E;
+$header-bg-sticky: rgba(255,255,255, 1);
+$header-text: #4E647E;
+$header-hover: #c59569;
+$main-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+$menu-color: black;
+$notification-bg: #fff;
+$notication-icons: #c59569;
+$notification-text: #c59569;
+$subnav-bg: #fff;
+$subnav-strong: #4E647E;
+$subnav-color: #4E647E;
+$subnav-link: #4E647E;
+$subnav-sublink: #4E647E;
+$subnav-hover: #c59569;
+$subnav-social-bg: #435973;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #c59569;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid rgba(255,255,255,.3);
+
+/* HERO */
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,0);
+$font-hero-small: 'proxima_novaregular', sans-serif;
+$hero-position: center center;
+$hero-subtitle-size: 20px;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+/* Testimonials */
+$testimonial-bg: #292929;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #4E647E;
+$testimonial-inactivedot: #fff;
+
+/* STEPS */
+$steps-bg: #fff;
+$steps-color: #4E647E;
+$steps-bg-hover: #4E647E;
+$steps-color-hover: #fff;
+$steps-active-bg: #4E647E;
+$steps-active-color: #fff;
+$steps-link: #4E647E;
+$steps-border: 1px solid #abd5c5;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid rgba(255,255,255,1);
+$offer-title: #fff;
+$offer-title-transform: none;
+$ribbon-bg: #c59569;
+$ribbon-color: #fff;
+$offer-activedot: #4E647E;
+$offer-inactivedot: #fff;
+$ticketbtn-color: #4E647E;
+$ticketbtn-colorhover: #2f4c5c;
+
+/* WHY BOOK */
+$why-border: #a8cbc5;
+$why-number: #fff;
+$why-book-icon: #292929;
+$why-book-iconborder: 3px solid #fff;
+$why-book-iconbg: #fff;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: transparent;
+$footer-text: #fff;
+$footer-link: #fff;
+$footer-hover: #292929;
+$footer-heading: #fff;
+$footer-social-bg: #fff;
+$footer-social-color: #80bab3;
+$footer-social-hover: #122c3e;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+
+/* COOKIES */
+$cookies-bg: #fff;
+$cookies-fontsize: 15px;
+$cookies-border: 1px solid #122c3e;
+$cookies-color: #122c3e;
+$cookie-link-color: #122c3e;
+$cookies-padding: 20px;
+$cookies-fontsize-mobile: 11px;
+$cookies-padding-mobile: 10px;
+
+/* FORMS */
+$form-border: 1px solid #fff;
+$form-bordercolor: #000;
+$form-border-login: 1px solid #000;
+$form-label: #fff;
+$form-input-color: #000;
+$form-highlight: #a8cbc5;
+$form-highlightcolor: #fff;
+$form-addon-bg: #4E647E;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+
+
+
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(top, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(top, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}

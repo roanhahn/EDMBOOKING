@@ -183,12 +183,12 @@ footer{
 		& a{
 			display: block;
 			background-color: $footer-social-bg;
-			color: $footer-bg;
+			color: $footer-social-color;
 			border-radius: 100%;
 			width: 34px;
 			height: 34px;
 			text-align: center;
-			line-height: 34px;
+			line-height: 38px;
 			font-size: 16px;
 
 			&:hover{
@@ -253,7 +253,7 @@ footer{
 	transform: translate(-50%, 0);
 
 	& a{
-		color: $text-color;
+		color: $cookie-link-color;
 	}
 	@media all and(max-width: $breakpoint-tablet){
 
