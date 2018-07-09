@@ -751,11 +751,12 @@ var can = Canvallax({
 
   var getCandidate = bestCandidateSampler(width,height,10);
 
-  var CLOUD_COUNT = 40,
+  var CLOUD_COUNT = 1000,
       CLOUD_WIDTH = 510,
       CLOUD_HEIGHT = 260;
 
   CLOUD_COUNT = Math.floor(( width * height ) / (CLOUD_WIDTH * CLOUD_HEIGHT));
+    CLOUD_COUNT = 8;
 
   function randomRange(min, max) {
     return Math.random() * (max - min) + min;
