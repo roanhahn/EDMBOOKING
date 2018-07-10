@@ -8,10 +8,10 @@
 // @import "theme-edmbooking.scss";
 
 /* Theme Martin Garrix ADE Variables */
-// @import "theme-martingarrix.scss";
+@import "theme-martingarrix.scss";
 
 /* Theme New Horizons */
-@import "theme-newhorizons.scss";
+// @import "theme-newhorizons.scss";
 
 /* Theme Sensarion Madrid */
 // @import "theme-sensation-madrid.scss";
@@ -33,9 +33,13 @@
 @import "footer.scss";
 @import "events.scss";
 @import "offer.scss";
+
+// @import "odometer-theme-default.css";
+
+// Plugins
 @import "animate.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
 @import "owl.theme.scss";
 @import "bootstrap-datepicker3.min.css";
-// @import "odometer-theme-default.css";
+@import "canvallax.scss";

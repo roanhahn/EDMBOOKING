@@ -82,12 +82,15 @@ $font-size: 16px;
 /* FONTS */
 $font: 'proxima_novaregular', sans-serif;
 $font-header: 'bebas', sans-serif;
-$border-color: rgba(255,255,255,.3);
+$border-color: rgba(255,255,255,.5);
 
 /* FONT COLORS */
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #fff;
+
+/* Google Maps */
+$mapclose-color: #80bab3;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -110,18 +113,18 @@ $button-color-hover: #fff;
 $button-radius: 0px;
 
 /* BACK BUTTON */
-$button-back-bg: rgba(0,0,0,.5);
+$button-back-bg: #4E647E;
 $button-back-color: #fff;
-$button-back-border: 2px solid rgba(255,255,255,.3);
+$button-back-border: 2px solid rgba(255,255,255,1);
 $button-back-bghover: #fff;
-$button-back-colorhover: #000;
+$button-back-colorhover: #4E647E;
 $button-back-borderhover: 2px solid #fff;
 
 /* FAQ */
-$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-bg: #4E647E;
 $faq-button-color: #fff;
 $faq-button-bghover: #fff;
-$faq-button-colorhover: #000;
+$faq-button-colorhover: #4E647E;
 
 /* SECONDARY BUTTON */
 
@@ -149,8 +152,8 @@ $header-hover: #c59569;
 $main-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
 $menu-color: black;
 $notification-bg: #fff;
-$notication-icons: #c59569;
-$notification-text: #c59569;
+$notication-icons: #4E647E;
+$notification-text: #4E647E;
 $subnav-bg: #fff;
 $subnav-strong: #4E647E;
 $subnav-color: #4E647E;
@@ -178,7 +181,7 @@ $hero-button-width: 350px;
 $hero-button-size: 24px;
 
 /* Testimonials */
-$testimonial-bg: #292929;
+$testimonial-bg: transparent;
 $testimonial-text: #fff;
 $testimonial-title: #fff;
 $testimonial-author: #fff;
@@ -193,7 +196,7 @@ $steps-color-hover: #fff;
 $steps-active-bg: #4E647E;
 $steps-active-color: #fff;
 $steps-link: #4E647E;
-$steps-border: 1px solid #abd5c5;
+$steps-border: 2px solid #abd5c5;
 
 /* OFFERS */
 $event-bg: #000;
@@ -210,7 +213,7 @@ $ticketbtn-colorhover: #2f4c5c;
 /* WHY BOOK */
 $why-border: #a8cbc5;
 $why-number: #fff;
-$why-book-icon: #292929;
+$why-book-icon: #4E647E;
 $why-book-iconborder: 3px solid #fff;
 $why-book-iconbg: #fff;
 
@@ -240,10 +243,10 @@ $cookies-padding-mobile: 10px;
 /* FORMS */
 $form-border: 1px solid #fff;
 $form-bordercolor: #000;
-$form-border-login: 1px solid #000;
+$form-border-login: 1px solid #80bab3;
 $form-label: #fff;
-$form-input-color: #000;
-$form-highlight: #a8cbc5;
+$form-input-color: #4E647E;
+$form-highlight: #4E647E;
 $form-highlightcolor: #fff;
 $form-addon-bg: #4E647E;
 $form-addon-color: #fff;
@@ -260,5 +263,39 @@ $placeholder-color: #95a5a6;
     background: linear-gradient(top, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+#footer{
+    position: relative;
+}
+
+#footer:before,
+#footer:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 195px;
+    height: 514px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    // background: red;
+
+    @media all and (max-width: $breakpoint-tablet){
+        display: none;
+    }
+}
+
+#footer:after{
+    right: 0;
+    background-image: url(../img/#{$folder}/tower-right.png);
+    background-position: 0 bottom;
+}
+#footer:before{
+    left: 0;
+    background-image: url(../img/#{$folder}/tower-left.png);
+    background-position: 0 bottom;
+    background-size: 100% auto;
 }

@@ -1,8 +1,15 @@
+.main > .accordeon{
+	border: none;
+}
+
+.main > .accordeon ~ .accordeon{
+	border-top: $steps-border;
+}
 .accordeon{
 
 	color: $steps-color;
 	background: $steps-bg;
-	border-top: $steps-border;
+
 	-webkit-transition: background .15s ease-out 0s;
 	transition: background .15s ease-out 0s;
 

@@ -9,6 +9,8 @@ $folder: edmbooking;
 
 /* BODY */
 $bg-color: #000;
+$bodygradient-fromcolor: #000;
+$bodygradient-tocolor: #000;
 $font-size: 16px;
 
 /* FONTS */
@@ -20,6 +22,9 @@ $border-color: rgba(255,255,255,.3);
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #419bf7;
+
+/* Google Maps */
+$mapclose-color: #419bf7;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -57,6 +62,7 @@ $faq-button-colorhover: #000;
 
 /* SECONDARY BUTTON */
 $sec-button-color: #fff;
+$sec-size: 16px;
 $sec-button-bg: rgba(0,0,0,.5);
 $sec-button-colorhover: #000;
 $sec-button-bghover: #fff;
@@ -151,6 +157,7 @@ $footer-link: #000;
 $footer-hover: #fff;
 $footer-heading: #000;
 $footer-social-bg: #000;
+$footer-social-color: #419bf7;
 $footer-social-hover: #000;
 $footer-socialicon-hover: #fff;
 $footer-payoffsize: 12px;
@@ -159,6 +166,7 @@ $footer-payoffsize: 12px;
 $cookies-bg: rgba(0,0,0,1);
 $cookies-fontsize: 15px;
 $cookies-border: 1px solid #419bf7;
+$cookie-link-color: #fff;
 $cookies-color: #419bf7;
 $cookies-padding: 20px;
 $cookies-fontsize-mobile: 11px;
