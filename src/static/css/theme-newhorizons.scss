@@ -134,7 +134,7 @@ $sec-button-bg: #4E647E;
 $sec-button-colorhover: #4E647E;
 $sec-button-bghover: #fff;
 $sec-button-border: 2px solid #fff;
-$sec-button-radius: 50px;
+$sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
@@ -165,7 +165,7 @@ $subnav-social-color: #fff;
 $subnav-social-hover: #fff;
 $subnav-social-bghover: #c59569;
 $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
-$subnav-border: 1px solid rgba(255,255,255,.3);
+$subnav-border: 1px solid rgba(0,0,0,.1);
 
 /* HERO */
 $hero-padding: 150px 0;
@@ -269,6 +269,24 @@ $placeholder-color: #95a5a6;
     position: relative;
 }
 
+.partners:before{
+    position: absolute;
+    content: '';
+    display: block;
+    background: transparent url(../img/#{$folder}/footer-clouds.png) no-repeat center bottom scroll;
+    background-size: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    bottom: 180px;
+    width: 100%;
+
+    @media all and (max-width: $breakpoint-tablet){
+       bottom: 150px;
+    }
+
+}
+
 #footer:before,
 #footer:after{
     position: absolute;
@@ -278,7 +296,7 @@ $placeholder-color: #95a5a6;
     height: 514px;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
+    bottom: 180px;
     pointer-events: none;
     z-index: -1;
     // background: red;
