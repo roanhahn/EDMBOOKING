@@ -197,17 +197,17 @@
 
 .selectric-items li.selected {
   background: $form-highlight;
-  color: $form-highlightcolor;
+  color: $form-highlightcolor !important;
 }
 
 .selectric-items li.highlighted {
   background: $form-highlight;
-  color: $form-highlightcolor;
+  color: $form-highlightcolor !important;
 }
 
 .selectric-items li:hover {
   background: $form-highlight;
-  color: $form-highlightcolor;
+  color: $form-highlightcolor !important;
 }
 
 .selectric-items .disabled {

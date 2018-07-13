@@ -462,6 +462,12 @@ $('*[data-type="toggle"]').click(function() {
     return false;
 });
 
+$(document).on("click", function () {
+    if(document.getElementById("setLanguage").style.display == "block"){
+        $("#setLanguage").fadeToggle("fast");
+    }
+});
+
 $('*[data-type="slidetoggle"]').click(function() {
 
     var toggletarget = $(this).data('target');

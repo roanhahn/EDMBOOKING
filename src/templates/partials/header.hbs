@@ -5,6 +5,20 @@
 		</a>
 		<nav class="mainnav">
 			<div class="booking">
+				<div class="language">
+					<button class="language-button" data-type="toggle" data-target="#setLanguage">
+						EN
+					</button>
+					<div class="language-selector" id="setLanguage">
+						<ul>
+							<li class="active"><a href="#" title="">English</a></li>
+							<li><a href="#" title="">Español</a></li>
+							<li><a href="#" title="">Francais (Beta)</a></li>
+							<li><a href="#" title="">Italiano (Beta)</a></li>
+							<li><a href="#" title="">Nederlands (Beta)</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="booking-info toggle-yourbooking">
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro;299,00</span>
@@ -73,6 +87,15 @@
 			</ul>
 		</li>
 	</ul>
+	<div class="subnav-language d-block d-md-none">
+		<form>
+			<select>
+				<option selected="">Spanish</option>
+				<option>English</option>
+				<option>Dutch</option>
+			</select>
+		</form>
+	</div>
 	<ul class="social">
 		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

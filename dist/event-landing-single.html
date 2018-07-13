@@ -39,7 +39,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	
-	<link href="assets/css/styles.min.css?v=4" rel="stylesheet" id="themecss">
+	<link href="assets/css/styles.min.css?v=7" rel="stylesheet" id="themecss">
 	
 
 
@@ -57,6 +57,20 @@
 		</a>
 		<nav class="mainnav">
 			<div class="booking">
+				<div class="language">
+					<button class="language-button" data-type="toggle" data-target="#setLanguage">
+						EN
+					</button>
+					<div class="language-selector" id="setLanguage">
+						<ul>
+							<li class="active"><a href="#" title="">English</a></li>
+							<li><a href="#" title="">Español</a></li>
+							<li><a href="#" title="">Francais (Beta)</a></li>
+							<li><a href="#" title="">Italiano (Beta)</a></li>
+							<li><a href="#" title="">Nederlands (Beta)</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="booking-info toggle-yourbooking">
 					<span class="booking-cart">My booking</span>
 					<span class="booking-amount">&euro;299,00</span>
@@ -98,6 +112,15 @@
 			</ul>
 		</li>
 	</ul>
+	<div class="subnav-language d-block d-md-none">
+		<form>
+			<select>
+				<option selected="">Spanish</option>
+				<option>English</option>
+				<option>Dutch</option>
+			</select>
+		</form>
+	</div>
 	<ul class="social">
 		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -386,12 +409,14 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 					
 				</ul>
 			</div>
-			<div class="col-lg-3 footer-col d-none">
-				<h4>Language</h4>
+			<div class="col-lg-3 footer-col d-block d-md-none">
 				<form class="language">
-					
 					<select>
-						<option>English</option>
+						<option selected="">English</option>
+						<option>Español</option>
+						<option>Francais (Beta)</option>
+						<option>Italiano (Beta)</option>
+						<option>Nederlands (Beta)</option>
 					</select>
 				</form>
 			</div>
@@ -464,14 +489,17 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 	<!-- Our JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.easing.min.js"></script>
 	<script src="assets/js/plugins/jquery.popupoverlay.js"></script>
 	<script src="assets/js/plugins/jquery.cookie.js"></script>
-	<script src="assets/js/plugins/canvallax.js"></script>
-	<script src="assets/js/app.js"></script>
+
+	
+		<script src="assets/js/plugins/canvallax.js"></script>
+	
+	<script src="assets/js/app.js?v=7"></script>
 </body>
 </html>

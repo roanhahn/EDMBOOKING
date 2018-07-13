@@ -126,40 +126,26 @@ footer{
 	}
 
 	& .language{
-		display: inline-block;
+
 		vertical-align: middle;
 		// float: right;
-		width: 100%;
+		margin-bottom: 20px;
 
-		@media all and (max-width: $breakpoint-tablet){
-			float: none;
-			// background-color: red;
-			display: block;
-		}
 
-		& label{
-			display: inline-block;
-			vertical-align: middle;
-			font-weight: bold;
-			font-size: 14px;
-			margin-right: 10px;
-			position: relative;
-			top: 2px;
-		}
 
 		& .selectric-wrapper{
-			display: inline-block;
-			vertical-align: middle;
-			width: 80%;
+			width: 70%;
+			display: block;
+			margin: 0 auto 0;
+			text-align: left;
 
-			@media all and (max-width: $breakpoint-tablet){
-				width: 50%;
-				display: block;
-				margin: 20px auto 0;
+			.selectric-items, .selectric-open .selectric, .selectric{
+				border: 1px solid $subnav-sublink !important;
 			}
 
-			@media all and(max-width: $breakpoint-mobile){
-				// width: 100%;
+			.selectric-items li, .selectric-items ul{
+				font-size: 13px;
+				color: $subnav-sublink;
 			}
 		}
 	}
