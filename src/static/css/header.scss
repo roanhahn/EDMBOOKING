@@ -157,13 +157,13 @@
 
 						& a{
 							display: block;
-							color: $header-text;
+							color: $language-link;
 							position: relative;
 							font-weight: 600;
 							white-space: nowrap;
 
 							&:hover{
-								color: $header-hover;
+								color: $language-hover;
 							}
 						}
 

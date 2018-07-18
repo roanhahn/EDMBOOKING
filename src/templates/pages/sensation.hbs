@@ -1,0 +1,45 @@
+---
+title: Sensation Homepage
+type: page
+layout: default.hbs
+---
+
+
+<div class="hero hero-video">
+    {{!-- <div class="sensation-hero-logo"><img src="assets/img/sensation/hero-logo.png" class="img-fluid"></div> --}}
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h1>
+                        {{site.herotitle}}
+                        <small>{{site.herosubtitle}}</small>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="sensation-hero-btn">
+                        Singapore
+                        <span>1 Sept</span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                     <a href="#" class="sensation-hero-btn">
+                        Gliwice
+                        <span>13 oct</span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="sensation-hero-btn">
+                        Madrid
+                        <span>3 nov</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <video class="inlinevideo" autoplay loop muted playsinline style="background-image:url(assets/img/{{site.theme}}/hero.jpg)">
+        <source src="assets/video/sensation-hero.mp4" data-wf-ignore="true">
+    </video>
+</div>

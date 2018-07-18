@@ -9,6 +9,9 @@ $folder: sensation;
 
 /* BODY */
 $bg-color: #fff;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+
 $font-size: 14px;
 
 /* FONTS */
@@ -20,6 +23,9 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #666666;
 $heading-color: #000;
 $link-color: #6EB3C3;
+
+/* Google Maps */
+$mapclose-color: #6EB3C3;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -39,6 +45,7 @@ $button-bg: #6EB3C3;
 $button-color: #fff;
 $button-bg-hover: #000;
 $button-color-hover: #fff;
+$button-radius: 0px;
 
 /* BACK BUTTON */
 $button-back-bg: #fff;
@@ -56,6 +63,7 @@ $faq-button-colorhover: #fff;
 
 /* SECONDARY BUTTON */
 $sec-button-color: #fff;
+$sec-size: 20px;
 $sec-button-bg: rgba(0,0,0,.5);
 $sec-button-colorhover: #000;
 $sec-button-bghover: #fff;
@@ -65,6 +73,7 @@ $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
 /* HEADER */
+$hamburger-layer-color: #000 !default;
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
@@ -79,30 +88,42 @@ $menu-color: black;
 $notification-bg: #fff;
 $notication-icons: #6EB3C3;
 $notification-text: #000;
-$subnav-bg: #fff;
-$subnav-strong: #000;
+$subnav-bg: #000;
+$subnav-strong: #fff;
 $subnav-color: #666;
-$subnav-link: #000;
-$subnav-sublink: #666;
-$subnav-hover: #666;
-$subnav-social-bg: #000;
-$subnav-social-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #6EB3C3;
+$subnav-social-bg: #fff;
+$subnav-social-color: #000;
 $subnav-social-hover: #fff;
 $subnav-social-bghover: #6EB3C3;
 $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
-$subnav-border: 1px solid #f3eeee;
+$subnav-border: 1px solid rgba(255,255,255,.2);
+$language-bg: #000;
+$language-link: #fff;
+$language-hover: #6EB3C3;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
 
 /* HERO */
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,0);
+$hero-h1-size: 60px; //70px default
 $font-hero-small: 'Oswald', sans-serif;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
 
 /* Testimonials */
 $testimonial-bg: #000;
-$testimonial-text: #6EB3C3;
+$testimonial-text: #fff;
 $testimonial-title: #fff;
-$testimonial-author: #6EB3C3;
+$testimonial-author: #fff;
 $testimonial-activedot: #6EB3C3;
 $testimonial-inactivedot: #fff;
 
@@ -125,6 +146,8 @@ $ribbon-bg: #000;
 $ribbon-color: #fff;
 $offer-activedot: #6EB3C3;
 $offer-inactivedot: #666;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
 
 /* WHY BOOK */
 $why-border: #6EB3C3;
@@ -137,19 +160,24 @@ $why-book-iconbg: #6EB3C3;
 $footer-border: 1px solid #ccc;
 $footer-bg: #fff;
 $footer-text: #666;
-$footer-link: #666;
-$footer-hover: #666;
+$footer-link: #666666;
+$footer-hover: #000;
 $footer-heading: #000;
+$footer-social-color: #fff;
 $footer-social-bg: #000;
 $footer-social-hover: #6EB3C3;
 $footer-socialicon-hover: #fff;
 $footer-payoffsize: 12px;
 
 /* COOKIES */
-$cookies-bg: rgba(0,0,0,.8);
+$cookies-bg: rgba(0,0,0,.9);
+$cookie-link-color: #122c3e;
 $cookies-fontsize: 13px;
 $cookies-border: 1px solid (255,255,255,.3);
 $cookies-color: #fff;
+$cookies-padding: 20px;
+$cookies-fontsize-mobile: 11px;
+$cookies-padding-mobile: 10px;
 
 /* FORMS */
 $form-border: 1px solid #000;
@@ -160,7 +188,8 @@ $form-input-color: #000;
 $form-highlight: #6EB3C3;
 $form-highlightcolor: #fff;
 $form-addon-bg: #000;
-$form-addon-color: #fff; 
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
 
 @mixin gradient($fromcolor, $tocolor) {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -168,4 +197,89 @@ $form-addon-color: #fff;
 	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+.sensation-hero-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    max-width: 273px;
+
+    @media all and(max-width: $breakpoint-tablet){
+        max-width: 200px;
+    }
+    @media all and(max-width: $breakpoint-mobile){
+        max-width: 100px;
+        display: none;
+    }
+}
+
+.sensation-hero-btn{
+    display: inline-block;
+    width: 100%;
+    max-width: 273px;
+    background: rgba(0,0,0,.6);
+    font-family: 'Lato';
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #fff;
+    margin: 10px;
+    line-height: 1.5;
+
+    &:hover{
+        background: #000;
+        color: #fff;
+    }
+
+    @media all and(max-width: $breakpoint-tablet){
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        font-size: 22px;
+    }
+
+    @media all and(max-width: $breakpoint-mobile){
+        // display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+
+    & span{
+        display: block;
+        font-weight: 400;
+        font-family: 'Lato';
+        font-size: 20px;
+
+        @media all and(max-width: $breakpoint-tablet){
+            font-size: 16px;
+        }
+        @media all and(max-width: $breakpoint-mobile){
+            font-size: 14px;
+        }
+
+        &:before{
+            display: block;
+            width: 75px;
+            height: 4px;
+            background: #f19537;
+            margin: 2px auto;
+            content: "";
+
+            @media all and(max-width: $breakpoint-tablet){
+                width: 60px;
+            }
+            @media all and(max-width: $breakpoint-mobile){
+                width: 50px;
+            }
+        }
+    }
 }

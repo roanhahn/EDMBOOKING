@@ -734,3 +734,57 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
     position: relative;
     top: -12px;
 }
+
+.edmloader{
+    color: $link-color;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+
+    @media all and(max-width: $breakpoint-mobile){
+        font-size: 14px;
+    }
+}
+.myloader{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+
+    @media all and(max-width: $breakpoint-tablet){
+        width: 100px;
+        height: 100px;
+    }
+
+     @media all and(max-width: $breakpoint-mobile){
+        width: 60px;
+        height: 60px;
+    }
+
+}
+.myloader #pause{
+    // animation:hue 4s linear infinite;
+    fill: $link-color;
+
+}
+
+.myloader circle{
+  stroke-dasharray: 10,84;
+    animation: stroke 1.5s ease infinite;
+    stroke: $link-color;
+}
+@keyframes stroke {
+    50% {
+        stroke-dasharray: 84,10;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -94;
+        }
+}
+
+@keyframes hue {
+    100% {filter:hue-rotate(360deg); }
+}
