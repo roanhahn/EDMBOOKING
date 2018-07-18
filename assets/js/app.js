@@ -342,7 +342,9 @@ $(".scrollTo").click(function() {
 // CUSTOM SELECT
 
 $(function() {
-    $('select').selectric();
+    $('select').selectric({
+        maxHeight: 148
+    });
 });
 
 // SCROLL HEADER
