@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="35px" viewBox="0 0 30 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="marker" fill-rule="nonzero">
+            <polygon id="Shape" fill="#EB1F29" points="29.8026316 0.276315789 0.197368421 0.276315789 0.197368421 29.8815789 10.4605263 29.8815789 15 34.4605263 19.5394737 29.8815789 29.8026316 29.8815789"></polygon>
+            <polygon id="Shape" fill="#FFFFFF" points="7.46052632 7.18421053 12.8289474 7.18421053 12.8289474 12.4736842 17.1710526 12.4736842 17.1710526 7.18421053 22.5394737 7.18421053 22.5394737 22.9736842 17.1710526 22.9736842 17.1710526 17.4473684 12.8289474 17.4473684 12.8289474 22.9736842 7.46052632 22.9736842"></polygon>
+        </g>
+    </g>
+</svg>

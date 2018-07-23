@@ -1,18 +1,30 @@
-
+# SENSATION
+theme: dldk
+name: DLDK - Don't Let Daddy Know
+intro: Don't Let Daddy Know
+title: DLDK - Don't Let Daddy Know
+homepage: homepage.html
+herotitle: Don't Let Daddy Know
+herosubtitle: Axwell Ingrosso, Nicky Romero and many more
+event: Don't Let Daddy Know Thailand
+eventdate: 14 sep 2018, Live Park (Bankok)
+ogtitle: Don't Let Daddy Know Thailand - 14 sep 2018, Live Park (Bankok)
+ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
+description: Don't Let Daddy Know returns to Bangkok on September 14th, 2018. DLDKTHAILAND will be held at Live Park with our new partner Waterzonic
 
 # SENSATION
-theme: sensation
-name: EDMBOOKING
-intro: EDMBOOKING
-title: EDMBOOKING | Book, stay and experience EDM around the globe.
-homepage: homepage.html
-herotitle: Secure your Sensation experience right now
-herosubtitle: A once in a lifetime experience
-event: Sensation Madrid
-eventdate: 3 nov 2018, Madrid (Spain)
-ogtitle: Sensation Spain 2018
-ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
-description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+# theme: sensation
+# name: EDMBOOKING
+# intro: EDMBOOKING
+# title: EDMBOOKING | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# herotitle: Secure your Sensation experience right now
+# herosubtitle: A once in a lifetime experience
+# event: Sensation Madrid
+# eventdate: 3 nov 2018, Madrid (Spain)
+# ogtitle: Sensation Spain 2018
+# ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
+# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # EDM
 # theme: edmbooking

@@ -140,12 +140,12 @@ footer{
 			text-align: left;
 
 			.selectric-items, .selectric-open .selectric, .selectric{
-				border: 1px solid $subnav-sublink !important;
+				border: 1px solid $footer-link !important;
 			}
 
 			.selectric-items li, .selectric-items ul{
 				font-size: 13px;
-				color: $subnav-sublink;
+				// color: $subnav-sublink;
 			}
 		}
 	}

@@ -14,14 +14,14 @@ layout: default.hbs
             <div class="col-md-4 m-b-30">
                 <h3 class="h3">Address</h3>
                 <p class="p">
-                    
+
                         <strong>EDMBOOKING</strong><br />
                         Somestreet 2<br />
                         1059 BT Amsterdam,The Netherlands<br />
 
                        {{!--  Phone: {{site.phone}}<br />
                         E-mail: <a href="mailto:{{site.email}}">{{site.email}}</a> --}}
-                    
+
                 </p>
             </div>
             <div class="col-md-4 m-b-30">
@@ -40,7 +40,7 @@ layout: default.hbs
 
 <div id="map" style="height: 500px;"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
 <script>
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -55,7 +55,7 @@ layout: default.hbs
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
 
-                    // How you would like to style the map. 
+                    // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
                     styles: [
                     {
@@ -226,7 +226,7 @@ layout: default.hbs
                     ]
                 };
 
-                // Get the HTML DOM element that will contain your map 
+                // Get the HTML DOM element that will contain your map
                 // We are using a div with id="map" seen below in the <body>
                 var mapElement = document.getElementById('map');
 
@@ -234,23 +234,19 @@ layout: default.hbs
                 var map = new google.maps.Map(mapElement, mapOptions);
 
                 // Let's also add a marker while we're at it
+
+
+                var customMarker = 'assets/img/{{site.theme}}/marker.svg';
+                var customMarkerEvent = 'assets/img/{{site.theme}}/event.svg';
+
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-
-                var customMarker = 'assets/img/marker.svg';
-                var customMarkerEvent = 'assets/img/event.svg';
-
-                var marker = new google.maps.Marker({ 
                     position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
-                    icon: customMarker, 
-                    map: map, 
-                    title: 'yo'  
+                    icon: customMarkerEvent,
+                    map: map,
+                    title: 'yo'
                 });
 
-                
+
             }
             </script>
             </div>

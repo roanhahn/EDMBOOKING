@@ -67,7 +67,7 @@ $sec-size: 20px;
 $sec-button-bg: rgba(0,0,0,.5);
 $sec-button-colorhover: #000;
 $sec-button-bghover: #fff;
-$sec-button-border: 2p solid #fff;
+$sec-button-border: 2px solid #fff;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
@@ -170,11 +170,11 @@ $footer-socialicon-hover: #fff;
 $footer-payoffsize: 12px;
 
 /* COOKIES */
-$cookies-bg: rgba(0,0,0,.9);
-$cookie-link-color: #122c3e;
+$cookies-bg: #fff;
+$cookie-link-color: #6EB3C3;
 $cookies-fontsize: 13px;
-$cookies-border: 1px solid (255,255,255,.3);
-$cookies-color: #fff;
+$cookies-border: 1px solid #000;
+$cookies-color: #000;
 $cookies-padding: 20px;
 $cookies-fontsize-mobile: 11px;
 $cookies-padding-mobile: 10px;
@@ -224,7 +224,6 @@ $placeholder-color: #95a5a6;
     width: 100%;
     max-width: 273px;
     background: rgba(0,0,0,.6);
-    font-family: 'Lato';
     font-size: 27px;
     font-weight: 600;
     text-transform: uppercase;
@@ -256,7 +255,6 @@ $placeholder-color: #95a5a6;
     & span{
         display: block;
         font-weight: 400;
-        font-family: 'Lato';
         font-size: 20px;
 
         @media all and(max-width: $breakpoint-tablet){
@@ -270,7 +268,7 @@ $placeholder-color: #95a5a6;
             display: block;
             width: 75px;
             height: 4px;
-            background: #f19537;
+            background: $link-color;
             margin: 2px auto;
             content: "";
 
