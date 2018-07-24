@@ -394,17 +394,24 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 
 			
 			<div class="col edmloader">
-    <svg class="myloader" viewBox="0 0 40 40" width="40" height="40" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="15" fill="transparent" stroke-width="2">
+    <svg class="loaderplane" width="250px" height="250px" viewBox="0 0 250 250" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g>
             <animateTransform attributeName="transform"
             type="rotate"
-            from="0 20 20" to="360 20 20"
+            from="0 125 125" to="360 125 125"
             begin="0s" dur="5s"
             repeatCount="indefinite"
             />
-        </circle>
-        <rect id="pause" x="15" y="14" width="3" height="12"></rect>
-        <rect id="pause" x="22" y="14" width="3" height="12"></rect>
+            <circle cx="125" cy="125" r="90" fill="transparent" stroke-width="10"></circle>
+            <polyline class="mask" id="Fill-1" points="0 55 125 125 0 195"></polyline>
+            <g class="plane">
+                <path id="aircraft" d="M104.252,66.064 L112.019,66.064 L135.653,41.601 C137.245,41.645 138.69,41.669 139.923,41.669 C154.07,41.669 165.54,38.683 165.54,35 C165.54,31.316 154.07,28.331 139.923,28.331 C138.69,28.331 137.245,28.355 135.653,28.398 L112.019,3.936 L104.252,3.936 L113.648,29.689 C107.827,30.177 102.077,30.78 97.269,31.468 L88.663,22.561 L85.487,22.561 L89.269,32.924 C86.624,33.577 85.028,34.274 85.028,35 C85.028,35.715 86.579,36.404 89.159,37.049 L85.487,47.113 L88.663,47.113 L96.991,38.495 C101.855,39.197 107.717,39.814 113.648,40.312 L104.252,66.064 Z" id="Fill-3">
+
+                </path>
+            </g>
+        </g>
+        <rect id="pause" x="95" y="85" width="20" height="80"></rect>
+        <rect id="pause" x="135" y="85" width="20" height="80"></rect>
     </svg>
     <div>hold on... we are searching for the best rooms and rates</div>
 </div>
