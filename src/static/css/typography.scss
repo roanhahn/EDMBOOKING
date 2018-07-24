@@ -788,3 +788,75 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 @keyframes hue {
     100% {filter:hue-rotate(360deg); }
 }
+.loaderplane{
+     width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+    & #pause, & #aircraft{
+        fill: $link-color;
+    }
+    background: $loader-bg;
+    -webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+border: 10px solid $loader-bg;
+overflow: hidden;
+// padding: 10px;
+    // transform: rotate(-90deg);
+    @media all and(max-width: $breakpoint-tablet){
+        width: 100px;
+        height: 100px;
+    }
+
+    //  @media all and(max-width: $breakpoint-mobile){
+    //     width: 60px;
+    //     height: 60px;
+    // }
+}
+.loaderplane .plane{
+     // transform: rotate(-35deg);
+    transform-origin: 50% 50%;
+
+    animation: aircraft 1.5s ease-out 0s infinite;
+    // display: none;
+
+}
+.loaderplane .mask{
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+    fill: $loader-bg;
+     animation: mask 1.5s ease-out 0s infinite;
+}
+.loaderplane circle{
+    stroke-dasharray: 565.487;
+    stroke-dashoffset: 565;
+    animation: loading 3s ease-out 0s infinite;
+    // animation-fill-mode:forwards;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    // animation: stroke 1.5s ease infinite;
+    stroke: $link-color;
+    // stroke-linecap: round;
+}
+
+@keyframes loading {
+    50%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -565;
+    }
+}
+@keyframes mask {
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(450deg);
+    }
+}
+@keyframes aircraft {
+    100%{
+        transform: rotate(360deg);
+    }
+}

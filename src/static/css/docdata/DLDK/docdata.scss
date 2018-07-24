@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
-// @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-$header: #eb1f29;
-$color-1: #eb1f29; /* blue */
-$color-2: #eb1f29; /* blue */
-$color-3: #eb1f29; /* grey */
+$header: #80bab3;
+$color-1: #4E647E; /* blue */
+$color-2: #4E647E; /* blue */
+$color-3: #e6e7e8; /* grey */
 
 $text-color: #000; /* text color */
 
 $font: 14px/1.2 'Roboto', sans-serif;
-$headerfont: 'Roboto', sans-serif;
+$headerfont: 'Prompt', sans-serif;
 
 /* resets the automatic margin and padding of the browser */
 body, html {
 	margin:0;
 	padding:0;
 }
-
 *:invalid {
 box-shadow: none;
 }
@@ -25,7 +24,8 @@ box-shadow: none;
 }
 /* sets the standard font */
 a{
-	color: $color-2;
+	color: #000;
+	text-decoration: underline;
 	cursor:pointer;
 }
 body {
@@ -61,12 +61,9 @@ select{
 .form .gwt-Label{
 	font-size:13px;
 }
-body, html{
-	background: #000 !important;
-}
 .mainLayout{
 	margin:100px 0 0 0;
-	background: #fff !important;
+	background: none !important;
 }
 .headerTitle{
 	color: $text-color;
@@ -90,9 +87,9 @@ body, html{
 	margin:0 auto;
 }
 .merchantHeader img{
-	max-height:80px;
+	max-height:60px;
 	position:absolute;
-	top:10px;
+	top:23px;
 }
 .shop_logo{
 	background: url("img/basesheet.png") repeat scroll 0 0 transparent;
@@ -309,6 +306,7 @@ body, html{
 	font-family: $headerfont;
 	font-weight: 800;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 .form .forwardBtn:hover, .dialogContent a:hover{
 	background-image: url('../images/mobile/white-arrow-right.png') !important;

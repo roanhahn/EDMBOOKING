@@ -627,6 +627,54 @@ h3.extras {
 @keyframes hue {
   100% {
     filter: hue-rotate(360deg); } }
+.loaderplane {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 15px;
+  background: #0b090c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 10px solid #0b090c;
+  overflow: hidden; }
+  .loaderplane #pause, .loaderplane #aircraft {
+    fill: #eb1f29; }
+  @media all and (max-width: 992px) {
+    .loaderplane {
+      width: 100px;
+      height: 100px; } }
+
+.loaderplane .plane {
+  transform-origin: 50% 50%;
+  animation: aircraft 1.5s ease-out 0s infinite; }
+
+.loaderplane .mask {
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+  fill: #0b090c;
+  animation: mask 1.5s ease-out 0s infinite; }
+
+.loaderplane circle {
+  stroke-dasharray: 565.487;
+  stroke-dashoffset: 565;
+  animation: loading 3s ease-out 0s infinite;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: #eb1f29; }
+
+@keyframes loading {
+  50% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: -565; } }
+@keyframes mask {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(450deg); } }
+@keyframes aircraft {
+  100% {
+    transform: rotate(360deg); } }
 .info-labels {
   display: flex;
   flex-wrap: wrap;
