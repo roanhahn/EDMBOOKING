@@ -41,10 +41,10 @@ $mapclose-color: #eb1f29;
 /* FILTERS */
 $filter-visibility: block;
 $blend-mode: multiply;
-$blue-filter: rgba(0,0,0,.2); //rgba(110,179,195,1);
-$white-filter: rgba(0,0,0,.2);
-$red-filter: rgba(0,0,0,.2);
-$grey-filter: rgba(0,0,0,.2);
+$blue-filter: rgba(0,0,0,.3); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.3);
+$red-filter: rgba(0,0,0,.3);
+$grey-filter: rgba(0,0,0,.3);
 $filter-opacity: 0.5;
 $video-opacity: rgba(0,0,0,.5);
 $video-filter:  none; //grayscale(100%);

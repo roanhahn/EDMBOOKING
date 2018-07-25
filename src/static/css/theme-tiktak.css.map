@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACQ,6EAAqE,CAGrE,yEAAiE,CAWzE,IAAI,CACA,UAAU,CAAE,eAAoB,CA8LpC,OAAO,CACH,UAAU,CAAE,iBAAiB",
+"sources": ["theme-tiktak.scss"],
+"names": [],
+"file": "theme-tiktak.css"
+}

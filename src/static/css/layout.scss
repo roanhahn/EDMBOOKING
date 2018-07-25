@@ -230,7 +230,11 @@
 			// background: yellow;
 			// height: 100%;
 
-
+			& ul{
+				margin: 0 0 20px 18px;
+				padding: 0;
+				line-height: 1.6;
+			}
 			& p{
 				line-height: 1.6;
 			}

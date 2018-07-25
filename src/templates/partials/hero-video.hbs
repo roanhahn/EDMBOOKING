@@ -1,4 +1,4 @@
-<div class="hero hero-video" style="background-image: url(assets/img/{{site.theme}}/hero.jpg)">
+<div class="hero hero-video hero-video--70">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -7,20 +7,20 @@
 						{{site.herotitle}}
 						<small>{{site.herosubtitle}}</small>
 					</h1>
-					<a href="#" class="button button-primary button-hero">
+					{{!-- <a href="#" class="button button-primary button-hero">
 						Friday | 18+
 						<span>19 October 2018</span>
 					</a>
 					<a href="#" class="button button-primary button-hero">
 						Saturday | All ages
 						<span>20 October 2018</span>
-					</a>
+					</a> --}}
 
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="videowrapper">
-		<div id="hero-video" class="videoplayer" data-youtubecontent="ZZjc58VC-58" data-starttime="35" data-endtime="60"></div>
-	</div>
+	 <video class="inlinevideo" autoplay loop muted playsinline style="background-image:url(assets/img/{{site.theme}}/hero.jpg)">
+        <source src="assets/video/dldk-hero.mp4" data-wf-ignore="true">
+    </video>
 </div>

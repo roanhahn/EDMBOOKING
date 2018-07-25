@@ -475,3 +475,35 @@ button:focus {
     color: $link-color;
     display: inline-block;
 }
+
+.flexbuttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // padding: 0 150px;
+
+    @media all and(max-width: $breakpoint-tablet){
+        padding: 0;
+    }
+    @media all and(max-width: $breakpoint-mobile){
+        display: block;
+    }
+
+    & a{
+        flex-grow: 1;
+        flex-shrink: 2;
+        max-width: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        @media all and(max-width: $breakpoint-mobile){
+            display: block;
+            flex-grow: 1;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+

@@ -411,6 +411,7 @@ $(document).ready(function() {
     })
 
     var owl = $('.owl-pictures');
+
     owl.owlCarousel({
         responsiveRefreshRate: 200,
         margin: 0,
@@ -422,7 +423,7 @@ $(document).ready(function() {
         autoplaySpeed: 1000,
         autoplayTimeout: 3000,
         loop: true,
-        autoplayHoverPause: true,
+        autoplayHoverPause: false,
         responsive: {
             0: {
                 items: 1,
@@ -439,7 +440,17 @@ $(document).ready(function() {
             }
         }
     })
+
+    $(".my-next-button").click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+
+    $(".my-prev-button").click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
 });
+
+
 
 
 // TOGGLE
