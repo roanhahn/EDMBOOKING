@@ -19,7 +19,7 @@
 		color: $steps-color-hover;
 
 		& a{
-			color: $steps-color-hover;
+			// color: $steps-color-hover;
 		}
 
 	}
@@ -98,6 +98,14 @@
 			color: $steps-color-hover;
 		}
 		// background: red;
+
+		&.button-secondary{
+			color: $sec-button-color;
+
+			&:hover{
+				color: $sec-button-colorhover;
+			}
+		}
 	}
 }
 

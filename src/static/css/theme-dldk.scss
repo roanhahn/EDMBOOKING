@@ -211,7 +211,7 @@ $placeholder-color: #95a5a6;
 }
 
 .header{
-    border-bottom: 3px solid #eb1f29;
+    // border-bottom: 3px solid #eb1f29;
 }
 
 .yourbooking{
@@ -221,4 +221,73 @@ $placeholder-color: #95a5a6;
 .accordeon-buttons .button-secondary:hover{
     background: #fff !important;
     color: #eb1f29 !important;
+}
+
+.dldk-hero-btn{
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    background: $link-color;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #fff;
+    margin: 10px;
+    line-height: 1.5;
+
+    &:hover{
+        background: #000;
+        color: #fff;
+
+        & span:before{
+            background: $link-color;
+        }
+    }
+
+    @media all and(max-width: $breakpoint-tablet){
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+
+    @media all and(max-width: $breakpoint-mobile){
+        // display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        // margin:  15px;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    & span{
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+
+        @media all and(max-width: $breakpoint-tablet){
+            font-size: 14px;
+        }
+        @media all and(max-width: $breakpoint-mobile){
+            font-size: 14px;
+        }
+
+        &:before{
+            display: block;
+            width: 75px;
+            height: 4px;
+            background: #000;
+            margin: 5px auto;
+            content: "";
+
+            @media all and(max-width: $breakpoint-tablet){
+                width: 60px;
+            }
+            @media all and(max-width: $breakpoint-mobile){
+                width: 50px;
+            }
+        }
+    }
 }

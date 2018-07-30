@@ -245,8 +245,8 @@ button {
     &-secondary {
         border-radius: $sec-button-radius;
         background: $sec-button-bg;
-        color: $sec-button-color !important;
-        border: $sec-button-border !important;
+        color: $sec-button-color;
+        border: $sec-button-border;
         padding: $sec-padding;
         font-size: $sec-size;
         text-transform: uppercase;
@@ -269,7 +269,7 @@ button {
         }
 
         &:hover {
-            color: $sec-button-colorhover !important;
+            color: $sec-button-colorhover;
             text-decoration: none;
             background: $sec-button-bghover;
         }

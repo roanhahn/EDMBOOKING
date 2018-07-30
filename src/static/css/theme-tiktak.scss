@@ -124,6 +124,8 @@ $hero-button-width: 350px;
 $hero-button-size: 24px;
 
 
+
+
 /* Testimonials */
 $testimonial-bg: transparent;
 $testimonial-text: #000;
@@ -162,7 +164,7 @@ $why-book-iconborder: 3px solid #87888a;
 $why-book-iconbg: #87888a;
 
 /* Footer */
-$footer-border: 3px solid #ffef3b;
+$footer-border: none;
 $footer-bg: #000;
 $footer-text: #bbb;
 $footer-link: #fff;
@@ -204,14 +206,23 @@ $placeholder-color: #95a5a6;
     background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.header{
-    border-top: 5px solid #ffef3b;
-}
+// .header{
+//     border-top: 5px solid #ffef3b;
+// }
 
 .yourbooking{
     // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
 }
 
+.hero-button{
+    background: #ffef3b !important;
+    color: #000 !important;
+
+    &:hover{
+        background: #000 !important;
+        color: #ffef3b !important;
+    }
+}
 // .accordeon-buttons .button-secondary:hover{
 //     background: #fff !important;
 //     color: #eb1f29 !important;

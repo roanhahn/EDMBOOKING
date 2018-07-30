@@ -69,7 +69,7 @@
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	left: 15px;
+	right: 15px;
 	top: 50%;
 	z-index: 10;
 	-ms-transform: translate(0, -70%);
@@ -91,16 +91,16 @@
 	}
 
 	&:before{
-		content: "\f053";
+		content: "\f054";
 		font-family: "FontAwesome";
 	}
 
 }
 .my-prev-button{
-	right: 15px;
-	left: auto;
+	left: 15px;
+	right: auto;
 	&:before{
-		content: "\f054";
+		content: "\f053";
 		font-family: "FontAwesome";
 	}
 }
