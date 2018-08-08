@@ -73,11 +73,11 @@ $faq-button-bghover: #000;
 $faq-button-colorhover: #fff;
 
 /* SECONDARY BUTTON */
-$sec-button-color: #000;
+$sec-button-color: #fff;
 $sec-size: 20px;
-$sec-button-bg: #fff;
-$sec-button-colorhover: #fff;
-$sec-button-bghover: #eb1f29;
+$sec-button-bg: #eb1f29;
+$sec-button-colorhover: #000;
+$sec-button-bghover: #fff;
 $sec-button-border: 2px solid #eb1f29;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
@@ -217,10 +217,13 @@ $placeholder-color: #95a5a6;
 .yourbooking{
     background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
 }
-
+.accordeon-buttons .button-secondary{
+    background: #000 !important;
+    color: #fff !important;
+}
 .accordeon-buttons .button-secondary:hover{
     background: #fff !important;
-    color: #eb1f29 !important;
+    color: #000 !important;
 }
 
 .dldk-hero-btn{
@@ -228,6 +231,7 @@ $placeholder-color: #95a5a6;
     width: 100%;
     max-width: 400px;
     background: $link-color;
+    border: 2px solid $link-color;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -237,8 +241,8 @@ $placeholder-color: #95a5a6;
     line-height: 1.5;
 
     &:hover{
-        background: #000;
-        color: #fff;
+        background: #fff;
+        color: #000;
 
         & span:before{
             background: $link-color;
@@ -278,7 +282,7 @@ $placeholder-color: #95a5a6;
             display: block;
             width: 75px;
             height: 4px;
-            background: #000;
+            background: #fff;
             margin: 5px auto;
             content: "";
 

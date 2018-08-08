@@ -1,0 +1,252 @@
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+
+/* FOLDER */
+$folder: demohotel;
+
+/* BODY */
+$bg-color: #fff;
+$loader-bg: #fff;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+
+body{
+    background: #fff !important; /* Old browsers */
+}
+
+$font-size: 14px;
+$font-header-size: 24px; //default 24px;
+
+/* FONTS */
+$font: 'Montserrat', sans-serif;
+$font-header: 'Montserrat', sans-serif;
+$border-color: #bfbfbf; //rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #333333;
+$heading-color: #333333;
+$link-color: #d60e00;
+
+/* Google Maps */
+$mapclose-color: #d60e00;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.1); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.1);
+$red-filter: rgba(0,0,0,.1);
+$grey-filter: rgba(0,0,0,.1);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.2);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Montserrat', sans-serif;
+$button-size: 17px; //default 17px
+$button-bg: rgba(45,96,155,1);
+$button-color: #fff;
+$button-bg-hover: #d60e00;
+$button-color-hover: #fff;
+$button-radius: 0px;
+
+/* BACK BUTTON */
+$button-back-size: 16px;
+$button-back-bg: rgba(45,96,155,1);
+$button-back-color: #fff;
+$button-back-border: 2px solid #fff;
+$button-back-bghover: #d60e00;
+$button-back-colorhover: #fff;
+$button-back-borderhover: 2px solid #fff;
+
+
+/* FAQ */
+$faq-button-bg: rgba(45,96,155,1);
+$faq-button-color: #fff;
+$faq-button-bghover: #d60e00;
+$faq-button-colorhover: #fff;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-size: 20px; //default 16px
+$sec-size-mobile: 20px; //default
+$sec-button-bg: #d60e00; //rgba(45,96,155,1);
+$sec-button-colorhover: #fff;
+$sec-button-bghover: rgba(45,96,155,1);
+$sec-button-border: 2px solid #d60e00;
+$sec-button-borderhover: 2px solid rgba(45,96,155,1);
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #d60e00;
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 50px;
+$logo-height-mobile: 30px;
+$header-bg: #fff;
+$header-color: #d60e00;
+$header-bg-sticky: #fff;
+$header-text: #d60e00;
+$header-hover: #d60e00;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: rgba(45,96,155,1);
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #fff;
+$subnav-strong: #d60e00;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #333;
+$subnav-link: #d60e00;
+$subnav-sublink: #333;
+$subnav-hover: #2d609b;
+$subnav-social-bg: #2d609b;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #2d609b;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid rgba(0,0,0,.1);
+$language-bg: #fff;
+$language-link: #444444;
+$language-hover: #000;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,.2);
+$hero-h1-size: 70px; //70px default
+$font-hero-small: 'Montserrat', sans-serif;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+
+
+
+/* Testimonials */
+$testimonial-bg: #fff url(../img/demohotel/bg-testimonials.png) center center / cover no-repeat fixed;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #d60e00;
+$testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
+
+
+/* STEPS */
+$steps-bg: #fff;
+$steps-color: rgba(0,0,0,0.3);
+$steps-bg-hover: #d60e00;
+$steps-color-hover: #fff;
+$steps-active-bg: #d60e00;
+$steps-active-color: #fff;
+$steps-link: rgba(0,0,0,0.3);
+$steps-border: 1px solid #bfbfbf;
+
+/* OFFERS */
+$event-bg: #fff;
+$offer-border: 1px solid #bfbfbf;
+$offer-title: rgba(45,96,155,1);
+$offer-title-transform: none;
+$ribbon-bg: #d60e00;
+$ribbon-color: #fff;
+$offer-activedot: #d60e00;
+$offer-inactivedot: #bfbfbf;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
+
+/* WHY BOOK */
+$why-border: #d60e00;
+$why-number: #d60e00;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #d60e00;
+$why-book-iconbg: #d60e00;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: #2d609b;
+$footer-text: #fff;
+$footer-link: #cccccc;
+$footer-hover: #cccccc;
+$footer-heading: #fff;
+$footer-heading-size: 24px; //default 24px
+$footer-social-color: #fff;
+$footer-social-bg: rgba(255,255,255,0.1);
+$footer-social-hover: rgba(255,255,255,0.2);
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+$partner-bg: rgba(0,0,0,0.19);
+
+/* COOKIES */
+$cookies-bg: #fff;
+$cookie-link-color: #d60e00;
+$cookies-fontsize: 16px;
+$cookies-border: 1px solid #d60e00;
+$cookies-color: #333;
+$cookies-padding: 20px;
+$cookies-fontsize-mobile: 11px;
+$cookies-padding-mobile: 10px;
+
+/* FORMS */
+$form-border: 1px solid #bbb;
+$form-bordercolor: #bbb;
+$form-border-login: 1px solid #bbb;
+$form-label: #333;
+$form-input-color: #686868;
+$form-highlight: #fff;
+$form-highlightcolor: #686868;
+$form-addon-bg: #bbb;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+
+.header{
+    // border-bottom: 2px solid #d60e00;
+}
+
+.extra-number .manage-button{
+    color: #fff !important;
+    background: rgba(45,96,155,1) !important;
+
+    &:hover{
+        background: #d60e00 !important;
+    }
+}
+
+.yourbooking{
+    // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
+}
+
+// .hero-button{
+//     background: #ffef3b !important;
+//     color: #000 !important;
+
+//     &:hover{
+//         background: #000 !important;
+//         color: #ffef3b !important;
+//     }
+// }
+.accordeon-buttons .button-secondary{
+    background: #d60e00 !important;
+    color: #fff !important;
+    border-color: #d60e00 !important;
+}

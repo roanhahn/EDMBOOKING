@@ -19,7 +19,7 @@ footer{
 		color: $footer-heading;
 		font-weight: 700;
 		margin: 0 0 20px;
-		font-size: 24px;
+		font-size: $footer-heading-size;
 
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 24px;
@@ -268,7 +268,7 @@ footer{
 		}
 
 		& #cross-remove-sign{
-			fill: $cookies-color;
+			fill: $cookie-link-color;
 		}
 
 
@@ -286,7 +286,7 @@ footer{
 	text-align: center;
 	color: #fff;
 	padding: 40px 0;
-	background: rgba(0,0,0,1);
+	background: $partner-bg;
 	margin-top: 35px;
 	font-size: 14px;
 	font-weight: 400;

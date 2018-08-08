@@ -6,7 +6,7 @@
 	height: 0px;
 	overflow: hidden;
 	position: relative;
-	background: $bg-color url(../img/#{$folder}/rolling.gif) center center no-repeat scroll;
+	background: transparent url(../img/#{$folder}/rolling.gif) center center no-repeat scroll;
 	background-size: 16px auto;
 
 	& img{
@@ -38,6 +38,9 @@
 .ratio-4-3{
 	padding-bottom: 75%;
 }
+.ratio-6-4{
+	padding-bottom: 66.66%;
+}
 .ratio-16-9{
 	padding-bottom: 56.25%;
 	margin-bottom: 15px;
@@ -52,6 +55,11 @@
 		}
 	}
 }
+
+.event-info-item .img-container img{
+	height: 100%;
+}
+
 .lazyload{
 	// opacity: 0;
 	// transition: opacity .3s ease-in;

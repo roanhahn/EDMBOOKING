@@ -1,0 +1,229 @@
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+
+/* FOLDER */
+$folder: asot;
+
+/* BODY */
+$bg-color: #000;
+$loader-bg: #000;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+
+body{
+    background: $bg-color !important;
+}
+
+$font-size: 14px;
+
+/* FONTS */
+$font: 'Roboto', sans-serif;
+$font-header: 'Prompt', sans-serif;
+$border-color: #f3eeee; //rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #ff0067;
+$link-color: #ff0067;
+
+/* Google Maps */
+$mapclose-color: #ff0067;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.1); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.1);
+$red-filter: rgba(0,0,0,.1);
+$grey-filter: rgba(0,0,0,.1);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.2);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Prompt', sans-serif;
+$button-size: 17px;
+$button-bg: #ff0067;
+$button-color: #fff;
+$button-bg-hover: #fff;
+$button-color-hover: #ff0067;
+$button-radius: 0px;
+
+/* BACK BUTTON */
+$button-back-bg: #ff0067;
+$button-back-color: #fff;
+$button-back-border: 2px solid #fff;
+$button-back-bghover: #fff;
+$button-back-colorhover: #ff0067;
+$button-back-borderhover: 2px solid #fff;
+
+/* FAQ */
+$faq-button-bg: #ff0067;
+$faq-button-color: #fff;
+$faq-button-bghover: #fff;
+$faq-button-colorhover: #ff0067;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-size: 20px;
+$sec-button-bg: #ff0067;
+$sec-button-colorhover: #ff0067;
+$sec-button-bghover: #fff;
+$sec-button-border: 2px solid #fff;
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #fff !default;
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 50px;
+$logo-height-mobile: 30px;
+$header-bg: #000;
+$header-color: #fff;
+$header-bg-sticky: #000;
+$header-text: #fff;
+$header-hover: #ff0067;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: #ff0067;
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #000;
+$subnav-strong: #fff;
+$subnav-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #ff0067;
+$subnav-social-bg: #ff0067;
+$subnav-social-color: #000;
+$subnav-social-hover: #000;
+$subnav-social-bghover: #fff;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid #ff0067;
+$language-bg: #ff0067;
+$language-link: #fff;
+$language-hover: #000;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,.3);
+$hero-h1-size: 80px; //70px default
+$font-hero-small: 'Prompt', sans-serif;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+
+
+
+/* Testimonials */
+$testimonial-bg: transparent;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #ff0067;
+$testimonial-inactivedot: #fff;
+
+/* STEPS */
+$steps-bg: #000;
+$steps-color: #fff;
+$steps-bg-hover: #000;
+$steps-color-hover: #fff;
+$steps-active-bg: #ff0067;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 1px solid #ff0067;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid #fff;
+$offer-title: #ff0067;
+$offer-title-transform: none;
+$ribbon-bg: #ff0067;
+$ribbon-color: #fff;
+$offer-activedot: #ff0067;
+$offer-inactivedot: #fff;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
+
+/* WHY BOOK */
+$why-border: #ff0067;
+$why-number: #ff0067;
+$why-book-icon: #000;
+$why-book-iconborder: 3px solid #ff0067;
+$why-book-iconbg: #ff0067;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: #ff0067;
+$footer-text: #000;
+$footer-link: #000;
+$footer-hover: #fff;
+$footer-heading: #000;
+$footer-social-color: #ff0067;
+$footer-social-bg: #000;
+$footer-social-hover: #fff;
+$footer-socialicon-hover: #000;
+$footer-payoffsize: 12px;
+
+/* COOKIES */
+$cookies-bg: #000;
+$cookie-link-color: #ff0067;
+$cookies-fontsize: 13px;
+$cookies-border: 1px solid #ff0067;
+$cookies-color: #fff;
+$cookies-padding: 20px;
+$cookies-fontsize-mobile: 11px;
+$cookies-padding-mobile: 10px;
+
+/* FORMS */
+$form-border: 1px solid #000;
+$form-bordercolor: #000;
+$form-border-login: 1px solid #000;
+$form-label: #000;
+$form-input-color: #000;
+$form-highlight: #ff0067;
+$form-highlightcolor: #fff;
+$form-addon-bg: #ff0067;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.header{
+    border-bottom: 1px solid #ff0067;
+}
+
+.yourbooking{
+    // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
+}
+
+// .hero-button{
+//     background: #ffef3b !important;
+//     color: #000 !important;
+
+//     &:hover{
+//         background: #000 !important;
+//         color: #ffef3b !important;
+//     }
+// }
+// .accordeon-buttons .button-secondary:hover{
+//     background: #fff !important;
+//     color: #eb1f29 !important;
+// }

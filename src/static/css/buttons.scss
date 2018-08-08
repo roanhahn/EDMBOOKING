@@ -251,9 +251,10 @@ button {
         font-size: $sec-size;
         text-transform: uppercase;
 
+
         @media all and (max-width: $breakpoint-mobile) {
             padding: 8px 16px;
-            font-size: 12px;
+            font-size: $sec-size-mobile;
         }
 
         &:after {
@@ -272,6 +273,7 @@ button {
             color: $sec-button-colorhover;
             text-decoration: none;
             background: $sec-button-bghover;
+            border: $sec-button-borderhover;
         }
 
         &--small {
@@ -363,6 +365,9 @@ button {
     }
 
     &--back {
+
+        font-size: $button-back-size;
+
         &:before {
             content: "\f104";
             font-family: "FontAwesome";
@@ -507,3 +512,29 @@ button:focus {
     }
 }
 
+.showmore{
+    padding: 7px 10px;
+    border: none;
+    font-size: 12px;
+    background: $button-bg;
+    color: $button-color;
+    display: block;
+    margin-left: 22px;
+    margin-top: 8px;
+    border-radius: $button-radius;
+    font-family: $font-button;
+    font-weight: 800;
+
+    &:after{
+        display: inline-block;
+        content: "\f05a";
+        font-family: "FontAwesome";
+        margin-left: 5px;
+    }
+
+    &:hover {
+        background: $button-bg-hover;
+        color: $button-color-hover;
+    }
+
+}

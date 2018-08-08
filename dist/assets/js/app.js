@@ -637,3 +637,17 @@ $(window).resize(function() {
 });
 
 
+// SLIDER
+
+
+$("#slider1").sliderResponsive({
+// Using default everything
+slidePause: 4000,
+fadeSpeed: 1000,
+autoPlay: "on",
+showArrows: "off",
+hideDots: "on",
+hoverZoom: "off",
+// titleBarTop: "off"
+});
+

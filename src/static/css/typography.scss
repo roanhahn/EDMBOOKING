@@ -177,7 +177,7 @@ a:active {
     color: $heading-color;
     font-family: $font-header;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: $font-header-size;
 
     &--textcolor {
         color: $text-color;
@@ -193,7 +193,7 @@ a:active {
     }
 
     &--eventinfo {
-        font-size: 20px;
+        font-size: $font-header-size;
     }
 
 
@@ -286,6 +286,10 @@ h3.extras {
     background: $testimonial-bg;
     color: $testimonial-text;
 
+    @media all and (max-width: $breakpoint-tablet) {
+           background-attachment: scroll;
+        }
+
     &-item {
         max-width: 970px;
         margin: 0 auto;
@@ -295,7 +299,7 @@ h3.extras {
         color: $testimonial-title;
         text-transform: uppercase;
         font-weight: 800;
-        font-size: 40px;
+        font-size: $testimonial-title-size;
         line-height: 1;
         margin: 0 0 30px;
 

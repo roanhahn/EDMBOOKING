@@ -257,7 +257,7 @@
 		}
 
 		@media all and (max-width: $breakpoint-tablet){
-			margin-top: 20px;
+			margin-bottom: 20px;
 			font-size: 14px;
 		}
 	}
@@ -347,6 +347,20 @@
 		@media all and (max-width: $breakpoint-mobile){
 			margin-bottom: 30px;
 		}
+	}
+
+	.form-ticket-info{
+		display: none;
+		padding-bottom: 15px;
+
+		& p{
+			display: block;
+			padding: 0 0  0 15px;
+			margin: 10px 0px 0px 22px;
+			line-height: 1.4;
+			border-left: 5px solid $button-bg;
+		}
+
 	}
 
 	.guests{

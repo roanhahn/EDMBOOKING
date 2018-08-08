@@ -5,7 +5,7 @@ layout: default.hbs
 ---
 
 
-<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg)">
+<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/slider-1.jpg); {{!-- background-attachment: fixed; --}}">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -14,24 +14,31 @@ layout: default.hbs
 						<small>{{site.eventdate}}</small>
 					</h1>
 					<div class="flexbuttons">
-						<a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button">Hotel &amp; Ticket</a>
-						<a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button">Packages</a>
-						<a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button">Camping</a>
+						<a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span></a>
+						<a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span></a>
+						<a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span></a>
 					</div>
 
 				</div>
 			</div>
-			{{!-- <div class="row">
-				<div class="col">
-					<button class="hero-scrollbutton scrollTo" data-target="#eventinfo"><span></span>Event info</button>
-				</div>
-			</div> --}}
 		</div>
 	</div>
+
+	 <!-- Slider 1 -->
+    <div class="slider" id="slider1">
+        <!-- Slides -->
+        <div style="background-image:url(assets/img/democamping/slider-1.jpg)"></div>
+        <div style="background-image:url(assets/img/democamping/slider-2.jpg)"></div>
+        <div style="background-image:url(assets/img/democamping/slider-3.jpg)"></div>
+        <div style="background-image:url(assets/img/democamping/slider-4.jpg)"></div>
+        <!-- The Arrows -->
+        {{!-- <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+        <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i> --}}
+    </div>
+
 	<div class="hero-scroll scrollTo" data-target="#eventinfo">
 		<span>Event info</span>
 		<div class="arrow"></div>
-		{{!-- <div class="bar"></div> --}}
 	</div>
 </div>
 
@@ -74,13 +81,14 @@ layout: default.hbs
 
 <section class="section" id="eventinfo">
 	<div class="container">
+		<div class="ml-line"></div>
 		<h3 class="h3 h3--big text-center">Event information</h3>
 		<div class="row">
 			<div class="event-info-wrapper">
 
 				<div class="event-info-item">
 					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/dldk/1.jpg" class="img-fluid lazyload" alt="">
+						<img data-src="https://www.mysteryland.nl/wp-content/uploads/2017/12/0_20170826160139_q-dance_avo-650x430.jpg" class="img-fluid lazyload" alt="">
 					</div>
 					<div class="content">
 						<h3 class="h3 h3--eventinfo">EDM General info</h3>
@@ -99,7 +107,7 @@ layout: default.hbs
 
 				<div class="event-info-item">
 					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/dldk/2.jpg" class="img-fluid lazyload" alt="">
+						<img data-src="https://www.mysteryland.nl/wp-content/uploads/2017/12/11-650x430.jpg" class="img-fluid lazyload" alt="">
 					</div>
 					<div class="content">
 						<h3 class="h3 h3--eventinfo">Hassel free service</h3>
@@ -113,7 +121,7 @@ layout: default.hbs
 
 				<div class="event-info-item">
 					<div class="img-container ratio-4-3">
-						<img data-src="assets/img/dldk/3.jpg" class="img-fluid lazyload" alt="">
+						<img data-src="https://www.mysteryland.nl/wp-content/uploads/2017/12/8-2-650x430.jpg" class="img-fluid lazyload" alt="">
 					</div>
 					<div class="content">
 						<h3 class="h3 h3--eventinfo">Date &amp; time</h3>
@@ -129,6 +137,20 @@ layout: default.hbs
 
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h3 class="h3 h3--big text-center">Trailer 2018</h3>
+				<div class="img-container ratio-16-9">
+					<iframe src="https://www.youtube.com/embed/C0hgo9LNaHU?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="ml-line"></div>
 	</div>
 </section>
 {{> testimonials }}

@@ -11,7 +11,7 @@
 // @import "theme-martingarrix.scss";
 
 /* Theme New Horizons */
-@import "theme-newhorizons.scss";
+// @import "theme-newhorizons.scss";
 //
 /* Theme Sensarion Madrid */
 // @import "theme-sensation-madrid.scss";
@@ -21,6 +21,15 @@
 
 /* Theme TikTak */
 // @import "theme-tiktak.scss";
+
+/* Theme ASOT */
+// @import "theme-asot.scss";
+
+/* DEMO CAMPING */
+@import "theme-democamping.scss";
+
+/* DEMO HOTEL */
+// @import "theme-demohotel.scss";
 
 
 /* Default CSS */
@@ -43,6 +52,7 @@
 // @import "odometer-theme-default.css";
 
 // Plugins
+@import "sliderResponsive.scss";
 @import "animate.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
