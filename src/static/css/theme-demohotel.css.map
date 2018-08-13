@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACQ,6EAAqE,CAGrE,6EAAqE,CAY7E,IAAI,CACA,UAAU,CAAE,eAAe,CAgN/B,4BAA4B,CACxB,KAAK,CAAE,eAAe,CACtB,UAAU,CAAE,kBAA4B,CAExC,kCAAO,CACH,UAAU,CAAE,kBAAkB,CAiBtC,oCAAoC,CAChC,UAAU,CAAE,kBAAkB,CAC9B,KAAK,CAAE,eAAe,CACtB,YAAY,CAAE,kBAAkB",
-"sources": ["theme-demohotel.scss"],
-"names": [],
-"file": "theme-demohotel.css"
-}

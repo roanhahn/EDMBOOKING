@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAM,CACL,UAAU,CAAE,GAAG,CAEf,YAAO,CACN,cAAc,CAAE,SAAS,CACzB,WAAW,CAAE,GAAG",
-"sources": ["offer.scss"],
-"names": [],
-"file": "offer.css"
-}

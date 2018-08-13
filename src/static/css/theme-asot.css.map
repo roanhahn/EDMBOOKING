@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACQ,6EAAqE,CAGrE,yEAAiE,CAWzE,IAAI,CACA,UAAU,CAAE,eAAoB,CAgMpC,OAAO,CACH,aAAa,CAAE,iBAAiB",
-"sources": ["theme-asot.scss"],
-"names": [],
-"file": "theme-asot.css"
-}

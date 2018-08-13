@@ -1,32 +1,32 @@
 # DEMO HOTEL
-theme: demohotel
-logo: logo.svg
-name: Sail
-intro: Sail
-title: Sail Amsterdam
-homepage: homepage.html
-herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
-herosubtitle: Het enige officiele verkoopkanaal
-event: SAIL Amsterdam 2020
-eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
-ogtitle: Mysteryland | 24, 25 &amp; 26 August | Haarlemmermeer, near Amsterdam
-ogimg: https://www.mysteryland.nl/wp-content/uploads/2018/01/Screen-Shot-2018-01-23-at-17.22.17.png
-description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
-
-# Mysteryland
-# theme: democamping
+# theme: demohotel
 # logo: logo.svg
-# name: Mysteryland
-# intro: Mysteryland
-# title: Mysteryland | 24, 25 &amp; 26 August | Haarlemmermeer, near Amsterdam
+# name: Sail
+# intro: Sail
+# title: Sail Amsterdam
 # homepage: homepage.html
-# herotitle: ALL SATURDAY TICKETS ARE SOLD OUT!
-# herosubtitle: CAMPING, SUNDAY AND WEEKEND TICKETS ARE AVAILABLE HERE
-# event: Mysteryland Camping & hotel
+# herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
+# herosubtitle: Het enige officiele verkoopkanaal
+# event: SAIL Amsterdam 2020
 # eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
 # ogtitle: Mysteryland | 24, 25 &amp; 26 August | Haarlemmermeer, near Amsterdam
 # ogimg: https://www.mysteryland.nl/wp-content/uploads/2018/01/Screen-Shot-2018-01-23-at-17.22.17.png
 # description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
+
+# Mysteryland
+theme: democamping
+logo: logo.svg
+name: Mysteryland
+intro: Mysteryland
+title: Mysteryland | 24, 25 &amp; 26 August | Haarlemmermeer, near Amsterdam
+homepage: homepage.html
+herotitle: ALL SATURDAY TICKETS ARE SOLD OUT!
+herosubtitle: CAMPING, SUNDAY AND WEEKEND TICKETS ARE AVAILABLE HERE
+event: Mysteryland Camping & hotel
+eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
+ogtitle: Mysteryland | 24, 25 &amp; 26 August | Haarlemmermeer, near Amsterdam
+ogimg: https://www.mysteryland.nl/wp-content/uploads/2018/01/Screen-Shot-2018-01-23-at-17.22.17.png
+description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
 
 # ASOT
 # theme: ASOT

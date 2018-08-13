@@ -1,0 +1,537 @@
+button {
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.button {
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-transition: all .15s ease-out 0s;
+    border-radius: 0px;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    display: inline-block;
+    font-family: $font-button;
+    font-size: $button-size;
+    font-weight: 800;
+    letterspacing: 1px;
+    outline: 0;
+    outline: none !important;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all .15s ease-out 0s;
+    white-space: nowrap;
+
+
+    &.loading {
+        pointer-events: none;
+        cursor: default; // text-align: left;
+        &:after {
+            position: absolute;
+            content: "";
+            right: 10px;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+
+            -ms-transform: translate(-0%, -50%);
+            -webkit-transform: translate(-0%, -50%);
+            transform: translate(-0%, -50%);
+            background: transparent url("../img/#{$folder}/spinner.gif") no-repeat center center scroll;
+            background-size: cover;
+        }
+    }
+
+
+
+    &--next:after {
+        content: "\f105";
+        display: inline-block;
+        font-family: "FontAwesome";
+        margin-left: 10px;
+    }
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 13px;
+    }
+
+
+
+    &-primary {
+        background: $button-bg;
+        color: $button-color;
+        padding: 13px 25px;
+        white-space: nowrap;
+        line-height: 1;
+        text-transform: uppercase;
+        min-width: 150px;
+        border: none;
+        border-radius: $button-radius;
+
+        &:hover {
+            background: $button-bg-hover;
+            color: $button-color-hover;
+        }
+
+        & img {
+            display: inline;
+            vertical-align: top;
+            height: 16px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        & i {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        @media all and (max-width: $breakpoint-tablet) {
+            // display: block;
+            font-size: 13px; // width: 100%;
+            // float: none !important;
+        }
+
+        &--inverted {
+            background: $button-bg;
+            color: $button-color;
+
+            &:hover {
+                background: $button-color-hover;
+                color: $button-color;
+            }
+        }
+
+        &--small {
+            padding: 10px 15px;
+            font-size: 10px;
+            margin-top: 2px;
+            min-width: auto;
+        }
+
+        &--effect {
+            background: none !important;
+            overflow: hidden;
+            -webkit-transition: all .3s ease-out 0s;
+            transition: all .3s ease-out 0s;
+
+            &:before {
+                z-index: -2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $button-bg;
+                content: "";
+            }
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: -50px;
+                content: " ";
+                width: 50px;
+                height: 50px;
+                background: $button-bg-hover;
+                z-index: -1;
+                -ms-transform: translate(-0%, -50%);
+                -webkit-transform: translate(-0%, -50%);
+                transform: translate(-0%, -50%);
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                -webkit-transition: all .3s ease-out 0s;
+                transition: all .3s ease-out 0s;
+            }
+
+            &:hover:after {
+                width: 120%;
+                height: 300px;
+            }
+        }
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+        float: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    &-hero {
+        // background: rgba(0,0,0,.7);
+        // border: 2px solid #fff;
+        // padding: 20px 50px;
+        // text-transform: uppercase;
+        // color: #fff;
+        // display: inline-block;
+        margin: 15px;
+        font-size: $hero-button-size;
+        width: 100%;
+        max-width: $hero-button-width;
+        padding: $hero-button-padding;
+        -webkit-box-shadow: 3px 4px 31px -8px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 3px 4px 31px -8px rgba(0, 0, 0, 0.61);
+        box-shadow: 3px 4px 31px -8px rgba(0, 0, 0, 0.61);
+
+        @media all and (max-width: $breakpoint-tablet) {
+            padding: 15px 50px;
+            margin: 10px auto;
+            max-width: 95%;
+            display: block;
+        }
+        @media all and (max-width: $breakpoint-mobile) {
+            display: block;
+            max-width: 100%;
+            font-size: 19px;
+        }
+
+        & span {
+            display: block;
+            font-weight: 400;
+            font-size: 70%;
+            margin-top: 10px;
+            @media all and (max-width: $breakpoint-mobile) {
+                margin-top: 5px;
+            }
+        }
+
+        & .first-line {
+
+            font-size: 26px;
+            font-family: $font;
+            font-weight: 700;
+
+            @media all and (max-width: $breakpoint-tablet) {
+                font-size: 22px;
+            }
+            @media all and (max-width: $breakpoint-mobile) {
+                font-size: 18px;
+            }
+
+            &:after {
+                display: block;
+                width: 70px;
+                height: 4px;
+                background: $link-color;
+                content: "";
+                margin: 7px auto;
+            }
+        }
+
+        &:hover {}
+        &:hover .first-line:after {
+            background: #fff;
+        }
+
+        & .second-line {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $font;
+
+            @media all and (max-width: $breakpoint-tablet) {
+                font-size: 16px;
+            }
+            @media all and (max-width: $breakpoint-mobile) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &-secondary {
+        border-radius: $sec-button-radius;
+        background: $sec-button-bg;
+        color: $sec-button-color;
+        border: $sec-button-border;
+        padding: $sec-padding;
+        font-size: $sec-size;
+        text-transform: uppercase;
+
+
+        @media all and (max-width: $breakpoint-mobile) {
+            padding: 8px 16px;
+            font-size: $sec-size-mobile;
+        }
+
+        &:after {
+            content: "\f105";
+            font-family: "FontAwesome";
+            margin-left: 5px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        &--noArrow:after {
+            display: none;
+        }
+
+        &:hover {
+            color: $sec-button-colorhover;
+            text-decoration: none;
+            background: $sec-button-bghover;
+            border: $sec-button-borderhover;
+        }
+
+        &--small {
+            padding: 10px 15px;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+
+        &--inverted {
+            background: $sec-button-color !important;
+            color: $sec-button-inverted-color !important;
+            border-color: $sec-button-color !important;
+
+            &:hover {
+                background: $sec-button-bg !important;
+                color: $sec-button-color !important;
+                border: $sec-button-border !important;
+            }
+        }
+    }
+
+    &-large {
+        font-size: 30px;
+        padding: 20px 40px;
+    }
+
+
+
+    &-add {
+        min-width: 132px;
+        max-width: 150px;
+        width: 100%;
+
+        @media all and (max-width: $breakpoint-mobile) {
+            min-width: 119px;
+            & span {
+                display: none;
+            }
+
+            & i {
+                margin: 0;
+            }
+        }
+    }
+
+    &--round {
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+
+    &--close {
+        background: $mapclose-color;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 15px;
+            height: auto;
+            -ms-transform: translate(-50%, -50%);
+            /* IE 9 */
+            -webkit-transform: translate(-50%, -50%);
+            /* Safari */
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-inversed {
+        border-color: $link-color;
+
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            background: $link-color;
+        }
+    }
+
+    &:visited,
+    &:active {
+        text-decoration: none;
+    }
+
+    &--back {
+
+        font-size: $button-back-size;
+
+        &:before {
+            content: "\f104";
+            font-family: "FontAwesome";
+            margin-right: 5px;
+        }
+        &:after {
+            display: none;
+        }
+    }
+
+    &--lowercase {
+        text-transform: none;
+    }
+}
+
+.page-back {
+    background: $button-back-bg !important;
+    color: $button-back-color !important;
+    border: $button-back-border !important;
+
+    &:hover {
+        background: $button-back-bghover !important;
+        color: $button-back-colorhover !important;
+        border: $button-back-borderhover !important;
+    }
+}
+
+button,
+input {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border: none;
+}
+
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border: none;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border: none;
+}
+
+.button--sticky {
+    position: fixed;
+    bottom: 15px;
+    z-index: 99; // border: 1px solid red;
+    background: #000;
+    left: 15px;
+    right: 15px; // -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
+    // -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
+    // box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
+}
+
+.remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $link-color;
+    padding: 0;
+    line-height: 1.2;
+
+    &:hover {
+        color: $link-color;
+    }
+
+    & span {
+        display: inline-block;
+        margin-left: 5px;
+        @media all and (max-width: $breakpoint-mobile) {
+            display: none;
+        }
+    }
+}
+
+.readmore {
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 700;
+
+    & i {
+        font-weight: normal;
+    }
+}
+
+.info-btn {
+    background: none;
+    color: $link-color;
+    padding: 0;
+    font-size: 18px;
+    line-height: 0;
+    vertical-align: center;
+    position: relative;
+    top: 0px;
+    margin-right: 8px;
+}
+
+.tooltipbtn {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    color: $link-color;
+    display: inline-block;
+}
+
+.flexbuttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // padding: 0 150px;
+
+    @media all and(max-width: $breakpoint-tablet){
+        padding: 0;
+    }
+    @media all and(max-width: $breakpoint-mobile){
+        display: block;
+    }
+
+    & a{
+        flex-grow: 1;
+        flex-shrink: 2;
+        max-width: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        @media all and(max-width: $breakpoint-mobile){
+            display: block;
+            flex-grow: 1;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+.showmore{
+    // padding: 7px 10px;
+    border: none;
+    // font-size: 12px;
+    // background: $button-bg;
+    background: none;
+    color: $text-color;
+    display: inline;
+    border-radius: $button-radius;
+    font-family: $font-button;
+    font-weight: 800;
+
+    &:before{
+        display: inline-block;
+        content: "\f05a";
+        font-family: "FontAwesome";
+    }
+
+    &:hover {
+
+    }
+
+}
