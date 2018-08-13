@@ -1,3 +1,8 @@
+/*!
+ * TIKTAK THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
 /* Regular font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
@@ -18,6 +23,7 @@ body{
 }
 
 $font-size: 14px;
+$font-header-size: 24px; //default 24px;
 
 /* FONTS */
 $font: 'Roboto', sans-serif;
@@ -53,6 +59,7 @@ $button-color-hover: #000;
 $button-radius: 0px;
 
 /* BACK BUTTON */
+$button-back-size: 15px; //default 15px
 $button-back-bg: #000;
 $button-back-color: #ffef3b;
 $button-back-border: 2px solid #000;
@@ -69,10 +76,12 @@ $faq-button-colorhover: #000;
 /* SECONDARY BUTTON */
 $sec-button-color: #fff;
 $sec-size: 20px;
+$sec-size-mobile: 15px; //default 15px
 $sec-button-bg: #000;
 $sec-button-colorhover: #000;
 $sec-button-bghover: #ffef3b;
 $sec-button-border: 2px solid #000;
+$sec-button-borderhover: 2px solid #000;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
@@ -95,6 +104,7 @@ $notication-icons: #000;
 $notification-text: #000;
 $subnav-bg: #000;
 $subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
 $subnav-color: #fff;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
@@ -133,6 +143,7 @@ $testimonial-title: #000;
 $testimonial-author: #333;
 $testimonial-activedot: #ffef3b;
 $testimonial-inactivedot: #bbb;
+$testimonial-title-size: 40px; // default 40px
 
 /* STEPS */
 $steps-bg: #fff;
@@ -170,11 +181,13 @@ $footer-text: #bbb;
 $footer-link: #fff;
 $footer-hover: #ffef3b;
 $footer-heading: #ffef3b;
+$footer-heading-size: 24px; //default 24px
 $footer-social-color: #000;
 $footer-social-bg: #ffef3b;
 $footer-social-hover: #fff;
 $footer-socialicon-hover: #000;
 $footer-payoffsize: 12px;
+$partner-bg: rgba(255,255,255,.15);
 
 /* COOKIES */
 $cookies-bg: #000;

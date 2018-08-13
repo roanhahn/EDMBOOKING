@@ -1,3 +1,8 @@
+/*!
+ * NEW HORIZONS THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
 /* Regular font */
 // @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
@@ -67,6 +72,8 @@ $bodygradient-fromcolor: #6aaaab;
 $bodygradient-tocolor: #8dcfcf;
 
 $font-size: 16px;
+$font-header-size: 24px; //default 24px;
+
 
 body{
     font-weight: 600;
@@ -105,6 +112,7 @@ $button-color-hover: #fff;
 $button-radius: 0px;
 
 /* BACK BUTTON */
+$button-back-size: 15px; // default 15px
 $button-back-bg: #4E647E;
 $button-back-color: #fff;
 $button-back-border: 2px solid rgba(255,255,255,1);
@@ -122,10 +130,12 @@ $faq-button-colorhover: #4E647E;
 
 $sec-button-color: #fff;
 $sec-size: 20px;
+$sec-size-mobile: 15px; //default 15px
 $sec-button-bg: #4E647E;
 $sec-button-colorhover: #4E647E;
 $sec-button-bghover: #fff;
 $sec-button-border: 2px solid #fff;
+$sec-button-borderhover: 2px solid #fff;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
@@ -148,6 +158,7 @@ $notication-icons: #4E647E;
 $notification-text: #4E647E;
 $subnav-bg: #182c3c;
 $subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
 $subnav-color: #fff;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
@@ -186,6 +197,8 @@ $testimonial-title: #fff;
 $testimonial-author: #fff;
 $testimonial-activedot: #4E647E;
 $testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
+
 
 /* STEPS */
 $steps-bg: #fff;
@@ -223,11 +236,13 @@ $footer-text: #fff;
 $footer-link: #fff;
 $footer-hover: #292929;
 $footer-heading: #fff;
+$footer-heading-size: 24px; //default 24px
 $footer-social-bg: #fff;
 $footer-social-color: #80bab3;
 $footer-social-hover: #122c3e;
 $footer-socialicon-hover: #fff;
 $footer-payoffsize: 12px;
+$partner-bg: #000;
 
 /* COOKIES */
 $cookies-bg: #fff;

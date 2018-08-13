@@ -514,15 +514,20 @@ button:focus {
 
 .showmore{
     // padding: 7px 10px;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
     border: none;
     // font-size: 12px;
     // background: $button-bg;
     background: none;
-    color: $text-color;
-    display: inline;
+    color: $link-color;
+    display: inline-block;
     border-radius: $button-radius;
     font-family: $font-button;
     font-weight: 800;
+    margin-left: 5px;
+    padding: 0;
 
     &:before{
         display: inline-block;
@@ -533,5 +538,7 @@ button:focus {
     &:hover {
 
     }
-
+    @media all and(max-width: $breakpoint-mobile){
+        // float: right;
+    }
 }

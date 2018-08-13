@@ -95,7 +95,9 @@
 .form-check-label{
 	padding: 0 0 0 23px;
 	cursor: pointer;
+	position: relative;
 	// background: blue;
+	display: block;
 }
 .form-checkbox{
 	width: 20px;
