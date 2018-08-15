@@ -3,16 +3,16 @@
  * Copyright (c) 2018 EDMBOOKING.com
  */
 
-/* Regular font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+ /* Regular font */
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
-/* Header font */
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+ /* Header font */
+ @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-@font-face {
+ @font-face {
     font-family: 'delius';
     src: url('../font/delius/delius-regular-webfont.woff2') format('woff2'),
-         url('../font/delius/delius-regular-webfont.woff') format('woff');
+    url('../font/delius/delius-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,10 +21,10 @@
     font-family: 'wttf';
     src: url('../font/wttf/wttf_bold_17-webfont.eot');
     src: url('../font/wttf/wttf_bold_17-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/wttf/wttf_bold_17-webfont.woff2') format('woff2'),
-         url('../font/wttf/wttf_bold_17-webfont.woff') format('woff'),
-         url('../font/wttf/wttf_bold_17-webfont.ttf') format('truetype'),
-         url('../font/wttf/wttf_bold_17-webfont.svg#wttfbold') format('svg');
+    url('../font/wttf/wttf_bold_17-webfont.woff2') format('woff2'),
+    url('../font/wttf/wttf_bold_17-webfont.woff') format('woff'),
+    url('../font/wttf/wttf_bold_17-webfont.ttf') format('truetype'),
+    url('../font/wttf/wttf_bold_17-webfont.svg#wttfbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -38,6 +38,25 @@ $bg-color: #000;
 $loader-bg: #000;
 $bodygradient-fromcolor: #000;
 $bodygradient-tocolor: #000;
+
+body{
+    background: #000 !important;
+    @media all and (max-width: $breakpoint-mobile){
+        // background: red !important;
+        &:before{
+            background: #000 url(../img/wttf/bg-mobile.jpg) no-repeat 0 0 scroll !important;
+            background-size: cover;
+            width: 100vw;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            content: "";
+            z-index: -1;
+        }
+    }
+
+}
 $font-size: 16px; //default
 $font-header-size: 30px; //default 24px;
 
@@ -227,7 +246,22 @@ $form-addon-bg: #000;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
 
-
+.hero-fullscreen, .hero-video{
+    min-height: 800px !important;
+    @media all and (max-width: $breakpoint-mobile){
+        min-height: 700px !important;
+    }
+}
+.hero-logo{
+    max-width: 450px;
+    margin-bottom: 40px;
+    @media all and (max-width: $breakpoint-tablet){
+        max-width: 350px;
+    }
+    @media all and (max-width: $breakpoint-mobile){
+        max-width: 250px;
+    }
+}
 .mainnav .booking-cart,
 .mainnav .booking .language-button,
 .subnav strong,
@@ -237,6 +271,9 @@ $placeholder-color: #95a5a6;
 
 .h3--big{
     font-size: 50px !important;
+    @media all and (max-width: $breakpoint-tablet){
+     font-size: 20px !important;
+ }
 }
 
 .extra-number .manage-button{

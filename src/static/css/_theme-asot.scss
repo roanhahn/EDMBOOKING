@@ -18,6 +18,7 @@ body{
 }
 
 $font-size: 14px;
+$font-header-size: 24px; //default 24px;
 
 /* FONTS */
 $font: 'Roboto', sans-serif;
@@ -67,12 +68,15 @@ $faq-button-bghover: #fff;
 $faq-button-colorhover: #ff0067;
 
 /* SECONDARY BUTTON */
+$button-back-size: 16px;
 $sec-button-color: #fff;
 $sec-size: 20px;
+$sec-size-mobile: 20px; //default
 $sec-button-bg: #ff0067;
 $sec-button-colorhover: #ff0067;
 $sec-button-bghover: #fff;
 $sec-button-border: 2px solid #fff;
+$sec-button-borderhover: 2px solid #fff;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
@@ -95,6 +99,7 @@ $notication-icons: #fff;
 $notification-text: #fff;
 $subnav-bg: #000;
 $subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
 $subnav-color: #fff;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
@@ -133,6 +138,7 @@ $testimonial-title: #fff;
 $testimonial-author: #fff;
 $testimonial-activedot: #ff0067;
 $testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
 
 /* STEPS */
 $steps-bg: #000;
@@ -170,11 +176,13 @@ $footer-text: #000;
 $footer-link: #000;
 $footer-hover: #fff;
 $footer-heading: #000;
+$footer-heading-size: 24px; //default 24px
 $footer-social-color: #ff0067;
 $footer-social-bg: #000;
 $footer-social-hover: #fff;
 $footer-socialicon-hover: #000;
 $footer-payoffsize: 12px;
+$partner-bg: rgba(0,0,0,1);
 
 /* COOKIES */
 $cookies-bg: #000;

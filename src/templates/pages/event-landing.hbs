@@ -5,11 +5,14 @@ layout: default.hbs
 ---
 
 
-<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/slider-1.jpg); {{!-- background-attachment: fixed; --}}">
+<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
 				<div class="col">
+					{{#is site.theme 'wttf'}}
+						<img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
+					{{/is}}
 					<h1 class="hero-event-title">{{site.event}}
 						<small>{{site.eventdate}}</small>
 					</h1>
@@ -144,9 +147,9 @@ layout: default.hbs
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h3 class="h3 h3--big text-center">Trailer 2018</h3>
+				<h3 class="h3 h3--big text-center">Flashback Welcome To The Future</h3>
 				<div class="img-container ratio-16-9">
-					<iframe src="https://www.youtube.com/embed/C0hgo9LNaHU?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+					<iframe src="https://www.youtube.com/embed/473d9npLH6Y?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 				</div>
 			</div>
 		</div>

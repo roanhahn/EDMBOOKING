@@ -29,6 +29,20 @@
   font-style: normal; }
 /* FOLDER */
 /* BODY */
+body {
+  background: #000 !important; }
+  @media all and (max-width: 767px) {
+    body:before {
+      background: #000 url(../img/wttf/bg-mobile.jpg) no-repeat 0 0 scroll !important;
+      background-size: cover;
+      width: 100vw;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100vh;
+      content: "";
+      z-index: -1; } }
+
 /* FONTS */
 /* FONT COLORS */
 /* Google Maps */
@@ -46,6 +60,22 @@
 /* Footer */
 /* COOKIES */
 /* FORMS */
+.hero-fullscreen, .hero-video {
+  min-height: 800px !important; }
+  @media all and (max-width: 767px) {
+    .hero-fullscreen, .hero-video {
+      min-height: 700px !important; } }
+
+.hero-logo {
+  max-width: 450px;
+  margin-bottom: 40px; }
+  @media all and (max-width: 992px) {
+    .hero-logo {
+      max-width: 350px; } }
+  @media all and (max-width: 767px) {
+    .hero-logo {
+      max-width: 250px; } }
+
 .mainnav .booking-cart,
 .mainnav .booking .language-button,
 .subnav strong,
@@ -54,6 +84,9 @@
 
 .h3--big {
   font-size: 50px !important; }
+  @media all and (max-width: 992px) {
+    .h3--big {
+      font-size: 20px !important; } }
 
 .extra-number .manage-button {
   color: #fff !important;
@@ -1000,6 +1033,9 @@ h3.extras {
   right: 0;
   bottom: 0;
   z-index: -1; }
+  @media all and (max-width: 767px) {
+    .videobackground {
+      display: none; } }
   .videobackground:before {
     position: absolute;
     top: 0;

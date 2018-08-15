@@ -10,7 +10,9 @@
 	<meta property="og:title" content="{{site.ogtitle}}" />
 	<meta property="og:description" content="{{site.description}}" />
 	<meta property="og:url" content="{{site.url}}" />
-	<meta property="og:image" content="{{site.ogimage}}" />
+	<meta property="og:image" content="{{site.ogimg}}" />
+	<meta property="og:image:width" content="{{site.ogimg-width}}" />
+	<meta property="og:image:height" content="{{site.ogimg-height}}" />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="{{assets}}/img/{{site.theme}}/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="{{assets}}/img/{{site.theme}}/apple-icon-60x60.png">
@@ -39,7 +41,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	{{!-- Our CSS --}}
-	<link href="{{assets}}/css/styles.min.css?v=8" rel="stylesheet" id="themecss">
+	<link href="{{assets}}/css/styles.min.css?v=10" rel="stylesheet" id="themecss">
 	{{!-- <link href="" rel="stylesheet" id="themecss"> --}}
 
 
@@ -56,7 +58,10 @@
 
 	{{#is site.theme 'wttf'}}
 		<div class="videobackground"
-			data-vide-bg="mp4: https://welcometothefuture.nl/wp-content/themes/wttf/video/WTTF19_website_video_outdoor.mp4, webm: path/to/video2, ogv: path/to/video3, poster: path/to/poster"
+			data-vide-bg="mp4: https://welcometothefuture.nl/wp-content/themes/wttf/video/WTTF19_website_video_outdoor.mp4,
+			webm: https://welcometothefuture.nl/wp-content/themes/wttf/video/WTTF19_website_video_outdoor.webm,
+			ogv: https://welcometothefuture.nl/wp-content/themes/wttf/video/WTTF19_website_video_outdoor.mogv,
+			poster: path/to/poster"
 			data-vide-options="loop: true, muted: true, position: 0% 0%">
 		</div>
 	{{/is}}
@@ -77,7 +82,7 @@
 <script src="{{assets}}/js/plugins/jquery.vide.min.js"></script>
 
 {{#is site.theme 'newhorizons'}}
-<script src="{{assets}}/js/plugins/canvallax.js"></script>
+	<script src="{{assets}}/js/plugins/canvallax.js"></script>
 {{/is}}
 <script src="{{assets}}/js/app.js?v=7"></script>
 </body>

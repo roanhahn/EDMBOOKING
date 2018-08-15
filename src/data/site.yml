@@ -7,14 +7,16 @@ title: Welcome To The future 2019
 homepage: homepage.html
 herotitle: Welcome To The future 2019
 herosubtitle: 2 days with camping
-event: Welcome to the future 2019
+event: 2 days with camping
 eventdate: Friday July 19th / Saturday Juky 20th
 ogtitle: Welcome To The future 2019
 ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
+ogimg-width: 2048
+ogimg-height: 1365
 description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
 
 
-# DEMO HOTEL
+# # DEMO HOTEL
 # theme: demohotel
 # logo: logo.svg
 # name: Sail
@@ -44,19 +46,20 @@ description: Welcome to the Future is one of the iconic Techno and House undergr
 # ogimg: https://www.mysteryland.nl/wp-content/uploads/2018/01/Screen-Shot-2018-01-23-at-17.22.17.png
 # description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
 
-# ASOT
+#ASOT
 # theme: ASOT
+# logo: logo.svg
 # name: ASOT
 # intro: ASOT
-# title: ASOT
+# title: A State Of Trance Festival 2019
 # homepage: homepage.html
 # herotitle: ASOT 2019
 # herosubtitle: Jaarbeurs Utrecht
-# event: ASOT 2019
+# event: A State Of Trance Festival 2019
 # eventdate: Jaarbeurs Utrecht
-# ogtitle: Don't Let Daddy Know Thailand - 14 sep 2018, Live Park (Bankok)
+# ogtitle: ASOT 2019
 # ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
-# description: Don't Let Daddy Know returns to Bangkok on September 14th, 2018. DLDKTHAILAND will be held at Live Park with our new partner Waterzonic
+# description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
 
 # TikTAk
 # theme: tiktak
