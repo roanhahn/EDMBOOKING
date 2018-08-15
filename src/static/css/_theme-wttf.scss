@@ -1,52 +1,49 @@
+/*!
+ * EDMBOOKING THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
 /* Regular font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
 /* Header font */
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-
 @font-face {
-    font-family: 'garagegothic';
-    src: url('../font/garage-gothic/garagegothic-bold-webfont.woff2') format('woff2'),
-    url('../font/garage-gothic/garagegothic-bold-webfont.woff') format('woff');
+    font-family: 'delius';
+    src: url('../font/delius/delius-regular-webfont.woff2') format('woff2'),
+         url('../font/delius/delius-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'andesrounded';
-    src: url('../font/andres-rounded/andesroundedw01-medium-webfont.woff2') format('woff2'),
-    url('../font/andres-rounded/andesroundedw01-medium-webfont.woff') format('woff');
+    font-family: 'wttf';
+    src: url('../font/wttf/wttf_bold_17-webfont.eot');
+    src: url('../font/wttf/wttf_bold_17-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/wttf/wttf_bold_17-webfont.woff2') format('woff2'),
+         url('../font/wttf/wttf_bold_17-webfont.woff') format('woff'),
+         url('../font/wttf/wttf_bold_17-webfont.ttf') format('truetype'),
+         url('../font/wttf/wttf_bold_17-webfont.svg#wttfbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 /* FOLDER */
-$folder: democamping;
+$folder: wttf;
 
 /* BODY */
-$bg-color: #009540;
-$loader-bg: #04baee;
-$bodygradient-fromcolor: #009540;
-$bodygradient-tocolor: #04baee;
-
-body{
-    background: #009540 !important; /* Old browsers */
-    background: -moz-linear-gradient(top, #009540 0%, #04baee 50%, #004080 100%) !important; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #009540 0%,#04baee 50%,#004080 100%) !important; /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #009540 0%,#04baee 50%,#004080 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009540', endColorstr='#004080',GradientType=0 ) !important; /* IE6-9 */
-    background-size: 1800px 100% !important;
-    background-attachment: fixed !important;
-}
-
-$font-size: 16px;
-$font-header-size: 32px; //default 24px;
+$bg-color: #000;
+$loader-bg: #000;
+$bodygradient-fromcolor: #000;
+$bodygradient-tocolor: #000;
+$font-size: 16px; //default
+$font-header-size: 30px; //default 24px;
 
 /* FONTS */
-$font: 'andesrounded', sans-serif;
-$font-header: 'garagegothic', sans-serif;
+$font: 'delius', cursive;
+$font-header: 'wttf', sans-serif;
 $border-color: rgba(255,255,255,.3);
 
 /* FONT COLORS */
@@ -55,54 +52,53 @@ $heading-color: #fff;
 $link-color: #fff;
 
 /* Google Maps */
-$mapclose-color: #0c6ba7;
+$mapclose-color: #db0083;
 
 /* FILTERS */
 $filter-visibility: block;
 $blend-mode: multiply;
-$blue-filter: rgba(0,0,0,.1); //rgba(110,179,195,1);
-$white-filter: rgba(0,0,0,.1);
-$red-filter: rgba(0,0,0,.1);
-$grey-filter: rgba(0,0,0,.1);
+$blue-filter: rgba(0,155,255,0);
+$white-filter: rgba(236,236,236,0);
+$red-filter: rgba(255,55,0,0);
+$grey-filter: rgba(50,50,50,0.2);
 $filter-opacity: 0.5;
-$video-opacity: rgba(0,0,0,.2);
-$video-filter:  none; //grayscale(100%);
+$video-opacity: 0.5;
+$video-filter:  grayscale(100%);
 
 /* BUTTONS */
-$font-button: 'garagegothic', sans-serif;
-$button-size: 22px; //default 17px
-$button-bg: #fff;
-$button-color: #0c6ba7;
+$font-button: 'delius', sans-serif;
+$button-size: 17px;
+$button-bg: #db0083;
+$button-color: #fff;
 $button-bg-hover: #fff;
-$button-color-hover: #0c6ba7;
-$button-radius: 2px;
+$button-color-hover: #000;
+$button-radius: 0px;
 
 /* BACK BUTTON */
-$button-back-size: 16px;
-$button-back-bg: #fff;
-$button-back-color: #0c6ba7;
-$button-back-border: 2px solid #fff;
+$button-back-size: 15px; // default 15px
+$button-back-bg: rgba(0,0,0,.5);
+$button-back-color: #fff;
+$button-back-border: 2px solid rgba(255,255,255,.3);
 $button-back-bghover: #fff;
-$button-back-colorhover: #0c6ba7;
+$button-back-colorhover: #000;
 $button-back-borderhover: 2px solid #fff;
 
-
 /* FAQ */
-$faq-button-bg: #1c174e;
-$faq-button-color: #fade4f;
-$faq-button-bghover: #fade4f;
-$faq-button-colorhover: #1c174e;
+$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-color: #fff;
+$faq-button-bghover: #fff;
+$faq-button-colorhover: #000;
 
 /* SECONDARY BUTTON */
-$sec-button-color: #0c6ba7;
-$sec-size: 28px;
-$sec-size-mobile: 20px;
-$sec-button-bg: #fff;
-$sec-button-colorhover: #0c6ba7;
+$sec-button-color: #fff;
+$sec-size: 16px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: rgba(0,0,0,.5);
+$sec-button-colorhover: #000;
 $sec-button-bghover: #fff;
 $sec-button-border: 2px solid #fff;
 $sec-button-borderhover: 2px solid #fff;
-$sec-button-radius: 2px;
+$sec-button-radius: 50px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
@@ -112,125 +108,145 @@ $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
 $logo-height-mobile: 30px;
-$header-bg: #009540;
+$header-bg: #000;
 $header-color: #fff;
-$header-bg-sticky: #009540;
+$header-bg-sticky: rgba(0,0,0,.3);
 $header-text: #fff;
-$header-hover: #ffcc1d;
-$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.0);
+$header-hover: #db0083;
+$main-shadow: none;
 $menu-color: black;
-$notification-bg: #c10052;
+$notification-bg: #db0083;
 $notication-icons: #fff;
 $notification-text: #fff;
-$subnav-bg: #fff;
-$subnav-strong: #0c6ba7;
-$subnav-strong-size: 32px; //default 20px
-$subnav-color: #333;
-$subnav-link: #0c6ba7;
-$subnav-sublink: #333;
-$subnav-hover: #04baee;
-$subnav-social-bg: #0c6ba7;
+$subnav-bg: #000;
+$subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #db0083;
+$subnav-social-bg: transparent;
 $subnav-social-color: #fff;
-$subnav-social-hover: #fff;
-$subnav-social-bghover: #04baee;
-$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
-$subnav-border: 1px solid rgba(0,0,0,.1);
+$subnav-social-hover: #db0083;
+$subnav-social-bghover: transparent;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+$subnav-border: 1px solid rgba(255,255,255,.3);
 $language-bg: #fff;
-$language-link: #333333;
-$language-hover: #000;
+$language-bg: #000;
+$language-link: #fff;
+$language-hover: #db0083;
 $language-border: 1px solid rgba(0,0,0,.1);
 $language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-$dropdownicon: "\f107";
+$dropdownicon: "\f0d7";
 
 /* HERO */
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
-$hero-overlay: rgba(0,0,0,.2);
-$hero-h1-size: 80px; //70px default
-$font-hero-small: 'andesrounded', sans-serif;
+$hero-h1-size: 60px; //70px default
+$hero-overlay: rgba(0,0,0,0);
+$font-hero-small: 'delius', sans-serif;
 $hero-position: center center;
 $hero-button-padding: 30px;
 $hero-button-width: 350px;
 $hero-button-size: 24px;
-
-
-
 
 /* Testimonials */
 $testimonial-bg: transparent;
 $testimonial-text: #fff;
 $testimonial-title: #fff;
 $testimonial-author: #fff;
-$testimonial-activedot: #fade4f;
+$testimonial-activedot: #db0083;
 $testimonial-inactivedot: #fff;
-$testimonial-title-size: 70px; // default 40px
-
+$testimonial-title-size: 60px; // default 40px
 
 /* STEPS */
-$steps-bg: transparent;
+$steps-bg: #000;
 $steps-color: #fff;
-$steps-bg-hover: #1c174e;
+$steps-bg-hover: #333;
 $steps-color-hover: #fff;
-$steps-active-bg: #1c174e;
+$steps-active-bg: #333;
 $steps-active-color: #fff;
 $steps-link: #fff;
-$steps-border: 1px solid #fff;
+$steps-border: 2px solid rgba(255,255,255,.3);
 
 /* OFFERS */
 $event-bg: #000;
-$offer-border: 1px solid #fff;
+$offer-border: 1px solid rgba(255,255,255,.3);
 $offer-title: #fff;
 $offer-title-transform: none;
-$ribbon-bg: #d9318a;
+$ribbon-bg: #db0083;
 $ribbon-color: #fff;
-$offer-activedot: #fade4f;
+$offer-activedot: #db0083;
 $offer-inactivedot: #fff;
 $ticketbtn-color: #fff;
-$ticketbtn-colorhover: #fff;
+$ticketbtn-colorhover: #000;
 
 /* WHY BOOK */
 $why-border: #fff;
 $why-number: #fff;
-$why-book-icon: #fff;
+$why-book-icon: #000;
 $why-book-iconborder: 3px solid #fff;
-$why-book-iconbg: transparent;
+$why-book-iconbg: #fff;
 
 /* Footer */
 $footer-border: none;
 $footer-bg: transparent;
 $footer-text: #fff;
 $footer-link: #fff;
-$footer-hover: #ffcc1d;
+$footer-hover: #db0083;
 $footer-heading: #fff;
-$footer-heading-size: 32px; //default 24px
-$footer-social-color: #004080;
-$footer-social-bg: #fff;
-$footer-social-hover: #ffcc1d;
-$footer-socialicon-hover: #004080;
-$footer-payoffsize: 12px;
+$footer-heading-size: 24px; //default 24px
+$footer-social-bg: transparent;
+$footer-social-color: #fff;
+$footer-social-hover: transparent;
+$footer-socialicon-hover: #db0083;
+$footer-payoffsize: 14px;
 $partner-bg: transparent;
 
 /* COOKIES */
-$cookies-bg: #fff;
-$cookie-link-color: #0c6ba7;
-$cookies-fontsize: 16px;
-$cookies-border: none;
-$cookies-color: #333;
+$cookies-bg: rgba(0,0,0,1);
+$cookies-fontsize: 15px;
+$cookies-border: 1px solid #db0083;
+$cookie-link-color: #db0083;
+$cookies-color: #fff;
 $cookies-padding: 20px;
 $cookies-fontsize-mobile: 11px;
 $cookies-padding-mobile: 10px;
 
 /* FORMS */
 $form-border: 1px solid #fff;
-$form-bordercolor: #fff;
+$form-bordercolor: #000;
 $form-border-login: 1px solid #fff;
 $form-label: #fff;
-$form-input-color: #686868;
-$form-highlight: #fff;
-$form-highlightcolor: #686868;
-$form-addon-bg: #0c6ba7;
+$form-input-color: #000;
+$form-highlight: #db0083;
+$form-highlightcolor: #fff;
+$form-addon-bg: #000;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
+
+
+.mainnav .booking-cart,
+.mainnav .booking .language-button,
+.subnav strong,
+.subnav .subnav-list li{
+    font-family: 'delius', cursive !important;
+}
+
+.h3--big{
+    font-size: 50px !important;
+}
+
+.extra-number .manage-button{
+    color: #fff !important;
+    background: #db0083 !important;
+
+    &:hover{
+        background: #db0083 !important;
+    }
+}
 
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -239,130 +255,3 @@ $placeholder-color: #95a5a6;
     background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-
-
-
-.header{
-    border-bottom: 2px solid #fff;
-}
-
-#footer{
-    background: transparent url(../img/democamping/hart-line.png) top left repeat-x scroll;
-    background-size: 36.5px 15px;
-    margin-top: 30px;
-}
-.event-info-item .content{
-    padding-bottom: 30px !important;
-}
-.event-info-item:after{
-    border-bottom: none !important;
-    background: transparent url(../img/democamping/lotus-line.png) bottom left repeat-x scroll;
-    height: 25px;
-    background-size: 30.5px 21px;
-}
-.extra-number .manage-button{
-    color: #fff !important;
-    background: #0c6ba7 !important;
-}
-
-.yourbooking{
-    // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
-}
-
-.offer{
-    border-bottom: none !important;
-    background: transparent url(../img/democamping/lotus-line.png) bottom left repeat-x scroll;
-    background-size: 30.5px 21px;
-    padding-bottom: 42px !important;
-}
-
-.room{
-   border-bottom: none !important;
-   background: transparent url(../img/democamping/waffel-line.png) bottom left repeat-x scroll;
-   background-size: 25px;
-}
-
-.ml-line{
-    background: transparent url(../img/democamping/cherrie-line.png) bottom left repeat-x scroll;
-   background-size: 55px 22px;
-   height: 22px;
-   margin-top: 30px;
-   margin-bottom: 30px;
-}
-
-.hero-button:before{
-    display: block;
-    content: "" !important;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    background: transparent url(../img/democamping/screw.png) center center no-repeat scroll;
-    background-size: cover;
-}
-
-.hero-button:after{
-    display: block !important;
-    content: "" !important;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    background: transparent url(../img/democamping/screw.png) center center no-repeat scroll;
-    background-size: cover;
-}
-
-.hero-button span{
-    display: block;
-}
-
-.hero-button span:before{
-    display: block;
-    content: "" !important;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    background: transparent url(../img/democamping/screw.png) center center no-repeat scroll;
-    background-size: cover;
-}
-
-.hero-button span:after{
-    display: block;
-    content: "" !important;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    background: transparent url(../img/democamping/screw.png) center center no-repeat scroll;
-    background-size: cover;
-}
-
-.img-container img{
-    border-style: solid;
-    border-width: 10px;
-    // border-color: transparent;
-    padding: 2px;
-
-    -webkit-border-image: url(../img/democamping/border-ml.png) 40 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/democamping/border-ml.png) 40 round; /* Opera 11-12.1 */
-    -moz-border-image: url(../img/democamping/border-ml.png) 40 round; /* Opera 11-12.1 */
-    border-image: url(../img/democamping/border-ml.png) 40 round;
-}
-// .hero-button{
-    //     background: #ffef3b !important;
-    //     color: #000 !important;
-
-    //     &:hover{
-        //         background: #000 !important;
-        //         color: #ffef3b !important;
-        //     }
-        // }
-        // .accordeon-buttons .button-secondary:hover{
-            //     background: #fff !important;
-            //     color: #eb1f29 !important;
-// }
