@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: $blend-mode;
-    height: 70%;
-    min-height: 600px;
+    height: calc(70vh - #{$header-height});
+    min-height: 400px;
 
     @media all and (max-width: $breakpoint-mobile) {
         // height: calc(70% - #{$header-height-mobile});
@@ -18,15 +18,17 @@
 
     &-event {
 
-        height: calc(50% - #{$header-height});
+        height: calc(60vh - #{$header-height});
+        padding: 30px 0 !important;
+        // height: auto;
         min-height: 400px;
         position: relative;
         @media all and (max-width: $breakpoint-tablet) {
-            min-height: 200px;
-        } // @media all and (max-width: $breakpoint-tablet){
-        //  min-height: 200px;
-        //  height: calc(30% - #{$header-height-mobile}) !important;
-        // }
+            min-height: 400px;
+        }
+        @media all and (max-width: $breakpoint-mobile){
+            min-height: 400px;
+        }
     }
 
     &:before {

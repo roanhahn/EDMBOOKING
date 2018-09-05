@@ -3,26 +3,26 @@
  * Copyright (c) 2018 EDMBOOKING.com
  */
 
-/* Regular font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+ /* Regular font */
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
-/* Header font */
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+ /* Header font */
+ @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-/* FOLDER */
-$folder: asot;
+ /* FOLDER */
+ $folder: asot;
 
-/* BODY */
-$bg-color: #000;
-$loader-bg: #000;
-$bodygradient-fromcolor: #fff;
-$bodygradient-tocolor: #fff;
+ /* BODY */
+ $bg-color: #000;
+ $loader-bg: #000;
+ $bodygradient-fromcolor: #fff;
+ $bodygradient-tocolor: #fff;
 
-body{
+ body{
     background: $bg-color !important;
 }
 
-$font-size: 14px;
+$font-size: 16px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
@@ -126,7 +126,7 @@ $dropdownicon: "\f107";
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,.3);
-$hero-h1-size: 80px; //70px default
+$hero-h1-size: 60px; //70px default
 $font-hero-small: 'Prompt', sans-serif;
 $hero-position: center center;
 $hero-button-padding: 30px;
@@ -203,7 +203,7 @@ $cookies-padding-mobile: 10px;
 $form-border: 1px solid #000;
 $form-bordercolor: #000;
 $form-border-login: 1px solid #000;
-$form-label: #000;
+$form-label: #fff;
 $form-input-color: #000;
 $form-highlight: #ff0067;
 $form-highlightcolor: #fff;
@@ -227,16 +227,39 @@ $placeholder-color: #95a5a6;
     // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
 }
 
-// .hero-button{
-//     background: #ffef3b !important;
-//     color: #000 !important;
+.hero h1.hero-event-title{
+    font-size: 55px !important;
 
-//     &:hover{
-//         background: #000 !important;
-//         color: #ffef3b !important;
-//     }
-// }
-// .accordeon-buttons .button-secondary:hover{
-//     background: #fff !important;
-//     color: #eb1f29 !important;
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 45px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+}
+
+.tooltip-inner {
+  background-color: $link-color !important;
+  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+  color: #fff;
+}
+
+
+.tooltip .arrow:before {
+ border-bottom-color:$link-color !important;
+ border-top-color:$link-color !important;
+ }
+
+// .hero-button{
+    //     background: #ffef3b !important;
+    //     color: #000 !important;
+
+    //     &:hover{
+        //         background: #000 !important;
+        //         color: #ffef3b !important;
+        //     }
+        // }
+        // .accordeon-buttons .button-secondary:hover{
+            //     background: #fff !important;
+            //     color: #eb1f29 !important;
 // }

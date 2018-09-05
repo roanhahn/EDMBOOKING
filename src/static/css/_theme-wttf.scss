@@ -227,8 +227,8 @@ $partner-bg: transparent;
 /* COOKIES */
 $cookies-bg: rgba(0,0,0,1);
 $cookies-fontsize: 15px;
-$cookies-border: 1px solid #db0083;
-$cookie-link-color: #db0083;
+$cookies-border: 1px solid #fff;
+$cookie-link-color: #fff;
 $cookies-color: #fff;
 $cookies-padding: 20px;
 $cookies-fontsize-mobile: 11px;
@@ -282,6 +282,17 @@ $placeholder-color: #95a5a6;
 
     &:hover{
         background: #db0083 !important;
+    }
+}
+
+.hero h1.hero-event-title{
+    font-size: 65px !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 45px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
     }
 }
 

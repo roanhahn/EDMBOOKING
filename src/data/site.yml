@@ -1,19 +1,19 @@
 # Welcome to the future
-theme: wttf
-logo: logo.png
-name: Welcome To The future 2019
-intro: Welcome To The future 2019
-title: Welcome To The future 2019
-homepage: homepage.html
-herotitle: Welcome To The future 2019
-herosubtitle: 2 days with camping
-event: 2 days with camping
-eventdate: Friday July 19th / Saturday July 20th
-ogtitle: Welcome To The future 2019
-ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
-ogimg-width: 2048
-ogimg-height: 1365
-description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
+# theme: wttf
+# logo: logo.png
+# name: Welcome To The future 2019
+# intro: Welcome To The future 2019
+# title: Welcome To The future 2019
+# homepage: homepage.html
+# herotitle: Welcome To The future 2019
+# herosubtitle: 2 days with camping
+# event: 2 days with camping
+# eventdate: Friday July 19th / Saturday July 20th
+# ogtitle: Welcome To The future 2019
+# ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
+# ogimg-width: 2048
+# ogimg-height: 1365
+# description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
 
 
 # # DEMO HOTEL
@@ -47,19 +47,19 @@ description: Welcome to the Future is one of the iconic Techno and House undergr
 # description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
 
 #ASOT
-# theme: ASOT
-# logo: logo.svg
-# name: ASOT
-# intro: ASOT
-# title: A State Of Trance Festival 2019
-# homepage: homepage.html
-# herotitle: ASOT 2019
-# herosubtitle: Jaarbeurs Utrecht
-# event: A State Of Trance Festival 2019
-# eventdate: Jaarbeurs Utrecht
-# ogtitle: ASOT 2019
-# ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
-# description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
+theme: ASOT
+logo: logo.svg
+name: ASOT
+intro: ASOT
+title: A State Of Trance Festival 2019
+homepage: homepage.html
+herotitle: ASOT 2019
+herosubtitle: Jaarbeurs Utrecht
+event: ASOT TRAVEL & STAY PACKAGES
+eventdate: Jaarbeurs Utrecht
+ogtitle: ASOT 2019
+ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
+description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
 
 # TikTAk
 # theme: tiktak

@@ -1,6 +1,6 @@
 
 /* Default Variables */
-@import "variables.scss";
+@import "_variables.scss";
 
 /* Theme EDMBOOKING Variables */
 // @import "theme-edmbooking.scss";
@@ -18,10 +18,10 @@
 // @import "theme-dldk.scss";
 
 /* Theme TikTak */
-// @import "theme-tiktak.scss";
+// @import "_theme-tiktak.scss";
 
 /* Theme ASOT */
-// @import "theme-asot.scss";
+@import "_theme-asot.scss";
 
 /* DEMO CAMPING */
 // @import "_theme-democamping.scss";
@@ -30,7 +30,7 @@
 // @import "_theme-demohotel.scss";
 
 // Welcome tot the future
-@import "_theme-wttf.scss";
+// @import "_theme-wttf.scss";
 
 
 // Default CSS
@@ -57,4 +57,4 @@
 @import "_owl.theme.default.min.scss";
 @import "_owl.theme.scss";
 @import "_bootstrap-datepicker3.min.scss";
-@import "_canvallax.scss";
+// @import "_canvallax.scss"; //voor NH 2018

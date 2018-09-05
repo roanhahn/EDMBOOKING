@@ -7,41 +7,18 @@
 /* Theme Don't let daddy know */
 /* Theme TikTak */
 /* Theme ASOT */
-/* DEMO CAMPING */
 /*!
- * WELCOME TO THE FUTURE THEME
+ * ASOT THEME
  * Copyright (c) 2018 EDMBOOKING.com
  */
 /* Regular font */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 /* Header font */
 @import url("https://fonts.googleapis.com/css?family=Prompt:400,700,800");
-@font-face {
-  font-family: 'delius';
-  src: url("../font/delius/delius-regular-webfont.woff2") format("woff2"), url("../font/delius/delius-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'wttf';
-  src: url("../font/wttf/wttf_bold_17-webfont.eot");
-  src: url("../font/wttf/wttf_bold_17-webfont.eot?#iefix") format("embedded-opentype"), url("../font/wttf/wttf_bold_17-webfont.woff2") format("woff2"), url("../font/wttf/wttf_bold_17-webfont.woff") format("woff"), url("../font/wttf/wttf_bold_17-webfont.ttf") format("truetype"), url("../font/wttf/wttf_bold_17-webfont.svg#wttfbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /* FOLDER */
 /* BODY */
 body {
   background: #000 !important; }
-  @media all and (max-width: 767px) {
-    body:before {
-      background: #000 url(../img/wttf/bg-mobile.jpg) no-repeat 0 0 scroll !important;
-      background-size: cover;
-      width: 100vw;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      height: 100vh;
-      content: "";
-      z-index: -1; } }
 
 /* FONTS */
 /* FONT COLORS */
@@ -60,40 +37,28 @@ body {
 /* Footer */
 /* COOKIES */
 /* FORMS */
-.hero-fullscreen, .hero-video {
-  min-height: 800px !important; }
-  @media all and (max-width: 767px) {
-    .hero-fullscreen, .hero-video {
-      min-height: 700px !important; } }
+.header {
+  border-bottom: 1px solid #ff0067; }
 
-.hero-logo {
-  max-width: 450px;
-  margin-bottom: 40px; }
+.hero h1.hero-event-title {
+  font-size: 55px !important; }
   @media all and (max-width: 992px) {
-    .hero-logo {
-      max-width: 350px; } }
+    .hero h1.hero-event-title {
+      font-size: 45px !important; } }
   @media all and (max-width: 767px) {
-    .hero-logo {
-      max-width: 250px; } }
+    .hero h1.hero-event-title {
+      font-size: 30px !important; } }
 
-.mainnav .booking-cart,
-.mainnav .booking .language-button,
-.subnav strong,
-.subnav .subnav-list li {
-  font-family: 'delius', cursive !important; }
+.tooltip-inner {
+  background-color: #ff0067 !important;
+  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+  color: #fff; }
 
-.h3--big {
-  font-size: 50px !important; }
-  @media all and (max-width: 992px) {
-    .h3--big {
-      font-size: 20px !important; } }
+.tooltip .arrow:before {
+  border-bottom-color: #ff0067 !important;
+  border-top-color: #ff0067 !important; }
 
-.extra-number .manage-button {
-  color: #fff !important;
-  background: #db0083 !important; }
-  .extra-number .manage-button:hover {
-    background: #db0083 !important; }
-
+/* DEMO CAMPING */
 body,
 html {
   height: 100%;
@@ -107,11 +72,11 @@ html {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #fff; }
+  background: #ff0067; }
 
 ::selection {
   color: #fff;
-  background: #fff; }
+  background: #ff0067; }
 
 body {
   background: #000;
@@ -120,7 +85,7 @@ body {
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  font-family: "delius", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   position: relative;
@@ -128,13 +93,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-  background: #000;
+  background: #fff;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #000 0%, #000 100%);
+  background: -moz-linear-gradient(45deg, #fff 0%, #fff 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #000 0%, #000 100%);
+  background: -webkit-linear-gradient(45deg, #fff 0%, #fff 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #000 0%, #000 100%);
+  background: linear-gradient(45deg, #fff 0%, #fff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 @media (min-width: 1200px) {
@@ -147,12 +112,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "wttf", sans-serif; }
+  font-family: "Prompt", sans-serif; }
 
 a {
-  color: #fff; }
+  color: #ff0067; }
   a:hover {
-    color: #fff; }
+    color: #ff0067; }
 
 a,
 a:hover,
@@ -165,16 +130,16 @@ a:active {
 .text-link,
 .page a {
   text-decoration: underline;
-  color: #fff; }
+  color: #ff0067; }
   .text-link:hover,
   .page a:hover {
-    color: #fff;
+    color: #ff0067;
     text-decoration: underline; }
 
 .h1 {
   text-transform: none;
   font-weight: 700;
-  color: #fff;
+  color: #ff0067;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -198,11 +163,11 @@ a:active {
 .page-h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "wttf", sans-serif;
-  color: #fff;
+  font-family: "Prompt", sans-serif;
+  color: #ff0067;
   margin: 0 0 30px;
   padding: 0 0 30px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid #f3eeee;
   font-size: 32px; }
   @media all and (max-width: 992px) {
     .page-h1 {
@@ -214,14 +179,14 @@ a:active {
       margin-bottom: 15px; } }
 
 .h2 {
-  color: #fff;
+  color: #ff0067;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
       font-size: 16px; } }
   .h2-section {
-    color: #fff;
-    font-family: "wttf", sans-serif;
+    color: #ff0067;
+    font-family: "Prompt", sans-serif;
     font-weight: 800;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -239,19 +204,19 @@ a:active {
 .h3 {
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
-  font-family: "wttf", sans-serif;
+  color: #ff0067;
+  font-family: "Prompt", sans-serif;
   margin-bottom: 20px;
-  font-size: 30px; }
+  font-size: 24px; }
   .h3--textcolor {
     color: #fff; }
   .h3--lined {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid #f3eeee;
     padding-bottom: 10px; }
   .h3--room {
-    color: #fff; }
+    color: #ff0067; }
   .h3--eventinfo {
-    font-size: 30px; }
+    font-size: 24px; }
   @media all and (max-width: 767px) {
     .h3 {
       font-size: 18px;
@@ -260,12 +225,12 @@ a:active {
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 30px;
-    font-family: "wttf", sans-serif; }
+    font-family: "Prompt", sans-serif; }
     .h3--big span {
       display: block;
       font-size: 16px;
       font-weight: 700;
-      font-family: "delius", cursive; }
+      font-family: "Roboto", sans-serif; }
     @media all and (max-width: 767px) {
       .h3--big {
         font-size: 22px;
@@ -275,14 +240,14 @@ h3.extras {
   font-size: 32px;
   padding: 15px 0;
   display: inline-block;
-  font-family: "wttf", sans-serif;
-  color: #fff;
+  font-family: "Prompt", sans-serif;
+  color: #ff0067;
   font-weight: 800;
   text-transform: uppercase; }
   h3.extras small {
     display: block;
     font-size: 16px;
-    font-family: "delius", cursive;
+    font-family: "Roboto", sans-serif;
     text-transform: none; }
   @media all and (max-width: 767px) {
     h3.extras {
@@ -299,11 +264,11 @@ h3.extras {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #fff; }
+  color: #ff0067; }
 
 .hr {
   height: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #f3eeee;
   line-height: 0;
   border: none;
   margin: 30px 0; }
@@ -311,7 +276,7 @@ h3.extras {
 .testimonials-h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "delius", cursive;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
   @media all and (max-width: 767px) {
@@ -328,11 +293,11 @@ h3.extras {
     max-width: 970px;
     margin: 0 auto; }
   .testimonials-title {
-    font-family: "wttf", sans-serif;
+    font-family: "Prompt", sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1;
     margin: 0 0 30px; }
     @media all and (max-width: 992px) {
@@ -348,7 +313,7 @@ h3.extras {
     line-height: 1.2;
     color: #fff; }
   .testimonials .owl-theme .owl-dots .owl-dot.active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: #db0083; }
+    background: #ff0067; }
   .testimonials .owl-theme .owl-dots .owl-dot span {
     background: #fff; }
 
@@ -371,7 +336,7 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #db0083;
+  stroke: #ff0067;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
@@ -396,7 +361,7 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #db0083; } }
+    fill: #ff0067; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
@@ -442,22 +407,22 @@ h3.extras {
 .succes {
   text-align: center; }
   .succes h3 {
-    color: #fff;
+    color: #ff0067;
     font-weight: 900; }
   .succes-icon {
     width: 120px;
     margin-bottom: 30px; }
     .succes-icon #circle {
-      fill: #fff; }
+      fill: #ff0067; }
     .succes-icon #check {
-      stroke: #fff; }
+      stroke: #ff0067; }
     @media (max-width: 767px) {
       .succes-icon {
         width: 75px; } }
   .succes table {
     margin: 20px auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #f3eeee;
+    border-bottom: 1px solid #f3eeee;
     padding: 0;
     width: 100%; }
     .succes table tbody {
@@ -473,15 +438,15 @@ h3.extras {
         width: 130px !important; }
 
 .my-package {
-  color: #fff;
+  color: #ff0067;
   font-size: 22px; }
   .my-package .form-label {
-    color: #fff !important; }
+    color: #ff0067 !important; }
   @media (max-width: 767px) {
     .my-package {
       font-size: 16px; } }
   .my-package-total {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ff0067;
     font-weight: 800;
     text-transform: uppercase;
     margin: 15px 0 0 0;
@@ -497,7 +462,7 @@ h3.extras {
 .myBooking-header {
   background: #e6e6e6;
   padding: 15px 20px;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -523,7 +488,7 @@ h3.extras {
   position: relative;
   color: #fff; }
   .myBooking-hero .hero-title {
-    font-family: "wttf", sans-serif;
+    font-family: "Prompt", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
@@ -565,7 +530,7 @@ h3.extras {
     background-position: top left;
     z-index: 1;
     background-blend-mode: multiply;
-    background-color: rgba(0, 155, 255, 0); }
+    background-color: rgba(0, 0, 0, 0.1); }
 .myBooking-h1 {
   font-size: 18px;
   font-weight: 700;
@@ -573,13 +538,13 @@ h3.extras {
 .myBooking .content {
   padding: 20px 0;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 1px solid #f3eeee; }
 .myBooking .rule {
   height: 2px;
   background: #000; }
 .myBooking h3 {
   color: #fff;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
@@ -612,12 +577,12 @@ h3.extras {
     font-weight: 800; }
 
 #output {
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 900;
   font-size: 120px; }
 
 .animatelogo {
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 900;
   font-size: 120px;
   overflow: hidden;
@@ -634,7 +599,7 @@ h3.extras {
   top: -12px; }
 
 .edmloader {
-  color: #fff;
+  color: #ff0067;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase; }
@@ -656,12 +621,12 @@ h3.extras {
       height: 60px; } }
 
 .myloader #pause {
-  fill: #fff; }
+  fill: #ff0067; }
 
 .myloader circle {
   stroke-dasharray: 10,84;
   animation: stroke 1.5s ease infinite;
-  stroke: #fff; }
+  stroke: #ff0067; }
 
 @keyframes stroke {
   50% {
@@ -698,7 +663,7 @@ h3.extras {
   border: 10px solid #000;
   overflow: hidden; }
   .loaderplane #pause, .loaderplane #aircraft {
-    fill: #fff; }
+    fill: #ff0067; }
   @media all and (max-width: 992px) {
     .loaderplane {
       width: 100px;
@@ -721,7 +686,7 @@ h3.extras {
   animation-fill-mode: forwards;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: #fff; }
+  stroke: #ff0067; }
 
 @keyframes loading {
   50% {
@@ -749,13 +714,13 @@ h3.extras {
     flex-shrink: 0;
     list-style-type: none;
     margin: 0 15px 15px 0;
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: #ff0067 !important;
     color: #fff !important; }
     .info-labels li:last-child {
       margin-right: 0; }
     .info-labels li:hover {
       background: #fff !important;
-      color: #000 !important; }
+      color: #ff0067 !important; }
     @media (max-width: 767px) {
       .info-labels li {
         flex-grow: 0;
@@ -770,8 +735,8 @@ h3.extras {
   font-weight: 800;
   padding-top: 15px;
   font-size: 24px;
-  font-family: "wttf", sans-serif;
-  color: #fff;
+  font-family: "Prompt", sans-serif;
+  color: #ff0067;
   margin-bottom: 20px; }
 
 .info-list {
@@ -779,20 +744,20 @@ h3.extras {
   margin: 0;
   padding: 0; }
   .info-list-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    border-bottom: 1px solid #f3eeee; }
   .info-list-question {
     cursor: pointer;
     padding: 15px 15px 15px 0;
     line-height: 1;
     font-size: 18px;
     font-weight: 600;
-    background: transparent url(../img/wttf/plus.svg) no-repeat center right;
+    background: transparent url(../img/asot/plus.svg) no-repeat center right;
     background-size: 20px auto; }
     @media (max-width: 767px) {
       .info-list-question {
         font-size: 14px; } }
     .info-list-question.active {
-      background: transparent url(../img/wttf/minus.svg) no-repeat center right;
+      background: transparent url(../img/asot/minus.svg) no-repeat center right;
       background-size: 20px auto; }
   .info-list-answer {
     display: none;
@@ -820,10 +785,10 @@ h3.extras {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff; }
+    color: #ff0067; }
   .loader-bar {
     height: 10px;
-    background: #fff;
+    background: #ff0067;
     width: 0px;
     -webkit-animation: move 30s ease-in-out infinite;
     -moz-animation: move 30s ease-in-out infinite;
@@ -912,7 +877,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: transparent url(../img/wttf/rolling.gif) center center no-repeat scroll;
+  background: transparent url(../img/asot/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -1013,7 +978,7 @@ h3.extras {
     width: 169px;
     font-size: 13px;
     font-weight: 700;
-    background-color: #db0083;
+    background-color: #ff0067;
     color: #fff;
     text-transform: uppercase; }
   @media all and (max-width: 767px) {
@@ -1109,43 +1074,43 @@ h3.extras {
   overflow: hidden; }
 
 .m-t-0 {
-  margin-top: 0px; }
+  margin-top: 0px !important; }
 
 .m-t-5 {
-  margin-top: 5px; }
+  margin-top: 5px !important; }
 
 .m-t-10 {
-  margin-top: 10px; }
+  margin-top: 10px !important; }
 
 .m-t-20 {
-  margin-top: 20px; }
+  margin-top: 20px !important; }
 
 .m-t-30 {
-  margin-top: 30px; }
+  margin-top: 30px !important; }
 
 .m-t-40 {
-  margin-top: 40px; }
+  margin-top: 40px !important; }
 
 .m-t-50 {
-  margin-top: 50px; }
+  margin-top: 50px !important; }
 
 .m-b-0 {
-  margin-bottom: 0px; }
+  margin-bottom: 0px !important; }
 
 .m-b-10 {
-  margin-bottom: 10px; }
+  margin-bottom: 10px !important; }
 
 .m-b-20 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px !important; }
 
 .m-b-30 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
 
 .m-b-40 {
-  margin-bottom: 40px; }
+  margin-bottom: 40px !important; }
 
 .m-b-50 {
-  margin-bottom: 50px; }
+  margin-bottom: 50px !important; }
 
 .summary {
   font-size: 15px; }
@@ -1168,7 +1133,7 @@ h3.extras {
 
 .payment-method {
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #f3eeee;
   padding: 10px 0;
   vertical-align: middle;
   line-height: 32px;
@@ -1198,7 +1163,7 @@ h3.extras {
   align-self: auto; }
   .event-info-item:after {
     content: "";
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid #f3eeee;
     display: block;
     width: calc(100% - 30px);
     position: absolute;
@@ -1210,14 +1175,15 @@ h3.extras {
   .event-info-item .content {
     padding: 20px 0 10px; }
     .event-info-item .content ul {
-      margin: 0 0 20px 18px;
+      margin: 0 0 20px 0px;
       padding: 0;
-      line-height: 1.6; }
+      line-height: 1.6;
+      list-style-position: inside; }
     .event-info-item .content p {
       line-height: 1.6; }
 
 .googleMaps, .hotel-information {
-  color: #fff; }
+  color: #ff0067; }
   .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
@@ -1232,13 +1198,13 @@ h3.extras {
       font-size: 14px; } }
 
 .showMap {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #ff0067;
   margin-left: 7px;
   padding-left: 10px;
   cursor: pointer; }
 
 .rating-wrapper {
-  color: #fff;
+  color: #ff0067;
   font-size: 15px;
   margin-bottom: 20px; }
   @media all and (max-width: 992px) {
@@ -1252,7 +1218,7 @@ h3.extras {
 .rating {
   display: inline-block;
   margin-top: 5px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #ff0067;
   margin-right: 7px; }
   @media all and (max-width: 767px) {
     .rating--overview {
@@ -1264,7 +1230,7 @@ h3.extras {
     margin-right: 10px; }
 
 .detail-price {
-  color: #fff;
+  color: #ff0067;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -1275,7 +1241,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
-  color: #fff;
+  color: #ff0067;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -1310,7 +1276,7 @@ h3.extras {
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
-  color: #fff; }
+  color: #ff0067; }
   .extra-add {
     position: relative; }
   .extra-number {
@@ -1328,7 +1294,7 @@ h3.extras {
         max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
-      background: #fff;
+      background: #ff0067;
       color: #fff;
       height: 44px;
       width: 44px;
@@ -1345,7 +1311,7 @@ h3.extras {
           width: 30px; } }
       .extra-number .manage-button:hover {
         background: #fff;
-        color: #000; }
+        color: #ff0067; }
     .extra-number .plus {
       top: 0;
       right: 0;
@@ -1358,7 +1324,7 @@ h3.extras {
       font-size: 18px;
       line-height: 44px;
       font-weight: 800;
-      font-family: "wttf", sans-serif; }
+      font-family: "Prompt", sans-serif; }
       @media all and (max-width: 992px) {
         .extra-number-items {
           height: 30px;
@@ -1366,7 +1332,7 @@ h3.extras {
           font-size: 13px; } }
   .extra-listitem {
     font-size: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #f3eeee;
     padding: 10px 0; }
     @media all and (max-width: 992px) {
       .extra-listitem {
@@ -1379,7 +1345,7 @@ h3.extras {
     font-weight: normal; }
   .extra-btn {
     background: none;
-    color: #fff;
+    color: #ff0067;
     padding: 0;
     display: inline-block;
     margin-right: 10px;
@@ -1459,7 +1425,7 @@ h3.extras {
 
 .whybook-h2 {
   font-weight: 700;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   margin-bottom: 50px; }
@@ -1480,8 +1446,8 @@ h3.extras {
   width: 140px;
   height: 140px;
   text-align: center;
-  background: #fff;
-  border: 3px solid #fff;
+  background: #ff0067;
+  border: 3px solid #ff0067;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1515,9 +1481,9 @@ h3.extras {
   width: 100px;
   height: 100px;
   line-height: 84px;
-  border: 8px solid #fff;
-  color: #fff;
-  font-family: "wttf", sans-serif;
+  border: 8px solid #ff0067;
+  color: #ff0067;
+  font-family: "Prompt", sans-serif;
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 30px; }
@@ -1530,8 +1496,8 @@ h3.extras {
     .whybook p {
       padding: 0px; } }
 .whybook-heading {
-  font-family: "wttf", sans-serif;
-  color: #fff;
+  font-family: "Prompt", sans-serif;
+  color: #ff0067;
   text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 10px;
@@ -1571,7 +1537,7 @@ button {
   box-shadow: none !important;
   cursor: pointer !important;
   display: inline-block;
-  font-family: "delius", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 17px;
   font-weight: 800;
   letterspacing: 1px;
@@ -1595,7 +1561,7 @@ button {
       -ms-transform: translate(0%, -50%);
       -webkit-transform: translate(0%, -50%);
       transform: translate(0%, -50%);
-      background: transparent url("../img/wttf/spinner.gif") no-repeat center center scroll;
+      background: transparent url("../img/asot/spinner.gif") no-repeat center center scroll;
       background-size: cover; }
   .button--next:after {
     content: "\f105";
@@ -1606,7 +1572,7 @@ button {
     .button {
       font-size: 13px; } }
   .button-primary {
-    background: #db0083;
+    background: #ff0067;
     color: #fff;
     padding: 13px 25px;
     white-space: nowrap;
@@ -1617,7 +1583,7 @@ button {
     border-radius: 0px; }
     .button-primary:hover {
       background: #fff;
-      color: #000; }
+      color: #ff0067; }
     .button-primary img {
       display: inline;
       vertical-align: top;
@@ -1631,10 +1597,10 @@ button {
       .button-primary {
         font-size: 13px; } }
     .button-primary--inverted {
-      background: #db0083;
+      background: #ff0067;
       color: #fff; }
       .button-primary--inverted:hover {
-        background: #000;
+        background: #ff0067;
         color: #fff; }
     .button-primary--small {
       padding: 10px 15px;
@@ -1653,7 +1619,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #db0083;
+        background: #ff0067;
         content: ""; }
       .button-primary--effect:after {
         position: absolute;
@@ -1711,7 +1677,7 @@ button {
           margin-top: 5px; } }
     .button-hero .first-line {
       font-size: 26px;
-      font-family: "delius", cursive;
+      font-family: "Roboto", sans-serif;
       font-weight: 700; }
       @media all and (max-width: 992px) {
         .button-hero .first-line {
@@ -1723,7 +1689,7 @@ button {
         display: block;
         width: 70px;
         height: 4px;
-        background: #fff;
+        background: #ff0067;
         content: "";
         margin: 7px auto; }
     .button-hero:hover .first-line:after {
@@ -1731,7 +1697,7 @@ button {
     .button-hero .second-line {
       font-size: 18px;
       font-weight: 400;
-      font-family: "delius", cursive; }
+      font-family: "Roboto", sans-serif; }
       @media all and (max-width: 992px) {
         .button-hero .second-line {
           font-size: 16px; } }
@@ -1739,17 +1705,17 @@ button {
         .button-hero .second-line {
           font-size: 13px; } }
   .button-secondary {
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    background: #ff0067;
     color: #fff;
     border: 2px solid #fff;
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
       .button-secondary {
         padding: 8px 16px;
-        font-size: 15px; } }
+        font-size: 20px; } }
     .button-secondary:after {
       content: "\f105";
       font-family: "FontAwesome";
@@ -1759,7 +1725,7 @@ button {
     .button-secondary--noArrow:after {
       display: none; }
     .button-secondary:hover {
-      color: #000;
+      color: #ff0067;
       text-decoration: none;
       background: #fff;
       border: 2px solid #fff; }
@@ -1772,7 +1738,7 @@ button {
       color: #000 !important;
       border-color: #fff !important; }
       .button-secondary--inverted:hover {
-        background: rgba(0, 0, 0, 0.5) !important;
+        background: #ff0067 !important;
         color: #fff !important;
         border: 2px solid #fff !important; }
   .button-large {
@@ -1794,7 +1760,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #db0083;
+    background: #ff0067;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1812,15 +1778,15 @@ button {
       /* Safari */
       transform: translate(-50%, -50%); }
   .button-inversed {
-    border-color: #fff; }
+    border-color: #ff0067; }
     .button-inversed:after {
       display: none; }
     .button-inversed:hover {
-      background: #fff; }
+      background: #ff0067; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back {
-    font-size: 15px; }
+    font-size: 16px; }
     .button--back:before {
       content: "\f104";
       font-family: "FontAwesome";
@@ -1831,12 +1797,12 @@ button {
     text-transform: none; }
 
 .page-back {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: #ff0067 !important;
   color: #fff !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important; }
+  border: 2px solid #fff !important; }
   .page-back:hover {
     background: #fff !important;
-    color: #000 !important;
+    color: #ff0067 !important;
     border: 2px solid #fff !important; }
 
 button,
@@ -1870,11 +1836,11 @@ button:focus {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #ff0067;
   padding: 0;
   line-height: 1.2; }
   .remove:hover {
-    color: #fff; }
+    color: #ff0067; }
   .remove span {
     display: inline-block;
     margin-left: 5px; }
@@ -1893,7 +1859,7 @@ button:focus {
 
 .info-btn {
   background: none;
-  color: #fff;
+  color: #ff0067;
   padding: 0;
   font-size: 18px;
   line-height: 0;
@@ -1906,7 +1872,7 @@ button:focus {
   padding: 0;
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: #ff0067;
   display: inline-block; }
 
 .flexbuttons {
@@ -1937,10 +1903,10 @@ button:focus {
 .showmore {
   border: none;
   background: none;
-  color: #fff;
+  color: #ff0067;
   display: inline-block;
   border-radius: 0px;
-  font-family: "delius", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 800;
   margin-left: 5px;
   padding: 0; }
@@ -1977,7 +1943,7 @@ button:focus {
   .hamburger:hover {
     opacity: 1; }
     .hamburger:hover .hamburger-inner, .hamburger:hover .hamburger-inner::before, .hamburger:hover .hamburger-inner::after {
-      background-color: #db0083; }
+      background-color: #ff0067; }
 
 body.scrolled .hamburger {
   -ms-transform: scale(0.7, 0.7);
@@ -2048,9 +2014,9 @@ body.scrolled .hamburger {
   z-index: 100;
   -webkit-transition: all .2s ease-out 0s;
   transition: all .2s ease-out 0s;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
   @media all and (max-width: 767px) {
     .header {
       height: 50px; } }
@@ -2091,7 +2057,7 @@ body.scrolled .hamburger {
       margin: 0 15px 0 15px;
       position: relative; }
       .mainnav .booking .language:before {
-        content: "";
+        content: "";
         font-family: "FontAwesome";
         display: inline-block;
         font-weight: normal;
@@ -2109,11 +2075,11 @@ body.scrolled .hamburger {
         padding: 0;
         position: relative;
         color: #fff;
-        font-family: "wttf", sans-serif;
+        font-family: "Prompt", sans-serif;
         font-weight: 700;
         text-transform: uppercase; }
         .mainnav .booking .language-button:hover {
-          color: #db0083; }
+          color: #ff0067; }
       .mainnav .booking .language-icon {
         width: 20px;
         height: 20px;
@@ -2134,7 +2100,7 @@ body.scrolled .hamburger {
         z-index: 10;
         top: 40px;
         left: -25px;
-        background: #000;
+        background: #ff0067;
         padding: 10px 0;
         min-width: 170px;
         z-index: 100;
@@ -2161,7 +2127,7 @@ body.scrolled .hamburger {
               font-weight: 600;
               white-space: nowrap; }
               .mainnav .booking .language-selector ul li a:hover {
-                color: #db0083; }
+                color: #000; }
             .mainnav .booking .language-selector ul li span {
               display: inline-block;
               vertical-align: middle;
@@ -2182,7 +2148,7 @@ body.scrolled .hamburger {
       vertical-align: middle;
       cursor: pointer; }
       .mainnav .booking-info:before {
-        content: "";
+        content: "";
         font-family: "FontAwesome";
         display: inline-block;
         font-weight: normal;
@@ -2191,9 +2157,9 @@ body.scrolled .hamburger {
           .mainnav .booking-info:before {
             margin-right: 3px; } }
       .mainnav .booking-info:hover {
-        color: #db0083; }
+        color: #ff0067; }
     .mainnav .booking-cart {
-      font-family: "wttf", sans-serif;
+      font-family: "Prompt", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
       margin-right: 10px; }
@@ -2223,7 +2189,7 @@ body.scrolled .hamburger {
     .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
     .mainnav .hamburger-oud:hover {
-      color: #db0083; }
+      color: #ff0067; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger-oud {
         margin-left: 10px;
@@ -2251,9 +2217,9 @@ body.scrolled .hamburger {
   background: #000;
   color: #fff;
   padding: 40px 30px;
-  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s; }
   @media all and (max-width: 992px) {
@@ -2273,25 +2239,25 @@ body.scrolled .hamburger {
   .subnav a {
     color: #fff; }
     .subnav a:hover {
-      color: #db0083; }
+      color: #ff0067; }
   .subnav .subnav-list {
     margin: 0;
     padding: 0;
     list-style-type: none; }
     .subnav .subnav-list li {
-      font-family: "wttf", sans-serif;
+      font-family: "Prompt", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 20px;
       margin-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid #ff0067;
       padding-bottom: 10px; }
       .subnav .subnav-list li ul {
         margin: 10px 0 10px 0px;
         padding: 0;
         list-style-type: none; }
         .subnav .subnav-list li ul li {
-          font-family: "delius", cursive;
+          font-family: "Roboto", sans-serif;
           font-weight: 400;
           font-size: 16px;
           text-transform: none;
@@ -2302,7 +2268,7 @@ body.scrolled .hamburger {
             color: #fff;
             display: block; }
             .subnav .subnav-list li ul li a:hover {
-              color: #db0083; }
+              color: #ff0067; }
   .subnav-language {
     padding: 10px 0 10px 0; }
     .subnav-language .selectric-wrapper {
@@ -2315,7 +2281,7 @@ body.scrolled .hamburger {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    font-family: "delius", cursive;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
@@ -2326,11 +2292,11 @@ body.scrolled .hamburger {
     padding: 0;
     margin-top: 10px; }
     .subnav .social a {
-      background-color: transparent;
-      color: #fff; }
+      background-color: #ff0067;
+      color: #000; }
       .subnav .social a:hover {
-        color: #db0083;
-        background-color: transparent; }
+        color: #000;
+        background-color: #fff; }
 
 .yourbooking {
   display: none;
@@ -2358,13 +2324,13 @@ body.scrolled .hamburger {
     font-size: 24px;
     margin-bottom: 20px;
     padding: 10px 0 0;
-    color: #fff; }
+    color: #ff0067; }
     @media all and (max-width: 767px) {
       .yourbooking h3 {
         font-size: 18px; } }
   .yourbooking .total {
     font-size: 24px !important;
-    color: #fff; }
+    color: #ff0067; }
     @media all and (max-width: 767px) {
       .yourbooking .total {
         font-size: 17px !important;
@@ -2391,7 +2357,7 @@ body.scrolled .hamburger {
   width: 100%; }
   .yourbooking-summary tr.bookingrow td hr {
     height: 1px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #f3eeee;
     line-height: 0;
     margin: 5px 0;
     border: none !important; }
@@ -2429,10 +2395,10 @@ body.scrolled .hamburger {
     font-size: 18px; }
 
 .notification {
-  background: #db0083;
+  background: #ff0067;
   text-align: center;
   color: #fff;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   line-height: 90px;
   text-transform: uppercase;
   font-weight: 700;
@@ -2451,7 +2417,7 @@ body.scrolled .hamburger {
       height: 50px;
       line-height: 50px; } }
   .notification span {
-    font-family: "delius", cursive; }
+    font-family: "Roboto", sans-serif; }
   @media all and (max-width: 767px) {
     .notification {
       font-size: 12px; } }
@@ -2466,7 +2432,7 @@ body.stickyheader {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3); }
+    background: #000; }
     @media all and (max-width: 767px) {
       body.stickyheader .header {
         background: #000; } }
@@ -2503,15 +2469,19 @@ body.scrolled .hamburger-oud {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 70%;
-  min-height: 600px; }
+  height: calc(70vh - 90px);
+  min-height: 400px; }
   .hero-event {
-    height: calc(50% - 90px);
+    height: calc(60vh - 90px);
+    padding: 30px 0 !important;
     min-height: 400px;
     position: relative; }
     @media all and (max-width: 992px) {
       .hero-event {
-        min-height: 200px; } }
+        min-height: 400px; } }
+    @media all and (max-width: 767px) {
+      .hero-event {
+        min-height: 400px; } }
   .hero:before {
     content: "";
     position: absolute;
@@ -2520,13 +2490,13 @@ body.scrolled .hamburger-oud {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: rgba(0, 0, 0, 0.3); }
   .hero--red {
-    background-color: rgba(255, 55, 0, 0); }
+    background-color: rgba(0, 0, 0, 0.1); }
   .hero--white {
-    background-color: rgba(236, 236, 236, 0); }
+    background-color: rgba(0, 0, 0, 0.1); }
   .hero--blue {
-    background-color: rgba(0, 155, 255, 0); }
+    background-color: rgba(0, 0, 0, 0.1); }
   .hero--gradient:before {
     background: rgba(0, 0, 0, 0);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
@@ -2543,7 +2513,7 @@ body.scrolled .hamburger-oud {
         display: block;
         width: 80%;
         margin: 0 auto 15px;
-        font-size: 15px;
+        font-size: 20px;
         padding: 15px; } }
   .hero .inner {
     position: absolute;
@@ -2591,11 +2561,11 @@ body.scrolled .hamburger-oud {
         content: "\f078";
         font-family: "FontAwesome"; }
       .hero-scroll .arrow:hover {
-        color: #fff; }
+        color: #ff0067; }
     .hero-scroll:hover {
-      color: #fff; }
+      color: #ff0067; }
       .hero-scroll:hover .arrow:before {
-        color: #fff; }
+        color: #ff0067; }
     .hero-scroll .bar {
       width: 5px;
       background: #fff;
@@ -2630,7 +2600,7 @@ body.scrolled .hamburger-oud {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%); }
   .hero h1 {
-    font-family: "wttf", sans-serif;
+    font-family: "Prompt", sans-serif;
     color: #fff;
     font-weight: 800;
     font-size: 60px;
@@ -2653,7 +2623,7 @@ body.scrolled .hamburger-oud {
           font-size: 30px; } }
   .hero h1 small {
     display: block;
-    font-family: "delius", sans-serif;
+    font-family: "Prompt", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
@@ -2677,7 +2647,7 @@ body.scrolled .hamburger-oud {
   background-size: cover; }
   .videowrapper:before {
     content: "";
-    background: 0.5;
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     right: 0;
     top: 0;
@@ -2688,11 +2658,11 @@ body.scrolled .hamburger-oud {
       .videowrapper:before {
         display: none; } }
   .videowrapper iframe {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none; }
 
 .videoplayer {
   position: absolute;
@@ -2733,7 +2703,7 @@ body.scrolled .hamburger-oud {
   padding-top: 70px;
   margin-top: 30px;
   background: transparent;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 14px;
   cursor: pointer;
   font-weight: 700;
@@ -2806,9 +2776,9 @@ body.scrolled .hamburger-oud {
   display: inline-block;
   width: 100%; }
 .footer-subscribe input {
-  background: #fff;
+  background: #000;
   border: none;
-  color: transparent;
+  color: #ff0067;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -2822,21 +2792,21 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: transparent; }
+    color: #ff0067; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: transparent; }
+    color: #ff0067; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: transparent; }
+    color: #ff0067; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: transparent; }
+    color: #ff0067; }
 .footer-subscribe a.submit {
   border: none;
-  background: #fff;
-  color: transparent;
-  font-family: "wttf", sans-serif;
+  background: #000;
+  color: #ff0067;
+  font-family: "Prompt", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -2902,7 +2872,7 @@ body.scrolled .hamburger-oud {
   -moz-appearance: none;
   border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   background: #fff; }
   .textfield:focus, select:focus, .form-control:focus {
     color: #000; }
@@ -2926,8 +2896,8 @@ body.scrolled .hamburger-oud {
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0;
-  background: #000;
-  border: 1px solid #fff;
+  background: #ff0067;
+  border: 1px solid #000;
   color: #fff; }
   @media all and (max-width: 992px) {
     .input-group-addon {
@@ -3043,7 +3013,7 @@ body.scrolled .hamburger-oud {
   cursor: default;
   font-size: 18px;
   padding: 18px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -3070,7 +3040,7 @@ body.scrolled .hamburger-oud {
       font-size: 14px;
       padding: 14px; } }
   .login .input:focus {
-    background-color: #db0083;
+    background-color: #ff0067;
     color: #fff;
     outline: none; }
   .login .input.password {
@@ -3109,7 +3079,7 @@ body.scrolled .hamburger-oud {
   width: 100%; }
 
 .selectric {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 0rem;
   background: #fff;
   position: relative;
@@ -3138,7 +3108,7 @@ body.scrolled .hamburger-oud {
   width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #000;
+  background-color: #ff0067;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -3243,7 +3213,7 @@ body.scrolled .hamburger-oud {
   top: 100%;
   left: 0;
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   z-index: -1;
   box-shadow: 0 0 10px -6px; }
 
@@ -3270,15 +3240,15 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #db0083;
+  background: #ff0067;
   color: #fff !important; }
 
 .selectric-items li.highlighted {
-  background: #db0083;
+  background: #ff0067;
   color: #fff !important; }
 
 .selectric-items li:hover {
-  background: #db0083;
+  background: #ff0067;
   color: #fff !important; }
 
 .selectric-items .disabled {
@@ -3311,27 +3281,27 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: transparent;
+  background-color: #ff0067;
   padding: 70px 0 0;
-  color: #fff;
+  color: #000;
   border-top: none; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: #fff;
+    background: #ff0067;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #fff 0%, #6cb5ff 100%);
+    background: -moz-linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #fff 0%, #6cb5ff 100%);
+    background: -webkit-linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #fff 0%, #6cb5ff 100%);
+    background: linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
       padding: 50px 0 0; } }
   footer h4 {
     text-transform: uppercase;
-    font: "wttf", sans-serif;
-    color: #fff;
+    font: "Prompt", sans-serif;
+    color: #000;
     font-weight: 700;
     margin: 0 0 20px;
     font-size: 24px; }
@@ -3354,9 +3324,9 @@ footer {
     text-align: center;
     display: inline-block; }
   footer a {
-    color: #fff; }
+    color: #000; }
     footer a:hover {
-      color: #db0083; }
+      color: #fff; }
   footer .footer-col {
     margin-bottom: 30px; }
     @media all and (max-width: 767px) {
@@ -3379,7 +3349,7 @@ footer {
   footer .credits {
     float: right; }
   footer .payoff {
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 16px; }
     footer .payoff a {
       display: inline-block;
@@ -3403,7 +3373,7 @@ footer {
       margin: 0 auto 0;
       text-align: left; }
       footer .language .selectric-wrapper .selectric-items, footer .language .selectric-wrapper .selectric-open .selectric, footer .language .selectric-wrapper .selectric {
-        border: 1px solid #fff !important; }
+        border: 1px solid #000 !important; }
       footer .language .selectric-wrapper .selectric-items li, footer .language .selectric-wrapper .selectric-items ul {
         font-size: 13px; }
 
@@ -3420,8 +3390,8 @@ footer {
     margin-right: 2px; }
     .social li a {
       display: block;
-      background-color: transparent;
-      color: #fff;
+      background-color: #000;
+      color: #ff0067;
       border-radius: 100%;
       width: 34px;
       height: 34px;
@@ -3429,8 +3399,8 @@ footer {
       line-height: 36px;
       font-size: 16px; }
       .social li a:hover {
-        background-color: transparent;
-        color: #db0083; }
+        background-color: #fff;
+        color: #000; }
 
 .footer-logos {
   background-color: #fff;
@@ -3461,15 +3431,15 @@ footer {
   width: 100%;
   max-width: 550px;
   padding: 20px;
-  background-color: black;
-  font-size: 15px;
+  background-color: #000;
+  font-size: 13px;
   color: #fff;
-  border: 1px solid #db0083;
+  border: 1px solid #ff0067;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
   .cookies a {
-    color: #db0083; }
+    color: #ff0067; }
   @media all and (max-width: 767px) {
     .cookies {
       max-width: 90%;
@@ -3488,7 +3458,7 @@ footer {
         .cookies button .icon {
           width: 15px; } }
     .cookies button #cross-remove-sign {
-      fill: #db0083; }
+      fill: #ff0067; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
@@ -3497,11 +3467,11 @@ footer {
   text-align: center;
   color: #fff;
   padding: 40px 0;
-  background: transparent;
+  background: black;
   margin-top: 35px;
   font-size: 14px;
   font-weight: 400;
-  font-family: "wttf", sans-serif;
+  font-family: "Prompt", sans-serif;
   text-transform: uppercase; }
   .partners ul {
     margin: 25px 0 0;
@@ -3558,17 +3528,17 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 2;
     display: block; }
   .event--blue:before {
-    background-color: rgba(0, 155, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0.5; }
   .event--red:before {
-    background-color: rgba(255, 55, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0.5; }
   .event--grey:before {
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0.5; }
   .event-info {
     position: absolute;
@@ -3598,13 +3568,13 @@ footer {
       .event-thumb {
         padding-bottom: 60% !important; } }
     .event-thumb--red {
-      background-color: rgba(255, 55, 0, 0); }
+      background-color: rgba(0, 0, 0, 0.1); }
     .event-thumb--white {
-      background-color: rgba(236, 236, 236, 0); }
+      background-color: rgba(0, 0, 0, 0.1); }
     .event-thumb--blue {
-      background-color: rgba(0, 155, 255, 0); }
+      background-color: rgba(0, 0, 0, 0.1); }
     .event-thumb--grey {
-      background-color: rgba(50, 50, 50, 0.2); }
+      background-color: rgba(0, 0, 0, 0.1); }
   .event-two .event-thumb {
     padding-bottom: 50%; }
   .event-one .event-thumb {
@@ -3612,7 +3582,7 @@ footer {
   .event:hover .event-thumb {
     background-size: 150% auto; }
   .event:hover .button-secondary {
-    color: #000 !important;
+    color: #ff0067 !important;
     text-decoration: none;
     background: #fff !important; }
   .event-title {
@@ -3642,7 +3612,7 @@ footer {
   border: none; }
 
 .main > .accordeon ~ .accordeon {
-  border-top: 2px solid rgba(255, 255, 255, 0.3); }
+  border-top: 1px solid #ff0067; }
 
 .accordeon {
   color: #fff;
@@ -3650,10 +3620,10 @@ footer {
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #333;
+    background: #000;
     color: #fff; }
   .accordeon--active, .accordeon--active:hover {
-    background: #333;
+    background: #ff0067;
     color: #fff; }
   .accordeon .container {
     position: relative; }
@@ -3661,7 +3631,7 @@ footer {
     font-size: 32px;
     padding: 15px 0;
     display: inline-block;
-    font-family: "wttf", sans-serif;
+    font-family: "Prompt", sans-serif;
     font-weight: 800;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
@@ -3694,7 +3664,7 @@ footer {
     display: inline-block;
     padding: 15px 0 15px 15px;
     margin-left: 15px;
-    border-left: 2px solid rgba(255, 255, 255, 0.3); }
+    border-left: 1px solid #ff0067; }
     @media all and (max-width: 767px) {
       .accordeon-down {
         padding: 10px 0 10px 10px;
@@ -3707,11 +3677,11 @@ footer {
     .accordeon a.button-secondary {
       color: #fff; }
       .accordeon a.button-secondary:hover {
-        color: #000; }
+        color: #ff0067; }
 
 .offer {
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #fff;
   padding-bottom: 30px;
   margin: 0 0 30px 0; }
   .offer-link {
@@ -3723,7 +3693,7 @@ footer {
       margin: 0 0 15px 0;
       padding-bottom: 15px; } }
   .offer-line {
-    border-right: 1px solid rgba(255, 255, 255, 0.3); }
+    border-right: 1px solid #f3eeee; }
     @media all and (max-width: 992px) {
       .offer-line {
         border-right: none; } }
@@ -3737,9 +3707,9 @@ footer {
       min-height: 170px;
       display: block; } }
   .offer-title {
-    font-family: "delius", cursive;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: #ff0067;
     text-transform: none;
     margin: 0 0 5px;
     font-size: 32px; }
@@ -3750,7 +3720,7 @@ footer {
       .offer-title {
         font-size: 17px; } }
   .offer-subheader {
-    color: #fff;
+    color: #ff0067;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
@@ -3796,7 +3766,7 @@ footer {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
-    color: #fff;
+    color: #ff0067;
     display: block;
     font-weight: 400;
     margin: 0 0 2px 0;
@@ -3809,7 +3779,7 @@ footer {
       .offer-price {
         font-size: 16px; } }
   .offer-price-condition {
-    color: #fff;
+    color: #ff0067;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
@@ -3824,7 +3794,7 @@ footer {
         margin-bottom: 10px; } }
 
 .room {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #f3eeee;
   padding: 0 0 30px;
   margin-bottom: 30px; }
 
@@ -5203,7 +5173,7 @@ footer {
   background: #fff; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #db0083; }
+  background: #ff0067; }
 
 /*!
  * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)
@@ -5639,18 +5609,5 @@ footer {
   margin-right: -5px; }
 
 /*# sourceMappingURL=bootstrap-datepicker3.min.css.map */
-canvas {
-  display: block;
-  margin: 2em; }
-
-.bg-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0.4; }
 
 /*# sourceMappingURL=styles.css.map */
