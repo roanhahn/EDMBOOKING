@@ -253,6 +253,8 @@ setTimeout(function() {
 
 $("img.lazyload").lazyload();
 
+var bLazy = new Blazy();
+
 // var bodyheight = $('.sitewrapper').outerHeight() - $('.header').outerHeight();
 
 // $('.subnav').css("height", bodyheight);
@@ -625,7 +627,7 @@ function stickyFooter() {
     var headerHeight = $('.header').outerHeight();
     var footerHeight = $('#footer').outerHeight();
     var hf = bodyHeight - footerHeight - headerHeight;
-    // console.log(hf);
+    console.log(hf);
 
     $('.main').css('min-height', hf + 'px');
 }
