@@ -1,0 +1,394 @@
+---
+title: Your Booking Aanpassen
+type: page
+layout: default.hbs
+---
+
+
+<div class="hero hero-event hero--blue" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
+	<div class="inner">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="hero-event-title">{{site.event}}
+						<small>{{site.eventdate}}</small>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{!-- <div class="myBooking-hero">
+	<div class="inner">
+		<p class="hero-title">{{site.event}}</p>
+		<p class="hero-subtitle">{{site.eventdate}}</p>
+	</div>
+	<div class="hero-background" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg);"></div>
+</div> --}}
+<section class="section myBooking">
+	<div class="container">
+		<a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block page-back">Back</a>
+		<h1 class="page-h1">Your booking</h1>
+		<div class="row">
+			<div class="col-lg-4 m-b-30 p">
+				<p class="myBooking-h1">Michel, congratulations with your booking!</p>
+				<p>We are looking forward to welcome you at {{site.title}}. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for {{site.title}} is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to {{site.title}}.</p>
+				<p><strong>Shared transfer/Private transfer</strong></p>
+				<p>If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.</p>
+				<p>We wish you a great stay, and see you at {{site.title}}</p>
+			</div>
+			<div class="col offset-lg-1">
+
+				<h3><a id="mydetails" class="anchor"></a>Edit personal information</h3>
+				<div class="content">
+					<form>
+						<table class="edit-data">
+							<tr>
+								<td valign="middle"><label>Prefix</label></td>
+								<td>
+
+									<select class="form-control" id="salutation">
+										<option>Mr.</option>
+										<option>Mrs.</option>
+									</select>
+
+								</td>
+							</tr>
+							<tr>
+								<td><label>First name</label></td>
+								<td><input type="text" class="form-control textfield" id="firstname" value="Jurgen" required="required"></td>
+							</tr>
+							<tr>
+								<td><label>Last name</label></td>
+								<td>
+									<input type="text" class="form-control textfield is-valid" id="lastname" value="van Zachten" required="required">
+									<div class="valid-feedback" style="display: block;">Success! You've done it.</div>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Email</label></td>
+								<td><input type="email" class="form-control textfield" id="email" value="johndoe@gmail.com" required="required"></td>
+							</tr>
+							<tr>
+								<td><label>Phonenumber</label></td>
+								<td><input type="text" class="form-control textfield" id="Phonenumber" value="06 56 34 56 78" required="required"></td>
+							</tr>
+							<tr>
+								<td><label>Address</label></td>
+								<td><input type="text" class="form-control textfield" id="address" value="Ruysdaelhof Oost 9c" required="required"></td>
+							</tr>
+							<tr>
+								<td><label>Zipcode</label></td>
+								<td><input type="text" class="form-control textfield" id="zipcode" value="1234 AB" required="required"></td>
+							</tr>
+							<tr>
+								<td><label>City</label></td>
+								<td><input type="text" class="form-control textfield" id="city" value="Eindhoven" required="required"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button></td>
+							</tr>
+{{!-- 						<tr>
+							<td><label>Bookingcode</label></td>
+							<td>CODE</td>
+						</tr> --}}
+					</table>
+
+				</form>
+			</div>
+			<h3><a id="account" class="anchor"></a>Create an account (optional)</h3>
+			<div class="content">
+				<form>
+					<h3 class="h5">Create an account with username and password</h3>
+					{{!-- <p class="p">Quam vehicula parturient ridiculus morbi gravida a quam vivamus mi condimentum interdum condimentum dapibus eleifend blandit luctus.</p> --}}
+					<table class="edit-data">
+						<tr>
+							<td><label>Username</label></td>
+							<td>
+								<input type="text" class="form-control textfield" id="" placeholder="Username">
+								{{!-- <div class="feedback" style="display: block;">Min 8 characters</div> --}}
+							</td>
+						</tr>
+						<tr>
+							<td><label>Password</label></td>
+							<td>
+								<input type="password" class="form-control textfield" id="" placeholder="Password">
+								{{!-- <div class="feedback" style="display: block;">Password must contain Aa0-9!</div> --}}
+							</td>
+						</tr>
+						<tr>
+							<td><label>Password again</label></td>
+							<td><input type="password" class="form-control textfield" id="" placeholder="Password again"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-user" aria-hidden="true"></i>Create account</button></td>
+						</tr>
+					</table>
+					<h3 class="h5 m-t-20">Or create an account using your social network account</h3>
+					<div class="row">
+						<div class="col">
+							<button class="button-facebook button--mobileblock">Facebook</button>
+							<button class="button-google button--mobileblock">Google+</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<h3><a id="guestdetails" class="anchor"></a>Edit guest(s) details</h3>
+			<div class="content">
+				<form>
+					<table class="edit-data">
+						<tr>
+							<td><label>Guest 1</label></td>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<select class="form-control" id="salutation">
+												<option>Mr.</option>
+												<option>Mrs.</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control textfield" id="firstname" value="Jurgen" required="required"></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control textfield" id="lastname" value="van Zachten" required="required"></td>
+									</tr>
+								</table>
+
+
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button>
+							</td>
+						</tr>
+					</table>
+					{{!-- <button type="submit" class="button button-primary button-primary--small button--mobileblock m-t-30"><i class="fa fa-check" aria-hidden="true"></i>Save</button> --}}
+				</form>
+			</div>
+			<h3><a id="mytickets" class="anchor"></a>Your ticket information</h3>
+			<div class="content">
+
+				<table class="no-width">
+					<tr>
+						<td>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets1" value="value">
+								<label class="form-check-label" for="tickets1">
+									2x Included in this package your EF tickets (current)
+									<button data-type="toggle" data-target="#ticket-info-1" class="showmore" title="Show more info"></button>
+								</label>
+
+								<div class="form-ticket-info" id="ticket-info-1">
+									<p>
+										Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td class="text-right price">€62.00</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="form-group">
+								<input class="form-check-input" type="radio" name="tickets" id="tickets2" value="value" checked="checked">
+								<label class="form-check-label" for="tickets2">
+									2x EF VIP tickets, more price &euro;80
+									<button data-type="toggle" data-target="#ticket-info-2" class="showmore" title="Show more info"></button>
+								</label>
+
+								<div class="form-ticket-info" id="ticket-info-2">
+									<p>
+										Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td class="text-right price">€162.00</td>
+					</tr>
+				</table>
+
+
+
+				<div class="alert alert-warning m-t-30">Changing your ticket can have effect on your total package price.</div>
+				<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-lock" aria-hidden="true"></i>Proceed to checkout - &euro;80</button>
+			</div>
+			<h3><a id="myextras" class="anchor"></a>Your selected extras</h3>
+			<div class="content">
+
+				<div class="form-group">
+					<input class="form-check-input" type="checkbox" name="extras" id="extra1" value="value" checked="checked" disabled="disabled">
+					<label class="form-check-label" for="extra1">
+						2x Safari
+						<button data-type="toggle" data-target="#extra-info-1" class="showmore" title="Show more info"></button>
+					</label>
+
+					<div class="form-ticket-info" id="extra-info-1">
+						<p>
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+						</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<input class="form-check-input" type="checkbox" name="extras" id="extra2" value="value" checked="checked" disabled="disabled">
+					<label class="form-check-label" for="extra2">
+						2x Shared Transfer
+						<button data-type="toggle" data-target="#extra-info-2" class="showmore" title="Show more info"></button>
+					</label>
+
+					<div class="form-ticket-info" id="extra-info-2">
+						<p>
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+						</p>
+					</div>
+				</div>
+
+				<h3 class="m-t-30 m-b-10">Add more extras</h3>
+
+				<table class="upgrade-extras">
+					<tr>
+						<td class="title"><button class="extra-btn" data-type="slidetoggle" data-target="#extra-1">Shared Transfer</td>
+							<td class="price">&euro;25</td>
+							<td>
+								<div class="extra-add">
+									<div class="extra-number">
+										<button class="manage-button minus">-</button>
+										<div class="extra-number-items">2</div>
+										<button class="manage-button plus">+</button>
+									</div>
+									{{!-- <button class="button button-primary button-add"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add</span></button> --}}
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<div class="extra-details" id="extra-1">
+									<div class="row">
+										<div class="col-4 col-sm-6 col-md-4">
+											<img src="http://via.placeholder.com/600x600" data-src="http://via.placeholder.com/600x600" alt="" class="img-fluid lazyload">
+										</div>
+										<div class="col-8 col-sm-6 col-md-8">
+											<ul>
+												<li>Private car and driver for transfer to A State Of Trance and back to hotel</li>
+												<li>The driver will be stand-by for your convenience</li>
+												<li>Select the number of cars you need</li>
+												<li>ASOT team will contact you with transfer information</li>
+												<li>Price per car for max 4 persons</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="title"><button class="extra-btn" data-type="slidetoggle" data-target="#extra-2">Festival Flag</td>
+								<td class="price">&euro;25</td>
+								<td>
+									<div class="extra-add">
+										<div class="extra-number">
+											<button class="manage-button minus">-</button>
+											<div class="extra-number-items">2</div>
+											<button class="manage-button plus">+</button>
+										</div>
+										{{!-- <button class="button button-primary button-add"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add</span></button> --}}
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<div class="extra-details" id="extra-2">
+										<div class="row">
+											<div class="col-4 col-sm-6 col-md-4">
+												<img src="http://via.placeholder.com/600x600" data-src="http://via.placeholder.com/600x600" alt="" class="img-fluid lazyload">
+											</div>
+											<div class="col-8 col-sm-6 col-md-8">
+												<ul>
+													<li>Private car and driver for transfer to A State Of Trance and back to hotel</li>
+													<li>The driver will be stand-by for your convenience</li>
+													<li>Select the number of cars you need</li>
+													<li>ASOT team will contact you with transfer information</li>
+													<li>Price per car for max 4 persons</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+
+						<div class="alert alert-warning m-t-30">Changing your extras can have effect on your total package price.</div>
+						<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-lock" aria-hidden="true"></i>Proceed to checkout - &euro;100</button>
+					</div>
+					<h3><a id="mystay" class="anchor"></a>Your hotel information</h3>
+					<div class="content">
+						<forn>
+							<table class="edit-data">
+								<tr>
+									<td><label>Hotel</label></td>
+									<td colspan="2">
+										Campanile Hotel 's-Hertogenbosch<br />
+										Goudsbloemvallei 21-25 5237 MH<br />
+										‘S Hertogenbosch
+									</td>
+								</tr>
+								<tr>
+									<td><label>Arrival date</label></td>
+									<td colspan="2">
+										<select class="form-control" id="departure">
+											<option>24-11-2018</option>
+											<option>25-11-2018</option>
+											<option>26-11-2018</option>
+											<option>27-11-2018</option>
+											<option>28-11-2018</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td><label>Departure date</label></td>
+									<td colspan="2">
+										<select class="form-control" id="departure">
+											<option>24-11-2018</option>
+											<option>25-11-2018</option>
+											<option>26-11-2018</option>
+											<option>27-11-2018</option>
+											<option>28-11-2018</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td><label>Room</label></td>
+									<td>1x Twin Room</td>
+									<td class="text-right price">€62.00</td>
+								</tr>
+								<tr>
+									<td><label>Reservation Code</label></td>
+									<td colspan="2">CODE</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td colspan="2"><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save dates</button></td>
+								</tr>
+							</table>
+
+						</form>
+					</div>
+					<div class="content">
+						<table class="total">
+							<tr>
+								<td>Total price</td>
+								<td class="text-right">&euro;212.60</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

@@ -1,0 +1,355 @@
+/*!
+ * EVENTAGENT THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
+/* Regular font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+/* FOLDER */
+$folder: eventagent;
+
+/* BODY */
+$bg-color: #fff;
+$loader-bg: #fff;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+
+body{
+    background: #fff !important; /* Old browsers */
+}
+
+$font-size: 1 rem;
+$font-header-size: 24px; //default 24px;
+
+/* FONTS */
+$font: 'Roboto', sans-serif;
+$font-header: 'Roboto', sans-serif;
+$font-special: 'Roboto Slab', sans-serif;
+$border-color: #e2e3e6; //rgba(255,255,255,.3);
+
+.event-info-item:after, .h3--lined, .page-h1{
+    border-width: 1px !important;
+}
+
+/* FONT COLORS */
+$text-color: #99a1a3;
+$heading-color: #242529;
+$link-color: #0be881;
+$error-color: #dc3545;
+
+.h3, .page h4, .mainnav .booking-cart, .subnav .subnav-list li{
+    text-transform: none !important;
+}
+
+.h3--big, .page-h1{
+    font-family: $font-special!important;
+    text-transform: none !important;
+    font-weight: 700 !important;
+}
+
+.h3--eventinfo{
+    font-size: 1.3rem !important;
+    font-family: $font-special!important;
+    margin-bottom: 10px !important;
+    font-weight: 700 !important;
+}
+
+/* Google Maps */
+$mapclose-color: #d60e00;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.1); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.1);
+$red-filter: rgba(0,0,0,.1);
+$grey-filter: rgba(0,0,0,.1);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.2);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Montserrat', sans-serif;
+$button-size: 17px; //default 17px
+$button-bg: rgba(45,96,155,1);
+$button-color: #fff;
+$button-bg-hover: #d60e00;
+$button-color-hover: #fff;
+$button-radius: 0px;
+
+/* BACK BUTTON */
+$button-back-size: 16px;
+$button-back-bg: rgba(45,96,155,1);
+$button-back-color: #fff;
+$button-back-border: 2px solid #fff;
+$button-back-bghover: #d60e00;
+$button-back-colorhover: #fff;
+$button-back-borderhover: 2px solid #fff;
+
+
+/* FAQ */
+$faq-button-bg: rgba(45,96,155,1);
+$faq-button-color: #fff;
+$faq-button-bghover: #d60e00;
+$faq-button-colorhover: #fff;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-size: 20px; //default 16px
+$sec-size-mobile: 20px; //default
+$sec-button-bg: #d60e00; //rgba(45,96,155,1);
+$sec-button-colorhover: #fff;
+$sec-button-bghover: rgba(45,96,155,1);
+$sec-button-border: 2px solid #d60e00;
+$sec-button-borderhover: 2px solid rgba(45,96,155,1);
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #808e9b;
+$hamburger-height: 4px; // default 6px
+$hamburger-spacing: 7px; // default 6px
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 50px;
+$logo-height-mobile: 30px;
+$header-bg: #fff;
+$header-color: #808e9b;
+$header-bg-sticky: #fff;
+$header-text: #808e9b;
+$header-hover: #485460;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: rgba(45,96,155,1);
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #fff;
+$subnav-strong: #242529;
+$subnav-strong-size: 1rem; //default 20px
+$subnav-color: #242529;
+$subnav-link: #242529;
+$subnav-sublink: #a2a4ac;
+$subnav-hover: #0be881;
+$subnav-social-bg: #242529;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #0be881;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid #e2e3e6;
+$language-bg: #fff;
+$language-link: #242529;
+$language-hover: #0be881;
+$language-border: 1px solid rgba(0,0,0,0);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+.subnav .subnav-list li strong{
+    font-weight: 700 !important;
+}
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,.2);
+$hero-h1-size: 70px; //70px default
+$font-hero-small: 'Roboto', sans-serif;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+.hero h1{
+    font-family: $font-special!important;
+    text-transform: none !important;
+}
+
+
+
+/* Testimonials */
+$testimonial-bg: #f5f5f5;
+$testimonial-text: #242529;
+$testimonial-title: #000;
+$testimonial-author: #242529;
+$testimonial-activedot: #0be881;
+$testimonial-inactivedot: #a2a4ac;
+$testimonial-title-size: 50px; // default 40px
+
+.testimonials-h4{
+    text-transform: none !important;
+    font-weight: 400;
+    font-family: $font-special!important;
+}
+
+.testimonials-title{
+    font-weight: 300 !important;
+    text-transform: none !important;
+}
+
+.testimonials-title span{
+    font-family: 'Lora', serif !important;
+    font-weight: 700;
+    color: #0be881 !important;
+}
+
+
+/* STEPS */
+$steps-bg: #fff;
+$steps-color: #808e9b;
+$steps-bg-hover: #f5f5f5;
+$steps-color-hover: #485460;
+$steps-active-bg: #fff;
+$steps-active-color: #242529;
+$steps-link: #808e9b;
+$steps-border: 1px solid $border-color;
+
+.accordeon-buttons, .accordeon-step{
+    text-transform: none !important;
+}
+
+/* OFFERS */
+$event-bg: #fff;
+$offer-border: 1px solid #bfbfbf;
+$offer-title: rgba(45,96,155,1);
+$offer-title-transform: none;
+$ribbon-bg: #d60e00;
+$ribbon-color: #fff;
+$offer-activedot: #d60e00;
+$offer-inactivedot: #bfbfbf;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
+
+/* WHY BOOK */
+$why-border: #d60e00;
+$why-number: #d60e00;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #d60e00;
+$why-book-iconbg: #d60e00;
+
+/* Footer */
+$footer-border: 1px solid $border-color;
+$footer-bg: #fff;
+$footer-text: #242529;
+$footer-link: #a2a4ac;
+$footer-hover: #0be881;
+$footer-heading: #242529;
+$footer-heading-size: 20px; //default 24px
+$footer-social-color: #fff;
+$footer-social-bg: #242529;
+$footer-social-hover: #0be881;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 13px;
+$partner-bg: rgba(0,0,0,0.19);
+
+#footer h4{
+    text-transform: none !important;
+}
+
+#footer{
+    padding: 70px 0 !important;
+}
+
+#footer ul li{
+    margin-bottom: 15px !important;
+}
+
+#footer span.icon{
+    color: #242529;
+}
+
+/* COOKIES */
+$cookies-bg: #242529;
+$cookie-link-color: #0be881;
+$cookies-fontsize: 13px;
+$cookies-border: none;
+$cookies-color: #fff;
+$cookies-padding: 15px 15px 10px 15px;
+$cookies-fontsize-mobile: 11px;
+$cookies-padding-mobile: 15px;
+
+.cookies{
+    left: 20px !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    @media all and (max-width: $breakpoint-mobile){
+        left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        right: 0px;
+        bottom: 0px !important;
+    }
+}
+
+/* FORMS */
+$form-border: 1px solid #bbb;
+$form-bordercolor: #bbb;
+$form-border-login: 1px solid #bbb;
+$form-label: #333;
+$form-input-color: #686868;
+$form-highlight: #fff;
+$form-highlightcolor: #686868;
+$form-addon-bg: #bbb;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.hero h1.hero-event-title{
+    font-size: 55px !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 45px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+}
+
+.section--grey{
+    background: #f5f5f5;
+}
+
+.header{
+    // border-bottom: 2px solid #d60e00;
+}
+
+.extra-number .manage-button{
+    color: #fff !important;
+    background: rgba(45,96,155,1) !important;
+
+    &:hover{
+        background: #d60e00 !important;
+    }
+}
+
+.yourbooking{
+    // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
+}
+
+// .hero-button{
+//     background: #ffef3b !important;
+//     color: #000 !important;
+
+//     &:hover{
+//         background: #000 !important;
+//         color: #ffef3b !important;
+//     }
+// }
+.accordeon-buttons .button-secondary{
+    background: #d60e00 !important;
+    color: #fff !important;
+    border-color: #d60e00 !important;
+}

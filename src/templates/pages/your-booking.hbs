@@ -32,10 +32,10 @@ layout: default.hbs
 		<div class="row">
 			<div class="col-lg-4 m-b-30 p">
 				<p class="myBooking-h1">Michel, congratulations with your booking!</p>
-				<p>We are looking forward to welcome you at Electronic Family 2018. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EF is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to Electronic Family.</p>
+				<p>We are looking forward to welcome you at {{site.title}}. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for {{site.title}} is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to {{site.title}}.</p>
 				<p><strong>Shared transfer/Private transfer</strong></p>
 				<p>If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.</p>
-				<p>We wish you a great stay, and see you at Electronic Family 2018</p>
+				<p>We wish you a great stay, and see you at {{site.title}}</p>
 			</div>
 			<div class="col offset-lg-1">
 				<h3>Personal information</h3>
@@ -78,6 +78,8 @@ layout: default.hbs
 							<td>CODE</td>
 						</tr>
 					</table>
+					<div class="alert alert-primary m-t-20 m-b-0"><strong>Tip!</strong> Create an EventAgent account to manage all your bookings. <a href="your-booking-edit.html#account">Click here</a></div>
+					<a href="your-booking-edit.html#mydetails" class="button button-primary button-primary--small m-t-30"><i class="fa fa-pencil" aria-hidden="true"></i>Edit my details</a>
 				</div>
 				<h3>Extra travellers</h3>
 				<div class="content">
@@ -87,21 +89,42 @@ layout: default.hbs
 							<td>Mrs. Jurgen van Zachten</td>
 						</tr>
 					</table>
+					<a href="your-booking-edit.html#guestdetails" class="button button-primary button-primary--small m-t-30"><i class="fa fa-pencil" aria-hidden="true"></i>Edit guest(s) details</a>
 				</div>
 				<h3>Your ticket information</h3>
 				<div class="content">
 					<table>
 						<tr>
 							<td><strong>Ticket</strong></td>
-							<td>Download ticket</td>
+							<td>2 x Regular Ticket</td>
+							<td class="text-right price">€62.00</td>
 						</tr>
 						<tr>
-							<td><strong>Download ticket</strong></td>
+							<td><strong>Download ticket(s)</strong></td>
 							<td><a href="#">Download here</a></td>
 						</tr>
 					</table>
+					<a href="your-booking-edit.html#mytickets" class="button button-primary button-primary--small m-t-30"><i class="fa fa-ticket" aria-hidden="true"></i>Upgrade my ticket(s)</a>
+				</div>
+				<h3>Your extras</h3>
+				<div class="content">
+					<table>
+						<tr>
+							<td><strong>Extra</strong></td>
+							<td>2 x Safari tour</td>
+							<td class="text-right price">€62.00</td>
+						</tr>
+						<tr>
+							<td><strong>Extra</strong></td>
+							<td>2 x Shared transfer</td>
+							<td class="text-right price">€62.00</td>
+						</tr>
+					</table>
+					<a href="your-booking-edit.html#myextras" class="button button-primary button-primary--small m-t-30"><i class="fa fa-plus" aria-hidden="true"></i>Manage my extras</a>
 				</div>
 				<h3>Your hotel information</h3>
+
+
 				<div class="content">
 					<table>
 						<tr>
@@ -130,6 +153,7 @@ layout: default.hbs
 							<td colspan="2">CODE</td>
 						</tr>
 					</table>
+					<a href="your-booking-edit.html#mystay" class="button button-primary button-primary--small m-t-30"><i class="fa fa-calendar" aria-hidden="true"></i>Change booking dates</a>
 				</div>
 				<div class="content">
 					<table class="total">

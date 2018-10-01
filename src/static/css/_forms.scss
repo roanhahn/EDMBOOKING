@@ -63,12 +63,17 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		margin-bottom: 10px;
-		font-size: 16px;
+		font-size: $form-labelsize;
 		white-space: nowrap;
 		color: $form-label;
 
 		@media all and(max-width: $breakpoint-mobile){
 			font-size: 14px;
+		}
+
+		&--inline{
+			display: inline-block;
+			margin-left: 10px;
 		}
 	}
 
@@ -290,8 +295,18 @@
 	}
 }
 
+.feedback, .valid-feedback, .invalid-feedback{
+	margin-top: 8px;
+	color: #666;
+	font-size: 12px;
+}
+
 .valid-feedback{
 	color: #0cc36f;
+}
+
+.invalid-feedback{
+	color: #dc3545;
 }
 
 .login{
@@ -376,5 +391,62 @@
 	}
 	@media all and (max-width: $breakpoint-tablet){
 		display: none;
+	}
+}
+
+.edit-data td{
+	// vertical-align: middle !important;
+	& label{
+		margin-top: 12px;
+		font-weight: bold;
+		display: block;
+	}
+}
+
+.extra-amount{
+	border: $form-border;
+	padding: 4px;
+	display: inline-block;
+	color: $form-input-color;
+}
+
+.myBooking .no-width{
+	& td{
+		vertical-align: top;
+
+		&:first-child{
+			width: 100% !important;
+		}
+	}
+}
+
+.upgrade-extras{
+
+	width: 100%;
+	& td{
+		vertical-align: middle !important;
+
+
+	}
+	& .title, & .price{
+		font-size: 20px;
+		font-weight: 700;
+		color: $link-color;
+
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 16px;
+		}
+	}
+
+	& .title{
+
+
+		&:first-child{
+			width: 100% !important;
+		}
+	}
+	& .price{
+		text-align: right !important;
+		padding-right: 30px;
 	}
 }

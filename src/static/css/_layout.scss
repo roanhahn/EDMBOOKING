@@ -10,6 +10,13 @@
 		background: #fff;
 	}
 
+	&-404{
+		background: transparent url("../img/404-bg.png") center center / cover no-repeat  scroll;
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+	}
+
 	&--succes{
 		// position: relative;
 		// // min-height: 500px;
@@ -177,6 +184,16 @@
 		cursor: pointer;
 		margin: 0;
 
+		& .method-name{
+			max-width: 80%;
+
+			@media all and(max-width: $breakpoint-mobile){
+				max-width: 60%;
+			}
+			line-height: 1.2;
+			// background: red;
+			display: inline-block;
+		}
 		& .method-img{
 			height: 32px;
 			margin-left: 5px;

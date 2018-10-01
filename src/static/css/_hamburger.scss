@@ -3,8 +3,8 @@
 $hamburger-padding-x: 0px !default;
 $hamburger-padding-y: 0px !default;
 $hamburger-layer-width: 40px !default;
-$hamburger-layer-height: 6px !default;
-$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-height: $hamburger-height !default; // 6px default;
+$hamburger-layer-spacing: $hamburger-spacing !default; //6px !default;
 
 $hamburger-layer-border-radius: 0px !default;
 $hamburger-hover-opacity: 1 !default;

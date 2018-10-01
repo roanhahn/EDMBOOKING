@@ -23,7 +23,7 @@ body{
     background: #fff !important; /* Old browsers */
 }
 
-$font-size: 14px;
+$font-size: 16px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
@@ -35,6 +35,7 @@ $border-color: #bfbfbf; //rgba(255,255,255,.3);
 $text-color: #333333;
 $heading-color: #333333;
 $link-color: #d60e00;
+$error-color: #dc3545;
 
 /* Google Maps */
 $mapclose-color: #d60e00;
@@ -90,6 +91,8 @@ $sec-padding: 15px 30px;
 
 /* HEADER */
 $hamburger-layer-color: #d60e00;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
@@ -207,6 +210,7 @@ $form-border: 1px solid #bbb;
 $form-bordercolor: #bbb;
 $form-border-login: 1px solid #bbb;
 $form-label: #333;
+$form-labelsize: 12px;
 $form-input-color: #686868;
 $form-highlight: #fff;
 $form-highlightcolor: #686868;

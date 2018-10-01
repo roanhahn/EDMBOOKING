@@ -1,3 +1,22 @@
+# EVENTAGENT
+# theme: eventagent
+# logo: logo.svg
+# name: Eventagent
+# intro: Welcome To The future 2019
+# title: Personalised Premium Event Travel Packages | EventAgent
+# homepage: homepage.html
+# herotitle: Welcome To The future 2019
+# herosubtitle: 2 days with camping
+# event: Welcome To The future 2019
+# eventdate: Friday July 19th / Saturday July 20th
+# ogtitle: Welcome To The future 2019
+# ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
+# ogimg-width: 2048
+# ogimg-height: 1365
+# description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
+
+
+
 # Welcome to the future
 # theme: wttf
 # logo: logo.png
@@ -17,19 +36,19 @@
 
 
 # # DEMO HOTEL
-# theme: demohotel
-# logo: logo.svg
-# name: Sail
-# intro: Sail
-# title: Sail Amsterdam
-# homepage: homepage.html
-# herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
-# herosubtitle: Het enige officiele verkoopkanaal
-# event: SAIL Amsterdam 2020
-# eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
-# ogtitle: Sail Amsterdam 2020
-# ogimg: http://static.upcoming.nl/static/images/1fc9e21893_1433950443_9-Redenen-waarom-je-absoluut-dit-jaar-naar-SAIL-Amsterdam-moet__shre.jpg
-# description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We verheugen ons op dit unieke evenement dat al sinds 1975 historie, heden en toekomst.
+theme: demohotel
+logo: logo.svg
+name: Sail
+intro: Sail
+title: Sail Amsterdam
+homepage: homepage.html
+herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
+herosubtitle: Het enige officiele verkoopkanaal
+event: SAIL Amsterdam 2020
+eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
+ogtitle: Sail Amsterdam 2020
+ogimg: http://static.upcoming.nl/static/images/1fc9e21893_1433950443_9-Redenen-waarom-je-absoluut-dit-jaar-naar-SAIL-Amsterdam-moet__shre.jpg
+description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We verheugen ons op dit unieke evenement dat al sinds 1975 historie, heden en toekomst.
 
 # Mysteryland
 # theme: democamping
@@ -47,19 +66,19 @@
 # description: More than 300 artists will perform on 17 stages this summer, including some of the worlds’ most loved electronic music acts. Hardwell, Fatboy Slim, Axwell /\ Ingrosso, Dimitri Vegas &amp; Like Mike, Headhunterz and are amongst our guests, and of course, this is just the tip of the iceberg!
 
 #ASOT
-theme: ASOT
-logo: logo.svg
-name: ASOT
-intro: ASOT
-title: A State Of Trance Festival 2019
-homepage: homepage.html
-herotitle: ASOT 2019
-herosubtitle: Jaarbeurs Utrecht
-event: ASOT TRAVEL & STAY PACKAGES
-eventdate: Jaarbeurs Utrecht
-ogtitle: ASOT 2019
-ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
-description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
+# theme: ASOT
+# logo: logo.svg
+# name: ASOT
+# intro: ASOT
+# title: A State Of Trance Festival 2019
+# homepage: homepage.html
+# herotitle: ASOT 2019
+# herosubtitle: Jaarbeurs Utrecht
+# event: ASOT TRAVEL & STAY PACKAGES
+# eventdate: Jaarbeurs Utrecht
+# ogtitle: ASOT 2019
+# ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
+# description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
 
 # TikTAk
 # theme: tiktak
@@ -78,6 +97,7 @@ description: A State of Trance Festival Utrecht is een Nederlandse editie van de
 
 # DLDK
 # theme: dldk
+# logo: logo.svg
 # name: DLDK - Don't Let Daddy Know
 # intro: Don't Let Daddy Know
 # title: DLDK - Don't Let Daddy Know

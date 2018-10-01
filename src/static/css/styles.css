@@ -7,18 +7,20 @@
 /* Theme Don't let daddy know */
 /* Theme TikTak */
 /* Theme ASOT */
+/* DEMO CAMPING */
 /*!
- * ASOT THEME
+ * DEMOHOTEL THEME
  * Copyright (c) 2018 EDMBOOKING.com
  */
 /* Regular font */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 /* Header font */
-@import url("https://fonts.googleapis.com/css?family=Prompt:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
 /* FOLDER */
 /* BODY */
 body {
-  background: #000 !important; }
+  background: #fff !important;
+  /* Old browsers */ }
 
 /* FONTS */
 /* FONT COLORS */
@@ -37,9 +39,6 @@ body {
 /* Footer */
 /* COOKIES */
 /* FORMS */
-.header {
-  border-bottom: 1px solid #ff0067; }
-
 .hero h1.hero-event-title {
   font-size: 55px !important; }
   @media all and (max-width: 992px) {
@@ -49,16 +48,17 @@ body {
     .hero h1.hero-event-title {
       font-size: 30px !important; } }
 
-.tooltip-inner {
-  background-color: #ff0067 !important;
-  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
-  color: #fff; }
+.extra-number .manage-button {
+  color: #fff !important;
+  background: #2d609b !important; }
+  .extra-number .manage-button:hover {
+    background: #d60e00 !important; }
 
-.tooltip .arrow:before {
-  border-bottom-color: #ff0067 !important;
-  border-top-color: #ff0067 !important; }
+.accordeon-buttons .button-secondary {
+  background: #d60e00 !important;
+  color: #fff !important;
+  border-color: #d60e00 !important; }
 
-/* DEMO CAMPING */
 body,
 html {
   height: 100%;
@@ -72,20 +72,20 @@ html {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #ff0067; }
+  background: #d60e00; }
 
 ::selection {
   color: #fff;
-  background: #ff0067; }
+  background: #d60e00; }
 
 body {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #333333;
   padding: 0;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   position: relative;
@@ -112,12 +112,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Prompt", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 a {
-  color: #ff0067; }
+  color: #d60e00; }
   a:hover {
-    color: #ff0067; }
+    color: #d60e00; }
 
 a,
 a:hover,
@@ -130,16 +130,16 @@ a:active {
 .text-link,
 .page a {
   text-decoration: underline;
-  color: #ff0067; }
+  color: #d60e00; }
   .text-link:hover,
   .page a:hover {
-    color: #ff0067;
+    color: #d60e00;
     text-decoration: underline; }
 
 .h1 {
   text-transform: none;
   font-weight: 700;
-  color: #ff0067;
+  color: #d60e00;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -148,6 +148,27 @@ a:active {
   @media all and (max-width: 767px) {
     .h1 {
       font-size: 22px; } }
+
+.h1-404 {
+  font-size: 90px;
+  color: #d60e00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px; }
+  @media all and (max-width: 992px) {
+    .h1-404 {
+      font-size: 60px;
+      margin-bottom: 10px; } }
+  @media all and (max-width: 767px) {
+    .h1-404 {
+      font-size: 30px;
+      margin-bottom: 10px; } }
+
+.icon404 {
+  margin-bottom: 30px; }
+
+.icon404 #icon {
+  fill: #d60e00; }
 
 .page h4 {
   font-weight: 700;
@@ -163,11 +184,11 @@ a:active {
 .page-h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "Prompt", sans-serif;
-  color: #ff0067;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
   margin: 0 0 30px;
   padding: 0 0 30px;
-  border-bottom: 2px solid #f3eeee;
+  border-bottom: 2px solid #bfbfbf;
   font-size: 32px; }
   @media all and (max-width: 992px) {
     .page-h1 {
@@ -179,14 +200,14 @@ a:active {
       margin-bottom: 15px; } }
 
 .h2 {
-  color: #ff0067;
+  color: #d60e00;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
       font-size: 16px; } }
   .h2-section {
-    color: #ff0067;
-    font-family: "Prompt", sans-serif;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -204,17 +225,17 @@ a:active {
 .h3 {
   text-transform: uppercase;
   font-weight: 700;
-  color: #ff0067;
-  font-family: "Prompt", sans-serif;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   font-size: 24px; }
   .h3--textcolor {
-    color: #fff; }
+    color: #333333; }
   .h3--lined {
-    border-bottom: 2px solid #f3eeee;
+    border-bottom: 2px solid #bfbfbf;
     padding-bottom: 10px; }
   .h3--room {
-    color: #ff0067; }
+    color: #d60e00; }
   .h3--eventinfo {
     font-size: 24px; }
   @media all and (max-width: 767px) {
@@ -225,12 +246,12 @@ a:active {
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 30px;
-    font-family: "Prompt", sans-serif; }
+    font-family: "Montserrat", sans-serif; }
     .h3--big span {
       display: block;
       font-size: 16px;
       font-weight: 700;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     @media all and (max-width: 767px) {
       .h3--big {
         font-size: 22px;
@@ -240,14 +261,14 @@ h3.extras {
   font-size: 32px;
   padding: 15px 0;
   display: inline-block;
-  font-family: "Prompt", sans-serif;
-  color: #ff0067;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-weight: 800;
   text-transform: uppercase; }
   h3.extras small {
     display: block;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: none; }
   @media all and (max-width: 767px) {
     h3.extras {
@@ -264,11 +285,19 @@ h3.extras {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #ff0067; }
+  color: #333333; }
+
+.h5 {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  text-transform: none !important;
+  margin-bottom: 30px !important;
+  color: #333333 !important;
+  font-family: "Montserrat", sans-serif !important; }
 
 .hr {
   height: 1px;
-  background: #f3eeee;
+  background: #bfbfbf;
   line-height: 0;
   border: none;
   margin: 30px 0; }
@@ -276,7 +305,7 @@ h3.extras {
 .testimonials-h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
   @media all and (max-width: 767px) {
@@ -284,7 +313,7 @@ h3.extras {
       font-size: 14px; } }
 
 .testimonials {
-  background: transparent;
+  background: #fff url(../img/demohotel/bg-testimonials.png) center center/cover no-repeat fixed;
   color: #fff; }
   @media all and (max-width: 992px) {
     .testimonials {
@@ -293,7 +322,7 @@ h3.extras {
     max-width: 970px;
     margin: 0 auto; }
   .testimonials-title {
-    font-family: "Prompt", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
@@ -313,7 +342,7 @@ h3.extras {
     line-height: 1.2;
     color: #fff; }
   .testimonials .owl-theme .owl-dots .owl-dot.active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: #ff0067; }
+    background: #d60e00; }
   .testimonials .owl-theme .owl-dots .owl-dot span {
     background: #fff; }
 
@@ -336,7 +365,7 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #ff0067;
+  stroke: #2d609b;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
@@ -361,7 +390,7 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #ff0067; } }
+    fill: #2d609b; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
@@ -404,25 +433,34 @@ h3.extras {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
+.error-icon {
+  width: 120px;
+  margin-bottom: 30px; }
+  .error-icon #error {
+    fill: #dc3545; }
+  @media (max-width: 767px) {
+    .error-icon {
+      width: 75px; } }
+
 .succes {
   text-align: center; }
   .succes h3 {
-    color: #ff0067;
+    color: #333333;
     font-weight: 900; }
   .succes-icon {
     width: 120px;
     margin-bottom: 30px; }
     .succes-icon #circle {
-      fill: #ff0067; }
+      fill: #d60e00; }
     .succes-icon #check {
-      stroke: #ff0067; }
+      stroke: #d60e00; }
     @media (max-width: 767px) {
       .succes-icon {
         width: 75px; } }
   .succes table {
     margin: 20px auto;
-    border-top: 1px solid #f3eeee;
-    border-bottom: 1px solid #f3eeee;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
     padding: 0;
     width: 100%; }
     .succes table tbody {
@@ -438,15 +476,15 @@ h3.extras {
         width: 130px !important; }
 
 .my-package {
-  color: #ff0067;
+  color: #d60e00;
   font-size: 22px; }
   .my-package .form-label {
-    color: #ff0067 !important; }
+    color: #d60e00 !important; }
   @media (max-width: 767px) {
     .my-package {
       font-size: 16px; } }
   .my-package-total {
-    border-top: 1px solid #ff0067;
+    border-top: 1px solid #d60e00;
     font-weight: 800;
     text-transform: uppercase;
     margin: 15px 0 0 0;
@@ -462,7 +500,7 @@ h3.extras {
 .myBooking-header {
   background: #e6e6e6;
   padding: 15px 20px;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -488,7 +526,7 @@ h3.extras {
   position: relative;
   color: #fff; }
   .myBooking-hero .hero-title {
-    font-family: "Prompt", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
@@ -538,13 +576,13 @@ h3.extras {
 .myBooking .content {
   padding: 20px 0;
   margin-bottom: 30px;
-  border-bottom: 1px solid #f3eeee; }
+  border-bottom: 1px solid #bfbfbf; }
 .myBooking .rule {
   height: 2px;
   background: #000; }
 .myBooking h3 {
-  color: #fff;
-  font-family: "Prompt", sans-serif;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
@@ -577,12 +615,12 @@ h3.extras {
     font-weight: 800; }
 
 #output {
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 120px; }
 
 .animatelogo {
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 120px;
   overflow: hidden;
@@ -599,7 +637,7 @@ h3.extras {
   top: -12px; }
 
 .edmloader {
-  color: #ff0067;
+  color: #d60e00;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase; }
@@ -621,34 +659,34 @@ h3.extras {
       height: 60px; } }
 
 .myloader #pause {
-  fill: #ff0067; }
+  fill: #d60e00; }
 
 .myloader circle {
-  stroke-dasharray: 10,84;
+  stroke-dasharray: 10, 84;
   animation: stroke 1.5s ease infinite;
-  stroke: #ff0067; }
+  stroke: #d60e00; }
 
 @keyframes stroke {
   50% {
-    stroke-dasharray: 84,10;
+    stroke-dasharray: 84, 10;
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: -94; } }
 @-webkit-keyframes stroke {
   50% {
-    stroke-dasharray: 84,10;
+    stroke-dasharray: 84, 10;
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: -94; } }
 @-moz-keyframes stroke {
   50% {
-    stroke-dasharray: 84,10;
+    stroke-dasharray: 84, 10;
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: -94; } }
 @-o-keyframes stroke {
   50% {
-    stroke-dasharray: 84,10;
+    stroke-dasharray: 84, 10;
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: -94; } }
@@ -656,14 +694,14 @@ h3.extras {
   width: 160px;
   height: 160px;
   margin-bottom: 0px;
-  background: #000;
+  background: #fff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  border: 10px solid #000;
+  border: 10px solid #fff;
   overflow: hidden; }
   .loaderplane #pause, .loaderplane #aircraft {
-    fill: #ff0067; }
+    fill: #d60e00; }
   @media all and (max-width: 992px) {
     .loaderplane {
       width: 100px;
@@ -676,7 +714,7 @@ h3.extras {
 .loaderplane .mask {
   transform-origin: 50% 50%;
   transform: rotate(90deg);
-  fill: #000;
+  fill: #fff;
   animation: mask 1.5s ease-out 0s infinite; }
 
 .loaderplane circle {
@@ -686,7 +724,7 @@ h3.extras {
   animation-fill-mode: forwards;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: #ff0067; }
+  stroke: #d60e00; }
 
 @keyframes loading {
   50% {
@@ -701,6 +739,13 @@ h3.extras {
 @keyframes aircraft {
   100% {
     transform: rotate(360deg); } }
+.anchor {
+  position: relative;
+  top: -70px;
+  height: 1px;
+  display: block;
+  content: ""; }
+
 .info-labels {
   display: flex;
   flex-wrap: wrap;
@@ -714,13 +759,13 @@ h3.extras {
     flex-shrink: 0;
     list-style-type: none;
     margin: 0 15px 15px 0;
-    background: #ff0067 !important;
+    background: #2d609b !important;
     color: #fff !important; }
     .info-labels li:last-child {
       margin-right: 0; }
     .info-labels li:hover {
-      background: #fff !important;
-      color: #ff0067 !important; }
+      background: #d60e00 !important;
+      color: #fff !important; }
     @media (max-width: 767px) {
       .info-labels li {
         flex-grow: 0;
@@ -735,8 +780,8 @@ h3.extras {
   font-weight: 800;
   padding-top: 15px;
   font-size: 24px;
-  font-family: "Prompt", sans-serif;
-  color: #ff0067;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
   margin-bottom: 20px; }
 
 .info-list {
@@ -744,20 +789,20 @@ h3.extras {
   margin: 0;
   padding: 0; }
   .info-list-item {
-    border-bottom: 1px solid #f3eeee; }
+    border-bottom: 1px solid #bfbfbf; }
   .info-list-question {
     cursor: pointer;
     padding: 15px 15px 15px 0;
     line-height: 1;
     font-size: 18px;
     font-weight: 600;
-    background: transparent url(../img/asot/plus.svg) no-repeat center right;
+    background: transparent url(../img/demohotel/plus.svg) no-repeat center right;
     background-size: 20px auto; }
     @media (max-width: 767px) {
       .info-list-question {
         font-size: 14px; } }
     .info-list-question.active {
-      background: transparent url(../img/asot/minus.svg) no-repeat center right;
+      background: transparent url(../img/demohotel/minus.svg) no-repeat center right;
       background-size: 20px auto; }
   .info-list-answer {
     display: none;
@@ -785,10 +830,10 @@ h3.extras {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ff0067; }
+    color: #d60e00; }
   .loader-bar {
     height: 10px;
-    background: #ff0067;
+    background: #d60e00;
     width: 0px;
     -webkit-animation: move 30s ease-in-out infinite;
     -moz-animation: move 30s ease-in-out infinite;
@@ -877,7 +922,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: transparent url(../img/asot/rolling.gif) center center no-repeat scroll;
+  background: transparent url(../img/demohotel/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -917,6 +962,17 @@ h3.extras {
       height: 100%; } }
 .event-info-item .img-container img {
   height: 100%; }
+
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0; }
+
+.b-lazy.b-loaded {
+  opacity: 1; }
 
 .gallery {
   margin-bottom: 30px;
@@ -978,7 +1034,7 @@ h3.extras {
     width: 169px;
     font-size: 13px;
     font-weight: 700;
-    background-color: #ff0067;
+    background-color: #d60e00;
     color: #fff;
     text-transform: uppercase; }
   @media all and (max-width: 767px) {
@@ -1018,6 +1074,11 @@ h3.extras {
       padding: 30px 0; } }
   .section-white {
     background: #fff; }
+  .section-404 {
+    background: transparent url("../img/404-bg.png") center center/cover no-repeat scroll;
+    min-height: 60vh;
+    display: flex;
+    align-items: center; }
 
 .detailpage {
   padding: 30px 0; }
@@ -1133,12 +1194,19 @@ h3.extras {
 
 .payment-method {
   display: block;
-  border-bottom: 1px solid #f3eeee;
+  border-bottom: 1px solid #bfbfbf;
   padding: 10px 0;
   vertical-align: middle;
   line-height: 32px;
   cursor: pointer;
   margin: 0; }
+  .payment-method .method-name {
+    max-width: 80%;
+    line-height: 1.2;
+    display: inline-block; }
+    @media all and (max-width: 767px) {
+      .payment-method .method-name {
+        max-width: 60%; } }
   .payment-method .method-img {
     height: 32px;
     margin-left: 5px;
@@ -1163,7 +1231,7 @@ h3.extras {
   align-self: auto; }
   .event-info-item:after {
     content: "";
-    border-bottom: 2px solid #f3eeee;
+    border-bottom: 2px solid #bfbfbf;
     display: block;
     width: calc(100% - 30px);
     position: absolute;
@@ -1183,7 +1251,7 @@ h3.extras {
       line-height: 1.6; }
 
 .googleMaps, .hotel-information {
-  color: #ff0067; }
+  color: #d60e00; }
   .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
@@ -1198,13 +1266,13 @@ h3.extras {
       font-size: 14px; } }
 
 .showMap {
-  border-left: 1px solid #ff0067;
+  border-left: 1px solid #d60e00;
   margin-left: 7px;
   padding-left: 10px;
   cursor: pointer; }
 
 .rating-wrapper {
-  color: #ff0067;
+  color: #d60e00;
   font-size: 15px;
   margin-bottom: 20px; }
   @media all and (max-width: 992px) {
@@ -1218,7 +1286,7 @@ h3.extras {
 .rating {
   display: inline-block;
   margin-top: 5px;
-  border-right: 1px solid #ff0067;
+  border-right: 1px solid #d60e00;
   margin-right: 7px; }
   @media all and (max-width: 767px) {
     .rating--overview {
@@ -1230,7 +1298,7 @@ h3.extras {
     margin-right: 10px; }
 
 .detail-price {
-  color: #ff0067;
+  color: #d60e00;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -1241,7 +1309,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
-  color: #ff0067;
+  color: #d60e00;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -1276,7 +1344,7 @@ h3.extras {
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
-  color: #ff0067; }
+  color: #d60e00; }
   .extra-add {
     position: relative; }
   .extra-number {
@@ -1294,7 +1362,7 @@ h3.extras {
         max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
-      background: #ff0067;
+      background: #d60e00;
       color: #fff;
       height: 44px;
       width: 44px;
@@ -1310,8 +1378,8 @@ h3.extras {
           height: 30px;
           width: 30px; } }
       .extra-number .manage-button:hover {
-        background: #fff;
-        color: #ff0067; }
+        background: #d60e00;
+        color: #fff; }
     .extra-number .plus {
       top: 0;
       right: 0;
@@ -1324,7 +1392,7 @@ h3.extras {
       font-size: 18px;
       line-height: 44px;
       font-weight: 800;
-      font-family: "Prompt", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
       @media all and (max-width: 992px) {
         .extra-number-items {
           height: 30px;
@@ -1332,7 +1400,7 @@ h3.extras {
           font-size: 13px; } }
   .extra-listitem {
     font-size: 30px;
-    border-bottom: 1px solid #f3eeee;
+    border-bottom: 1px solid #bfbfbf;
     padding: 10px 0; }
     @media all and (max-width: 992px) {
       .extra-listitem {
@@ -1345,7 +1413,7 @@ h3.extras {
     font-weight: normal; }
   .extra-btn {
     background: none;
-    color: #ff0067;
+    color: #d60e00;
     padding: 0;
     display: inline-block;
     margin-right: 10px;
@@ -1373,11 +1441,11 @@ h3.extras {
     .extra-btn-icon {
       display: inline-block; }
     .extra-btn:hover {
-      color: #fff; }
+      color: #333333; }
       .extra-btn:hover:before {
         content: ""; }
     .extra-btn--ticket:hover {
-      color: #fff; }
+      color: #333333; }
       .extra-btn--ticket:hover:before {
         content: "\f145"; }
   .extra-title {
@@ -1408,7 +1476,7 @@ h3.extras {
       padding: 0; } }
   .extra-details {
     font-size: 16px;
-    color: #fff;
+    color: #333333;
     margin: 10px 0 0 0;
     display: none; }
     .extra-details img {
@@ -1425,7 +1493,7 @@ h3.extras {
 
 .whybook-h2 {
   font-weight: 700;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   margin-bottom: 50px; }
@@ -1446,8 +1514,8 @@ h3.extras {
   width: 140px;
   height: 140px;
   text-align: center;
-  background: #ff0067;
-  border: 3px solid #ff0067;
+  background: #d60e00;
+  border: 3px solid #d60e00;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1474,16 +1542,16 @@ h3.extras {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   .whybook-icon #icon {
-    fill: #000; }
+    fill: #fff; }
 .whybook-number {
   border-radius: 50%;
   display: inline-block;
   width: 100px;
   height: 100px;
   line-height: 84px;
-  border: 8px solid #ff0067;
-  color: #ff0067;
-  font-family: "Prompt", sans-serif;
+  border: 8px solid #d60e00;
+  color: #d60e00;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 30px; }
@@ -1496,8 +1564,8 @@ h3.extras {
     .whybook p {
       padding: 0px; } }
 .whybook-heading {
-  font-family: "Prompt", sans-serif;
-  color: #ff0067;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
   text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 10px;
@@ -1537,7 +1605,7 @@ button {
   box-shadow: none !important;
   cursor: pointer !important;
   display: inline-block;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 800;
   letterspacing: 1px;
@@ -1561,7 +1629,7 @@ button {
       -ms-transform: translate(0%, -50%);
       -webkit-transform: translate(0%, -50%);
       transform: translate(0%, -50%);
-      background: transparent url("../img/asot/spinner.gif") no-repeat center center scroll;
+      background: transparent url("../img/demohotel/spinner.gif") no-repeat center center scroll;
       background-size: cover; }
   .button--next:after {
     content: "\f105";
@@ -1572,7 +1640,7 @@ button {
     .button {
       font-size: 13px; } }
   .button-primary {
-    background: #ff0067;
+    background: #2d609b;
     color: #fff;
     padding: 13px 25px;
     white-space: nowrap;
@@ -1582,8 +1650,8 @@ button {
     border: none;
     border-radius: 0px; }
     .button-primary:hover {
-      background: #fff;
-      color: #ff0067; }
+      background: #d60e00;
+      color: #fff; }
     .button-primary img {
       display: inline;
       vertical-align: top;
@@ -1597,15 +1665,14 @@ button {
       .button-primary {
         font-size: 13px; } }
     .button-primary--inverted {
-      background: #ff0067;
+      background: #2d609b;
       color: #fff; }
       .button-primary--inverted:hover {
-        background: #ff0067;
+        background: #fff;
         color: #fff; }
     .button-primary--small {
       padding: 10px 15px;
-      font-size: 10px;
-      margin-top: 2px;
+      font-size: 14px;
       min-width: auto; }
     .button-primary--effect {
       background: none !important;
@@ -1619,7 +1686,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #ff0067;
+        background: #2d609b;
         content: ""; }
       .button-primary--effect:after {
         position: absolute;
@@ -1628,7 +1695,7 @@ button {
         content: " ";
         width: 50px;
         height: 50px;
-        background: #fff;
+        background: #d60e00;
         z-index: -1;
         -ms-transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
@@ -1647,6 +1714,13 @@ button {
     float: none;
     padding-left: 0px;
     padding-right: 0px; }
+  @media all and (max-width: 767px) {
+    .button--mobileblock {
+      display: block;
+      width: 100%;
+      float: none;
+      padding-left: 0px;
+      padding-right: 0px; } }
   .button-hero {
     margin: 15px;
     font-size: 24px;
@@ -1677,7 +1751,7 @@ button {
           margin-top: 5px; } }
     .button-hero .first-line {
       font-size: 26px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 700; }
       @media all and (max-width: 992px) {
         .button-hero .first-line {
@@ -1689,7 +1763,7 @@ button {
         display: block;
         width: 70px;
         height: 4px;
-        background: #ff0067;
+        background: #d60e00;
         content: "";
         margin: 7px auto; }
     .button-hero:hover .first-line:after {
@@ -1697,7 +1771,7 @@ button {
     .button-hero .second-line {
       font-size: 18px;
       font-weight: 400;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
       @media all and (max-width: 992px) {
         .button-hero .second-line {
           font-size: 16px; } }
@@ -1706,9 +1780,9 @@ button {
           font-size: 13px; } }
   .button-secondary {
     border-radius: 0px;
-    background: #ff0067;
+    background: #d60e00;
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #d60e00;
     padding: 15px 30px;
     font-size: 20px;
     text-transform: uppercase; }
@@ -1725,10 +1799,10 @@ button {
     .button-secondary--noArrow:after {
       display: none; }
     .button-secondary:hover {
-      color: #ff0067;
+      color: #fff;
       text-decoration: none;
-      background: #fff;
-      border: 2px solid #fff; }
+      background: #2d609b;
+      border: 2px solid #2d609b; }
     .button-secondary--small {
       padding: 10px 15px;
       font-size: 10px;
@@ -1738,9 +1812,9 @@ button {
       color: #000 !important;
       border-color: #fff !important; }
       .button-secondary--inverted:hover {
-        background: #ff0067 !important;
+        background: #d60e00 !important;
         color: #fff !important;
-        border: 2px solid #fff !important; }
+        border: 2px solid #d60e00 !important; }
   .button-large {
     font-size: 30px;
     padding: 20px 40px; }
@@ -1760,7 +1834,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #ff0067;
+    background: #d60e00;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1778,11 +1852,11 @@ button {
       /* Safari */
       transform: translate(-50%, -50%); }
   .button-inversed {
-    border-color: #ff0067; }
+    border-color: #d60e00; }
     .button-inversed:after {
       display: none; }
     .button-inversed:hover {
-      background: #ff0067; }
+      background: #d60e00; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back {
@@ -1797,12 +1871,12 @@ button {
     text-transform: none; }
 
 .page-back {
-  background: #ff0067 !important;
+  background: #2d609b !important;
   color: #fff !important;
   border: 2px solid #fff !important; }
   .page-back:hover {
-    background: #fff !important;
-    color: #ff0067 !important;
+    background: #d60e00 !important;
+    color: #fff !important;
     border: 2px solid #fff !important; }
 
 button,
@@ -1836,11 +1910,11 @@ button:focus {
   background: none;
   border: none;
   cursor: pointer;
-  color: #ff0067;
+  color: #d60e00;
   padding: 0;
   line-height: 1.2; }
   .remove:hover {
-    color: #ff0067; }
+    color: #d60e00; }
   .remove span {
     display: inline-block;
     margin-left: 5px; }
@@ -1852,14 +1926,14 @@ button:focus {
   background: none;
   padding: 0;
   font-size: 16px;
-  color: #fff;
+  color: #333333;
   font-weight: 700; }
   .readmore i {
     font-weight: normal; }
 
 .info-btn {
   background: none;
-  color: #ff0067;
+  color: #d60e00;
   padding: 0;
   font-size: 18px;
   line-height: 0;
@@ -1872,7 +1946,7 @@ button:focus {
   padding: 0;
   cursor: pointer;
   background: transparent;
-  color: #ff0067;
+  color: #d60e00;
   display: inline-block; }
 
 .flexbuttons {
@@ -1903,10 +1977,10 @@ button:focus {
 .showmore {
   border: none;
   background: none;
-  color: #ff0067;
+  color: #d60e00;
   display: inline-block;
   border-radius: 0px;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   margin-left: 5px;
   padding: 0; }
@@ -1914,6 +1988,35 @@ button:focus {
     display: inline-block;
     content: "\f05a";
     font-family: "FontAwesome"; }
+
+.button-facebook, .button-google {
+  background-color: #3c66c4;
+  color: #fff;
+  padding: 20px 40px 20px 60px;
+  font-size: 16px;
+  margin: 0 10px 10px 0;
+  white-space: nowrap;
+  text-transform: none;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-image: url(../img/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: auto 25px;
+  background-position: 15px center; }
+  .button-facebook:hover, .button-google:hover {
+    background-color: #335CAA; }
+
+.button-google {
+  background-color: #cf4332;
+  background-image: url(../img/google-plus.svg); }
+  .button-google:hover {
+    background-color: #B2372A; }
 
 .hamburger {
   padding: 0px 0px;
@@ -1943,7 +2046,7 @@ button:focus {
   .hamburger:hover {
     opacity: 1; }
     .hamburger:hover .hamburger-inner, .hamburger:hover .hamburger-inner::before, .hamburger:hover .hamburger-inner::after {
-      background-color: #ff0067; }
+      background-color: #d60e00; }
 
 body.scrolled .hamburger {
   -ms-transform: scale(0.7, 0.7);
@@ -1965,7 +2068,7 @@ body.scrolled .hamburger {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 6px;
-    background-color: #fff;
+    background-color: #d60e00;
     border-radius: 0px;
     position: absolute;
     transition-property: transform;
@@ -2007,8 +2110,8 @@ body.scrolled .hamburger {
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .header {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #d60e00;
   height: 90px;
   position: relative;
   z-index: 100;
@@ -2074,12 +2177,12 @@ body.scrolled .hamburger {
         background: none;
         padding: 0;
         position: relative;
-        color: #fff;
-        font-family: "Prompt", sans-serif;
+        color: #d60e00;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         text-transform: uppercase; }
         .mainnav .booking .language-button:hover {
-          color: #ff0067; }
+          color: #d60e00; }
       .mainnav .booking .language-icon {
         width: 20px;
         height: 20px;
@@ -2100,7 +2203,7 @@ body.scrolled .hamburger {
         z-index: 10;
         top: 40px;
         left: -25px;
-        background: #ff0067;
+        background: #fff;
         padding: 10px 0;
         min-width: 170px;
         z-index: 100;
@@ -2122,7 +2225,7 @@ body.scrolled .hamburger {
             padding: 10px 23px; }
             .mainnav .booking .language-selector ul li a {
               display: block;
-              color: #fff;
+              color: #444444;
               position: relative;
               font-weight: 600;
               white-space: nowrap; }
@@ -2157,9 +2260,9 @@ body.scrolled .hamburger {
           .mainnav .booking-info:before {
             margin-right: 3px; } }
       .mainnav .booking-info:hover {
-        color: #ff0067; }
+        color: #d60e00; }
     .mainnav .booking-cart {
-      font-family: "Prompt", sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
       margin-right: 10px; }
@@ -2189,7 +2292,7 @@ body.scrolled .hamburger {
     .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
     .mainnav .hamburger-oud:hover {
-      color: #ff0067; }
+      color: #d60e00; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger-oud {
         margin-left: 10px;
@@ -2214,8 +2317,8 @@ body.scrolled .hamburger {
   top: 90px;
   width: 400px;
   z-index: 99;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #333;
   padding: 40px 30px;
   -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
@@ -2233,31 +2336,31 @@ body.scrolled .hamburger {
       padding: 30px 15px;
       right: -110%; } }
   .subnav strong {
-    color: #fff; }
+    color: #d60e00; }
   .subnav-active {
     right: 0%; }
   .subnav a {
-    color: #fff; }
+    color: #d60e00; }
     .subnav a:hover {
-      color: #ff0067; }
+      color: #2d609b; }
   .subnav .subnav-list {
     margin: 0;
     padding: 0;
     list-style-type: none; }
     .subnav .subnav-list li {
-      font-family: "Prompt", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 20px;
       margin-bottom: 10px;
-      border-bottom: 1px solid #ff0067;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       padding-bottom: 10px; }
       .subnav .subnav-list li ul {
         margin: 10px 0 10px 0px;
         padding: 0;
         list-style-type: none; }
         .subnav .subnav-list li ul li {
-          font-family: "Roboto", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
           font-size: 16px;
           text-transform: none;
@@ -2265,23 +2368,23 @@ body.scrolled .hamburger {
           padding: 0;
           border: none; }
           .subnav .subnav-list li ul li a {
-            color: #fff;
+            color: #333;
             display: block; }
             .subnav .subnav-list li ul li a:hover {
-              color: #ff0067; }
+              color: #2d609b; }
   .subnav-language {
     padding: 10px 0 10px 0; }
     .subnav-language .selectric-wrapper {
       width: 60%; }
     .subnav-language .selectric-items, .subnav-language .selectric-open .selectric, .subnav-language .selectric {
-      border: 1px solid #fff !important; }
+      border: 1px solid #333 !important; }
     .subnav-language .selectric-items li, .subnav-language .selectric-items ul {
       font-size: 13px; }
   .subnav .contactDetails {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
@@ -2292,15 +2395,15 @@ body.scrolled .hamburger {
     padding: 0;
     margin-top: 10px; }
     .subnav .social a {
-      background-color: #ff0067;
-      color: #000; }
+      background-color: #2d609b;
+      color: #fff; }
       .subnav .social a:hover {
-        color: #000;
-        background-color: #fff; }
+        color: #fff;
+        background-color: #2d609b; }
 
 .yourbooking {
   display: none;
-  background: #000;
+  background: #fff;
   position: absolute;
   top: 90px;
   bottom: 0;
@@ -2324,13 +2427,13 @@ body.scrolled .hamburger {
     font-size: 24px;
     margin-bottom: 20px;
     padding: 10px 0 0;
-    color: #ff0067; }
+    color: #333333; }
     @media all and (max-width: 767px) {
       .yourbooking h3 {
         font-size: 18px; } }
   .yourbooking .total {
     font-size: 24px !important;
-    color: #ff0067; }
+    color: #333333; }
     @media all and (max-width: 767px) {
       .yourbooking .total {
         font-size: 17px !important;
@@ -2351,13 +2454,13 @@ body.scrolled .hamburger {
       width: 100%;
       height: auto; }
     .yourbooking-close #cross-remove-sign {
-      fill: #fff; }
+      fill: #333333; }
 
 .yourbooking-summary {
   width: 100%; }
   .yourbooking-summary tr.bookingrow td hr {
     height: 1px;
-    background: #f3eeee;
+    background: #bfbfbf;
     line-height: 0;
     margin: 5px 0;
     border: none !important; }
@@ -2395,10 +2498,10 @@ body.scrolled .hamburger {
     font-size: 18px; }
 
 .notification {
-  background: #ff0067;
+  background: #2d609b;
   text-align: center;
   color: #fff;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 90px;
   text-transform: uppercase;
   font-weight: 700;
@@ -2417,7 +2520,7 @@ body.scrolled .hamburger {
       height: 50px;
       line-height: 50px; } }
   .notification span {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   @media all and (max-width: 767px) {
     .notification {
       font-size: 12px; } }
@@ -2432,10 +2535,10 @@ body.stickyheader {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000; }
+    background: #fff; }
     @media all and (max-width: 767px) {
       body.stickyheader .header {
-        background: #000; } }
+        background: #fff; } }
   body.stickyheader .yourbooking {
     position: fixed; }
 
@@ -2490,7 +2593,7 @@ body.scrolled .hamburger-oud {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .hero--red {
     background-color: rgba(0, 0, 0, 0.1); }
   .hero--white {
@@ -2507,7 +2610,8 @@ body.scrolled .hamburger-oud {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0); }
   .hero-button {
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-size: 26px; }
     @media all and (max-width: 992px) {
       .hero-button {
         display: block;
@@ -2515,6 +2619,12 @@ body.scrolled .hamburger-oud {
         margin: 0 auto 15px;
         font-size: 20px;
         padding: 15px; } }
+    .hero-button-subtitle {
+      display: block;
+      text-transform: none !important;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400; }
   .hero .inner {
     position: absolute;
     width: 100%;
@@ -2561,11 +2671,11 @@ body.scrolled .hamburger-oud {
         content: "\f078";
         font-family: "FontAwesome"; }
       .hero-scroll .arrow:hover {
-        color: #ff0067; }
+        color: #d60e00; }
     .hero-scroll:hover {
-      color: #ff0067; }
+      color: #d60e00; }
       .hero-scroll:hover .arrow:before {
-        color: #ff0067; }
+        color: #d60e00; }
     .hero-scroll .bar {
       width: 5px;
       background: #fff;
@@ -2600,10 +2710,10 @@ body.scrolled .hamburger-oud {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%); }
   .hero h1 {
-    font-family: "Prompt", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 1;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
@@ -2623,7 +2733,7 @@ body.scrolled .hamburger-oud {
           font-size: 30px; } }
   .hero h1 small {
     display: block;
-    font-family: "Prompt", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
@@ -2703,7 +2813,7 @@ body.scrolled .hamburger-oud {
   padding-top: 70px;
   margin-top: 30px;
   background: transparent;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   cursor: pointer;
   font-weight: 700;
@@ -2726,6 +2836,20 @@ body.scrolled .hamburger-oud {
   -webkit-animation: sdb05 1.5s infinite;
   animation: sdb05 1.5s infinite;
   box-sizing: border-box; }
+
+.coming-soon {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase; }
+  @media all and (max-width: 992px) {
+    .coming-soon {
+      font-size: 35px; } }
+  @media all and (max-width: 767px) {
+    .coming-soon {
+      font-size: 25px; } }
 
 @-webkit-keyframes sdb05 {
   0% {
@@ -2776,9 +2900,9 @@ body.scrolled .hamburger-oud {
   display: inline-block;
   width: 100%; }
 .footer-subscribe input {
-  background: #000;
+  background: #fff;
   border: none;
-  color: #ff0067;
+  color: #2d609b;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -2792,21 +2916,21 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #ff0067; }
+    color: #2d609b; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #ff0067; }
+    color: #2d609b; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #ff0067; }
+    color: #2d609b; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: #ff0067; }
+    color: #2d609b; }
 .footer-subscribe a.submit {
   border: none;
-  background: #000;
-  color: #ff0067;
-  font-family: "Prompt", sans-serif;
+  background: #fff;
+  color: #2d609b;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -2825,12 +2949,15 @@ body.scrolled .hamburger-oud {
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 12px;
   white-space: nowrap;
-  color: #fff; }
+  color: #333; }
   @media all and (max-width: 767px) {
     .form-label {
       font-size: 14px; } }
+  .form-label--inline {
+    display: inline-block;
+    margin-left: 10px; }
 .form-select {
   min-width: 200px; }
 
@@ -2866,13 +2993,13 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .textfield, select, .form-control {
-  color: #000;
+  color: #686868;
   height: 44px;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px;
-  border: 1px solid #000;
+  border: 1px solid #bbb;
   background: #fff; }
   .textfield:focus, select:focus, .form-control:focus {
     color: #000; }
@@ -2896,8 +3023,8 @@ body.scrolled .hamburger-oud {
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0;
-  background: #ff0067;
-  border: 1px solid #000;
+  background: #bbb;
+  border: 1px solid #bbb;
   color: #fff; }
   @media all and (max-width: 992px) {
     .input-group-addon {
@@ -3003,8 +3130,16 @@ body.scrolled .hamburger-oud {
     .is-valid .button-selectric:after {
       border-top-color: #fff; }
 
+.feedback, .valid-feedback, .invalid-feedback {
+  margin-top: 8px;
+  color: #666;
+  font-size: 12px; }
+
 .valid-feedback {
   color: #0cc36f; }
+
+.invalid-feedback {
+  color: #dc3545; }
 
 .login .input {
   display: block;
@@ -3013,7 +3148,7 @@ body.scrolled .hamburger-oud {
   cursor: default;
   font-size: 18px;
   padding: 18px;
-  border: 1px solid #000;
+  border: 1px solid #bbb;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -3040,8 +3175,8 @@ body.scrolled .hamburger-oud {
       font-size: 14px;
       padding: 14px; } }
   .login .input:focus {
-    background-color: #ff0067;
-    color: #fff;
+    background-color: #fff;
+    color: #686868;
     outline: none; }
   .login .input.password {
     margin-bottom: 15px; }
@@ -3068,6 +3203,39 @@ body.scrolled .hamburger-oud {
   #filters {
     display: none; } }
 
+.edit-data td label {
+  margin-top: 12px;
+  font-weight: bold;
+  display: block; }
+
+.extra-amount {
+  border: 1px solid #bbb;
+  padding: 4px;
+  display: inline-block;
+  color: #686868; }
+
+.myBooking .no-width td {
+  vertical-align: top; }
+  .myBooking .no-width td:first-child {
+    width: 100% !important; }
+
+.upgrade-extras {
+  width: 100%; }
+  .upgrade-extras td {
+    vertical-align: middle !important; }
+  .upgrade-extras .title, .upgrade-extras .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #d60e00; }
+    @media all and (max-width: 992px) {
+      .upgrade-extras .title, .upgrade-extras .price {
+        font-size: 16px; } }
+  .upgrade-extras .title:first-child {
+    width: 100% !important; }
+  .upgrade-extras .price {
+    text-align: right !important;
+    padding-right: 30px; }
+
 /*======================================
   Selectric v1.13.0
 ======================================*/
@@ -3079,7 +3247,7 @@ body.scrolled .hamburger-oud {
   width: 100%; }
 
 .selectric {
-  border: 1px solid #000;
+  border: 1px solid #bbb;
   border-radius: 0rem;
   background: #fff;
   position: relative;
@@ -3093,7 +3261,7 @@ body.scrolled .hamburger-oud {
   margin: 0 38px 0 10px;
   font-size: 15px;
   line-height: 43px;
-  color: #000;
+  color: #686868;
   height: 43px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3108,7 +3276,7 @@ body.scrolled .hamburger-oud {
   width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #ff0067;
+  background-color: #bbb;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -3129,10 +3297,10 @@ body.scrolled .hamburger-oud {
   border-bottom: none; }
 
 .selectric-focus .selectric {
-  border-color: #000; }
+  border-color: #bbb; }
 
 .selectric-hover .selectric {
-  border-color: #000; }
+  border-color: #bbb; }
 
 .selectric-hover .selectric .button {
   color: yellow; }
@@ -3144,7 +3312,7 @@ body.scrolled .hamburger-oud {
   z-index: 9999; }
 
 .selectric-open .selectric {
-  border-color: #000; }
+  border-color: #bbb; }
 
 .selectric-open .selectric-items {
   display: block; }
@@ -3213,7 +3381,7 @@ body.scrolled .hamburger-oud {
   top: 100%;
   left: 0;
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #bbb;
   z-index: -1;
   box-shadow: 0 0 10px -6px; }
 
@@ -3240,16 +3408,16 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #ff0067;
-  color: #fff !important; }
+  background: #fff;
+  color: #686868 !important; }
 
 .selectric-items li.highlighted {
-  background: #ff0067;
-  color: #fff !important; }
+  background: #fff;
+  color: #686868 !important; }
 
 .selectric-items li:hover {
-  background: #ff0067;
-  color: #fff !important; }
+  background: #fff;
+  color: #686868 !important; }
 
 .selectric-items .disabled {
   filter: alpha(opacity=50);
@@ -3271,7 +3439,7 @@ body.scrolled .hamburger-oud {
   -ms-user-select: none;
   user-select: none;
   background: none;
-  color: #000; }
+  color: #686868; }
 
 .selectric-items .selectric-group.disabled li {
   filter: alpha(opacity=100);
@@ -3281,27 +3449,27 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: #ff0067;
+  background-color: #2d609b;
   padding: 70px 0 0;
-  color: #000;
+  color: #fff;
   border-top: none; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: #ff0067;
+    background: #d60e00;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
+    background: -moz-linear-gradient(45deg, #d60e00 0%, #6cb5ff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
+    background: -webkit-linear-gradient(45deg, #d60e00 0%, #6cb5ff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #ff0067 0%, #6cb5ff 100%);
+    background: linear-gradient(45deg, #d60e00 0%, #6cb5ff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
       padding: 50px 0 0; } }
   footer h4 {
     text-transform: uppercase;
-    font: "Prompt", sans-serif;
-    color: #000;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
     font-weight: 700;
     margin: 0 0 20px;
     font-size: 24px; }
@@ -3324,9 +3492,9 @@ footer {
     text-align: center;
     display: inline-block; }
   footer a {
-    color: #000; }
+    color: #cccccc; }
     footer a:hover {
-      color: #fff; }
+      color: #cccccc; }
   footer .footer-col {
     margin-bottom: 30px; }
     @media all and (max-width: 767px) {
@@ -3373,7 +3541,7 @@ footer {
       margin: 0 auto 0;
       text-align: left; }
       footer .language .selectric-wrapper .selectric-items, footer .language .selectric-wrapper .selectric-open .selectric, footer .language .selectric-wrapper .selectric {
-        border: 1px solid #000 !important; }
+        border: 1px solid #cccccc !important; }
       footer .language .selectric-wrapper .selectric-items li, footer .language .selectric-wrapper .selectric-items ul {
         font-size: 13px; }
 
@@ -3390,8 +3558,8 @@ footer {
     margin-right: 2px; }
     .social li a {
       display: block;
-      background-color: #000;
-      color: #ff0067;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
       border-radius: 100%;
       width: 34px;
       height: 34px;
@@ -3399,12 +3567,11 @@ footer {
       line-height: 36px;
       font-size: 16px; }
       .social li a:hover {
-        background-color: #fff;
-        color: #000; }
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff; }
 
 .footer-logos {
-  background-color: #fff;
-  padding: 50px 0; }
+  margin-top: 20px; }
   .footer-logos ul {
     margin: 0;
     padding: 0; }
@@ -3414,10 +3581,10 @@ footer {
   .footer-logos li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
     text-align: center; }
     .footer-logos li img {
-      max-height: 24px;
+      max-height: 20px;
       width: auto; }
       @media all and (max-width: 767px) {
         .footer-logos li img {
@@ -3431,15 +3598,15 @@ footer {
   width: 100%;
   max-width: 550px;
   padding: 20px;
-  background-color: #000;
-  font-size: 13px;
-  color: #fff;
-  border: 1px solid #ff0067;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #d60e00;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
   .cookies a {
-    color: #ff0067; }
+    color: #d60e00; }
   @media all and (max-width: 767px) {
     .cookies {
       max-width: 90%;
@@ -3458,7 +3625,7 @@ footer {
         .cookies button .icon {
           width: 15px; } }
     .cookies button #cross-remove-sign {
-      fill: #ff0067; }
+      fill: #d60e00; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
@@ -3467,11 +3634,11 @@ footer {
   text-align: center;
   color: #fff;
   padding: 40px 0;
-  background: black;
+  background: rgba(0, 0, 0, 0.19);
   margin-top: 35px;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
   .partners ul {
     margin: 25px 0 0;
@@ -3520,7 +3687,7 @@ footer {
   padding: 0;
   position: relative;
   display: block;
-  background: #000; }
+  background: #fff; }
   .event:before {
     content: "";
     position: absolute;
@@ -3582,9 +3749,9 @@ footer {
   .event:hover .event-thumb {
     background-size: 150% auto; }
   .event:hover .button-secondary {
-    color: #ff0067 !important;
+    color: #fff !important;
     text-decoration: none;
-    background: #fff !important; }
+    background: #2d609b !important; }
   .event-title {
     text-transform: uppercase;
     margin: 0;
@@ -3612,18 +3779,18 @@ footer {
   border: none; }
 
 .main > .accordeon ~ .accordeon {
-  border-top: 1px solid #ff0067; }
+  border-top: 1px solid #bfbfbf; }
 
 .accordeon {
-  color: #fff;
-  background: #000;
+  color: rgba(0, 0, 0, 0.3);
+  background: #fff;
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #000;
+    background: #d60e00;
     color: #fff; }
   .accordeon--active, .accordeon--active:hover {
-    background: #ff0067;
+    background: #d60e00;
     color: #fff; }
   .accordeon .container {
     position: relative; }
@@ -3631,7 +3798,7 @@ footer {
     font-size: 32px;
     padding: 15px 0;
     display: inline-block;
-    font-family: "Prompt", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
@@ -3664,24 +3831,24 @@ footer {
     display: inline-block;
     padding: 15px 0 15px 15px;
     margin-left: 15px;
-    border-left: 1px solid #ff0067; }
+    border-left: 1px solid #bfbfbf; }
     @media all and (max-width: 767px) {
       .accordeon-down {
         padding: 10px 0 10px 10px;
         margin-left: 10px; } }
   .accordeon a {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.3);
     display: block; }
     .accordeon a:hover {
       color: #fff; }
     .accordeon a.button-secondary {
       color: #fff; }
       .accordeon a.button-secondary:hover {
-        color: #ff0067; }
+        color: #fff; }
 
 .offer {
   display: block;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #bfbfbf;
   padding-bottom: 30px;
   margin: 0 0 30px 0; }
   .offer-link {
@@ -3693,7 +3860,7 @@ footer {
       margin: 0 0 15px 0;
       padding-bottom: 15px; } }
   .offer-line {
-    border-right: 1px solid #f3eeee; }
+    border-right: 1px solid #bfbfbf; }
     @media all and (max-width: 992px) {
       .offer-line {
         border-right: none; } }
@@ -3707,9 +3874,9 @@ footer {
       min-height: 170px;
       display: block; } }
   .offer-title {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    color: #ff0067;
+    color: #2d609b;
     text-transform: none;
     margin: 0 0 5px;
     font-size: 32px; }
@@ -3720,7 +3887,7 @@ footer {
       .offer-title {
         font-size: 17px; } }
   .offer-subheader {
-    color: #ff0067;
+    color: #d60e00;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
@@ -3735,7 +3902,7 @@ footer {
   .offer-list {
     margin: 20px 0 0 0;
     padding: 0;
-    color: #fff; }
+    color: #333333; }
     .offer-list--nocolumns {
       columns: 1;
       -webkit-columns: 1;
@@ -3766,7 +3933,7 @@ footer {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
-    color: #ff0067;
+    color: #d60e00;
     display: block;
     font-weight: 400;
     margin: 0 0 2px 0;
@@ -3779,7 +3946,7 @@ footer {
       .offer-price {
         font-size: 16px; } }
   .offer-price-condition {
-    color: #ff0067;
+    color: #d60e00;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
@@ -3794,7 +3961,7 @@ footer {
         margin-bottom: 10px; } }
 
 .room {
-  border-bottom: 1px solid #f3eeee;
+  border-bottom: 1px solid #bfbfbf;
   padding: 0 0 30px;
   margin-bottom: 30px; }
 
@@ -3816,6 +3983,148 @@ footer {
     .room-price {
       margin: 0 0;
       float: left; } }
+
+.section-special {
+  background: #ddf3e9; }
+
+.eventcard-wrapper {
+  margin-bottom: 60px; }
+
+.eventcard {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .15s ease-out 0s;
+  transition: all .15s ease-out 0s;
+  height: 100%;
+  position: relative;
+  top: 0; }
+  .eventcard:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 15px 40px 0px rgba(0, 0, 0, 0.4);
+    top: -10px; }
+  .eventcard-image {
+    position: relative; }
+    .eventcard-image .fav {
+      position: absolute;
+      cursor: pointer;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      border: 0;
+      display: block;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+      .eventcard-image .fav:hover {
+        color: #d60e00;
+        background: #fff; }
+  .eventcard .content {
+    padding: 20px;
+    height: 100%;
+    position: relative; }
+    .eventcard .content .bullet {
+      color: #d60e00; }
+    .eventcard .content-title {
+      font-size: 22px;
+      font-weight: 400;
+      color: #333333;
+      margin: 0 0 5px 0; }
+    .eventcard .content-date {
+      margin: 0 0 15px;
+      padding: 5px 0;
+      font-size: 15px; }
+      .eventcard .content-date span {
+        white-space: nowrap; }
+    .eventcard .content-detail {
+      font-size: 14px;
+      line-height: 1.4; }
+    .eventcard .content-price {
+      float: left;
+      font-size: 20px;
+      color: #333333;
+      font-weight: 600; }
+    .eventcard .content .booknow {
+      color: #000;
+      font-size: 20px;
+      font-weight: 400;
+      float: right; }
+      .eventcard .content .booknow:after {
+        content: "\f105";
+        font-family: "FontAwesome";
+        display: inline-block;
+        margin-left: 5px; }
+    .eventcard .content ul {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      list-style-type: none;
+      font-size: 14px;
+      border-bottom: 1px solid #bfbfbf; }
+      .eventcard .content ul li {
+        display: inline-block;
+        margin-right: 15px; }
+        .eventcard .content ul li a {
+          display: block;
+          color: #000;
+          font-weight: 700; }
+          .eventcard .content ul li a:hover {
+            color: #d60e00; }
+          .eventcard .content ul li a i {
+            margin-right: 3px;
+            font-weight: normal; }
+    .eventcard .content ul.offers li {
+      display: block;
+      margin-bottom: 4px; }
+      .eventcard .content ul.offers li a {
+        font-weight: normal; }
+
+.category {
+  display: block;
+  font-size: 20px;
+  color: #333333; }
+  .category-visual {
+    position: relative;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .15s ease-out 0s;
+    transition: all .15s ease-out 0s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden; }
+    .category-visual:before {
+      display: block;
+      background: rgba(0, 0, 0, 0.3);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%; }
+  .category-icon {
+    position: absolute;
+    text-align: center;
+    display: block;
+    line-height: 0px;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  .category-festival {
+    background: #fff url("https://www.festivallovers.nl/wp-content/uploads/mysteryland1.jpg") center center/cover no-repeat scroll; }
 
 .slider,
 .slider > div {
@@ -5170,10 +5479,10 @@ footer {
   width: 8px;
   height: 8px;
   margin: 5px;
-  background: #fff; }
+  background: #bfbfbf; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ff0067; }
+  background: #d60e00; }
 
 /*!
  * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)

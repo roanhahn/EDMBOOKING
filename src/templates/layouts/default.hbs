@@ -49,7 +49,11 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+	<![endif]-->
+
+	<noscript>
+		<link href="{{assets}}/css/noscript.css" rel="stylesheet">
+	</noscript>
 </head>
 <body class="body stickyheader">
 	{{> header }}
@@ -57,7 +61,7 @@
 	{{> footer }}
 
 
-	{{#if videobackground}}
+	{{!-- {{#if videobackground}}
 		<div class="videobackground"
 			data-vide-bg="mp4: assets/video/wttf.mp4,
 			webm: assets/video/wttf.webm,
@@ -65,7 +69,7 @@
 			poster: path/to/poster"
 			data-vide-options="loop: true, muted: true, position: 0% 0%">
 		</div>
-	{{/if}}
+	{{/if}} --}}
 
 
 
@@ -81,6 +85,7 @@
 <script src="{{assets}}/js/plugins/jquery.cookie.js"></script>
 <script src="{{assets}}/js/plugins/sliderResponsive.js"></script>
 <script src="{{assets}}/js/plugins/jquery.vide.min.js"></script>
+<script src="{{assets}}/js/plugins/blazy.min.js"></script>
 
 {{#is site.theme 'newhorizons'}}
 	<script src="{{assets}}/js/plugins/canvallax.js"></script>

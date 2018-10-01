@@ -107,8 +107,8 @@ button {
 
         &--small {
             padding: 10px 15px;
-            font-size: 10px;
-            margin-top: 2px;
+            font-size: 14px;
+            // margin-top: 2px;
             min-width: auto;
         }
 
@@ -160,6 +160,16 @@ button {
         float: none;
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    &--mobileblock{
+        @media all and (max-width: $breakpoint-mobile){
+            display: block;
+            width: 100%;
+            float: none;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
     &-hero {
@@ -540,5 +550,40 @@ button:focus {
     }
     @media all and(max-width: $breakpoint-mobile){
         // float: right;
+    }
+}
+
+.button-facebook, .button-google{
+    background-color: #3c66c4;
+    color: #fff;
+    padding: 20px 40px 20px 60px;
+    font-size: 16px;
+    margin: 0 10px 10px 0;
+    white-space: nowrap;
+    // width: 100%;
+    text-transform: none;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: auto 25px;
+    background-position: 15px center;
+
+    &:hover{
+        background-color: #335CAA;
+    }
+}
+
+.button-google{
+    background-color: #cf4332;
+    background-image: url(../img/google-plus.svg);
+    &:hover{
+        background-color: #B2372A;
     }
 }

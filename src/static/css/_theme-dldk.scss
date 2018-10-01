@@ -40,6 +40,8 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #eb1f29;
+$error-color: #eb1f29;
+
 
 /* Google Maps */
 $mapclose-color: #eb1f29;
@@ -94,6 +96,8 @@ $sec-padding: 15px 30px;
 
 /* HEADER */
 $hamburger-layer-color: #fff !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
@@ -241,11 +245,22 @@ $placeholder-color: #95a5a6;
     color: #000 !important;
 }
 
+.hero h1.hero-event-title{
+    font-size: 55px !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 45px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+}
+
 .dldk-hero-btn{
-    display: inline-block;
+    display: block;
     // float: left;
     width: 100%;
-    max-width: 400px;
+
     background: $link-color;
     border: 2px solid $link-color;
     font-size: 24px;

@@ -80,6 +80,8 @@ setTimeout(function() {
 
 $("img.lazyload").lazyload();
 
+var bLazy = new Blazy();
+
 // var bodyheight = $('.sitewrapper').outerHeight() - $('.header').outerHeight();
 
 // $('.subnav').css("height", bodyheight);

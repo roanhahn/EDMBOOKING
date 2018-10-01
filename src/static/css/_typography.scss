@@ -37,7 +37,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     @include gradient($bodygradient-fromcolor, $bodygradient-tocolor);
-
 }
 
 @media (min-width: 1200px) {
@@ -100,6 +99,36 @@ a:active {
     }
 }
 
+.h1-404{
+    font-size: 90px;
+    color: $link-color;
+    font-family: $font-header;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.icon404{
+    margin-bottom: 30px;
+}
+.icon404 #icon{
+    fill: $link-color;
+}
+
+// .icon404{
+
+//     #zero{
+//         fill: $text-color;
+//     }
+// }
 .page {
 
     & h4 {
@@ -245,8 +274,8 @@ h3.extras {
 
 .p {
     line-height: 1.6; // @media all and (max-width: $breakpoint-mobile){
-    // 	font-size: 14px;
-    // 	line-height: 1.4;
+    //  font-size: 14px;
+    //  line-height: 1.4;
     // }
     & ul {
         padding: 0;
@@ -260,6 +289,15 @@ h3.extras {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $heading-color;
+}
+
+.h5 {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    text-transform: none !important;
+    margin-bottom: 30px !important;
+    color: $heading-color !important;
+    font-family: $font !important;
 }
 
 .hr {
@@ -287,8 +325,8 @@ h3.extras {
     color: $testimonial-text;
 
     @media all and (max-width: $breakpoint-tablet) {
-           background-attachment: scroll;
-        }
+        background-attachment: scroll;
+    }
 
     &-item {
         max-width: 970px;
@@ -448,6 +486,19 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 
+.error-icon {
+    width: 120px;
+    margin-bottom: 30px;
+
+    & #error {
+        fill: $error-color;
+    }
+
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 75px;
+    }
+}
 
 .succes {
 
@@ -661,7 +712,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
     & h3 {
         // background: #000;
-        color: #fff; // padding: 0 20px;
+        color: $heading-color; // padding: 0 20px;
         font-family: $font-header;
         font-weight: 800;
         text-transform: uppercase;
@@ -739,146 +790,147 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
     top: -12px;
 }
 
-.edmloader{
+.edmloader {
     color: $link-color;
     text-align: center;
-    font-weight: 600;
-    // padding-top: 50px;
+    font-weight: 600; // padding-top: 50px;
     // padding-bottom: 50px;
     text-transform: uppercase;
 
-    @media all and(max-width: $breakpoint-mobile){
+    @media all and(max-width: $breakpoint-mobile) {
         font-size: 14px;
     }
 }
-.myloader{
+
+.myloader {
     width: 160px;
     height: 160px;
     margin-bottom: 15px;
 
-    @media all and(max-width: $breakpoint-tablet){
+    @media all and(max-width: $breakpoint-tablet) {
         width: 100px;
         height: 100px;
     }
 
-     @media all and(max-width: $breakpoint-mobile){
+    @media all and(max-width: $breakpoint-mobile) {
         width: 60px;
         height: 60px;
     }
-
 }
-.myloader #pause{
+
+.myloader #pause {
     // animation:hue 4s linear infinite;
     fill: $link-color;
-
 }
 
-.myloader circle{
-  stroke-dasharray: 10,84;
+.myloader circle {
+    stroke-dasharray: 10, 84;
     animation: stroke 1.5s ease infinite;
     stroke: $link-color;
 }
+
 @keyframes stroke {
     50% {
-        stroke-dasharray: 84,10;
+        stroke-dasharray: 84, 10;
         stroke-dashoffset: 0;
     }
 
     100% {
         stroke-dashoffset: -94;
-        }
+    }
 }
+
 @-webkit-keyframes stroke {
     50% {
-        stroke-dasharray: 84,10;
+        stroke-dasharray: 84, 10;
         stroke-dashoffset: 0;
     }
 
     100% {
         stroke-dashoffset: -94;
-        }
+    }
 }
+
 @-moz-keyframes stroke {
     50% {
-        stroke-dasharray: 84,10;
+        stroke-dasharray: 84, 10;
         stroke-dashoffset: 0;
     }
 
     100% {
         stroke-dashoffset: -94;
-        }
+    }
 }
+
 @-o-keyframes stroke {
     50% {
-        stroke-dasharray: 84,10;
+        stroke-dasharray: 84, 10;
         stroke-dashoffset: 0;
     }
 
     100% {
         stroke-dashoffset: -94;
-        }
+    }
 }
 
-.loaderplane{
-     width: 160px;
+.loaderplane {
+    width: 160px;
     height: 160px;
     margin-bottom: 0px;
-    & #pause, & #aircraft{
+    & #pause,
+    & #aircraft {
         fill: $link-color;
     }
     background: $loader-bg;
     -webkit-border-radius: 100%;
--moz-border-radius: 100%;
-border-radius: 100%;
-border: 10px solid $loader-bg;
-overflow: hidden;
-// padding: 10px;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 10px solid $loader-bg;
+    overflow: hidden;
+    // padding: 10px;
     // transform: rotate(-90deg);
-    @media all and(max-width: $breakpoint-tablet){
+    @media all and(max-width: $breakpoint-tablet) {
         width: 100px;
         height: 100px;
-    }
-
-    //  @media all and(max-width: $breakpoint-mobile){
+    } //  @media all and(max-width: $breakpoint-mobile){
     //     width: 60px;
     //     height: 60px;
     // }
 }
-.loaderplane .plane{
-     // transform: rotate(-35deg);
+
+.loaderplane .plane {
+    // transform: rotate(-35deg);
     transform-origin: 50% 50%;
 
-    animation: aircraft 1.5s ease-out 0s infinite;
-    // display: none;
-
+    animation: aircraft 1.5s ease-out 0s infinite; // display: none;
 }
-.loaderplane .mask{
+
+.loaderplane .mask {
     transform-origin: 50% 50%;
     transform: rotate(90deg);
     fill: $loader-bg;
-     animation: mask 1.5s ease-out 0s infinite;
-     // display: none;
+    animation: mask 1.5s ease-out 0s infinite; // display: none;
 }
-.loaderplane circle{
+
+.loaderplane circle {
     stroke-dasharray: 565.487;
     stroke-dashoffset: 565;
     animation: loading 3s ease-out 0s infinite;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
     transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    // animation: stroke 1.5s ease infinite;
-    stroke: $link-color;
-    // stroke-linecap: round;
+    transform-origin: 50% 50%; // animation: stroke 1.5s ease infinite;
+    stroke: $link-color; // stroke-linecap: round;
 }
 
 @keyframes loading {
-    50%{
+    50% {
         stroke-dashoffset: 0;
     }
-    100%{
+    100% {
         stroke-dashoffset: -565;
     }
 }
+
 // @-webkit-keyframes loading {
 //     50%{
 //         stroke-dashoffset: 0;
@@ -888,17 +940,25 @@ overflow: hidden;
 //     }
 // }
 @keyframes mask {
-    0%{
+    0% {
         transform: rotate(90deg);
     }
-    100%{
+    100% {
         transform: rotate(450deg);
     }
 }
+
 @keyframes aircraft {
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
-
+.anchor{
+    position: relative;
+    top: -70px;
+    // background: red;
+    height: 1px;
+    display: block;
+    content: "";
+}

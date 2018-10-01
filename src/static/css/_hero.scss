@@ -1,430 +1,455 @@
 .hero {
 
-    text-align: center;
-    position: relative;
-    color: $hero-color;
-    background-position: $hero-position;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: $blend-mode;
-    height: calc(70vh - #{$header-height});
-    min-height: 400px;
+	text-align: center;
+	position: relative;
+	color: $hero-color;
+	background-position: $hero-position;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: $blend-mode;
+	height: calc(70vh - #{$header-height});
+	min-height: 400px;
 
-    @media all and (max-width: $breakpoint-mobile) {
-        // height: calc(70% - #{$header-height-mobile});
-    }
-
-
-
-    &-event {
-
-        height: calc(60vh - #{$header-height});
-        padding: 30px 0 !important;
-        // height: auto;
-        min-height: 400px;
-        position: relative;
-        @media all and (max-width: $breakpoint-tablet) {
-            min-height: 400px;
-        }
-        @media all and (max-width: $breakpoint-mobile){
-            min-height: 400px;
-        }
-    }
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        background-color: $hero-overlay;
-    }
-
-    &--red {
-        background-color: $red-filter;
-    }
-
-    &--white {
-        background-color: $white-filter;
-    }
-
-    &--blue {
-        background-color: $blue-filter;
-    }
-
-    &--gradient:before {
-        background: rgba(0, 0, 0, 0);
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
-        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
-    }
+	@media all and (max-width: $breakpoint-mobile) {
+		// height: calc(70% - #{$header-height-mobile});
+	}
 
 
 
-    &-button {
-        margin: 0 10px;
+	&-event {
 
-        @media all and (max-width: $breakpoint-tablet) {
-            display: block;
-            width: 80%;
-            margin: 0 auto 15px;
-            font-size: $sec-size-mobile;
-            padding: 15px;
-        }
-    }
+		height: calc(60vh - #{$header-height});
+		padding: 30px 0 !important;
+		// height: auto;
+		min-height: 400px;
+		position: relative;
+		@media all and (max-width: $breakpoint-tablet) {
+			min-height: 400px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			min-height: 400px;
+		}
+	}
 
-    & .inner {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        right: 0;
-        top: 50%;
-        z-index: 10; // padding: $hero-padding;
-        // background-color: red;
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-    }
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		background-color: $hero-overlay;
+	}
 
-    &-buttons {
-        margin: 40px 0 0 0;
+	&--red {
+		background-color: $red-filter;
+	}
 
-        @media all and (max-width: $breakpoint-tablet) {
-            margin: 10px 0 0 0;
-        }
-    }
+	&--white {
+		background-color: $white-filter;
+	}
 
-    &-scroll {
-        position: absolute;
-        z-index: 10;
-        padding-bottom: 10px;
-        bottom: 0px;
-        left: 50%;
-        cursor: pointer;
-        text-align: center;
-        text-transform: uppercase;
-        -ms-transform: translate(-50%, 0);
-        -webkit-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
+	&--blue {
+		background-color: $blue-filter;
+	}
 
-
-
-        & span {
-            display: block; // padding-bottom: 10px;
-            // font-family: $font-header;
-            font-weight: 400;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-shadow: 0 0 15px rgba(0, 0, 0, .7);
-        }
-
-        & .arrow {
-            width: 50px;
-            height: 50px; // background-color: red;
-            margin: 0 auto;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 50px;
-            display: inline-block;
-            color: #fff;
-
-            &:before {
-                content: "\f078";
-
-                font-family: "FontAwesome";
-            }
-
-            &:hover {
-                color: $link-color;
-            }
-        }
-
-        &:hover {
-            color: $link-color;
-
-            & .arrow:before {
-                color: $link-color;
-            }
-        }
-
-        & .bar {
-            width: 5px;
-            background: $hero-h1-color;
-            height: 100px;
-            content: "";
-            margin: 0 auto;
-
-            @media all and (max-width: $breakpoint-mobile) {
-                height: 50px;
-            }
-        }
-    }
+	&--gradient:before {
+		background: rgba(0, 0, 0, 0);
+		background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+	}
 
 
 
+	&-button {
+		margin: 0 10px;
+		font-size: 26px;
 
-    &-fullscreen,
-    &-video {
-        height: calc(100vh - #{$header-height});
-        min-height: 600px;
-        overflow: hidden;
+		@media all and (max-width: $breakpoint-tablet) {
+			display: block;
+			width: 80%;
+			margin: 0 auto 15px;
+			font-size: $sec-size-mobile;
+			padding: 15px;
+		}
 
-        &--70{
-            height: calc(70vh - #{$header-height});
-            // min-height: auto;
-        }
+		&-subtitle{
+			display: block;
+			text-transform: none !important;
+			font-family: $font;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	& .inner {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 50%;
+		z-index: 10; // padding: $hero-padding;
+		// background-color: red;
+		-ms-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+
+	&-buttons {
+		margin: 40px 0 0 0;
+
+		@media all and (max-width: $breakpoint-tablet) {
+			margin: 10px 0 0 0;
+		}
+	}
+
+	&-scroll {
+		position: absolute;
+		z-index: 10;
+		padding-bottom: 10px;
+		bottom: 0px;
+		left: 50%;
+		cursor: pointer;
+		text-align: center;
+		text-transform: uppercase;
+		-ms-transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
 
 
-        @media all and (max-width: $breakpoint-tablet) {
-            height: calc(85vh - #{$header-height-mobile});
-            min-height: 600px;
-        }
-        @media all and (max-width: $breakpoint-mobile) {
-            min-height: 400px;
-        }
 
-        & .inner {
-            position: relative;
-            width: 100%;
-            left: 0;
-            right: 0;
-            top: 50%;
-            z-index: 10;
-            padding: 150px 0; // background-color: red;
-            -ms-transform: translate(0, -50%);
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+		& span {
+			display: block; // padding-bottom: 10px;
+			// font-family: $font-header;
+			font-weight: 400;
+			font-size: 14px;
+			letter-spacing: 2px;
+			text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+		}
 
-            @media all and (max-width: $breakpoint-tablet) {
-                // padding: 100px 0;
-                // top: 0;
-                // -ms-transform: translate(0, 0%);
-                // -webkit-transform: translate(0, 0%);
-                // transform: translate(0, 0%);
-            }
-        } // @media all and (max-width: $breakpoint-tablet){
-        //  height: auto;
-        // }
-    }
+		& .arrow {
+			width: 50px;
+			height: 50px; // background-color: red;
+			margin: 0 auto;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 50px;
+			display: inline-block;
+			color: #fff;
 
-    & h1 {
-        font-family: $font-header;
-        color: $hero-h1-color;
-        font-weight: 800;
-        font-size: $hero-h1-size;
-        line-height: 1;
-        text-transform: uppercase;
-        text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+			&:before {
+				content: "\f078";
 
-        @media all and (max-width: $breakpoint-tablet) {
-            font-size: 40px;
-        }
-        @media all and (max-width: $breakpoint-mobile) {
-            font-size: 24px;
-        }
+				font-family: "FontAwesome";
+			}
 
-        &.hero-event-title {
-            font-size: 90px;
+			&:hover {
+				color: $link-color;
+			}
+		}
 
-            @media all and (max-width: $breakpoint-tablet) {
-                font-size: 70px;
-            }
-            @media all and (max-width: $breakpoint-mobile) {
-                font-size: 30px;
-            }
-        }
-    }
+		&:hover {
+			color: $link-color;
 
-    & h1 small {
-        display: block;
-        font-family: $font-hero-small;
-        color: $hero-color; // text-transform: none;
-        font-size: 32px;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        line-height: 1.2; // text-shadow: 0 0 15px rgba(0,0,0,.7);
-        @media all and (max-width: $breakpoint-tablet) {
-            font-size: 20px;
-        }
-        @media all and (max-width: $breakpoint-mobile) {
-            font-size: 16px;
-        }
-    } // &-video{
-    //  height: calc(100vh - #{$header-height});
-    //  @media all and (max-width: $breakpoint-tablet){
-    //      height: calc(100vh - #{$header-height-mobile});
-    //  }
-    // }
+			& .arrow:before {
+				color: $link-color;
+			}
+		}
+
+		& .bar {
+			width: 5px;
+			background: $hero-h1-color;
+			height: 100px;
+			content: "";
+			margin: 0 auto;
+
+			@media all and (max-width: $breakpoint-mobile) {
+				height: 50px;
+			}
+		}
+	}
+
+
+
+
+	&-fullscreen,
+	&-video {
+		height: calc(100vh - #{$header-height});
+		min-height: 600px;
+		overflow: hidden;
+
+		&--70{
+			height: calc(70vh - #{$header-height});
+			// min-height: auto;
+		}
+
+
+		@media all and (max-width: $breakpoint-tablet) {
+			height: calc(85vh - #{$header-height-mobile});
+			min-height: 600px;
+		}
+		@media all and (max-width: $breakpoint-mobile) {
+			min-height: 400px;
+		}
+
+		& .inner {
+			position: relative;
+			width: 100%;
+			left: 0;
+			right: 0;
+			top: 50%;
+			z-index: 10;
+			padding: 150px 0; // background-color: red;
+			-ms-transform: translate(0, -50%);
+			-webkit-transform: translate(0, -50%);
+			transform: translate(0, -50%);
+
+			@media all and (max-width: $breakpoint-tablet) {
+				// padding: 100px 0;
+				// top: 0;
+				// -ms-transform: translate(0, 0%);
+				// -webkit-transform: translate(0, 0%);
+				// transform: translate(0, 0%);
+			}
+		} // @media all and (max-width: $breakpoint-tablet){
+		//  height: auto;
+		// }
+	}
+
+	& h1 {
+		font-family: $font-header;
+		color: $hero-h1-color;
+		font-weight: 800;
+		font-size: $hero-h1-size;
+		line-height: 1;
+		text-transform: uppercase;
+		text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+
+		@media all and (max-width: $breakpoint-tablet) {
+			font-size: 40px;
+		}
+		@media all and (max-width: $breakpoint-mobile) {
+			font-size: 24px;
+		}
+
+		&.hero-event-title {
+			font-size: 90px;
+
+			@media all and (max-width: $breakpoint-tablet) {
+				font-size: 70px;
+			}
+			@media all and (max-width: $breakpoint-mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	& h1 small {
+		display: block;
+		font-family: $font-hero-small;
+		color: $hero-color; // text-transform: none;
+		font-size: 32px;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		line-height: 1.2; // text-shadow: 0 0 15px rgba(0,0,0,.7);
+		@media all and (max-width: $breakpoint-tablet) {
+			font-size: 20px;
+		}
+		@media all and (max-width: $breakpoint-mobile) {
+			font-size: 16px;
+		}
+	} // &-video{
+	//  height: calc(100vh - #{$header-height});
+	//  @media all and (max-width: $breakpoint-tablet){
+	//      height: calc(100vh - #{$header-height-mobile});
+	//  }
+	// }
 }
 
 
 
 .videowrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    overflow: hidden; // background: $bg-color;
-    background-size: cover; // @media (max-width: $breakpoint-tablet){
-    //  display: none;
-    // }
-    &:before {
-        content: "";
-        background: $video-opacity; // background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-        // background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	overflow: hidden; // background: $bg-color;
+	background-size: cover; // @media (max-width: $breakpoint-tablet){
+	//  display: none;
+	// }
+	&:before {
+		content: "";
+		background: $video-opacity; // background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
 
-        @media (max-width: $breakpoint-tablet) {
-            display: none;
-        }
-    }
+		@media (max-width: $breakpoint-tablet) {
+			display: none;
+		}
+	}
 
-    & iframe {
-        -webkit-filter: $video-filter;
-        -moz-filter: $video-filter;
-        -ms-filter: $video-filter;
-        -o-filter: $video-filter;
-        filter: $video-filter;
-    }
+	& iframe {
+		-webkit-filter: $video-filter;
+		-moz-filter: $video-filter;
+		-ms-filter: $video-filter;
+		-o-filter: $video-filter;
+		filter: $video-filter;
+	}
 }
 
 .videoplayer {
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    margin: auto;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+	position: absolute;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	margin: auto;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 
-    @media (max-width: $breakpoint-tablet) {
-        display: none;
-    }
+	@media (max-width: $breakpoint-tablet) {
+		display: none;
+	}
 }
 
 .inlinevideo {
-    display: inline-block;
-    background-size: cover;
-    background-position: 50% 50%;
-    position: absolute;
-    right: -100%;
-    bottom: -100%;
-    top: -100%;
-    left: -100%;
-    margin: auto;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    background-size: cover;
-    background-repeat: no-repeat;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: absolute;
+	right: -100%;
+	bottom: -100%;
+	top: -100%;
+	left: -100%;
+	margin: auto;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .hero-scrollbutton {
-    padding-top: 70px;
-    margin-top: 30px;
-    background: transparent;
-    font-family: $font-header;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 700; // background: red;
-    position: relative;
-    color: $hero-h1-color;
-    text-transform: uppercase;
-    display: inline-block;
+	padding-top: 70px;
+	margin-top: 30px;
+	background: transparent;
+	font-family: $font-header;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 700; // background: red;
+	position: relative;
+	color: $hero-h1-color;
+	text-transform: uppercase;
+	display: inline-block;
 }
 
 .hero-scrollbutton span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 4px solid #fff;
-    border-bottom: 4px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
-    box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb05 1.5s infinite;
+	animation: sdb05 1.5s infinite;
+	box-sizing: border-box;
+}
+
+.coming-soon{
+	text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+	font-size: 45px;
+	font-family: $font-header;
+	color: $hero-h1-color;
+	font-weight: 800;
+	text-transform: uppercase;
+
+	@media all and (max-width: $breakpoint-tablet) {
+		font-size: 35px;
+	}
+	@media all and (max-width: $breakpoint-mobile) {
+		font-size: 25px;
+	}
 }
 
 @-webkit-keyframes sdb05 {
-    0% {
-        -webkit-transform: rotate(-45deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-        opacity: 0;
-    }
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
 }
 
 @keyframes sdb05 {
-    0% {
-        transform: rotate(-45deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(-45deg) translate(-20px, 20px);
-        opacity: 0;
-    }
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
 }
 
 .vimeo {
-    // background-color: red;
-    height: calc(100vh - #{$header-height});
-    position: relative;
+	// background-color: red;
+	height: calc(100vh - #{$header-height});
+	position: relative;
 }
 
 .vimeo-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden;
 }
 
 .vimeo-wrapper iframe {
-    width: 100vw;
-    height: 56.25vw;
-    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 100vh;
-    min-width: 177.77vh;
-    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 56.25vw;
+	/* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	min-height: 100vh;
+	min-width: 177.77vh;
+	/* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
