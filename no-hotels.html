@@ -270,162 +270,159 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 	
 
 
-<div class="hero hero-event hero--blue" style="background-image: url(assets/img/edmbooking/eventheader.jpg)">
-	<div class="inner">
+
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step1-hotels.html">
+			<span class="accordeon-step">Ticket</span>
+			<div class="accordeon-buttons">
+				Select your ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="accordeon accordeon--active">
+	<div class="container">
+		<span class="accordeon-step">Hotel</span>
+		<div class="accordeon-buttons">
+			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
+			<a href="step3-camping.html" class="button button-secondary">Next</a>
+		</div>
+	</div>
+</div>
+<section class="section">
+
+	<form class="">
 		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="hero-event-title">Martin Garrix
-						<small>3 nov 2018, Las Vegas (USA)</small>
-					</h1>
+			<div class="d-block d-lg-none m-b-30">
+				<div class="row">
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-7">
+						<select class="form-control m-b-0">
+							<option selected="">Sort by</option>
+							<option>Price Low-High</option>
+						</select>
+					</div>
 				</div>
+			</div>
+			<div id="filters">
+				<div class="row">
+					
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check in</label>
+		<div class="input-group date" id="" data-provide="datepicker">
+			<input type="text" class="form-control" value="" placeholder="Check-in">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
 		</div>
 	</div>
 </div>
-
-<section class="section myBooking">
-	<div class="container">
-		<a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block page-back">Back</a>
-		<h1 class="page-h1">Your booking</h1>
-		<div class="row">
-			<div class="col-lg-4 m-b-30 p">
-				<p class="myBooking-h1">Michel, congratulations with your booking!</p>
-				<p>We are looking forward to welcome you at EDMBOOKING | Book, stay and experience EDM around the globe.. Please make sure to bring this confirmation for your check in at your hotel, also bring a valid passport or ID card. Please note that the minimum age for EDMBOOKING | Book, stay and experience EDM around the globe. is 18 years. You can download your tickets via the link above, please make sure to print them while you need them for your acces to EDMBOOKING | Book, stay and experience EDM around the globe..</p>
-				<p><strong>Shared transfer/Private transfer</strong></p>
-				<p>If you booked 1 of these options we will contact you 1 week prior the event to discuss details like time etc.</p>
-				<p>We wish you a great stay, and see you at EDMBOOKING | Book, stay and experience EDM around the globe.</p>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label">Check out</label>
+		<div class="input-group date" id="" data-provide="datepicker">
+			<input type="text" class="form-control" placeholder="Check-out">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 			</div>
-			<div class="col offset-lg-1">
-				<h3>Personal information</h3>
-				<div class="content">
-					<table>
-						<tr>
-							<td><strong>Prefix</strong></td>
-							<td>Mr.</td>
-						</tr>
-						<tr>
-							<td><strong>First name</strong></td>
-							<td>Jurgen</td>
-						</tr>
-						<tr>
-							<td><strong>Last name</strong></td>
-							<td>van Zachten</td>
-						</tr>
-						<tr>
-							<td><strong>Email</strong></td>
-							<td>jurgen@thisisloco.com</td>
-						</tr>
-						<tr>
-							<td><strong>Phonenumber</strong></td>
-							<td>+31(0)646255387</td>
-						</tr>
-						<tr>
-							<td><strong>Address</strong></td>
-							<td>Ruysdaelhof Oost 9c</td>
-						</tr>
-						<tr>
-							<td><strong>Zipcode</strong></td>
-							<td>5642 JM</td>
-						</tr>
-						<tr>
-							<td><strong>City</strong></td>
-							<td>Eindhoven</td>
-						</tr>
-						<tr>
-							<td><strong>Bookingcode</strong></td>
-							<td>CODE</td>
-						</tr>
-					</table>
-					<div class="alert alert-primary m-t-20 m-b-0"><strong>Tip!</strong> Create an EventAgent account to manage all your bookings. <a href="your-booking-edit.html#account">Click here</a></div>
-					<a href="your-booking-edit.html#mydetails" class="button button-primary button-primary--small m-t-30"><i class="fa fa-pencil" aria-hidden="true"></i>Edit my details</a>
-				</div>
-				<h3>Extra travellers</h3>
-				<div class="content">
-					<table>
-						<tr>
-							<td><strong>Guest 1</strong></td>
-							<td>Mrs. Jurgen van Zachten</td>
-						</tr>
-					</table>
-					<a href="your-booking-edit.html#guestdetails" class="button button-primary button-primary--small m-t-30"><i class="fa fa-pencil" aria-hidden="true"></i>Edit guest(s) details</a>
-				</div>
-				<h3>Your ticket information</h3>
-				<div class="content">
-					<table>
-						<tr>
-							<td><strong>Ticket</strong></td>
-							<td>2 x Regular Ticket</td>
-							<td class="text-right price">€62.00</td>
-						</tr>
-						<tr>
-							<td><strong>Download ticket(s)</strong></td>
-							<td><a href="#">Download here</a></td>
-						</tr>
-					</table>
-					<a href="your-booking-edit.html#mytickets" class="button button-primary button-primary--small m-t-30"><i class="fa fa-ticket" aria-hidden="true"></i>Upgrade my ticket(s)</a>
-				</div>
-				<h3>Your extras</h3>
-				<div class="content">
-					<table>
-						<tr>
-							<td><strong>Extra</strong></td>
-							<td>2 x Safari tour</td>
-							<td class="text-right price">€62.00</td>
-						</tr>
-						<tr>
-							<td><strong>Extra</strong></td>
-							<td>2 x Shared transfer</td>
-							<td class="text-right price">€62.00</td>
-						</tr>
-					</table>
-					<a href="your-booking-edit.html#myextras" class="button button-primary button-primary--small m-t-30"><i class="fa fa-plus" aria-hidden="true"></i>Manage my extras</a>
-				</div>
-				<h3>Your hotel information</h3>
+		</div>
+	</div>
+</div>
+<div class="col-6 col-lg-1">
+	<div class="form-group">
+		<label class="form-label" for="room">Guests</label>
+		<span class="guests">2</span>
+	</div>
+</div>
+<div class="col-6 col-lg-3">
+	<div class="form-group">
+		<label class="form-label" for="room">Select room type</label>
+		<select class="form-control" id="room">
+			<option selected="">2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+			<option>2 x double room</option>
+		</select>
+	</div>
+</div>
+<div class="col-12 col-lg-2">
+	<div class="form-group">
+		<label class="form-label d-none d-lg-block">&nbsp;</label>
+		<button class="button button-primary button--block">Change Search</button>
+	</div>
+</div>
 
 
-				<div class="content">
-					<table>
-						<tr>
-							<td><strong>Hotel</strong></td>
-							<td colspan="2">
-								Campanile Hotel 's-Hertogenbosch<br />
-								Goudsbloemvallei 21-25 5237 MH<br />
-								‘S Hertogenbosch
-							</td>
-						</tr>
-						<tr>
-							<td><strong>Arrival date</strong></td>
-							<td colspan="2">29-07-2018</td>
-						</tr>
-						<tr>
-							<td><strong>Departure date</strong></td>
-							<td colspan="2">29-07-2018</td>
-						</tr>
-						<tr>
-							<td><strong>Room</strong></td>
-							<td>1x Twin Room</td>
-							<td class="text-right price">€62.00</td>
-						</tr>
-						<tr>
-							<td><strong>Reservation Code</strong></td>
-							<td colspan="2">CODE</td>
-						</tr>
-					</table>
-					<a href="your-booking-edit.html#mystay" class="button button-primary button-primary--small m-t-30"><i class="fa fa-calendar" aria-hidden="true"></i>Change booking dates</a>
+
 				</div>
-				<div class="content">
-					<table class="total">
-						<tr>
-							<td>Total price</td>
-							<td class="text-right">&euro;212.60</td>
-						</tr>
-					</table>
+			</div>
+			<hr class="hr" />
+		</div>
+	</form>
+	<div class="container">
+		<div class="row m-b-30">
+			<div class="col-md-9">
+				<h2 class="h2-section">Selected Hotels</h2>
+			</div>
+			<div class="col-md-3 d-none d-lg-block">
+				<div>
+					<select class="form-control m-b-0">
+						<option selected="">Sort by</option>
+						<option>Price Low-High</option>
+					</select>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<h3 class="h3">Oops, no hotels found</h3>
+				<p class="p">We are sorry but we can't find any hotels matching your request.</p>
 			</div>
 		</div>
 	</div>
 </section>
+
+
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">Extras</span>
+			<div class="accordeon-buttons">
+				Select extras<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">Details</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">Confirm</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+
+
 	</main>
 <footer id="footer">
 	<div class="container">
