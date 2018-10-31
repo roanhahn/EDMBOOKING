@@ -179,6 +179,22 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+// DATEPICKER
+
+$('.t-datepicker').tDatePicker({
+     autoClose        : true,
+     numCalendar    : 2,
+     iconArrowTop : true,
+  iconDate     : '<i class="fa fa-calendar" aria-hidden="true"></i>',
+  arrowPrev    : '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+  arrowNext    : '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+
+  limitPrevMonth : 0,
+  limitNextMonth : 11,
+  limitDateRanges: 90,
+
+
+    });
 
 // CHANGE CSS
 

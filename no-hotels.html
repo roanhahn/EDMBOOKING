@@ -66,7 +66,7 @@
 
 				<div class="language">
 					<button class="language-button" data-type="toggle" data-target="#setLanguage">
-						EN
+						<span>EN</span>
 					</button>
 					<div class="language-selector" id="setLanguage">
 						<ul>
@@ -310,28 +310,16 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 			<div id="filters">
 				<div class="row">
 					
-<div class="col-6 col-lg-3">
+<div class="col-12 col-lg-6">
 	<div class="form-group">
-		<label class="form-label">Check in</label>
-		<div class="input-group date" id="" data-provide="datepicker">
-			<input type="text" class="form-control" value="" placeholder="Check-in">
-			<div class="input-group-addon">
-				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-			</div>
+		<label class="form-label">Select check in and out dates</label>
+		<div class="t-datepicker">
+			<div class="t-check-in"></div>
+			<div class="t-check-out"></div>
 		</div>
 	</div>
 </div>
-<div class="col-6 col-lg-3">
-	<div class="form-group">
-		<label class="form-label">Check out</label>
-		<div class="input-group date" id="" data-provide="datepicker">
-			<input type="text" class="form-control" placeholder="Check-out">
-			<div class="input-group-addon">
-				<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="col-6 col-lg-1">
 	<div class="form-group">
 		<label class="form-label" for="room">Guests</label>
@@ -483,7 +471,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMBOOKING, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>
 
-				<div class="footer-logos">
+				<div class="footer-logos d-none">
 
 						<ul>
 							<li><img src="assets/img/logo-mastercard.png" alt="" class="lazyload"></li>
@@ -540,7 +528,8 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 
 
 <!-- Our JavaScript -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="assets/js/plugins/owl.carousel.min.js"></script>
@@ -552,6 +541,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 <script src="assets/js/plugins/sliderResponsive.js"></script>
 <script src="assets/js/plugins/jquery.vide.min.js"></script>
 <script src="assets/js/plugins/blazy.min.js"></script>
+<script src="assets/js/plugins/t-datepicker.min.js"></script>
 
 
 <script src="assets/js/app.js?v=7"></script>
