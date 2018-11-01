@@ -34,6 +34,7 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #333;
 $heading-color: #000;
 $link-color: rgb(81, 45, 108);
+$link-hover-color: rgb(81, 45, 108);
 $error-color: #dc3545;
 
 /* Google Maps */
@@ -198,9 +199,9 @@ $cookie-link-color: #ffef3b;
 $cookies-fontsize: 13px;
 $cookies-border: 1px solid #ffef3b;
 $cookies-color: #fff;
-$cookies-padding: 20px;
+$cookies-padding: 20px 50px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 10px 50px 10px 10px;
 
 /* FORMS */
 $form-border: 1px solid #000;
@@ -210,6 +211,8 @@ $form-label: #000;
 $form-input-color: #000;
 $form-highlight: #ffef3b;
 $form-highlightcolor: #000;
+$form-labelsize: 14px;
+$form-focus-border: #000;
 $form-addon-bg: #000;
 $form-addon-color: #ffef3b;
 $placeholder-color: #95a5a6;
@@ -243,3 +246,7 @@ $placeholder-color: #95a5a6;
 //     background: #fff !important;
 //     color: #eb1f29 !important;
 // }
+
+.flexbuttons a{
+    max-width: 320px !important;
+}

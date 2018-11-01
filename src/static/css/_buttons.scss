@@ -16,7 +16,7 @@ button {
     font-family: $font-button;
     font-size: $button-size;
     font-weight: 800;
-    letterspacing: 1px;
+    letter-spacing: 1px;
     outline: 0;
     outline: none !important;
     position: relative;
@@ -388,6 +388,14 @@ button {
         }
     }
 
+    &--back-in-page{
+       font-size: $sec-size !important;
+
+        @media all and (max-width: $breakpoint-mobile) {
+            font-size: $sec-size-mobile !important;
+        }
+    }
+
     &--lowercase {
         text-transform: none;
     }
@@ -496,7 +504,8 @@ button:focus {
     flex-direction: row;
     flex-wrap: no-wrap;
     justify-content: center;
-    align-items: flex-start;
+    // align-items: flex-start;
+    align-items: stretch;
     // padding: 0 150px;
 
     @media all and(max-width: $breakpoint-tablet){
@@ -509,15 +518,38 @@ button:focus {
     & a{
         flex-grow: 1;
         flex-shrink: 2;
-        max-width: 250px;
+        max-width: 280px;
         margin-right: 10px;
         margin-left: 10px;
+        // height: 50px;
+        // padding: 10px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
 
         @media all and(max-width: $breakpoint-mobile){
             display: block;
             flex-grow: 1;
             margin-right: auto;
             margin-left: auto;
+        }
+    }
+
+    & .hero-button-subtitle{
+        display: block;
+        text-transform: none !important;
+        font-family: $font;
+        font-size: 16px;
+        margin-top: 0px;
+        font-weight: 400;
+
+        @media all and (max-width: $breakpoint-tablet) {
+            font-size: 14px;
+        }
+
+        @media all and (max-width: $breakpoint-mobile) {
+            font-size: 12px;
         }
     }
 }

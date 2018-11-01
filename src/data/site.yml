@@ -4,9 +4,9 @@
 # name: Eventagent
 # intro: Welcome To The future 2019
 # title: Personalised Premium Event Travel Packages | EventAgent
-# homepage: homepage.html
-# herotitle: Welcome To The future 2019
-# herosubtitle: 2 days with camping
+# homepage: homepage-eventagent.html
+# herotitle: Premium Event Travel Packages
+# herosubtitle: Extend the experience of your event with travel packages
 # event: Welcome To The future 2019
 # eventdate: Friday July 19th / Saturday July 20th
 # ogtitle: Welcome To The future 2019
@@ -36,19 +36,19 @@
 
 
 # # DEMO HOTEL
-theme: demohotel
-logo: logo.svg
-name: Sail
-intro: Sail
-title: Sail Amsterdam
-homepage: homepage.html
-herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
-herosubtitle: Het enige officiele verkoopkanaal
-event: SAIL Amsterdam 2020
-eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
-ogtitle: Sail Amsterdam 2020
-ogimg: http://static.upcoming.nl/static/images/1fc9e21893_1433950443_9-Redenen-waarom-je-absoluut-dit-jaar-naar-SAIL-Amsterdam-moet__shre.jpg
-description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We verheugen ons op dit unieke evenement dat al sinds 1975 historie, heden en toekomst.
+# theme: demohotel
+# logo: logo.svg
+# name: Sail
+# intro: Sail
+# title: Sail Amsterdam
+# homepage: homepage.html
+# herotitle: VOORINSCHRIJVING SAIL AMSTERDAM 2020 GESTART!
+# herosubtitle: Het enige officiele verkoopkanaal
+# event: SAIL Amsterdam 2020
+# eventdate: CHOOSE YOUR STAY WITH OR WITHOUT ENTRANCE TICKETS
+# ogtitle: Sail Amsterdam 2020
+# ogimg: http://static.upcoming.nl/static/images/1fc9e21893_1433950443_9-Redenen-waarom-je-absoluut-dit-jaar-naar-SAIL-Amsterdam-moet__shre.jpg
+# description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We verheugen ons op dit unieke evenement dat al sinds 1975 historie, heden en toekomst.
 
 # Mysteryland
 # theme: democamping
@@ -125,16 +125,17 @@ description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We 
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # EDM
-# theme: edmbooking
-# name: EDMBOOKING
-# intro: EDMBOOKING
-# title: EDMBOOKING | Book, stay and experience EDM around the globe.
-# homepage: homepage.html
-# herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
-# herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
-# event: Martin Garrix
-# eventdate: 3 nov 2018, Las Vegas (USA)
-# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+logo: logo.svg
+theme: edmbooking
+name: EDMBOOKING
+intro: EDMBOOKING
+title: EDMBOOKING | Book, stay and experience EDM around the globe.
+homepage: homepage.html
+herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
+herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
+event: Martin Garrix
+eventdate: 3 nov 2018, Las Vegas (USA)
+description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # MARTIN GARRIX
 # theme: martingarrix
@@ -148,9 +149,23 @@ description: Zet koers naar SAIL Amsterdam 2020 en beleef deze reis met ons. We 
 # eventdate: 3 nov 2018, Las Vegas (USA)
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
-# New Horizons
+# # New Horizons
+# logo: logo.svg
 # theme: newhorizons
 # name: New Horizons Festival
+# intro: New Horizons Festival
+# title: New Horizons Festival | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# herotitle: 24. & 25. AUGUST 2018
+# herosubtitle: NÜRBURGRING, GERMANY
+# event: New Horizons Festival
+# eventdate: 24. & 25. AUGUST 2018
+# description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+
+# Formule 1
+# logo: logo.svg
+# theme: formulaone
+# name: Formula One
 # intro: New Horizons Festival
 # title: New Horizons Festival | Book, stay and experience EDM around the globe.
 # homepage: homepage.html

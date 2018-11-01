@@ -65,17 +65,7 @@
 			margin: 0 15px 0 15px;
 			position: relative;
 
-			&:before {
-				content: $dropdownicon;
-				font-family: "FontAwesome";
-				display: inline-block;
-				font-weight: normal;
-				margin-right: 5px;
 
-				@media all and (max-width: $breakpoint-mobile) {
-					margin-right: 3px;
-				}
-			}
 
 			@media all and (max-width: $breakpoint-mobile) {
 				margin: 0 10px 0 0;
@@ -99,6 +89,17 @@
 				}
 
 
+				& span{
+					display: block;
+
+					&:before {
+						content: $dropdownicon;
+						font-family: "FontAwesome";
+						display: inline-block;
+						font-weight: normal;
+						margin-right: 10px;
+					}
+				}
 			}
 
 

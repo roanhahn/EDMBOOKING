@@ -6,19 +6,21 @@ homepage: true
 ---
 
 
-{{!-- {{> hero }} --}}
+{{> hero-eventagent }}
 
 
 <section class="section">
 	<div class="container">
-		<h3 class="h3 h3--big">Upcoming events</h3>
+		<h3 class="h3 h3--big">Populair events</h3>
+
+
 		<div class="row">
 			<div class="col-md-6 col-lg-4 eventcard-wrapper">
 				<div class="eventcard">
-					<div class="eventcard-image">
+					<a href="#" class="eventcard-image">
 						<button class="fav"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
 						<img src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/eventagent/mysteryland.png" alt="Event Name goes here" class="img-fluid b-lazy">
-					</div>
+					</a>
 					<div class="content clearfix">
 						<a href="#" class="content-title">Mysteryland 2019</a>
 						<div class="content-date">
@@ -32,48 +34,52 @@ homepage: true
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Camping</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<div class="content-price">
-							from &euro;45 p.p.
+						<div class="bottom">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="event-landing.html" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 eventcard-wrapper">
 				<div class="eventcard">
-					<div class="eventcard-image">
+					<a href="#" class="eventcard-image">
 						<button class="fav"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
 						<img src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/eventagent/rieu.png" alt="Event Name goes here" class="img-fluid b-lazy">
-					</div>
+					</a>
 					<div class="content clearfix">
 						<a href="#" class="content-title">Andre Rieu</a>
 						<div class="content-date">
-							<span>23 Jan t/m 3 Feb 2018</span> &bull; <span>Ziggo Dome Amsterdam</span>
+							<span>23 Jan t/m 3 Feb 2018</span> <span class="bullet">&bull;</span> <span>Ziggo Dome Amsterdam</span>
 							<div>Elektronisch <span class="bullet">&bull;</span> Dance</div>
 						</div>
-						<p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+						{{!-- <p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> --}}
 						<ul>
-							{{!-- <li><a href="#" title="Buy Tickets for Shawn Mendes"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li> --}}
+							<li><a href="#" title="Buy Tickets for Andre Rieu"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li>
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Hotel</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<div class="content-price">
-							from &euro;23 p.p.
+						<div class="bottom">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="#" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 eventcard-wrapper">
 				<div class="eventcard">
-					<div class="eventcard-image">
+					<a href="#" class="eventcard-image">
 						<button class="fav"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
 						<img src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/eventagent/shawn.png" alt="Event Name goes here" class="img-fluid b-lazy">
-					</div>
-					<div class="content clearfix">
+					</a>
+					<div class="content">
 						<a href="#" class="content-title">Shawn Mendes</a>
 						<div class="content-date">
-							<span>23 Jan t/m 3 Feb 2018</span> &bull; <span>Ziggo Dome Amsterdam</span>
+							<span>23 Jan t/m 3 Feb 2018</span> <span class="bullet">&bull;</span> <span>Ziggo Dome Amsterdam</span>
 							<div>Elektronisch <span class="bullet">&bull;</span> Dance</div>
 						</div>
 						{{!-- <p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> --}}
@@ -82,20 +88,16 @@ homepage: true
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Hotel</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<div class="content-price">
-							from &euro;96 p.p.
+						<div class="bottom">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="#" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="section section-special">
-	<div class="container">
-		<h3 class="h3 h3--big">Populair packages</h3>
 		<div class="row">
 			<div class="col-md-6 col-lg-4 eventcard-wrapper">
 				<div class="eventcard">
@@ -109,17 +111,17 @@ homepage: true
 							<span>23 Jan t/m 3 Feb 2018</span> <span class="bullet">&bull;</span> <span>Haarlemmermeer</span>
 							<div>Elektronisch <span class="bullet">&bull;</span> Dance</div>
 						</div>
-
-						{{!-- <p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> --}}
 						<ul>
 							{{!-- <li><a href="#" title="Buy Tickets for Shawn Mendes"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li> --}}
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Camping</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<div class="content-price">
-							from &euro;250 p.p.
+						<div class="bottom clearfix">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="event-landing.html" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
@@ -132,24 +134,25 @@ homepage: true
 					<div class="content clearfix">
 						<a href="#" class="content-title">TT Assen</a>
 						<div class="content-date">
-							<span>23 Jan t/m 3 Feb 2018</span> &bull; <span>Circuit Assen</span>
+							<span>23 Jan t/m 3 Feb 2018</span> <span class="bullet">&bull;</span> <span>Circuit Assen</span>
 							<div>Sport <span class="bullet">&bull;</span> Motorsport</div>
 						</div>
-						{{!-- <p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> --}}
 						<ul>
 							<li><a href="#" title="Buy Tickets for Shawn Mendes"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li>
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Hotels</a></li>
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Camping</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<ul class="offers">
+						{{!-- <ul class="offers">
 							<li><a href="#">2 nights in a three star hotel &euro;50</a></li>
 							<li><a href="#">4 nights in a three star hotel &euro;150</a></li>
-						</ul>
-						<div class="content-price">
-							from &euro;50 p.p.
+						</ul> --}}
+						<div class="bottom clearfix">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="#" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
@@ -162,19 +165,20 @@ homepage: true
 					<div class="content clearfix">
 						<a href="#" class="content-title">Sail 2019</a>
 						<div class="content-date">
-							<span>23 Jan t/m 3 Feb 2018</span> &bull; <span>Ziggo Dome Amsterdam</span>
+							<span>23 Jan t/m 3 Feb 2018</span> <span class="bullet">&bull;</span> <span>Ziggo Dome Amsterdam</span>
 							<div>Elektronisch <span class="bullet">&bull;</span> Dance</div>
 						</div>
-						{{!-- <p class="content-detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> --}}
 						<ul>
 							<li><a href="#" title="Buy Tickets for Shawn Mendes"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li>
 							<li><a href="#" title="Book a Hotelroom"><i class="fa fa-bed" aria-hidden="true"></i>Hotels</a></li>
 							<li><a href="#" title="Exclusive Packages available for Shawn Mendes"><i class="fa fa-check" aria-hidden="true"></i>Packages</a></li>
 						</ul>
-						<div class="content-price">
-							from &euro;50 p.p
+						<div class="bottom clearfix">
+							<div class="content-price">
+								from &euro;23 p.p.
+							</div>
+							<a href="#" class="booknow">Book now</a>
 						</div>
-						<a href="#" class="booknow">Book now</a>
 					</div>
 				</div>
 			</div>
@@ -182,11 +186,18 @@ homepage: true
 	</div>
 </section>
 
+<section class="section section-special">
+	<div class="container">
+		<h3 class="h3 h3--big">Upcoming packages</h3>
+
+	</div>
+</section>
+
 <section class="section">
 	<div class="container">
 		<h3 class="h3 h3--big">What are you looking for?</h3>
 		<div class="row">
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>
@@ -195,7 +206,7 @@ homepage: true
 					<div>Festivals</div>
 				</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>
@@ -204,7 +215,7 @@ homepage: true
 					<div>Fashion</div>
 				</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>
@@ -213,7 +224,7 @@ homepage: true
 					<div>Sport</div>
 				</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>
@@ -222,7 +233,7 @@ homepage: true
 					<div>Cultuur</div>
 				</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>
@@ -231,7 +242,7 @@ homepage: true
 					<div>Kunst</div>
 				</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-md-2">
 				<a href="#" class="category">
 					<div class="category-visual">
 						<div class="category-icon"><i class="fa fa-music" aria-hidden="true"></i></div>

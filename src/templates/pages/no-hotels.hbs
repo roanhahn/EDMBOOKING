@@ -1,0 +1,124 @@
+---
+title: No Hotels Found
+layout: default.hbs
+type: page
+---
+
+
+{{!-- <div class="hero hero-event hero--blue" style="background-image: url(assets/img/event-header.jpg)">
+	<div class="inner">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="hero-event-title">Martin Garrix</h1>
+					<p>14 november Las Vegas</p>
+					<a href="event-info.html" class="button button-secondary">Event info</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> --}}
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step1-hotels.html">
+			<span class="accordeon-step">Ticket</span>
+			<div class="accordeon-buttons">
+				Select your ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="accordeon accordeon--active">
+	<div class="container">
+		<span class="accordeon-step">Hotel</span>
+		<div class="accordeon-buttons">
+			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
+			<a href="step3-camping.html" class="button button-secondary">Next</a>
+		</div>
+	</div>
+</div>
+<section class="section">
+
+	<form class="">
+		<div class="container">
+			<div class="d-block d-lg-none m-b-30">
+				<div class="row">
+					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+					<div class="col-7">
+						<select class="form-control m-b-0">
+							<option selected="">Sort by</option>
+							<option>Price Low-High</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="filters">
+				<div class="row">
+					{{> selectdate }}
+				</div>
+			</div>
+			<hr class="hr" />
+		</div>
+	</form>
+	<div class="container">
+		<div class="row m-b-30">
+			<div class="col-md-9">
+				<h2 class="h2-section">Selected Hotels</h2>
+			</div>
+			<div class="col-md-3 d-none d-lg-block">
+				<div>
+					<select class="form-control m-b-0">
+						<option selected="">Sort by</option>
+						<option>Price Low-High</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<h3 class="h3">Oops, no hotels found</h3>
+				<p class="p">We are sorry but we can't find any hotels matching your request.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step2-camping.html">
+			<span class="accordeon-step">Extras</span>
+			<div class="accordeon-buttons">
+				Select extras<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="accordeon">
+	<div class="container">
+		<a href="step3-camping.html">
+			<span class="accordeon-step">Details</span>
+			<div class="accordeon-buttons">
+				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="accordeon">
+	<div class="container">
+		<a href="step4-camping.html">
+			<span class="accordeon-step">Confirm</span>
+			<div class="accordeon-buttons">
+				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			</div>
+		</a>
+	</div>
+</div>
+
+{{!-- <div class="site-background">
+	<div class="site-background-visual" style="background-image: url(assets/img/event-header.jpg)"></div>
+</div> --}}

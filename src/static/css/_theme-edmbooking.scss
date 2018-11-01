@@ -29,6 +29,7 @@ $border-color: rgba(255,255,255,.3);
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #419bf7;
+$link-hover-color: #419bf7;
 $error-color: #dc3545;
 
 /* Google Maps */
@@ -193,15 +194,17 @@ $cookies-fontsize: 15px;
 $cookies-border: 1px solid #419bf7;
 $cookie-link-color: #fff;
 $cookies-color: #419bf7;
-$cookies-padding: 20px;
+$cookies-padding: 20px 50px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 10px 50px 10px 10px;
 
 /* FORMS */
 $form-border: 1px solid #fff;
 $form-bordercolor: #000;
 $form-border-login: 1px solid #000;
 $form-label: #fff;
+$form-labelsize: 14px;
+$form-focus-border: #000;
 $form-input-color: #000;
 $form-highlight: #419bf7;
 $form-highlightcolor: #fff;
@@ -227,4 +230,8 @@ $placeholder-color: #95a5a6;
     @media all and (max-width: $breakpoint-mobile) {
         font-size: 30px !important;
     }
+}
+
+.flexbuttons a{
+    max-width: 320px !important;
 }

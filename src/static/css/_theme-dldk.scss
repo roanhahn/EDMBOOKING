@@ -40,6 +40,7 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #eb1f29;
+$link-hover-color: #eb1f29;
 $error-color: #eb1f29;
 
 
@@ -205,16 +206,18 @@ $cookie-link-color: #eb1f29;
 $cookies-fontsize: 13px;
 $cookies-border: 1px solid #eb1f29;
 $cookies-color: #fff;
-$cookies-padding: 20px;
+$cookies-padding: 20px 50px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 10px 50px 10px 10px;
 
 /* FORMS */
 $form-border: 1px solid #eb1f29;
 $form-bordercolor: #eb1f29;
 $form-border-login: 1px solid #000;
 $form-label: #fff;
+$form-labelsize: 14px;
 $form-input-color: #000;
+$form-focus-border: #eb1f29;
 $form-highlight: #eb1f29;
 $form-highlightcolor: #fff;
 $form-addon-bg: #eb1f29;

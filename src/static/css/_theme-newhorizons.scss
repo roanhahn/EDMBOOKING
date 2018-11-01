@@ -87,6 +87,8 @@ $border-color: rgba(255,255,255,.5);
 $text-color: #fff;
 $heading-color: #fff;
 $link-color: #fff;
+$link-hover-color: #fff;
+$error-color: #dc3545;
 
 /* Google Maps */
 $mapclose-color: #80bab3;
@@ -115,10 +117,10 @@ $button-radius: 0px;
 $button-back-size: 15px; // default 15px
 $button-back-bg: #4E647E;
 $button-back-color: #fff;
-$button-back-border: 2px solid rgba(255,255,255,1);
+$button-back-border: none; //2px solid rgba(255,255,255,1);
 $button-back-bghover: #fff;
 $button-back-colorhover: #4E647E;
-$button-back-borderhover: 2px solid #fff;
+$button-back-borderhover: none; //2px solid #fff;
 
 /* FAQ */
 $faq-button-bg: #4E647E;
@@ -134,13 +136,15 @@ $sec-size-mobile: 15px; //default 15px
 $sec-button-bg: #4E647E;
 $sec-button-colorhover: #4E647E;
 $sec-button-bghover: #fff;
-$sec-button-border: 2px solid #fff;
-$sec-button-borderhover: 2px solid #fff;
+$sec-button-border: none; //2px solid #fff;
+$sec-button-borderhover: none; //2px solid #fff;
 $sec-button-radius: 0px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
 /* HEADER */
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $hamburger-layer-color: #435973 !default;
 $header-height: 90px;
 $header-height-mobile: 50px;
@@ -250,15 +254,17 @@ $cookies-fontsize: 15px;
 $cookies-border: 1px solid #122c3e;
 $cookies-color: #122c3e;
 $cookie-link-color: #122c3e;
-$cookies-padding: 20px;
+$cookies-padding: 20px 60px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 10px 40px 10px 10px;
 
 /* FORMS */
-$form-border: 1px solid #fff;
+$form-border: none; //1px solid #fff;
 $form-bordercolor: 1px solid #fff;
+$form-focus-border: #fff;
 $form-border-login: 1px solid #80bab3;
 $form-label: #fff;
+$form-labelsize: 14px;
 $form-input-color: #4E647E;
 $form-highlight: #4E647E;
 $form-highlightcolor: #fff;

@@ -133,6 +133,7 @@
 		// -moz-box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
 		// box-shadow: 0px 0px 10px 0px rgba(65,155,247,1);
 		color: #000;
+		border-color: $form-focus-border;
 	}
 
 	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */

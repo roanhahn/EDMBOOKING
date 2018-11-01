@@ -214,8 +214,8 @@ footer{
 		& img{
 			max-height: 20px;
 			width: auto;
-		// 	 -webkit-filter: grayscale(1);
-  // filter: grayscale(1);
+			// 	 -webkit-filter: grayscale(1);
+			// filter: grayscale(1);
 			@media all and(max-width: $breakpoint-mobile){
 				max-height: 17px;
 			}
@@ -256,9 +256,19 @@ footer{
 	& button{
 		padding: 5px;
 		background-color: transparent;
-		float: right;
-		margin: 0 0 0 20px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		// top: 50%;
+		// -ms-transform: translate(0, -50%);
+		// -webkit-transform:  translate(0, -50%);
+		// transform: translate(0, -50%);
 		curspor: pointer;
+
+		@media all and(max-width: $breakpoint-mobile){
+		right: 10px;
+		top: 10px;
+	}
 
 
 		& .icon{

@@ -3,7 +3,7 @@
 @import "_variables.scss";
 
 /* Theme EDMBOOKING Variables */
-// @import "_theme-edmbooking.scss";
+@import "_theme-edmbooking.scss";
 
 /* Theme Martin Garrix ADE Variables */
 // @import "theme-martingarrix.scss";
@@ -27,13 +27,16 @@
 // @import "_theme-democamping.scss";
 
 // DEMO HOTEL
-@import "_theme-demohotel.scss";
+// @import "_theme-demohotel.scss";
 
 // Welcome tot the future
 // @import "_theme-wttf.scss";
 
 // EVENTAGENT
 // @import "_theme-eventagent.scss";
+
+/* Theme F1  */
+// @import "theme-f1.scss";
 
 
 // Default CSS
@@ -52,7 +55,7 @@
 @import "_footer.scss";
 @import "_events.scss";
 @import "_offer.scss";
-@import "_event-agent.scss";
+// @import "_event-agent.scss";
 
 // Plugins
 @import "_sliderResponsive.scss";
@@ -61,4 +64,6 @@
 @import "_owl.theme.default.min.scss";
 @import "_owl.theme.scss";
 @import "_bootstrap-datepicker3.min.scss";
-// @import "_canvallax.scss"; //voor NH 2018
+@import "_canvallax.scss"; //voor NH 2018
+@import "_t-datepicker.scss";
+@import "_t-datepicker-blue.css";

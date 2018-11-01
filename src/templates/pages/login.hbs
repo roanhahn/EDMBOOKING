@@ -4,25 +4,32 @@ type: page
 layout: default.hbs
 ---
 
-<section class="section section--grey">
+<section class="section">
 	<div class="container">
-		{{!-- <a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block">Back</a> --}}
-		<h1 class="page-h1">Login</h1>
+		<h1 class="page-h1">Manage your booking</h1>
 		<div class="row">
-			<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-				<form class="login m-t-30">
+			<div class="col-10 offset-1 m-t-30 d-flex justify-content-center">
+				<div class="col-lg-4">
+					<form class="login">
 
-					<label class="form-label">Log in to see your booking</label>
+						<label class="form-label">Log in with username and password</label>
 
-					<div class="form-group">
-						<input type="text" placeholder="E-mailaddress" class="input">
-					</div>
-					<div class="form-group">
-						<input type="password" placeholder="Booking Code" class="input password">
-					</div>
-					<button class="button button-primary button--block" title="Log in">Log in</button>
-					<p class="m-t-20">Lost your booking code? <a href="mailto:info@edmbassy.com" title="">Click here</a></p>
-				</form>
+						<div class="form-group">
+							<input type="text" placeholder="E-mailaddress" class="input">
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Booking Code" class="input password">
+						</div>
+						<button class="button button-primary button--block" title="Log in">Log in</button>
+						<p class="m-t-20">Lost your booking code? <a href="mailto:info@edmbassy.com" title="">Click here</a></p>
+					</form>
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-4">
+					<label class="form-label">Or login with your social network account</label>
+					<a href="#" class="button-facebook button--block">Facebook</a>
+					<a href="#" class="button-google button--block">Google+</a>
+				</div>
 			</div>
 		</div>
 	</div>

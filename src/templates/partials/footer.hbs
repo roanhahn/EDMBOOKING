@@ -66,7 +66,7 @@
 					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi {{site.name}}, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>
 
-				<div class="footer-logos">
+				<div class="footer-logos d-none">
 
 						<ul>
 							<li><img src="assets/img/logo-mastercard.png" alt="" class="lazyload"></li>
@@ -108,6 +108,9 @@
 			</div>
 		</div> --}}
 	</div>
+	{{#is site.theme 'eventagent'}}
+
+	{{else}}
 	<div class="partners">
 		<div class="container">
 			<div class="row">
@@ -122,6 +125,7 @@
 			</div>
 		</div>
 	</div>
+	{{/is}}
 </footer>
 
 {{#if homepage}}
