@@ -389,10 +389,13 @@ button {
     }
 
     &--back-in-page{
-       font-size: $sec-size !important;
-
-        @media all and (max-width: $breakpoint-mobile) {
-            font-size: $sec-size-mobile !important;
+       &:before {
+            content: "\f104";
+            font-family: "FontAwesome";
+            margin-right: 5px;
+        }
+        &:after {
+            display: none;
         }
     }
 
@@ -609,6 +612,7 @@ button:focus {
 
     &:hover{
         background-color: #335CAA;
+        color: #fff;
     }
 }
 
@@ -617,5 +621,6 @@ button:focus {
     background-image: url(../img/google-plus.svg);
     &:hover{
         background-color: #B2372A;
+         color: #fff;
     }
 }

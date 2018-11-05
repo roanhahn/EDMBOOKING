@@ -1,46 +1,48 @@
 /*!
- * EDMBOOKING THEME
- * Copyright (c) 2018 EDMBOOKING.com
- */
+* EDMBOOKING THEME
+* Copyright (c) 2018 EDMBOOKING.com
+*/
 
 /* Regular font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+
 
 /* Header font */
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+// @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
 
-/* FOLDER */
-$folder: formulaone;
+ /* FOLDER */
+ $folder: formulaone;
 
 /* BODY */
-$bg-color: #000;
+$bg-color: #fff;
 $loader-bg: #000;
-$bodygradient-fromcolor: #000;
-$bodygradient-tocolor: #000;
-$font-size: 15px;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+$font-size: 16px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
-$font: 'Roboto', sans-serif;
-$font-header: 'Prompt', sans-serif;
-$border-color: rgba(255,255,255,.3);
+$font: 'Titillium Web', sans-serif; //'Roboto', sans-serif;
+$font-header: 'Titillium Web', sans-serif; //'Prompt', sans-serif;
+$border-color: #D5D5D5;
 
 /* FONT COLORS */
-$text-color: #fff;
-$heading-color: #fff;
-$link-color: #419bf7;
+$text-color: #15151e;
+$heading-color: #15151e;
+$link-color: #CF2D1E;
 $link-hover-color: #419bf7;
 $error-color: #dc3545;
 
 /* Google Maps */
-$mapclose-color: #419bf7;
+$mapclose-color: #CF2D1E;
 
 /* FILTERS */
 $filter-visibility: block;
 $blend-mode: multiply;
-$blue-filter: rgba(0,155,255,1);
-$white-filter: rgba(236,236,236,1);
-$red-filter: rgba(255,55,0,1);
+$blue-filter: rgba(0,155,255,0);
+$white-filter: rgba(236,236,236,0);
+$red-filter: rgba(255,55,0,0);
 $grey-filter: rgba(50,50,50,0.2);
 $filter-opacity: 0.5;
 $video-opacity: 0.5;
@@ -49,37 +51,37 @@ $video-filter:  grayscale(100%);
 /* BUTTONS */
 $font-button: 'Prompt', sans-serif;
 $button-size: 17px;
-$button-bg: #419bf7;
+$button-bg: #CF2D1E;
 $button-color: #fff;
-$button-bg-hover: #fff;
-$button-color-hover: #000;
-$button-radius: 0px;
+$button-bg-hover: #000;
+$button-color-hover: #fff;
+$button-radius: 4px;
 
 /* BACK BUTTON */
 $button-back-size: 15px; // default 15px
-$button-back-bg: rgba(0,0,0,.5);
-$button-back-color: #fff;
-$button-back-border: 2px solid rgba(255,255,255,.3);
-$button-back-bghover: #fff;
-$button-back-colorhover: #000;
-$button-back-borderhover: 2px solid #fff;
+$button-back-bg: #fff; // rgba(0,0,0,.5);
+$button-back-color: #000;
+$button-back-border: 2px solid #000; //rgba(255,255,255,.3);
+$button-back-bghover: #38383f;
+$button-back-colorhover: #fff;
+$button-back-borderhover: 2px solid #38383f;
 
 /* FAQ */
-$faq-button-bg: rgba(0,0,0,.5);
+$faq-button-bg: #CF2D1E;
 $faq-button-color: #fff;
-$faq-button-bghover: #fff;
-$faq-button-colorhover: #000;
+$faq-button-bghover: #000;
+$faq-button-colorhover: #fff;
 
 /* SECONDARY BUTTON */
 $sec-button-color: #fff;
 $sec-size: 16px;
 $sec-size-mobile: 15px; //default 15px
-$sec-button-bg: rgba(0,0,0,.5);
+$sec-button-bg: #CF2D1E; //rgba(0,0,0,.5);
 $sec-button-colorhover: #000;
 $sec-button-bghover: #fff;
-$sec-button-border: 2px solid #fff;
-$sec-button-borderhover: 2px solid #fff;
-$sec-button-radius: 50px;
+$sec-button-border: none; //2px solid #fff;
+$sec-button-borderhover: none; //2px solid #fff;
+$sec-button-radius: 4px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
@@ -91,27 +93,27 @@ $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 30px;
 $logo-height-mobile: 20px;
-$header-bg: #CF2D1E;
+$header-bg: #fff;
 $header-color: #fff;
-$header-bg-sticky: #ccc;
+$header-bg-sticky: #fff;
 $header-text: #15151e;
-$header-hover: #15151e;
-$main-shadow: none;
+$header-hover: #CF2D1E;
+$main-shadow:  0px 5px 5px 0px rgba(0,0,0,0.1);
 $menu-color: black;
-$notification-bg: #419bf7;
+$notification-bg: #CF2D1E;
 $notication-icons: #fff;
 $notification-text: #fff;
-$subnav-bg: #15151e;
+$subnav-bg: #CF2D1E;
 $subnav-strong: #fff;
 $subnav-strong-size: 20px; //default 20px
 $subnav-color: #fff;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
-$subnav-hover: #CF2D1E;
+$subnav-hover: #15151e;
 $subnav-social-bg: #fff;
 $subnav-social-color: #CF2D1E;
-$subnav-social-hover: #fff;
-$subnav-social-bghover: #CF2D1E;
+$subnav-social-hover: #15151e;
+$subnav-social-bghover: #fff;
 $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
 $subnav-border: 1px solid rgba(255,255,255,.3);
 $language-bg: #15151e;
@@ -135,42 +137,43 @@ $hero-button-width: 350px;
 $hero-button-size: 24px;
 
 /* Testimonials */
-$testimonial-bg: #000;
+$testimonial-bg: #CF2D1E url(../img/formulaone/testimonials.jpg) center center / cover no-repeat scroll;
+// $testimonial-bg: #CF2D1E;
 $testimonial-text: #fff;
 $testimonial-title: #fff;
 $testimonial-author: #fff;
-$testimonial-activedot: #419bf7;
+$testimonial-activedot: #15151e;
 $testimonial-inactivedot: #fff;
 $testimonial-title-size: 40px; // default 40px
 
 /* STEPS */
 $steps-bg: #000;
 $steps-color: #fff;
-$steps-bg-hover: #333;
+$steps-bg-hover: #414148;
 $steps-color-hover: #fff;
-$steps-active-bg: #333;
+$steps-active-bg: #1f1f27;
 $steps-active-color: #fff;
 $steps-link: #fff;
-$steps-border: 2px solid rgba(255,255,255,.3);
+$steps-border: 2px solid #38383f;
 
 /* OFFERS */
 $event-bg: #000;
-$offer-border: 1px solid rgba(255,255,255,.3);
-$offer-title: #419bf7;
-$offer-title-transform: none;
-$ribbon-bg: #419bf7;
+$offer-border: 1px solid #D5D5D5;
+$offer-title: #000;
+$offer-title-transform: uppercase;
+$ribbon-bg: #CF2D1E;
 $ribbon-color: #fff;
-$offer-activedot: #419bf7;
-$offer-inactivedot: #fff;
+$offer-activedot: #CF2D1E;
+$offer-inactivedot: #D5D5D5;
 $ticketbtn-color: #fff;
 $ticketbtn-colorhover: #000;
 
 /* WHY BOOK */
-$why-border: #419bf7;
+$why-border: #CF2D1E;
 $why-number: #fff;
-$why-book-icon: #000;
-$why-book-iconborder: 3px solid #419bf7;
-$why-book-iconbg: #419bf7;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #CF2D1E;
+$why-book-iconbg: #CF2D1E;
 
 /* Footer */
 $footer-border: none;
@@ -188,7 +191,7 @@ $footer-payoffsize: 12px;
 $partner-bg: #38383f;
 
 /* COOKIES */
-$cookies-bg: rgba(0,0,0,1);
+$cookies-bg: rgba(0,0,0,.9);
 $cookies-fontsize: 15px;
 $cookies-border: 1px solid #000;
 $cookie-link-color: #CF2D1E;
@@ -198,18 +201,34 @@ $cookies-fontsize-mobile: 11px;
 $cookies-padding-mobile: 10px 50px 10px 10px;
 
 /* FORMS */
-$form-border: 1px solid #fff;
-$form-bordercolor: #000;
-$form-border-login: 1px solid #000;
-$form-label: #fff;
+$form-border: 1px solid #CDCDCD;
+$form-bordercolor: #CDCDCD;
+$form-border-login: 1px solid #CDCDCD;
+$form-label: #000;
 $form-labelsize: 14px;
 $form-focus-border: #000;
 $form-input-color: #000;
-$form-highlight: #419bf7;
-$form-highlightcolor: #fff;
-$form-addon-bg: #e6e7e8;
+$form-highlight: #f2f2f2;
+$form-highlightcolor: #000;
+$form-addon-bg: #fff;
 $form-addon-color: #000;
 $placeholder-color: #95a5a6;
+
+.cookies{
+    left: 0px !important;
+    bottom: 0px !important;
+     -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    @media all and (max-width: $breakpoint-mobile){
+        left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        right: 0px;
+        bottom: 0px !important;
+    }
+}
 
 
 @mixin gradient($fromcolor, $tocolor) {
@@ -218,6 +237,17 @@ $placeholder-color: #95a5a6;
 	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@media all and (max-width: $breakpoint-tablet) {
+    .logo{
+        width: 130px;
+        overflow: hidden;
+    }
+}
+
+.yourbooking{
+    background: #f2f2f2 url(../img/formulaone/bg-mybooking.jpg) center bottom / cover no-repeat scroll !important;
 }
 
 .hero h1.hero-event-title{
@@ -235,13 +265,42 @@ $placeholder-color: #95a5a6;
     max-width: 320px !important;
 }
 
+.t-check-out {
+    border-left-width: 1px !important;
+}
+
+#footer{
+    padding: 120px 0;
+
+    & .partners{
+        display: none;
+    }
+
+    & h4{
+        margin-bottom: 40px;
+    }
+
+    & ul li{
+        margin-bottom: 20px;
+    }
+}
+
 .f1-agenda{
-    margin-top: 60px;
+    // margin-top: 60px;
+    padding: 60px 15px 0 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        padding-top: 20px;
+    }
+}
+
+.event-info-item img{
+    border-radius: 10px;
 }
 
 .f1-event{
@@ -249,14 +308,46 @@ $placeholder-color: #95a5a6;
     padding: 0 20px;
     margin: 0 0 50px;
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 1;
     flex-basis: 200px;
     color: #fff;
-    border-right: 1px solid rgba(255,255,255,.1);
+    border-right: 1px solid rgba(255,255,255,.8);
+     // background: red;
 
-    &:hover{
-        color: #CF2D1E;
+    @media all and (max-width: $breakpoint-tablet) {
+
+        flex-basis: 30%;
+        margin: 2px;
+        border-right: none;
+        background: rgba(0,0,0,.4);
+        padding: 15px;
+        flex-grow: 1;
+
     }
+
+    &:last-child{
+        border-right: none;
+    }
+
+    &-content{
+       -ms-transform: scale(1, 1);
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1);
+       transition: transform .3s ease-out 0s;
+       -webkit-transition: transform .3s ease-out 0s;
+   }
+
+   &:hover{
+        color: #CF2D1E;
+
+
+        & .f1-event-content{
+            -ms-transform: scale(1.2, 1.2);
+           -webkit-transform: scale(1.2, 1.2);
+           transform: scale(1.2, 1.2);
+        }
+    }
+
 
 
     & .flag{
@@ -266,14 +357,23 @@ $placeholder-color: #95a5a6;
         border-radius: 5px;
         overflow: hidden;
         width: 70px;
+
+         @media all and (max-width: $breakpoint-tablet) {
+            width: 45px;
+         }
     }
 
     & .country{
         display: block;
-        color: #949498;
+        color: #fff;
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 24px;
+
+        @media all and (max-width: $breakpoint-tablet) {
+            font-size: 16px;
+            margin-bottom: 10px;
+         }
     }
 
     & .date{
@@ -286,5 +386,9 @@ $placeholder-color: #95a5a6;
             font-size: 16px;
             text-transform: uppercase;
         }
+
+         @media all and (max-width: $breakpoint-tablet) {
+            font-size: 20px;
+         }
     }
 }

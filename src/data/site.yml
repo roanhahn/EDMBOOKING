@@ -124,18 +124,18 @@
 # ogimg: https://d49r1np2lhhxv.cloudfront.net/www/__sized__/photos/SensationSpain2018_V1-thumbnail-800x460-90.jpg
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
-# EDM
-logo: logo.svg
-theme: edmbooking
-name: EDMBOOKING
-intro: EDMBOOKING
-title: EDMBOOKING | Book, stay and experience EDM around the globe.
-homepage: homepage.html
-herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
-herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
-event: Martin Garrix
-eventdate: 3 nov 2018, Las Vegas (USA)
-description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+# # EDM
+# logo: logo.svg
+# theme: edmbooking
+# name: EDMBOOKING
+# intro: EDMBOOKING
+# title: EDMBOOKING | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
+# herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
+# event: Martin Garrix
+# eventdate: 3 nov 2018, Las Vegas (USA)
+# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # MARTIN GARRIX
 # theme: martingarrix
@@ -163,17 +163,17 @@ description: Sensation is going to Madrid! On November 3, the World's Leading Da
 # description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 # Formule 1
-# logo: logo.svg
-# theme: formulaone
-# name: Formula One
-# intro: New Horizons Festival
-# title: New Horizons Festival | Book, stay and experience EDM around the globe.
-# homepage: homepage.html
-# herotitle: 24. & 25. AUGUST 2018
-# herosubtitle: NÜRBURGRING, GERMANY
-# event: New Horizons Festival
-# eventdate: 24. & 25. AUGUST 2018
-# description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+logo: logo.svg
+theme: formulaone
+name: Sportstadion Travel Packages
+intro: intro
+title: Formula One Travel Packages | Book, stay and experience EDM around the globe.
+homepage: homepage-f1.html
+herotitle: hero title
+herosubtitle: subtitle
+event: Belgium Grand Prix
+eventdate: 22 - 25 March 2019
+description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 category: gallery
 author: author
