@@ -10,7 +10,7 @@
 /* DEMO CAMPING */
 /* Theme F1  */
 /*!
-* EDMBOOKING THEME
+* FORMULA ONE THEME
 * Copyright (c) 2018 EDMBOOKING.com
 */
 /* Regular font */
@@ -83,7 +83,7 @@
     margin-bottom: 20px; }
 
 .f1-agenda {
-  padding: 60px 15px 0 15px;
+  padding: 60px 15px 60px 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -112,7 +112,11 @@
       border-right: none;
       background: rgba(0, 0, 0, 0.4);
       padding: 15px;
-      flex-grow: 1; } }
+      flex-grow: 1;
+      flex-shrink: 0; } }
+  @media all and (max-width: 767px) {
+    .f1-event {
+      flex-basis: 40%; } }
   .f1-event:last-child {
     border-right: none; }
   .f1-event-content {
@@ -146,9 +150,13 @@
       .f1-event .country {
         font-size: 16px;
         margin-bottom: 10px; } }
+    @media all and (max-width: 767px) {
+      .f1-event .country {
+        font-size: 14px;
+        margin-bottom: 10px; } }
   .f1-event .date {
     font-weight: 700;
-    font-size: 28px; }
+    font-size: 32px; }
     .f1-event .date span {
       display: block;
       color: #949498;
@@ -156,7 +164,7 @@
       text-transform: uppercase; }
     @media all and (max-width: 992px) {
       .f1-event .date {
-        font-size: 20px; } }
+        font-size: 24px; } }
 
 body,
 html {
@@ -2818,6 +2826,20 @@ body.scrolled .hamburger-oud {
       @media all and (max-width: 767px) {
         .hero-scroll .bar {
           height: 50px; } }
+  .hero-f1 {
+    height: auto;
+    min-height: calc(100vh - 90px);
+    padding: 120px 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .hero-f1 .content {
+      z-index: 10;
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 100%; }
   .hero-fullscreen, .hero-video {
     height: calc(100vh - 90px);
     min-height: 600px;

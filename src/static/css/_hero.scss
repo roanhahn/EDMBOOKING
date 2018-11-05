@@ -168,6 +168,24 @@
 	}
 
 
+	&-f1{
+		height: auto;
+		min-height: calc(100vh - #{$header-height});
+		padding: 120px 0 !important;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		& .content{
+			z-index: 10;
+			flex-grow: 1;
+        	flex-shrink: 0;
+			width: 100%;
+		}
+	}
+
 
 
 	&-fullscreen,

@@ -660,7 +660,7 @@ $(window).resize(function() {
 
 $("#slider1").sliderResponsive({
 // Using default everything
-slidePause: 4000,
+slidePause: 5000,
 fadeSpeed: 1000,
 autoPlay: "on",
 showArrows: "off",

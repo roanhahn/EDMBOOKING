@@ -1,5 +1,5 @@
 /*!
-* EDMBOOKING THEME
+* FORMULA ONE THEME
 * Copyright (c) 2018 EDMBOOKING.com
 */
 
@@ -287,7 +287,7 @@ $placeholder-color: #95a5a6;
 
 .f1-agenda{
     // margin-top: 60px;
-    padding: 60px 15px 0 15px;
+    padding: 60px 15px 60px 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -322,8 +322,13 @@ $placeholder-color: #95a5a6;
         background: rgba(0,0,0,.4);
         padding: 15px;
         flex-grow: 1;
+        flex-shrink: 0;
 
     }
+
+     @media all and (max-width: $breakpoint-mobile) {
+        flex-basis: 40%;
+     }
 
     &:last-child{
         border-right: none;
@@ -374,11 +379,16 @@ $placeholder-color: #95a5a6;
             font-size: 16px;
             margin-bottom: 10px;
          }
+
+         @media all and (max-width: $breakpoint-mobile) {
+            font-size: 14px;
+            margin-bottom: 10px;
+         }
     }
 
     & .date{
         font-weight: 700;
-        font-size: 28px;
+        font-size: 32px;
 
         & span{
             display: block;
@@ -388,7 +398,7 @@ $placeholder-color: #95a5a6;
         }
 
          @media all and (max-width: $breakpoint-tablet) {
-            font-size: 20px;
+            font-size: 24px;
          }
     }
 }
