@@ -56,7 +56,7 @@
     width: 130px;
     overflow: hidden; } }
 .yourbooking {
-  background: #f2f2f2 url(../img/formulaone/bg-mybooking.jpg) center bottom/cover no-repeat scroll !important; }
+  background: #f2f2f2 url(../img/sportstadion/bg-mybooking.jpg) center bottom/cover no-repeat scroll !important; }
 
 .hero h1.hero-event-title {
   font-size: 55px !important; }
@@ -420,7 +420,7 @@ h3.extras {
       font-size: 14px; } }
 
 .testimonials {
-  background: #CF2D1E url(../img/formulaone/testimonials.jpg) center center/cover no-repeat scroll;
+  background: #CF2D1E url(../img/sportstadion/testimonials.jpg) center center/cover no-repeat scroll;
   color: #fff; }
   @media all and (max-width: 992px) {
     .testimonials {
@@ -903,13 +903,13 @@ h3.extras {
     line-height: 1;
     font-size: 18px;
     font-weight: 600;
-    background: transparent url(../img/formulaone/plus.svg) no-repeat center right;
+    background: transparent url(../img/sportstadion/plus.svg) no-repeat center right;
     background-size: 20px auto; }
     @media (max-width: 767px) {
       .info-list-question {
         font-size: 14px; } }
     .info-list-question.active {
-      background: transparent url(../img/formulaone/minus.svg) no-repeat center right;
+      background: transparent url(../img/sportstadion/minus.svg) no-repeat center right;
       background-size: 20px auto; }
   .info-list-answer {
     display: none;
@@ -1029,7 +1029,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: transparent url(../img/formulaone/rolling.gif) center center no-repeat scroll;
+  background: transparent url(../img/sportstadion/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -1753,7 +1753,7 @@ button {
       -ms-transform: translate(0%, -50%);
       -webkit-transform: translate(0%, -50%);
       transform: translate(0%, -50%);
-      background: transparent url("../img/formulaone/spinner.gif") no-repeat center center scroll;
+      background: transparent url("../img/sportstadion/spinner.gif") no-repeat center center scroll;
       background-size: cover; }
   .button--next:after {
     content: "\f105";
