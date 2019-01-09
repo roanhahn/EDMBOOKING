@@ -5,7 +5,7 @@ layout: default.hbs
 ---
 
 
-<div class="hero hero-event hero--blue" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
+<div class="hero hero-event hero--blue d-none" style="background-image: url(assets/img/{{site.theme}}/eventheader.jpg)">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -86,8 +86,7 @@ layout: default.hbs
 								<td><input type="text" class="form-control textfield" id="city" value="Eindhoven" required="required"></td>
 							</tr>
 							<tr>
-								<td></td>
-								<td><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button></td>
+								<td colspan="2"><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button></td>
 							</tr>
 {{!-- 						<tr>
 							<td><label>Bookingcode</label></td>
@@ -97,6 +96,7 @@ layout: default.hbs
 
 				</form>
 			</div>
+			<!--
 			<h3><a id="account" class="anchor"></a>Create an account (optional)</h3>
 			<div class="content">
 				<form>
@@ -136,6 +136,7 @@ layout: default.hbs
 					</div>
 				</form>
 			</div>
+		-->
 			<h3><a id="guestdetails" class="anchor"></a>Edit guest(s) details</h3>
 			<div class="content">
 				<form>
@@ -164,10 +165,7 @@ layout: default.hbs
 							</td>
 						</tr>
 						<tr>
-							<td></td>
-							<td>
-								<button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button>
-							</td>
+							<td colspan="2"><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save details</button></td>
 						</tr>
 					</table>
 					{{!-- <button type="submit" class="button button-primary button-primary--small button--mobileblock m-t-30"><i class="fa fa-check" aria-hidden="true"></i>Save</button> --}}
@@ -193,7 +191,7 @@ layout: default.hbs
 								</div>
 							</div>
 						</td>
-						<td class="text-right price">€62.00</td>
+						<td class="text-right price">€0.00</td>
 					</tr>
 					<tr>
 						<td>
@@ -211,14 +209,14 @@ layout: default.hbs
 								</div>
 							</div>
 						</td>
-						<td class="text-right price">€162.00</td>
+						<td class="text-right price">€80.00</td>
 					</tr>
 				</table>
 
 
 
 				<div class="alert alert-warning m-t-30">Changing your ticket can have effect on your total package price.</div>
-				<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-lock" aria-hidden="true"></i>Proceed to checkout - &euro;80</button>
+				<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-check" aria-hidden="true"></i>Save upgrade</button>
 			</div>
 			<h3><a id="myextras" class="anchor"></a>Your selected extras</h3>
 			<div class="content">
@@ -325,7 +323,7 @@ layout: default.hbs
 
 
 						<div class="alert alert-warning m-t-30">Changing your extras can have effect on your total package price.</div>
-						<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-lock" aria-hidden="true"></i>Proceed to checkout - &euro;100</button>
+						<button type="submit" class="button button-primary button--mobileblock m-t-10"><i class="fa fa-check" aria-hidden="true"></i>Save upgrade</button>
 					</div>
 					<h3><a id="mystay" class="anchor"></a>Your hotel information</h3>
 					<div class="content">
@@ -373,20 +371,12 @@ layout: default.hbs
 									<td colspan="2">CODE</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td colspan="2"><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save dates</button></td>
+									<td><button type="submit" class="button button-primary button--mobileblock m-t-20"><i class="fa fa-check" aria-hidden="true"></i>Save dates</button></td>
+									<td colspan="2"></td>
 								</tr>
 							</table>
 
 						</form>
-					</div>
-					<div class="content">
-						<table class="total">
-							<tr>
-								<td>Total price</td>
-								<td class="text-right">&euro;212.60</td>
-							</tr>
-						</table>
 					</div>
 				</div>
 			</div>

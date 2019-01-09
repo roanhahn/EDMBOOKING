@@ -1,5 +1,27 @@
 @charset "UTF-8";
 /* Default Variables */
+/**
+ * These values will not show up in content, but can be
+ * queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+@import url(_t-datepicker-blue.css);
+body:before {
+  content: "mobile";
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+@media (min-width: 768px) {
+  body:before {
+    content: "tablet"; } }
+@media (min-width: 992px) {
+  body:before {
+    content: "desktop"; } }
 /* Theme EDMBOOKING Variables */
 /* Theme Martin Garrix ADE Variables */
 /* Theme New Horizons */
@@ -9,14 +31,18 @@
 /* Theme ASOT */
 /* DEMO CAMPING */
 /* Theme F1  */
+/* Theme EDMSTERDAM  */
 /*!
-* FORMULA ONE THEME
-* Copyright (c) 2018 EDMBOOKING.com
-*/
+ * EDMSTERDAM THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
 /* Regular font */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
 /* Header font */
+@font-face {
+  font-family: 'EDMSTERDAM';
+  src: url("../font/edmsterdam/EDMSTERDAM-Bold.eot?#iefix") format("embedded-opentype"), url("../font/edmsterdam/EDMSTERDAM-Bold.otf") format("opentype"), url("../font/edmsterdam/EDMSTERDAM-Bold.woff") format("woff"), url("../font/edmsterdam/EDMSTERDAM-Bold.ttf") format("truetype"), url("../font/edmsterdam/EDMSTERDAM-Bold.svg#EDMSTERDAM-Bold") format("svg");
+  font-weight: normal !important;
+  font-style: normal; }
 /* FOLDER */
 /* BODY */
 /* FONTS */
@@ -24,11 +50,20 @@
 /* Google Maps */
 /* FILTERS */
 /* BUTTONS */
-/* BACK BUTTON */
+.button {
+  letter-spacing: 0 !important; }
+
+.button-primary {
+  border: 2px solid #000 !important; }
+
+/* BACK BUTTO5 */
 /* FAQ */
 /* SECONDARY BUTTON */
 /* HEADER */
 /* HERO */
+.hero-button {
+  font-size: 18px !important; }
+
 /* Testimonials */
 /* STEPS */
 /* OFFERS */
@@ -36,135 +71,21 @@
 /* Footer */
 /* COOKIES */
 /* FORMS */
-@import url(_t-datepicker-blue.css);
-.cookies {
-  left: 0px !important;
-  bottom: 0px !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important; }
-  @media all and (max-width: 767px) {
-    .cookies {
-      left: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      right: 0px;
-      bottom: 0px !important; } }
+.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step, .h2-section, .h3, .yourbooking h3 {
+  font-weight: 400 !important; }
 
-@media all and (max-width: 992px) {
-  .logo {
-    width: 130px;
-    overflow: hidden; } }
-.yourbooking {
-  background: #f2f2f2 url(../img/sportstadion/bg-mybooking.jpg) center bottom/cover no-repeat scroll !important; }
+.h4, .form-label {
+  font-family: "edmsterdam", sans-serif;
+  font-weight: 400 !important; }
 
-.hero h1.hero-event-title {
-  font-size: 55px !important; }
-  @media all and (max-width: 992px) {
-    .hero h1.hero-event-title {
-      font-size: 45px !important; } }
-  @media all and (max-width: 767px) {
-    .hero h1.hero-event-title {
-      font-size: 30px !important; } }
+.payoff {
+  padding-bottom: 70px; }
 
-.flexbuttons a {
-  max-width: 320px !important; }
+.partners {
+  display: none; }
 
 .t-check-out {
-  border-left-width: 1px !important; }
-
-#footer {
-  padding: 120px 0; }
-  #footer .partners {
-    display: none; }
-  #footer h4 {
-    margin-bottom: 40px; }
-  #footer ul li {
-    margin-bottom: 20px; }
-
-.f1-agenda {
-  padding: 60px 15px 60px 15px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch; }
-  @media all and (max-width: 992px) {
-    .f1-agenda {
-      padding-top: 20px; } }
-
-.event-info-item img {
-  border-radius: 10px; }
-
-.f1-event {
-  font-size: 18px;
-  padding: 0 20px;
-  margin: 0 0 50px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 200px;
-  color: #fff;
-  border-right: 1px solid rgba(255, 255, 255, 0.8); }
-  @media all and (max-width: 992px) {
-    .f1-event {
-      flex-basis: 30%;
-      margin: 2px;
-      border-right: none;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 15px;
-      flex-grow: 1;
-      flex-shrink: 0; } }
-  @media all and (max-width: 767px) {
-    .f1-event {
-      flex-basis: 40%; } }
-  .f1-event:last-child {
-    border-right: none; }
-  .f1-event-content {
-    -ms-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    transition: transform .3s ease-out 0s;
-    -webkit-transition: transform .3s ease-out 0s; }
-  .f1-event:hover {
-    color: #CF2D1E; }
-    .f1-event:hover .f1-event-content {
-      -ms-transform: scale(1.2, 1.2);
-      -webkit-transform: scale(1.2, 1.2);
-      transform: scale(1.2, 1.2); }
-  .f1-event .flag {
-    margin-bottom: 10px; }
-  .f1-event .flag img {
-    border-radius: 5px;
-    overflow: hidden;
-    width: 70px; }
-    @media all and (max-width: 992px) {
-      .f1-event .flag img {
-        width: 45px; } }
-  .f1-event .country {
-    display: block;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 24px; }
-    @media all and (max-width: 992px) {
-      .f1-event .country {
-        font-size: 16px;
-        margin-bottom: 10px; } }
-    @media all and (max-width: 767px) {
-      .f1-event .country {
-        font-size: 14px;
-        margin-bottom: 10px; } }
-  .f1-event .date {
-    font-weight: 700;
-    font-size: 32px; }
-    .f1-event .date span {
-      display: block;
-      color: #949498;
-      font-size: 16px;
-      text-transform: uppercase; }
-    @media all and (max-width: 992px) {
-      .f1-event .date {
-        font-size: 24px; } }
+  border-left-width: 1 !important; }
 
 body,
 html {
@@ -179,21 +100,21 @@ html {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #CF2D1E; }
+  background: #000; }
 
 ::selection {
   color: #fff;
-  background: #CF2D1E; }
+  background: #000; }
 
 body {
   background: #fff;
-  color: #15151e;
+  color: #000;
   padding: 0;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   position: relative;
   overflow-x: hidden;
@@ -219,12 +140,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Titillium Web", sans-serif; }
+  font-family: "EDMSTERDAM", sans-serif; }
 
 a {
-  color: #CF2D1E; }
+  color: #000; }
   a:hover {
-    color: #CF2D1E; }
+    color: #000; }
 
 a,
 a:hover,
@@ -237,16 +158,16 @@ a:active {
 .text-link,
 .page a {
   text-decoration: underline;
-  color: #CF2D1E; }
+  color: #000; }
   .text-link:hover,
   .page a:hover {
-    color: #CF2D1E;
+    color: #000;
     text-decoration: underline; }
 
 .h1 {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
-  color: #CF2D1E;
+  color: #000;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -258,8 +179,8 @@ a:active {
 
 .h1-404 {
   font-size: 90px;
-  color: #CF2D1E;
-  font-family: "Titillium Web", sans-serif;
+  color: #000;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 400;
   margin-bottom: 30px; }
   @media all and (max-width: 992px) {
@@ -275,7 +196,7 @@ a:active {
   margin-bottom: 30px; }
 
 .icon404 #icon {
-  fill: #CF2D1E; }
+  fill: #000; }
 
 .page h4 {
   font-weight: 700;
@@ -291,11 +212,11 @@ a:active {
 .page-h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "Titillium Web", sans-serif;
-  color: #15151e;
+  font-family: "EDMSTERDAM", sans-serif;
+  color: #000;
   margin: 0 0 30px;
   padding: 0 0 30px;
-  border-bottom: 2px solid #D5D5D5;
+  border-bottom: 2px solid #f3eeee;
   font-size: 32px; }
   @media all and (max-width: 992px) {
     .page-h1 {
@@ -307,14 +228,14 @@ a:active {
       margin-bottom: 15px; } }
 
 .h2 {
-  color: #CF2D1E;
+  color: #000;
   font-size: 20px; }
   @media all and (max-width: 767px) {
     .h2 {
       font-size: 16px; } }
   .h2-section {
-    color: #15151e;
-    font-family: "Titillium Web", sans-serif;
+    color: #000;
+    font-family: "EDMSTERDAM", sans-serif;
     font-weight: 800;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -332,17 +253,17 @@ a:active {
 .h3 {
   text-transform: uppercase;
   font-weight: 700;
-  color: #15151e;
-  font-family: "Titillium Web", sans-serif;
+  color: #000;
+  font-family: "EDMSTERDAM", sans-serif;
   margin-bottom: 20px;
   font-size: 24px; }
   .h3--textcolor {
-    color: #15151e; }
+    color: #000; }
   .h3--lined {
-    border-bottom: 2px solid #D5D5D5;
+    border-bottom: 2px solid #f3eeee;
     padding-bottom: 10px; }
   .h3--room {
-    color: #CF2D1E; }
+    color: #000; }
   .h3--eventinfo {
     font-size: 24px; }
   @media all and (max-width: 767px) {
@@ -353,12 +274,12 @@ a:active {
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 30px;
-    font-family: "Titillium Web", sans-serif; }
+    font-family: "EDMSTERDAM", sans-serif; }
     .h3--big span {
       display: block;
       font-size: 16px;
       font-weight: 700;
-      font-family: "Titillium Web", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     @media all and (max-width: 767px) {
       .h3--big {
         font-size: 22px;
@@ -368,14 +289,14 @@ h3.extras {
   font-size: 32px;
   padding: 15px 0;
   display: inline-block;
-  font-family: "Titillium Web", sans-serif;
-  color: #15151e;
+  font-family: "EDMSTERDAM", sans-serif;
+  color: #000;
   font-weight: 800;
   text-transform: uppercase; }
   h3.extras small {
     display: block;
     font-size: 16px;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: none; }
   @media all and (max-width: 767px) {
     h3.extras {
@@ -392,19 +313,19 @@ h3.extras {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #15151e; }
+  color: #000; }
 
 .h5 {
   font-weight: 500 !important;
   font-size: 18px !important;
   text-transform: none !important;
   margin-bottom: 30px !important;
-  color: #15151e !important;
-  font-family: "Titillium Web", sans-serif !important; }
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important; }
 
 .hr {
   height: 1px;
-  background: #D5D5D5;
+  background: #f3eeee;
   line-height: 0;
   border: none;
   margin: 30px 0; }
@@ -412,7 +333,7 @@ h3.extras {
 .testimonials-h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
   @media all and (max-width: 767px) {
@@ -420,8 +341,8 @@ h3.extras {
       font-size: 14px; } }
 
 .testimonials {
-  background: #CF2D1E url(../img/sportstadion/testimonials.jpg) center center/cover no-repeat scroll;
-  color: #fff; }
+  background: #fff;
+  color: #000; }
   @media all and (max-width: 992px) {
     .testimonials {
       background-attachment: scroll; } }
@@ -429,8 +350,8 @@ h3.extras {
     max-width: 970px;
     margin: 0 auto; }
   .testimonials-title {
-    font-family: "Titillium Web", sans-serif;
-    color: #fff;
+    font-family: "EDMSTERDAM", sans-serif;
+    color: #000;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 40px;
@@ -447,11 +368,11 @@ h3.extras {
     display: block;
     font-size: 14px;
     line-height: 1.2;
-    color: #fff; }
+    color: #000; }
   .testimonials .owl-theme .owl-dots .owl-dot.active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: #15151e; }
+    background: #999; }
   .testimonials .owl-theme .owl-dots .owl-dot span {
-    background: #fff; }
+    background: #000; }
 
 .rolling {
   margin: 10px; }
@@ -461,7 +382,7 @@ h3.extras {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #fff;
+  stroke: #000;
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
 
@@ -472,12 +393,12 @@ h3.extras {
   display: inline;
   position: relative;
   stroke-width: 2;
-  stroke: #CF2D1E;
+  stroke: #fff;
   stroke-miterlimit: 10;
   margin: 0 10px 0 0;
   line-height: 0;
   vertical-align: middle;
-  box-shadow: inset 0px 0px 0px #fff;
+  box-shadow: inset 0px 0px 0px #000;
   animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
   @media all and (max-width: 767px) {
     .checkmark {
@@ -497,19 +418,19 @@ h3.extras {
 
 @keyframes cross {
   100% {
-    fill: #CF2D1E; } }
+    fill: #fff; } }
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0; } }
 @keyframes scale {
   0%,
-    100% {
+	100% {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #fff; } }
+    box-shadow: inset 0px 0px 0px 30px #000; } }
 .checkmark-succes {
   width: 50px;
   height: 50px;
@@ -536,7 +457,7 @@ h3.extras {
     stroke-dashoffset: 0; } }
 @keyframes scale {
   0%,
-    100% {
+	100% {
     transform: none; }
   50% {
     transform: scale3d(1.1, 1.1, 1); } }
@@ -552,22 +473,22 @@ h3.extras {
 .succes {
   text-align: center; }
   .succes h3 {
-    color: #15151e;
+    color: #000;
     font-weight: 900; }
   .succes-icon {
     width: 120px;
     margin-bottom: 30px; }
     .succes-icon #circle {
-      fill: #CF2D1E; }
+      fill: #000; }
     .succes-icon #check {
-      stroke: #CF2D1E; }
+      stroke: #000; }
     @media (max-width: 767px) {
       .succes-icon {
         width: 75px; } }
   .succes table {
     margin: 20px auto;
-    border-top: 1px solid #D5D5D5;
-    border-bottom: 1px solid #D5D5D5;
+    border-top: 1px solid #f3eeee;
+    border-bottom: 1px solid #f3eeee;
     padding: 0;
     width: 100%; }
     .succes table tbody {
@@ -583,15 +504,15 @@ h3.extras {
         width: 130px !important; }
 
 .my-package {
-  color: #CF2D1E;
+  color: #000;
   font-size: 22px; }
   .my-package .form-label {
-    color: #CF2D1E !important; }
+    color: #000 !important; }
   @media (max-width: 767px) {
     .my-package {
       font-size: 16px; } }
   .my-package-total {
-    border-top: 1px solid #CF2D1E;
+    border-top: 1px solid #000;
     font-weight: 800;
     text-transform: uppercase;
     margin: 15px 0 0 0;
@@ -607,7 +528,7 @@ h3.extras {
 .myBooking-header {
   background: #e6e6e6;
   padding: 15px 20px;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -633,7 +554,7 @@ h3.extras {
   position: relative;
   color: #fff; }
   .myBooking-hero .hero-title {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "EDMSTERDAM", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
@@ -675,7 +596,7 @@ h3.extras {
     background-position: top left;
     z-index: 1;
     background-blend-mode: multiply;
-    background-color: rgba(0, 155, 255, 0); }
+    background-color: rgba(0, 0, 0, 0.2); }
 .myBooking-h1 {
   font-size: 18px;
   font-weight: 700;
@@ -683,13 +604,13 @@ h3.extras {
 .myBooking .content {
   padding: 20px 0;
   margin-bottom: 30px;
-  border-bottom: 1px solid #D5D5D5; }
+  border-bottom: 1px solid #f3eeee; }
 .myBooking .rule {
   height: 2px;
   background: #000; }
 .myBooking h3 {
-  color: #15151e;
-  font-family: "Titillium Web", sans-serif;
+  color: #000;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
@@ -718,16 +639,25 @@ h3.extras {
     @media all and (max-width: 767px) {
       .myBooking table.total td {
         font-size: 18px; } }
+  .myBooking table .newprice {
+    padding-top: 20px; }
+  .myBooking table .smalltext td {
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3eeee;
+    margin-bottom: 10px; }
   .myBooking table a {
     font-weight: 800; }
 
 #output {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 900;
   font-size: 120px; }
 
 .animatelogo {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 900;
   font-size: 120px;
   overflow: hidden;
@@ -744,7 +674,7 @@ h3.extras {
   top: -12px; }
 
 .edmloader {
-  color: #CF2D1E;
+  color: #000;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase; }
@@ -766,12 +696,12 @@ h3.extras {
       height: 60px; } }
 
 .myloader #pause {
-  fill: #CF2D1E; }
+  fill: #000; }
 
 .myloader circle {
   stroke-dasharray: 10, 84;
   animation: stroke 1.5s ease infinite;
-  stroke: #CF2D1E; }
+  stroke: #000; }
 
 @keyframes stroke {
   50% {
@@ -801,14 +731,14 @@ h3.extras {
   width: 160px;
   height: 160px;
   margin-bottom: 0px;
-  background: #000;
+  background: #fff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  border: 10px solid #000;
+  border: 10px solid #fff;
   overflow: hidden; }
   .loaderplane #pause, .loaderplane #aircraft {
-    fill: #CF2D1E; }
+    fill: #000; }
   @media all and (max-width: 992px) {
     .loaderplane {
       width: 100px;
@@ -821,7 +751,7 @@ h3.extras {
 .loaderplane .mask {
   transform-origin: 50% 50%;
   transform: rotate(90deg);
-  fill: #000;
+  fill: #fff;
   animation: mask 1.5s ease-out 0s infinite; }
 
 .loaderplane circle {
@@ -831,7 +761,7 @@ h3.extras {
   animation-fill-mode: forwards;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: #CF2D1E; }
+  stroke: #000; }
 
 @keyframes loading {
   50% {
@@ -853,6 +783,32 @@ h3.extras {
   display: block;
   content: ""; }
 
+.needhelp .helplinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media all and (max-width: 767px) {
+    .needhelp .helplinks {
+      flex-direction: column; } }
+  .needhelp .helplinks a {
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1.2; }
+    .needhelp .helplinks a:hover {
+      text-decoration: underline; }
+    .needhelp .helplinks a:before {
+      content: "\f2b7";
+      font-family: "FontAwesome";
+      display: inline-block;
+      margin: 0 5px 0 0;
+      width: 25px;
+      text-align: center; }
+    .needhelp .helplinks a.phone:before {
+      content: "\f095"; }
+    .needhelp .helplinks a.whatsapp:before {
+      content: "\f232"; }
+
 .info-labels {
   display: flex;
   flex-wrap: wrap;
@@ -866,12 +822,12 @@ h3.extras {
     flex-shrink: 0;
     list-style-type: none;
     margin: 0 15px 15px 0;
-    background: #CF2D1E !important;
+    background: #000 !important;
     color: #fff !important; }
     .info-labels li:last-child {
       margin-right: 0; }
     .info-labels li:hover {
-      background: #000 !important;
+      background: #6EB3C3 !important;
       color: #fff !important; }
     @media (max-width: 767px) {
       .info-labels li {
@@ -887,8 +843,8 @@ h3.extras {
   font-weight: 800;
   padding-top: 15px;
   font-size: 24px;
-  font-family: "Titillium Web", sans-serif;
-  color: #15151e;
+  font-family: "EDMSTERDAM", sans-serif;
+  color: #000;
   margin-bottom: 20px; }
 
 .info-list {
@@ -896,20 +852,20 @@ h3.extras {
   margin: 0;
   padding: 0; }
   .info-list-item {
-    border-bottom: 1px solid #D5D5D5; }
+    border-bottom: 1px solid #f3eeee; }
   .info-list-question {
     cursor: pointer;
     padding: 15px 15px 15px 0;
     line-height: 1;
     font-size: 18px;
     font-weight: 600;
-    background: transparent url(../img/sportstadion/plus.svg) no-repeat center right;
+    background: transparent url(../img/edmsterdam/plus.svg) no-repeat center right;
     background-size: 20px auto; }
     @media (max-width: 767px) {
       .info-list-question {
         font-size: 14px; } }
     .info-list-question.active {
-      background: transparent url(../img/sportstadion/minus.svg) no-repeat center right;
+      background: transparent url(../img/edmsterdam/minus.svg) no-repeat center right;
       background-size: 20px auto; }
   .info-list-answer {
     display: none;
@@ -937,10 +893,10 @@ h3.extras {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    color: #CF2D1E; }
+    color: #000; }
   .loader-bar {
     height: 10px;
-    background: #CF2D1E;
+    background: #000;
     width: 0px;
     -webkit-animation: move 30s ease-in-out infinite;
     -moz-animation: move 30s ease-in-out infinite;
@@ -1029,7 +985,7 @@ h3.extras {
   height: 0px;
   overflow: hidden;
   position: relative;
-  background: transparent url(../img/sportstadion/rolling.gif) center center no-repeat scroll;
+  background: transparent url(../img/edmsterdam/rolling.gif) center center no-repeat scroll;
   background-size: 16px auto; }
   .img-container img {
     position: absolute;
@@ -1066,15 +1022,16 @@ h3.extras {
     padding-bottom: 133%; }
     .sm-ratio-3-4 img {
       width: auto;
-      height: 100%; } }
+      height: 100%;
+      max-width: none !important; } }
 .event-info-item .img-container img {
   height: 100%; }
 
 .b-lazy {
-  -webkit-transition: opacity 500ms ease-in-out;
-  -moz-transition: opacity 500ms ease-in-out;
-  -o-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
   max-width: 100%;
   opacity: 0; }
 
@@ -1084,6 +1041,9 @@ h3.extras {
 .gallery {
   margin-bottom: 30px;
   position: relative; }
+
+.img-fluid {
+  width: 100%; }
 
 .my-next-button, .my-prev-button {
   background: rgba(0, 0, 0, 0.4);
@@ -1102,15 +1062,29 @@ h3.extras {
   text-align: ceter;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
-  border-radius: 100px; }
+  border-radius: 100px;
+  padding: 0px; }
   @media all and (max-width: 767px) {
     .my-next-button, .my-prev-button {
-      display: none; } }
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      right: 5px;
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%); } }
   .my-next-button:hover, .my-prev-button:hover {
     background: rgba(0, 0, 0, 0.8); }
   .my-next-button:before, .my-prev-button:before {
     content: "\f054";
-    font-family: "FontAwesome"; }
+    font-family: "FontAwesome";
+    text-align: center;
+    display: inline-block;
+    width: 50px; }
+    @media all and (max-width: 767px) {
+      .my-next-button:before, .my-prev-button:before {
+        width: 30px; } }
 
 .my-prev-button {
   left: 15px;
@@ -1118,6 +1092,9 @@ h3.extras {
   .my-prev-button:before {
     content: "\f053";
     font-family: "FontAwesome"; }
+  @media all and (max-width: 767px) {
+    .my-prev-button {
+      left: 5px; } }
 
 .ribbon {
   width: 120px;
@@ -1141,7 +1118,7 @@ h3.extras {
     width: 169px;
     font-size: 13px;
     font-weight: 700;
-    background-color: #CF2D1E;
+    background-color: #000;
     color: #fff;
     text-transform: uppercase; }
   @media all and (max-width: 767px) {
@@ -1172,6 +1149,9 @@ h3.extras {
     background: rgba(0, 0, 0, 0.5);
     content: "";
     z-index: 1; }
+
+#Smallchat iframe {
+  z-index: 90 !important; }
 
 .section {
   padding: 70px 0;
@@ -1298,7 +1278,7 @@ h3.extras {
 
 .payment-method {
   display: block;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #f3eeee;
   padding: 10px 0;
   vertical-align: middle;
   line-height: 32px;
@@ -1335,7 +1315,7 @@ h3.extras {
   align-self: auto; }
   .event-info-item:after {
     content: "";
-    border-bottom: 2px solid #D5D5D5;
+    border-bottom: 2px solid #f3eeee;
     display: block;
     width: calc(100% - 30px);
     position: absolute;
@@ -1372,7 +1352,7 @@ h3.extras {
       line-height: 1.6; }
 
 .googleMaps, .hotel-information {
-  color: #CF2D1E; }
+  color: #000; }
   .googleMaps #map, .hotel-information #map {
     width: 100%;
     height: 300px;
@@ -1387,13 +1367,13 @@ h3.extras {
       font-size: 14px; } }
 
 .showMap {
-  border-left: 1px solid #CF2D1E;
+  border-left: 1px solid #000;
   margin-left: 7px;
   padding-left: 10px;
   cursor: pointer; }
 
 .rating-wrapper {
-  color: #CF2D1E;
+  color: #000;
   font-size: 15px;
   margin-bottom: 20px; }
   @media all and (max-width: 992px) {
@@ -1407,7 +1387,7 @@ h3.extras {
 .rating {
   display: inline-block;
   margin-top: 5px;
-  border-right: 1px solid #CF2D1E;
+  border-right: 1px solid #000;
   margin-right: 7px; }
   @media all and (max-width: 767px) {
     .rating--overview {
@@ -1419,7 +1399,7 @@ h3.extras {
     margin-right: 10px; }
 
 .detail-price {
-  color: #CF2D1E;
+  color: #000;
   font-size: 32px;
   margin: 0 0 5px; }
   @media all and (max-width: 992px) {
@@ -1430,7 +1410,7 @@ h3.extras {
       display: inline-block; } }
 
 .detail-price-conditions {
-  color: #CF2D1E;
+  color: #000;
   font-size: 16px;
   margin-bottom: 20px; }
   @media all and (max-width: 767px) {
@@ -1468,7 +1448,7 @@ h3.extras {
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
-  color: #CF2D1E; }
+  color: #000; }
   .extra-add {
     position: relative; }
   .extra-number {
@@ -1486,7 +1466,7 @@ h3.extras {
         max-width: 100px;
         height: 30px; } }
     .extra-number .manage-button {
-      background: #CF2D1E;
+      background: #000;
       color: #fff;
       height: 44px;
       width: 44px;
@@ -1516,7 +1496,7 @@ h3.extras {
       font-size: 18px;
       line-height: 44px;
       font-weight: 800;
-      font-family: "Titillium Web", sans-serif; }
+      font-family: "EDMSTERDAM", sans-serif; }
       @media all and (max-width: 992px) {
         .extra-number-items {
           height: 30px;
@@ -1524,7 +1504,7 @@ h3.extras {
           font-size: 13px; } }
   .extra-listitem {
     font-size: 30px;
-    border-bottom: 1px solid #D5D5D5;
+    border-bottom: 1px solid #f3eeee;
     padding: 10px 0; }
     @media all and (max-width: 992px) {
       .extra-listitem {
@@ -1537,7 +1517,7 @@ h3.extras {
     font-weight: normal; }
   .extra-btn {
     background: none;
-    color: #CF2D1E;
+    color: #000;
     padding: 0;
     display: inline-block;
     margin-right: 10px;
@@ -1565,11 +1545,11 @@ h3.extras {
     .extra-btn-icon {
       display: inline-block; }
     .extra-btn:hover {
-      color: #15151e; }
+      color: #000; }
       .extra-btn:hover:before {
         content: ""; }
     .extra-btn--ticket:hover {
-      color: #15151e; }
+      color: #000; }
       .extra-btn--ticket:hover:before {
         content: "\f145"; }
   .extra-title {
@@ -1599,8 +1579,8 @@ h3.extras {
       line-height: 30px;
       padding: 0; } }
   .extra-details {
-    font-size: 16px;
-    color: #15151e;
+    font-size: 14px;
+    color: #000;
     margin: 10px 0 0 0;
     display: none; }
     .extra-details img {
@@ -1617,7 +1597,7 @@ h3.extras {
 
 .whybook-h2 {
   font-weight: 700;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   margin-bottom: 50px; }
@@ -1638,8 +1618,8 @@ h3.extras {
   width: 140px;
   height: 140px;
   text-align: center;
-  background: #CF2D1E;
-  border: 3px solid #CF2D1E;
+  background: #6EB3C3;
+  border: 3px solid #6EB3C3;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1673,9 +1653,9 @@ h3.extras {
   width: 100px;
   height: 100px;
   line-height: 84px;
-  border: 8px solid #CF2D1E;
-  color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  border: 8px solid #6EB3C3;
+  color: #6EB3C3;
+  font-family: "EDMSTERDAM", sans-serif;
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 30px; }
@@ -1688,8 +1668,8 @@ h3.extras {
     .whybook p {
       padding: 0px; } }
 .whybook-heading {
-  font-family: "Titillium Web", sans-serif;
-  color: #15151e;
+  font-family: "EDMSTERDAM", sans-serif;
+  color: #000;
   text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 10px;
@@ -1729,8 +1709,8 @@ button {
   box-shadow: none !important;
   cursor: pointer !important;
   display: inline-block;
-  font-family: "Prompt", sans-serif;
-  font-size: 17px;
+  font-family: "edmsterdam", sans-serif;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
   outline: 0;
@@ -1753,7 +1733,7 @@ button {
       -ms-transform: translate(0%, -50%);
       -webkit-transform: translate(0%, -50%);
       transform: translate(0%, -50%);
-      background: transparent url("../img/sportstadion/spinner.gif") no-repeat center center scroll;
+      background: transparent url("../img/edmsterdam/spinner.gif") no-repeat center center scroll;
       background-size: cover; }
   .button--next:after {
     content: "\f105";
@@ -1764,15 +1744,15 @@ button {
     .button {
       font-size: 13px; } }
   .button-primary {
-    background: #CF2D1E;
-    color: #fff;
+    background: #fff;
+    color: #000;
     padding: 13px 25px;
     white-space: nowrap;
     line-height: 1;
     text-transform: uppercase;
     min-width: 150px;
     border: none;
-    border-radius: 4px; }
+    border-radius: 0px; }
     .button-primary:hover {
       background: #000;
       color: #fff; }
@@ -1789,11 +1769,11 @@ button {
       .button-primary {
         font-size: 13px; } }
     .button-primary--inverted {
-      background: #CF2D1E;
-      color: #fff; }
+      background: #fff;
+      color: #000; }
       .button-primary--inverted:hover {
         background: #fff;
-        color: #fff; }
+        color: #000; }
     .button-primary--small {
       padding: 10px 15px;
       font-size: 14px;
@@ -1810,7 +1790,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #CF2D1E;
+        background: #fff;
         content: ""; }
       .button-primary--effect:after {
         position: absolute;
@@ -1847,7 +1827,7 @@ button {
       padding-right: 0px; } }
   .button-hero {
     margin: 15px;
-    font-size: 24px;
+    font-size: 16px;
     width: 100%;
     max-width: 350px;
     padding: 30px;
@@ -1875,7 +1855,7 @@ button {
           margin-top: 5px; } }
     .button-hero .first-line {
       font-size: 26px;
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 700; }
       @media all and (max-width: 992px) {
         .button-hero .first-line {
@@ -1887,7 +1867,7 @@ button {
         display: block;
         width: 70px;
         height: 4px;
-        background: #CF2D1E;
+        background: #000;
         content: "";
         margin: 7px auto; }
     .button-hero:hover .first-line:after {
@@ -1895,7 +1875,7 @@ button {
     .button-hero .second-line {
       font-size: 18px;
       font-weight: 400;
-      font-family: "Titillium Web", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
       @media all and (max-width: 992px) {
         .button-hero .second-line {
           font-size: 16px; } }
@@ -1903,10 +1883,10 @@ button {
         .button-hero .second-line {
           font-size: 13px; } }
   .button-secondary {
-    border-radius: 4px;
-    background: #CF2D1E;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0);
     color: #fff;
-    border: none;
+    border: 2px solid #fff !important;
     padding: 15px 30px;
     font-size: 16px;
     text-transform: uppercase; }
@@ -1926,7 +1906,7 @@ button {
       color: #000;
       text-decoration: none;
       background: #fff;
-      border: none; }
+      border: 2px solid #fff !important; }
     .button-secondary--small {
       padding: 10px 15px;
       font-size: 10px;
@@ -1936,9 +1916,9 @@ button {
       color: #000 !important;
       border-color: #fff !important; }
       .button-secondary--inverted:hover {
-        background: #CF2D1E !important;
+        background: rgba(255, 255, 255, 0) !important;
         color: #fff !important;
-        border: none !important; }
+        border: 2px solid #fff !important !important; }
   .button-large {
     font-size: 30px;
     padding: 20px 40px; }
@@ -1958,7 +1938,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #CF2D1E;
+    background: #6EB3C3;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1976,11 +1956,11 @@ button {
       /* Safari */
       transform: translate(-50%, -50%); }
   .button-inversed {
-    border-color: #CF2D1E; }
+    border-color: #000; }
     .button-inversed:after {
       display: none; }
     .button-inversed:hover {
-      background: #CF2D1E; }
+      background: #000; }
   .button:visited, .button:active {
     text-decoration: none; }
   .button--back {
@@ -2005,9 +1985,9 @@ button {
   color: #000 !important;
   border: 2px solid #000 !important; }
   .page-back:hover {
-    background: #38383f !important;
+    background: #6EB3C3 !important;
     color: #fff !important;
-    border: 2px solid #38383f !important; }
+    border: 2px solid #6EB3C3 !important; }
 
 button,
 input {
@@ -2040,11 +2020,11 @@ button:focus {
   background: none;
   border: none;
   cursor: pointer;
-  color: #CF2D1E;
+  color: #000;
   padding: 0;
   line-height: 1.2; }
   .remove:hover {
-    color: #CF2D1E; }
+    color: #000; }
   .remove span {
     display: inline-block;
     margin-left: 5px; }
@@ -2056,14 +2036,14 @@ button:focus {
   background: none;
   padding: 0;
   font-size: 16px;
-  color: #15151e;
+  color: #000;
   font-weight: 700; }
   .readmore i {
     font-weight: normal; }
 
 .info-btn {
   background: none;
-  color: #CF2D1E;
+  color: #000;
   padding: 0;
   font-size: 18px;
   line-height: 0;
@@ -2076,7 +2056,7 @@ button:focus {
   padding: 0;
   cursor: pointer;
   background: transparent;
-  color: #CF2D1E;
+  color: #000;
   display: inline-block; }
 
 .flexbuttons {
@@ -2109,7 +2089,7 @@ button:focus {
   .flexbuttons .hero-button-subtitle {
     display: block;
     text-transform: none !important;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     margin-top: 0px;
     font-weight: 400; }
@@ -2123,10 +2103,10 @@ button:focus {
 .showmore {
   border: none;
   background: none;
-  color: #CF2D1E;
+  color: #000;
   display: inline-block;
-  border-radius: 4px;
-  font-family: "Prompt", sans-serif;
+  border-radius: 0px;
+  font-family: "edmsterdam", sans-serif;
   font-weight: 800;
   margin-left: 5px;
   padding: 0; }
@@ -2194,7 +2174,7 @@ button:focus {
   .hamburger:hover {
     opacity: 1; }
     .hamburger:hover .hamburger-inner, .hamburger:hover .hamburger-inner::before, .hamburger:hover .hamburger-inner::after {
-      background-color: #CF2D1E; }
+      background-color: #000; }
 
 body.scrolled .hamburger {
   -ms-transform: scale(0.7, 0.7);
@@ -2216,7 +2196,7 @@ body.scrolled .hamburger {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 6px;
-    background-color: #15151e;
+    background-color: #000;
     border-radius: 0px;
     position: absolute;
     transition-property: transform;
@@ -2259,15 +2239,15 @@ body.scrolled .hamburger {
 
 .header {
   background: #fff;
-  color: #15151e;
+  color: #000;
   height: 90px;
   position: relative;
   z-index: 100;
   -webkit-transition: all .2s ease-out 0s;
   transition: all .2s ease-out 0s;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
   @media all and (max-width: 767px) {
     .header {
       height: 50px; } }
@@ -2282,7 +2262,7 @@ body.scrolled .hamburger {
   line-height: 0; }
   .logo img {
     display: block;
-    height: 30px;
+    height: 25px;
     -webkit-transition: all .2s ease-out 0s;
     transition: all .2s ease-out 0s; }
     @media all and (max-width: 992px) {
@@ -2316,16 +2296,16 @@ body.scrolled .hamburger {
         background: none;
         padding: 0;
         position: relative;
-        color: #15151e;
-        font-family: "Titillium Web", sans-serif;
+        color: #000;
+        font-family: "EDMSTERDAM", sans-serif;
         font-weight: 700;
         text-transform: uppercase; }
         .mainnav .booking .language-button:hover {
-          color: #CF2D1E; }
+          color: #000; }
         .mainnav .booking .language-button span {
           display: block; }
           .mainnav .booking .language-button span:before {
-            content: "";
+            content: "";
             font-family: "FontAwesome";
             display: inline-block;
             font-weight: normal;
@@ -2350,7 +2330,7 @@ body.scrolled .hamburger {
         z-index: 10;
         top: 40px;
         left: -25px;
-        background: #15151e;
+        background: #000;
         padding: 10px 0;
         min-width: 170px;
         z-index: 100;
@@ -2377,7 +2357,7 @@ body.scrolled .hamburger {
               font-weight: 600;
               white-space: nowrap; }
               .mainnav .booking .language-selector ul li a:hover {
-                color: #CF2D1E; }
+                color: #999; }
             .mainnav .booking .language-selector ul li span {
               display: inline-block;
               vertical-align: middle;
@@ -2398,7 +2378,7 @@ body.scrolled .hamburger {
       vertical-align: middle;
       cursor: pointer; }
       .mainnav .booking-info:before {
-        content: "";
+        content: "";
         font-family: "FontAwesome";
         display: inline-block;
         font-weight: normal;
@@ -2407,9 +2387,9 @@ body.scrolled .hamburger {
           .mainnav .booking-info:before {
             margin-right: 3px; } }
       .mainnav .booking-info:hover {
-        color: #CF2D1E; }
+        color: #000; }
     .mainnav .booking-cart {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "EDMSTERDAM", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
       margin-right: 10px; }
@@ -2439,7 +2419,7 @@ body.scrolled .hamburger {
     .mainnav .hamburger-oud-close {
       background-position: -38px 0; }
     .mainnav .hamburger-oud:hover {
-      color: #CF2D1E; }
+      color: #000; }
     @media all and (max-width: 767px) {
       .mainnav .hamburger-oud {
         margin-left: 10px;
@@ -2464,12 +2444,12 @@ body.scrolled .hamburger {
   top: 90px;
   width: 400px;
   z-index: 99;
-  background: #CF2D1E;
-  color: #fff;
+  background: #000;
+  color: #666;
   padding: 40px 30px;
-  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s; }
   @media all and (max-width: 992px) {
@@ -2489,27 +2469,27 @@ body.scrolled .hamburger {
   .subnav a {
     color: #fff; }
     .subnav a:hover {
-      color: #15151e; }
+      color: #999; }
   .subnav .subnav-list {
     margin: 0;
     padding: 0;
     list-style-type: none; }
     .subnav .subnav-list li {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "EDMSTERDAM", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 20px;
       margin-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       padding-bottom: 10px; }
       .subnav .subnav-list li ul {
         margin: 10px 0 10px 0px;
         padding: 0;
         list-style-type: none; }
         .subnav .subnav-list li ul li {
-          font-family: "Titillium Web", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           text-transform: none;
           margin-bottom: 5px;
           padding: 0;
@@ -2518,7 +2498,7 @@ body.scrolled .hamburger {
             color: #fff;
             display: block; }
             .subnav .subnav-list li ul li a:hover {
-              color: #15151e; }
+              color: #999; }
   .subnav-language {
     padding: 10px 0 10px 0; }
     .subnav-language .selectric-wrapper {
@@ -2531,7 +2511,7 @@ body.scrolled .hamburger {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
@@ -2543,10 +2523,10 @@ body.scrolled .hamburger {
     margin-top: 10px; }
     .subnav .social a {
       background-color: #fff;
-      color: #CF2D1E; }
+      color: #000; }
       .subnav .social a:hover {
-        color: #15151e;
-        background-color: #fff; }
+        color: #fff;
+        background-color: #999; }
 
 .yourbooking {
   display: none;
@@ -2574,13 +2554,13 @@ body.scrolled .hamburger {
     font-size: 24px;
     margin-bottom: 20px;
     padding: 10px 0 0;
-    color: #15151e; }
+    color: #000; }
     @media all and (max-width: 767px) {
       .yourbooking h3 {
         font-size: 18px; } }
   .yourbooking .total {
     font-size: 24px !important;
-    color: #15151e; }
+    color: #000; }
     @media all and (max-width: 767px) {
       .yourbooking .total {
         font-size: 17px !important;
@@ -2601,13 +2581,13 @@ body.scrolled .hamburger {
       width: 100%;
       height: auto; }
     .yourbooking-close #cross-remove-sign {
-      fill: #15151e; }
+      fill: #000; }
 
 .yourbooking-summary {
   width: 100%; }
   .yourbooking-summary tr.bookingrow td hr {
     height: 1px;
-    background: #D5D5D5;
+    background: #f3eeee;
     line-height: 0;
     margin: 5px 0;
     border: none !important; }
@@ -2645,10 +2625,10 @@ body.scrolled .hamburger {
     font-size: 18px; }
 
 .notification {
-  background: #CF2D1E;
+  background: #fff;
   text-align: center;
-  color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  color: #000;
+  font-family: "EDMSTERDAM", sans-serif;
   line-height: 90px;
   text-transform: uppercase;
   font-weight: 700;
@@ -2667,7 +2647,7 @@ body.scrolled .hamburger {
       height: 50px;
       line-height: 50px; } }
   .notification span {
-    font-family: "Titillium Web", sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   @media all and (max-width: 767px) {
     .notification {
       font-size: 12px; } }
@@ -2740,13 +2720,13 @@ body.scrolled .hamburger-oud {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.6); }
   .hero--red {
-    background-color: rgba(255, 55, 0, 0); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .hero--white {
-    background-color: rgba(236, 236, 236, 0); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .hero--blue {
-    background-color: rgba(0, 155, 255, 0); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .hero--gradient:before {
     background: rgba(0, 0, 0, 0);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
@@ -2812,11 +2792,11 @@ body.scrolled .hamburger-oud {
         content: "\f078";
         font-family: "FontAwesome"; }
       .hero-scroll .arrow:hover {
-        color: #CF2D1E; }
+        color: #000; }
     .hero-scroll:hover {
-      color: #CF2D1E; }
+      color: #000; }
       .hero-scroll:hover .arrow:before {
-        color: #CF2D1E; }
+        color: #000; }
     .hero-scroll .bar {
       width: 5px;
       background: #fff;
@@ -2865,7 +2845,7 @@ body.scrolled .hamburger-oud {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%); }
   .hero h1 {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "EDMSTERDAM", sans-serif;
     color: #fff;
     font-weight: 800;
     font-size: 60px;
@@ -2888,7 +2868,7 @@ body.scrolled .hamburger-oud {
           font-size: 30px; } }
   .hero h1 small {
     display: block;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
@@ -2912,7 +2892,7 @@ body.scrolled .hamburger-oud {
   background-size: cover; }
   .videowrapper:before {
     content: "";
-    background: 0.5;
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     right: 0;
     top: 0;
@@ -2923,11 +2903,11 @@ body.scrolled .hamburger-oud {
       .videowrapper:before {
         display: none; } }
   .videowrapper iframe {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none; }
 
 .videoplayer {
   position: absolute;
@@ -2968,7 +2948,7 @@ body.scrolled .hamburger-oud {
   padding-top: 70px;
   margin-top: 30px;
   background: transparent;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   font-size: 14px;
   cursor: pointer;
   font-weight: 700;
@@ -2995,7 +2975,7 @@ body.scrolled .hamburger-oud {
 .coming-soon {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   font-size: 45px;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   color: #fff;
   font-weight: 800;
   text-transform: uppercase; }
@@ -3055,9 +3035,9 @@ body.scrolled .hamburger-oud {
   display: inline-block;
   width: 100%; }
 .footer-subscribe input {
-  background: #fff;
+  background: #000;
   border: none;
-  color: #15151e;
+  color: #fff;
   line-height: 1;
   margin: 0;
   height: 40px;
@@ -3071,21 +3051,21 @@ body.scrolled .hamburger-oud {
   -webkit-border-radius: 0; }
   .footer-subscribe input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #15151e; }
+    color: #fff; }
   .footer-subscribe input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #15151e; }
+    color: #fff; }
   .footer-subscribe input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #15151e; }
+    color: #fff; }
   .footer-subscribe input:-moz-placeholder {
     /* Firefox 18- */
-    color: #15151e; }
+    color: #fff; }
 .footer-subscribe a.submit {
   border: none;
-  background: #fff;
-  color: #15151e;
-  font-family: "Titillium Web", sans-serif;
+  background: #000;
+  color: #fff;
+  font-family: "EDMSTERDAM", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -3154,7 +3134,7 @@ body.scrolled .hamburger-oud {
   -moz-appearance: none;
   border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #000;
   background: #fff; }
   .textfield:focus, select:focus, .form-control:focus {
     color: #000;
@@ -3179,9 +3159,9 @@ body.scrolled .hamburger-oud {
 .input-group-addon {
   border-radius: none;
   -webkit-border-radius: 0;
-  background: #fff;
-  border: 1px solid #CDCDCD;
-  color: #000; }
+  background: #000;
+  border: 1px solid #000;
+  color: #fff; }
   @media all and (max-width: 992px) {
     .input-group-addon {
       font-size: 12px;
@@ -3304,7 +3284,7 @@ body.scrolled .hamburger-oud {
   cursor: default;
   font-size: 18px;
   padding: 18px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #666;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -3331,8 +3311,8 @@ body.scrolled .hamburger-oud {
       font-size: 14px;
       padding: 14px; } }
   .login .input:focus {
-    background-color: #f2f2f2;
-    color: #000;
+    background-color: #999;
+    color: #fff;
     outline: none; }
   .login .input.password {
     margin-bottom: 15px; }
@@ -3365,7 +3345,7 @@ body.scrolled .hamburger-oud {
   display: block; }
 
 .extra-amount {
-  border: 1px solid #CDCDCD;
+  border: 1px solid #000;
   padding: 4px;
   display: inline-block;
   color: #000; }
@@ -3382,7 +3362,7 @@ body.scrolled .hamburger-oud {
   .upgrade-extras .title, .upgrade-extras .price {
     font-size: 20px;
     font-weight: 700;
-    color: #CF2D1E; }
+    color: #000; }
     @media all and (max-width: 992px) {
       .upgrade-extras .title, .upgrade-extras .price {
         font-size: 16px; } }
@@ -3403,7 +3383,7 @@ body.scrolled .hamburger-oud {
   width: 100%; }
 
 .selectric {
-  border: 1px solid #CDCDCD;
+  border: 1px solid #000;
   border-radius: 0rem;
   background: #fff;
   position: relative;
@@ -3432,7 +3412,7 @@ body.scrolled .hamburger-oud {
   width: 40px;
   height: 45px;
   line-height: 45px;
-  background-color: #fff;
+  background-color: #000;
   /*color: red;*/
   text-align: center;
   font: 0/0 a;
@@ -3449,14 +3429,14 @@ body.scrolled .hamburger-oud {
   width: 0;
   height: 0;
   border: 4px solid transparent;
-  border-top-color: #000;
+  border-top-color: #fff;
   border-bottom: none; }
 
 .selectric-focus .selectric {
-  border-color: #CDCDCD; }
+  border-color: #000; }
 
 .selectric-hover .selectric {
-  border-color: #CDCDCD; }
+  border-color: #000; }
 
 .selectric-hover .selectric .button {
   color: yellow; }
@@ -3468,7 +3448,7 @@ body.scrolled .hamburger-oud {
   z-index: 9999; }
 
 .selectric-open .selectric {
-  border-color: #CDCDCD; }
+  border-color: #000; }
 
 .selectric-open .selectric-items {
   display: block; }
@@ -3537,7 +3517,7 @@ body.scrolled .hamburger-oud {
   top: 100%;
   left: 0;
   background: #fff;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #000;
   z-index: -1;
   box-shadow: 0 0 10px -6px; }
 
@@ -3564,16 +3544,16 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #f2f2f2;
-  color: #000 !important; }
+  background: #999;
+  color: #fff !important; }
 
 .selectric-items li.highlighted {
-  background: #f2f2f2;
-  color: #000 !important; }
+  background: #999;
+  color: #fff !important; }
 
 .selectric-items li:hover {
-  background: #f2f2f2;
-  color: #000 !important; }
+  background: #999;
+  color: #fff !important; }
 
 .selectric-items .disabled {
   filter: alpha(opacity=50);
@@ -3605,30 +3585,30 @@ body.scrolled .hamburger-oud {
   padding-left: 25px; }
 
 footer {
-  background-color: #15151e;
+  background-color: #fff;
   padding: 70px 0 0;
-  color: #fff;
-  border-top: none; }
+  color: #000;
+  border-top: 1px solid #fff; }
   footer.gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: #CF2D1E;
+    background: #000;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #CF2D1E 0%, #6cb5ff 100%);
+    background: -moz-linear-gradient(45deg, #000 0%, #6cb5ff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #CF2D1E 0%, #6cb5ff 100%);
+    background: -webkit-linear-gradient(45deg, #000 0%, #6cb5ff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #CF2D1E 0%, #6cb5ff 100%);
+    background: linear-gradient(45deg, #000 0%, #6cb5ff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media all and (max-width: 992px) {
     footer {
       padding: 50px 0 0; } }
   footer h4 {
     text-transform: uppercase;
-    font-family: "Titillium Web", sans-serif;
-    color: #fff;
+    font-family: "EDMSTERDAM", sans-serif;
+    color: #000;
     font-weight: 700;
     margin: 0 0 20px;
-    font-size: 24px; }
+    font-size: 17px; }
     @media all and (max-width: 767px) {
       footer h4 {
         font-size: 24px;
@@ -3648,9 +3628,9 @@ footer {
     text-align: center;
     display: inline-block; }
   footer a {
-    color: #fff; }
+    color: #000; }
     footer a:hover {
-      color: #CF2D1E; }
+      color: #999; }
   footer .footer-col {
     margin-bottom: 30px; }
     @media all and (max-width: 767px) {
@@ -3697,7 +3677,7 @@ footer {
       margin: 0 auto 0;
       text-align: left; }
       footer .language .selectric-wrapper .selectric-items, footer .language .selectric-wrapper .selectric-open .selectric, footer .language .selectric-wrapper .selectric {
-        border: 1px solid #fff !important; }
+        border: 1px solid #000 !important; }
       footer .language .selectric-wrapper .selectric-items li, footer .language .selectric-wrapper .selectric-items ul {
         font-size: 13px; }
 
@@ -3714,8 +3694,8 @@ footer {
     margin-right: 2px; }
     .social li a {
       display: block;
-      background-color: #fff;
-      color: #CF2D1E;
+      background-color: #000;
+      color: #fff;
       border-radius: 100%;
       width: 34px;
       height: 34px;
@@ -3723,7 +3703,7 @@ footer {
       line-height: 36px;
       font-size: 16px; }
       .social li a:hover {
-        background-color: #CF2D1E;
+        background-color: #999;
         color: #fff; }
 
 .footer-logos {
@@ -3753,21 +3733,28 @@ footer {
   left: 50%;
   width: 100%;
   max-width: 550px;
-  padding: 20px 50px 20px 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-  font-size: 15px;
+  padding: 20px 80px 20px 20px;
+  background-color: #000;
+  font-size: 13px;
   color: #fff;
   border: 1px solid #000;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
   .cookies a {
-    color: #CF2D1E; }
+    color: #fff; }
   @media all and (max-width: 767px) {
     .cookies {
-      max-width: 90%;
-      font-size: 11px;
-      padding: 10px 50px 10px 10px; } }
+      font-size: 13px;
+      padding: 20px 60px 20px 20px;
+      max-width: 100%;
+      border: none;
+      -ms-transform: translate(0%, 0);
+      -webkit-transform: translate(0%, 0);
+      transform: translate(0%, 0);
+      bottom: 0px;
+      border-top: 1px solid #fff;
+      left: 0px; } }
   .cookies button {
     padding: 5px;
     background-color: transparent;
@@ -3775,18 +3762,14 @@ footer {
     right: 20px;
     top: 20px;
     curspor: pointer; }
-    @media all and (max-width: 767px) {
-      .cookies button {
-        right: 10px;
-        top: 10px; } }
     .cookies button .icon {
       width: 30px;
       height: auto; }
       @media all and (max-width: 767px) {
         .cookies button .icon {
-          width: 15px; } }
+          width: 20px; } }
     .cookies button #cross-remove-sign {
-      fill: #CF2D1E; }
+      fill: #fff; }
   .cookies p {
     margin: 0;
     line-height: 1.4; }
@@ -3795,11 +3778,11 @@ footer {
   text-align: center;
   color: #fff;
   padding: 40px 0;
-  background: #38383f;
+  background: #000;
   margin-top: 35px;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "EDMSTERDAM", sans-serif;
   text-transform: uppercase; }
   .partners ul {
     margin: 25px 0 0;
@@ -3856,17 +3839,17 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
     display: block; }
   .event--blue:before {
-    background-color: rgba(0, 155, 255, 0);
+    background-color: rgba(0, 0, 0, 0.2);
     opacity: 0.5; }
   .event--red:before {
-    background-color: rgba(255, 55, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
     opacity: 0.5; }
   .event--grey:before {
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     opacity: 0.5; }
   .event-info {
     position: absolute;
@@ -3896,13 +3879,13 @@ footer {
       .event-thumb {
         padding-bottom: 60% !important; } }
     .event-thumb--red {
-      background-color: rgba(255, 55, 0, 0); }
+      background-color: rgba(0, 0, 0, 0.2); }
     .event-thumb--white {
-      background-color: rgba(236, 236, 236, 0); }
+      background-color: rgba(0, 0, 0, 0.2); }
     .event-thumb--blue {
-      background-color: rgba(0, 155, 255, 0); }
+      background-color: rgba(0, 0, 0, 0.2); }
     .event-thumb--grey {
-      background-color: rgba(50, 50, 50, 0.2); }
+      background-color: rgba(0, 0, 0, 0.2); }
   .event-two .event-thumb {
     padding-bottom: 50%; }
   .event-one .event-thumb {
@@ -3940,18 +3923,18 @@ footer {
   border: none; }
 
 .main > .accordeon ~ .accordeon {
-  border-top: 2px solid #38383f; }
+  border-top: 1px solid #ccc; }
 
 .accordeon {
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #fff;
   -webkit-transition: background .15s ease-out 0s;
   transition: background .15s ease-out 0s; }
   .accordeon:hover {
-    background: #414148;
-    color: #fff; }
+    background: #f1f1f1;
+    color: #000; }
   .accordeon--active, .accordeon--active:hover {
-    background: #1f1f27;
+    background: #000;
     color: #fff; }
   .accordeon .container {
     position: relative; }
@@ -3959,7 +3942,7 @@ footer {
     font-size: 32px;
     padding: 15px 0;
     display: inline-block;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "EDMSTERDAM", sans-serif;
     font-weight: 800;
     text-transform: uppercase; }
     @media all and (max-width: 767px) {
@@ -3992,16 +3975,16 @@ footer {
     display: inline-block;
     padding: 15px 0 15px 15px;
     margin-left: 15px;
-    border-left: 2px solid #38383f; }
+    border-left: 1px solid #ccc; }
     @media all and (max-width: 767px) {
       .accordeon-down {
         padding: 10px 0 10px 10px;
         margin-left: 10px; } }
   .accordeon a {
-    color: #fff;
+    color: #000;
     display: block; }
     .accordeon a:hover {
-      color: #fff; }
+      color: #000; }
     .accordeon a.button-secondary {
       color: #fff; }
       .accordeon a.button-secondary:hover {
@@ -4009,7 +3992,7 @@ footer {
 
 .offer {
   display: block;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #f3eeee;
   padding-bottom: 30px;
   margin: 0 0 30px 0; }
   .offer-link {
@@ -4021,7 +4004,7 @@ footer {
       margin: 0 0 15px 0;
       padding-bottom: 15px; } }
   .offer-line {
-    border-right: 1px solid #D5D5D5; }
+    border-right: 1px solid #f3eeee; }
     @media all and (max-width: 992px) {
       .offer-line {
         border-right: none; } }
@@ -4032,13 +4015,13 @@ footer {
         float: none; } }
   @media all and (max-width: 767px) {
     .offer-mobile-wrapper {
-      min-height: 170px;
+      height: 100%;
       display: block; } }
   .offer-title {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #000;
-    text-transform: uppercase;
+    text-transform: none;
     margin: 0 0 5px;
     font-size: 32px; }
     @media all and (max-width: 992px) {
@@ -4048,7 +4031,7 @@ footer {
       .offer-title {
         font-size: 17px; } }
   .offer-subheader {
-    color: #CF2D1E;
+    color: #000;
     font-size: 20px; }
     @media all and (max-width: 992px) {
       .offer-subheader {
@@ -4063,7 +4046,7 @@ footer {
   .offer-list {
     margin: 20px 0 0 0;
     padding: 0;
-    color: #15151e; }
+    color: #000; }
     .offer-list--nocolumns {
       columns: 1;
       -webkit-columns: 1;
@@ -4094,7 +4077,7 @@ footer {
         .offer-list li {
           font-size: 14px; } }
   .offer-price {
-    color: #CF2D1E;
+    color: #000;
     display: block;
     font-weight: 400;
     margin: 0 0 2px 0;
@@ -4107,7 +4090,7 @@ footer {
       .offer-price {
         font-size: 16px; } }
   .offer-price-condition {
-    color: #CF2D1E;
+    color: #000;
     display: block;
     margin-bottom: 20px;
     white-space: nowrap; }
@@ -4122,7 +4105,7 @@ footer {
         margin-bottom: 10px; } }
 
 .room {
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #f3eeee;
   padding: 0 0 30px;
   margin-bottom: 30px; }
 
@@ -4144,6 +4127,50 @@ footer {
     .room-price {
       margin: 0 0;
       float: left; } }
+
+.flex-offer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start; }
+  .flex-offer-image {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    padding-right: 15px; }
+    @media all and (max-width: 992px) {
+      .flex-offer-image {
+        flex-basis: 50%;
+        flex-shrink: 0; } }
+  .flex-offer-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-left: 15px; }
+    @media all and (max-width: 992px) {
+      .flex-offer-content {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-direction: column; } }
+    @media all and (max-width: 767px) {
+      .flex-offer-content {
+        padding-left: 0px; } }
+    .flex-offer-content .content-wrapper {
+      flex-basis: 75%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding-right: 15px; }
+      @media all and (max-width: 992px) {
+        .flex-offer-content .content-wrapper {
+          padding-right: 0px; } }
 
 .slider,
 .slider > div {
@@ -4318,13 +4345,6 @@ footer {
     transform: scale(0.8); }
   100% {
     transform: scale(1); } }
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
 .animated {
   -webkit-animation-duration: 200ms;
   animation-duration: 200ms;
@@ -5498,18 +5518,11 @@ footer {
   width: 8px;
   height: 8px;
   margin: 5px;
-  background: #D5D5D5; }
+  background: #000; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #CF2D1E; }
+  background: #999; }
 
-/*!
- * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)
- *
- * Copyright 2012 Stefan Petre
- * Improvements by Andrew Rowls
- * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
- */
 .datepicker {
   border-radius: 4px;
   direction: ltr; }
@@ -5936,7 +5949,6 @@ footer {
   margin-left: -5px;
   margin-right: -5px; }
 
-/*# sourceMappingURL=bootstrap-datepicker3.min.css.map */
 canvas {
   display: block;
   margin: 2em; }
@@ -5951,12 +5963,6 @@ canvas {
   margin: 0;
   opacity: 0.4; }
 
-/*
-* Tuds tDatepicker
-* Copyright 2018 tuds - crazychicken
-* Licensed under: LICENSE
-* Version: v1.0.2
-*/
 .t-datepicker {
   position: relative;
   display: inline-block;
@@ -5966,7 +5972,7 @@ canvas {
 .t-check-out {
   display: inline-block;
   position: relative;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #000;
   background: #fff;
   float: left;
   width: 48%;

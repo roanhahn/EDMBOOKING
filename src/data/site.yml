@@ -162,17 +162,30 @@
 # eventdate: 24. & 25. AUGUST 2018
 # description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
-# Formule 1
-logo: logo.svg
-theme: sportstadion
-name: Sportstadion Travel Packages
+# # Formule 1
+# logo: logo-f1.svg
+# theme: sportstadion
+# name: Sportstadion Travel Packages
+# intro: intro
+# title: Formula One Travel Packages | Book, stay and experience EDM around the globe.
+# homepage: homepage-f1.html
+# herotitle: hero title
+# herosubtitle: subtitle
+# event: Belgium Grand Prix
+# eventdate: 22 - 25 March 2019
+# description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+
+# EDMSTERDAM
+logo: logo.png
+theme: edmsterdam
+name: EDMSTERDAM
 intro: intro
-title: Formula One Travel Packages | Book, stay and experience EDM around the globe.
-homepage: homepage-f1.html
-herotitle: hero title
-herosubtitle: subtitle
-event: Belgium Grand Prix
-eventdate: 22 - 25 March 2019
+title: EDMSTERDAM | Music And Fashion.
+homepage: homepage.html
+herotitle: BLACK OUT
+herosubtitle: Canvas cotton cap
+event: travel in style
+eventdate: Some text goes here
 description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 category: gallery

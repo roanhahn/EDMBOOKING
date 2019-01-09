@@ -1,0 +1,2 @@
+body:before{content:"mobile";height:0px;width:0px;overflow:hidden;position:fixed;bottom:0;left:0}@media (min-width: 768px){body:before{content:"tablet"}}@media (min-width: 992px){body:before{content:"desktop"}}
+/*# sourceMappingURL=_variables.css.map */

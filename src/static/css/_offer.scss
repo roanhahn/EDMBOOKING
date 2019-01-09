@@ -148,7 +148,7 @@
 
 	&-mobile-wrapper{
 		@media all and (max-width: $breakpoint-mobile){
-			min-height: 170px;
+			height: 100%;
 			display: block;
 		}
 	}
@@ -315,5 +315,59 @@
 		float: left;
 	}
 
+}
+
+.flex-offer{
+	// background: yellow;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+
+	&-image{
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: 25%;
+		padding-right: 15px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			flex-basis: 50%;
+			flex-shrink: 0;
+		}
+	}
+
+	&-content{
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 70%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: flex-start;
+		padding-left: 15px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			flex-basis: 50%;
+			flex-shrink: 0;
+			flex-direction: column;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			padding-left: 0px;
+		}
+		& .content-wrapper{
+			flex-basis: 75%;
+			flex-grow: 1;
+			flex-shrink: 1;
+			padding-right: 15px;
+
+			@media all and (max-width: $breakpoint-tablet){
+				padding-right: 0px;
+			}
+		}
+	}
 }
 

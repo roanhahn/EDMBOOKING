@@ -4,3 +4,30 @@ $breakpoint-desktop: 1200px;
 $breakpoint-tablet: 992px;
 $breakpoint-mobile: 767px;
 $breakpoint-small: 576px;
+
+
+/**
+ * These values will not show up in content, but can be
+ * queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+body:before {
+  content: "mobile";
+  // display: none; /* Prevent from displaying. */
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  body:before {
+    content: "tablet";
+  }
+}
+@media (min-width: 992px) {
+  body:before {
+    content: "desktop";
+  }
+}

@@ -1,0 +1,53 @@
+<div class="offer {{#if groupID}}offer-child {{groupID}}{{/if}}">
+
+	<a href="#" class="flex-offer">
+		<div class="flex-offer-image">
+			<div class="img-container ratio-1-1 sm-ratio-3-4">
+				<div class="ribbon">
+					<div>Sold out</div>
+				</div>
+				<img data-src="http://nh.live.edmbooking.com/media/5aa5d0dd0a96b97585a849d20996fc75/2018/07/15/50d05/600x600.jpg" class="b-lazy" alt="{{title}}">
+			</div>
+		</div>
+		<div class="flex-offer-content">
+			<div class="content-wrapper">
+				<h3 class="offer-title">{{title}}</h3>
+				<div class="d-md-none">
+                    <div class="offer-price">&euro;299 <span class="offer-price-condition">Total room price</span></div>
+                </div>
+				{{#if distance}}
+				<div class="rating-wrapper">
+					<div class="rating rating--overview">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+					</div>
+					Distance venue 5km
+				</div>
+				{{else}}
+				<p class="offer-subheader">{{subheader}}</p>
+				{{/if}}
+				<ul class="offer-list d-none d-md-block">
+					<li>Tipi for 9 persons</li>
+					<li>9 Single stretchers including sleeping bags and pillows</li>
+					<li>Table with stools</li>
+					<li>A spot on our campsite</li>
+					<li>3 Night stay</li>
+					<li>Exclusive pre-party on Thursday</li>
+					<li>New Horizons welcome package</li>
+				</ul>
+			</div>
+			<div>
+				{{#if condition}}
+				<div class="d-none d-md-block">
+					<span class="offer-price">&euro;299</span>
+					<span class="offer-price-condition">{{condition}}</span>
+				</div>
+				{{/if}}
+				<span class="button button-primary button--mobileblock">{{button}}</span>
+			</div>
+		</div>
+	</a>
+</div>

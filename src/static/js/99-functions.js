@@ -1,3 +1,27 @@
+
+
+// JAVASCRIPT BREAKPOINTS
+
+var breakpoint = {};
+breakpoint.refreshValue = function () {
+  this.value = window.getComputedStyle(document.querySelector('.body'), ':before').getPropertyValue('content').replace(/\"/g, '');
+};
+
+$(window).resize(function () {
+  breakpoint.refreshValue();
+  // console.log(breakpoint.value + "asdsad");
+}).resize();
+
+if (breakpoint.value == 'desktop') {
+  // console.log('Tablet breakpoint');
+  var jsbreakpoint = "desktop";
+}
+else {
+  // console.log('Some other breakpoint');
+  var jsbreakpoint = "mobile";
+  console.log(jsbreakpoint);
+}
+
 // createCookie('cookie','theme-default',1);
 
 updateResult();
@@ -94,7 +118,9 @@ setTimeout(function() {
 
 // Lazyload
 
-$("img.lazyload").lazyload();
+$("img.lazyload").lazyload({
+    effect : "fadeIn"
+});
 
 var bLazy = new Blazy();
 
@@ -262,6 +288,7 @@ $(document).ready(function() {
         margin: 0,
         nav: false,
         dots: true,
+        lazyLoad: true,
         // animateOut: 'slideOutLeft',
         // animateIn: 'slideInRight',
         autoplay: true,

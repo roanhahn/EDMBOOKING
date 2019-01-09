@@ -22,6 +22,11 @@ $bodygradient-tocolor: #fff;
 $font-size: 16px;
 $font-header-size: 24px; //default 24px;
 
+// need help
+$modalbg-color: rgba(0,0,0,0.07);
+$modalborder: 2px solid rgba(0,0,0,0.05);
+$modal-radius: 4px;
+
 /* FONTS */
 $font: 'Titillium Web', sans-serif; //'Roboto', sans-serif;
 $font-header: 'Titillium Web', sans-serif; //'Prompt', sans-serif;
@@ -91,8 +96,8 @@ $hamburger-height: 6px; // default 6px
 $hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
-$logo-height: 30px;
-$logo-height-mobile: 20px;
+$logo-height: 25px;
+$logo-height-mobile: 15px;
 $header-bg: #fff;
 $header-color: #fff;
 $header-bg-sticky: #fff;
@@ -196,9 +201,9 @@ $cookies-fontsize: 15px;
 $cookies-border: 1px solid #000;
 $cookie-link-color: #CF2D1E;
 $cookies-color: #fff;
-$cookies-padding: 20px 50px 20px 20px;
-$cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px 50px 10px 10px;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
 
 /* FORMS */
 $form-border: 1px solid #CDCDCD;
@@ -214,21 +219,21 @@ $form-addon-bg: #fff;
 $form-addon-color: #000;
 $placeholder-color: #95a5a6;
 
-.cookies{
-    left: 0px !important;
-    bottom: 0px !important;
-     -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
+// .cookies{
+//     left: 0px !important;
+//     bottom: 0px !important;
+//      -ms-transform: none !important;
+//     -webkit-transform: none !important;
+//     transform: none !important;
 
-    @media all and (max-width: $breakpoint-mobile){
-        left: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        right: 0px;
-        bottom: 0px !important;
-    }
-}
+//     @media all and (max-width: $breakpoint-mobile){
+//         left: 0 !important;
+//         width: 100% !important;
+//         max-width: 100% !important;
+//         right: 0px;
+//         bottom: 0px !important;
+//     }
+// }
 
 
 @mixin gradient($fromcolor, $tocolor) {
@@ -239,12 +244,6 @@ $placeholder-color: #95a5a6;
 	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-@media all and (max-width: $breakpoint-tablet) {
-    .logo{
-        width: 130px;
-        overflow: hidden;
-    }
-}
 
 .yourbooking{
     background: #f2f2f2 url(../img/sportstadion/bg-mybooking.jpg) center bottom / cover no-repeat scroll !important;

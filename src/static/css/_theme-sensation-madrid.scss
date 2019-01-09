@@ -30,6 +30,7 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #666666;
 $heading-color: #000;
 $link-color: #6EB3C3;
+$error-color: #dc3545;
 
 /* Google Maps */
 $mapclose-color: #6EB3C3;
@@ -84,6 +85,8 @@ $sec-padding: 15px 30px;
 
 /* HEADER */
 $hamburger-layer-color: #000 !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
@@ -198,7 +201,9 @@ $form-border: 1px solid #000;
 $form-bordercolor: #000;
 $form-border-login: 1px solid #666;
 $form-label: #000;
+$form-labelsize: 14px;
 $form-input-color: #000;
+$form-focus-border: #000;
 $form-highlight: #6EB3C3;
 $form-highlightcolor: #fff;
 $form-addon-bg: #000;

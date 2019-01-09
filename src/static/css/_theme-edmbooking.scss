@@ -20,6 +20,11 @@ $bodygradient-tocolor: #000;
 $font-size: 16px;
 $font-header-size: 24px; //default 24px;
 
+// need help
+$modalbg-color: rgba(255,255,255,0.07);
+$modalborder: 2px solid rgba(255,255,255,0.05);
+$modal-radius: 0px;
+
 /* FONTS */
 $font: 'Roboto', sans-serif;
 $font-header: 'Prompt', sans-serif;
@@ -56,7 +61,7 @@ $button-color-hover: #000;
 $button-radius: 0px;
 
 /* BACK BUTTON */
-$button-back-size: 15px; // default 15px
+$button-back-size: 20px; // default 15px
 $button-back-bg: rgba(0,0,0,.5);
 $button-back-color: #fff;
 $button-back-border: 2px solid rgba(255,255,255,.3);
@@ -194,9 +199,9 @@ $cookies-fontsize: 15px;
 $cookies-border: 1px solid #419bf7;
 $cookie-link-color: #fff;
 $cookies-color: #419bf7;
-$cookies-padding: 20px 50px 20px 20px;
-$cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px 50px 10px 10px;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
 
 /* FORMS */
 $form-border: 1px solid #fff;
