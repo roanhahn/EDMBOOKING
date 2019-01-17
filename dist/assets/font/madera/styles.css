@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Madera-Regular';
+  src: url('Madera-Regular.eot?#iefix') format('embedded-opentype'),  url('Madera-Regular.otf')  format('opentype'),
+	     url('Madera-Regular.woff') format('woff'), url('Madera-Regular.ttf')  format('truetype'), url('Madera-Regular.svg#Madera-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

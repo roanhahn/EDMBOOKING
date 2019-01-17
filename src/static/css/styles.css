@@ -5,8 +5,6 @@
  * queried by JavaScript to know which breakpoint is active.
  * Add or remove as many breakpoints as you like.
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
-@import url(_t-datepicker-blue.css);
 body:before {
   content: "mobile";
   height: 0px;
@@ -37,6 +35,11 @@ body:before {
  * Copyright (c) 2018 EDMBOOKING.com
  */
 /* Regular font */
+@font-face {
+  font-family: 'Madera-Regular';
+  src: url("../font/madera/Madera-Regular.eot?#iefix") format("embedded-opentype"), url("../font/madera/Madera-Regular.otf") format("opentype"), url("../font/madera/Madera-Regular.woff") format("woff"), url("../font/madera/Madera-Regular.ttf") format("truetype"), url("../font/madera/Madera-Regular.svg#Madera-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* Header font */
 @font-face {
   font-family: 'EDMSTERDAM';
@@ -64,6 +67,11 @@ body:before {
 .hero-button {
   font-size: 18px !important; }
 
+.hero-scroll:hover {
+  color: #fff !important; }
+  .hero-scroll:hover .arrow:before {
+    color: #fff !important; }
+
 /* Testimonials */
 /* STEPS */
 /* OFFERS */
@@ -71,7 +79,7 @@ body:before {
 /* Footer */
 /* COOKIES */
 /* FORMS */
-.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step, .h2-section, .h3, .yourbooking h3 {
+.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step, .h2-section, .h3, .yourbooking h3, .info-list-section, .page-h1, .page h4, .notification {
   font-weight: 400 !important; }
 
 .h4, .form-label {
@@ -86,6 +94,11 @@ body:before {
 
 .t-check-out {
   border-left-width: 1 !important; }
+
+.social li a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center; }
 
 body,
 html {
@@ -113,7 +126,7 @@ body {
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Madera-Regular", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   position: relative;
@@ -279,7 +292,7 @@ a:active {
       display: block;
       font-size: 16px;
       font-weight: 700;
-      font-family: "Montserrat", sans-serif; }
+      font-family: "Madera-Regular", sans-serif; }
     @media all and (max-width: 767px) {
       .h3--big {
         font-size: 22px;
@@ -296,7 +309,7 @@ h3.extras {
   h3.extras small {
     display: block;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Madera-Regular", sans-serif;
     text-transform: none; }
   @media all and (max-width: 767px) {
     h3.extras {
@@ -321,7 +334,7 @@ h3.extras {
   text-transform: none !important;
   margin-bottom: 30px !important;
   color: #000 !important;
-  font-family: "Montserrat", sans-serif !important; }
+  font-family: "Madera-Regular", sans-serif !important; }
 
 .hr {
   height: 1px;
@@ -333,7 +346,7 @@ h3.extras {
 .testimonials-h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Madera-Regular", sans-serif;
   font-weight: 800;
   margin: 0 0 30px; }
   @media all and (max-width: 767px) {
@@ -1618,8 +1631,8 @@ h3.extras {
   width: 140px;
   height: 140px;
   text-align: center;
-  background: #6EB3C3;
-  border: 3px solid #6EB3C3;
+  background: #000;
+  border: 3px solid #000;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1653,8 +1666,8 @@ h3.extras {
   width: 100px;
   height: 100px;
   line-height: 84px;
-  border: 8px solid #6EB3C3;
-  color: #6EB3C3;
+  border: 8px solid #000;
+  color: #000;
   font-family: "EDMSTERDAM", sans-serif;
   font-weight: 800;
   font-size: 40px;
@@ -1855,7 +1868,7 @@ button {
           margin-top: 5px; } }
     .button-hero .first-line {
       font-size: 26px;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Madera-Regular", sans-serif;
       font-weight: 700; }
       @media all and (max-width: 992px) {
         .button-hero .first-line {
@@ -1875,7 +1888,7 @@ button {
     .button-hero .second-line {
       font-size: 18px;
       font-weight: 400;
-      font-family: "Montserrat", sans-serif; }
+      font-family: "Madera-Regular", sans-serif; }
       @media all and (max-width: 992px) {
         .button-hero .second-line {
           font-size: 16px; } }
@@ -1938,7 +1951,7 @@ button {
     -moz-border-radius: 100%;
     border-radius: 100%; }
   .button--close {
-    background: #6EB3C3;
+    background: #000;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1985,9 +1998,9 @@ button {
   color: #000 !important;
   border: 2px solid #000 !important; }
   .page-back:hover {
-    background: #6EB3C3 !important;
+    background: #000 !important;
     color: #fff !important;
-    border: 2px solid #6EB3C3 !important; }
+    border: 2px solid #000 !important; }
 
 button,
 input {
@@ -2089,7 +2102,7 @@ button:focus {
   .flexbuttons .hero-button-subtitle {
     display: block;
     text-transform: none !important;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Madera-Regular", sans-serif;
     font-size: 16px;
     margin-top: 0px;
     font-weight: 400; }
@@ -2487,7 +2500,7 @@ body.scrolled .hamburger {
         padding: 0;
         list-style-type: none; }
         .subnav .subnav-list li ul li {
-          font-family: "Montserrat", sans-serif;
+          font-family: "Madera-Regular", sans-serif;
           font-weight: 400;
           font-size: 14px;
           text-transform: none;
@@ -2511,7 +2524,7 @@ body.scrolled .hamburger {
     font-size: 16px;
     font-weight: 400;
     text-transform: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Madera-Regular", sans-serif;
     font-weight: 400;
     padding-top: 10px; }
     .subnav .contactDetails a {
@@ -2647,7 +2660,7 @@ body.scrolled .hamburger {
       height: 50px;
       line-height: 50px; } }
   .notification span {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Madera-Regular", sans-serif; }
   @media all and (max-width: 767px) {
     .notification {
       font-size: 12px; } }
@@ -2868,7 +2881,7 @@ body.scrolled .hamburger-oud {
           font-size: 30px; } }
   .hero h1 small {
     display: block;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Madera-Regular", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
@@ -3311,7 +3324,7 @@ body.scrolled .hamburger-oud {
       font-size: 14px;
       padding: 14px; } }
   .login .input:focus {
-    background-color: #999;
+    background-color: #000;
     color: #fff;
     outline: none; }
   .login .input.password {
@@ -3544,15 +3557,15 @@ body.scrolled .hamburger-oud {
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #999;
+  background: #000;
   color: #fff !important; }
 
 .selectric-items li.highlighted {
-  background: #999;
+  background: #000;
   color: #fff !important; }
 
 .selectric-items li:hover {
-  background: #999;
+  background: #000;
   color: #fff !important; }
 
 .selectric-items .disabled {
@@ -4018,7 +4031,7 @@ footer {
       height: 100%;
       display: block; } }
   .offer-title {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Madera-Regular", sans-serif;
     font-weight: 700;
     color: #000;
     text-transform: none;
@@ -6146,5 +6159,109 @@ canvas {
 .t-check-in .t-end-limit {
   opacity: 0.4;
   cursor: auto; }
+
+.t-check-in,
+.t-check-out {
+  border-color: #ededed; }
+
+td.t-today, .t-today span.t-hover-day-content, .t-today, .t-today .t-hover-day-content {
+  background: #000; }
+
+td.t-today::after {
+  border-top-color: #000; }
+
+.t-check-in {
+  border-right-color: #e8e8e8; }
+
+.t-date-title {
+  color: #e91e63; }
+
+.t-special-day:before {
+  border-color: #e91e63 #e91e63 transparent transparent; }
+
+.t-datepicker-day {
+  border-color: #ededed;
+  background: #fff; }
+
+.t-day,
+.t-disabled,
+.t-end,
+.t-range,
+.t-start {
+  background: #fafafa;
+  border-color: #fff; }
+
+.t-disabled {
+  background: 0 0; }
+
+.t-highlighted {
+  color: #000; }
+
+.t-highlighted.t-disabled {
+  background: #fafafa; }
+
+.t-end,
+.t-end-limit,
+.t-start {
+  color: #fff;
+  background: #000; }
+
+.t-range,
+.t-range-limit {
+  color: #000; }
+
+.t-range {
+  background: rgba(0, 0, 0, 0.1); }
+
+.t-range-limit {
+  background: rgba(0, 0, 0, 0.2); }
+
+.t-range-limit.t-end,
+.t-range-limit.t-start {
+  color: #fff;
+  background: #000; }
+
+.t-check-in .t-end,
+.t-check-out .t-start,
+.t-check-out tr ~ .t-end {
+  color: #fff;
+  background: #000; }
+
+.t-hover-day,
+.t-hover-day-content,
+.t-hover-day:hover {
+  color: #fff;
+  background: #000; }
+
+.t-hover-day::after {
+  border-color: #000 transparent transparent; }
+
+.t-today,
+.t-today .t-hover-day-content {
+  background: #aeaeae; }
+
+.t-today::after {
+  border-top-color: #aeaeae; }
+
+.t-today:hover,
+.t-today:hover .t-hover-day-content {
+  background: #000; }
+
+.t-today:hover::after {
+  border-top-color: #000; }
+
+.t-end.t-today,
+.t-start.t-today {
+  color: #fff; }
+
+.t-end.t-today,
+.t-end.t-today .t-hover-day-content,
+.t-start.t-today,
+.t-start.t-today .t-hover-day-content {
+  background: #000; }
+
+.t-end.t-today::after,
+.t-start.t-today::after {
+  border-top-color: #000; }
 
 /*# sourceMappingURL=styles.css.map */

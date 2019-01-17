@@ -214,9 +214,15 @@ $form-labelsize: 12px;
 $form-input-color: #686868;
 $form-highlight: #fff;
 $form-highlightcolor: #686868;
+$form-focus-border: #333;
 $form-addon-bg: #bbb;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
+
+$checkout: #2d609b;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: rgb(214, 14, 0);
 
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */

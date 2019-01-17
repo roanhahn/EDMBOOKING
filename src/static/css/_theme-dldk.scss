@@ -224,6 +224,11 @@ $form-addon-bg: #eb1f29;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
 
+$checkout: #eb1f29;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: #000;
+
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
     background: $fromcolor; /* Old browsers */

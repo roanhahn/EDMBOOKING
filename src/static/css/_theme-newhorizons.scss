@@ -272,7 +272,10 @@ $form-addon-bg: #4E647E;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
 
-
+$checkout: #4E647E;
+$checkout-light: rgba(106,170,171,0.1);
+$checkout-limit: rgba(106,170,171,0.2);
+$checkout-limit2: #c59569;
 
 
 @mixin gradient($fromcolor, $tocolor) {

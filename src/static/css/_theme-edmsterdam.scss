@@ -4,7 +4,17 @@
  */
 
 /* Regular font */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+
+
+@font-face {
+  font-family: 'Madera-Regular';
+  src: url('../font/madera/Madera-Regular.eot?#iefix') format('embedded-opentype'),  url('../font/madera/Madera-Regular.otf')  format('opentype'),
+       url('../font/madera/Madera-Regular.woff') format('woff'), url('../font/madera/Madera-Regular.ttf')  format('truetype'), url('../font/madera/Madera-Regular.svg#Madera-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Header font */
 
@@ -30,7 +40,7 @@ $font-size: 14px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
-$font: 'Montserrat', sans-serif;
+$font: 'Madera-Regular', sans-serif;
 $font-header: 'EDMSTERDAM', sans-serif;
 $border-color: #f3eeee; //rgba(255,255,255,.3);
 
@@ -41,7 +51,7 @@ $link-color: #000;
 $error-color: #dc3545;
 
 /* Google Maps */
-$mapclose-color: #6EB3C3;
+$mapclose-color: #000;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -76,9 +86,9 @@ $button-back-size: 15px; //default 15px
 $button-back-bg: #fff;
 $button-back-color: #000;
 $button-back-border: 2px solid #000;
-$button-back-bghover: #6EB3C3;
+$button-back-bghover: #000;
 $button-back-colorhover: #fff;
-$button-back-borderhover: 2px solid #6EB3C3;
+$button-back-borderhover: 2px solid #000;
 
 /* FAQ */
 $faq-button-bg: #000;
@@ -152,6 +162,13 @@ $hero-button-size: 16px;
     font-size: 18px !important;
 }
 
+.hero-scroll:hover{
+    & .arrow:before {
+        color: #fff !important;
+    }
+    color: #fff !important;
+}
+
 /* Testimonials */
 $testimonial-bg: #fff;
 $testimonial-text: #000;
@@ -184,11 +201,11 @@ $ticketbtn-color: #fff;
 $ticketbtn-colorhover: #fff;
 
 /* WHY BOOK */
-$why-border: #6EB3C3;
-$why-number: #6EB3C3;
+$why-border: #000;
+$why-number: #000;
 $why-book-icon: #fff;
-$why-book-iconborder: 3px solid #6EB3C3;
-$why-book-iconbg: #6EB3C3;
+$why-book-iconborder: 3px solid #000;
+$why-book-iconbg: #000;
 
 /* Footer */
 $footer-border: 1px solid #fff;
@@ -225,13 +242,13 @@ $form-label: #000;
 $form-labelsize: 14px;
 $form-input-color: #000;
 $form-focus-border: #000;
-$form-highlight: #999;
+$form-highlight: #000;
 $form-highlightcolor: #fff;
 $form-addon-bg: #000;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
 
-.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step,.h2-section, .h3,.yourbooking h3 {
+.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step,.h2-section, .h3,.yourbooking h3,.info-list-section,.page-h1, .page h4,.notification {
     font-weight: 400 !important;
 }
 
@@ -250,6 +267,16 @@ $placeholder-color: #95a5a6;
 .t-check-out{
     border-left-width: 1 !important;
 }
+.social li a{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+
+}
+$checkout: #000;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: #000;
 
 @mixin gradient($fromcolor, $tocolor) {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
