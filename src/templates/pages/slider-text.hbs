@@ -1,0 +1,44 @@
+---
+title: Background Slideshow With Text
+type: component
+layout: default.hbs
+---
+
+
+<div class="slideshow">
+    <div class="owl-carousel owl-theme owl-slideshow">
+        <div class="item slideshowbg" data-src="assets/img/democamping/slider-1.jpg">
+            <div class="slideshow-item">
+                <h3>New Horizons Festival</h3>
+                <p>A full New Horizons experience, including tickets, hotels and camping.</p>
+                {{!-- <a href="whybook.html" class="button button-primary">Shop now</a> --}}
+            </div>
+        </div>
+        <div class="item slideshowbg" data-src="assets/img/democamping/slider-2.jpg">
+            <div class="slideshow-item">
+                <h3>Cottage & Hotel packages</h3>
+                <p>Embark on a multi-day journey across the spectrum of electronic music. Stay on our magical campsite or crash in a comfortable hotel.</p>
+            </div>
+        </div>
+        <div class="item slideshowbg" data-src="assets/img/democamping/slider-3.jpg">
+            <div class="slideshow-item">
+                <h3>Sensation World Tour</h3>
+                <p>Travel to Sensation destinations around the globe.</p>
+            </div>
+        </div>
+    </div>
+    <span class="slide-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+    <span class="slide-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+</div>
+
+<div class="slide d-none">
+    <ul>
+        <li data-bg="https://picsum.photos/1200/450/?random">
+            <h1>Some cool text goes here<small></small></h1>
+        </li>
+        <li data-bg="https://picsum.photos/1200/460/?random"></li>
+        <li data-bg="https://picsum.photos/1200/480/?random"></li>
+        <li data-bg="https://picsum.photos/1200/490/?random"></li>
+        <li data-bg="https://picsum.photos/1300/490/?random"></li>
+    </ul>
+</div>

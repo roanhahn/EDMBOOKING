@@ -1,5 +1,6 @@
 
 
+
 // JAVASCRIPT BREAKPOINTS
 
 var breakpoint = {};
@@ -263,6 +264,17 @@ $(".info-list-item").click(function() {
     }
 });
 
+// SLIDESHOW
+
+$( ".slideshowbg" ).each(function() {
+  var attr = $(this).attr('data-src');
+
+  if (typeof attr !== typeof undefined && attr !== false) {
+      $(this).css('background-image', 'url('+attr+')');
+  }
+
+});
+
 // OWL
 
 $(document).ready(function() {
@@ -276,10 +288,35 @@ $(document).ready(function() {
         autoplaySpeed: 1000,
         navSpeed: 1000,
         dotsSpeed: 1000,
-        dragEndSpeed: 1000
+        dragEndSpeed: 1000,
         // animateOut: 'slideOutDown',
         // animateIn: 'flipInX',
     })
+
+    var owlSlideshow = $('.owl-slideshow');
+    owlSlideshow.owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        lazyLoad: true,
+        loop: true,
+        dots: true,
+        autoplaySpeed: 1000,
+        navSpeed: 1000,
+        dotsSpeed: 1000,
+        dragEndSpeed: 1000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+    })
+
+    $(".slide-next").click(function() {
+        owlSlideshow.trigger('next.owl.carousel');
+    });
+
+    $(".slide-prev").click(function() {
+        owlSlideshow.trigger('prev.owl.carousel');
+    });
 
     var owl = $('.owl-pictures');
 

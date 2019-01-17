@@ -8,3 +8,20 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
 	background: $offer-activedot;
 }
+.owl-slideshow .owl-dots{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100vw;
+}
+.owl-slideshow .owl-dots .owl-dot span{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: transparent;
+    border: 2px solid $hero-h1-color;
+}
+
+.owl-slideshow .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: $hero-h1-color;
+}

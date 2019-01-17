@@ -463,3 +463,82 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.slideshow{
+	// height: 50vh;
+	position: relative;
+}
+
+
+
+
+.slideshowbg{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slideshow-item{
+
+	height: 100%;
+	padding: 0 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	min-height: 450px;
+	height: 70vh;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+
+	@media all and (max-width: $breakpoint-mobile){
+		height: 80vh;
+	}
+
+
+	& p{
+		text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+		 text-transform: uppercase;
+		 // max-width: 80%;
+		 font-size: 1.7rem;
+		 margin-top: 20px;
+		 color: $hero-h1-color;
+
+		 @media all and (max-width: $breakpoint-tablet) {
+	      font-size: 1.2rem;
+	    }
+	    @media all and (max-width: $breakpoint-mobile) {
+	      font-size: 1rem;
+	    }
+	}
+
+
+	& h3 {
+	// max-width: 80%;
+    font-family: $font-header;
+    color: $hero-h1-color;
+    font-weight: 800;
+    font-size: $hero-h1-size;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+
+    @media all and (max-width: $breakpoint-tablet) {
+      font-size: 40px;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+      font-size: 24px;
+    }
+
+    &.hero-event-title {
+      font-size: 90px;
+
+      @media all and (max-width: $breakpoint-tablet) {
+        font-size: 70px;
+      }
+      @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px;
+      }
+    }
+  }
+}
