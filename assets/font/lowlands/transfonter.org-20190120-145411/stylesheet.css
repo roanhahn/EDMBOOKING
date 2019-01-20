@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'UniversLTPro-65Bold';
+    src: url('UniversLTPro-65Bold.woff2') format('woff2'),
+        url('UniversLTPro-65Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniversLTPro-55Roman';
+    src: url('UniversLTPro-55Roman.woff2') format('woff2'),
+        url('UniversLTPro-55Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
