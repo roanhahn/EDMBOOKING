@@ -176,17 +176,31 @@
 # description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 # EDMSTERDAM
+# logo: logo.png
+# theme: edmsterdam
+# name: EDMSTERDAM
+# intro: intro
+# title: EDMSTERDAM | Music And Fashion.
+# homepage: homepage.html
+# herotitle: BLACK OUT
+# herosubtitle: Canvas cotton cap
+# event: travel in style
+# eventdate: Some text goes here
+# description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+
+#LOWLANDS
 logo: logo.png
-theme: edmsterdam
-name: EDMSTERDAM
+theme: Lowlands
+name: Lowlands
 intro: intro
-title: EDMSTERDAM | Music And Fashion.
+title: Lowlands 2019
 homepage: homepage.html
 herotitle: BLACK OUT
 herosubtitle: Canvas cotton cap
-event: travel in style
-eventdate: Some text goes here
+event: LOWLANDS 2019
+eventdate: Koop je tickets hier
 description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+
 
 category: gallery
 author: author

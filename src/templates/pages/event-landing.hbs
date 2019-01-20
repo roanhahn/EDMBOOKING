@@ -6,7 +6,38 @@ videobackground: bla
 ---
 
 
-<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
+<div class="hero hero-fullscreen">
+	<div class="inner">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					{{#is site.theme 'wttf'}}
+						<img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
+					{{/is}}
+					<h1 class="hero-event-title">{{site.event}}
+						<small>{{site.eventdate}}</small>
+					</h1>
+					<div class="flexbuttons">
+						<a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
+						{{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
+						<a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+						<a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="vimeo">
+		<video src="https://player.vimeo.com/external/250748184.hd.mp4?s=4654fd490c4f22cb13e7578f30d7c4bc28c035dc&amp;profile_id=174" autoplay="" loop="" class="hero__video hero__video--centered" data-object-fit="cover"></video>
+	</div>
+	<div class="hero-scroll scrollTo" data-target="#eventinfo">
+		<span>Event info</span>
+		<div class="arrow"></div>
+	</div>
+</div>
+
+<div class="hero hero-fullscreen d-none" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -52,7 +83,7 @@ videobackground: bla
 <section class="section" id="eventinfo">
 	<div class="container">
 		<div class="ml-line"></div>
-		<h3 class="h3 h3--big text-center">About EDMSTERDAM</h3>
+		<h3 class="h3 h3--big text-center">About {{site.theme}}</h3>
 		<div class="row">
 			<div class="event-info-wrapper">
 

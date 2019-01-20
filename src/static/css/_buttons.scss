@@ -271,7 +271,7 @@ button {
             content: "\f105";
             font-family: "FontAwesome";
             margin-left: 5px;
-            vertical-align: top;
+            // vertical-align: top;
             display: inline-block;
         }
 
@@ -382,6 +382,7 @@ button {
             content: "\f104";
             font-family: "FontAwesome";
             margin-right: 5px;
+            // vertical-align: top;
         }
         &:after {
             display: none;

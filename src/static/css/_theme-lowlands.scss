@@ -1,0 +1,353 @@
+/*!
+ * EDMSTERDAM THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
+/* Regular font */
+
+
+
+@font-face {
+    font-family: 'UniversLTPro-65Bold';
+    src: url('../font/lowlands/UniversLTPro-65Bold.woff2') format('woff2'),
+        url('../font/lowlands/UniversLTPro-65Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers';
+    src: url('../font/lowlands/UniversLTPro-55Roman.woff2') format('woff2'),
+        url('../font/lowlands/UniversLTPro-55Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* Header font */
+
+@font-face {
+    font-family: 'Solid89';
+    src: url('../font/lowlands/LLHvH-Solid89.woff2') format('woff2'),
+        url('../font/lowlands/LLHvH-Solid89.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Solid89-condensed';
+    src: url('../font/lowlands/LLHvH-Solid89Condensed.woff2') format('woff2'),
+        url('../font/lowlands/LLHvH-Solid89Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* FOLDER */
+$folder: lowlands;
+
+/* BODY */
+$bg-color: #481D45;
+$loader-bg: #fff;
+$bodygradient-fromcolor: #481D45;
+$bodygradient-tocolor: #481D45;
+
+$font-size: 14px;
+$font-header-size: 24px; //default 24px;
+
+/* FONTS */
+$font: 'Univers', sans-serif;
+$font-header: 'Solid89-condensed', sans-serif;
+$border-color: rgba(255,255,255,.3); //rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #fff;
+$link-color: #fff;
+$error-color: #dc3545;
+
+/* Google Maps */
+$mapclose-color: #55cbd6;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.2); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.2);
+$red-filter: rgba(0,0,0,.2);
+$grey-filter: rgba(0,0,0,.2);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.5);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Solid89-condensed', sans-serif;
+$button-size: 16px;
+$button-bg: rgba(0,0,0,0.2);
+$button-color: #fff;
+$button-bg-hover: rgba(0,0,0,0.4);
+$button-color-hover: #fff;
+$button-radius: 0px;
+
+.button{
+    letter-spacing: 0 !important;
+}
+.button-primary{
+    border: none;
+    border-left:  10px solid #f23859 !important;
+    border-right:  10px solid #55cbd6 !important;
+
+}
+
+/* BACK BUTTO5 */
+$button-back-size: 15px; //default 15px
+$button-back-bg: rgba(0,0,0,0.2);
+$button-back-color: #fff;
+$button-back-border: none;
+$button-back-bghover: rgba(0,0,0,0.4);
+$button-back-colorhover: #fff;
+$button-back-borderhover: none;
+
+/* FAQ */
+$faq-button-bg: rgba(0,0,0,0.2);
+$faq-button-color: #fff;
+$faq-button-bghover: rgba(0,0,0,0.4);
+$faq-button-colorhover: #fff;
+
+
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-size: 16px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: #481D45;
+$sec-button-colorhover: #fff;
+$sec-button-bghover: #55cbd6;
+$sec-button-border: 2px solid transparent !important;
+$sec-button-borderhover: 2px solid transparent !important;
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #fff !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 50px;
+$logo-height-mobile: 30px;
+$header-bg: #481D45;
+$header-color: #fff;
+$header-bg-sticky: #481D45;
+$header-text: #fff;
+$header-hover: #55cbd6;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: #481D45;
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: rgba(72,29,71,.9);
+$subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #666;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #55cbd6;
+$subnav-social-bg: #fff;
+$subnav-social-color: #000;
+$subnav-social-hover: #481D45;
+$subnav-social-bghover: #55cbd6;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid rgba(255,255,255,.2);
+$language-bg: rgba(72,29,71,.9);
+$language-link: #fff;
+$language-hover: #55cbd6;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,.4);
+$hero-h1-size: 90px; //70px default
+$font-hero-small: $font;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 16px;
+
+.hero-button{
+    font-size: 30px !important;
+}
+
+.hero-scroll:hover{
+    & .arrow:before {
+        color: #fff !important;
+    }
+    color: #fff !important;
+}
+
+/* Testimonials */
+$testimonial-bg: #481D45;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #55cbd6;
+$testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
+
+/* STEPS */
+$steps-bg: #481D45;
+$steps-color: #fff;
+$steps-bg-hover: #55cbd6;
+$steps-color-hover: #fff;
+$steps-active-bg: #361A36;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 1px solid #fff;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid #f3eeee;
+$offer-title: #fff;
+$offer-title-transform: none;
+$ribbon-bg: #55cbd6;
+$ribbon-color: #fff;
+$offer-activedot: #55cbd6;
+$offer-inactivedot: #fff;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
+
+.offer-title, .h1{
+  font-family: 'Solid89-condensed', sans-serif !important;
+  font-weight: normal !important;
+}
+
+/* WHY BOOK */
+$why-border: #55cbd6;
+$why-number: #55cbd6;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #55cbd6;
+$why-book-iconbg: #55cbd6;
+
+/* Footer */
+$footer-border: 1px solid #fff;
+$footer-bg: #481D45;
+$footer-text: #fff;
+$footer-link: #fff;
+$footer-hover: #55cbd6;
+$footer-heading: #fff;
+$footer-heading-size: 24px; //default 24px
+$footer-social-color: #481D45;
+$footer-social-bg: #fff;
+$footer-social-hover: #55cbd6;
+$footer-socialicon-hover: #481D45;
+$footer-payoffsize: 12px;
+$partner-bg: #000;
+
+/* COOKIES */
+$cookies-bg: #481D45;
+$cookie-link-color: #fff;
+$cookies-fontsize: 13px;
+$cookies-border: 1px solid #fff;
+$cookies-color: #fff;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
+
+
+
+/* FORMS */
+$form-border: 1px solid #361A36;
+$form-bordercolor: #361A36;
+$form-border-login: 1px solid #666;
+$form-label: #fff;
+$form-labelsize: 14px;
+$form-input-color: #000;
+$form-focus-border: #361A36;
+$form-highlight: #361A36;
+$form-highlightcolor: #fff;
+$form-addon-bg: #361A36;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+.hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step,.h2-section, .h3,.yourbooking h3,.info-list-section,.page-h1, .page h4,.notification,h3.extras,.extra-number-items {
+    font-weight: 400 !important;
+}
+
+.h4, .form-label{
+    font-family: 'Solid89-condensed', sans-serif ;
+    font-weight: 400 !important;
+}
+
+.extra-number, .extra-number-items {
+  // background: $bg-color !important;
+  color: $bg-color !important;
+}
+.extra-number .manage-button{
+    color: #fff !important;
+    background:#361A36 !important;
+
+    &:hover{
+        background: #55cbd6 !important;
+    }
+}
+
+.payoff{
+    padding-bottom: 70px;
+}
+.partners{
+    display: none;
+}
+
+.t-check-out{
+    border-left-width: 1 !important;
+}
+.social li a{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+
+}
+
+li.info-label{
+    border: none !important;
+    border-left:  10px solid #f23859 !important;
+    border-right:  10px solid #55cbd6 !important;
+}
+
+$checkout: #481d47;
+$checkout-light: rgba(72,29,71,0.1);
+$checkout-limit: #55cbd6;
+$checkout-limit2: #f23859;
+
+@mixin gradient($fromcolor, $tocolor) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+	background: $fromcolor; /* Old browsers */
+	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.body{
+  background: url(../img/lowlands/bg.gif) 0 0 repeat scroll;
+}
+
+.section{
+  background: #481D45;
+  max-width: 1280px;
+  padding: 80px 0 !important;
+  margin: 60px auto;
+      box-shadow: 10px 0 0 0 #55cbd6, -10px 0 0 0 #f23859, 0 5px 10px 0 #481d47, 0 -5px 10px 0 #481d47;
+
+      @media all and(max-width: 1300px){
+        max-width: calc(100vw - 50px);
+      }
+}
