@@ -451,3 +451,15 @@
 		padding-right: 30px;
 	}
 }
+
+.discount-overview{
+	border-radius: $button-radius;
+	display: flex;
+	border: 2px solid $border-color;
+	padding: 15px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: bold;
+	background: rgba(0,0,0,.02);
+}

@@ -1051,6 +1051,16 @@ h3.extras {
 .b-lazy.b-loaded {
   opacity: 1; }
 
+.preview {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  right: 15px;
+  background: red; }
+
 .gallery {
   margin-bottom: 30px;
   position: relative; }
@@ -3091,7 +3101,7 @@ body.scrolled .hamburger-oud {
   text-align: center; }
   @media all and (max-width: 767px) {
     .slideshow-item {
-      height: 80vh; } }
+      height: 65vh; } }
   .slideshow-item p {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
@@ -3468,6 +3478,17 @@ body.scrolled .hamburger-oud {
   .upgrade-extras .price {
     text-align: right !important;
     padding-right: 30px; }
+
+.discount-overview {
+  border-radius: 0px;
+  display: flex;
+  border: 2px solid #f3eeee;
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.02); }
 
 /*======================================
   Selectric v1.13.0
@@ -4236,7 +4257,8 @@ footer {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 25%;
-    padding-right: 15px; }
+    padding-right: 15px;
+    position: relative; }
     @media all and (max-width: 992px) {
       .flex-offer-image {
         flex-basis: 50%;

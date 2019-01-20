@@ -146,6 +146,14 @@ $('.closeCookies').click(function() {
     $('.cookies').fadeToggle("fast");
 });
 
+$('.toggle-discount').click(function() {
+    $('.discount').fadeToggle(0);
+    $('.discount-overview').fadeToggle(0);
+    return false;
+});
+
+
+
 // TOGGLE FILTERS
 
 $('.toggle-filters').click(function() {
@@ -359,6 +367,24 @@ $(document).ready(function() {
     });
 });
 
+$(".owl-preview").each(function(){
+    $(this).owlCarousel({
+     items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        lazyLoad: true,
+        loop: true,
+        dots: false,
+        autoplaySpeed: 1000,
+        navSpeed: 1000,
+        dotsSpeed: 1000,
+        dragEndSpeed: 1000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+    });
+  });
+
 
 
 
@@ -389,6 +415,8 @@ $(document).on("click", function () {
         $("#setLanguage").fadeToggle("fast");
     }
 });
+
+
 
 $('*[data-type="slidetoggle"]').click(function() {
 

@@ -41,7 +41,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	
-	<link href="assets/css/styles.min.css?v=12" rel="stylesheet" id="themecss">
+	<link href="assets/css/styles.min.css?v=13" rel="stylesheet" id="themecss">
 	
 
 
@@ -370,7 +370,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 					</tbody>
 				</table>
 
-				<div class="needhelp">
+				<div class="needhelp m-b-30">
 					<h4 class="h4">Need help?</h4>
 					<p>Contact us via e-mail or WhatsApp.</p>
 					<div class="helplinks">
@@ -450,6 +450,19 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 								</ul>
 							</td>
 						</tr>
+						<tr>
+							<td class="description">Discount</td>
+							<td class="content">
+								<ul>
+									<li>-20% discount on extras</li>
+								</ul>
+							</td>
+							<td class="amount">
+								<ul>
+									<li>-&euro;60,00</li>
+								</ul>
+							</td>
+						</tr>
 						<tr class="bookingrow">
 							<td colspan="3">
 								<hr>
@@ -465,6 +478,25 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 						</tr>
 					</tbody>
 				</table>
+
+				<h4 class="h4 m-t-40">Discount voucher <span class="tooltipbtn" data-toggle="tooltip" data-placement="top" title="If you have a voucher code you can enter it here."><i class="fa fa-question-circle" aria-hidden="true"></i></span></h4>
+				<form class="m-b-30 m-t-30">
+					<fieldset>
+						<div class="discount">
+							<div class="form-group">
+								<input type="text" value="" placeholder="Enter voucher code" class="form-control textfield">
+								<p class="p m-t-10">Voucher code is case sensitive</p>
+							</div>
+							<button class="button button-primary button--block toggle-discount"><i class="fa fa-check-circle" aria-hidden="true"></i>Apply discount</button>
+						</div>
+						<div class="discount-overview" style="display: none;">
+							<div>-20% discount on extras</div>
+							<div>
+								<a href="#" class="button button-primary toggle-discount"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete</a>
+							</div>
+						</div>
+					</fieldset>
+				</form>
 
 
 
@@ -607,8 +639,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 					<li><a href="https://api.whatsapp.com/send?phone=31652382382&text=Hi EDMSTERDAM, I have a question"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 				</ul>
 
-				<div class="footer-logos d-none">
-
+				<div class="footer-logos">
 						<ul>
 							<li><img src="assets/img/logo-mastercard.png" alt="" class="lazyload"></li>
 							<li><img src="assets/img/logo-visa.png" alt="" class="lazyload"></li>
@@ -616,7 +647,6 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 							<li><img src="assets/img/logo-ideal.png" alt="" class="lazyload"></li>
 							
 						</ul>
-
 				</div>
 			</div>
 		</div>

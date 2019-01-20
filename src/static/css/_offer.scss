@@ -331,6 +331,7 @@
 		flex-shrink: 1;
 		flex-basis: 25%;
 		padding-right: 15px;
+		position: relative;
 
 		@media all and (max-width: $breakpoint-tablet){
 			flex-basis: 50%;
