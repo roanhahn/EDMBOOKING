@@ -1,6 +1,10 @@
 .t-check-in,
 .t-check-out {
-    border-color: #ededed
+    border-color: $form-border
+}
+
+.t-check-in {
+  border-right-color: $form-border;
 }
 
 td.t-today, .t-today span.t-hover-day-content, .t-today, .t-today .t-hover-day-content{
@@ -11,9 +15,7 @@ td.t-today::after{
     border-top-color:  $checkout-limit2;
 }
 
-.t-check-in {
-    border-right-color: #e8e8e8
-}
+
 
 .t-date-title {
     color: #e91e63

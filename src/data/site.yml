@@ -189,17 +189,30 @@
 # description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 #LOWLANDS
-logo: logo.png
-theme: Lowlands
-name: Lowlands
+# logo: logo.png
+# theme: lowlands
+# name: lowlands
+# intro: intro
+# title: Lowlands 2019
+# homepage: homepage.html
+# herotitle: BLACK OUT
+# herosubtitle: Canvas cotton cap
+# event: LOWLANDS 2019
+# eventdate: Koop je tickets hier
+# description: Lowlands vindt plaats op 17 + 18 + 19 augustus 2018 op Evenemententerrein Walibi Holland in Biddinghuizen.
+
+#Cirque du Soleil
+logo: logo.svg
+theme: cirquedusoleil
+name: Crque du Soleil
 intro: intro
-title: Lowlands 2019
+title: Cirque Du Soleil Den Haag
 homepage: homepage.html
-herotitle: BLACK OUT
-herosubtitle: Canvas cotton cap
-event: LOWLANDS 2019
-eventdate: Koop je tickets hier
-description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+herotitle: TORUK The First Flight
+herosubtitle: Sportpaleis mrt 13-17, 2019
+event: TORUK The First Flight
+eventdate: Sportpaleis mrt 13-17, 2019
+description: Cirque du Soleil in a stunning new light Inspired by James Cameron’s Avatar, Cirque du Soleil transports you to the world of Pandora in a visually stunning live setting. Experience a storytelling odyssey through a new world of imagination, discovery and possibility.
 
 
 category: gallery

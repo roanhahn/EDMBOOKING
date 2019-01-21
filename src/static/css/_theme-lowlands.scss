@@ -1,5 +1,5 @@
 /*!
- * EDMSTERDAM THEME
+ * LOWLANDS THEME
  * Copyright (c) 2018 EDMBOOKING.com
  */
 
@@ -175,7 +175,7 @@ $dropdownicon: "\f107";
 /* HERO */
 $hero-color: #fff;
 $hero-h1-color: #fff;
-$hero-overlay: rgba(0,0,0,.4);
+$hero-overlay: rgba(0,0,0,.2);
 $hero-h1-size: 90px; //70px default
 $font-hero-small: $font;
 $hero-position: center center;
@@ -185,6 +185,7 @@ $hero-button-size: 16px;
 
 .hero-button{
     font-size: 30px !important;
+    line-height: 1 !important;
 }
 
 .hero-scroll:hover{
@@ -317,7 +318,7 @@ $placeholder-color: #95a5a6;
 
 }
 
-li.info-label{
+li.info-label, li.info-label:hover{
     border: none !important;
     border-left:  10px solid #f23859 !important;
     border-right:  10px solid #55cbd6 !important;
@@ -342,12 +343,33 @@ $checkout-limit2: #f23859;
 
 .section{
   background: #481D45;
-  max-width: 1280px;
-  padding: 80px 0 !important;
-  margin: 60px auto;
+      margin: 30px auto;
+      width: calc(100vw - 30px);
+      // max-width: 300px;
       box-shadow: 10px 0 0 0 #55cbd6, -10px 0 0 0 #f23859, 0 5px 10px 0 #481d47, 0 -5px 10px 0 #481d47;
 
-      @media all and(max-width: 1300px){
-        max-width: calc(100vw - 50px);
+
+      @media all and(min-width: 576px){
+        max-width: 540px;
+         padding: 40px 0 !important;
+
+      }
+      @media all and(min-width: 768px){
+        max-width: 720px;
+        padding: 80px 0 !important;
+        margin: 60px auto;
+      }
+      @media all and(min-width: 992px){
+        max-width: 960px;
+      }
+      @media all and(min-width: 1300px){
+        max-width: 1280px;
+      }
+      @media all and(max-width: $breakpoint-tablet){
+
+      }
+      @media all and(max-width: $breakpoint-mobile){
+        // max-width: calc(100vw - 30px);
+
       }
 }

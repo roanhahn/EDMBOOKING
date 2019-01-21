@@ -6,7 +6,7 @@ videobackground: bla
 ---
 
 
-<div class="hero hero-fullscreen">
+<div class="hero hero-fullscreen d-none">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -28,8 +28,8 @@ videobackground: bla
 			</div>
 		</div>
 	</div>
-	<div class="vimeo">
-		<video src="https://player.vimeo.com/external/250748184.hd.mp4?s=4654fd490c4f22cb13e7578f30d7c4bc28c035dc&amp;profile_id=174" autoplay="" loop="" class="hero__video hero__video--centered" data-object-fit="cover"></video>
+	<div class="vimeo" style="background-image: url(assets/img/{{site.theme}}/Lowlands_HomepageAnimatie_poster.png);">
+		<video src="https://player.vimeo.com/external/250748184.hd.mp4?s=4654fd490c4f22cb13e7578f30d7c4bc28c035dc&amp;profile_id=174" autoplay="true" loop="true" class="hero__video hero__video--centered" data-object-fit="cover"></video>
 	</div>
 	<div class="hero-scroll scrollTo" data-target="#eventinfo">
 		<span>Event info</span>
@@ -37,7 +37,7 @@ videobackground: bla
 	</div>
 </div>
 
-<div class="hero hero-fullscreen d-none" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
+<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
@@ -61,7 +61,7 @@ videobackground: bla
 	</div>
 
 	 <!-- Slider 1 -->
-    <div class="slider d-block" id="slider1">
+    <div class="slider d-none" id="slider1">
         <!-- Slides -->
         <div style="background-image:url(assets/img/edmsterdam/slider-1.jpg)"></div>
         <div style="background-image:url(assets/img/edmsterdam/slider-2.jpg)"></div>
@@ -146,6 +146,8 @@ videobackground: bla
 		</div>
 	</div>
 </section>
+
+{{> gallery }}
 
 {{> testimonials }}
 {{!--

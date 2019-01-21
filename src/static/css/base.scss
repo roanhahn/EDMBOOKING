@@ -42,7 +42,10 @@
 // @import "theme-edmsterdam.scss";
 
 /* Theme LOWLANDS  */
-@import "theme-lowlands.scss";
+// @import "theme-lowlands.scss";
+
+/* Theme Cirque du soleil  */
+@import "theme-cirquedusoleil.scss";
 
 
 // Default CSS
@@ -64,7 +67,7 @@
 // @import "_event-agent.scss";
 
 // Plugins
-// @import "jquery.slide.scss";
+@import "jquery.fancybox.css";
 @import "_sliderResponsive.scss";
 @import "_animate.scss";
 @import "_owl.carousel.min.scss";

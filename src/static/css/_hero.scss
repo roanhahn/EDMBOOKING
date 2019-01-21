@@ -439,6 +439,9 @@
 	// height: calc(100vh - #{$header-height});
 	// background: red;
 	position: absolute;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -457,6 +460,10 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+		@media all and (max-width: $breakpoint-tablet){
+			display: none;
+		}
 	}
 }
 

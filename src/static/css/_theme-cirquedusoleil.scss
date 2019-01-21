@@ -1,0 +1,289 @@
+/*!
+ * CIRQUE DU SOLEIL THEME
+ * Copyright (c) 2018 EDMBOOKING.com
+ */
+
+/* Regular font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+
+
+
+
+
+
+/* FOLDER */
+$folder: cirquedusoleil;
+
+/* BODY */
+$bg-color: #fff;
+$loader-bg: #fff;
+$bodygradient-fromcolor: #fff;
+$bodygradient-tocolor: #fff;
+
+$font-size: 14px;
+$font-header-size: 24px; //default 24px;
+
+/* FONTS */
+$font: 'Roboto', sans-serif;
+$font-header: 'Roboto', sans-serif;
+$border-color: #e9e9e9; //rgba(255,255,255,.3);
+
+/* FONT COLORS */
+$text-color: #333;
+$heading-color: #333;
+$link-color: #333;
+$error-color: #dc3545;
+
+/* Google Maps */
+$mapclose-color: #fac50e;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,0,0,.2); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.2);
+$red-filter: rgba(0,0,0,.2);
+$grey-filter: rgba(0,0,0,.2);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.5);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Roboto', sans-serif;
+$button-size: 16px;
+$button-bg: #fac50e;
+$button-color: #000;
+$button-bg-hover: #000;
+$button-color-hover: #fac50e;
+$button-radius: 20px;
+
+.button{
+    letter-spacing: 0 !important;
+}
+
+
+/* BACK BUTTO5 */
+$button-back-size: 15px; //default 15px
+$button-back-bg: #fac50e;
+$button-back-color: #000;
+$button-back-border: none;
+$button-back-bghover: #000;
+$button-back-colorhover: #fac50e;
+$button-back-borderhover: none;
+
+/* FAQ */
+$faq-button-bg: #fac50e;
+$faq-button-color: #000;
+$faq-button-bghover: #000;
+$faq-button-colorhover: #fac50e;
+
+
+
+/* SECONDARY BUTTON */
+$sec-button-color: #000;
+$sec-size: 16px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: #fac50e;
+$sec-button-colorhover: #fac50e;
+$sec-button-bghover: #000;
+$sec-button-border: 2px solid transparent !important;
+$sec-button-borderhover: 2px solid transparent !important;
+$sec-button-radius: 20px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #fff !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 25px;
+$logo-height-mobile: 20px;
+$header-bg: #000;
+$header-color: #fff;
+$header-bg-sticky: #000;
+$header-text: #fff;
+$header-hover: #fac50e;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: #4E8ED8;
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #4E8ED8;
+$subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #666;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: #000;
+$subnav-social-bg: #4E8ED8;
+$subnav-social-color: #fff;
+$subnav-social-hover: #000;
+$subnav-social-bghover: #4E8ED8;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid rgba(255,255,255,.2);
+$language-bg: #4E8ED8;
+$language-link: #fff;
+$language-hover: #000;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+/* HERO */
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,.2);
+$hero-h1-size: 70px; //70px default
+$font-hero-small: $font;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 16px;
+
+.hero-button{
+    // font-size: 30px !important;
+    line-height: 1 !important;
+}
+.hero{
+  background-position: top right !important;
+}
+.hero-scroll:hover{
+    & .arrow:before {
+        color: #fff !important;
+    }
+    color: #fff !important;
+}
+
+/* Testimonials */
+
+$testimonial-bg: #fff url(../img/cirquedusoleil/bg-testimonial.jpg) center center / cover no-repeat fixed;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #fac50e;
+$testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
+
+/* STEPS */
+$steps-bg: #333333;
+$steps-color: #fff;
+$steps-bg-hover: #666666;
+$steps-color-hover: #fff;
+$steps-active-bg: #000;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 1px solid #fff;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid #f3eeee;
+$offer-title: #333;
+$offer-title-transform: none;
+$ribbon-bg: #F2C646;
+$ribbon-color: #000;
+$offer-activedot: #F2C646;
+$offer-inactivedot: #666;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #fff;
+
+
+
+/* WHY BOOK */
+$why-border: #000;
+$why-number: #000;
+$why-book-icon: #fac50e;
+$why-book-iconborder: 3px solid #000;
+$why-book-iconbg: #000;
+
+/* Footer */
+$footer-border: 1px solid #000;
+$footer-bg: #000;
+$footer-text: #787878;
+$footer-link: #cbcbcb;
+$footer-hover: #fff;
+$footer-heading: #787878;
+$footer-heading-size: 24px; //default 24px
+$footer-social-color: #fff;
+$footer-social-bg: #000;
+$footer-social-hover: #000;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+$partner-bg: #000;
+
+/* COOKIES */
+$cookies-bg: #4E8ED8;
+$cookie-link-color: #fff;
+$cookies-fontsize: 13px;
+$cookies-border: 1px solid #4E8ED8;
+$cookies-color: #fff;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
+
+
+
+/* FORMS */
+$form-border: 1px solid #333;
+$form-bordercolor: #333;
+$form-border-login: 1px solid #333;
+$form-label: #333;
+$form-labelsize: 14px;
+$form-input-color: #000;
+$form-focus-border: #333;
+$form-highlight: #333;
+$form-highlightcolor: #fff;
+$form-addon-bg: #333;
+$form-addon-color: #fff;
+$placeholder-color: #95a5a6;
+
+
+
+.extra-number, .extra-number-items {
+  // background: $bg-color !important;
+  // color: $bg-color !important;
+}
+.extra-number .manage-button{
+    color: #fac50e !important;
+    background:#000 !important;
+
+    &:hover{
+        background: #fac50e !important;
+        color: #000 !important;
+    }
+}
+
+.payoff{
+    padding-bottom: 70px;
+}
+.partners{
+    display: none;
+}
+
+.t-check-out{
+    border-left-width: 1 !important;
+}
+.social li a{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+
+}
+
+
+
+$checkout: #000;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: #F2C646;
+$checkout-limit2: #4E8ED8;
+
+@mixin gradient($fromcolor, $tocolor) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+	background: $fromcolor; /* Old browsers */
+	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
