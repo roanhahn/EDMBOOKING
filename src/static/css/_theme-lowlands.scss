@@ -183,10 +183,7 @@ $hero-button-padding: 30px;
 $hero-button-width: 350px;
 $hero-button-size: 16px;
 
-.hero-button{
-    font-size: 30px !important;
-    line-height: 1 !important;
-}
+
 
 .hero-scroll:hover{
     & .arrow:before {
@@ -318,6 +315,7 @@ $placeholder-color: #95a5a6;
 
 }
 
+
 li.info-label, li.info-label:hover{
     border: none !important;
     border-left:  10px solid #f23859 !important;
@@ -373,3 +371,24 @@ $checkout-limit2: #f23859;
 
       }
 }
+
+a.hero-button{
+    font-size: 30px !important;
+    padding: 22px 0 15px 0 !important;
+    line-height: 1 !important;
+    border: none !important;
+    border-left:  10px solid #f23859 !important;
+    border-right:  10px solid #55cbd6 !important;
+    max-width: 400px !important;
+
+    @media all and (max-width: $breakpoint-mobile){
+      font-size: 20px !important;
+    }
+}
+a.hero-button:hover{
+   background-color: #281328;
+    border: none !important;
+    border-left:  10px solid #f23859 !important;
+    border-right:  10px solid #55cbd6 !important;
+}
+

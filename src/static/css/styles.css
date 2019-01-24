@@ -314,6 +314,11 @@ h3.extras {
     padding: 0;
     margin: 20px 0 20px 18px; }
 
+.bullet-list {
+  margin: 20px 0px 20px 18px;
+  padding: 0;
+  line-height: 1.6; }
+
 .h4 {
   font-weight: 700;
   font-size: 18px;
@@ -1061,7 +1066,8 @@ h3.extras {
 .img-fluid {
   width: 100%; }
 
-.slide-prev, .slide-next {
+.slide-prev,
+.slide-next {
   position: absolute;
   cursor: pointer;
   display: block;
@@ -1076,10 +1082,12 @@ h3.extras {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .slide-prev:hover, .slide-next:hover {
+  .slide-prev:hover,
+  .slide-next:hover {
     color: white; }
   @media all and (max-width: 767px) {
-    .slide-prev, .slide-next {
+    .slide-prev,
+    .slide-next {
       width: 30px;
       height: 30px;
       font-size: 2rem; } }
@@ -1088,7 +1096,8 @@ h3.extras {
   left: auto;
   right: 0px; }
 
-.my-next-button, .my-prev-button {
+.my-next-button,
+.my-prev-button {
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   width: 50px;
@@ -1108,7 +1117,8 @@ h3.extras {
   border-radius: 100px;
   padding: 0px; }
   @media all and (max-width: 767px) {
-    .my-next-button, .my-prev-button {
+    .my-next-button,
+    .my-prev-button {
       width: 30px;
       height: 30px;
       line-height: 30px;
@@ -1117,16 +1127,19 @@ h3.extras {
       -ms-transform: translate(0, -50%);
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%); } }
-  .my-next-button:hover, .my-prev-button:hover {
+  .my-next-button:hover,
+  .my-prev-button:hover {
     background: rgba(0, 0, 0, 0.8); }
-  .my-next-button:before, .my-prev-button:before {
+  .my-next-button:before,
+  .my-prev-button:before {
     content: "\f054";
     font-family: "FontAwesome";
     text-align: center;
     display: inline-block;
     width: 50px; }
     @media all and (max-width: 767px) {
-      .my-next-button:before, .my-prev-button:before {
+      .my-next-button:before,
+      .my-prev-button:before {
         width: 30px; } }
 
 .my-prev-button {
@@ -1211,8 +1224,19 @@ h3.extras {
   .gallery-item a {
     display: block;
     opacity: .95;
+    height: 0px;
+    overflow: hidden;
+    padding-bottom: 75%;
+    position: relative;
     -webkit-transition: opacity .3s ease-out 0s;
-    transition: opacity .3s ease-out 0s; }
+    transition: opacity .3s ease-out 0s;
+    background: transparent url(../img/cirquedusoleil/rolling.gif) center center no-repeat scroll;
+    background-size: 16px auto; }
+    .gallery-item a img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%; }
     .gallery-item a:hover {
       opacity: 1; }
 .gallery-img {
@@ -4214,7 +4238,7 @@ footer {
         -webkit-columns: 1;
         -moz-columns: 1; } }
     .offer-list li {
-      margin-bottom: 10px;
+      line-height: 1.6;
       list-style-type: none;
       position: relative;
       padding-left: 15px; }
