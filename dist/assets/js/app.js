@@ -477,10 +477,10 @@ $(document).ready(function() {
     var owlSlideshow = $('.owl-slideshow');
     owlSlideshow.owlCarousel({
         items: 1,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
-        lazyLoad: true,
+        lazyLoad: false,
         loop: true,
         dots: false,
         autoplaySpeed: 1000,

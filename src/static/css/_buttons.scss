@@ -26,6 +26,28 @@ button {
     white-space: nowrap;
 
 
+    &--loading{
+        content: "" !important;
+        text-indent: -9999px;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+
+
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: transparent url("../img/#{$folder}/loading.svg") no-repeat center center scroll;
+            background-size: cover;
+        }
+    }
+
+
     &.loading {
         pointer-events: none;
         cursor: default; // text-align: left;

@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 				livereload: '<%= connect.options.livereload %>'
 			},
 			files: [
-		'<%= config.dist %>/{,*/}*.html',
+		'<%= config.dist %>/{,**/}*.html',
 	'<%= config.dist %>/assets/{,*/}*.css',
 '<%= config.dist %>/assets/{,*/}*.js',
 '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -130,7 +130,7 @@ connect: {
 					partials: '<%= config.src %>/templates/partials/**/*.hbs'
 				},
 				files: {
-					'<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
+					'<%= config.dist %>/': ['<%= config.src %>/templates/pages/**/*.hbs']
 				}
 			}
 		},
