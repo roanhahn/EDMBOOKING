@@ -66,7 +66,12 @@ body:before {
 /* HEADER */
 /* HERO */
 .hero-button {
-  font-size: 18px !important; }
+  font-size: 18px !important;
+  background: #fff !important;
+  color: #000 !important; }
+
+.hero-scroll {
+  color: #fff; }
 
 .hero-scroll:hover {
   color: #fff !important; }
@@ -3154,6 +3159,11 @@ body.scrolled .hamburger-oud {
 
 .slideshow {
   position: relative; }
+  .slideshow .flexbuttons {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 20vh; }
 
 .slideshowbg {
   background-size: cover;
@@ -3161,20 +3171,22 @@ body.scrolled .hamburger-oud {
   background-repeat: no-repeat; }
 
 .slideshow-item {
-  height: 100%;
-  padding: 0 20vw;
+  padding: 20vh 20vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
   min-height: 450px;
-  height: 70vh;
+  height: calc(100vh - 90px);
   background: rgba(0, 0, 0, 0.3);
   text-align: center; }
+  @media all and (max-width: 992px) {
+    .slideshow-item {
+      justify-content: flex-start; } }
   @media all and (max-width: 767px) {
     .slideshow-item {
-      height: 65vh; } }
+      height: calc(100vh - 50px); } }
   .slideshow-item p {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;

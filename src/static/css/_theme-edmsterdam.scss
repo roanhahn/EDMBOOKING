@@ -160,8 +160,16 @@ $hero-button-size: 16px;
 
 .hero-button{
     font-size: 18px !important;
-}
+    background: #fff !important;
+    color: #000 !important;
 
+    &:hover{
+
+    }
+}
+.hero-scroll{
+  color: #fff !important;
+}
 .hero-scroll:hover{
     & .arrow:before {
         color: #fff !important;
