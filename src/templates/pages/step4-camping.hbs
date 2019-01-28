@@ -226,24 +226,31 @@ type: page
 					</tbody>
 				</table>
 
-				<h4 class="h4 m-t-40">Discount voucher <span class="tooltipbtn" data-toggle="tooltip" data-placement="top" title="If you have a voucher code you can enter it here."><i class="fa fa-question-circle" aria-hidden="true"></i></span></h4>
-				<form class="m-b-30 m-t-30">
-					<fieldset>
-						<div class="discount">
-							<div class="form-group">
-								<input type="text" value="" placeholder="Enter voucher code" class="form-control textfield">
-								<p class="p m-t-10">Voucher code is case sensitive</p>
+				<div class="voucher">
+					<div class="toggleVoucher" data-type="toggle" data-target=".voucherform"><h4 class="h4">Discount voucher <span class="tooltipbtn" data-toggle="tooltip" data-placement="top" title="If you have a voucher code you can enter it here."><i class="fa fa-question-circle" aria-hidden="true"></i></span></h4></div>
+					<form class="voucherform">
+						<fieldset>
+							<div class="discount">
+								<div class="form-group">
+									<input type="text" value="" placeholder="Enter voucher code" class="form-control textfield">
+									<div class="invalid-feedback" style="display: block;">Please provide a valid name</div>
+									<p class="p m-t-10">Voucher code is case sensitive</p>
+
+								</div>
+								<button class="button button-primary button--block" data-type="toggle" data-target=".entervoucher"><i class="fa fa-check-circle" aria-hidden="true"></i>Apply discount</button>
 							</div>
-							<button class="button button-primary button--block toggle-discount"><i class="fa fa-check-circle" aria-hidden="true"></i>Apply discount</button>
-						</div>
-						<div class="discount-overview" style="display: none;">
-							<div>-20% discount on extras</div>
-							<div>
-								<a href="#" class="button button-primary toggle-discount"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete</a>
+							<div class="entervoucher" style="display: none;">
+								<div class="ajax-loader"></div>
+								<div class="discount-overview">
+									<div>XJH-W89: -20% discount on extras</div>
+									<div>
+										<a href="#" class="button button-primary" data-type="toggle" data-target=".entervoucher"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete</a>
+									</div>
+								</div>
 							</div>
-						</div>
-					</fieldset>
-				</form>
+						</fieldset>
+					</form>
+				</div>
 
 
 

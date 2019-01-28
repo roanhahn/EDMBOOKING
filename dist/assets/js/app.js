@@ -580,6 +580,7 @@ $('*[data-type="grouptoggle"]').click(function() {
 $('*[data-type="toggle"]').click(function() {
     var toggletarget = $(this).data('target');
     $(toggletarget).fadeToggle("fast");
+    $(this).toggleClass("active");
     return false;
 });
 
