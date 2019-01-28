@@ -479,10 +479,10 @@ $(document).ready(function() {
         items: 1,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplayHoverPause: true,
+        autoplayHoverPause: false,
         lazyLoad: true,
         loop: true,
-        dots: true,
+        dots: false,
         autoplaySpeed: 1000,
         navSpeed: 1000,
         dotsSpeed: 1000,
@@ -580,6 +580,7 @@ $('*[data-type="grouptoggle"]').click(function() {
 $('*[data-type="toggle"]').click(function() {
     var toggletarget = $(this).data('target');
     $(toggletarget).fadeToggle("fast");
+    $(this).toggleClass("active");
     return false;
 });
 
