@@ -304,7 +304,7 @@ $(document).ready(function() {
     var owlSlideshow = $('.owl-slideshow');
     owlSlideshow.owlCarousel({
         items: 1,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
         lazyLoad: false,

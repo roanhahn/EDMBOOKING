@@ -224,9 +224,9 @@ $cookie-link-color: #0c6ba7;
 $cookies-fontsize: 16px;
 $cookies-border: none;
 $cookies-color: #333;
-$cookies-padding: 20px;
+$cookies-padding: 20px 60px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 15px 50px 15px 15px;
 
 /* FORMS */
 $form-border: 1px solid #fff;
@@ -287,6 +287,10 @@ $checkout-limit2: rgb(217, 49, 138);
 }
 .extra-number .manage-button{
     color: #fff !important;
+    background: #0c6ba7 !important;
+}
+
+.toggleVoucher, .voucherform{
     background: #0c6ba7 !important;
 }
 

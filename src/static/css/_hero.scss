@@ -530,6 +530,7 @@
 
 	@media all and (max-width: $breakpoint-mobile){
 		height: calc(100vh - #{$header-height-mobile});
+		padding: 20vh 15px;
 	}
 
 
@@ -561,10 +562,10 @@
     text-shadow: 0 0 15px rgba(0, 0, 0, .7);
 
     @media all and (max-width: $breakpoint-tablet) {
-      font-size: 40px;
+      font-size: 6vw;
     }
     @media all and (max-width: $breakpoint-mobile) {
-      font-size: 24px;
+      font-size: 8vw;
     }
 
     &.hero-event-title {

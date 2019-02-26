@@ -242,12 +242,19 @@ $form-border: 1px solid #fff;
 $form-bordercolor: #000;
 $form-border-login: 1px solid #fff;
 $form-label: #fff;
+$form-labelsize: 14px;
 $form-input-color: #000;
+$form-focus-border: #db0083;
 $form-highlight: #db0083;
 $form-highlightcolor: #fff;
 $form-addon-bg: #000;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
+
+$checkout: #eb1f29;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: #000;
 
 .hero-fullscreen, .hero-video{
     min-height: 800px !important;

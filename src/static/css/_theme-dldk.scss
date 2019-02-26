@@ -25,7 +25,13 @@ $bodygradient-fromcolor: #fff;
 $bodygradient-tocolor: #fff;
 
 body{
-    background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
+    background: $bg-color url(../img/dldk/bg.jpg) no-repeat top center fixed !important;
+    background-size: cover !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        background-repeat: repeat;
+        background-attachment: scroll;
+    }
 }
 
 $font-size: 14px;
@@ -264,6 +270,9 @@ $checkout-limit2: #000;
     }
 }
 
+.toggleVoucher, .voucherform{
+    background: #000 !important;
+}
 .dldk-hero-btn{
     display: block;
     // float: left;

@@ -1,16 +1,19 @@
 /*!
- * EVENTAGENT THEME
+ * EDMSTERDAM THEME
  * Copyright (c) 2018 EDMBOOKING.com
  */
 
 /* Regular font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+
+
 
 /* Header font */
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+
+
 
 /* FOLDER */
 $folder: eventagent;
@@ -21,316 +24,291 @@ $loader-bg: #fff;
 $bodygradient-fromcolor: #fff;
 $bodygradient-tocolor: #fff;
 
-body{
-    background: #fff !important; /* Old browsers */
-}
-
-$font-size: 16px;
+$font-size: 14px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
-$font: 'Roboto', sans-serif;
+$font: 'Montserrat', sans-serif;
 $font-header: 'Montserrat', sans-serif;
-$font-special: 'Montserrat', sans-serif;
-$border-color: #e2e3e6; //rgba(255,255,255,.3);
-
-.event-info-item:after, .h3--lined, .page-h1{
-    border-width: 1px !important;
-}
+$border-color: #f3eeee; //rgba(255,255,255,.3);
 
 /* FONT COLORS */
 $text-color: #333;
-$heading-color: #242529;
-$link-color: #3742fa;
-$link-hover-color: #333;
+$heading-color: #111;
+$link-color: #091cf3;
 $error-color: #dc3545;
 
-.h3, .page h4, .mainnav .booking-cart, .subnav .subnav-list li{
-    text-transform: none !important;
-}
-
-.h3--big, .page-h1{
-    font-family: $font-special!important;
-    text-transform: none !important;
-    font-weight: 700 !important;
-}
-
-.h3--eventinfo{
-    font-size: 1.3rem !important;
-    font-family: $font-special!important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-}
-
 /* Google Maps */
-$mapclose-color: $link-color;
+$mapclose-color: #000;
 
 /* FILTERS */
 $filter-visibility: block;
-$blend-mode: multiply;
-$blue-filter: rgba(0,0,0,.1); //rgba(110,179,195,1);
-$white-filter: rgba(0,0,0,.1);
-$red-filter: rgba(0,0,0,.1);
-$grey-filter: rgba(0,0,0,.1);
+$blend-mode: none;
+$blue-filter: rgba(0,0,0,.0); //rgba(110,179,195,1);
+$white-filter: rgba(0,0,0,.0);
+$red-filter: rgba(0,0,0,.0);
+$grey-filter: rgba(0,0,0,.2);
 $filter-opacity: 0.5;
-$video-opacity: rgba(0,0,0,.2);
+$video-opacity: rgba(0,0,0,.5);
 $video-filter:  none; //grayscale(100%);
 
 /* BUTTONS */
 $font-button: 'Montserrat', sans-serif;
-$button-size: 17px; //default 17px
-$button-bg: $link-color;
-$button-color: #fff;
-$button-bg-hover: $link-hover-color;
+$button-size: 16px;
+$button-bg: #fff;
+$button-color: #091cf3;
+$button-bg-hover: #091cf3;
 $button-color-hover: #fff;
-$button-radius: 0px;
+$button-radius: 4px;
 
-/* BACK BUTTON */
-$button-back-size: 16px;
-$button-back-bg: $link-color;
-$button-back-color: #fff;
-$button-back-border: 2px solid #fff;
-$button-back-bghover: $link-hover-color;
+.button{
+    letter-spacing: 0 !important;
+}
+.button-primary{
+    border:  2px solid #091cf3 !important;
+
+}
+
+.hero{
+    background: #091cf3;
+    background-image: url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c10e7251e1ac786dac782e7_hanny-naibaho-388579-unsplash.jpg");
+    background-position: center bottom;
+    background-size: cover;
+
+    &:before{
+        background: repeating-linear-gradient(51deg, rgba(9, 28, 243, .8), rgba(146, 0, 255, .8)) !important;
+
+        // url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c052bb42442a688c02aa6ff_skew.svg"), repeating-linear-gradient(51deg, rgba(9, 28, 243, .8), rgba(146, 0, 255, .8)), url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c10e7251e1ac786dac782e7_hanny-naibaho-388579-unsplash.jpg")
+    }
+}
+
+/* BACK BUTTO5 */
+$button-back-size: 15px; //default 15px
+$button-back-bg: #fff;
+$button-back-color: #111;
+$button-back-border: 2px solid #111;
+$button-back-bghover: #111;
 $button-back-colorhover: #fff;
-$button-back-borderhover: 2px solid #fff;
-
+$button-back-borderhover: 2px solid #111;
 
 /* FAQ */
-$faq-button-bg: $link-color;
+$faq-button-bg: #091cf3;
 $faq-button-color: #fff;
-$faq-button-bghover: $link-hover-color;
+$faq-button-bghover: #111;
 $faq-button-colorhover: #fff;
 
 /* SECONDARY BUTTON */
-$sec-button-color: #333;
-$sec-size: 14px; //default 16px
-$sec-size-mobile: 20px; //default
-$sec-button-bg: #fff;
+$sec-button-color: #091cf3;
+$sec-size: 16px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: rgba(255,255,255,1);
 $sec-button-colorhover: #fff;
-$sec-button-bghover: $link-color;
-$sec-button-border: 2px solid $link-color;
-$sec-button-borderhover: 2px solid $link-color;
-$sec-button-radius: 30px;
+$sec-button-bghover: #091cf3;
+$sec-button-border: 2px solid #fff !important;
+$sec-button-borderhover: 2px solid #fff !important;
+$sec-button-radius: 4px;
 $sec-button-inverted-color: #000;
 $sec-padding: 15px 30px;
 
-.button-secondary{
-    text-transform: none !important;
-    letter-spacing: 0px !important;
-}
-.info-list-section{
-    text-transform: none !important;
-}
-
 /* HEADER */
-$hamburger-layer-color: #808e9b;
-$hamburger-height: 4px; // default 6px
-$hamburger-spacing: 7px; // default 6px
+$hamburger-layer-color: #111 !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
 $logo-height-mobile: 30px;
 $header-bg: #fff;
-$header-color: #808e9b;
+$header-color: #fff;
 $header-bg-sticky: #fff;
-$header-text: #808e9b;
-$header-hover: #485460;
+$header-text: #000;
+$header-hover: #091cf3;
 $main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-$menu-color: black;
-$notification-bg: #05e249;
+$menu-color: #111;
+$notification-bg: #091cf3;
 $notication-icons: #fff;
 $notification-text: #fff;
-$subnav-bg: #fff;
-$subnav-strong: #242529;
-$subnav-strong-size: 1rem; //default 20px
-$subnav-color: #242529;
-$subnav-link: #242529;
-$subnav-sublink: #a2a4ac;
-$subnav-hover: $link-color;
-$subnav-social-bg: #242529;
-$subnav-social-color: #fff;
-$subnav-social-hover: #fff;
-$subnav-social-bghover: $link-color;
+$subnav-bg: #091cf3;
+$subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #666;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: rgba(255,255,255,.6);
+$subnav-social-bg: #fff;
+$subnav-social-color: #091cf3;
+$subnav-social-hover: #091cf3;
+$subnav-social-bghover: rgba(255,255,255,.8);
 $subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
-$subnav-border: 1px solid #e2e3e6;
-$language-bg: #fff;
-$language-link: $link-hover-color;
-$language-hover: $link-color;
-$language-border: 1px solid rgba(0,0,0,0);
+$subnav-border: 1px solid rgba(255,255,255,.2);
+$language-bg: #091cf3;
+$language-link: #fff;
+$language-hover: rgba(255,255,255,.6);
+$language-border: 1px solid rgba(0,0,0,.1);
 $language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 $dropdownicon: "\f107";
 
-.subnav .subnav-list li strong{
-    font-weight: 700 !important;
-}
 /* HERO */
-$hero-color: #333;
-$hero-h1-color: #000;
-$hero-overlay: rgba(0,0,0,.2);
-$hero-h1-size: 70px; //70px default
-$font-hero-small: 'Roboto', sans-serif;
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-overlay: rgba(0,0,0,0);
+$hero-h1-size: 60px; //70px default
+$font-hero-small: $font;
 $hero-position: center center;
 $hero-button-padding: 30px;
 $hero-button-width: 350px;
-$hero-button-size: 24px;
+$hero-button-size: 16px;
 
-.hero{
-    text-align: left !important;
+.hero-button{
+    font-size: 18px !important;
+    // background: #fff !important;
+    // color: #000 !important;
+
+    &:hover{
+        // color: #fff;
+        // background: #fff !important;
+    }
 }
-.hero h1{
-    font-family: $font-special!important;
-    text-transform: none !important;
-    text-shadow: none !important;
+.hero-scroll{
+  color: #fff !important;
 }
-
-.hero:before{
-    display: none;
+.hero-scroll:hover{
+    & .arrow:before {
+        color: #fff !important;
+    }
+    color: #fff !important;
 }
-
-
 
 /* Testimonials */
-$testimonial-bg: #f5f5f5;
+$testimonial-bg: #fff;
 $testimonial-text: #333;
-$testimonial-title: $link-color;
+$testimonial-title: #111;
 $testimonial-author: #333;
-$testimonial-activedot: $link-color;
-$testimonial-inactivedot: #a2a4ac;
-$testimonial-title-size: 50px; // default 40px
-
-.testimonials-h4{
-    text-transform: none !important;
-    font-weight: 400;
-    font-family: $font-special!important;
-}
-
-.testimonials-title{
-    font-weight: 300 !important;
-    text-transform: none !important;
-}
-
-.testimonials-title span{
-    font-family: 'Lora', serif !important;
-    font-weight: 700;
-    color: $link-color !important;
-}
-
+$testimonial-activedot: #091cf3;
+$testimonial-inactivedot: rgba(9, 28, 243, .2);
+$testimonial-title-size: 40px; // default 40px
 
 /* STEPS */
 $steps-bg: #fff;
-$steps-color: #333;
-$steps-bg-hover: #f5f5f5;
-$steps-color-hover: #485460;
-$steps-active-bg: #fff;
-$steps-active-color: #333;
-$steps-link: #808e9b;
-$steps-border: 1px solid $border-color;
-
-.accordeon-buttons, .accordeon-step{
-    text-transform: none !important;
-}
+$steps-color: #111;
+$steps-bg-hover: rgba(9, 28, 243, .04);
+$steps-color-hover: #111;
+$steps-active-bg: #111;
+$steps-active-color: #fff;
+$steps-link: #000;
+$steps-border: 1px solid #ccc;
 
 /* OFFERS */
-$event-bg: #fff;
-$offer-border: 1px solid #bfbfbf;
-$offer-title: $link-color;
+$event-bg: #000;
+$offer-border: 1px solid #f3eeee;
+$offer-title: #111;
 $offer-title-transform: none;
-$ribbon-bg: $link-color;
+$ribbon-bg: #091cf3;
 $ribbon-color: #fff;
-$offer-activedot: $link-color;
-$offer-inactivedot: #bfbfbf;
+$offer-activedot: #091cf3;
+$offer-inactivedot: rgba(9, 28, 243, .2);
 $ticketbtn-color: #fff;
 $ticketbtn-colorhover: #fff;
 
 /* WHY BOOK */
-$why-border: $link-color;
-$why-number: $link-color;
+$why-border: #091cf3;
+$why-number: #091cf3;
 $why-book-icon: #fff;
-$why-book-iconborder: 3px solid $link-color;
-$why-book-iconbg: $link-color;
+$why-book-iconborder: 3px solid #091cf3;
+$why-book-iconbg: #091cf3;
 
 /* Footer */
-$footer-border: 1px solid $border-color;
-$footer-bg: #fff;
-$footer-text: #333;
-$footer-link: #a2a4ac;
-$footer-hover: $link-color;
-$footer-heading: #242529;
-$footer-heading-size: 20px; //default 24px
-$footer-social-color: #fff;
-$footer-social-bg: #333;
-$footer-social-hover: $link-color;
-$footer-socialicon-hover: #fff;
-$footer-payoffsize: 13px;
-$partner-bg: rgba(0,0,0,0.19);
-
-#footer h4{
-    text-transform: none !important;
-}
-
-#footer{
-    padding: 70px 0 !important;
-}
-
-#footer ul li{
-    margin-bottom: 15px !important;
-}
-
-#footer span.icon{
-    color: #242529;
-}
+$footer-border: 1px solid #fff;
+$footer-bg: #091cf3;
+$footer-text: #fff;
+$footer-link: #fff;
+$footer-hover: #fff;
+$footer-heading: #fff;
+$footer-heading-size: 17px; //default 24px
+$footer-social-color: #091cf3;
+$footer-social-bg: #fff;
+$footer-social-hover: rgba(255,255,255,.8);
+$footer-socialicon-hover: #091cf3;
+$footer-payoffsize: 12px;
+$partner-bg: #000;
 
 /* COOKIES */
-$cookies-bg: $link-color;
+$cookies-bg: #000;
 $cookie-link-color: #fff;
-$cookies-fontsize: 17px;
-$cookies-border: none;
+$cookies-fontsize: 13px;
+$cookies-border: 1px solid #000;
 $cookies-color: #fff;
-$cookies-padding: 20px;
-$cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 15px;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
 
-.cookies{
-    left: 0px !important;
-    bottom: 0px !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    right: 0px !important;
-     width: 100% !important;
-    max-width: 100% !important;
-    text-align: center;
 
-    & p{
-        padding: 0 30px;
-    }
-
-    @media all and (max-width: $breakpoint-mobile){
-        left: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        right: 0px;
-        bottom: 0px !important;
-    }
-}
 
 /* FORMS */
-$form-border: 1px solid rgb(226, 227, 230);
-$form-bordercolor: rgb(226, 227, 230);
-$form-border-login: 1px solid rgb(226, 227, 230);
+$form-border: 1px solid #333;
+$form-bordercolor: #333;
+$form-border-login: 1px solid #333;
 $form-label: #333;
 $form-labelsize: 14px;
-$form-input-color: #686868;
-$form-focus-border: #333;
-$form-highlight: #fff;
-$form-highlightcolor: red;
-$form-addon-bg: #bbb;
+$form-input-color: #333;
+$form-focus-border: #091cf3;
+$form-highlight: #091cf3;
+$form-highlightcolor: #091cf3;
+$form-addon-bg: #333;
 $form-addon-color: #fff;
-$placeholder-color: #95a5a6;
+$placeholder-color: #333;
 
-.form-label{
-    text-transform: none !important;
+// .hero h1, .mainnav .booking, .mainnav .booking-cart, .mainnav .booking .language-button, footer h4, .testimonials-title, .subnav .subnav-list li, .button, .accordeon-step,.h2-section, .h3,.yourbooking h3,.info-list-section,.page-h1, .page h4,.notification {
+//     font-weight: 400 !important;
+// }
+
+// .h4, .form-label{
+//     font-family: 'edmsterdam', sans-serif ;
+//     font-weight: 400 !important;
+// }
+.hero{
+   min-height: 800px !important;
+
+   @media all and (max-width: $breakpoint-tablet) {
+        min-height: 100vh !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        min-height: 100vh !important;
+    }
 }
+.hero h1.hero-event-title{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 70px !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 50px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+}
+
+.payoff{
+    padding-bottom: 70px;
+}
+.partners{
+    display: none;
+}
+
+.t-check-out{
+    border-left-width: 1 !important;
+}
+.social li a{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+
+}
+$checkout: #091cf3;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: #091cf3;
 
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -338,85 +316,4 @@ $placeholder-color: #95a5a6;
     background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-.hero h1.hero-event-title{
-    font-size: 55px !important;
-
-    @media all and (max-width: $breakpoint-tablet) {
-        font-size: 45px !important;
-    }
-    @media all and (max-width: $breakpoint-mobile) {
-        font-size: 30px !important;
-    }
-}
-
-.section--grey{
-    background: #f5f5f5;
-}
-
-.header{
-    // border-bottom: 2px solid #d60e00;
-}
-
-.extra-number .manage-button{
-    color: #fff !important;
-    background: $link-color !important;
-
-    &:hover{
-        background:  $link-hover-color !important;
-    }
-}
-
-.yourbooking{
-    // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
-}
-
-
-.accordeon-buttons .button-secondary{
-    background: $link-color !important;
-    color: #fff !important;
-    border-color: $link-color !important;
-
-    &:hover{
-        background: $link-hover-color !important;
-    color: #fff !important;
-    border-color: $link-hover-color !important;
-    }
-}
-
-.button-facebook, .button-google{
-    background-color: #fff !important;
-    color: #333 !important;
-    padding: 20px 40px 20px 60px;
-    font-size: 16px;
-    margin: 0 10px 10px 0;
-    white-space: nowrap;
-    border: 2px solid #e2e3e6 !important;
-    // width: 100%;
-    text-transform: none;
-    text-align: left !important;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 10px;
-    border: none;
-    -webkit-border-radius: 3px  !important;
-    -moz-border-radius: 3px  !important;
-    border-radius: 3px  !important;
-    background-image: url(../img/facebook-round.svg) !important;
-    background-repeat: no-repeat;
-    background-size: auto 25px;
-    background-position: 15px center;
-
-    &:hover{
-        background-color: #335CAA;
-    }
-}
-
-.button-google{
-    background-color: #cf4332;
-    background-image: url(../img/google.svg) !important;
-    &:hover{
-        background-color: #B2372A;
-    }
 }
