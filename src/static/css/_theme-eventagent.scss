@@ -1,6 +1,6 @@
 /*!
- * EDMSTERDAM THEME
- * Copyright (c) 2018 EDMBOOKING.com
+ * EVENTAGENT THEME
+ * Copyright (c) 2019 EDMBOOKING.com
  */
 
 /* Regular font */
@@ -28,8 +28,10 @@ $font-size: 14px;
 $font-header-size: 24px; //default 24px;
 
 /* FONTS */
-$font: 'Montserrat', sans-serif;
-$font-header: 'Montserrat', sans-serif;
+$font: 'Montserrat',
+sans-serif;
+$font-header: 'Montserrat',
+sans-serif;
 $border-color: #f3eeee; //rgba(255,255,255,.3);
 
 /* FONT COLORS */
@@ -44,16 +46,17 @@ $mapclose-color: #000;
 /* FILTERS */
 $filter-visibility: block;
 $blend-mode: none;
-$blue-filter: rgba(0,0,0,.0); //rgba(110,179,195,1);
-$white-filter: rgba(0,0,0,.0);
-$red-filter: rgba(0,0,0,.0);
-$grey-filter: rgba(0,0,0,.2);
+$blue-filter: rgba(0, 0, 0, .0); //rgba(110,179,195,1);
+$white-filter: rgba(0, 0, 0, .0);
+$red-filter: rgba(0, 0, 0, .0);
+$grey-filter: rgba(0, 0, 0, .2);
 $filter-opacity: 0.5;
-$video-opacity: rgba(0,0,0,.5);
-$video-filter:  none; //grayscale(100%);
+$video-opacity: rgba(0, 0, 0, .5);
+$video-filter: none; //grayscale(100%);
 
 /* BUTTONS */
-$font-button: 'Montserrat', sans-serif;
+$font-button: 'Montserrat',
+sans-serif;
 $button-size: 16px;
 $button-bg: #fff;
 $button-color: #091cf3;
@@ -61,21 +64,22 @@ $button-bg-hover: #091cf3;
 $button-color-hover: #fff;
 $button-radius: 4px;
 
-.button{
+.button {
     letter-spacing: 0 !important;
 }
-.button-primary{
-    border:  2px solid #091cf3 !important;
+
+.button-primary {
+    border: 2px solid #091cf3 !important;
 
 }
 
-.hero{
+.hero {
     background: #091cf3;
     background-image: url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c10e7251e1ac786dac782e7_hanny-naibaho-388579-unsplash.jpg");
     background-position: center bottom;
     background-size: cover;
 
-    &:before{
+    &:before {
         background: repeating-linear-gradient(51deg, rgba(9, 28, 243, .8), rgba(146, 0, 255, .8)) !important;
 
         // url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c052bb42442a688c02aa6ff_skew.svg"), repeating-linear-gradient(51deg, rgba(9, 28, 243, .8), rgba(146, 0, 255, .8)), url("https://uploads-ssl.webflow.com/5c04f8577588530ab7083c83/5c10e7251e1ac786dac782e7_hanny-naibaho-388579-unsplash.jpg")
@@ -101,7 +105,7 @@ $faq-button-colorhover: #fff;
 $sec-button-color: #091cf3;
 $sec-size: 16px;
 $sec-size-mobile: 15px; //default 15px
-$sec-button-bg: rgba(255,255,255,1);
+$sec-button-bg: rgba(255, 255, 255, 1);
 $sec-button-colorhover: #fff;
 $sec-button-bghover: #091cf3;
 $sec-button-border: 2px solid #fff !important;
@@ -123,7 +127,7 @@ $header-color: #fff;
 $header-bg-sticky: #fff;
 $header-text: #000;
 $header-hover: #091cf3;
-$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$main-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 $menu-color: #111;
 $notification-bg: #091cf3;
 $notication-icons: #fff;
@@ -134,24 +138,24 @@ $subnav-strong-size: 20px; //default 20px
 $subnav-color: #666;
 $subnav-link: #fff;
 $subnav-sublink: #fff;
-$subnav-hover: rgba(255,255,255,.6);
+$subnav-hover: rgba(255, 255, 255, .6);
 $subnav-social-bg: #fff;
 $subnav-social-color: #091cf3;
 $subnav-social-hover: #091cf3;
-$subnav-social-bghover: rgba(255,255,255,.8);
-$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
-$subnav-border: 1px solid rgba(255,255,255,.2);
+$subnav-social-bghover: rgba(255, 255, 255, .8);
+$subnav-shadow: -13px 0px 41px 0px rgba(0, 0, 0, 0.1);
+$subnav-border: 1px solid rgba(255, 255, 255, .2);
 $language-bg: #091cf3;
 $language-link: #fff;
-$language-hover: rgba(255,255,255,.6);
-$language-border: 1px solid rgba(0,0,0,.1);
-$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$language-hover: rgba(255, 255, 255, .6);
+$language-border: 1px solid rgba(0, 0, 0, .1);
+$language-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 $dropdownicon: "\f107";
 
 /* HERO */
 $hero-color: #fff;
 $hero-h1-color: #fff;
-$hero-overlay: rgba(0,0,0,0);
+$hero-overlay: rgba(0, 0, 0, .5);
 $hero-h1-size: 60px; //70px default
 $font-hero-small: $font;
 $hero-position: center center;
@@ -159,24 +163,39 @@ $hero-button-padding: 30px;
 $hero-button-width: 350px;
 $hero-button-size: 16px;
 
-.hero-button{
+.hero-button {
     font-size: 18px !important;
     // background: #fff !important;
     // color: #000 !important;
 
-    &:hover{
+    &:hover {
         // color: #fff;
         // background: #fff !important;
     }
 }
-.hero-scroll{
-  color: #fff !important;
+
+.hero-scroll {
+    color: #fff !important;
 }
-.hero-scroll:hover{
+
+.hero-scroll:hover {
     & .arrow:before {
         color: #fff !important;
     }
+
     color: #fff !important;
+}
+
+.event-thumb {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter .15s ease-out 0s;
+    transition: filter .15s ease-out 0s;
+}
+
+.event-flex:hover .event-thumb {
+    -webkit-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
 }
 
 /* Testimonials */
@@ -227,7 +246,7 @@ $footer-heading: #fff;
 $footer-heading-size: 17px; //default 24px
 $footer-social-color: #091cf3;
 $footer-social-bg: #fff;
-$footer-social-hover: rgba(255,255,255,.8);
+$footer-social-hover: rgba(255, 255, 255, .8);
 $footer-socialicon-hover: #091cf3;
 $footer-payoffsize: 12px;
 $partner-bg: #000;
@@ -266,17 +285,19 @@ $placeholder-color: #333;
 //     font-family: 'edmsterdam', sans-serif ;
 //     font-weight: 400 !important;
 // }
-.hero{
-   min-height: 800px !important;
+.hero {
+    min-height: 800px !important;
 
-   @media all and (max-width: $breakpoint-tablet) {
+    @media all and (max-width: $breakpoint-tablet) {
         min-height: 100vh !important;
     }
+
     @media all and (max-width: $breakpoint-mobile) {
         min-height: 100vh !important;
     }
 }
-.hero h1.hero-event-title{
+
+.hero h1.hero-event-title {
     text-transform: none;
     font-weight: 500;
     font-size: 70px !important;
@@ -284,36 +305,44 @@ $placeholder-color: #333;
     @media all and (max-width: $breakpoint-tablet) {
         font-size: 50px !important;
     }
+
     @media all and (max-width: $breakpoint-mobile) {
         font-size: 30px !important;
     }
 }
 
-.payoff{
+.payoff {
     padding-bottom: 70px;
 }
-.partners{
+
+.partners {
     display: none;
 }
 
-.t-check-out{
+.t-check-out {
     border-left-width: 1 !important;
 }
-.social li a{
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center;
+
+.social li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
 
 }
+
 $checkout: #091cf3;
-$checkout-light: rgba(0,0,0,0.1);
-$checkout-limit: rgba(0,0,0,0.2);
+$checkout-light: rgba(0, 0, 0, 0.1);
+$checkout-limit: rgba(0, 0, 0, 0.2);
 $checkout-limit2: #091cf3;
 
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
-    background: $fromcolor; /* Old browsers */
-    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: $fromcolor;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $fromcolor 0%, $tocolor 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
