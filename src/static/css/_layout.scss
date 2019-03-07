@@ -392,10 +392,11 @@
 
 		&--overview{
 			@media all and (max-width: $breakpoint-mobile){
-				display: block;
-				border-right: none;
-				margin-bottom: 5px;
-				margin-top: 0px;
+				// display: block;
+				// border-right: none;
+				// margin-bottom: 5px;
+				// margin-top: 0px;
+				margin: 0 7px 15px 0;
 			}
 		}
 

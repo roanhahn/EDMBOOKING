@@ -166,7 +166,11 @@
 		}
 
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 17px;
+			font-size: 15px;
+			// background-color: red;
+			display: inline-block;
+			max-width: 80%;
+			width: 80%;
 			// min-height: 84px;
 		}
 	}
@@ -181,11 +185,14 @@
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 12px;
-			margin-bottom: 15px;
+			// margin-bottom: 15px;
+			max-width: 80%;
+			width: 80%;
 		}
 	}
 
 	&-content{
+
 		@media all and (max-width: $breakpoint-mobile){
 			padding-left: 0px;
 		}
@@ -255,7 +262,15 @@
 			display: inline-block;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 16px;
+			font-size: 15px;
+			display: inline-block;
+			width: 20%;
+			max-width: 20%;
+			// background: yellow;
+			position: absolute;
+			top: 16px;
+			right: 0;
+			text-align: right;
 		}
 	}
 
@@ -270,10 +285,11 @@
 			margin-left: 5px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			font-size: 12px;
-			margin-left: 2px;
-			display: inline-block;
-			margin-bottom: 10px;
+			font-size: 10px;
+			// margin-left: 2px;
+			// display: inline-block;
+			margin-bottom: 0px;
+			margin-top: 6px;
 			// margin-bottom: 20px;
 		}
 	}
@@ -288,6 +304,34 @@
 		@media all and (max-width: $breakpoint-mobile){
 			// display: block;
 			// float: right;
+		}
+	}
+
+	&-content{
+
+		.h3--room{
+			@media all and (max-width: $breakpoint-mobile){
+
+			}
+		}
+		.offer-price{
+			@media all and (max-width: $breakpoint-mobile){
+				position: relative !important;
+				text-align: left;
+				display: inline-block;
+				max-width: none;
+				width: auto;
+				top: 0;
+				margin-bottom: 15px;
+				font-size: 22px;
+
+				& span{
+					margin: 0;
+					font-size: 12px;
+					display: inline-block;
+				}
+			}
+
 		}
 	}
 }
@@ -327,6 +371,10 @@
 	align-items: stretch;
 	align-content: flex-start;
 
+	@media all and (max-width: $breakpoint-mobile){
+		flex-direction: column;
+	}
+
 	&-image{
 		flex-grow: 0;
 		flex-shrink: 1;
@@ -334,9 +382,19 @@
 		padding-right: 15px;
 		position: relative;
 
+		overflow: hidden;
+
 		@media all and (max-width: $breakpoint-tablet){
 			flex-basis: 50%;
 			flex-shrink: 0;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			flex-basis: 100%;
+			flex-shrink: 0;
+			padding: 0;
+			left: -15px;
+			width: calc(100% + 30px);
+
 		}
 	}
 
@@ -351,6 +409,7 @@
 		align-items: stretch;
 		align-content: flex-start;
 		padding-left: 15px;
+		position: relative;
 
 		@media all and (max-width: $breakpoint-tablet){
 			flex-basis: 50%;
@@ -359,6 +418,7 @@
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			padding-left: 0px;
+			padding-top: 15px;
 		}
 		& .content-wrapper{
 			flex-basis: 75%;
