@@ -151,7 +151,7 @@
 
 # # New Horizons
 logo: logo.svg
-version: 2019
+siteversion: 23
 theme: newhorizons2019
 name: New Horizons Festival 2019
 intro: New Horizons Festival
@@ -216,18 +216,18 @@ description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fant
 # description: Cirque du Soleil in a stunning new light Inspired by James Cameron’s Avatar, Cirque du Soleil transports you to the world of Pandora in a visually stunning live setting. Experience a storytelling odyssey through a new world of imagination, discovery and possibility.
 
 
-# category: gallery
-# author: author
-# developer: Roan Hahn
-# keywords: keyword,keyword,keyword
-# version: 1.1.1
-# type: website
-# url: https://www.edmbooking.com
-# ogimage: url
-# facebook: http://www.facebook.com
-# twitter: http://www.twitter.com
-# pinterest: http://www.pinterest.com
-# google: http://www.google.com
-# email:  info@edmbooking.com
-# phone: +31 6 52 382 382
+category: gallery
+author: author
+developer: Roan Hahn
+keywords: keyword,keyword,keyword
+version: 1.1.1
+type: website
+url: https://www.edmbooking.com
+ogimage: url
+facebook: http://www.facebook.com
+twitter: http://www.twitter.com
+pinterest: http://www.pinterest.com
+google: http://www.google.com
+email:  info@edmbooking.com
+phone: +31 6 52 382 382
 

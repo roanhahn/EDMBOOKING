@@ -3520,10 +3520,9 @@ body.scrolled .hamburger-oud {
   top: 1px;
   cursor: pointer; }
 
-.textfield,
-select,
+.textfield, select,
 .form-control {
-  color: #fff;
+  color: #fff !important;
   height: 44px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3531,34 +3530,28 @@ select,
   -webkit-border-radius: 0px;
   border: 1px solid #fff;
   background: #fff; }
-  .textfield:focus,
-  select:focus,
+  .textfield:focus, select:focus,
   .form-control:focus {
     color: #000;
     border-color: #fff; }
-  .textfield::-webkit-input-placeholder,
-  select::-webkit-input-placeholder,
+  .textfield::-webkit-input-placeholder, select::-webkit-input-placeholder,
   .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #fff; }
-  .textfield::-moz-placeholder,
-  select::-moz-placeholder,
+  .textfield::-moz-placeholder, select::-moz-placeholder,
   .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff; }
-  .textfield:-ms-input-placeholder,
-  select:-ms-input-placeholder,
+  .textfield:-ms-input-placeholder, select:-ms-input-placeholder,
   .form-control:-ms-input-placeholder {
     /* IE 10+ */
     color: #fff; }
-  .textfield:-moz-placeholder,
-  select:-moz-placeholder,
+  .textfield:-moz-placeholder, select:-moz-placeholder,
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #fff; }
   @media all and (max-width: 992px) {
-    .textfield,
-    select,
+    .textfield, select,
     .form-control {
       font-size: 12px;
       height: 38px; } }
@@ -3721,7 +3714,7 @@ select,
       padding: 14px; } }
   .login .input:focus {
     background-color: #fff;
-    color: green;
+    color: #fff;
     outline: none; }
   .login .input.password {
     margin-bottom: 15px; }
@@ -3997,15 +3990,15 @@ select,
 
 .selectric-items li.selected {
   background: #fff;
-  color: green !important; }
+  color: #fff !important; }
 
 .selectric-items li.highlighted {
   background: #fff;
-  color: green !important; }
+  color: #fff !important; }
 
 .selectric-items li:hover {
   background: #fff;
-  color: green !important; }
+  color: #fff !important; }
 
 .selectric-items .disabled {
   filter: alpha(opacity=50);

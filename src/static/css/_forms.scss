@@ -127,10 +127,9 @@
     cursor: pointer;
 }
 
-.textfield,
-select,
+.textfield, select,
 .form-control {
-    color: $form-input-color;
+    color: $form-input-color !important;
     height: 44px;
     -webkit-appearance: none;
     -moz-appearance: none;
