@@ -120,7 +120,13 @@ body {
 .form-control, .textfield, .selectric, .t-check-in, .t-check-out, .login .input {
   background: rgba(157, 131, 96, 0.73) !important;
   border-radius: 3px !important;
-  font-size: 17px; }
+  font-size: 16px !important; }
+
+.selectric .label {
+  font-size: 16px !important; }
+  @media all and (max-width: 992px) {
+    .selectric .label {
+      font-size: 16px !important; } }
 
 .login .input {
   color: #fff !important; }
@@ -1428,7 +1434,7 @@ h3.extras {
       width: 100%;
       height: 100%;
       z-index: 2;
-      background-color: rgba(0, 0, 0, 0.2); }
+      background-color: rgba(0, 0, 0, 0.1); }
     .section-cta h3, .section-cta p {
       color: #fff; }
     .section-cta p {
@@ -3025,7 +3031,7 @@ body.scrolled .hamburger-oud {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.1); }
   .hero--red {
     background-color: rgba(255, 55, 0, 0); }
   .hero--white {
@@ -3197,7 +3203,7 @@ body.scrolled .hamburger-oud {
   background-size: cover; }
   .videowrapper:before {
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
     position: absolute;
     right: 0;
     top: 0;
@@ -4688,6 +4694,12 @@ footer {
       @media all and (max-width: 992px) {
         .flex-offer-content .content-wrapper {
           padding-right: 0px; } }
+
+.selectric .label {
+  font-size: 16px !important; }
+  @media all and (max-width: 992px) {
+    .selectric .label {
+      font-size: 16px !important; } }
 
 .slider,
 .slider > div {

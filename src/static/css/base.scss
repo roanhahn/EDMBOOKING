@@ -70,6 +70,14 @@
 @import "_offer.scss";
 // @import "_event-agent.scss";
 
+.selectric .label{
+    font-size: 16px !important;
+
+     @media all and (max-width: 992px) {
+        font-size: 16px !important;
+     }
+}
+
 // Plugins
 @import "jquery.fancybox.css";
 @import "_sliderResponsive.scss";

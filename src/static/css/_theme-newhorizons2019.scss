@@ -116,7 +116,7 @@ $white-filter: rgba(236,236,236,0);
 $red-filter: rgba(255,55,0,0);
 $grey-filter: rgba(50,50,50,0.2);
 $filter-opacity: 0.5;
-$video-opacity: rgba(0,0,0,.5);
+$video-opacity: rgba(0,0,0,.1);
 $video-filter:  none; //grayscale(100%);
 
 /* BUTTONS */
@@ -212,7 +212,7 @@ $hero-padding-mobile: 100px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-h1-size: 70px; //70px default
-$hero-overlay: rgba(0,0,0,.2);
+$hero-overlay: rgba(0,0,0,.1);
 $font-hero-small: 'bebas_neue_proregular', sans-serif;
 $hero-position: center center;
 $hero-subtitle-size: 20px;
@@ -323,7 +323,14 @@ $checkout-limit2: #c59569;
 .form-control, .textfield, .selectric, .t-check-in, .t-check-out, .login .input{
     background: rgba(157,131,96,0.73) !important;
     border-radius: 3px !important;
-    font-size: 17px;
+    font-size: 16px !important;
+}
+.selectric .label{
+    font-size: 16px !important;
+
+     @media all and (max-width: 992px) {
+        font-size: 16px !important;
+     }
 }
 .login .input{
     color: #fff !important;
