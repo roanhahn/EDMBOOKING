@@ -305,7 +305,11 @@
 			// background: yellow;
 			// height: 100%;
 
-			& ul{
+			& ol{
+				line-height: 1.6;
+			}
+
+			& ul,{
 				margin: 0 0 20px 0px;
 				padding: 0;
 				line-height: 1.6;

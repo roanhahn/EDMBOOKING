@@ -34,6 +34,7 @@
 
 // EVENTAGENT
 // @import "_theme-eventagent.scss";
+// @import "_theme-ea"; /* de winter */
 
 /* Theme F1  */
 // @import "theme-f1.scss";
@@ -42,10 +43,13 @@
 // @import "theme-edmsterdam.scss";
 
 /* Theme LOWLANDS  */
-@import "theme-lowlands.scss";
+// @import "theme-lowlands.scss";
 
 /* Theme Cirque du soleil  */
 // @import "theme-cirquedusoleil.scss";
+
+/* Theme New Horizons */
+@import "theme-newhorizons2019.scss";
 
 
 // Default CSS
@@ -74,6 +78,6 @@
 @import "_owl.theme.default.min.scss";
 @import "_owl.theme.scss";
 @import "_bootstrap-datepicker3.min.scss";
-@import "_canvallax.scss"; //voor NH 2018
+// @import "_canvallax.scss"; //voor NH 2018
 @import "_t-datepicker.scss";
 @import "_t-datepicker-blue.scss";

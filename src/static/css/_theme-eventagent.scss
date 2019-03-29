@@ -41,7 +41,7 @@ $link-color: #091cf3;
 $error-color: #dc3545;
 
 /* Google Maps */
-$mapclose-color: #000;
+$mapclose-color: #091cf3;
 
 /* FILTERS */
 $filter-visibility: block;
@@ -272,7 +272,7 @@ $form-labelsize: 14px;
 $form-input-color: #333;
 $form-focus-border: #091cf3;
 $form-highlight: #091cf3;
-$form-highlightcolor: #091cf3;
+$form-highlightcolor: #fff;
 $form-addon-bg: #333;
 $form-addon-color: #fff;
 $placeholder-color: #333;
@@ -286,14 +286,14 @@ $placeholder-color: #333;
 //     font-weight: 400 !important;
 // }
 .hero {
-    min-height: 800px !important;
+    // min-height: 800px !important;
 
     @media all and (max-width: $breakpoint-tablet) {
-        min-height: 100vh !important;
+        min-height: 50vh !important;
     }
 
     @media all and (max-width: $breakpoint-mobile) {
-        min-height: 100vh !important;
+        min-height: 50vh !important;
     }
 }
 

@@ -310,6 +310,12 @@ $checkout-limit2: #c59569;
 
 }
 
+@media all and (min-width: $breakpoint-mobile){
+    .flexbuttons a{
+        max-width: 310px !important;
+    }
+}
+
 #footer:before,
 #footer:after{
     position: absolute;

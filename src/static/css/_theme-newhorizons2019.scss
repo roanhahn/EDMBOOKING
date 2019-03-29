@@ -1,0 +1,431 @@
+/*!
+ * NEW HORIZONS THEME
+ * Copyright (c) 2019 EDMBOOKING.com
+ */
+
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../font/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../font/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'bebas_neue_probold';
+    src: url('../font/bebas-pro/bebas_neue_pro_bold-webfont.woff2') format('woff2'),
+         url('../font/bebas-pro/bebas_neue_pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_probook';
+    src: url('../font/bebas-pro/bebas_neue_pro_book-webfont.woff2') format('woff2'),
+         url('../font/bebas-pro/bebas_neue_pro_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_prolight';
+    src: url('../font/bebas-pro/bebas_neue_pro_light-webfont.woff2') format('woff2'),
+         url('../font/bebas-pro/bebas_neue_pro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_proregular';
+    src: url('../font/bebas-pro/bebas_neue_pro_regular-webfont.woff2') format('woff2'),
+         url('../font/bebas-pro/bebas_neue_pro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_prothin';
+    src: url('../font/bebas-pro/bebas_neue_pro_thin-webfont.woff2') format('woff2'),
+         url('../font/bebas-pro/bebas_neue_pro_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* FOLDER */
+$folder: newhorizons2019;
+
+/* BODY */
+$bg-color: #1d0621;
+$loader-bg: #1d0621;
+$bodygradient-fromcolor: #1d0621;
+$bodygradient-tocolor: #1d0621;
+
+$font-size: 18px;
+$font-header-size: 24px; //default 24px;
+
+// need help
+$modalbg-color: rgba(0,0,0,0.07);
+$modalborder: 2px solid rgba(0,0,0,0.05);
+$modal-radius: 4px;
+
+
+body{
+    font-weight: normal;
+    letter-spacing: .5px;
+}
+/* FONTS */
+$font: 'bebas_neue_proregular', sans-serif;
+$font-header: 'bebas_neue_proregular', sans-serif;
+$border-color: #9d8360;
+
+/* FONT COLORS */
+$text-color: #fff;
+$heading-color: #fff;
+$link-color: #fff;
+$link-hover-color: #fff;
+$error-color: #dc3545;
+
+/* Google Maps */
+$mapclose-color: #9d8360;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: none;
+$blue-filter: rgba(0,155,255,0);
+$white-filter: rgba(236,236,236,0);
+$red-filter: rgba(255,55,0,0);
+$grey-filter: rgba(50,50,50,0.2);
+$filter-opacity: 0.5;
+$video-opacity: rgba(0,0,0,.5);
+$video-filter:  none; //grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'bebas_neue_proregular', sans-serif;
+$button-size: 20px;
+$button-bg: transparent;
+$button-color: #fff;
+$button-bg-hover: rgba(255,255,255,.2);
+$button-color-hover: #fff;
+$button-radius: 4px;
+
+.button-primary{
+    border: 2px solid #fff !important;
+}
+
+/* BACK BUTTON */
+$button-back-size: 15px; // default 15px
+$button-back-bg: rgb(94, 94, 94);
+$button-back-color: #fff;
+$button-back-border: 1px solid rgba(255,255,255,1);
+$button-back-bghover: #9d8360;
+$button-back-colorhover: #fff;
+$button-back-borderhover:1px solid rgba(255,255,255,1);
+
+/* FAQ */
+$faq-button-bg: rgb(94, 94, 94);
+$faq-button-color: #fff;
+$faq-button-bghover: #9d8360;
+$faq-button-colorhover: #fff;
+
+/* SECONDARY BUTTON */
+
+$sec-button-color: #fff;
+$sec-size: 20px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: rgb(94, 94, 94);
+$sec-button-colorhover: #fff;
+$sec-button-bghover: #9d8360;
+$sec-button-border: 1px solid #fff;
+$sec-button-borderhover: 1px solid #fff;
+$sec-button-radius: 0px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
+$hamburger-layer-color: #fff !default;
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 45px;
+$logo-height-mobile: 25px;
+$header-bg: #000;
+$header-color: #fff;
+$header-bg-sticky: #000;
+$header-text: #fff;
+$header-hover: #c59569;
+$main-shadow: 0px 5px 5px 0px rgba(0,0,0,0.0);
+$menu-color: black;
+$notification-bg: #3f2350;
+$notication-icons: #9d8360;
+$notification-text: #fff;
+$subnav-bg: #182c3c;
+$subnav-strong: #fff;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #fff;
+$subnav-link: #fff;
+$subnav-sublink: #fff;
+$subnav-hover: rgba(255,255,255,.8);
+$subnav-social-bg: transparent;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: transparent;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.1);
+$subnav-border: 1px solid rgba(255,255,255,.0);
+$language-link: #fff;
+$language-hover: rgba(255,255,255,.8);
+$language-bg: #9d8360;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f107";
+
+.header{
+    background: transparent !important;
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%)!important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* HERO */
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-h1-size: 70px; //70px default
+$hero-overlay: rgba(0,0,0,.2);
+$font-hero-small: 'bebas_neue_proregular', sans-serif;
+$hero-position: center center;
+$hero-subtitle-size: 20px;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+/* Testimonials */
+$testimonial-bg: transparent;
+$testimonial-text: #fff;
+$testimonial-title: #fff;
+$testimonial-author: #fff;
+$testimonial-activedot: #9d8360;
+$testimonial-inactivedot: #fff;
+$testimonial-title-size: 40px; // default 40px
+
+.testimonials-author{
+    font-size: 18px !important;
+}
+
+
+/* STEPS */
+$steps-bg: rgba(0,0,0,.7);
+$steps-color: #fff;
+$steps-bg-hover: rgba(0,0,0,.9);
+$steps-color-hover: #fff;
+$steps-active-bg: #9d8360;
+$steps-active-color: #fff;
+$steps-link: #fff;
+$steps-border: 1px solid #9d8360;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid #9d8360;
+$offer-title: #fff;
+$offer-title-transform: none;
+$ribbon-bg: #c59569;
+$ribbon-color: #fff;
+$offer-activedot: #9d8360;
+$offer-inactivedot: #fff;
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #2f4c5c;
+
+.extra-number .manage-button{
+    background-color: #9d8360 !important;
+}
+
+/* WHY BOOK */
+$why-border: #9d8360;
+$why-number: #fff;
+$why-book-icon: #1d0621;
+$why-book-iconborder: 3px solid #9d8360;
+$why-book-iconbg: #9d8360;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: transparent;
+$footer-text: #fff;
+$footer-link: #fff;
+$footer-hover: rgba(255,255,255,.8);
+$footer-heading: #fff;
+$footer-heading-size: 24px; //default 24px
+$footer-social-bg: transparent;
+$footer-social-color: #fff;
+$footer-social-hover: transparent;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+$partner-bg: #000;
+
+.social li a {
+    border: 2px solid #fff;
+    line-height: normal !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COOKIES */
+$cookies-bg: #1d0621;
+$cookies-fontsize: 15px;
+$cookies-border: 1px solid #9d8360;
+$cookies-color: #fff;
+$cookie-link-color: #9d8360;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
+
+/* FORMS */
+$form-border: 1px solid #fff;
+$form-bordercolor: 1px solid #fff;
+$form-focus-border: #fff;
+$form-border-login: 1px solid #fff;
+$form-label: #fff;
+$form-labelsize: 18px;
+$form-input-color: #fff;
+$form-highlight: #fff;
+$form-highlightcolor: green;
+$form-addon-bg: #1d0621;
+$form-addon-color: #fff;
+$placeholder-color: #fff;
+
+$checkout: #30153e;
+$checkout-light: rgba(106,170,171,0.1);
+$checkout-limit: rgba(23,0,25,0.2);
+$checkout-limit2: #c59569;
+
+.form-control, .textfield, .selectric, .t-check-in, .t-check-out, .login .input{
+    background: rgba(157,131,96,0.73) !important;
+    border-radius: 3px !important;
+    font-size: 17px;
+}
+.login .input{
+    color: #fff !important;
+
+    &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #fff !important;
+        }
+
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #fff !important;
+        }
+
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+           color: #fff !important;
+        }
+
+        &:-moz-placeholder {
+            /* Firefox 18- */
+           color: #fff !important;
+        }
+}
+
+.selectric-items li.highlighted, .selectric-items li.selected, .selectric-items li:hover{
+    background: rgba(157,131,96,1) !important;
+}
+.feedback{
+    color: #fff !important;
+}
+.feedback, .invalid-feedback, .valid-feedback{
+    font-size: 15px !important;
+}
+
+.t-check-in, .t-check-out{
+    border-radius: 3px !important;
+}
+
+.t-check-out{
+    border-left: 1px solid #fff !important;
+}
+
+.t-check-in table, .t-check-out table{
+    color: #1d0621 !important;
+}
+@mixin gradient($fromcolor, $tocolor) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+    background: $fromcolor; /* Old browsers */
+    background: -moz-linear-gradient(top, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(top, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body{
+    background-color: #1d0621;
+    background-size: cover;
+    background-position: top center;
+    background-image: url("../img/#{$folder}/background.png")!important;
+    background-attachment: fixed;
+
+    @media all and (max-width: $breakpoint-tablet) {
+         background: #1d0621 url("../img/#{$folder}/background.png") repeat-y top center scroll !important;
+         background-size: 100% !important;
+
+    }
+}
+
+.yourbooking{
+    background-size: cover !important;
+    background-color: #1d0621 !important;
+    background-image: url("../img/#{$folder}/background.png")!important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+}
+
+.subnav{
+    background: url("../img/#{$folder}/menu-background.jpg")!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-wrapper{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.gallery-item{
+    border: 2px solid #fff;
+    padding: 4px !important;
+    flex-basis: calc(25% - 20px) !important;
+    margin: 0 10px 20px;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        flex-basis: calc(50% - 20px) !important;
+    }
+}
+
+
+@media all and (min-width: $breakpoint-mobile){
+    .flexbuttons a{
+        max-width: 310px !important;
+    }
+}

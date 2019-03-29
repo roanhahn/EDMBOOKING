@@ -1,19 +1,19 @@
 # EVENTAGENT
-theme: eventagent
-logo: logo.svg
-name: Eventagent
-intro: Welcome To The future 2019
-title: Personalised Premium Event Travel Packages | EventAgent
-homepage: homepage.html
-herotitle: The full-service travel solution
-herosubtitle: Travel packages, accommodation, tickets and extras for your event
-event: Welcome To The future 2019
-eventdate: Friday July 19th / Saturday July 20th
-ogtitle: Welcome To The future 2019
-ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
-ogimg-width: 2048
-ogimg-height: 1365
-description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
+# theme: ea
+# logo: mijnconcert.svg
+# name: Eventagent
+# intro: Welcome To The future 2019
+# title: Personalised Premium Event Travel Packages | EventAgent
+# homepage: homepage.html
+# herotitle: The full-service travel solution
+# herosubtitle: Travel packages, accommodation, tickets and extras for your event
+# event: Welcome To The future 2019
+# eventdate: Friday July 19th / Saturday July 20th
+# ogtitle: Welcome To The future 2019
+# ogimg: https://welcometothefuture.nl/wp-content/uploads/2018/07/20180721_WelcometotheFuture-JoniIsraeli_070-7945.jpg
+# ogimg-width: 2048
+# ogimg-height: 1365
+# description: Welcome to the Future is one of the iconic Techno and House underground festivals, located in Het Twiske, just nearby Amsterdam.
 
 
 
@@ -150,17 +150,17 @@ description: Welcome to the Future is one of the iconic Techno and House undergr
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # # New Horizons
-# logo: logo.svg
-# theme: newhorizons
-# name: New Horizons Festival
-# intro: New Horizons Festival
-# title: New Horizons Festival | Book, stay and experience EDM around the globe.
-# homepage: homepage.html
-# herotitle: 24. & 25. AUGUST 2018
-# herosubtitle: NÜRBURGRING, GERMANY
-# event: New Horizons Festival
-# eventdate: 24. & 25. AUGUST 2018
-# description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+logo: logo.svg
+theme: newhorizons2019
+name: New Horizons Festival 2019
+intro: New Horizons Festival
+title: New Horizons Festival | Book, stay and experience EDM around the globe.
+homepage: homepage.html
+herotitle: 24. & 25. AUGUST 2019
+herosubtitle: NÜRBURGRING, GERMANY
+event: New Horizons Festival
+eventdate: 24. & 25. AUGUST 2019
+description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
 
 # # Formule 1
 # logo: logo-f1.svg
