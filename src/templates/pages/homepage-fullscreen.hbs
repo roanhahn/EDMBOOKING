@@ -4,24 +4,36 @@ layout: default.hbs
 type: page
 homepage: true
 ---
-
 <div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg)">
     <div class="inner">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <h1>
-                        {{site.herotitle}}
-                        <small>{{site.herosubtitle}}</small>
+                <div class="col">
+                    <h1 class="hero-event-title">
+                        SUMMERPARK FESTIVAL
+                        <small>7 JUL 2019, ALMERE</small>
                     </h1>
-                    <a href="whybook.html" class="button button-secondary">Shop now</a>
+                    <div class="flexbuttons">
+                        <a href="/en/summerpark-festival-2019/hotels/allhotels.html" class="button button-secondary button-secondary--noArrow hero-button">
+                            <span>Hotel</span>
+                            <span class="hero-button-subtitle">Ticket + Hotel</span>
+                        </a>
+                        <a href="/en/summerpark-festival-2019/hotels/allhotels.html" class="button button-secondary button-secondary--noArrow hero-button">
+                            <span>Camping</span>
+                            <!-- <span class="hero-button-subtitle">Ticket + Hotel</span> -->
+                        </a>
+                        <a href="/en/summerpark-festival-2019/hotels/allhotels.html" class="button button-secondary button-secondary--noArrow hero-button">
+                            <span>Packages</span>
+                            <!-- <span class="hero-button-subtitle">Ticket + Hotel</span> -->
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    {{!-- <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="bar"></div>
-    </div> --}}
+    <div class="scrolldown scrollTo" data-target="#eventinfo">
+        <span>Event info</span>
+        <div></div>
+    </div>
 </div>
 {{!-- {{> testimonials }} --}}

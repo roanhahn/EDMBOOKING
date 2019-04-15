@@ -259,255 +259,209 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 	
 
 
-
-<section class="section">
-	<div class="container">
-        <a href="#" onclick="goBack()" class="button button-secondary button--back float-right d-none d-md-block page-back">Back</a>
-        <h1 class="page-h1">Our office</h1>
-        <div class="row">
-            <div class="col-md-4 m-b-30">
-                <h3 class="h3">Address</h3>
-                <p class="p">
-
-                        <strong>EDMBOOKING</strong><br />
-                        Somestreet 2<br />
-                        1059 BT Amsterdam,The Netherlands<br />
-
-                       
-
-                </p>
+<div class="slideshow">
+    <div class="owl-carousel owl-theme owl-heroslideshow">
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/1.jpg">
+            <div class="slideshowbg"></div>
+            <div class="slideshow-item">
+                <h3>New Horizons Festival</h3>
+                <p>A full New Horizons experience, including tickets, hotels and camping.</p>
             </div>
-            <div class="col-md-4 m-b-30">
-                <h3 class="h3">Company info</h3>
-                <p class="p">
-                    KVK: 60320524<br />
-                    IBAN: NL72 INGB 09878101<br />
-                    BTW: NL001234567B01
-                </p>
-            </div>
-
-
         </div>
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/2.jpg">
+            <div class="slideshow-item">
+                <h3>Cottage & Hotel packages</h3>
+                <p>Embark on a multi-day journey across the spectrum of electronic music. Stay on our magical campsite or crash in a comfortable hotel.</p>
+            </div>
+        </div>
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/3.jpg">
+            <div class="slideshow-item">
+                <h3>Sensation World Tour</h3>
+                <p>Travel to Sensation destinations around the globe.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="flexbuttons">
+        <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span><span class="hero-button-subtitle">Or Hotel Only</span></a>
+        <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+        <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
+    </div>
+
+
+    <div class="scrolldown scrollTo" data-target="#eventinfo">
+        <span>Event info</span>
+        <div></div>
+    </div>
+</div>
+
+<section class="section" id="eventinfo">
+    <div class="container">
+        <div class="ml-line"></div>
+        <h3 class="h3 h3--big text-center">About edmbooking</h3>
         <div class="row">
-            <div class="col">
+            <div class="event-info-wrapper">
 
-<div id="map" style="height: 500px;"></div>
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">FREE SHIPPING</h3>
+                        <p>
+                            F1-Tickets voor de Grand Prix van België 2019 op het circuit van Spa-Francorchamps zijn nu weer te bestellen via SportStadion. Bestel je F1-Tickets op tijd en geniet ook van de race op het legendarische circuit van Spa-Francorchamps!
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
 
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_pmzlPqsvTChsdpmXOeqEMv5qbW-WaWI"></script>
-<script>
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">TOP QUALITY</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                        <ol>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ol>
+                    </div>
+                </div>
 
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 12,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(52.3941320, 4.8507230), // Amsterdam
-
-                    // How you would like to style the map.
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                        {
-                            "saturation": 36
-                        },
-                        {
-                            "color": "#ffffff"
-                        },
-                        {
-                            "lightness": 40
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 16
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 20
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        },
-                        {
-                            "weight": 1.2
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 30
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 21
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.stroke",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 29
-                        },
-                        {
-                            "weight": 0.2
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 18
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "road.local",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 16
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 19
-                        }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        }
-                        ]
-                    }
-                    ]
-                };
-
-                // Get the HTML DOM element that will contain your map
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                // Let's also add a marker while we're at it
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">WOMEN & MEN</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
 
 
-                var customMarker = 'assets/img/edmbooking/marker.svg';
-                var customMarkerEvent = 'assets/img/edmbooking/marker.svg';
-
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(52.3941320, 4.8507230), //HOTEL
-                    icon: customMarker,
-                    map: map,
-                    title: 'yo'
-                });
+            </div>
+        </div>
+    </div>
 
 
-            }
-            </script>
+</section>
+
+<section class="section section-cta">
+    <div class="container text-center">
+        <h3 class="h3 h3--big text-center">Don't miss out, book now!</h3>
+        <div class="cta-buttons">
+                <a href="#" class="button button-primary">Camping & Tent</a>
+                <a href="#" class="button button-primary">Cottages & Hotels</a>
+                <a href="#" class="button button-primary">Hotel Search Engine</a>
             </div>
         </div>
     </div>
 </section>
 
+<section class="section gallery">
+    <div class="container">
+        <h3 class="h3 h3--big text-center">EDMBOOKING Gallery</h3>
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="gallery" href="https://loremflickr.com/1200/900" class="gallery-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dummyimage.com/800x600/aaa/fff" class="gallery-img b-lazy">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="section testimonials text-center">
+	<div class="container-fluid">
+		<h4 class="testimonials-h4">What our customers say</h4>
+		<div class="owl-carousel owl-theme owl-reviews">
+			<div class="item">
+				<div class="container">
+					<div class="testimonials-item">
+						<p class="testimonials-title"><span>&ldquo;</span>The trip was fantastic. Hotel was even better than I expected<span>&rdquo;</span></p>
+						<span class="testimonials-author">Jurgen van Zachten, The Netherlands</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="testimonials-item">
+						<p class="testimonials-title"><span>&ldquo;</span>Great service from EDMBOOKING<span>&rdquo;</span></p>
+						<span class="testimonials-author">Tom Ford, United Kingdom</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="testimonials-item">
+						<p class="testimonials-title"><span>&ldquo;</span>We are coming back next year<span>&rdquo;</span></p>
+						<span class="testimonials-author">Jullie Peters, South Africa</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 	</main>
 <footer id="footer">

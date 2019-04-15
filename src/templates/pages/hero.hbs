@@ -1,0 +1,134 @@
+---
+title: Hero
+type: component
+layout: default.hbs
+---
+
+
+<div class="slideshow">
+    <div class="owl-carousel owl-theme owl-heroslideshow">
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/1.jpg">
+            <div class="slideshowbg"></div>
+            <div class="slideshow-item">
+                <h3>New Horizons Festival</h3>
+                <p>A full New Horizons experience, including tickets, hotels and camping.</p>
+            </div>
+        </div>
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/2.jpg">
+            <div class="slideshow-item">
+                <h3>Cottage & Hotel packages</h3>
+                <p>Embark on a multi-day journey across the spectrum of electronic music. Stay on our magical campsite or crash in a comfortable hotel.</p>
+            </div>
+        </div>
+        <div class="item slideshowbg" data-src="assets/img/newhorizons2019/slideshow/3.jpg">
+            <div class="slideshow-item">
+                <h3>Sensation World Tour</h3>
+                <p>Travel to Sensation destinations around the globe.</p>
+            </div>
+        </div>
+    </div>
+    {{!-- <span class="slide-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span> --}}
+    {{!-- <span class="slide-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span> --}}
+    <div class="flexbuttons">
+        <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span><span class="hero-button-subtitle">Or Hotel Only</span></a>
+        <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+        <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
+    </div>
+
+
+    <div class="scrolldown scrollTo" data-target="#eventinfo">
+        <span>Event info</span>
+        <div></div>
+    </div>
+</div>
+
+<section class="section" id="eventinfo">
+    <div class="container">
+        <div class="ml-line"></div>
+        <h3 class="h3 h3--big text-center">About {{site.theme}}</h3>
+        <div class="row">
+            <div class="event-info-wrapper">
+
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">FREE SHIPPING</h3>
+                        <p>
+                            F1-Tickets voor de Grand Prix van België 2019 op het circuit van Spa-Francorchamps zijn nu weer te bestellen via SportStadion. Bestel je F1-Tickets op tijd en geniet ook van de race op het legendarische circuit van Spa-Francorchamps!
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">TOP QUALITY</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                        <ol>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">WOMEN & MEN</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="section section-cta">
+    <div class="container text-center">
+        <h3 class="h3 h3--big text-center">Don't miss out, book now!</h3>
+        <div class="cta-buttons">
+                <a href="#" class="button button-primary">Camping & Tent</a>
+                <a href="#" class="button button-primary">Cottages & Hotels</a>
+                <a href="#" class="button button-primary">Hotel Search Engine</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> gallery }}
+
+{{> testimonials }}

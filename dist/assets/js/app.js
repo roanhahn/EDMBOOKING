@@ -494,6 +494,24 @@ $(document).ready(function() {
       });
     });
 
+   var owlHero = $('.owl-heroslideshow');
+    owlHero.owlCarousel({
+        items:1,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        loop: true,
+        nav: false,
+        dots: false,
+        lazyLoad: true,
+        autoplaySpeed: 1000,
+        navSpeed: 1000,
+        dotsSpeed: 1000,
+        dragEndSpeed: 1000,
+        animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    })
+
     // var owlSlideshow = $('.owl-slideshow');
     // owlSlideshow.owlCarousel({
     //     items: 1,
