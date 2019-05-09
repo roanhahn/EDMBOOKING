@@ -201,9 +201,9 @@ $cookie-link-color: #d60e00;
 $cookies-fontsize: 16px;
 $cookies-border: 1px solid #d60e00;
 $cookies-color: #333;
-$cookies-padding: 20px;
+$cookies-padding: 20px 80px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
 
 /* FORMS */
 $form-border: 1px solid #bbb;
@@ -223,6 +223,11 @@ $checkout: #2d609b;
 $checkout-light: rgba(0,0,0,0.1);
 $checkout-limit: rgba(0,0,0,0.2);
 $checkout-limit2: rgb(214, 14, 0);
+
+.t-check-out{
+    border-left-width: 1 !important;
+}
+
 
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
@@ -259,7 +264,9 @@ $checkout-limit2: rgb(214, 14, 0);
         background: #d60e00 !important;
     }
 }
-
+.flexbuttons a{
+    max-width: 350px !important;
+}
 .yourbooking{
     // background: $bg-color url(../img/dldk/bg.jpg) repeat top center fixed !important;
 }

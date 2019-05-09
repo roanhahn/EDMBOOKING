@@ -125,18 +125,18 @@
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # # EDM
-logo: logo.svg
-theme: edmbooking
-siteversion: 30
-name: EDMBOOKING
-intro: EDMBOOKING
-title: EDMBOOKING | Book, stay and experience EDM around the globe.
-homepage: homepage.html
-herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
-herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
-event: Martin Garrix
-eventdate: 3 nov 2018, Las Vegas (USA)
-description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+# logo: logo.svg
+# theme: edmbooking
+# siteversion: 30
+# name: EDMBOOKING
+# intro: EDMBOOKING
+# title: EDMBOOKING | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
+# herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
+# event: Martin Garrix
+# eventdate: 3 nov 2018, Las Vegas (USA)
+# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # MARTIN GARRIX
 # theme: martingarrix
@@ -163,6 +163,20 @@ description: Sensation is going to Madrid! On November 3, the World's Leading Da
 # event: New Horizons Festival
 # eventdate: 24. & 25. AUGUST 2019
 # description: Welcome To The Kingdom Of New Horizons mit 150 DJs, 7 Areas, 3 fantastische Nächte, 2 spektakuläre Tage und eine legendäre Location auf dem Nürburgring.
+
+# # Gigi
+logo: logo.svg
+siteversion: 30
+theme: gigi
+name: Gigi in Concert
+intro: 20 years of gigi d'agostino
+title: Gigi in Concert | Book, stay and experience EDM around the globe.
+homepage: homepage.html
+herotitle: L'amour toujours
+herosubtitle: NÜRBURGRING, GERMANY
+event: Gigi in Concert
+eventdate: 20 years of Gigi d'Accostino
+description: Scoor vanaf vrijdag 10 mei je tickets voor 20 YEARS OF GIGI op zaterdag 16 november.
 
 # # Formule 1
 # logo: logo-f1.svg

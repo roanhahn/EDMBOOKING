@@ -192,9 +192,9 @@ $cookie-link-color: #6EB3C3;
 $cookies-fontsize: 13px;
 $cookies-border: 1px solid #000;
 $cookies-color: #000;
-$cookies-padding: 20px;
+$cookies-padding: 20px 80px 20px 20px;
 $cookies-fontsize-mobile: 11px;
-$cookies-padding-mobile: 10px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
 
 /* FORMS */
 $form-border: 1px solid #000;
@@ -214,6 +214,10 @@ $checkout: #000;
 $checkout-light: rgba(0,0,0,0.1);
 $checkout-limit: rgba(0,0,0,0.2);
 $checkout-limit2: #6EB3C3;;
+
+.t-check-out{
+    border-left-width: 1 !important;
+}
 
 @mixin gradient($fromcolor, $tocolor) {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */

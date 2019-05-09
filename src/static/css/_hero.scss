@@ -71,7 +71,7 @@
 
     &-button {
         margin: 0 10px;
-        font-size: 26px;
+        font-size: $hero-button-size;
 
         @media all and (max-width: $breakpoint-tablet) {
             display: block;
@@ -199,6 +199,7 @@
         height: calc(100vh - #{$header-height});
         min-height: 600px;
         overflow: hidden;
+        padding: $hero-padding;
 
         &--70 {
             height: calc(70vh - #{$header-height});
@@ -209,6 +210,7 @@
         @media all and (max-width: $breakpoint-tablet) {
             height: calc(85vh - #{$header-height-mobile});
             min-height: 600px;
+            padding: $hero-padding-mobile;
         }
 
         @media all and (max-width: $breakpoint-mobile) {
@@ -222,7 +224,7 @@
             right: 0;
             top: 50%;
             z-index: 10;
-            padding: 150px 0; // background-color: red;
+            // padding: $hero-padding;
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
@@ -234,6 +236,7 @@
                 // -ms-transform: translate(0, 0%);
                 // -webkit-transform: translate(0, 0%);
                 // transform: translate(0, 0%);
+                // padding: $hero-padding-mobile;
             }
         }
 
@@ -543,10 +546,10 @@
 }
 
 .slideshow-item {
-    padding: 30vh 20vw;
+    padding: 0vh 20vw;
     display: flex;
     align-items: center;
-    // justify-content: center;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 450px;
@@ -557,12 +560,15 @@
 
     @media all and (max-width: $breakpoint-tablet) {
         justify-content: flex-start;
+        padding: 30vh 20vw;
         height: calc(90vh - #{$header-height-mobile});
     }
 
+
+
     @media all and (max-width: $breakpoint-mobile) {
         height: calc(88vh - #{$header-height-mobile});
-        padding: 15vh 15px;
+        padding: 20vh 15px;
     }
 
 
@@ -573,6 +579,13 @@
         font-size: 1.7rem;
         margin-top: 20px;
         color: $hero-h1-color;
+        position: relative;
+        top: -60px;
+
+        @media all and (max-height: 800px) {
+            top: -90px;
+            // background: red;
+        }
 
         @media all and (max-width: $breakpoint-tablet) {
             font-size: 1.2rem;
@@ -580,6 +593,7 @@
 
         @media all and (max-width: $breakpoint-mobile) {
             font-size: 1rem;
+            top: 0;
         }
     }
 
@@ -593,13 +607,21 @@
         line-height: 1;
         text-transform: uppercase;
         text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+        position: relative;
+        top: -60px;
 
         @media all and (max-width: $breakpoint-tablet) {
             font-size: 6vw;
         }
 
+         @media all and (max-height: 800px) {
+            top: -90px;
+            // background: red;
+        }
+
         @media all and (max-width: $breakpoint-mobile) {
             font-size: 8vw;
+            top: 0;
         }
 
         &.hero-event-title {

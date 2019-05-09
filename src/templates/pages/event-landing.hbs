@@ -4,227 +4,227 @@ type: page
 layout: default.hbs
 videobackground: bla
 ---
-
-
 <div class="hero hero-fullscreen d-none">
-	<div class="inner">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					{{#is site.theme 'wttf'}}
-						<img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
-					{{/is}}
-					<h1 class="hero-event-title">{{site.event}}
-						<small>{{site.eventdate}}</small>
-					</h1>
-					<div class="flexbuttons">
-						<a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
-						{{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
-						<a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
-						<a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="vimeo" style="background-image: url(assets/img/{{site.theme}}/Lowlands_HomepageAnimatie_poster.png);">
-		<video src="https://player.vimeo.com/external/250748184.hd.mp4?s=4654fd490c4f22cb13e7578f30d7c4bc28c035dc&amp;profile_id=174" autoplay="true" loop="true" class="hero__video hero__video--centered" data-object-fit="cover"></video>
-	</div>
-	<div class="hero-scroll scrollTo" data-target="#eventinfo">
-		<span>Event info</span>
-		<div class="arrow"></div>
-	</div>
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{#is site.theme 'wttf'}}
+                    <img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
+                    {{/is}}
+                    <h1 class="hero-event-title">{{site.event}}
+                        <small>{{site.eventdate}}</small>
+                    </h1>
+                    <div class="flexbuttons">
+                        <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
+                        {{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
+                        <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+                        <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vimeo" style="background-image: url(assets/img/{{site.theme}}/Lowlands_HomepageAnimatie_poster.png);">
+        <video src="https://player.vimeo.com/external/250748184.hd.mp4?s=4654fd490c4f22cb13e7578f30d7c4bc28c035dc&amp;profile_id=174" autoplay="true" loop="true" class="hero__video hero__video--centered" data-object-fit="cover"></video>
+    </div>
+    <div class="scrolldown scrollTo" data-target="#eventinfo">
+        <span>Event info</span>
+        <div></div>
+    </div>
 </div>
-
-<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
-	<div class="inner">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					{{#is site.theme 'wttf'}}
-						<img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
-					{{/is}}
-					<h1 class="hero-event-title">{{site.event}}
-						<small>{{site.eventdate}}</small>
-					</h1>
-					<div class="flexbuttons">
-						<a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel &amp; Ticket</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
-						{{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
-						<a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
-						<a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	 <!-- Slider 1 -->
-    <div class="slider" id="slider1">
+<div class="gigi" style="background-image: url(assets/img/{{site.theme}}/hero.jpg">
+    <img src="assets/img/{{site.theme}}/gigi.png">
+</div>
+<div class="container">
+    <div class="gigi-wrapper">
+        <h1>{{site.event}}
+            <small>{{site.eventdate}}</small>
+        </h1>
+        <div class="flexbuttons">
+            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Full Experience</span></a>
+            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Ticket + Hotel</span></a>
+        </div>
+        <div class="scrolldown scrollTo" data-target="#eventinfo">
+            <span>Event info</span>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="hero hero-fullscreen d-none" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{#is site.theme 'wttf'}}
+                    <img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
+                    {{/is}}
+                    <img src="assets/img/{{site.theme}}/gigi.png" class="gigi">
+                    <div class="gigi-hero">
+                        <h1 class="hero-event-title">{{site.event}}
+                            <small>{{site.eventdate}}</small>
+                        </h1>
+                        <div class="flexbuttons">
+                            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Full Experience</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
+                            {{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
+                            {{!-- <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+                            <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider 1 -->
+    <div class="slider d-none" id="slider1">
         <!-- Slides -->
         {{!-- <div style="background-image:url(assets/img/newhorizons2019/slider1.jpg)"></div> --}}
         <div style="background-image:url(assets/img/newhorizons2019/slider2.jpg)"></div>
         <div style="background-image:url(assets/img/newhorizons2019/slider3.jpg)"></div>
-
         <!-- The Arrows -->
-        {{!-- <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
-        <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i> --}}
+        {{!-- <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+            </svg></i>
+        <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+            </svg></i> --}}
     </div>
-
-	<div class="hero-scroll scrollTo" data-target="#eventinfo">
-		<span>Event info</span>
-		<div class="arrow"></div>
-	</div>
-	{{!-- <video class="inlinevideo" autoplay loop muted playsinline>
+    <div class="scrolldown scrollTo" data-target="#eventinfo">
+        <span>Event info</span>
+        <div></div>
+    </div>
+    {{!-- <video class="inlinevideo" autoplay loop muted playsinline>
         <source src="https://newhorizons-festival.com/wp-content/uploads/2019/03/NHF_Kingdom-of-Fire-Teaser_No_Audio.mp4" type="video/mp4">
         <source src="https://newhorizons-festival.com/wp-content/uploads/2019/03/NHF_Kingdom-of-Fire-Teaser_No_Audio.webm" type="video/webm">
     </video> --}}
 </div>
-
-
-
 <section class="section" id="eventinfo">
-	<div class="container">
-		<div class="ml-line"></div>
-		<h3 class="h3 h3--big text-center">About {{site.theme}}</h3>
-		<div class="row">
-			<div class="event-info-wrapper">
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3 h3--eventinfo">FREE SHIPPING</h3>
-						<p>
-							F1-Tickets voor de Grand Prix van België 2019 op het circuit van Spa-Francorchamps zijn nu weer te bestellen via SportStadion. Bestel je F1-Tickets op tijd en geniet ook van de race op het legendarische circuit van Spa-Francorchamps!
-						</p>
-						<ul>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3 h3--eventinfo">TOP QUALITY</h3>
-						<p>
-							Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-						</p>
-						<ul>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-						</ul>
-						<ol>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-						</ol>
-					</div>
-				</div>
-
-				<div class="event-info-item">
-					<div class="img-container ratio-4-3">
-						<img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
-					</div>
-					<div class="content">
-						<h3 class="h3 h3--eventinfo">WOMEN & MEN</h3>
-						<p>
-							Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-						</p>
-						<ul>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-							<li>Aenean leo ligula</li>
-						</ul>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</div>
-
-
+    <div class="container">
+        <div class="ml-line"></div>
+        <h3 class="h3 h3--big text-center">About {{site.theme}}</h3>
+        <div class="row">
+            <div class="event-info-wrapper">
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">FREE SHIPPING</h3>
+                        <p>
+                            F1-Tickets voor de Grand Prix van België 2019 op het circuit van Spa-Francorchamps zijn nu weer te bestellen via SportStadion. Bestel je F1-Tickets op tijd en geniet ook van de race op het legendarische circuit van Spa-Francorchamps!
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">TOP QUALITY</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                        <ol>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="event-info-item">
+                    <div class="img-container ratio-4-3">
+                        <img data-src="https://dummyimage.com/800x600/aaa/fff" class="img-fluid b-lazy" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="h3 h3--eventinfo">WOMEN & MEN</h3>
+                        <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                        </p>
+                        <ul>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                            <li>Aenean leo ligula</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-<section class="d-none section section-cta" style="background-image: url(assets/img/{{site.theme}}/hero.jpg);">
-	<div class="container text-center">
-		<h3 class="h3 h3--big text-center">Don't miss out, book now!</h3>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-		<div class="cta-buttons">
-				<a href="#" class="button button-primary">Camping & Tent</a>
-				<a href="#" class="button button-primary">Cottages & Hotels</a>
-				<a href="#" class="button button-primary">Hotel Search Engine</a>
-			</div>
-		</div>
-	</div>
+<section class="section section-cta">
+    <div class="container text-center">
+        <h3 class="h3 h3--big text-center">Don't miss out, book now!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <div class="cta-buttons">
+            <a href="#" class="button button-primary">Camping & Tent</a>
+            <a href="#" class="button button-primary">Cottages & Hotels</a>
+            <a href="#" class="button button-primary">Hotel Search Engine</a>
+        </div>
+    </div>
+    </div>
 </section>
-
 {{> gallery }}
-
 {{> testimonials }}
 {{!--
 <div class="hero hero-event hero--blue" style="background-image: url(assets/img/event-header.jpg)">
-	<div class="inner">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="hero-event-title">Martin Garrix</h1>
-					<p>14 november Las Vegas</p>
-					<a href="event-info.html" class="button button-secondary">Event info</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="hero-event-title">Martin Garrix</h1>
+                    <p>14 november Las Vegas</p>
+                    <a href="event-info.html" class="button button-secondary">Event info</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 <section>
-	<div class="row no-gutters">
-		<div class="col-md-4">
-			<a href="step1-hotels.html" class="event event--blue">
-				<div class="event-info">
-					<h3 class="event-title">Hotel + Ticket</h3>
-					<div class="event-date">Nam eget dui. Etiam rhoncus.</div>
-					<span class="button button-secondary">Let's go</span>
-				</div>
-				<div class="event-thumb event-thumb--blue" style="background-image: url(assets/img/illu-hotel-ticket.jpg);"></div>
-			</a>
-		</div>
-
-		<div class="col-md-4">
-			<a href="step1-packages.html" class="event event--grey">
-				<div class="event-info">
-					<h3 class="event-title">Packages</h3>
-					<div class="event-date">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-					<span class="button button-secondary">Let's go</span>
-				</div>
-				<div class="event-thumb event-thumb--grey" style="background-image: url(assets/img/illu-packages.jpg);"></div>
-			</a>
-		</div>
-
-		<div class="col-md-4">
-			<a href="step1-camping.html" class="event event--red">
-				<div class="event-info">
-					<h3 class="event-title">Camping</h3>
-					<div class="event-date">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
-					<span class="button button-secondary">Let's go</span>
-				</div>
-				<div class="event-thumb event-thumb--red" style="background-image: url(assets/img/illu-camping.jpg);"></div>
-			</a>
-		</div>
-	</div>
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <a href="step1-hotels.html" class="event event--blue">
+                <div class="event-info">
+                    <h3 class="event-title">Hotel + Ticket</h3>
+                    <div class="event-date">Nam eget dui. Etiam rhoncus.</div>
+                    <span class="button button-secondary">Let's go</span>
+                </div>
+                <div class="event-thumb event-thumb--blue" style="background-image: url(assets/img/illu-hotel-ticket.jpg);"></div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="step1-packages.html" class="event event--grey">
+                <div class="event-info">
+                    <h3 class="event-title">Packages</h3>
+                    <div class="event-date">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                    <span class="button button-secondary">Let's go</span>
+                </div>
+                <div class="event-thumb event-thumb--grey" style="background-image: url(assets/img/illu-packages.jpg);"></div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="step1-camping.html" class="event event--red">
+                <div class="event-info">
+                    <h3 class="event-title">Camping</h3>
+                    <div class="event-date">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+                    <span class="button button-secondary">Let's go</span>
+                </div>
+                <div class="event-thumb event-thumb--red" style="background-image: url(assets/img/illu-camping.jpg);"></div>
+            </a>
+        </div>
+    </div>
 </section>
-
 {{> testimonials }} --}}
