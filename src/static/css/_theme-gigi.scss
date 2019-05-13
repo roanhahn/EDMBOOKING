@@ -36,7 +36,7 @@ $border-color: #DEE2E5;
 /* FONT COLORS */
 $text-color: #212529;
 $heading-color: #212529;
-$link-color: #6b00ff;
+$link-color: #212529;
 $link-hover-color: #6b00ff;
 $error-color: #dc3545;
 
@@ -58,14 +58,18 @@ $video-filter: none; //grayscale(100%);
 $font-button: 'Teko',
 sans-serif;
 $button-size: 20px;
-$button-bg: transparent;
-$button-color: #6b00ff;
-$button-bg-hover: #6b00ff;
+$button-bg: #6b00ff;
+$button-color: #fff;
+$button-bg-hover: $text-color;
 $button-color-hover: #fff;
 $button-radius: 0px;
 
 .button-primary {
     border: 2px solid #6b00ff !important;
+
+    &:hover{
+        border-color: $text-color !important;
+    }
 }
 
 .button{
@@ -145,7 +149,7 @@ $hero-padding-mobile: 100px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-h1-size: 70px; //70px default
-$hero-overlay: rgba(0, 0, 0, .1);
+$hero-overlay: rgba(0, 0, 0, .4);
 $font-hero-small: 'Roboto',
 sans-serif;
 $hero-position: center center;
@@ -167,6 +171,10 @@ $hero-button-size: 56px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    @media all and(max-height: 768px) {
+        min-height: 350px;
+    }
 
     @media all and(max-width: $breakpoint-mobile) {
         min-height: 300px;
@@ -245,6 +253,10 @@ $hero-button-size: 56px;
         max-height: 500px;
         z-index: 1;
         position: relative;
+
+        @media all and(max-height: 768px) {
+            max-height: 340px;
+        }
 
         @media all and(max-width: $breakpoint-mobile) {
             max-height: 250px;
@@ -336,10 +348,10 @@ $cookies-fontsize-mobile: 13px;
 $cookies-padding-mobile: 20px 60px 20px 20px;
 
 /* FORMS */
-$form-border: 1px solid #F7F7F7;
-$form-bordercolor: 1px solid #F7F7F7;
+$form-border: 1px solid $text-color;
+$form-bordercolor: 1px solid $text-color;
 $form-focus-border: #fff;
-$form-border-login: 1px solid #F7F7F7;
+$form-border-login: 1px solid $text-color;
 $form-label: $text-color;
 $form-labelsize: 15px;
 $form-input-color: $text-color;
@@ -351,8 +363,8 @@ $placeholder-color: $text-color;
 
 $checkout: #6b00ff;
 $checkout-light: rgba(106, 170, 171, 0.1);
-$checkout-limit: green;
-$checkout-limit2: red;
+$checkout-limit: #f6f6f6;
+$checkout-limit2: #6b00ff;
 
 .form-control,
 .textfield,
@@ -407,6 +419,11 @@ $checkout-limit2: red;
     color: #fff !important;
 }
 
+// .my-package,
+// .my-package .form-label{
+//     color: $text-color !important;
+// }
+
 .feedback,
 .invalid-feedback,
 .valid-feedback {
@@ -415,11 +432,11 @@ $checkout-limit2: red;
 
 .t-check-in,
 .t-check-out {
-    border-radius: 3px !important;
+    border-radius: 0px !important;
 }
 
 .t-check-out {
-    border-left: 1px solid #F7F7F7 !important;
+    border-left: 1px solid $text-color !important;
 }
 
 .t-check-in table,
@@ -510,7 +527,7 @@ footer h4,
     .h3{
         font-size: 28px !important;
     }
-    .flex-offer-content .button-primary, .room .button-primary, .button--block, .float-right, .section-cta .button-primary{
+    .flex-offer-content .button-primary, .room .button-primary, .button--block, .float-right, .section-cta .button-primary, .bookPackageButton{
         font-size: 20px !important;
     }
 }

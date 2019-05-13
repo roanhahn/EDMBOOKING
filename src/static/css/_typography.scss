@@ -597,7 +597,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 	color: $link-color;
 	font-size: 22px; // font-weight: 600;
 	& .form-label {
-		color: $link-color !important;
+		color: $link-color;
 	}
 
 	@media (max-width: $breakpoint-mobile) {
