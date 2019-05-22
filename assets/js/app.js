@@ -337,11 +337,18 @@ $('.toggle-filters').click(function() {
 
 
 $('.readmore').click(function() {
-    console.log("bla");
     $(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
     $(this).toggleClass("readmore-active");
     // $('body, .html').attr('scroll','no');
 });
+
+$('.btnexpand').click(function() {
+    $(this).closest('.event-info-item').find('.content').toggleClass("content-active");
+    $(this).toggleClass("btnexpand-active");
+    // $('body, .html').attr('scroll','no');
+});
+
+btnexpand
 
 
 // POPUP
