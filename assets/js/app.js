@@ -339,6 +339,7 @@ $('.toggle-filters').click(function() {
 $('.readmore').click(function() {
     console.log("bla");
     $(this).closest('.room-content').find('.room-info').toggleClass("room-info--active");
+    $(this).toggleClass("readmore-active");
     // $('body, .html').attr('scroll','no');
 });
 
