@@ -348,7 +348,11 @@ $('.btnexpand').click(function() {
     // $('body, .html').attr('scroll','no');
 });
 
-btnexpand
+$('.btnexpandinfo').click(function() {
+    $('.hotel-info').toggleClass("hotel-info-active");
+    $(this).toggleClass("btnexpandinfo-active");
+    // $('body, .html').attr('scroll','no');
+});
 
 
 // POPUP
