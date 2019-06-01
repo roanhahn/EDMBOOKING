@@ -246,16 +246,20 @@
 		}
 	}
 
+
+
 	&-price{
 		color: $link-color;
 		display: block;
 		font-weight: 400;
 		margin: 0 0 2px 0;
 		white-space: nowrap;
+		text-align: right;
 		font-size: 32px;
 
 		@media all and (max-width: $breakpoint-tablet){
 			display: inline-block;
+			text-align: left;
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 15px;
@@ -272,13 +276,17 @@
 
 	&-price-condition{
 		color: $link-color;
-
+		text-align: right;
 		display: block;
 		margin-bottom: 20px;
-		white-space: nowrap;
+		white-space: normal;
+		// white-space: nowrap;
+		font-size: 13px;
+
 		@media all and (max-width: $breakpoint-tablet){
 			// display: inline-block;
 			margin-left: 5px;
+			text-align: left;
 		}
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: 10px;
@@ -286,6 +294,8 @@
 			// display: inline-block;
 			margin-bottom: 0px;
 			margin-top: 6px;
+			text-align: right;
+			// background: red;
 			// margin-bottom: 20px;
 		}
 	}
@@ -307,7 +317,9 @@
 
 		.h3--room{
 			@media all and (max-width: $breakpoint-mobile){
-
+				// margin-top: 10px;
+				margin-bottom: 5px;
+				// font-size: 18px;
 			}
 		}
 		.offer-price{
@@ -329,6 +341,14 @@
 			}
 
 		}
+		@media all and (max-width: $breakpoint-mobile){
+				// padding-left: 0px;
+			}
+	}
+}
+.roominfowrapper{
+	@media all and (max-width: $breakpoint-mobile){
+		padding-left: 0px;
 	}
 }
 .room-info{
@@ -337,7 +357,8 @@
 	overflow: hidden;
 
 	@media all and (max-width: $breakpoint-mobile){
-		height: auto;
+		height: 60px;
+		font-size: 13px;
 	}
 
 	& p{
@@ -425,6 +446,80 @@
 			@media all and (max-width: $breakpoint-tablet){
 				padding-right: 0px;
 			}
+		}
+	}
+}
+
+.bcom{
+	// background-color: red;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	margin-top: 5px;
+	color: $link-color;
+
+	&-inpage{
+		position: absolute;
+		right: 0;
+		top: -10px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			position: relative;
+			top: 0;
+		}
+	}
+
+	@media all and (max-width: $breakpoint-tablet){
+		justify-content: flex-start;
+		margin-bottom: 15px;
+	}
+	@media all and (max-width: $breakpoint-mobile){
+		margin-bottom: 15px;
+		margin-top: 0px;
+	}
+
+	&-comment{
+		// background-color: red;
+	}
+
+	& p{
+		margin: 5px 0 0 0;
+		padding: 0;
+		font-size: 13px;
+		text-align: right;
+
+		@media all and (max-width: $breakpoint-tablet){
+			text-align: left;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 11px;
+			margin-top: 8px;
+			display: inline-block;
+		}
+
+		&.reviews{
+			color: $text-color;
+		}
+	}
+
+	&-rating{
+		background: $text-color;
+		color: $bg-color;
+		display: inline-block;
+		padding: 7px 4px;
+		border-radius: 5px 5px 5px 0;
+		font-weight: 900;
+		font-size: 24px;
+		text-align: center;
+		margin-left: 15px;
+
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 15px;
+			order: -1;
+			margin: 0 10px 0 0;
 		}
 	}
 }

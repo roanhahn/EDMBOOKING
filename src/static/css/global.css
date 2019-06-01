@@ -1,0 +1,58 @@
+/* Default Variables */
+/**
+ * These values will not show up in content, but can be
+ * queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+body:before {
+  content: "mobile";
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+@media (min-width: 768px) {
+  body:before {
+    content: "tablet"; } }
+@media (min-width: 992px) {
+  body:before {
+    content: "desktop"; } }
+.poweredbybooking {
+  font-size: 14px;
+  padding-top: 4px;
+  text-align: right; }
+  @media all and (max-width: 767px) {
+    .poweredbybooking {
+      text-align: left;
+      font-size: 12px; } }
+  .poweredbybooking img {
+    display: inline-block;
+    width: 160px;
+    margin-left: 5px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 4px 4px 4px 0px; }
+    @media all and (max-width: 767px) {
+      .poweredbybooking img {
+        width: 110px; } }
+
+.footer-booking {
+  font-size: 14px;
+  margin-top: 15px; }
+  @media all and (max-width: 992px) {
+    .footer-booking {
+      display: block;
+      text-align: center;
+      margin-top: 30px; } }
+  .footer-booking p {
+    margin-bottom: 10px;
+    display: block; }
+  .footer-booking img {
+    width: 190px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 4px 4px 4px 0px; }
+
+/*# sourceMappingURL=global.css.map */

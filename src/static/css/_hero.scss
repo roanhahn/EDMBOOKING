@@ -200,6 +200,7 @@
         min-height: 600px;
         overflow: hidden;
         padding: $hero-padding;
+        // background: yellow;
 
         &--70 {
             height: calc(70vh - #{$header-height});
@@ -218,7 +219,7 @@
         }
 
         & .inner {
-            position: relative;
+            position: absolute;
             width: 100%;
             left: 0;
             right: 0;
@@ -228,6 +229,7 @@
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
+            // background-color: red;
 
             @media all and (max-width: $breakpoint-tablet) {
                 // padding: 0px 0;

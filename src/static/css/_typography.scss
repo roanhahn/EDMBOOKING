@@ -557,28 +557,43 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 		}
 	}
 
-	& table {
-		margin: 20px auto;
+	&-message{
 		border-top: 1px solid $border-color;
 		border-bottom: 1px solid $border-color;
+		margin-bottom: 20px;
+	}
+
+	& table {
+
+
 		padding: 0;
-		width: 100%;
+		width: auto;
+		display: table;
+		// background-color: red;
+		margin: 20px auto 20px auto;
+
+		// &:before{
+		// 	content: "";
+		// 	width: 100%;
+		// 	height: 2px;
+		// 	background-color: yellow;
+		// 	display: block;
+		// }
 
 		& tbody {
-			margin: 20px 0;
+			// margin: 20px 0;
 			display: block; // background: red;
 		}
 
 
 		& td {
 			text-align: left;
-			width: auto;
-			padding: 5px 0 5px 0;
+			padding: 5px 20px 5px 20px;
 			white-space: nowrap;
 
 			&:first-child {
 				font-weight: 800;
-				width: 130px !important;
+				// width: 130px !important;
 			}
 
 			@media (max-width: $breakpoint-mobile) {

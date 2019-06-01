@@ -34,6 +34,7 @@ $border-color: #f3eeee; //rgba(255,255,255,.3);
 $text-color: #fff;
 $heading-color: #ff0067;
 $link-color: #ff0067;
+$error-color: #dc3545;
 
 /* Google Maps */
 $mapclose-color: #ff0067;
@@ -88,6 +89,8 @@ $sec-padding: 15px 30px;
 
 /* HEADER */
 $hamburger-layer-color: #fff !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
 $header-height: 90px;
 $header-height-mobile: 50px;
 $logo-height: 50px;
@@ -123,6 +126,8 @@ $language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 $dropdownicon: "\f107";
 
 /* HERO */
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
 $hero-color: #fff;
 $hero-h1-color: #fff;
 $hero-overlay: rgba(0,0,0,.3);
@@ -204,6 +209,8 @@ $form-border: 1px solid #000;
 $form-bordercolor: #000;
 $form-border-login: 1px solid #000;
 $form-label: #fff;
+$form-labelsize: 15px;
+$form-focus-border: #fff;
 $form-input-color: #000;
 $form-highlight: #ff0067;
 $form-highlightcolor: #fff;
@@ -211,6 +218,11 @@ $form-addon-bg: #ff0067;
 $form-addon-color: #fff;
 $placeholder-color: #95a5a6;
 
+
+$checkout: rgb(12, 107, 167);
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: rgb(217, 49, 138);
 @mixin gradient($fromcolor, $tocolor) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
     background: $fromcolor; /* Old browsers */

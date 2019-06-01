@@ -95,6 +95,7 @@ connect: {
 				files: {
 					'<%= config.src %>/static/css/styles.css': '<%= config.src %>/static/css/base.scss',
 					'<%= config.src %>/static/css/docs.css': '<%= config.src %>/static/css/docs.scss',
+					'<%= config.src %>/static/css/global.css': '<%= config.src %>/static/css/global.scss',
 				}
 			}
 		},
@@ -104,7 +105,7 @@ connect: {
 				files: [{
 					expand: true,
 					cwd: '<%= config.src %>/static/css/',
-					src: ['styles.css', 'docs.css'],
+					src: ['styles.css', 'docs.css', 'global.css'],
 					dest: '<%= config.dist %>/assets/css/',
 					ext: '.min.css'
 				}]

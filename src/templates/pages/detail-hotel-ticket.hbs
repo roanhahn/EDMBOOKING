@@ -19,13 +19,8 @@ layout: default.hbs
 <section class="section detailpage">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9 col-lg-10">
+			<div class="col">
 				<h1 class="h1">Comfort Inn Midtown West</h1>
-				<h2 class="h2">One of our best sellers, great price...</h2>
-			</div>
-			<div class="col-md-3 col-lg-2">
-				<div class="detail-price">&euro;299</div>
-				<div class="detail-price-conditions">Price per person</div>
 			</div>
 		</div>
 		<div class="gallery">
@@ -52,49 +47,21 @@ layout: default.hbs
 			<button class="my-next-button"></button>
 			<button class="my-prev-button"></button>
 		</div>
-		<div class="row">
-			<div class="col-lg-4 m-b-30">
-				<h3 class="h3">Package information</h3>
-				<ul class="offer-list m-b-30">
-					<li>Tipi for 9 persons</li>
-					<li>9 Single stretchers including sleeping bags and pillows</li>
-					<li>Table with stools</li>
-					<li>A spot on our campsite</li>
-					<li>3 Night stay</li>
-					<li>Exclusive pre-party on Thursday</li>
-					<li>New Horizons welcome package</li>
-					<li>1 Parking ticket for Royal Garden parking</li>
-				</ul>
-				<h3 class="h3">Package information</h3>
-				<ul class="bullet-list">
-					<li>Tipi for 9 persons</li>
-					<li>9 Single stretchers including sleeping bags and pillows</li>
-					<li>Table with stools</li>
-					<li>A spot on our campsite</li>
-					<li>3 Night stay</li>
-					<li>Exclusive pre-party on Thursday</li>
-					<li>New Horizons welcome package</li>
-					<li>1 Parking ticket for Royal Garden parking</li>
-				</ul>
-				{{!-- <div class="googleMaps">
-					{{> googleMaps }}
-					<div>
-						<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
-					</div>
-					<div class="rating-wrapper">
-						<div class="rating">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</div>
-						Distance venue 5km
-					</div>
-				</div> --}}
-			</div>
-			<div class="col-lg-8">
+
+
+			<div style="position: relative;">
+
+
 				<h3 class="h3">Hotel information</h3>
+
+				<div class="bcom bcom-inpage">
+                    <div class="bcom-comment">
+                        <p>Very good</p>
+                        <p class="reviews">4,200 reviews</p>
+                    </div>
+                    <div class="bcom-rating">8.4</div>
+                </div>
+
 				<div class="hotel-information">
 					<address class="m-b-0">Goudsbloemvallei 21-25 S hertogenbosch 5237 MH</address>
 					<div class="rating-wrapper">
@@ -109,7 +76,7 @@ layout: default.hbs
 						<span class="showMap standalone_open"><i class="fa fa-map-marker" aria-hidden="true"></i> Show on map</span>
 					</div>
 				</div>
-				<div style="line-height: 1.6;">
+				<div class="hotel-info" id="hotelinfo" style="line-height: 1.6;">
 					The Campanile hotel is 4.5 km from the city centre of ‘s-Hertogenbosch and within 5 km of a karting circuit, tennis courts, a skating rink, swimming pool, snooker hall, a nightclub and a shopping centre.
 					<br /><br />
 					The soundproof rooms are modern and tastefully decorated with comfortable beds, a private bathroom with shower, bath and hair dryer, ecological shampoo and soap, free Wi-Fi, a flat screen TV with free channels, blackout curtains and a free tray with coffee and tea facilities and biscuits. In the morning the hotel serves a breakfast buffet which includes tea, coffee, fresh fruit juice, cereals, pastries, cheese, meat, yoghurt and fruit salad.
@@ -128,7 +95,8 @@ layout: default.hbs
 				</p>
 
 			</div>
-		</div>
+			<button class="btnexpandinfo">Read more</button>
+
 		<hr class="hr">
 		{{!-- <div class="row">
 			<div class="col-lg-8">

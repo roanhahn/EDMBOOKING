@@ -93,7 +93,7 @@
 		background-position: center center;
 		background-size: cover;
 		background-blend-mode: multiply;
-		background-color: $white-filter;
+		// background-color: $white-filter;
 
 		& .inner{
 				position: relative;
@@ -318,8 +318,16 @@
 
 		& .content{
 			padding: 20px 0 10px;
+			overflow: hidden;
+			// background: red;
+			margin-bottom: 10px;
+			height: 295px;
 			// background: yellow;
 			// height: 100%;
+
+			&-active{
+				height: auto;
+			}
 
 			& ol{
 				line-height: 1.6;
@@ -360,6 +368,7 @@
 
 			& p{
 				line-height: 1.6;
+				margin-bottom: 8px;
 			}
 		}
 	}
@@ -384,6 +393,17 @@
 			font-size: 14px;
 		}
 	}
+
+	.hotel-info{
+		height: 200px;
+		overflow: hidden;
+		margin-bottom: 10px;
+
+		&-active{
+			height: auto;
+		}
+	}
+
 	.showMap{
 		border-left: 1px solid $link-color;
 		margin-left: 7px;

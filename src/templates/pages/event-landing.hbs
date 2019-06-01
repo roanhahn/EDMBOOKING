@@ -33,10 +33,10 @@ videobackground: bla
         <div></div>
     </div>
 </div>
-<div class="gigi" style="background-image: url(assets/img/{{site.theme}}/hero.jpg">
+<div class="gigi d-none" style="background-image: url(assets/img/{{site.theme}}/hero.jpg">
     <img src="assets/img/{{site.theme}}/gigi.png">
 </div>
-<div class="container">
+<div class="container d-none">
     <div class="gigi-wrapper">
         <h1>{{site.event}}
             <small>{{site.eventdate}}</small>
@@ -51,7 +51,7 @@ videobackground: bla
         </div>
     </div>
 </div>
-<div class="hero hero-fullscreen d-none" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
+<div class="hero hero-fullscreen" style="background-image: url(assets/img/{{site.theme}}/hero.jpg); {{!-- background-attachment: fixed; --}}">
     <div class="inner">
         <div class="container">
             <div class="row">
@@ -59,18 +59,18 @@ videobackground: bla
                     {{#is site.theme 'wttf'}}
                     <img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
                     {{/is}}
-                    <img src="assets/img/{{site.theme}}/gigi.png" class="gigi">
-                    <div class="gigi-hero">
+
+
                         <h1 class="hero-event-title">{{site.event}}
                             <small>{{site.eventdate}}</small>
                         </h1>
                         <div class="flexbuttons">
                             <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Full Experience</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
-                            {{!-- <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a> --}}
-                            {{!-- <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
-                            <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a> --}}
+                            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a>
+                            <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+                            {{!-- <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a> --}}
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -111,15 +111,11 @@ videobackground: bla
                     <div class="content">
                         <h3 class="h3 h3--eventinfo">FREE SHIPPING</h3>
                         <p>
-                            F1-Tickets voor de Grand Prix van België 2019 op het circuit van Spa-Francorchamps zijn nu weer te bestellen via SportStadion. Bestel je F1-Tickets op tijd en geniet ook van de race op het legendarische circuit van Spa-Francorchamps!
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
                         </p>
-                        <ul>
-                            <li>Aenean leo ligula</li>
-                            <li>Aenean leo ligula</li>
-                            <li>Aenean leo ligula</li>
-                            <li>Aenean leo ligula</li>
-                        </ul>
                     </div>
+                    <button class="btnexpand">Read more</button>
                 </div>
                 <div class="event-info-item">
                     <div class="img-container ratio-4-3">
@@ -143,6 +139,7 @@ videobackground: bla
                             <li>Aenean leo ligula</li>
                         </ol>
                     </div>
+                    <button class="btnexpand">Read more</button>
                 </div>
                 <div class="event-info-item">
                     <div class="img-container ratio-4-3">
@@ -160,6 +157,7 @@ videobackground: bla
                             <li>Aenean leo ligula</li>
                         </ul>
                     </div>
+                    <button class="btnexpand">Read more</button>
                 </div>
             </div>
         </div>

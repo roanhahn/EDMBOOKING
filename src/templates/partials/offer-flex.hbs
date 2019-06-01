@@ -33,8 +33,13 @@
             <div class="content-wrapper">
                 <h3 class="offer-title">Steigenberger Airport Hotel Amsterdam</h3>
                 <div class="d-md-none">
-                    <div class="offer-price">&euro;299 <span class="offer-price-condition">Per night</span></div>
+
+                    <div class="offer-price">
+                        &euro;299
+                        <span class="offer-price-condition">{{condition}}</span>
+                    </div>
                 </div>
+
                 {{#if distance}}
                 <div class="rating-wrapper">
                     <div class="rating rating--overview">
@@ -49,7 +54,16 @@
                 {{else}}
                 <p class="offer-subheader">{{subheader}}</p>
                 {{/if}}
-                <ul class="offer-list d-none d-md-block">
+
+                <div class="bcom d-lg-none">
+                    <div class="bcom-comment">
+                        <p>Very good</p>
+                        <p class="reviews">4,200 reviews</p>
+                    </div>
+                    <div class="bcom-rating">8.4</div>
+                </div>
+
+                <ul class="offer-list d-none d-md-block m-b-10">
                     <li>Tipi for 9 persons</li>
                     <li>9 Single stretchers including sleeping bags and pillows</li>
                     <li>Table with stools</li>
@@ -62,6 +76,14 @@
             <div>
                 {{#if condition}}
                 <div class="d-none d-md-block">
+                    <div class="bcom d-md-none d-lg-flex">
+                        <div class="bcom-comment">
+                            <p>Very good</p>
+                            <p class="reviews">4,200 reviews</p>
+                        </div>
+                        <div class="bcom-rating">8.4</div>
+                    </div>
+
                     <span class="offer-price">&euro;299</span>
                     <span class="offer-price-condition">{{condition}}</span>
                 </div>
