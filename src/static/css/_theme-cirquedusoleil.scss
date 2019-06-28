@@ -274,7 +274,13 @@ $placeholder-color: #95a5a6;
 
 }
 
+.bookinglogo{
+  background: #fff !important;
+}
 
+.footer-poweredby--header .bookinglogo{
+  padding-left: 7px !important;
+}
 
 $checkout: #000;
 $checkout-light: rgba(0,0,0,0.1);

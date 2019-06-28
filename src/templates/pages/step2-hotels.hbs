@@ -66,12 +66,11 @@ type: page
 		</div>
 	</form>
 	<div class="container">
-		<div class="row m-b-30">
-			<div class="col-md-6 col-lg-7">
-				<h2 class="h2-section m-b-20">Tomorrowland hotels</h2>
+		<div class="row">
+			<div class="col-lg-9">
+				<h2 class="h2-section m-b-10">Tomorrowland hotels</h2>
 			</div>
-			<div class="col-md-6 col-lg-5 poweredbybooking">Powered by <a href="http://www.booking.com" target="_blank"><img src="/assets/img/bookingcom.svg" alt="Booking.com"></a></div>
-			<div class="d-none col-lg-3 offset-lg-9 d-lg-block">
+			<div class="d-none col-lg-3 d-lg-block">
 				<div>
 					<select class="form-control m-b-0">
 						<option selected="">Sort by</option>
@@ -80,6 +79,7 @@ type: page
 				</div>
 			</div>
 		</div>
+		<div class="poweredbybooking">Powered by <img src="assets/img/{{site.theme}}/bookingcom-hotels.svg" alt="Booking.com"></div>
 		{{#parseJSON '{"title": "Best Western Amsterdam Airport Hotel", "subheader": "One of our best sellers, great price...", "img": "hotel.jpg", "button": "info & rooms", "condition": "Includes taxes and charges", "distance": "5km", "url": "detail-hotel-ticket"}'}}
 		{{> offer-flex }}
 		{{> offer-flex }}

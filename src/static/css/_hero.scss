@@ -277,7 +277,7 @@
         }
     }
 
-    & h1 small {
+    & h1 small, & h2.hero-subtitle {
         display: block;
         font-family: $font-hero-small;
         color: $hero-color; // text-transform: none;
@@ -285,6 +285,7 @@
         margin-top: 15px;
         margin-bottom: 30px;
         line-height: 1.2; // text-shadow: 0 0 15px rgba(0,0,0,.7);
+        text-transform: uppercase;
 
         @media all and (max-width: $breakpoint-tablet) {
             font-size: 20px;

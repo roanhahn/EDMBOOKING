@@ -1,0 +1,35 @@
+---
+title: Event Selector
+type: component
+layout: default.hbs
+---
+<div class="hero hero-fullscreen hero-selector" style="background-image: url(http://www.edmbooking.com//media/c2d9bc0c564d78d24971fc18bdc2c838/2018/12/06/0d147/21c1f2db238b.jpeg); background-color: #009bff;">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="hero-event-title">{{site.event}}</h1>
+                    <h2 class="hero-subtitle">{{site.eventdate}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="eventselector">
+            <div class="t-datepicker">
+                <div class="t-check-in"></div>
+                <div class="t-check-out"></div>
+            </div>
+            <div class="eventselector-persons"></div>
+            <select class="bla">
+                <option>1</option>
+                <option selected="selected">2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+            <button type="submit" class="eventselector-submit"></button>
+        </div>
+    </div>
+</div>

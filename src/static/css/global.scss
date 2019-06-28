@@ -1,54 +1,66 @@
 /* Default Variables */
 @import "_variables.scss";
 
-.poweredbybooking{
-    font-size: 14px;
-    // position: relative;
-    padding-top: 4px;
+.global-pricewrapper{
+
     text-align: right;
-
-    @media all and(max-width: $breakpoint-mobile){
+     @media all and(max-width: $breakpoint-tablet) {
         text-align: left;
-        font-size: 12px;
-    }
-
-    & img{
-        display: inline-block;
-        width: 160px;
-        margin-left: 5px;
-        background: #fff;
-        padding: 7px;
-        border-radius: 4px 4px 4px 0px;
-
-        @media all and(max-width: $breakpoint-mobile){
-            width: 110px;
-        }
     }
 }
 
-.footer-booking{
-    font-size: 14px;
-    margin-top: 15px;
+.cookies{
+    padding: 20px 80px 20px 20px;
 
-    @media all and(max-width: $breakpoint-tablet){
-        display: block;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    & p{
-
-        margin-bottom: 10px;
-        display: block;
-    }
-    & img{
-        width: 190px;
-        background: #fff;
-        padding: 7px;
-        border-radius: 4px 4px 4px 0px;
+    @media all and(max-width: $breakpoint-mobile) {
+        padding: 20px 60px 20px 20px;
     }
 }
 
-.partners{
-
+.room .offer-price{
+    @media all and(max-width: $breakpoint-mobile) {
+        text-align: left;
+        float: none;
+    }
 }
+
+.info-list-answer{
+    margin-bottom: 0px;
+}
+
+
+.poweredbybooking{
+    @media all and(max-width: $breakpoint-mobile) {
+        margin-bottom: 25px;
+    }
+}
+
+
+.event-info-item .content {
+    margin-bottom: 15px;
+    height: 395px;
+    // max-height: 400px;
+
+    & ol {
+        line-height: 1.6;
+        margin: 0 0 20px 5px;
+    }
+
+    &-active {
+        height: auto;
+    }
+
+    & p {
+        line-height: 1.6;
+        margin-bottom: 8px !important;
+    }
+}
+
+.t-check-out {
+    width: calc(50% - 15px);
+}
+
+.hero-selector{
+    overflow: visible;
+}
+

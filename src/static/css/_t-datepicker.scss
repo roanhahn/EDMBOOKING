@@ -33,7 +33,12 @@ $t-width-picker: 650px;
         display: block;
         font-weight: normal;
         // font-size: 13px;
+        margin: 0;
         cursor: pointer;
+
+        @media all and(max-width: $breakpoint-tablet){
+            top: 9px;
+        }
     }
     .fa {
         top: -1px;
@@ -86,7 +91,8 @@ $t-width-picker: 650px;
     box-sizing: border-box;
 
     @media all and(max-width: $breakpoint-tablet){
-        font-size: 12px;
+        // font-size: 16px;
+        padding: 9px 12px;
         height: 38px;
     }
 }

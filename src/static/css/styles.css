@@ -1305,7 +1305,7 @@ h3.extras {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .section-cta p {
     font-size: 18px;
     margin-bottom: 36px; }
@@ -1358,7 +1358,7 @@ h3.extras {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
   height: 100%;
   display: block;
@@ -1494,12 +1494,13 @@ h3.extras {
   .event-info-item .content {
     padding: 20px 0 10px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     height: 295px; }
     .event-info-item .content-active {
       height: auto; }
     .event-info-item .content ol {
-      line-height: 1.6; }
+      line-height: 1.6;
+      margin: 0 0 20px 5px; }
     .event-info-item .content ul {
       margin: 0 0 20px 0px;
       padding: 0;
@@ -1525,18 +1526,22 @@ h3.extras {
       line-height: 1.6;
       margin-bottom: 8px; }
 
-.googleMaps, .hotel-information {
+.googleMaps,
+.hotel-information {
   color: #419bf7; }
-  .googleMaps #map, .hotel-information #map {
+  .googleMaps #map,
+  .hotel-information #map {
     width: 100%;
     height: 300px;
     margin-bottom: 15px; }
-  .googleMaps iframe, .hotel-information iframe {
+  .googleMaps iframe,
+  .hotel-information iframe {
     width: 100%;
     height: 300px;
     margin-bottom: 15px; }
   @media all and (max-width: 992px) {
-    .googleMaps, .hotel-information {
+    .googleMaps,
+    .hotel-information {
       margin-bottom: 20px;
       font-size: 14px; } }
 
@@ -1872,6 +1877,25 @@ h3.extras {
     /* optional */
     width: 100%;
     height: 100%; }
+
+.poweredbybooking {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0 0 30px 0; }
+  @media all and (max-width: 992px) {
+    .poweredbybooking {
+      margin-bottom: 10px; } }
+  @media all and (max-width: 767px) {
+    .poweredbybooking {
+      text-align: left;
+      font-size: 12px; } }
+  .poweredbybooking img {
+    display: inline-block;
+    width: 120px;
+    margin-left: 5px; }
+    @media all and (max-width: 767px) {
+      .poweredbybooking img {
+        width: 110px; } }
 
 button {
   -webkit-transition: all .2s ease-in-out 0s;
@@ -2721,9 +2745,12 @@ body.scrolled .hamburger {
       display: inline-block !important;
       margin-bottom: 5px; }
   .subnav .social {
-    display: inline-block;
+    display: block;
+    text-align: left;
     padding: 0;
-    margin-top: 10px; }
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
     .subnav .social a {
       background-color: #419bf7;
       color: #000; }
@@ -2923,7 +2950,7 @@ body.scrolled .hamburger-oud {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .hero--red {
     background-color: #ff3700; }
   .hero--white {
@@ -3074,19 +3101,20 @@ body.scrolled .hamburger-oud {
       @media all and (max-width: 767px) {
         .hero h1.hero-event-title {
           font-size: 30px; } }
-  .hero h1 small {
+  .hero h1 small, .hero h2.hero-subtitle {
     display: block;
     font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 32px;
     margin-top: 15px;
     margin-bottom: 30px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    text-transform: uppercase; }
     @media all and (max-width: 992px) {
-      .hero h1 small {
+      .hero h1 small, .hero h2.hero-subtitle {
         font-size: 20px; } }
     @media all and (max-width: 767px) {
-      .hero h1 small {
+      .hero h1 small, .hero h2.hero-subtitle {
         font-size: 16px; } }
 
 .videowrapper {
@@ -4242,6 +4270,35 @@ footer {
       .partners img {
         max-height: 40px; } }
 
+.footer-poweredby {
+  font-size: 14px;
+  margin-top: 15px; }
+  @media all and (max-width: 992px) {
+    .footer-poweredby {
+      display: block;
+      text-align: center;
+      margin-top: 30px; } }
+  .footer-poweredby p {
+    margin-bottom: 10px;
+    display: block; }
+  .footer-poweredby .bookinglogo {
+    display: inline-block;
+    width: 120px;
+    background: #000;
+    padding: 7px;
+    border-radius: 2px; }
+  .footer-poweredby .iatalogo {
+    display: inline-block;
+    width: 52px;
+    margin-left: 15px; }
+  .footer-poweredby--header {
+    text-align: left !important;
+    margin-top: 20px !important;
+    color: #fff; }
+    .footer-poweredby--header .bookinglogo {
+      background: none;
+      padding-left: 0px; }
+
 .changeCSS {
   padding: 30px 0;
   background: #000;
@@ -4561,12 +4618,13 @@ footer {
     @media all and (max-width: 767px) {
       .offer-price {
         font-size: 15px;
-        display: inline-block;
         width: 20%;
         max-width: 20%;
-        position: absolute;
-        top: 16px;
+        position: relative;
+        float: right;
+        top: -20px;
         right: 0;
+        margin-bottom: -5px;
         text-align: right; } }
   .offer-price-condition {
     color: #419bf7;
@@ -4596,7 +4654,7 @@ footer {
   @media all and (max-width: 767px) {
     .room-content .offer-price {
       position: relative !important;
-      text-align: left;
+      text-align: right;
       display: inline-block;
       max-width: none;
       width: auto;
@@ -4744,6 +4802,86 @@ footer {
         font-size: 15px;
         order: -1;
         margin: 0 10px 0 0; } }
+
+.eventselector {
+  text-align: left;
+  background: #fff;
+  width: 95vw;
+  max-width: 600px;
+  border-radius: 30px 30px 30px 30px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4px 0 0px 10px; }
+  @media all and (max-width: 992px) {
+    .eventselector {
+      max-width: 500px; } }
+  .eventselector .t-datepicker {
+    display: inline-block;
+    position: relative;
+    max-width: 75%; }
+    @media all and (max-width: 767px) {
+      .eventselector .t-datepicker {
+        max-width: 70%; } }
+  .eventselector .t-check-in, .eventselector .t-check-out {
+    border: none;
+    background: transparent;
+    margin: 0;
+    display: inline-block;
+    width: 50%; }
+  .eventselector .t-check-out {
+    border-left: 1px solid #E7E7E9;
+    border-right: 1px solid #E7E7E9; }
+  .eventselector .selectric {
+    border: none;
+    margin: 0;
+    display: inline-block; }
+    @media all and (max-width: 992px) {
+      .eventselector .selectric {
+        position: relative;
+        top: 4px; } }
+  .eventselector .button-selectric {
+    display: none; }
+  .eventselector .selectric-wrapper {
+    display: inline-block;
+    width: 80px; }
+    @media all and (max-width: 992px) {
+      .eventselector .selectric-wrapper {
+        position: absolute;
+        top: 0px;
+        bottom: 0px; } }
+    @media all and (max-width: 767px) {
+      .eventselector .selectric-wrapper {
+        width: 50px; } }
+  .eventselector .selectric-items {
+    top: calc(100% + 4px);
+    border: none; }
+  .eventselector-submit {
+    background: red;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 30px 30px 0px;
+    bottom: 0;
+    background: #419bf7 url(../img/edmbooking/search.svg) no-repeat center center;
+    background-size: 20px auto; }
+    @media all and (max-width: 992px) {
+      .eventselector-submit {
+        background-size: 15px; } }
+    @media all and (max-width: 767px) {
+      .eventselector-submit {
+        width: 40px; } }
+  .eventselector-persons {
+    width: 20px;
+    height: 44px;
+    margin-left: 10px;
+    background: transparent url("../img/user.svg") no-repeat center center scroll;
+    background-size: contain;
+    display: inline-block; }
+    @media all and (max-width: 992px) {
+      .eventselector-persons {
+        height: 38px;
+        width: 15px; } }
 
 .selectric .label {
   font-size: 16px !important; }
@@ -6567,7 +6705,12 @@ footer {
     left: 32px;
     display: block;
     font-weight: normal;
+    margin: 0;
     cursor: pointer; }
+    @media all and (max-width: 992px) {
+      .t-check-in .t-date-info-title,
+      .t-check-out .t-date-info-title {
+        top: 9px; } }
   .t-check-in .fa,
   .t-check-out .fa {
     top: -1px;
@@ -6609,7 +6752,7 @@ footer {
   box-sizing: border-box; }
   @media all and (max-width: 992px) {
     .t-dates {
-      font-size: 12px;
+      padding: 9px 12px;
       height: 38px; } }
 
 .t-datepicker-day {

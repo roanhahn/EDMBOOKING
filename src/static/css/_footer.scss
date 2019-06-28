@@ -350,6 +350,51 @@ footer{
 	}
 }
 
+.footer-poweredby {
+    font-size: 14px;
+    margin-top: 15px;
+
+    @media all and(max-width: $breakpoint-tablet) {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+
+    & p {
+
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    & .bookinglogo{
+    	display: inline-block;
+    	width: 120px;
+        background: $footer-link;
+        padding: 7px;
+        border-radius: 2px;
+    }
+
+    & .iatalogo{
+    	display: inline-block;
+    	width: 52px;
+    	margin-left: 15px;
+    }
+
+    &--header{
+    	text-align: left !important;
+    	margin-top: 20px !important;
+
+    	color: $subnav-link;
+
+    	& .bookinglogo{
+    		background: none;
+    		padding-left: 0px;
+    	}
+    }
+}
+
 .changeCSS{
 	padding: 30px 0;
 	background: #000;

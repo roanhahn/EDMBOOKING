@@ -1,0 +1,120 @@
+.eventselector{
+    text-align: left;
+    background: #fff;
+    width: 95vw;
+    max-width: 600px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 0 auto;
+    // height: 100px;
+    position: relative;
+    padding: 4px 0 0px 10px;
+
+     @media all and( max-width: $breakpoint-tablet){
+            max-width: 500px;
+        }
+
+    & .t-datepicker{
+        display: inline-block;
+        position: relative;
+        max-width: 75%;
+
+        @media all and( max-width: $breakpoint-mobile){
+            max-width: 70%;
+        }
+    }
+
+    & .t-check-in, .t-check-out{
+        border: none;
+        // float: none;
+        background: transparent;
+        margin: 0;
+        display: inline-block;
+        width: 50%;
+        // display: block;
+
+    }
+
+    & .t-check-out{
+        border-left: 1px solid #E7E7E9;
+        border-right: 1px solid #E7E7E9;
+    }
+
+    & .selectric{
+        border: none;
+        margin: 0;
+        display: inline-block;
+
+        @media all and( max-width: $breakpoint-tablet){
+            position: relative;
+            top: 4px;
+        }
+
+        // & .label{
+        //     @media all and( max-width: $breakpoint-tablet){
+        //         font-size: 12px !important;
+        //     }
+        // }
+
+
+    }
+
+    & .button-selectric{
+        display: none;
+    }
+
+    & .selectric-wrapper{
+        display: inline-block;
+        width: 80px;
+
+
+        @media all and( max-width: $breakpoint-tablet){
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+        }
+
+         @media all and( max-width: $breakpoint-mobile){
+            width: 50px;
+         }
+    }
+
+    & .selectric-items{
+        top: calc(100% + 4px);
+        border: none;
+    }
+
+    &-submit{
+        background: red;
+       // height: 50px;
+       width: 50px;
+       position: absolute;
+       top: 0;
+       right: 0;
+       border-radius: 0px 30px 30px 0px;
+       bottom: 0;
+       background: $link-color url(../img/#{$folder}/search.svg) no-repeat center center;
+       background-size: 20px auto;
+        @media all and( max-width: $breakpoint-tablet){
+            background-size: 15px;
+        }
+
+        @media all and( max-width: $breakpoint-mobile){
+            width: 40px;
+         }
+    }
+
+    &-persons{
+        width: 20px;
+        height: 44px;
+        margin-left: 10px;
+        background: transparent url("../img/user.svg") no-repeat center center scroll;
+        background-size: contain;
+        display: inline-block;
+
+        @media all and( max-width: $breakpoint-tablet){
+            height: 38px;
+            width: 15px;
+        }
+
+    }
+}

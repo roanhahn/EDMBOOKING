@@ -81,6 +81,7 @@
 # description: A State of Trance Festival Utrecht is een Nederlandse editie van de wereldwijde festivalserie. Met 5 stages neemt het festival ieder jaar de Jaarbeurs over.
 
 # TikTAk
+# logo: logo.svg
 # theme: tiktak
 # name: TITKAK
 # intro: DTITKAK
@@ -112,6 +113,7 @@
 
 # SENSATION
 # theme: sensation
+# logo: logo.svg
 # name: EDMBOOKING
 # intro: EDMBOOKING
 # title: EDMBOOKING | Book, stay and experience EDM around the globe.
@@ -127,16 +129,16 @@
 # # EDM
 logo: logo.svg
 theme: edmbooking
-siteversion: 73
+siteversion: 79
 name: EDMBOOKING
 intro: EDMBOOKING
 title: EDMBOOKING | Book, stay and experience EDM around the globe.
 homepage: homepage.html
 herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
 herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
-event: Martin Garrix
+event: Awakenings Festival
 eventdate: 3 nov 2018, Las Vegas (USA)
-# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # MARTIN GARRIX
 # theme: martingarrix
