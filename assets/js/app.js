@@ -171,7 +171,39 @@
 
     return LazyLoad;
 });
+var options = {
+    // placeholder: "Zoek een locatie",
+    url: "/assets/resources/data.json",
 
+    getValue: "name",
+
+    list: {
+        match: {
+            enabled: true
+        },
+
+        showAnimation: {
+            type: "fade", //normal|slide|fade
+            time: 400,
+            callback: function() {}
+        },
+
+        hideAnimation: {
+            type: "fade", //normal|slide|fade
+            time: 400,
+            callback: function() {}
+        }
+    },
+
+    template: {
+        type: "iconLeft",
+        fields: {
+            iconSrc: "icon"
+        }
+    }
+};
+
+$("#basics").easyAutocomplete(options);
 
 
 // JAVASCRIPT BREAKPOINTS
