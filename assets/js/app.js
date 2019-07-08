@@ -173,7 +173,7 @@
 });
 var options = {
     // placeholder: "Zoek een locatie",
-    url: "/assets/resources/data.json",
+    url: "assets/resources/data.json",
 
     getValue: "name",
 
