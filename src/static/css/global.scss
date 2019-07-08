@@ -17,6 +17,14 @@
     }
 }
 
+.hero-fullscreen{
+    overflow: visible;
+
+    & .inner{
+        z-index: 30;
+    }
+}
+
 .room .offer-price{
     @media all and(max-width: $breakpoint-mobile) {
         text-align: left;

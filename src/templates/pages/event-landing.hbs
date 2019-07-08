@@ -59,18 +59,33 @@ videobackground: bla
                     {{#is site.theme 'wttf'}}
                     <img src="assets/img/{{site.theme}}/hero-logo.png" class="hero-logo">
                     {{/is}}
-
-
-                        <h1 class="hero-event-title">{{site.event}}
-                            <small>{{site.eventdate}}</small>
-                        </h1>
-                        <div class="flexbuttons">
-                            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Full Experience</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
-                            <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a>
-                            <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
-                            {{!-- <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a> --}}
+                    <h1 class="hero-event-title">{{site.event}}
+                        <small>{{site.eventdate}}</small>
+                    </h1>
+                    <div class="eventselector">
+                        <div class="t-datepicker">
+                            <div class="t-check-in"></div>
+                            <div class="t-check-out"></div>
                         </div>
-
+                        <div class="eventselector-persons"></div>
+                        <select>
+                            <option>1</option>
+                            <option selected="selected">2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+                        <button type="submit" class="eventselector-submit"></button>
+                    </div>
+                    <div class="flexbuttons">
+                        <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Full Experience</span>{{!-- <span class="hero-button-subtitle">Or Hotel Only</span> --}}</a>
+                        <a href="step1-hotels.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Hotel Only</span></a>
+                        <a href="step1-packages.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Packages</span><span class="hero-button-subtitle"></span></a>
+                        {{!-- <a href="step1-camping.html" class="button button-secondary button-secondary--noArrow hero-button"><span>Camping</span><span class="hero-button-subtitle"></span></a> --}}
+                    </div>
                 </div>
             </div>
         </div>

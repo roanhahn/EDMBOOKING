@@ -73,13 +73,7 @@
 @import "_offer.scss";
 @import "_eventselector.scss";
 
-.selectric .label{
-    font-size: 16px !important;
 
-     @media all and (max-width: 992px) {
-        font-size: 16px !important;
-     }
-}
 
 // Plugins
 @import "jquery.fancybox.css";
@@ -89,6 +83,7 @@
 @import "_owl.theme.default.min.scss";
 @import "_owl.theme.scss";
 @import "_bootstrap-datepicker3.min.scss";
+@import "_easy-autocomplete.scss";
 // @import "_canvallax.scss"; //voor NH 2018
 @import "_t-datepicker.scss";
 @import "_t-datepicker-blue.scss";

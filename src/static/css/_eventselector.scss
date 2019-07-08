@@ -1,4 +1,4 @@
-.eventselector{
+.eventselector {
     text-align: left;
     background: #fff;
     width: 95vw;
@@ -7,44 +7,114 @@
     margin: 0 auto;
     // height: 100px;
     position: relative;
-    padding: 4px 0 0px 10px;
+    padding: 4px 0 0px 15px;
+    color: $form-input-color;
 
-     @media all and( max-width: $breakpoint-tablet){
-            max-width: 500px;
+
+    @media all and(max-width: $breakpoint-tablet) {
+        max-width: 500px;
+    }
+
+    &-location {
+        display: inline-block;
+        height: 44px;
+        // background: red;
+        margin: 0;
+        width: 100%;
+        max-width: calc(35% - 20px);
+        // border: 1px solid red;
+        // background: red;
+        vertical-align: top;
+
+        & .easy-autocomplete input {
+            border: none !important;
+            border-radius: 0px !important;
+            background: transparent !important;
+            height: 44px !important;
+            padding: 12px 12px 12px 4px !important;
+
+             @media all and( max-width: $breakpoint-tablet){
+                font-size: 12px !important;
+                height: 38px !important;
+            }
+
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: $form-input-color !important;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: $form-input-color !important;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: $form-input-color !important;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: $form-input-color !important;
+            }
         }
+    }
 
-    & .t-datepicker{
+    & .t-datepicker {
         display: inline-block;
         position: relative;
         max-width: 75%;
 
-        @media all and( max-width: $breakpoint-mobile){
+        @media all and(max-width: $breakpoint-mobile) {
             max-width: 70%;
         }
+
+        &-small {
+            max-width: 35%;
+
+            @media all and(max-width: $breakpoint-mobile) {
+                max-width: 35%;
+            }
+        }
+
+
     }
 
-    & .t-check-in, .t-check-out{
+    & .t-check-in,
+    .t-check-out {
         border: none;
         // float: none;
         background: transparent;
         margin: 0;
         display: inline-block;
         width: 50%;
+        // background: #fff !important;
+        // color: #000 !important;
+        border-radius: 0px !important;
+
+        &--small {
+            width: 100%;
+            border-left: 1px solid #E7E7E9 !important;
+            border-right: 1px solid #E7E7E9 !important;
+        }
+
+
         // display: block;
 
     }
 
-    & .t-check-out{
-        border-left: 1px solid #E7E7E9;
-        border-right: 1px solid #E7E7E9;
+    & .t-check-out {
+        border-left: 1px solid #E7E7E9 !important;
+        border-right: 1px solid #E7E7E9 !important;
     }
 
-    & .selectric{
+    & .selectric {
         border: none;
         margin: 0;
         display: inline-block;
 
-        @media all and( max-width: $breakpoint-tablet){
+        @media all and(max-width: $breakpoint-tablet) {
             position: relative;
             top: 4px;
         }
@@ -58,60 +128,75 @@
 
     }
 
-    & .button-selectric{
+    & .button-selectric {
         display: none;
     }
 
-    & .selectric-wrapper{
+    & .selectric-wrapper {
         display: inline-block;
         width: 80px;
 
 
-        @media all and( max-width: $breakpoint-tablet){
+        @media all and(max-width: $breakpoint-tablet) {
             position: absolute;
             top: 0px;
             bottom: 0px;
         }
 
-         @media all and( max-width: $breakpoint-mobile){
+        @media all and(max-width: $breakpoint-mobile) {
             width: 50px;
-         }
+        }
     }
 
-    & .selectric-items{
+    & .selectric-items {
         top: calc(100% + 4px);
         border: none;
     }
 
-    &-submit{
-        background: red;
-       // height: 50px;
-       width: 50px;
-       position: absolute;
-       top: 0;
-       right: 0;
-       border-radius: 0px 30px 30px 0px;
-       bottom: 0;
-       background: $link-color url(../img/#{$folder}/search.svg) no-repeat center center;
-       background-size: 20px auto;
-        @media all and( max-width: $breakpoint-tablet){
+    &-submit {
+        // background: red;
+        // height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0px 30px 30px 0px;
+        bottom: 0;
+        background: $link-color url(../img/#{$folder}/search.svg) no-repeat center center;
+        background-size: 20px auto;
+
+        @media all and(max-width: $breakpoint-tablet) {
             background-size: 15px;
         }
 
-        @media all and( max-width: $breakpoint-mobile){
+        @media all and(max-width: $breakpoint-mobile) {
             width: 40px;
-         }
+        }
     }
 
-    &-persons{
+    &-persons {
         width: 20px;
         height: 44px;
         margin-left: 10px;
-        background: transparent url("../img/user.svg") no-repeat center center scroll;
+        background: transparent url("../img/#{$folder}/user.svg") no-repeat center center scroll;
         background-size: contain;
         display: inline-block;
 
-        @media all and( max-width: $breakpoint-tablet){
+        @media all and(max-width: $breakpoint-tablet) {
+            height: 38px;
+            width: 15px;
+        }
+
+    }
+
+    &-bed {
+        width: 20px;
+        height: 44px;
+        background: transparent url("../img/#{$folder}/bed.svg") no-repeat center center scroll;
+        background-size: contain;
+        display: inline-block;
+
+        @media all and(max-width: $breakpoint-tablet) {
             height: 38px;
             width: 15px;
         }

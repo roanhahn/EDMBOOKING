@@ -31,6 +31,11 @@ body:before {
     .cookies {
       padding: 20px 60px 20px 20px; } }
 
+.hero-fullscreen {
+  overflow: visible; }
+  .hero-fullscreen .inner {
+    z-index: 30; }
+
 @media all and (max-width: 767px) {
   .room .offer-price {
     text-align: left;
