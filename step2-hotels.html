@@ -30,8 +30,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	
-	<link href="assets/css/styles.min.css?v=HSADHSJ" rel="stylesheet">
-	<link href="assets/css/global.min.css?v=HSADHSJ" rel="stylesheet">
+	<link href="assets/css/styles.min.css?v=HSADHSJads" rel="stylesheet">
+	<link href="assets/css/global.min.css?v=HSADHSJads" rel="stylesheet">
 	
 
 
@@ -264,50 +264,76 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 <main class="main" id="main">
 	
 
-
-
-
 <div class="accordeon">
-	<div class="container">
-		<a href="step1-hotels.html">
-			<span class="accordeon-step">Ticket</span>
-			<div class="accordeon-buttons">
-				Select your ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
+    <div class="container">
+        <a href="step1-hotels.html">
+            <span class="accordeon-step">Ticket</span>
+            <div class="accordeon-buttons">
+                Select your ticket<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </div>
+        </a>
+    </div>
 </div>
-
 <div class="accordeon accordeon--active">
-	<div class="container">
-		<span class="accordeon-step">Hotel</span>
-		<div class="accordeon-buttons">
-			<a href="event-landing.html" class="button button-secondary button--back">Back</a>
-			<a href="step3-camping.html" class="button button-secondary">Next</a>
-		</div>
-	</div>
+    <div class="container">
+        <span class="accordeon-step">Hotel</span>
+        <div class="accordeon-buttons">
+            <a href="event-landing.html" class="button button-secondary button--back">Back</a>
+            <a href="step3-camping.html" class="button button-secondary">Next</a>
+        </div>
+    </div>
 </div>
 <section class="section">
+    <form class="">
+        <div class="container">
+            <div class="d-block d-lg-none m-b-30">
+                <div class="row">
+                    <div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
+                    <div class="col-7">
+                        <select class="form-control m-b-0">
+                            <option selected="">Sort by</option>
+                            <option>Price Low-High</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="filters">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label class="form-label">Where are you going?</label>
+                        <div class="eventselector-hotelspage form-group">
+                            <div class="eventselector-bed"></div>
+                            <div class="eventselector-location">
+                                <input id="basics" placeholder="Search festival or city" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="form-group">
+                            <label class="form-label">Select check in and out dates</label>
+                            <div class="t-datepicker">
+                                <div class="t-check-in"></div>
+                                <div class="t-check-out"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-1">
+                        <div class="form-group">
+                            <label class="form-label" for="room">Guests</label>
+                            <span class="guests">2</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <div class="form-group">
+                            <label class="form-label d-none d-lg-block">&nbsp;</label>
+                            <button class="button button-primary button--block">Change Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
 
-	<form class="">
-		<div class="container">
-			<div class="d-block d-lg-none m-b-30">
-				<div class="row">
-					<div class="col-5"><button class="button button-primary toggle-filters">Filters <i class="fa fa-filter" aria-hidden="true"></i></button></div>
-					<div class="col-7">
-						<select class="form-control m-b-0">
-							<option selected="">Sort by</option>
-							<option>Price Low-High</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div id="filters">
-				<div class="row">
 
-
-
-					
 <div class="col-12 col-lg-6">
 	<div class="form-group">
 		<label class="form-label">Select check in and out dates</label>
@@ -345,28 +371,28 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 
 
 
-				</div>
-			</div>
-			<hr class="hr" />
-		</div>
-	</form>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9">
-				<h2 class="h2-section m-b-10">Tomorrowland hotels</h2>
-			</div>
-			<div class="d-none col-lg-3 d-lg-block">
-				<div>
-					<select class="form-control m-b-0">
-						<option selected="">Sort by</option>
-						<option>Price Low-High</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<div class="poweredbybooking">Powered by <img src="assets/img/festivalfans/bookingcom-hotels.svg" alt="Booking.com"></div>
-		
-		<div class="offer ">
+                </div>
+            </div>
+            <hr class="hr" />
+        </div>
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2 class="h2-section m-b-10">Tomorrowland hotels</h2>
+            </div>
+            <div class="d-none col-lg-3 d-lg-block">
+                <div>
+                    <select class="form-control m-b-0">
+                        <option selected="">Sort by</option>
+                        <option>Price Low-High</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="poweredbybooking">Powered by <img src="assets/img/festivalfans/bookingcom-hotels.svg" alt="Booking.com"></div>
+        
+        <div class="offer ">
     <div class="flex-offer">
         <div class="flex-offer-image">
         	<div class="offer-label">Sold out</div>
@@ -452,7 +478,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
         </a>
     </div>
 </div>
-		<div class="offer ">
+        <div class="offer ">
     <div class="flex-offer">
         <div class="flex-offer-image">
         	<div class="offer-label">Sold out</div>
@@ -538,7 +564,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
         </a>
     </div>
 </div>
-		<div class="offer ">
+        <div class="offer ">
     <div class="flex-offer">
         <div class="flex-offer-image">
         	<div class="offer-label">Sold out</div>
@@ -624,7 +650,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
         </a>
     </div>
 </div>
-		<div class="offer ">
+        <div class="offer ">
     <div class="flex-offer">
         <div class="flex-offer-image">
         	<div class="offer-label">Sold out</div>
@@ -710,7 +736,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
         </a>
     </div>
 </div>
-		<div class="offer ">
+        <div class="offer ">
     <div class="flex-offer">
         <div class="flex-offer-image">
         	<div class="offer-label">Sold out</div>
@@ -796,45 +822,39 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
         </a>
     </div>
 </div>
-		
-	</div>
+        
+    </div>
 </section>
-
-
-
 <div class="accordeon">
-	<div class="container">
-		<a href="step2-camping.html">
-			<span class="accordeon-step">Extras</span>
-			<div class="accordeon-buttons">
-				Select extras<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
-</div>
-
-<div class="accordeon">
-	<div class="container">
-		<a href="step3-camping.html">
-			<span class="accordeon-step">Details</span>
-			<div class="accordeon-buttons">
-				Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
+    <div class="container">
+        <a href="step2-camping.html">
+            <span class="accordeon-step">Extras</span>
+            <div class="accordeon-buttons">
+                Select extras<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </div>
+        </a>
+    </div>
 </div>
 <div class="accordeon">
-	<div class="container">
-		<a href="step4-camping.html">
-			<span class="accordeon-step">Confirm</span>
-			<div class="accordeon-buttons">
-				Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-			</div>
-		</a>
-	</div>
+    <div class="container">
+        <a href="step3-camping.html">
+            <span class="accordeon-step">Details</span>
+            <div class="accordeon-buttons">
+                Contact details<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </div>
+        </a>
+    </div>
 </div>
-
-
+<div class="accordeon">
+    <div class="container">
+        <a href="step4-camping.html">
+            <span class="accordeon-step">Confirm</span>
+            <div class="accordeon-buttons">
+                Check and pay<span class="accordeon-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </div>
+        </a>
+    </div>
+</div>
 
 	</main>
 <footer id="footer">
@@ -973,7 +993,7 @@ Already booked with EDMBOOKING? Go to our login page to view your booking.</p>
 <script src="assets/js/plugins/blazy.min.js"></script>
 <script src="assets/js/plugins/t-datepicker.min.js"></script>
 
-<script src="assets/js/app.js?v=HSADHSJ"></script>
+<script src="assets/js/app.js?v=HSADHSJads"></script>
 
 
 
