@@ -240,7 +240,7 @@ $(function () {
 
 $('.t-datepicker').tDatePicker({
      autoClose        : true,
-     numCalendar    : 2,
+     numCalendar    : 1,
      iconArrowTop : true,
   iconDate     : '<i class="fa fa-calendar" aria-hidden="true"></i>',
   arrowPrev    : '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
@@ -249,6 +249,8 @@ $('.t-datepicker').tDatePicker({
   limitPrevMonth : 0,
   limitNextMonth : 11,
   limitDateRanges: 90,
+  titleMonthsLimitShow:3,
+  formatDate:'yyyy-mm-dd',
 
 
     });

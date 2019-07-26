@@ -27,6 +27,12 @@
 }
 
 
+.eventselector-location .easy-autocomplete input,
+.eventselector .selectric-wrapper .selectric{
+  position: relative;
+  top: -4px;
+}
+
 /* FOLDER */
 $folder: edmsterdam;
 

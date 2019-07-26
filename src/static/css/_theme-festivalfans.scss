@@ -1,0 +1,294 @@
+/*!
+ * Festival Fans THEME
+ * Copyright (c) 2019 Event Agent
+ */
+
+/* Regular font */
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* Header font */
+// @import url('https://fonts.googleapis.com/css?family=Prompt:400,700,800');
+
+@import url('https://fonts.googleapis.com/css?family=Gudea:400,700&display=swap');
+
+/* FOLDER */
+$folder: festivalfans;
+
+/* BODY */
+$bg-color: #F2EFEF;
+$loader-bg: #F2EFEF;
+$bodygradient-fromcolor: #F2EFEF;
+$bodygradient-tocolor: #F2EFEF;
+$font-size: 16px;
+$font-header-size: 24px; //default 24px;
+
+// need help
+$modalbg-color: rgba(255,255,255,0.07);
+$modalborder: 2px solid rgba(255,255,255,0.05);
+$modal-radius: 0px;
+
+/* FONTS */
+$font: 'Gudea', sans-serif;
+$font-header: 'Gudea', sans-serif;
+$border-color: #eee;
+
+/* FONT COLORS */
+$text-color: #1b1b1b;
+$heading-color: #000;
+$link-color: #40BECA;
+$link-hover-color: #40BECA;
+$error-color: #dc3545;
+
+/* Google Maps */
+$mapclose-color: #40BECA;
+
+/* FILTERS */
+$filter-visibility: block;
+$blend-mode: multiply;
+$blue-filter: rgba(0,155,255,1);
+$white-filter: rgba(236,236,236,1);
+$red-filter: rgba(255,55,0,1);
+$grey-filter: rgba(50,50,50,0.2);
+$filter-opacity: 0.5;
+$video-opacity: 0.5;
+$video-filter:  grayscale(100%);
+
+/* BUTTONS */
+$font-button: 'Gudea', sans-serif;
+$button-size: 17px;
+$button-bg: #a349a4;
+$button-color: #fff;
+$button-bg-hover: #000;
+$button-color-hover: #fff;
+$button-radius: 3px;
+
+.button{
+    font-weight: 700 !important;
+    letter-spacing: 0px !important;
+
+    &-primary{
+        padding: 14px 25px !important;
+    }
+}
+
+/* BACK BUTTON */
+$button-back-size: 15px; // default 15px
+$button-back-bg: #a349a4;
+$button-back-color: #fff;
+$button-back-border: none;
+$button-back-bghover: #000;
+$button-back-colorhover: #fff;
+$button-back-borderhover: none;
+
+/* FAQ */
+$faq-button-bg: #a349a4;
+$faq-button-color: #fff;
+$faq-button-bghover: #000;
+$faq-button-colorhover: #fff;
+
+/* SECONDARY BUTTON */
+$sec-button-color: #fff;
+$sec-size: 16px;
+$sec-size-mobile: 15px; //default 15px
+$sec-button-bg: #fdb813;
+$sec-button-colorhover: #fff;
+$sec-button-bghover: #000;
+$sec-button-border: 1px solid #fff;
+$sec-button-borderhover: 1px solid #fff;
+$sec-button-radius: 50px;
+$sec-button-inverted-color: #000;
+$sec-padding: 15px 30px;
+
+/* HEADER */
+$hamburger-layer-color: #000 !default;
+$hamburger-height: 6px; // default 6px
+$hamburger-spacing: 6px; // default 6px
+$header-height: 90px;
+$header-height-mobile: 50px;
+$logo-height: 80px;
+$logo-height-mobile: 40px;
+$header-bg: #fff;
+$header-color: #1b1b1b;
+$header-bg-sticky: #fff;
+$header-text: #1b1b1b;
+$header-hover: #FDB812;
+$main-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+$menu-color: black;
+$notification-bg: #3DBECC;
+$notication-icons: #fff;
+$notification-text: #fff;
+$subnav-bg: #F5F5F5;
+$subnav-strong: #1b1b1b;
+$subnav-strong-size: 20px; //default 20px
+$subnav-color: #1b1b1b;
+$subnav-link: #1b1b1b;
+$subnav-sublink: #1b1b1b;
+$subnav-hover: #3DBECC;
+$subnav-social-bg: #a349a4;
+$subnav-social-color: #fff;
+$subnav-social-hover: #fff;
+$subnav-social-bghover: #000;
+$subnav-shadow: -13px 0px 41px 0px rgba(0,0,0,0.5);
+$subnav-border: 1px solid rgba(0,0,0,.1);
+$language-bg: rgba(0,0,0,.9);
+$language-link: #fff;
+$language-hover: #FDB812;
+$language-border: 1px solid rgba(0,0,0,.1);
+$language-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+$dropdownicon: "\f0d7";
+
+/* HERO */
+$hero-padding: 150px 0;
+$hero-padding-mobile: 100px 0;
+$hero-color: #fff;
+$hero-h1-color: #fff;
+$hero-h1-size: 60px; //70px default
+$hero-overlay: rgba(0,0,0,0.15);
+$font-hero-small: 'Gudea', sans-serif;
+$hero-position: center center;
+$hero-button-padding: 30px;
+$hero-button-width: 350px;
+$hero-button-size: 24px;
+
+/* Testimonials */
+$testimonial-bg: #fff;
+$testimonial-text: #1b1b1b;
+$testimonial-title: #3DBECC;
+$testimonial-author: #3DBECC;
+$testimonial-activedot: #3DBECC;
+$testimonial-inactivedot: rgba(0,0,0,.2);
+$testimonial-title-size: 40px; // default 40px
+
+/* STEPS */
+$steps-bg: #fff;
+$steps-color: #1b1b1b;
+$steps-bg-hover: #3DBECC;
+$steps-color-hover: #fff;
+$steps-active-bg: #fdb813;
+$steps-active-color: #1b1b1b;
+$steps-link: #1b1b1b;
+$steps-border: 2px solid #eee;
+
+/* OFFERS */
+$event-bg: #000;
+$offer-border: 1px solid #eee;
+$offer-title: #000;
+$offer-title-transform: none;
+$ribbon-bg: #fdb813;
+$ribbon-color: #000;
+$offer-activedot: #3DBECC;
+$offer-inactivedot: rgba(0,0,0,.3);
+$ticketbtn-color: #fff;
+$ticketbtn-colorhover: #000;
+
+/* WHY BOOK */
+$why-border: #3DBECC;
+$why-number: #fff;
+$why-book-icon: #fff;
+$why-book-iconborder: 3px solid #3DBECC;
+$why-book-iconbg: #3DBECC;
+
+/* Footer */
+$footer-border: none;
+$footer-bg: #f5f5f5;
+$footer-text: #1b1b1b;
+$footer-link: #1b1b1b;
+$footer-hover: #3DBECC;
+$footer-heading: #000;
+$footer-heading-size: 24px; //default 24px
+$footer-social-bg: #a349a4;
+$footer-social-color: #fff;
+$footer-social-hover: #000;
+$footer-socialicon-hover: #fff;
+$footer-payoffsize: 12px;
+$partner-bg: #f5f5f5;
+
+/* COOKIES */
+$cookies-bg: #fff;
+$cookies-fontsize: 15px;
+$cookies-border: 3px solid #fdb813;
+$cookie-link-color: #0c0c0c;
+$cookies-color: #0c0c0c;
+$cookies-padding: 20px 80px 20px 20px;
+$cookies-fontsize-mobile: 13px;
+$cookies-padding-mobile: 20px 60px 20px 20px;
+
+/* FORMS */
+$form-border: 1px solid #aaa;
+$form-bordercolor: #aaa;
+$form-border-login: 1px solid #aaa;
+$form-label: #1b1b1b;
+$form-labelsize: 14px;
+$form-focus-border: #000;
+$form-input-color: #000;
+$form-highlight: #419bf7;
+$form-highlightcolor: #fff;
+$form-addon-bg: #e6e7e8;
+$form-addon-color: #000;
+$placeholder-color: #95a5a6;
+
+$checkout: #a349a4;
+$checkout-light: rgba(0,0,0,0.1);
+$checkout-limit: rgba(0,0,0,0.2);
+$checkout-limit2: #a349a4;
+
+.t-check-out{
+    border-left-width: 1px !important;
+}
+
+@mixin gradient($fromcolor, $tocolor) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4444+0,1886f4+100 */
+	background: $fromcolor; /* Old browsers */
+	background: -moz-linear-gradient(45deg, $fromcolor 0%, $tocolor 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, $fromcolor 0%,$tocolor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.hero h1.hero-event-title{
+    font-size: 55px !important;
+
+    @media all and (max-width: $breakpoint-tablet) {
+        font-size: 45px !important;
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+}
+
+.flexbuttons a{
+    max-width: 320px !important;
+}
+
+.eventselector-submit{
+    background-color: #a349a4 !important;
+}
+
+.yourbooking{
+    background: #fff !important;
+}
+
+.gallery{
+    margin-bottom: 0px !important;
+}
+
+.section{
+  background: #fff;
+      margin: 15px auto;
+      max-width: 1280px;
+      // max-width: 300px;
+      // box-shadow: 10px 0 0 0 #55cbd6, -10px 0 0 0 #f23859, 0 5px 10px 0 #481d47, 0 -5px 10px 0 #481d47;
+
+
+
+      @media all and(max-width: $breakpoint-tablet){
+        max-width: 100vw;
+      }
+      @media all and(max-width: $breakpoint-mobile){
+        // max-width: calc(100vw - 30px);
+
+      }
+}
+
+// .flex-offer{
+//     background: #fff !important;
+// }

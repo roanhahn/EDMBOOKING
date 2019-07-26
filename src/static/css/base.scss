@@ -3,7 +3,10 @@
 @import "_variables.scss";
 
 /* Theme EDMBOOKING Variables */
-@import "_theme-edmbooking.scss";
+// @import "_theme-edmbooking.scss";
+
+/* Theme Festivalfans */
+@import "_theme-festivalfans.scss";
 
 /* Theme Martin Garrix ADE Variables */
 // @import "theme-martingarrix.scss";
@@ -82,7 +85,7 @@
 @import "_owl.carousel.min.scss";
 @import "_owl.theme.default.min.scss";
 @import "_owl.theme.scss";
-@import "_bootstrap-datepicker3.min.scss";
+// @import "_bootstrap-datepicker3.min.scss";
 @import "_easy-autocomplete.scss";
 // @import "_canvallax.scss"; //voor NH 2018
 @import "_t-datepicker.scss";

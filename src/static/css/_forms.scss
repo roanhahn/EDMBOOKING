@@ -170,9 +170,13 @@
     }
 
     @media all and(max-width: $breakpoint-tablet) {
-        font-size: 12px;
+        font-size: 13px;
         height: 38px;
     }
+
+    @media all and(max-width: $breakpoint-xsmall) {
+                font-size: 12px;
+            }
 }
 
 .input-group-addon {

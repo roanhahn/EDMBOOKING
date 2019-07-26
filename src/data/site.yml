@@ -127,18 +127,32 @@
 # description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
 
 # # EDM
+# logo: logo.svg
+# theme: edmbooking
+# siteversion: 93
+# name: EDMBOOKING
+# intro: EDMBOOKING
+# title: EDMBOOKING | Book, stay and experience EDM around the globe.
+# homepage: homepage.html
+# herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
+# herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
+# event: Awakenings Festival
+# eventdate: 3 nov 2018, Las Vegas (USA)
+# description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+
+# Festivalfans
 logo: logo.svg
-theme: edmbooking
-siteversion: 80
-name: EDMBOOKING
-intro: EDMBOOKING
-title: EDMBOOKING | Book, stay and experience EDM around the globe.
+theme: festivalfans
+siteversion: HSADHSJadsdas
+name: Festival Fans
+intro: Festival Fans
+title: Festival Fans | Blijf op de hoogte van je favoriete festivals!
 homepage: homepage.html
 herotitle: ULTIMATE EVENT EXPERIENCES FOR FANS LIKE YOU!
 herosubtitle: OFFICIAL TICKETS, ACCOMMODATION AND EXTRAS
 event: Awakenings Festival
 eventdate: 3 nov 2018, Las Vegas (USA)
-description: Sensation is going to Madrid! On November 3, the World's Leading Dance Event will journey to Spain and transform IFEMA into the world's biggest night club for just one...
+description: Met Festival Fans blijf je op de hoogte van de festivals in de house, hardstyle en techno scene. Proef de sfeer van deze festivals alvast op Festival Fans!
 
 # MARTIN GARRIX
 # theme: martingarrix

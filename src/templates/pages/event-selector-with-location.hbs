@@ -13,16 +13,18 @@ layout: default.hbs
                 </div>
             </div>
         </div>
-        <div class="eventselector">
+        <div class="eventselector eventselector--location">
             <div class="eventselector-bed"></div>
             <div class="eventselector-location">
-                <input id="basics" placeholder="Zoek een hotel" />
+                <input id="basics" placeholder="Search festival or city" />
             </div>
+            <div class="eventselector-spacer"></div>
             <div class="t-datepicker t-datepicker-small">
                 <div class="t-check-in t-check-in--small "></div>
+                <div class="t-check-out t-check-out--small "></div>
             </div>
             <div class="eventselector-persons"></div>
-            <select>
+            <select class="eventselector-select">
                 <option>1</option>
                 <option selected="selected">2</option>
                 <option>3</option>
@@ -32,7 +34,7 @@ layout: default.hbs
                 <option>7</option>
                 <option>8</option>
             </select>
-            <button type="submit" class="eventselector-submit"></button>
+            <button type="submit" class="eventselector-submit eventselector-submit--location"></button>
         </div>
     </div>
 </div>

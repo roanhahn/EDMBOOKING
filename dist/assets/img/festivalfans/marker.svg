@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="30px" height="37px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="marker" x="0" y="0" width="30" height="37" style="fill:none;"/>
+    <g id="marker1" serif:id="marker">
+        <g id="marker2" serif:id="marker">
+            <path id="Shape" d="M25.542,4.667C19.708,-1.167 10.25,-1.167 4.417,4.667C-1.417,10.5 -1.417,19.958 4.417,25.792L15,36.375L25.542,25.833C31.375,19.958 31.375,10.5 25.542,4.667Z" style="fill:rgb(61,190,204);fill-rule:nonzero;"/>
+            <circle id="Oval" cx="15" cy="15.25" r="6.25" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

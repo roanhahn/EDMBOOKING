@@ -2,17 +2,18 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 /* Header font */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
-$header: #d60e00;
-$color-1: #2d609b; /* blue */
-$color-2: #2d609b; /* blue */
+@import url('https://fonts.googleapis.com/css?family=Gudea:400,700&display=swap');
+
+$header: #3DBECC;
+$color-1: #a349a4; /* blue */
+$color-2: #a349a4; /* blue */
 $color-3: #e6e6e6; /* grey */
 
-$text-color: #000; /* text color */
+$text-color: #1b1b1b; /* text color */
 
-$font: 12px/1.2 'Montserrat', sans-serif;
-$headerfont: 'Montserrat', sans-serif;
+$font: 14px/1.2 'Gudea', sans-serif;
+$headerfont: 'Gudea', sans-serif;
 
 /* resets the automatic margin and padding of the browser */
 body, html {
@@ -92,7 +93,7 @@ select{
 	margin:0 auto;
 }
 .merchantHeader img{
-	max-height:70px;
+	max-height:80px;
 	position:absolute;
 	top:15px;
 }
@@ -169,10 +170,10 @@ select{
 	font-size:16px;
 	font-weight:bold;
 	line-height:28px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Gudea', sans-serif;
 }
 .transactionSummary>div .title{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Gudea', sans-serif;
 }
 .horizontalClear {
 	clear:both;
